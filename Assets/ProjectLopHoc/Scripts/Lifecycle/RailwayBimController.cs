@@ -48,13 +48,20 @@ public sealed class RailwayBimController:MonoBehaviour
             foreach(var proxy in overviewRoot.GetComponentsInChildren<BimAssetProxy>(true)){overview.Add(proxy.assetID,proxy);EnsureRayTarget(proxy);}
             blockRoot=new GameObject("PooledBlockLayer").transform;blockRoot.SetParent(transform,false);detailRoot=new GameObject("PooledPhysicalLayer").transform;detailRoot.SetParent(transform,false);
             int capacity=catalog.blocks.GroupBy(b=>b.segmentID).Max(g=>g.Count());for(int i=0;i<capacity;i++)blockPool.Add(NewProxy(blockRoot,"BlockSlot_"+i));
-            foreach(var part in catalog.parts){var proxy=NewProxy(detailRoot,part.name);Assign(proxy,part.mesh,part.materials);proxy.gameObject.SetActive(true);partPool.Add(proxy);}detailRoot.gameObject.SetActive(false);
-            var bounds=catalog.segments[0].bounds;foreach(var s in catalog.segments)bounds.Encapsulate(s.bounds);cameraController.zoneBounds=bounds;cameraController.Focus(bounds,0,false);SetOverview();Message("Sẵn sàng · Chọn tài sản để xem hồ sơ");
+            detailRoot.gameObject.SetActive(false);
+            var bounds=catalog.segments[0].bounds;foreach(var s in catalog.segments)bounds.Encapsulate(s.bounds);cameraController.zoneBounds=bounds;cameraController.Focus(bounds,0,false);SetOverview();Message("Sẵn sàng · Chọn tài sản để xem hồ sơ");Debug.Log($"[RailwayBim] Ready {Time.timeSinceLevelLoad:F2}s after scene load");
         }
         catch(Exception e){Message(e.Message);Debug.LogException(e,this);enabled=false;}
     }
-    static BimAssetProxy NewProxy(Transform parent,string name){var g=new GameObject(name);g.transform.SetParent(parent,false);g.AddComponent<MeshFilter>();g.AddComponent<MeshRenderer>();g.AddComponent<MeshCollider>();var p=g.AddComponent<BimAssetProxy>();g.SetActive(false);return p;}
-    static void Assign(BimAssetProxy p,Mesh mesh,Material[] materials){p.GetComponent<MeshFilter>().sharedMesh=mesh;p.GetComponent<MeshRenderer>().sharedMaterials=materials;p.GetComponent<MeshCollider>().sharedMesh=mesh;EnsureRayTarget(p);}
+    // Detailed parts are only needed once a block is opened, so they are built then instead of at scene load.
+    void EnsureParts()
+    {
+        if(partPool.Count>0)return;
+        foreach(var part in catalog.parts){var proxy=NewProxy(detailRoot,part.name);Assign(proxy,part.mesh,part.materials);proxy.gameObject.SetActive(true);partPool.Add(proxy);}
+    }
+    // Box colliders are enough for ray selection; mesh colliders cooked millions of vertices on the main thread at load.
+    static BimAssetProxy NewProxy(Transform parent,string name){var g=new GameObject(name);g.transform.SetParent(parent,false);g.AddComponent<MeshFilter>();g.AddComponent<MeshRenderer>();g.AddComponent<BoxCollider>();var p=g.AddComponent<BimAssetProxy>();g.SetActive(false);return p;}
+    static void Assign(BimAssetProxy p,Mesh mesh,Material[] materials){p.GetComponent<MeshFilter>().sharedMesh=mesh;p.GetComponent<MeshRenderer>().sharedMaterials=materials;var box=p.GetComponent<BoxCollider>();var b=mesh!=null?mesh.bounds:new Bounds();box.center=b.center;box.size=Vector3.Max(b.size,Vector3.one*.05f);EnsureRayTarget(p);}
     static void EnsureRayTarget(BimAssetProxy proxy){if(proxy.GetComponent<XRSimpleInteractable>()==null)proxy.gameObject.AddComponent<XRSimpleInteractable>();}
     public List<BimAsset> CurrentItems()=>!Ready?new List<BimAsset>():Level==0?Store.Assets.Values.Where(a=>a.AssetType=="Segment").OrderBy(a=>a.AssetID).ToList():Store.Children(Level==1?SegmentID:BlockID);
     public void Select(string id)
@@ -79,7 +86,7 @@ public sealed class RailwayBimController:MonoBehaviour
         }
         else
         {
-            BlockID=SelectedID;Level=2;var b=blocks[BlockID];visible[BlockID].gameObject.SetActive(false);detailRoot.SetPositionAndRotation(b.position+Vector3.up*catalog.detailedVerticalOffset,b.rotation);detailRoot.gameObject.SetActive(true);
+            BlockID=SelectedID;Level=2;var b=blocks[BlockID];visible[BlockID].gameObject.SetActive(false);detailRoot.SetPositionAndRotation(b.position+Vector3.up*catalog.detailedVerticalOffset,b.rotation);EnsureParts();detailRoot.gameObject.SetActive(true);
             for(int i=0;i<partPool.Count;i++)partPool[i].assetID=BlockID+"-"+catalog.parts[i].key;
             cameraController.Focus(b.bounds,2);
         }

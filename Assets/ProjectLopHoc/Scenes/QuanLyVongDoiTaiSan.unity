@@ -468,8 +468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S012
---- !u!64 &78774762
-MeshCollider:
+--- !u!65 &78774762
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -486,10 +486,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 21bef37f76ff7e344b267c36dbc05217, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.279, y: 0.511477, z: 11.5171}
+  m_Center: {x: 116.567, y: 0.255733, z: -29.521}
 --- !u!23 &78774763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -755,8 +754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S005
---- !u!64 &111650990
-MeshCollider:
+--- !u!65 &111650990
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -773,10 +772,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 79222ac6730b7f24f8c98a22c9497413, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5259, y: 0.511477, z: 10.4252}
+  m_Center: {x: -84.7731, y: 0.255735, z: 30.938}
 --- !u!23 &111650991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1346,8 +1344,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S009
---- !u!64 &165139630
-MeshCollider:
+--- !u!65 &165139630
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1364,10 +1362,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 4f3b2e661f204ac4ab4e172e994e18e0, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.3866, y: 0.513874, z: 11.0566}
+  m_Center: {x: 30.5594, y: 0.256756, z: -2.59848}
 --- !u!23 &165139631
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2263,8 +2260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S012
---- !u!64 &264157298
-MeshCollider:
+--- !u!65 &264157298
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2281,10 +2278,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: af886067a65928647badc3a3b8135ba3, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.3074, y: 0.511476, z: 11.5259}
+  m_Center: {x: 114.593, y: 0.255736, z: -35.6094}
 --- !u!23 &264157299
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2390,8 +2386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S017
---- !u!64 &267413716
-MeshCollider:
+--- !u!65 &267413716
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2408,10 +2404,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: f438422b0ddd40d4984dcfe4d9ddc3a0, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 20.635, y: 0.511475, z: 9.19347}
+  m_Center: {x: 254.6, y: 0.255735, z: -75.7067}
 --- !u!23 &267413717
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3327,8 +3322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S014
---- !u!64 &391206121
-MeshCollider:
+--- !u!65 &391206121
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3345,10 +3340,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 9878346cf51ba7b4da25eec6b0232d2e, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.2459, y: 0.512137, z: 11.8}
+  m_Center: {x: 171.62, y: 0.25564, z: -54.2765}
 --- !u!23 &391206122
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3964,8 +3958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S008
---- !u!64 &503202130
-MeshCollider:
+--- !u!65 &503202130
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3982,10 +3976,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 35e1e7006dfef214fb30238a9b3d23cc, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.4243, y: 0.511477, z: 10.8852}
+  m_Center: {x: 1.86535, y: 0.257954, z: 6.0228}
 --- !u!23 &503202131
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4091,8 +4084,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S001
---- !u!64 &508237337
-MeshCollider:
+--- !u!65 &508237337
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4109,10 +4102,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: f934258ec86cab64aa08501175c398c3, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.6166, y: 0.511476, z: 10.1432}
+  m_Center: {x: -202.266, y: 0.255736, z: 56.442}
 --- !u!23 &508237338
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4360,8 +4352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S013
---- !u!64 &529848673
-MeshCollider:
+--- !u!65 &529848673
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4378,10 +4370,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: e9fa1c14a53df0d498b9633c7671ddaa, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.2773, y: 0.51172, z: 11.6645}
+  m_Center: {x: 143.129, y: 0.255701, z: -44.8728}
 --- !u!23 &529848674
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7081,8 +7072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S006
---- !u!64 &836915379
-MeshCollider:
+--- !u!65 &836915379
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7099,10 +7090,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 35aad1aab92561d478871457f04e5459, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.4998, y: 0.511477, z: 10.5513}
+  m_Center: {x: -55.9256, y: 0.255735, z: 22.8096}
 --- !u!23 &836915380
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7208,8 +7198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S004
---- !u!64 &846272500
-MeshCollider:
+--- !u!65 &846272500
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7226,10 +7216,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: f51ec691df7a820479bc2ef5c1c08a06, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5821, y: 0.511475, z: 10.3461}
+  m_Center: {x: -115.424, y: 0.255736, z: 32.8062}
 --- !u!23 &846272501
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7472,8 +7461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S008
---- !u!64 &885417452
-MeshCollider:
+--- !u!65 &885417452
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7490,10 +7479,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 2d646616852fec44bae418faef1b4b4d, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.4585, y: 0.511477, z: 10.8955}
+  m_Center: {x: -0.0228376, y: 0.255736, z: -0.0926738}
 --- !u!23 &885417453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7599,8 +7587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S005
---- !u!64 &891278745
-MeshCollider:
+--- !u!65 &891278745
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7617,10 +7605,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 902b5d2dc44909f41b2fd98853bcb010, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5455, y: 0.511477, z: 10.431}
+  m_Center: {x: -86.5202, y: 0.255736, z: 24.7809}
 --- !u!23 &891278746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7804,8 +7791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S003
---- !u!64 &905517339
-MeshCollider:
+--- !u!65 &905517339
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7822,10 +7809,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: aacd8a1f5902d7a4fa82c70122f8d73d, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5892, y: 0.511476, z: 10.2802}
+  m_Center: {x: -144.362, y: 0.255737, z: 40.7556}
 --- !u!23 &905517340
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7931,8 +7917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S014
---- !u!64 &924291871
-MeshCollider:
+--- !u!65 &924291871
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7949,10 +7935,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: b8c02e3a944b6744a964c2134fcaff05, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.409, y: 0.514015, z: 11.8543}
+  m_Center: {x: 173.628, y: 0.254467, z: -48.2002}
 --- !u!23 &924291872
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8058,8 +8043,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S007
---- !u!64 &926291763
-MeshCollider:
+--- !u!65 &926291763
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8076,10 +8061,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 5602ede80c3a62d40872b5de68d5fd78, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5002, y: 0.511475, z: 10.7194}
+  m_Center: {x: -28.8089, y: 0.255736, z: 8.36207}
 --- !u!23 &926291764
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8549,8 +8533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S013
---- !u!64 &1001247698
-MeshCollider:
+--- !u!65 &1001247698
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8567,10 +8551,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 42157f23a6e08f246932b24d50771e6a, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.2509, y: 0.512414, z: 11.6558}
+  m_Center: {x: 145.072, y: 0.255263, z: -38.7747}
 --- !u!23 &1001247699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10852,8 +10835,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S009
---- !u!64 &1312936337
-MeshCollider:
+--- !u!65 &1312936337
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10870,10 +10853,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a8544c7b7c0206e49a507ea135fd0d00, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.4198, y: 0.512101, z: 11.0666}
+  m_Center: {x: 28.7088, y: 0.255645, z: -8.72519}
 --- !u!23 &1312936338
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12160,8 +12142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S002
---- !u!64 &1429457478
-MeshCollider:
+--- !u!65 &1429457478
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12178,10 +12160,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: b6324555328baf240a4e56b3eb3fde00, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5855, y: 0.511477, z: 10.208}
+  m_Center: {x: -173.306, y: 0.255736, z: 48.6341}
 --- !u!23 &1429457479
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12968,8 +12949,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S002
---- !u!64 &1469738519
-MeshCollider:
+--- !u!65 &1469738519
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12986,10 +12967,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 4a584a102b27f444994031e3ac8666e2, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5718, y: 0.511478, z: 10.2045}
+  m_Center: {x: -171.627, y: 0.255735, z: 54.8099}
 --- !u!23 &1469738520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13095,8 +13075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S011
---- !u!64 &1471525331
-MeshCollider:
+--- !u!65 &1471525331
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13113,10 +13093,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 77d856fd541709746a7f17cb0dfaeeba, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.3095, y: 0.51387, z: 11.3704}
+  m_Center: {x: 88.0192, y: 0.254537, z: -20.4135}
 --- !u!23 &1471525332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13692,8 +13671,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S010
---- !u!64 &1546733388
-MeshCollider:
+--- !u!65 &1546733388
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13710,10 +13689,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 97a7a84234de91f439a4b662effac19b, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.3474, y: 0.511477, z: 11.2165}
+  m_Center: {x: 59.2023, y: 0.257956, z: -11.39}
 --- !u!23 &1546733389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14385,8 +14363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S015
---- !u!64 &1624291529
-MeshCollider:
+--- !u!65 &1624291529
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14403,10 +14381,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 2fd1c6773bd51644380c9a00c7cff575, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.2025, y: 0.511477, z: 11.9214}
+  m_Center: {x: 200.064, y: 0.255736, z: -63.8128}
 --- !u!23 &1624291530
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14739,8 +14716,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S016
---- !u!64 &1681817758
-MeshCollider:
+--- !u!65 &1681817758
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14757,10 +14734,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d0abe15cc6d446248a69288735246eba, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.1713, y: 0.511476, z: 12.0425}
+  m_Center: {x: 228.463, y: 0.255736, z: -73.4744}
 --- !u!23 &1681817759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14956,8 +14932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S015
---- !u!64 &1698090056
-MeshCollider:
+--- !u!65 &1698090056
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14974,10 +14950,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0cf975ed58744684cbd9b5235d8a7ac7, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.1791, y: 0.511477, z: 11.9134}
+  m_Center: {x: 202.139, y: 0.255736, z: -57.7586}
 --- !u!23 &1698090057
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15173,8 +15148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S017
---- !u!64 &1725809171
-MeshCollider:
+--- !u!65 &1725809171
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15191,10 +15166,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 979a3310e443c9a4696775cf841d0290, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 20.6507, y: 0.511475, z: 9.19872}
+  m_Center: {x: 252.574, y: 0.255736, z: -81.7776}
 --- !u!23 &1725809172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15437,8 +15411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S007
---- !u!64 &1732200468
-MeshCollider:
+--- !u!65 &1732200468
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15455,10 +15429,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 5f0efa21d31816744a8c1c13964c0762, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.7072, y: 0.513695, z: 10.7799}
+  m_Center: {x: -27.0032, y: 0.256844, z: 14.5015}
 --- !u!23 &1732200469
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15677,8 +15650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S004
---- !u!64 &1773954316
-MeshCollider:
+--- !u!65 &1773954316
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15695,10 +15668,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0cb176ed9652c3749b064abaedce4f95, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.6856, y: 0.511475, z: 10.3746}
+  m_Center: {x: -113.716, y: 0.255735, z: 38.974}
 --- !u!23 &1773954317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15958,8 +15930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S011
---- !u!64 &1791829977
-MeshCollider:
+--- !u!65 &1791829977
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15976,10 +15948,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: fd17c9d4ad159434798a2ecf2be2b701, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.3388, y: 0.512099, z: 11.3798}
+  m_Center: {x: 86.0143, y: 0.255645, z: -26.4917}
 --- !u!23 &1791829978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16288,8 +16259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S001
---- !u!64 &1816356543
-MeshCollider:
+--- !u!65 &1816356543
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16306,10 +16277,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 5b3f2996a7e3bd7478c14c2124c6c049, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.602, y: 0.511476, z: 10.1393}
+  m_Center: {x: -200.572, y: 0.255735, z: 62.6137}
 --- !u!23 &1816356544
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16947,8 +16917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S016
---- !u!64 &1921623355
-MeshCollider:
+--- !u!65 &1921623355
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16965,10 +16935,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 56beb3dc16966a84cb9340773092e3eb, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.1479, y: 0.511476, z: 12.0341}
+  m_Center: {x: 230.512, y: 0.255736, z: -67.4112}
 --- !u!23 &1921623356
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17495,8 +17464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TL-S003
---- !u!64 &1960757234
-MeshCollider:
+--- !u!65 &1960757234
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17513,10 +17482,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 2879668eb73127d41810b16e80eb3075, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5765, y: 0.511476, z: 10.2768}
+  m_Center: {x: -142.698, y: 0.255736, z: 46.9354}
 --- !u!23 &1960757235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17687,8 +17655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S006
---- !u!64 &1972549390
-MeshCollider:
+--- !u!65 &1972549390
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17705,10 +17673,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 63aff209d3b97664d9de063e7febeb1a, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.5281, y: 0.511476, z: 10.5594}
+  m_Center: {x: -57.6458, y: 0.255736, z: 16.6449}
 --- !u!23 &1972549391
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18272,8 +18239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BimAssetProxy
   assetID: Z021-TR-S010
---- !u!64 &2007414800
-MeshCollider:
+--- !u!65 &2007414800
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18290,10 +18257,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 15e0e32989754014eaab95651fefbbb2, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 29.3787, y: 0.511477, z: 11.226}
+  m_Center: {x: 57.3869, y: 0.255736, z: -17.5276}
 --- !u!23 &2007414801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20243,8 +20209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_52
---- !u!64 &3978088264448823178
-MeshCollider:
+--- !u!65 &3978088264448823178
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20261,10 +20227,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7c9d8eb335126d7488a20f4ef720142e, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 3, y: 2.452, z: 0.321}
+  m_Center: {x: 1.5, y: 1.226, z: -0.1605}
 --- !u!4 &4234447483483391367
 Transform:
   m_ObjectHideFlags: 0
@@ -20529,8 +20494,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_54
---- !u!64 &6701688453880404685
-MeshCollider:
+--- !u!65 &6701688453880404685
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20547,10 +20512,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 88a0970ed26fdf34483f74cc226e80fe, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.39556, y: 1.98431, z: 0.092}
+  m_Center: {x: 1.48921, y: 1.22719, z: -0.276911}
 --- !u!1 &6813076151504535906
 GameObject:
   m_ObjectHideFlags: 0
@@ -20611,8 +20575,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_59
---- !u!64 &6857751379071591929
-MeshCollider:
+--- !u!65 &6857751379071591929
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20629,10 +20593,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: b43d6cd16c512814688b48cd265c9718, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.1345, y: 1.72278, z: 0.121251}
+  m_Center: {x: 1.491, y: 1.22609, z: -0.326805}
 --- !u!33 &6873802809046676842
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20721,8 +20684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_58
---- !u!64 &7412325600436566831
-MeshCollider:
+--- !u!65 &7412325600436566831
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20739,10 +20702,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: c3738694f50862a4782194c6a59bfa16, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.25081, y: 1.76943, z: 0.0547917}
+  m_Center: {x: 1.49584, y: 1.22626, z: -0.396108}
 --- !u!33 &7448330389283614127
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20859,8 +20821,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_60
---- !u!64 &7616380724570124416
-MeshCollider:
+--- !u!65 &7616380724570124416
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20877,10 +20839,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a232af639b974304d95de06f97a38fa7, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.3503, y: 1.94116, z: 0.157997}
+  m_Center: {x: 1.48923, y: 1.22751, z: -0.30991}
 --- !u!4 &7874438437369990478
 Transform:
   m_ObjectHideFlags: 0
@@ -20982,8 +20943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_62
---- !u!64 &8534137750269109166
-MeshCollider:
+--- !u!65 &8534137750269109166
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21000,10 +20961,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0c30d5ab5194ec943af05fa6ae9105c2, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.39264, y: 1.98014, z: 0.05}
+  m_Center: {x: 1.48921, y: 1.22531, z: -0.321956}
 --- !u!23 &8645249440114610832
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21082,8 +21042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_57
---- !u!64 &8645249440114610835
-MeshCollider:
+--- !u!65 &8645249440114610835
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21100,10 +21060,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: fa28a6c1c84459f45a94174f11459317, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.21, y: 1.79815, z: 0.05}
+  m_Center: {x: 1.49141, y: 1.22609, z: -0.372329}
 --- !u!23 &8706746948412715910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21182,8 +21141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_61
---- !u!64 &8706746948412715913
-MeshCollider:
+--- !u!65 &8706746948412715913
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21200,10 +21159,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 227f909d214995b4aab00ac85b0c1871, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.16201, y: 1.7473, z: 0.213189}
+  m_Center: {x: 1.48324, y: 1.22609, z: -0.337506}
 --- !u!23 &8726824411321026148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21282,8 +21240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_55
---- !u!64 &8726824411321026151
-MeshCollider:
+--- !u!65 &8726824411321026151
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21300,10 +21258,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 28df488980963394b843269487375264, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.365, y: 1.9596, z: 0.05}
+  m_Center: {x: 1.48368, y: 1.22609, z: -0.234811}
 --- !u!1 &9029136198398882927
 GameObject:
   m_ObjectHideFlags: 0
@@ -21354,8 +21311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_56
---- !u!64 &9029136198398882930
-MeshCollider:
+--- !u!65 &9029136198398882930
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21372,10 +21329,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a5f84126619aab94190270cd1de0c297, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.283, y: 1.64341, z: 0.05}
+  m_Center: {x: 1.49032, y: 1.22609, z: -0.369426}
 --- !u!1 &9038434789418752831
 GameObject:
   m_ObjectHideFlags: 0
@@ -21426,8 +21382,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_53
---- !u!64 &9038434789418752834
-MeshCollider:
+--- !u!65 &9038434789418752834
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21444,10 +21400,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a2bd10bc17472874db4600d754d2dfdc, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1.63499, z: 0.14857}
+  m_Center: {x: 1.5, y: 1.2261, z: -0.448826}
 --- !u!4 &9170033588909659976
 Transform:
   m_ObjectHideFlags: 0
@@ -21492,8 +21447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementIdentity
   elementID: QLVDTS-Z021-R-M001/Mesh_51
---- !u!64 &9170033588909659979
-MeshCollider:
+--- !u!65 &9170033588909659979
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21510,10 +21465,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0dbf6f0fc82229945a21c63ff0528774, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 2.469, y: 2.05191, z: 0.122}
+  m_Center: {x: 1.48887, y: 1.22609, z: -0.261911}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
