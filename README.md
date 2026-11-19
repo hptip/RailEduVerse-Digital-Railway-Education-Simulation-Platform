@@ -40,15 +40,14 @@ Nhóm đặt ra bốn mục tiêu:
 - Gắn dữ liệu quản lý tài sản vào từng cấu kiện của mô hình BIM, theo đủ sáu giai đoạn trong vòng đời công trình.
 - Bổ sung trợ lý AI để người học hỏi đáp bằng văn bản hoặc giọng nói ngay trong ứng dụng.
 ## 3. Video minh họa
-
+ 
 <div align="center">
-
 <a href="https://www.youtube.com/watch?v=_0SgPpTBWhc">
   <img src="https://github.com/user-attachments/assets/191c5aed-e6f9-43bf-9703-cd5df0602746" alt="Video minh họa RailEduVerse" width="85%">
 </a>
-
+ 
 Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
-
+ 
 </div>
 ## 4. Hình ảnh trình diễn
  
@@ -103,13 +102,13 @@ Theo nhóm, ứng dụng có thể đưa vào sử dụng trong các trường h
  
 ```mermaid
 flowchart LR
-    A[Đăng nhập] --> B[Khuôn viên UTT]
-    B --> C[Lớp học]
-    B --> D[Phòng trưng bày]
-    B --> E[Tuyến Yên Tử – Hạ Long]
-    B --> F[Quản lý vòng đời tài sản]
-    D --> G[Trợ lý AI]
-    F --> H[(SQLite / Excel)]
+    A["Đăng nhập"] --> B["Khuôn viên UTT"]
+    B --> C["Lớp học"]
+    B --> D["Phòng trưng bày"]
+    B --> E["Tuyến Yên Tử - Hạ Long"]
+    B --> F["Quản lý vòng đời tài sản"]
+    D --> G["Trợ lý AI"]
+    F --> H[("SQLite / Excel")]
 ```
  
 | Hạng mục | Công nghệ |
@@ -171,3 +170,4 @@ Documentation/            Tài liệu kỹ thuật của từng phân hệ
 | 2 | Nguyễn Duy Anh |
 | 3 | Đinh Cao Hùng |
 | 4 | Bùi Đoàn Tiến Dũng |
+ 
