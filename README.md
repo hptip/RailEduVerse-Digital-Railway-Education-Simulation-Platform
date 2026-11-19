@@ -40,12 +40,15 @@ Nhóm đặt ra bốn mục tiêu:
 - Gắn dữ liệu quản lý tài sản vào từng cấu kiện của mô hình BIM, theo đủ sáu giai đoạn trong vòng đời công trình.
 - Bổ sung trợ lý AI để người học hỏi đáp bằng văn bản hoặc giọng nói ngay trong ứng dụng.
 ## 3. Video minh họa
- 
+
 <div align="center">
-[![Video minh họa RailEduVerse](https://img.youtube.com/vi/_0SgPpTBWhc/maxresdefault.jpg)](https://www.youtube.com/watch?v=_0SgPpTBWhc)
- 
+
+<a href="https://www.youtube.com/watch?v=_0SgPpTBWhc">
+  <img src="https://github.com/user-attachments/assets/191c5aed-e6f9-43bf-9703-cd5df0602746" alt="Video minh họa RailEduVerse" width="85%">
+</a>
+
 Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
- 
+
 </div>
 ## 4. Hình ảnh trình diễn
  
@@ -55,17 +58,17 @@ Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="LINK_ANH_1" alt="Chạy tàu trong buồng lái" width="100%"><br>
+      <img src="https://github.com/user-attachments/assets/96fbf8f9-7afc-4893-ada0-5009654bf2fe" alt="Chạy tàu trong buồng lái" width="100%"><br>
       <sub>Hình 1. Khách tham quan chạy thử tàu trên tuyến Yên Tử – Hạ Long</sub>
     </td>
     <td align="center" width="50%">
-      <img src="LINK_ANH_2" alt="Menu chọn không gian" width="100%"><br>
+      <img src="https://github.com/user-attachments/assets/79330740-cbd6-47a3-b4c7-d7759e8f4c04" alt="Menu chọn không gian" width="100%"><br>
       <sub>Hình 2. Menu chọn không gian hiển thị trong kính</sub>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="LINK_ANH_3" alt="Mô hình BIM đường ray" width="70%"><br>
+      <img src="https://github.com/user-attachments/assets/b48ae326-35c7-46dd-bdbc-9709188b4778" alt="Mô hình BIM đường ray" width="70%"><br>
       <sub>Hình 3. Quan sát mô hình BIM đường ray ở cự ly gần</sub>
     </td>
   </tr>
@@ -168,4 +171,3 @@ Documentation/            Tài liệu kỹ thuật của từng phân hệ
 | 2 | Nguyễn Duy Anh |
 | 3 | Đinh Cao Hùng |
 | 4 | Bùi Đoàn Tiến Dũng |
- 
