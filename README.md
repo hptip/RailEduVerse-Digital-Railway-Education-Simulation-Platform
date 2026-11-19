@@ -1,145 +1,142 @@
 <div align="center">
 # RailEduVerse
  
-**Nền tảng mô phỏng và đào tạo đường sắt trên thực tế ảo kết hợp BIM**
+**A Virtual Reality and BIM Platform for Railway Education and Simulation**
  
-Digital Railway Education and Simulation Platform
- 
-Trường Đại học Công nghệ Giao thông Vận tải
+University of Transport Technology (UTT), Hanoi, Vietnam
  
 </div>
 ---
  
-## Mục lục
+## Table of Contents
  
-1. [Giới thiệu](#gioi-thieu)
-2. [Lý do thực hiện và mục tiêu](#muc-tieu)
-3. [Video minh họa](#video)
-4. [Hình ảnh trình diễn](#hinh-anh)
-5. [Các phân hệ chính](#phan-he)
-6. [Ứng dụng thực tế](#ung-dung)
-7. [Công nghệ sử dụng](#cong-nghe)
-8. [Cài đặt và chạy thử](#cai-dat)
-9. [Nhóm thực hiện](#nhom-thuc-hien)
+1. [Introduction](#introduction)
+2. [Motivation and Objectives](#objectives)
+3. [Demo Video](#video)
+4. [Exhibition Photos](#photos)
+5. [Main Modules](#modules)
+6. [Real-World Applications](#applications)
+7. [Technology](#technology)
+8. [Installation](#installation)
+9. [Team](#team)
 ---
  
-<a id="gioi-thieu"></a>
+<a id="introduction"></a>
  
-## 1. Giới thiệu
+## 1. Introduction
  
-RailEduVerse là ứng dụng thực tế ảo do nhóm sinh viên Trường Đại học Công nghệ Giao thông Vận tải phát triển, dùng cho việc dạy học và trình diễn trong lĩnh vực đường sắt. Ứng dụng chạy trực tiếp trên kính Meta Quest 3/3S và có thể dùng trên máy tính.
+RailEduVerse is a virtual reality application developed by a student team at the University of Transport Technology (UTT) for teaching and demonstration in the railway field. It runs standalone on Meta Quest 3/3S headsets and can also be used on a PC.
  
-Sau khi đăng nhập, người dùng có thể vào lớp học ảo, xem mô hình đoàn tàu trong phòng trưng bày, ngồi buồng lái chạy tàu trên tuyến Yên Tử – Hạ Long, hoặc mở mô hình BIM của đường ray để xem thông tin từng cấu kiện, từ khâu quy hoạch, thi công cho đến bảo trì và nâng cấp.
+After signing in, users can attend a virtual classroom, look at train models in a showroom, drive a train from the cab along the Yen Tu – Ha Long line, or open the BIM model of the track to inspect each component and its records, from planning and construction through to maintenance and upgrades.
  
-<a id="muc-tieu"></a>
+<a id="objectives"></a>
  
-## 2. Lý do thực hiện và mục tiêu
+## 2. Motivation and Objectives
  
-Sinh viên ngành đường sắt cần được nhìn tận mắt kết cấu đường ray, đoàn tàu và cách vận hành, nhưng việc đưa sinh viên ra hiện trường tốn kém, khó sắp xếp và không phải lúc nào cũng an toàn. Bên cạnh đó, hồ sơ quản lý tài sản hạ tầng hiện nay phần lớn vẫn nằm trên giấy tờ và bảng tính, rất khó hình dung khi không gắn với mô hình công trình.
+Railway engineering students need to see track structures, rolling stock and train operation for themselves, but site visits are expensive, hard to schedule and not always safe. At the same time, infrastructure asset records are still kept mostly on paper and in spreadsheets, which makes them difficult to interpret without a link to the physical structure.
  
-Nhóm đặt ra bốn mục tiêu:
+The team set four objectives:
  
-- Xây dựng môi trường học tập 3D gồm nhiều không gian, chạy độc lập trên kính VR mà không cần máy tính đi kèm.
-- Mô phỏng tuyến đường sắt và buồng lái để người học làm quen với việc điều khiển tàu.
-- Gắn dữ liệu quản lý tài sản vào từng cấu kiện của mô hình BIM, theo đủ sáu giai đoạn trong vòng đời công trình.
-- Bổ sung trợ lý AI để người học hỏi đáp bằng văn bản hoặc giọng nói ngay trong ứng dụng.
+- Build a multi-space 3D learning environment that runs standalone on a VR headset, with no PC required.
+- Simulate a railway line and a driver's cab so that learners can practise controlling a train.
+- Attach asset management data to every component of the BIM model, covering all six stages of the asset life cycle.
+- Add an AI assistant that learners can question by text or voice inside the application.
 <a id="video"></a>
  
-## 3. Video minh họa
+## 3. Demo Video
  
 <div align="center">
 <a href="https://www.youtube.com/watch?v=_0SgPpTBWhc">
-  <img src="https://github.com/user-attachments/assets/191c5aed-e6f9-43bf-9703-cd5df0602746" alt="Video minh họa RailEduVerse" width="85%">
+  <img src="https://github.com/user-attachments/assets/191c5aed-e6f9-43bf-9703-cd5df0602746" alt="RailEduVerse demo video" width="85%">
 </a>
- 
-Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
+Watch on YouTube: https://www.youtube.com/watch?v=_0SgPpTBWhc
  
 </div>
-<a id="hinh-anh"></a>
+<a id="photos"></a>
  
-## 4. Hình ảnh trình diễn
+## 4. Exhibition Photos
  
-Ứng dụng đã được nhóm mang đi trình diễn tại gian trưng bày Công nghệ UAV, BIM, IoT của Nhà trường trong buổi Triển lãm sản phẩm khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số ngành Xây dựng năm 2026. Khách tham quan trải nghiệm trực tiếp bằng kính Meta Quest 3S, hình ảnh trong kính được chiếu lên màn hình lớn.
+The team presented the application at the UAV, BIM and IoT Technology booth of the University during the [2026 Exhibition of Science and Technology, Innovation and Digital Transformation Products in the Construction Sector](https://www.utt.edu.vn/vn/utt/tin-tuc/utt-tham-gia-trien-lam-san-pham-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-nganh-xay-dung-nam-2026-a17467.html). Visitors tried it on a Meta Quest 3S headset while the headset view was mirrored to a large screen.
  
 <div align="center">
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="https://github.com/user-attachments/assets/96fbf8f9-7afc-4893-ada0-5009654bf2fe" alt="Chạy tàu trong buồng lái" width="100%"><br>
-      <sub>Hình 1. Khách tham quan chạy thử tàu trên tuyến Yên Tử – Hạ Long</sub>
+      <img src="https://github.com/user-attachments/assets/96fbf8f9-7afc-4893-ada0-5009654bf2fe" alt="Driving the train from the cab" width="100%"><br>
+      <sub>Figure 1. A visitor driving the train on the Yen Tu – Ha Long line</sub>
     </td>
     <td align="center" width="50%">
-      <img src="https://github.com/user-attachments/assets/79330740-cbd6-47a3-b4c7-d7759e8f4c04" alt="Menu chọn không gian" width="100%"><br>
-      <sub>Hình 2. Menu chọn không gian hiển thị trong kính</sub>
+      <img src="https://github.com/user-attachments/assets/79330740-cbd6-47a3-b4c7-d7759e8f4c04" alt="Space selection menu" width="100%"><br>
+      <sub>Figure 2. The space selection menu inside the headset</sub>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="https://github.com/user-attachments/assets/b48ae326-35c7-46dd-bdbc-9709188b4778" alt="Mô hình BIM đường ray" width="70%"><br>
-      <sub>Hình 3. Quan sát mô hình BIM đường ray ở cự ly gần</sub>
+      <img src="https://github.com/user-attachments/assets/b48ae326-35c7-46dd-bdbc-9709188b4778" alt="BIM model of the railway track" width="70%"><br>
+      <sub>Figure 3. Close-up inspection of the BIM track model</sub>
     </td>
   </tr>
 </table>
 </div>
-<a id="phan-he"></a>
+<a id="modules"></a>
  
-## 5. Các phân hệ chính
+## 5. Main Modules
  
-Ứng dụng có năm không gian. Người dùng mở menu bằng phím F1 trên máy tính hoặc nút Y trên tay cầm trái để chuyển qua lại.
+The application has five spaces. Users switch between them from a shared menu, opened with F1 on a PC or the Y button on the left controller.
  
-| Không gian | Nội dung |
+| Space | Description |
 |---|---|
-| Khuôn viên UTT | Mô phỏng khuôn viên trường. Người dùng vào đây sau khi đăng nhập với vai trò sinh viên, giảng viên hoặc quản trị viên. |
-| Lớp học | Giảng viên chiếu bài giảng lên bảng trong phòng học ảo, chuyển slide thì mọi người trong phòng cùng thấy. Sinh viên làm bài trắc nghiệm ngay trong kính. |
-| Phòng trưng bày | Mô hình các đoàn tàu kèm bảng thông số. Sa bàn thu nhỏ tuyến Yên Tử – Hạ Long có tàu chạy, chỉnh được tốc độ từ x1 đến x4 và bật, tắt tám lớp bản đồ. Robot trợ lý đi theo người dùng, nhận câu hỏi bằng bàn phím hoặc micro và đọc câu trả lời thành tiếng. |
-| Tuyến Yên Tử – Hạ Long | Lái tàu từ buồng lái, có đồng hồ tốc độ (tối đa 200 km/h), hoặc chuyển sang góc nhìn bên ngoài đoàn tàu. Tuyến được chia thành 58 đoạn và chỉ tải phần quanh vị trí tàu, nhờ vậy kính VR vẫn chạy mượt. |
-| Quản lý vòng đời tài sản | Mô hình BIM của hai đường ray được chia thành 34 phân đoạn, 334 mô-đun và 33.066 cấu kiện. Mỗi cấu kiện có hồ sơ riêng cho sáu giai đoạn: quy hoạch, thiết kế, thi công, vận hành, bảo trì và nâng cấp. Người dùng có thể ghi kết quả kiểm tra, công việc bảo trì và chi phí. Dữ liệu được lưu bằng SQLite và có thể nhập từ hoặc xuất ra file Excel. |
+| UTT Campus | A model of the university campus. Users arrive here after signing in as a student, lecturer or administrator. |
+| Classroom | The lecturer presents slides on a board in the virtual classroom, and everyone in the room sees each slide change. Students take quizzes directly in the headset. |
+| Showroom | Train models with specification panels. A miniature model of the Yen Tu – Ha Long line has a running train, speed control from x1 to x4 and eight map layers that can be switched on and off. A robot assistant follows the user, takes questions from the keyboard or microphone and reads its answers aloud. |
+| Yen Tu – Ha Long Line | Drive the train from the cab with a speedometer (up to 200 km/h), or switch to an external view of the train. The line is divided into 58 sections and only the sections around the train are loaded, which keeps the frame rate smooth on the headset. |
+| Asset Life Cycle Management | The BIM model of the two tracks is organised into 34 segments, 334 modules and 33,066 components. Each component has its own record for six stages: planning, design, construction, operation, maintenance and upgrade. Users can log inspection results, maintenance work and costs. Data is stored in SQLite and can be imported from or exported to Excel. |
  
-Một số điểm khác:
+Other notes:
  
-- Toàn bộ giao diện bằng tiếng Việt. Trong kính có bàn phím ảo gõ được đầy đủ dấu tiếng Việt.
-- Mỗi cấu kiện có mã định danh cố định (ví dụ `Z021-TR-S001-B001-C005`), nên dữ liệu nhập từ Excel luôn khớp đúng đối tượng. Trước khi ghi vào cơ sở dữ liệu, file Excel được kiểm tra mã, kiểu dữ liệu và ngày tháng; nếu có lỗi thì toàn bộ lần nhập được hủy.
-- Ứng dụng đã tích hợp Photon Fusion để mở rộng sang lớp học nhiều người dùng. Bản trình diễn hiện tại chạy ở chế độ offline.
-<a id="ung-dung"></a>
+- The interface is fully localised in Vietnamese, including an on-screen keyboard in the headset that supports Vietnamese diacritics.
+- Every component has a fixed identifier (for example `Z021-TR-S001-B001-C005`), so data imported from Excel always matches the right object. Before anything is written to the database, the Excel file is checked for valid IDs, data types and dates; if any error is found, the whole import is rolled back.
+- Photon Fusion is already integrated so the classroom can be extended to multiple users. The current demo build runs in offline mode.
+<a id="applications"></a>
  
-## 6. Ứng dụng thực tế
+## 6. Real-World Applications
  
-Theo nhóm, ứng dụng có thể đưa vào sử dụng trong các trường hợp sau:
+The team sees the following uses for the application:
  
-1. **Giảng dạy chuyên ngành đường sắt.** Giảng viên dùng mô hình 3D để giải thích cấu tạo đường ray và đoàn tàu; sinh viên có thể tự quan sát, xoay, phóng to từng chi tiết thay vì chỉ xem bản vẽ.
-2. **Làm quen với việc vận hành tàu.** Người học thử điều khiển tàu trên tuyến mô phỏng trước khi tiếp xúc với thiết bị thật, không có rủi ro về an toàn.
-3. **Quản lý tài sản hạ tầng.** Đơn vị quản lý có thể tra cứu lịch sử kiểm tra, bảo trì và chi phí của từng cấu kiện ngay trên mô hình, thay cho việc dò tìm trong hồ sơ giấy.
-4. **Giới thiệu dự án đường sắt.** Mô hình tuyến và sa bàn có thể dùng để trình bày phương án tuyến với cơ quan quản lý, đối tác và người dân.
-<a id="cong-nghe"></a>
+1. **Teaching railway engineering.** Lecturers use the 3D models to explain how track and rolling stock are built, and students can examine, rotate and zoom in on each part themselves instead of relying only on drawings.
+2. **Introductory train operation training.** Learners practise driving on a simulated line before working with real equipment, without any safety risk.
+3. **Infrastructure asset management.** Operators can look up the inspection, maintenance and cost history of each component directly on the model, rather than searching through paper files.
+4. **Presenting railway projects.** The line model and the miniature layout can be used to present route options to authorities, partners and local communities.
+<a id="technology"></a>
  
-## 7. Công nghệ sử dụng
+## 7. Technology
  
 ```mermaid
 flowchart LR
-    A["Đăng nhập"] --> B["Khuôn viên UTT"]
-    B --> C["Lớp học"]
-    B --> D["Phòng trưng bày"]
-    B --> E["Tuyến Yên Tử - Hạ Long"]
-    B --> F["Quản lý vòng đời tài sản"]
-    D --> G["Trợ lý AI"]
+    A["Sign in"] --> B["UTT Campus"]
+    B --> C["Classroom"]
+    B --> D["Showroom"]
+    B --> E["Yen Tu - Ha Long Line"]
+    B --> F["Asset Life Cycle Management"]
+    D --> G["AI Assistant"]
     F --> H[("SQLite / Excel")]
 ```
  
-| Hạng mục | Công nghệ |
+| Area | Technology |
 |---|---|
-| Phát triển ứng dụng | Unity 6 (6000.3.0f1), Universal Render Pipeline |
-| Thực tế ảo | OpenXR, Meta OpenXR, XR Interaction Toolkit 3.7 |
-| Kết nối nhiều người dùng | Photon Fusion |
-| Dữ liệu BIM | SQLite (sqlite-net), ExcelDataReader |
-| Xử lý mô hình 3D | Pixyz, FBX, Unity Splines, ProBuilder |
-| Trợ lý AI | Mô hình ngôn ngữ lớn gọi qua Cloudflare Worker, nhận dạng và tổng hợp giọng nói |
-| Máy chủ quản lý lớp học | Python Flask, SQLite |
+| Application development | Unity 6 (6000.3.0f1), Universal Render Pipeline |
+| Virtual reality | OpenXR, Meta OpenXR, XR Interaction Toolkit 3.7 |
+| Multiplayer | Photon Fusion |
+| BIM data | SQLite (sqlite-net), ExcelDataReader |
+| 3D model processing | Pixyz, FBX, Unity Splines, ProBuilder |
+| AI assistant | Large language model via Cloudflare Worker, speech recognition and text-to-speech |
+| Classroom management server | Python Flask, SQLite |
  
-<a id="cai-dat"></a>
+<a id="installation"></a>
  
-## 8. Cài đặt và chạy thử
+## 8. Installation
  
-Cần có Unity 6000.3.0f1 và Git LFS. Kính Meta Quest 3/3S chỉ cần khi muốn chạy trên thiết bị.
+Requirements: Unity 6000.3.0f1 and Git LFS. A Meta Quest 3/3S headset is only needed to run the app on the device.
  
 ```bash
 git lfs install
@@ -148,41 +145,41 @@ cd RailEduVerse-Digital-Railway-Education-Simulation-Platform
 git lfs pull
 ```
  
-1. Mở thư mục dự án bằng Unity Hub, chọn phiên bản 6000.3.0f1.
-2. Mở scene `Assets/ProjectLopHoc/Scenes/Login.unity` rồi nhấn Play.
-3. Để cài lên kính: vào File > Build Profiles, chọn Android, cắm kính Meta Quest qua cáp USB rồi chọn Build And Run.
-**Điều khiển**
+1. Open the project folder in Unity Hub with version 6000.3.0f1.
+2. Open the scene `Assets/ProjectLopHoc/Scenes/Login.unity` and press Play.
+3. To install on the headset, go to File > Build Profiles, select Android, connect the Meta Quest by USB and choose Build And Run.
+**Controls**
  
-| Thao tác | Máy tính | Kính Meta Quest |
+| Action | PC | Meta Quest |
 |---|---|---|
-| Mở menu chọn không gian | F1 | Nút Y (tay trái) |
-| Chọn đối tượng, bấm nút | Chuột trái | Nút trigger |
-| Xoay và thu phóng góc nhìn | Giữ chuột phải và kéo, cuộn chuột | Quay đầu |
-| Bay tự do khi ẩn giao diện | W, A, S, D, Q, E (giữ Shift để đi nhanh) | Cần điều hướng |
-| Ẩn hoặc hiện giao diện | F2 | Nút X (tay trái) |
+| Open the space selection menu | F1 | Y button (left controller) |
+| Select objects, press buttons | Left mouse button | Trigger |
+| Rotate and zoom the view | Right mouse drag, scroll wheel | Turn your head |
+| Free flight with the UI hidden | W, A, S, D, Q, E (hold Shift to move faster) | Thumbstick |
+| Show or hide the UI | F2 | X button (left controller) |
  
-**Cấu trúc thư mục**
+**Folder structure**
  
 ```
 Assets/
-├── ProjectLopHoc/        Mã nguồn chính
+├── ProjectLopHoc/        Main source code
 │   ├── Scenes/           Login, UTTCampus, Classroom, Showroom, YenTuHaLongXanh, QuanLyVongDoiTaiSan
-│   ├── Features/         Đăng nhập, bài giảng, trắc nghiệm
-│   └── Scripts/          Chạy tàu, tải tuyến theo đoạn, XR, quản lý vòng đời tài sản
-├── ChiTietSaBan/         Xem chi tiết cấu kiện đường ray
-├── ShowroomIntegration/  Sa bàn trong phòng trưng bày
-└── Editor/               Công cụ hỗ trợ dựng scene, kiểm thử và build cho Meta Quest
-Backend/                  Máy chủ quản lý tài khoản và điểm (Flask)
-Documentation/            Tài liệu kỹ thuật của từng phân hệ
+│   ├── Features/         Sign-in, lectures, quizzes
+│   └── Scripts/          Train control, section streaming, XR, asset life cycle management
+├── ChiTietSaBan/         Detailed view of track components
+├── ShowroomIntegration/  Miniature line model in the showroom
+└── Editor/               Scene building, testing and Meta Quest build tools
+Backend/                  Account and score server (Flask)
+Documentation/            Technical documentation for each module
 ```
  
-<a id="nhom-thuc-hien"></a>
+<a id="team"></a>
  
-## 9. Nhóm thực hiện
+## 9. Team
  
-**Giảng viên hướng dẫn:** TS. Nguyễn Duy Cương
+**Supervisor:** Dr. Nguyễn Duy Cương
  
-| STT | Họ và tên |
+| No. | Full name |
 |:---:|---|
 | 1 | Phan Anh Hào |
 | 2 | Nguyễn Duy Anh |
