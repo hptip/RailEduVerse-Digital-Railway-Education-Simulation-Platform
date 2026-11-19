@@ -114,12 +114,6 @@ Theo nhóm, ứng dụng có thể đưa vào sử dụng trong các trường h
  
 ## 7. Công nghệ sử dụng
  
-<div align="center">
-  <img src="LINK_SO_DO" alt="Sơ đồ cấu trúc ứng dụng RailEduVerse" width="90%"><br>
-  <sub>Hình 4. Sơ đồ cấu trúc ứng dụng</sub>
-</div>
-<details>
-<summary>Xem sơ đồ dạng Mermaid</summary>
 ```mermaid
 flowchart LR
     A["Đăng nhập"] --> B["Khuôn viên UTT"]
@@ -131,7 +125,6 @@ flowchart LR
     F --> H[("SQLite / Excel")]
 ```
  
-</details>
 | Hạng mục | Công nghệ |
 |---|---|
 | Phát triển ứng dụng | Unity 6 (6000.3.0f1), Universal Render Pipeline |
