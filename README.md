@@ -49,7 +49,7 @@ Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
 </div>
 ## 4. Hình ảnh trình diễn
  
-Ứng dụng đã được nhóm mang đi trình diễn tại gian trưng bày Công nghệ UAV, BIM, IoT của Nhà trường. Khách tham quan trải nghiệm trực tiếp bằng kính Meta Quest 3S, hình ảnh trong kính được chiếu lên màn hình lớn.
+Ứng dụng đã được nhóm mang đi trình diễn tại gian trưng bày Công nghệ UAV, BIM, IoT của Nhà trường trong buổi Triển lãm sản phẩm khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số ngành Xây dựng năm 2026. Khách tham quan trải nghiệm trực tiếp bằng kính Meta Quest 3S, hình ảnh trong kính được chiếu lên màn hình lớn.
  
 <div align="center">
 <table>
