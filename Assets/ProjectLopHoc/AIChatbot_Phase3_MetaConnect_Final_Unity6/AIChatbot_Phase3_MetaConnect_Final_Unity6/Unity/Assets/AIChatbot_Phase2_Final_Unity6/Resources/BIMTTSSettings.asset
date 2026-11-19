@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BIMTTSSettings
   m_EditorClassIdentifier: 
   proxyUrlEditorWindows: https://bim-tts-proxy.bim4d-ai.workers.dev
-  appKey: 3ccdb7fc342fdae2179073c2fbbfcc36040de5606f9c5c16
+  appKey:
   modelVietnamese: tts-vi
   modelEnglish: tts-en
   vietnameseVoices:
