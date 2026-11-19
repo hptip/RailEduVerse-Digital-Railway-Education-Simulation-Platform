@@ -12,22 +12,26 @@ Trường Đại học Công nghệ Giao thông Vận tải
  
 ## Mục lục
  
-1. [Giới thiệu](#1-giới-thiệu)
-2. [Lý do thực hiện và mục tiêu](#2-lý-do-thực-hiện-và-mục-tiêu)
-3. [Video minh họa](#3-video-minh-họa)
-4. [Hình ảnh trình diễn](#4-hình-ảnh-trình-diễn)
-5. [Các phân hệ chính](#5-các-phân-hệ-chính)
-6. [Ứng dụng thực tế](#6-ứng-dụng-thực-tế)
-7. [Công nghệ sử dụng](#7-công-nghệ-sử-dụng)
-8. [Cài đặt và chạy thử](#8-cài-đặt-và-chạy-thử)
-9. [Nhóm thực hiện](#9-nhóm-thực-hiện)
+1. [Giới thiệu](#gioi-thieu)
+2. [Lý do thực hiện và mục tiêu](#muc-tieu)
+3. [Video minh họa](#video)
+4. [Hình ảnh trình diễn](#hinh-anh)
+5. [Các phân hệ chính](#phan-he)
+6. [Ứng dụng thực tế](#ung-dung)
+7. [Công nghệ sử dụng](#cong-nghe)
+8. [Cài đặt và chạy thử](#cai-dat)
+9. [Nhóm thực hiện](#nhom-thuc-hien)
 ---
+ 
+<a id="gioi-thieu"></a>
  
 ## 1. Giới thiệu
  
 RailEduVerse là ứng dụng thực tế ảo do nhóm sinh viên Trường Đại học Công nghệ Giao thông Vận tải phát triển, dùng cho việc dạy học và trình diễn trong lĩnh vực đường sắt. Ứng dụng chạy trực tiếp trên kính Meta Quest 3/3S và có thể dùng trên máy tính.
  
 Sau khi đăng nhập, người dùng có thể vào lớp học ảo, xem mô hình đoàn tàu trong phòng trưng bày, ngồi buồng lái chạy tàu trên tuyến Yên Tử – Hạ Long, hoặc mở mô hình BIM của đường ray để xem thông tin từng cấu kiện, từ khâu quy hoạch, thi công cho đến bảo trì và nâng cấp.
+ 
+<a id="muc-tieu"></a>
  
 ## 2. Lý do thực hiện và mục tiêu
  
@@ -39,6 +43,8 @@ Nhóm đặt ra bốn mục tiêu:
 - Mô phỏng tuyến đường sắt và buồng lái để người học làm quen với việc điều khiển tàu.
 - Gắn dữ liệu quản lý tài sản vào từng cấu kiện của mô hình BIM, theo đủ sáu giai đoạn trong vòng đời công trình.
 - Bổ sung trợ lý AI để người học hỏi đáp bằng văn bản hoặc giọng nói ngay trong ứng dụng.
+<a id="video"></a>
+ 
 ## 3. Video minh họa
  
 <div align="center">
@@ -49,6 +55,8 @@ Nhóm đặt ra bốn mục tiêu:
 Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
  
 </div>
+<a id="hinh-anh"></a>
+ 
 ## 4. Hình ảnh trình diễn
  
 Ứng dụng đã được nhóm mang đi trình diễn tại gian trưng bày Công nghệ UAV, BIM, IoT của Nhà trường trong buổi Triển lãm sản phẩm khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số ngành Xây dựng năm 2026. Khách tham quan trải nghiệm trực tiếp bằng kính Meta Quest 3S, hình ảnh trong kính được chiếu lên màn hình lớn.
@@ -73,6 +81,8 @@ Xem video tại: https://www.youtube.com/watch?v=_0SgPpTBWhc
   </tr>
 </table>
 </div>
+<a id="phan-he"></a>
+ 
 ## 5. Các phân hệ chính
  
 Ứng dụng có năm không gian. Người dùng mở menu bằng phím F1 trên máy tính hoặc nút Y trên tay cầm trái để chuyển qua lại.
@@ -90,6 +100,8 @@ Một số điểm khác:
 - Toàn bộ giao diện bằng tiếng Việt. Trong kính có bàn phím ảo gõ được đầy đủ dấu tiếng Việt.
 - Mỗi cấu kiện có mã định danh cố định (ví dụ `Z021-TR-S001-B001-C005`), nên dữ liệu nhập từ Excel luôn khớp đúng đối tượng. Trước khi ghi vào cơ sở dữ liệu, file Excel được kiểm tra mã, kiểu dữ liệu và ngày tháng; nếu có lỗi thì toàn bộ lần nhập được hủy.
 - Ứng dụng đã tích hợp Photon Fusion để mở rộng sang lớp học nhiều người dùng. Bản trình diễn hiện tại chạy ở chế độ offline.
+<a id="ung-dung"></a>
+ 
 ## 6. Ứng dụng thực tế
  
 Theo nhóm, ứng dụng có thể đưa vào sử dụng trong các trường hợp sau:
@@ -98,8 +110,16 @@ Theo nhóm, ứng dụng có thể đưa vào sử dụng trong các trường h
 2. **Làm quen với việc vận hành tàu.** Người học thử điều khiển tàu trên tuyến mô phỏng trước khi tiếp xúc với thiết bị thật, không có rủi ro về an toàn.
 3. **Quản lý tài sản hạ tầng.** Đơn vị quản lý có thể tra cứu lịch sử kiểm tra, bảo trì và chi phí của từng cấu kiện ngay trên mô hình, thay cho việc dò tìm trong hồ sơ giấy.
 4. **Giới thiệu dự án đường sắt.** Mô hình tuyến và sa bàn có thể dùng để trình bày phương án tuyến với cơ quan quản lý, đối tác và người dân.
+<a id="cong-nghe"></a>
+ 
 ## 7. Công nghệ sử dụng
  
+<div align="center">
+  <img src="LINK_SO_DO" alt="Sơ đồ cấu trúc ứng dụng RailEduVerse" width="90%"><br>
+  <sub>Hình 4. Sơ đồ cấu trúc ứng dụng</sub>
+</div>
+<details>
+<summary>Xem sơ đồ dạng Mermaid</summary>
 ```mermaid
 flowchart LR
     A["Đăng nhập"] --> B["Khuôn viên UTT"]
@@ -111,6 +131,7 @@ flowchart LR
     F --> H[("SQLite / Excel")]
 ```
  
+</details>
 | Hạng mục | Công nghệ |
 |---|---|
 | Phát triển ứng dụng | Unity 6 (6000.3.0f1), Universal Render Pipeline |
@@ -120,6 +141,8 @@ flowchart LR
 | Xử lý mô hình 3D | Pixyz, FBX, Unity Splines, ProBuilder |
 | Trợ lý AI | Mô hình ngôn ngữ lớn gọi qua Cloudflare Worker, nhận dạng và tổng hợp giọng nói |
 | Máy chủ quản lý lớp học | Python Flask, SQLite |
+ 
+<a id="cai-dat"></a>
  
 ## 8. Cài đặt và chạy thử
  
@@ -159,6 +182,8 @@ Assets/
 Backend/                  Máy chủ quản lý tài khoản và điểm (Flask)
 Documentation/            Tài liệu kỹ thuật của từng phân hệ
 ```
+ 
+<a id="nhom-thuc-hien"></a>
  
 ## 9. Nhóm thực hiện
  
