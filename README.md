@@ -136,6 +136,8 @@ flowchart LR
 <a id="installation"></a>
  
 ## 8. Installation
+
+[Hướng dẫn nhanh bằng tiếng Việt để build Web và tự kiểm thử trên Windows](Documentation/PlatformCompatibility/WebTests/QUICKSTART_WINDOWS.md)
  
 Requirements: Unity 6000.3.0f1 and Git LFS. A Meta Quest 3/3S headset is only needed to run the app on the device.
  
