@@ -1,0 +1,50 @@
+[
+  {
+    "Scene": "Startup",
+    "Action": "HTTP load",
+    "Observed": "Loader hidden or instance ready",
+    "Status": "OBSERVED"
+  },
+  {
+    "Scene": "Login",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "ChiTietSaBan",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "YenTuHaLongXanh",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "UTTCampus",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Showroom",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Classroom",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  }
+]

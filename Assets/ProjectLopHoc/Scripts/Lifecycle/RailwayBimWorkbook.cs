@@ -129,15 +129,31 @@ public static partial class RailwayBimWorkbook
     static string Get(Dictionary<string,string> row,string key)=>row.TryGetValue(key,out var value)?value:"";
     public static void Header(string text,out string name,out string type,out string unit)
     {var parts=text.Split('|');name=parts[0].Trim();type=parts.Length>1?parts[1].Trim():"Text";unit=parts.Length>2?parts[2].Trim():"";if(string.IsNullOrEmpty(name)||parts.Length>3)throw new ArgumentException("Header không hợp lệ: "+text);}
+    static List<T> QueryForAssets<T>(RailwayBimStore store, string sql, HashSet<string> ids, params object[] parameters) where T : new()
+    {
+        if (ids == null) return store.Db.Query<T>(sql, parameters);
+        var result = new List<T>();
+        var ordered = ids.ToArray();
+        for (int offset = 0; offset < ordered.Length; offset += 400)
+        {
+            var batch = ordered.Skip(offset).Take(400).ToArray();
+            var filter = string.Join(",", Enumerable.Repeat("?", batch.Length));
+            result.AddRange(store.Db.Query<T>(
+                sql + (parameters.Length > 0 ? " AND " : " WHERE ") + "AssetID IN (" + filter + ")",
+                parameters.Concat(batch.Cast<object>()).ToArray()));
+        }
+        return result;
+    }
+
     public static List<Sheet> ExportData(RailwayBimStore store,IEnumerable<string> ids=null)
     {
         var selected=ids!=null?new HashSet<string>(ids):null;var assets=store.Assets.Values.Where(a=>selected==null||selected.Contains(a.AssetID)).OrderBy(a=>a.AssetID).ToArray();
-        var allProps=store.Db.Query<BimProperty>("SELECT * FROM AssetProperties").Where(p=>selected==null||selected.Contains(p.AssetID)).ToLookup(p=>p.AssetID);
+        var allProps=QueryForAssets<BimProperty>(store,"SELECT * FROM AssetProperties",selected).ToLookup(p=>p.AssetID);
         var headers=allProps.SelectMany(g=>g).Select(p=>p.Name+"|"+p.DataType+"|"+p.Unit).Distinct().OrderBy(n=>n).ToArray();
         var technical=new Sheet{name="Technical",headers=new[]{"AssetID"}.Concat(headers).ToList()};foreach(var a in assets){var row=new Dictionary<string,string>{{"AssetID",a.AssetID}};foreach(var p in allProps[a.AssetID])row[p.Name+"|"+p.DataType+"|"+p.Unit]=p.Value;technical.rows.Add(row);}
         Sheet Typed<T>(string name,IEnumerable<T> records){var ps=typeof(T).GetProperties();return new Sheet{name=name,headers=ps.Select(p=>p.Name).ToList(),rows=records.Select(r=>ps.ToDictionary(p=>p.Name,p=>Convert.ToString(p.GetValue(r),CI)??"")).ToList()};}
-        var output=new List<Sheet>{technical,Typed("Inspections",store.Db.Query<BimInspection>("SELECT * FROM AssetInspections").Where(a=>selected==null||selected.Contains(a.AssetID))),Typed("Maintenance",store.Db.Query<BimMaintenance>("SELECT * FROM AssetMaintenance").Where(a=>selected==null||selected.Contains(a.AssetID))),Typed("Assets",assets)};
-        output.AddRange(ExportStages(store,assets));return output;
+        var output=new List<Sheet>{technical,Typed("Inspections",QueryForAssets<BimInspection>(store,"SELECT * FROM AssetInspections",selected)),Typed("Maintenance",QueryForAssets<BimMaintenance>(store,"SELECT * FROM AssetMaintenance",selected)),Typed("Assets",assets)};
+        output.AddRange(ExportStages(store,assets,selected));return output;
     }
     const string NS="http://schemas.openxmlformats.org/spreadsheetml/2006/main";
     public static void Write(string path,List<Sheet> sheets)

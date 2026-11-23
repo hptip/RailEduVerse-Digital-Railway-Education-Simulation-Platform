@@ -32,14 +32,14 @@ public static partial class RailwayBimWorkbook
     }
     static void ApplyStageRow(RailwayBimStore store,Sheet sheet,Dictionary<string,string> row)
     {var stage=RailwayBimStages.FromSheet(sheet.name);store.SaveStage(Get(row,"AssetID"),stage.key,StagePatch(store,sheet,row),string.IsNullOrEmpty(Get(row,"Status"))?null:Get(row,"Status"));}
-    static IEnumerable<Sheet> ExportStages(RailwayBimStore store,BimAsset[] assets)
+    static IEnumerable<Sheet> ExportStages(RailwayBimStore store,BimAsset[] assets,HashSet<string> selected)
     {
-        var life=store.Db.Query<BimLifecycle>("SELECT * FROM AssetLifecycle").ToDictionary(l=>l.AssetID);
-        var maintenance=store.Db.Query<BimMaintenance>("SELECT * FROM AssetMaintenance").ToLookup(m=>m.AssetID);
+        var life=QueryForAssets<BimLifecycle>(store,"SELECT * FROM AssetLifecycle",selected).ToDictionary(l=>l.AssetID);
+        var maintenance=QueryForAssets<BimMaintenance>(store,"SELECT * FROM AssetMaintenance",selected).ToLookup(m=>m.AssetID);
         foreach(var stage in RailwayBimStages.All)
         {
-            var records=store.Db.Query<BimStage>("SELECT * FROM AssetLifecycleStages WHERE StageKey=?",stage.key).ToDictionary(s=>s.AssetID);
-            var fields=store.Db.Query<BimStageField>("SELECT * FROM AssetStageFields WHERE StageKey=?",stage.key).ToLookup(f=>f.AssetID);
+            var records=QueryForAssets<BimStage>(store,"SELECT * FROM AssetLifecycleStages WHERE StageKey=?",selected,stage.key).ToDictionary(s=>s.AssetID);
+            var fields=QueryForAssets<BimStageField>(store,"SELECT * FROM AssetStageFields WHERE StageKey=?",selected,stage.key).ToLookup(f=>f.AssetID);
             var sheet=new Sheet{name=stage.sheet,headers=new List<string>{"AssetID","StageKey","SchemaVersion","Status"}};sheet.headers.AddRange(stage.fields.Select(f=>f.key+"|"+f.type+"|"+f.unit));
             foreach(var asset in assets)
             {

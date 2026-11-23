@@ -1,0 +1,7 @@
+"Scene","Before FPS","After FPS","FPS Delta %","Before Mean Ms","After Mean Ms","Before P95 Ms","After P95 Ms","Before P99 Ms","After P99 Ms","Before Browser Main Ms","After Browser Main Ms","Before WebGL Draw Calls","After WebGL Draw Calls","Before Submitted Triangles","After Submitted Triangles","Before JS Heap Bytes","After JS Heap Bytes","GPU Time","GC","Individual Scene Loading Time"
+"Classroom","120","120","-0","8.33","8.33","8.4","8.4","8.5","8.5","1.81","1.84","51","51","58672","58672","1170393428","1167851878","NOT MEASURED","NOT MEASURED","NOT MEASURED"
+"UTTCampus","119.2","120","0.67","8.39","8.33","8.4","8.4","8.5","8.5","2.65","3.09","739","739","1602510","1602524","1167763954","1168316795","NOT MEASURED","NOT MEASURED","NOT MEASURED"
+"Showroom","44.18","50.72","14.79","22.63","19.72","25.1","25.1","25.1","25.2","22.77","19.86","6177","6177.01","13802778","13802779.98","1170377773","1170347931","NOT MEASURED","NOT MEASURED","NOT MEASURED"
+"YenTuHaLongXanh","120","120","0","8.33","8.33","8.4","8.5","8.5","8.5","1.65","1.4","171","171","1384070","1384070","1171265200","1171189973","NOT MEASURED","NOT MEASURED","NOT MEASURED"
+"QuanLyVongDoiTaiSan","83.86","93.84","11.91","11.92","10.66","8.5","8.4","41.8","8.5","9.07","7.02","102","102","744532","744532","1638704842","1658221266","NOT MEASURED","NOT MEASURED","NOT MEASURED"
+"Login","119.8","120","0.17","8.35","8.33","8.4","8.4","8.5","8.5","2.03","1.46","16","16","4238","4236","1590383151","2317554846","NOT MEASURED","NOT MEASURED","NOT MEASURED"

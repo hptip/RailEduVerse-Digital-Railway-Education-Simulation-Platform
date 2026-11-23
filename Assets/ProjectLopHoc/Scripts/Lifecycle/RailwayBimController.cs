@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.Networking;
+using SQLite;
+using System.Runtime.InteropServices;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public sealed class RailwayBimController:MonoBehaviour
@@ -27,6 +29,25 @@ public sealed class RailwayBimController:MonoBehaviour
     IEnumerator PrepareDatabase()
     {
         string seed=Path.Combine(Application.streamingAssetsPath,"RailwayLifecycle","Initial.db");
+        if (UttWebPresentation.Active)
+        {
+            if (!HasWebSeed())
+            {
+                using var request = UnityWebRequest.Get(seed);
+                yield return request.SendWebRequest();
+                if (request.result != UnityWebRequest.Result.Success)
+                {
+                    Message("Không đọc được dữ liệu ban đầu: " + request.error);
+                    yield break;
+                }
+                bool seeded = false;
+                try { SaveWebSeed(request.downloadHandler.data); seeded = true; }
+                catch (Exception error) { Message(error.Message); Debug.LogException(error, this); }
+                if (!seeded) yield break;
+            }
+            Initialize(null);
+            yield break;
+        }
         if(!File.Exists(DatabasePath)&&seed.Contains("://"))
         {
             Message("Đang chuẩn bị dữ liệu lần đầu…");
@@ -39,11 +60,30 @@ public sealed class RailwayBimController:MonoBehaviour
         }
         Initialize(seed);
     }
+    bool HasWebSeed()
+    {
+        Directory.CreateDirectory(Path.GetDirectoryName(DatabasePath));
+        using var database = new SQLiteConnection(DatabasePath);
+        return database.ExecuteScalar<int>("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Assets'") == 1;
+    }
+
+    void SaveWebSeed(byte[] bytes)
+    {
+        var pinned = GCHandle.Alloc(bytes, GCHandleType.Pinned);
+        try
+        {
+            using var source = new SQLiteConnection(":memory:");
+            source.Deserialize(bytes, "main", SQLite3.DeserializeFlags.ReadOnly);
+            source.Backup(DatabasePath);
+        }
+        finally { pinned.Free(); }
+    }
+
     void Initialize(string seed)
     {
         try
         {
-            if(!File.Exists(DatabasePath)&&!File.Exists(seed))throw new FileNotFoundException("Thiếu dữ liệu ban đầu",seed);
+            if(!UttWebPresentation.Active&&!File.Exists(DatabasePath)&&!File.Exists(seed))throw new FileNotFoundException("Thiếu dữ liệu ban đầu",seed);
             Store=new RailwayBimStore(DatabasePath,seed);blocks=catalog.BlockIndex();segments=catalog.segments.ToDictionary(s=>s.id);
             foreach(var proxy in overviewRoot.GetComponentsInChildren<BimAssetProxy>(true)){overview.Add(proxy.assetID,proxy);EnsureRayTarget(proxy);}
             blockRoot=new GameObject("PooledBlockLayer").transform;blockRoot.SetParent(transform,false);detailRoot=new GameObject("PooledPhysicalLayer").transform;detailRoot.SetParent(transform,false);

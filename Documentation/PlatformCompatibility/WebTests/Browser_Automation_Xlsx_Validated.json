@@ -1,0 +1,26 @@
+[
+  {
+    "Scene": "Startup",
+    "Action": "HTTP load",
+    "Observed": "Unity startup after 4.4 s",
+    "Status": "OBSERVED"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Click Xuất bảng tính",
+    "Observed": "TaiSanDuongSat.xlsx",
+    "Status": "PASS"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Click Xem trước tệp",
+    "Observed": "Browser file picker opened",
+    "Status": "PASS"
+  }
+]

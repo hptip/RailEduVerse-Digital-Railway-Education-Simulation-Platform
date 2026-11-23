@@ -24,6 +24,12 @@ public class ExcelImportManager : MonoBehaviour
             return;
         }
 
+        if (UttWebPresentation.Active)
+        {
+            UttBrowserWorkbook.Pick(this, ImportPath, SetStatus);
+            return;
+        }
+
         var extensions = new[]
         {
             new ExtensionFilter("Excel Files", "xlsx")
@@ -38,7 +44,11 @@ public class ExcelImportManager : MonoBehaviour
 
         if (paths == null || paths.Length == 0)
             return;
+        ImportPath(paths[0]);
+    }
 
+    private void ImportPath(string path)
+    {
         try
         {
             List<string> headers;
@@ -47,7 +57,7 @@ public class ExcelImportManager : MonoBehaviour
 
             // Đọc sheet đầu tiên
             ReadFirstSheet(
-                paths[0],
+                path,
                 out headers,
                 out types,
                 out rows
@@ -141,7 +151,7 @@ public class ExcelImportManager : MonoBehaviour
 
             SetStatus(
                 "Import thành công!\n" +
-                "File: " + Path.GetFileName(paths[0]) +
+                "File: " + Path.GetFileName(path) +
                 "\nSheet: Sheet đầu tiên" +
                 "\nTổng bản ghi: " + rows.Count +
                 "\nThêm mới: " + added +

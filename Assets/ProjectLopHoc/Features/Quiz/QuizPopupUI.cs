@@ -126,7 +126,7 @@ namespace ProjectLopHoc.Features.Quiz
             }
 
             // Khóa chuột trở lại tâm màn hình FPS
-            if (lockCursor)
+            if (lockCursor && !UttWebPresentation.Active)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;

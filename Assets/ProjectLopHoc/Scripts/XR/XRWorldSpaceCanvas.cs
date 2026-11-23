@@ -37,6 +37,7 @@ public sealed class XRWorldSpaceCanvas : MonoBehaviour
 
     private void ConfigureForXR()
     {
+        if (UttWebPresentation.Active) return;
         if (_canvas == null)
             _canvas = GetComponent<Canvas>();
 

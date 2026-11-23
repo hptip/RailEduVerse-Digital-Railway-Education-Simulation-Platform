@@ -1,0 +1,2237 @@
+Chrome process: DevTools listening on ws://127.0.0.1:9902/devtools/browser/bf10654b-ad00-41bc-b360-08cb2c7f1fcc
+log: [UnityMemory] Configuration Parameters - Can be set up in boot.config
+
+log:     "memorysetup-allocator-temp-initial-block-size-main=262144"
+
+log:     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+
+log:     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+
+log:     "memorysetup-temp-allocator-size-audio-worker=65536"
+
+log:     "memorysetup-temp-allocator-size-cloud-worker=32768"
+
+log:     "memorysetup-temp-allocator-size-background-worker=32768"
+
+log:     "memorysetup-bucket-allocator-granularity=16"
+
+log:     "memorysetup-bucket-allocator-bucket-count=8"
+
+log:     "memorysetup-bucket-allocator-block-size=4194304"
+
+log:     "memorysetup-bucket-allocator-block-count=1"
+
+log:     "memorysetup-main-allocator-block-size=16777216"
+
+log:     "memorysetup-thread-allocator-block-size=16777216"
+
+log:     "memorysetup-gfx-main-allocator-block-size=16777216"
+
+log:     "memorysetup-gfx-thread-allocator-block-size=16777216"
+
+log:     "memorysetup-cache-allocator-block-size=4194304"
+
+log:     "memorysetup-typetree-allocator-block-size=2097152"
+
+log:     "memorysetup-profiler-bucket-allocator-granularity=16"
+
+log:     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+
+log:     "memorysetup-profiler-bucket-allocator-block-size=4194304"
+
+log:     "memorysetup-profiler-bucket-allocator-block-count=1"
+
+log:     "memorysetup-profiler-allocator-block-size=16777216"
+
+log:     "memorysetup-profiler-editor-allocator-block-size=1048576"
+
+log:     "memorysetup-temp-allocator-size-main=4194304"
+
+log:     "memorysetup-job-temp-allocator-block-size=2097152"
+
+log:     "memorysetup-job-temp-allocator-block-size-background=1048576"
+
+log:     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+
+log: Input System module state changed to: Initialized.
+
+log: [Physics::Module] Initialized fallback backend.
+
+log: [Physics::Module] Id: 0xdecafbad
+
+log: Loading player data from data.unity3d
+
+log: Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+
+log: [Subsystems] Discovering subsystems at path UnitySubsystems
+
+log: Creating WebGL 2.0 context.
+log: Renderer: WebKit WebGL
+
+log: Vendor:   WebKit
+
+log: Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
+
+log: GLES:     3
+
+log:  EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
+
+log: texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
+
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795185084738.223,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":284896},{"functionName":"$func196268","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":64047272},{"functionName":"$func206416","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67691187},{"functionName":"$__main_argc_argv","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67796669},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":387094},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546142},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546556},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546728},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":545842},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"7","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795185084738.294,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":284896},{"functionName":"$func196268","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":64047272},{"functionName":"$func206416","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67691187},{"functionName":"$__main_argc_argv","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67796669},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":387094},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546142},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546556},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546728},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":545842},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"7","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795185084738.335,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":284896},{"functionName":"$func196268","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":64047272},{"functionName":"$func206416","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67691187},{"functionName":"$__main_argc_argv","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67796669},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":387094},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546142},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546556},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546728},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":545842},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"7","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795185084738.767,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":284896},{"functionName":"$func196268","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":64047272},{"functionName":"$func206416","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67691187},{"functionName":"$__main_argc_argv","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67796669},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":387094},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546142},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546556},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546728},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":545842},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"7","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795185084738.835,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":284896},{"functionName":"$func196268","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":64047272},{"functionName":"$func206416","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67691187},{"functionName":"$__main_argc_argv","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67796669},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":387094},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546142},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546556},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546728},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":545842},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"7","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795185084738.876,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":284896},{"functionName":"$func196268","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":64047272},{"functionName":"$func206416","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67691187},{"functionName":"$__main_argc_argv","scriptId":"9","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.wasm.gz","lineNumber":0,"columnNumber":67796669},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":387094},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546142},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546556},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":546728},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":545842},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"7","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+log: OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
+
+log: [Physics::Module] Selected backend.
+
+log: [Physics::Module] Name: PhysX
+
+log: [Physics::Module] Id: 0xf2b8ea05
+
+log: [Physics::Module] SDK Version: 4.1.2
+
+log: [Physics::Module] Integration Version: 1.0.0
+
+log: [Physics::Module] Threading Mode: Single-Threaded
+
+log: ERROR: Shader 
+log: Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+log: ERROR: Shader 
+log: Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+log: ERROR: Shader 
+log: Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+log: Input System initialize...
+
+log: UnloadTime: 1.600000 ms
+
+warning: Your project uses a scriptable render pipeline. You can use Camera.stereoTargetEye only with the built-in renderer.
+
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185085174.482,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185085573.629,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185085974.261,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185086374.624,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185086774.458,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185087319.761,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185087575.214,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+WebGL context: {"type":"webgl2","version":"WebGL 2.0 (OpenGL ES 3.0 Chromium)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002487) Direct3D11 vs_5_0 ps_5_0, D3D11)"}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185087975.706,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+log: [UnityCache] 'http://127.0.0.1:8773/Build/UTTVR_WebLogin.data.gz' successfully downloaded and stored in the browser cache
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795185088375.393,"url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8773/Build/UTTVR_WebLogin.framework.js.gz","lineNumber":8,"columnNumber":128708}]}}}
+log: Audio context resumed after 3.912 seconds.
+log: [Thông báo trạng thái]: Đang xác thực tài khoản offline...
+
+log: [Thông báo trạng thái]: Đang kết nối vào khuôn viên UTT...
+
+log: Đang khởi chạy Campus ở chế độ offline.
+
+log: <color=#144078>[Fusion]</color> adding player [Player:1]
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (26)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (26)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (38)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (38)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (4)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (26)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (26)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (42)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (42)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (24)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (24)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (15)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (15)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (15)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (12)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (12)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (31)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (31)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (77)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (73)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (8)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (8)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust ') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (53)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (53)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (2)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (74)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (41)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (41)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (3)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (20)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (20)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (39)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (39)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (43)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (43)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (7)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (7)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (8)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (8)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (52)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (52)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust  (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (13)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (10)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (10)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (14)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (24)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (24)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (29)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (29)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-roof (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (40)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (40)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (13)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (13)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (32)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (32)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (38)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (38)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (3)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (3)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (10)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (10)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (37)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (37)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust  (2)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (4)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (4)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust  (3)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (40)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (40)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (52)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (52)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (52)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (52)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-roof') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust  (2)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust  (3)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (33)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (23)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (16)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (16)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (7)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (7)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (12)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (12)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (6)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (6)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (35)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (32)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (32)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (76)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (28)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (51)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (51)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (70)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (6)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (6)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust  (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (43)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (43)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (5)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (5)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (17)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (14)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (14)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (42)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (42)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (31)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (31)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (50)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (50)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (11)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (27)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (16)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (16)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (29)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (29)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (3)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (2)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (36)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (39)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (39)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (41)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (41)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-dust ') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (37)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (37)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (1)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (18)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (71)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (19)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (53)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (53)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (53)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (53)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (72)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (69)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (75)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (2)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (2)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (44)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (44)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (4)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (5)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (5)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (13)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (13)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (34)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (160)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (159)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (161)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (158)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (163)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (156)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (20)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (20)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (30)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (25)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (44)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector-leaf (44)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (14)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (13)') is missing!
+
+warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (15)') is missing!
+
+log: UnloadTime: 2.400000 ms
+
+log: Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+log: [PlayerSpawner] Đã đưa Giảng viên lên tàu tại (35.00, 0.00, -3.24)
+
+log: Unloading 97 unused Assets to reduce memory usage. Loaded Objects now: 29963.
+
+log: Total: 10.500000 ms (FindLiveObjects: 1.300000 ms CreateObjectMapping: 0.399999 ms MarkObjects: 8.300001 ms  DeleteObjects: 0.500000 ms)
+
+
+Chrome process: Created TensorFlow Lite XNNPACK delegate for CPU.
+log: UnloadTime: 8.099999 ms
+
+log: Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+log: [PlayerSpawner] Đã đưa Giảng viên lên tàu tại (5207.95, 10.68, -621.03)
+
+log: Unloading 284 unused Assets to reduce memory usage. Loaded Objects now: 11595.
+
+log: Total: 8.200001 ms (FindLiveObjects: 0.400000 ms CreateObjectMapping: 0.400001 ms MarkObjects: 6.500000 ms  DeleteObjects: 0.900000 ms)
+

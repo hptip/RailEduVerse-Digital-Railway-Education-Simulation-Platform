@@ -1,0 +1,68 @@
+[
+  {
+    "Scene": "Startup",
+    "Action": "HTTP load",
+    "Observed": "Unity startup after 4.9 s",
+    "Status": "OBSERVED"
+  },
+  {
+    "Scene": "ChiTietSaBan",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "ChiTietSaBan",
+    "Action": "Click Excel import in Unity UI",
+    "Observed": "Browser file picker event observed",
+    "Status": "PASS"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Click Xuất bảng tính",
+    "Observed": "TaiSanDuongSat.xlsx",
+    "Status": "PASS"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Click Xem trước tệp",
+    "Observed": "Browser file picker opened",
+    "Status": "PASS"
+  },
+  {
+    "Scene": "YenTuHaLongXanh",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "UTTCampus",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Showroom",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Classroom",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Login",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  }
+]

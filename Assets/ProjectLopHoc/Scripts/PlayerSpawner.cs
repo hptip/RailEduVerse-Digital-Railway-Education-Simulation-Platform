@@ -195,6 +195,17 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         Vector3 spawnPos = targetPoint.position;
         Quaternion spawnRot = targetPoint.rotation;
+        if (UttWebPresentation.Active && gameObject.scene.name == "Showroom")
+        {
+            var exhibit = FindFirstObjectByType<UTT.SaBan.SaBanRoot>();
+            if (exhibit != null)
+            {
+                // Start on the viewing side of the exhibit, below the showroom roof.
+                var center = exhibit.transform.position;
+                spawnPos = new Vector3(center.x, targetPoint.position.y, center.z + 27f);
+                spawnRot = Quaternion.LookRotation(Vector3.back);
+            }
+        }
 
         try
         {

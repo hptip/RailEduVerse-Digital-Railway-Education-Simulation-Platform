@@ -1,0 +1,30 @@
+UTTVR Web Login Final | Chrome | http://127.0.0.1:8774/
+Raw: Evidence/After/Release/Browser_Console_Errors.txt
+XLSX reload failure with Unity auto-sync: Evidence/After/Persistence/Browser_Console_Errors.txt
+
+WebGL renderer, runtime errors and unsupported shaders
+log: Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+log: Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+log: Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WebGL context: {"type":"webgl2","version":"WebGL 2.0 (OpenGL ES 3.0 Chromium)","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002487) Direct3D11 vs_5_0 ps_5_0, D3D11)"}
+error: NullReferenceException: Object reference not set to an instance of an object.
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x00000] in <00000000000000000000000000000000>:0 
+
+Warning groups with highest counts
+188× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (45)') is missing!
+98× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (46)') is missing!
+98× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (47)') is missing!
+98× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (48)') is missing!
+98× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (49)') is missing!
+54× warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (21)') is missing!
+50× warning: The referenced script on this Behaviour (Game Object 'Decal Projector -dust (22)') is missing!
+50× warning: The referenced script on this Behaviour (Game Object 'Decal Projector -roof (9)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (164)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (165)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (166)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (170)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (168)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (169)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (162)') is missing!
+34× warning: The referenced script on this Behaviour (Game Object 'Decal Projector (167)') is missing!
+Successful XLSX reload using SQLite queue: Evidence/After/PersistenceQueued/Browser_Console_Errors.txt

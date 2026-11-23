@@ -63,6 +63,11 @@ public class InteractableObject : MonoBehaviour, IInteractable
         
         // Tìm số thứ tự index của scene trong Build Settings theo tên file
         int sceneIndex = TimIndexCuaScene(sceneName);
+        if (sceneIndex < 0 && UttWebPresentation.Active && gameObject.scene.name == "UTTCampus" &&
+            gameObject.name == "Door_Trigger_2" && sceneName == "Classroom2")
+        {
+            sceneIndex = TimIndexCuaScene("Classroom");
+        }
 
         if (sceneIndex < 0)
         {

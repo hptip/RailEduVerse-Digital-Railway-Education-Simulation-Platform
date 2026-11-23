@@ -24,16 +24,31 @@ public class MinimapTeleport : MonoBehaviour, IPointerClickHandler
 
     private void Update()
     {
-        if (mapPanel != null && Input.GetKeyDown(toggleKey))
+        if (mapPanel != null && TogglePressed())
         {
             bool open = !mapPanel.activeSelf;
             mapPanel.SetActive(open);
 
             // FirstPersonController chỉ cho di chuyển khi chuột đang bị khoá,
             // nên mở bản đồ thì mở khoá chuột để bấm, đóng bản đồ thì khoá lại.
-            Cursor.lockState = open ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = open;
+            Cursor.lockState = open || UttWebPresentation.Active ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = open || UttWebPresentation.Active;
         }
+    }
+
+    private bool TogglePressed()
+    {
+#if ENABLE_INPUT_SYSTEM
+        var keyboard = UnityEngine.InputSystem.Keyboard.current;
+        var keyName = UttWebPresentation.Active && toggleKey == KeyCode.M ? "Tab" : toggleKey.ToString();
+        if (keyboard != null && System.Enum.TryParse<UnityEngine.InputSystem.Key>(keyName, out var key))
+            return keyboard[key].wasPressedThisFrame;
+#endif
+#if ENABLE_LEGACY_INPUT_MANAGER
+        return Input.GetKeyDown(toggleKey);
+#else
+        return false;
+#endif
     }
 
     public void OnPointerClick(PointerEventData eventData)

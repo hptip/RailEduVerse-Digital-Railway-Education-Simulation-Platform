@@ -8,6 +8,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using BIM4D.AI.Speech;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using Microphone = BIM4D.AI.Generative.WebMicrophoneUnavailable;
+#endif
 
 namespace BIM4D.AI.Generative
 {
@@ -37,6 +40,20 @@ namespace BIM4D.AI.Generative
         public SpeechErrorCode Code { get; }
         public SpeechRecognitionException(SpeechErrorCode code, string message) : base(message) { Code = code; }
     }
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+    // Unity's native microphone is unavailable in the browser. Keep voice
+    // controls recoverable while text chat remains usable.
+    internal static class WebMicrophoneUnavailable
+    {
+        public static string[] devices => Array.Empty<string>();
+        public static int GetPosition(string device) => 0;
+        public static void End(string device) { }
+        public static void GetDeviceCaps(string device, out int min, out int max) { min = max = 0; }
+        public static AudioClip Start(string device, bool loop, int length, int frequency) =>
+            throw new SpeechRecognitionException(SpeechErrorCode.NoMicrophone, "Bản Web hiện hỗ trợ nhập câu hỏi bằng bàn phím.");
+    }
+#endif
 
     [DisallowMultipleComponent]
     public sealed class GroqSpeechToText : MonoBehaviour
@@ -147,6 +164,7 @@ namespace BIM4D.AI.Generative
 
         public async Task StartRecordingAsync(CancellationToken cancellationToken = default)
         {
+            if (UttWebPresentation.Active) throw new SpeechRecognitionException(SpeechErrorCode.NoMicrophone, "Bản Web hiện hỗ trợ nhập câu hỏi bằng bàn phím.");
             if (!Application.isPlaying) throw new SpeechRecognitionException(SpeechErrorCode.NotInPlayMode, "Chỉ ghi âm được khi đang ở Play Mode.");
             if (startingRecording || IsRecording || IsTranscribing)
                 throw new SpeechRecognitionException(SpeechErrorCode.Busy, "Hệ thống ghi âm/nhận diện đang bận. Vui lòng thử lại sau giây lát.");

@@ -1,0 +1,20 @@
+[
+  {
+    "Scene": "Startup",
+    "Action": "HTTP load",
+    "Observed": "Unity startup after 3.7 s",
+    "Status": "OBSERVED"
+  },
+  {
+    "Scene": "YenTuHaLongXanh",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "YenTuHaLongXanh",
+    "Action": "Enter driver seat",
+    "Observed": "Driver seat activation logged",
+    "Status": "PASS"
+  }
+]

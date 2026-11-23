@@ -37,7 +37,9 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         detailButton.onClick.AddListener(()=>Run(controller.EnterDetails));backButton.onClick.AddListener(()=>Run(controller.Back));resetButton.onClick.AddListener(()=>Run(()=>{controller.SetOverview();controller.cameraController.ResetView();Refresh();}));
         hideButton.onClick.AddListener(()=>Run(controller.ToggleIsolation));
         saveButton.onClick.AddListener(()=>Run(Save));addInspectionButton.onClick.AddListener(()=>Run(AddInspection));addMaintenanceButton.onClick.AddListener(()=>Run(AddMaintenance));
-        exportButton.onClick.AddListener(()=>Run(()=>{string path=FilePath(false);if(!string.IsNullOrEmpty(path))Export(path);}));importButton.onClick.AddListener(()=>Run(()=>{string path=FilePath(true);if(!string.IsNullOrEmpty(path))Preview(path);}));applyButton.onClick.AddListener(()=>Run(Apply));
+        exportButton.onClick.AddListener(()=>Run(()=>{if (UttWebPresentation.Active) { ExportSelectedForWeb(); return; } string path=FilePath(false);if(!string.IsNullOrEmpty(path))Export(path);}));importButton.onClick.AddListener(()=>Run(()=>{if (UttWebPresentation.Active) { UttBrowserWorkbook.Pick(this, path => Run(() => Preview(path)), SetStatus); return; } string path=FilePath(true);if(!string.IsNullOrEmpty(path))Preview(path);}));applyButton.onClick.AddListener(()=>Run(Apply));
+        if (UttWebPresentation.Active && exportButton.GetComponentInChildren<TMP_Text>() is TMP_Text exportLabel)
+            exportLabel.text = "Xuất tài sản đã chọn";
         string[] names={"General","Technical","Lifecycle"};for(int i=0;i<Math.Min(tabs.Length,3);i++){string tab=names[i];tabs[i].onClick.AddListener(()=>ShowTab(tab));}
         for(int i=0;i<stageButtons.Length;i++){string stage=RailwayBimStages.All[i].key;stageButtons[i].onClick.AddListener(()=>ShowStage(stage));}
         if(stageProfileButton!=null)stageProfileButton.onClick.AddListener(()=>ShowStageView("Profile"));if(stageRecordsButton!=null)stageRecordsButton.onClick.AddListener(()=>ShowStageView("Records"));if(stageHistoryButton!=null)stageHistoryButton.onClick.AddListener(()=>ShowStageView("History"));
@@ -98,7 +100,18 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         if(usedRows==rows.Count)
         {
             var view=Instantiate(rowTemplate,fieldsContent);view.gameObject.SetActive(true);var element=view.GetComponent<LayoutElement>()??view.gameObject.AddComponent<LayoutElement>();element.preferredHeight=88;var rect=(RectTransform)view.transform;rect.localScale=Vector3.one;var originalLayout=view.GetComponent<HorizontalLayoutGroup>();if(originalLayout!=null)originalLayout.enabled=false;var background=view.GetComponent<Image>();if(background!=null){background.color=new Color(.07f,.12f,.19f,.95f);background.raycastTarget=false;}
-            var input=Instantiate(inputTemplate,view.transform);input.gameObject.SetActive(true);var ir=(RectTransform)input.transform;ir.anchorMin=new Vector2(.43f,.06f);ir.anchorMax=new Vector2(.99f,.94f);ir.offsetMin=ir.offsetMax=Vector2.zero;input.textComponent.fontSize=23;input.textComponent.color=new Color(.94f,.97f,1);input.GetComponent<Image>().color=new Color(.11f,.18f,.25f,1);input.lineType=TMP_InputField.LineType.MultiLineNewline;
+            var input = Instantiate(inputTemplate, view.transform);
+            var inputRect = (RectTransform)input.transform;
+            inputRect.anchorMin = new Vector2(.43f, .06f);
+            inputRect.anchorMax = new Vector2(.99f, .94f);
+            inputRect.offsetMin = inputRect.offsetMax = Vector2.zero;
+            if (UttWebPresentation.Active && input.textViewport == null)
+                input.textViewport = input.textComponent.rectTransform.parent as RectTransform ?? inputRect;
+            input.textComponent.fontSize = 23;
+            input.textComponent.color = new Color(.94f, .97f, 1);
+            input.GetComponent<Image>().color = new Color(.11f, .18f, .25f, 1);
+            input.lineType = TMP_InputField.LineType.MultiLineNewline;
+            input.gameObject.SetActive(true);
             var labels=view.GetComponentsInChildren<TMP_Text>(true).Where(t=>!t.transform.IsChildOf(input.transform)&&t.name.Contains("Txt")).ToArray();foreach(var label in labels){bool isName=label.name.Contains("Name");var lr=(RectTransform)label.transform;lr.anchorMin=new Vector2(isName?.02f:.43f,0);lr.anchorMax=new Vector2(isName?.41f:.98f,1);lr.offsetMin=lr.offsetMax=Vector2.zero;label.fontSize=23;label.color=new Color(.90f,.94f,1);label.enableWordWrapping=true;label.alignment=TextAlignmentOptions.MidlineLeft;}
             rows.Add(new Row{view=view,input=input});
         }
@@ -114,7 +127,21 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         BeginRows();bool selected=controller.SelectedID!=null,life=ActiveTab=="Lifecycle";
         saveButton.gameObject.SetActive(selected&&(!life||StageView=="Profile"));addInspectionButton.gameObject.SetActive(selected&&life&&ActiveStage=="Operation"&&StageView=="Records");addMaintenanceButton.gameObject.SetActive(selected&&life&&ActiveStage=="Maintenance"&&StageView=="Records");
         if(historyPreviousButton!=null){bool history=selected&&life&&StageView=="History";historyPreviousButton.transform.parent.gameObject.SetActive(history);historyPreviousButton.interactable=historyOffset>0;if(history)historyNextButton.interactable=historyOffset+HistoryPageSize<controller.Store.StageHistoryCount(controller.SelectedID,ActiveStage);}
-        if(lifecycleNavigation!=null)lifecycleNavigation.gameObject.SetActive(life);if(stageProfileButton!=null){stageProfileButton.transform.parent.gameObject.SetActive(life);Tint(stageProfileButton,StageView=="Profile");Tint(stageHistoryButton,StageView=="History");stageRecordsButton.gameObject.SetActive(ActiveStage=="Operation"||ActiveStage=="Maintenance");stageRecordsButton.GetComponentInChildren<TMP_Text>().text=ActiveStage=="Operation"?"Kiểm tra":"Bảo trì";Tint(stageRecordsButton,StageView=="Records");}
+        if (lifecycleNavigation != null) lifecycleNavigation.gameObject.SetActive(life);
+        if (stageProfileButton != null)
+        {
+            stageProfileButton.transform.parent.gameObject.SetActive(life);
+            Tint(stageProfileButton, StageView == "Profile");
+            Tint(stageHistoryButton, StageView == "History");
+        }
+        if (stageRecordsButton != null)
+        {
+            bool operation = ActiveStage == "Operation";
+            stageRecordsButton.gameObject.SetActive(operation || ActiveStage == "Maintenance");
+            var recordsLabel = stageRecordsButton.GetComponentInChildren<TMP_Text>(true);
+            if (recordsLabel != null) recordsLabel.text = operation ? "Kiểm tra" : "Bảo trì";
+            Tint(stageRecordsButton, StageView == "Records");
+        }
         var viewport=(RectTransform)fieldsContent.GetComponentInParent<ScrollRect>(true).transform;viewport.anchorMax=new Vector2(.975f,life?.56f:.815f);
         if(!controller.Ready)return;
         if(!selected){title.text="HỒ SƠ TÀI SẢN";Field("Cấp hiện tại",controller.Level==0?"Segment":controller.Level==1?"Block":"Component");Field("Hướng dẫn","Chọn đối tượng trên mô hình hoặc trong danh sách, sau đó chọn Xem chi tiết.");Field("Dữ liệu","Hồ sơ BIM tuyến Yên Tử – Hạ Long · Khu đoạn 021");return;}
@@ -159,6 +186,19 @@ public sealed class RailwayBimDashboard:MonoBehaviour
     }
     public void AddInspection(){controller.Store.AddInspection(new BimInspection{AssetID=controller.SelectedID,InspectionDate=Inputs["InspectionDate"].text,ConditionGrade=Inputs["ConditionGrade"].text,Finding=Inputs["Finding"].text,Inspector=Inputs["Inspector"].text,Notes=Inputs["Notes"].text});Refresh();SetStatus("Đã lưu kiểm tra cho đúng mã tài sản");}
     public void AddMaintenance(){controller.Store.AddMaintenance(new BimMaintenance{AssetID=controller.SelectedID,MaintenanceDate=Inputs["MaintenanceDate"].text,MaintenanceType=Inputs["MaintenanceType"].text,Description=Inputs["Description"].text,Cost=double.Parse(Inputs["Cost"].text,CultureInfo.InvariantCulture),Result=Inputs["Result"].text});Refresh();SetStatus("Đã lưu bảo trì cho đúng mã tài sản");}
+    private void ExportSelectedForWeb()
+    {
+        string id = controller.SelectedID;
+        if (string.IsNullOrEmpty(id))
+        {
+            SetStatus("Chọn tài sản cần xuất.");
+            return;
+        }
+        UttBrowserWorkbook.Download("TaiSanDuongSat.xlsx", path =>
+            RailwayBimWorkbook.Write(path, RailwayBimWorkbook.ExportData(controller.Store, new[] { id })));
+        SetStatus("Đã xuất hồ sơ của " + id);
+    }
+
     public void Export(string path){RailwayBimWorkbook.Write(path,RailwayBimWorkbook.ExportData(controller.Store));SetStatus("Đã xuất bảng tính: "+path);}
     public void Preview(string path){PendingImport=RailwayBimWorkbook.PreviewFile(controller.Store,path);applyButton.interactable=PendingImport.CanApply;SetStatus(PendingImport.CanApply?"Dữ liệu hợp lệ. Chọn Xác nhận nhập để lưu.":"Dữ liệu nhập có lỗi: "+string.Join("; ",PendingImport.errors.Take(3)));}
     public void Apply(){if(PendingImport==null||!PendingImport.CanApply)throw new InvalidOperationException("Cần xem trước và kiểm tra dữ liệu hợp lệ");RailwayBimWorkbook.Apply(controller.Store,PendingImport);PendingImport=null;applyButton.interactable=false;Refresh();SetStatus("Đã nhập và lưu dữ liệu an toàn");}

@@ -21,8 +21,10 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
 
         public static event Action<string, bool> OnLoginSuccess;
 
+        private float _acceptLoginAfter;
         private void Start()
         {
+            if (UttWebPresentation.Active) _acceptLoginAfter = Time.unscaledTime + 0.5f;
             if (loginView == null)
             {
                 Debug.LogError("[LoginController] LoginView chưa được gán!");
@@ -57,6 +59,7 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
 
         private async void HandleLogin()
         {
+            if (UttWebPresentation.Active && Time.unscaledTime < _acceptLoginAfter) return;
             if (_loginInProgress) return;
 
             if (loginView == null) return;
@@ -140,6 +143,8 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
             if (NetworkManager.Instance != null)
             {
                 bool started = await NetworkManager.Instance.StartCampusSession(realFullName, isActuallyTeacher);
+                // Campus may already have unloaded the Login scene by the time Fusion returns.
+                if (loginView == null) return;
                 if (started) loginView.gameObject.SetActive(false);
                 else
                 {

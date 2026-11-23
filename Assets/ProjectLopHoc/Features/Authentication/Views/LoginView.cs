@@ -39,9 +39,12 @@ namespace ProjectLopHoc.Features.Authentication.Views
                 passwordInputField.ForceLabelUpdate();
             }
 
-            var keyboard = GetComponent<QuestLoginKeyboard>();
-            if (keyboard == null) keyboard = gameObject.AddComponent<QuestLoginKeyboard>();
-            keyboard.Initialize(nameInputField, passwordInputField, transform);
+            if (!UttWebPresentation.Active)
+            {
+                var keyboard = GetComponent<QuestLoginKeyboard>();
+                if (keyboard == null) keyboard = gameObject.AddComponent<QuestLoginKeyboard>();
+                keyboard.Initialize(nameInputField, passwordInputField, transform);
+            }
 
             if (studentToggle != null)
                 studentToggle.onValueChanged.AddListener(OnStudentToggleChanged);
@@ -50,6 +53,18 @@ namespace ProjectLopHoc.Features.Authentication.Views
                 lecturerToggle.onValueChanged.AddListener(OnLecturerToggleChanged);
 
             EnsureAdminToggle();
+            if (UttWebPresentation.Active && studentToggle != null)
+            {
+                var group = studentToggle.group;
+                if (group == null)
+                    group = studentToggle.transform.parent.gameObject.AddComponent<ToggleGroup>();
+                group.allowSwitchOff = false;
+                studentToggle.group = group;
+                if (lecturerToggle != null) lecturerToggle.group = group;
+                if (adminToggle != null) adminToggle.group = group;
+                studentToggle.SetIsOnWithoutNotify(true);
+                group.NotifyToggleOn(studentToggle, false);
+            }
 
             if (loginButton != null)
                 loginButton.onClick.AddListener(OnLoginButtonClicked);

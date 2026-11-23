@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 15003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: UTTVR Web
+  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.Build.Profile.BuildProfile
+  m_AssetVersion: 1
+  m_BuildTarget: 20
+  m_Subtarget: 0
+  m_PlatformId: 84a3bb9e7420477f885e98145999eb20
+  m_PlatformBuildProfile:
+    rid: 6474153620509818979
+  m_OverrideGlobalSceneList: 1
+  m_Scenes:
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Scenes/Login.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Scenes/Classroom.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Scenes/UTTCampus.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Scenes/Showroom.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Scenes/YenTuHaLongXanh.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Scenes/QuanLyVongDoiTaiSan.unity
+  - m_enabled: 1
+    m_path: Assets/ChiTietSaBan/ChiTiet/ChiTietSaBan.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_010.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_011.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_012.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_013.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_014.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_015.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_016.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_017.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_018.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_019.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_020.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_021.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_022.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_023.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_024.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_025.unity
+  - m_enabled: 1
+    m_path: Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_026.unity
+  m_HasScriptingDefines: 0
+  m_ScriptingDefines: []
+  m_PlayerSettingsYaml:
+    m_Settings: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6474153620509818979
+      type: {class: WebGLPlatformSettings, ns: UnityEditor.WebGL, asm: UnityEditor.WebGL.Extensions}
+      data:
+        m_Development: 0
+        m_ConnectProfiler: 0
+        m_BuildWithDeepProfilingSupport: 0
+        m_AllowDebugging: 0
+        m_WaitForManagedDebugger: 0
+        m_ManagedDebuggerFixedPort: 0
+        m_ExplicitNullChecks: 0
+        m_ExplicitDivideByZeroChecks: 0
+        m_ExplicitArrayBoundsChecks: 0
+        m_CompressionType: -1
+        m_InstallInBuildFolder: 0
+        m_InsightsSettingsContainer:
+          m_BuildProfileEngineDiagnosticsState: 2
+        m_AdaptivePerformanceEnabled: 0
+        m_CodeOptimization: 4
+        m_WebGLClientBrowserPath: 
+        m_WebGLClientBrowserType: 0
+        m_WebGLTextureSubtarget: 0

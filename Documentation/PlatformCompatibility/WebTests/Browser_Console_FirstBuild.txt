@@ -1,0 +1,139 @@
+Chrome process: DevTools listening on ws://127.0.0.1:9876/devtools/browser/f5ef8963-bd84-4be9-94dc-a59187572fe9
+log: [UnityMemory] Configuration Parameters - Can be set up in boot.config
+
+log:     "memorysetup-allocator-temp-initial-block-size-main=262144"
+
+log:     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+
+log:     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+
+log:     "memorysetup-temp-allocator-size-audio-worker=65536"
+
+log:     "memorysetup-temp-allocator-size-cloud-worker=32768"
+
+log:     "memorysetup-temp-allocator-size-background-worker=32768"
+
+log:     "memorysetup-bucket-allocator-granularity=16"
+
+log:     "memorysetup-bucket-allocator-bucket-count=8"
+
+log:     "memorysetup-bucket-allocator-block-size=4194304"
+
+log:     "memorysetup-bucket-allocator-block-count=1"
+
+log:     "memorysetup-main-allocator-block-size=16777216"
+
+log:     "memorysetup-thread-allocator-block-size=16777216"
+
+log:     "memorysetup-gfx-main-allocator-block-size=16777216"
+
+log:     "memorysetup-gfx-thread-allocator-block-size=16777216"
+
+log:     "memorysetup-cache-allocator-block-size=4194304"
+
+log:     "memorysetup-typetree-allocator-block-size=2097152"
+
+log:     "memorysetup-profiler-bucket-allocator-granularity=16"
+
+log:     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+
+log:     "memorysetup-profiler-bucket-allocator-block-size=4194304"
+
+log:     "memorysetup-profiler-bucket-allocator-block-count=1"
+
+log:     "memorysetup-profiler-allocator-block-size=16777216"
+
+log:     "memorysetup-profiler-editor-allocator-block-size=1048576"
+
+log:     "memorysetup-temp-allocator-size-main=4194304"
+
+log:     "memorysetup-job-temp-allocator-block-size=2097152"
+
+log:     "memorysetup-job-temp-allocator-block-size-background=1048576"
+
+log:     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+
+log: Input System module state changed to: Initialized.
+
+log: [Physics::Module] Initialized fallback backend.
+
+log: [Physics::Module] Id: 0xdecafbad
+
+log: Loading player data from data.unity3d
+
+log: Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+
+log: [Subsystems] Discovering subsystems at path UnitySubsystems
+
+log: Creating WebGL 2.0 context.
+log: Renderer: WebKit WebGL
+
+log: Vendor:   WebKit
+
+log: Version:  OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))
+
+log: GLES:     3
+
+log:  EXT_clip_control EXT_color_buffer_float EXT_color_buffer_half_float EXT_conservative_depth EXT_depth_clamp EXT_disjoint_timer_query_webgl2 EXT_float_blend EXT_polygon_offset_clamp EXT_render_snorm EXT_texture_compression_bptc EXT_texture_compression_rgtc EXT_texture_filter_anisotropic EXT_texture_mirror_clamp_to_edge EXT_texture_norm16 KHR_parallel_shader_compile NV_shader_noperspective_interpolation OES_draw_buffers_indexed OES_sample_variables OES_shader_multisample_interpolation OES_texture_float_linear OVR_multiview2 WEBGL_blend_func_extended WEBGL_clip_cull_distance WEBGL_compressed_texture_s3tc WEBGL_compressed_texture_s3tc_srgb WEBGL_debug_renderer_info WEBGL_debug_shaders WEBGL_lose_context WEBGL_multi_draw WEBGL_polygon_mode WEBGL_provoking_vertex WEBGL_stencil_texturing GL_EXT_clip_control GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_conservative_depth GL_EXT_depth_clamp GL_EXT_disjoint_timer_query_webgl2 GL_EXT_float_blend GL_EXT_polygon_offset_clamp GL_EXT_render_snorm GL_EXT_
+
+log: texture_compression_bptc GL_EXT_texture_compression_rgtc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp_to_edge GL_EXT_texture_norm16 GL_KHR_parallel_shader_compile GL_NV_shader_noperspective_interpolation GL_OES_draw_buffers_indexed GL_OES_sample_variables GL_OES_shader_multisample_interpolation GL_OES_texture_float_linear GL_OVR_multiview2 GL_WEBGL_blend_func_extended GL_WEBGL_clip_cull_distance GL_WEBGL_compressed_texture_s3tc GL_WEBGL_compressed_texture_s3tc_srgb GL_WEBGL_debug_renderer_info GL_WEBGL_debug_shaders GL_WEBGL_lose_context GL_WEBGL_multi_draw GL_WEBGL_polygon_mode GL_WEBGL_provoking_vertex GL_WEBGL_stencil_texturing
+
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795156711715.009,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":284506},{"functionName":"$func143950","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":51685956},{"functionName":"$func61910","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":26341127},{"functionName":"$Fl","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":49830285},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":374339},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521288},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521702},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521874},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":520988},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"6","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795156711715.072,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":284506},{"functionName":"$func143950","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":51685956},{"functionName":"$func61910","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":26341127},{"functionName":"$Fl","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":49830285},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":374339},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521288},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521702},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521874},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":520988},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"6","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795156711715.115,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":284506},{"functionName":"$func143950","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":51685956},{"functionName":"$func61910","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":26341127},{"functionName":"$Fl","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":49830285},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":374339},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521288},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521702},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521874},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":520988},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"6","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795156711715.52,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":284506},{"functionName":"$func143950","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":51685956},{"functionName":"$func61910","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":26341127},{"functionName":"$Fl","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":49830285},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":374339},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521288},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521702},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521874},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":520988},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"6","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795156711715.58,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":284506},{"functionName":"$func143950","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":51685956},{"functionName":"$func61910","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":26341127},{"functionName":"$Fl","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":49830285},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":374339},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521288},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521702},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521874},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":520988},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"6","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+Log.entryAdded: {"entry":{"source":"rendering","level":"warning","text":"WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat","timestamp":1795156711715.62,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"_glGetInternalformativ","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":284506},{"functionName":"$func143950","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":51685956},{"functionName":"$func61910","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":26341127},{"functionName":"$Fl","scriptId":"9","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.wasm.gz","lineNumber":0,"columnNumber":49830285},{"functionName":"Module._main","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":374339},{"functionName":"callMain","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521288},{"functionName":"doRun","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521702},{"functionName":"run","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":521874},{"functionName":"runCaller","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":520988},{"functionName":"removeRunDependency","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":13585},{"functionName":"","scriptId":"6","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.loader.js","lineNumber":0,"columnNumber":26154}]}}}
+log: OPENGL LOG: Creating OpenGL ES 3.0 graphics device ; Context level  <OpenGL ES 3.0> ; Context handle 1
+
+log: [Physics::Module] Selected backend.
+
+log: [Physics::Module] Name: PhysX
+
+log: [Physics::Module] Id: 0xf2b8ea05
+
+log: [Physics::Module] SDK Version: 4.1.2
+
+log: [Physics::Module] Integration Version: 1.0.0
+
+log: [Physics::Module] Threading Mode: Single-Threaded
+
+log: ERROR: Shader 
+log: Hidden/CoreSRP/CoreCopy shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+log: ERROR: Shader 
+log: Hidden/Universal Render Pipeline/StencilDitherMaskSeed shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+log: ERROR: Shader 
+log: Hidden/Universal/HDRDebugView shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+
+log: Input System initialize...
+
+log: UnloadTime: 1.400000 ms
+
+warning: Manual synchronization of Unity Application.persistentDataPath via JS_FileSystem_Sync() is deprecated and will be later removed in a future Unity version. The persistent data directory will be automatically synchronized instead on file modification. Pass config.autoSyncPersistentDataPath = true; to configuration in createUnityInstance() to opt in to the new behavior.
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156712553.507,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156712940.893,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156713340.891,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156713740.907,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156714140.963,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+WebGL context: {"type":"webgl2","version":"WebGL 2.0 (OpenGL ES 3.0 Chromium)"}
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156715160.372,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+log: [PlayerSpawner] Đã khởi tạo phòng Test trực tiếp thành công!
+
+log: [PlayerSpawner] Đã đưa Sinh viên lên tàu tại (0.61, 1.76, -1.32)
+
+log: <color=#144078>[Fusion]</color> adding player [Player:1]
+
+log: [UnityCache] 'http://127.0.0.1:8765/Build/UTTVR_WebDemo.data.gz' successfully downloaded and stored in the browser cache
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156715343.473,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+warning: [PlayerSpawner] Offline local player was lost during startup; retrying spawn (1/3).
+
+log: [PlayerSpawner] Đã đưa Sinh viên lên tàu tại (0.61, 1.76, -1.32)
+
+Log.entryAdded: {"entry":{"source":"other","level":"warning","text":"The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio","timestamp":1795156715742.762,"url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"stackTrace":{"callFrames":[{"functionName":"tryToResumeAudioContext","scriptId":"8","url":"http://127.0.0.1:8765/Build/UTTVR_WebDemo.framework.js.gz","lineNumber":8,"columnNumber":128463}]}}}
+log: Invoking error handler due to
+WrongDocumentError: The root document of this element is not valid for pointer lock.
+
+Chrome process: Created TensorFlow Lite XNNPACK delegate for CPU.
+test harness: Error: Page.captureScreenshot timed out

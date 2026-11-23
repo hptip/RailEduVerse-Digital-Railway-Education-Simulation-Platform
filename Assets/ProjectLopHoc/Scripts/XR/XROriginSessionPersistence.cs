@@ -10,6 +10,7 @@ public sealed class XROriginSessionPersistence : MonoBehaviour
 
     private void Awake()
     {
+        if (UttWebPresentation.Active) { gameObject.SetActive(false); return; }
         if (_instance != null && _instance != this)
         {
             Destroy(gameObject);

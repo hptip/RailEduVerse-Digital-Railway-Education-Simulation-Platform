@@ -1,0 +1,42 @@
+Lifecycle scroll over input field
+_JS_Log_Dump
+WebGLPrintfConsolev(LogType, char const*, void*)
+printf_consolev(LogType, char const*, void*, bool, LineEndInfoHint)
+InternalErrorConsoleWithNewline(char const*, ...)
+DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+DebugStringToFile(DebugStringToFileData const&)
+Scripting::LogExceptionFromManaged(ScriptingExceptionPtr, EntityId, char const*, bool, Scripting::LogExceptionFromMangedSettings const*)
+DebugLogHandler_CUSTOM_Internal_LogException(Il2CppObject*, void*)
+DebugLogHandler_LogException_mF66A663A86BF5D412BC9A4B3F92DA5CF61049F08
+Logger_LogException_m591AF39F0886DA44666068EDBBD3CCF07623CFBB
+Debug_LogException_mAB3F4DC7297ED8FBB49DAA718B70E59A6B0171B0
+ExecuteEvents_Execute_TisRuntimeObject_mDC4455B743BE4A6BA46DD741D0E0AB150FF1209A_gshared
+ExecuteEvents_ExecuteHierarchy_TisRuntimeObject_m47C22A77611C31042CA566EE345A4A1017A40A65_gshared
+UIInputModule_ProcessScrollWheel_m5F02E6282C5D0DE78CB3D8B472A120791D4E80DD
+UIInputModule_ProcessPointerState_mEEBEE5440DBB8F5D4B37E5A2CD08B68A48B7D0A0
+XRUIInputModule_DoProcess_m3E40FE8EB0244A2390709FCE793271DD8AFB60DF
+UIInputModule_Update_m7D6322B0FDDFDE7B1E82943EFBD2C2E6BE70F100
+RuntimeInvoker_TrueVoid_t4861ACF8F4594C3437BB48B6E56783494B843915(void (*)(), MethodInfo const*, void*, void**, void*)
+il2cpp::vm::Runtime::InvokeWithThrow(MethodInfo const*, void*, void**)
+$dynCall_iiii
+invoke_iiii
+il2cpp::vm::Runtime::Invoke(MethodInfo const*, void*, void**, Il2CppException**)
+il2cpp_runtime_invoke
+scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
+ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
+MonoBehaviour::CallUpdateMethod(int)
+MonoBehaviour::Update()
+BehaviourManager::Update()
+InitPlayerLoopCallbacks()::UpdateScriptRunBehaviourUpdateRegistrator::Forward()
+ExecutePlayerLoop(NativePlayerLoopSystem*)
+ExecutePlayerLoop(NativePlayerLoopSystem*)
+MainLoop()
+$dynCall_v
+
+_JS_CallAsLongAsNoExceptionsSeen
+UpdateUnityFrame()
+$dynCall_v
+browserIterationFunc
+callUserCallback
+runIter
+Browser_mainLoop_runner

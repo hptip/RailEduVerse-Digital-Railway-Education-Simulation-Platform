@@ -179,8 +179,11 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             }
             else
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                if (!UttWebPresentation.Active)
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
             }
 
             GameObject trainObj = GameObject.Find("Train_THSR_700T");
@@ -281,7 +284,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         UpdateTunnelingVignette(false);
 
         // Xoay góc nhìn chuột liên tục cho cả khi đi bộ lẫn khi ngồi ghế lái
-        if (Cursor.lockState == CursorLockMode.Locked)
+        if (DesktopLookActive())
         {
             Vector2 mouseDelta = ReadMouseDelta();
             float mouseX = mouseDelta.x * mouseSensitivity;
@@ -318,6 +321,8 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
     private void RefreshXRMode()
     {
+        if (UttWebPresentation.Active) return;
+
         if (_xrOrigin == null)
         {
             GameObject originObject = GameObject.Find("XR Origin (VR)");
@@ -444,6 +449,14 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
     private void KiemTraNgoiVaoGheBangPhimF()
     {
+        if (UttWebPresentation.Active)
+        {
+            var events = UnityEngine.EventSystems.EventSystem.current;
+            var selected = events != null ? events.currentSelectedGameObject : null;
+            if (SceneQuickMenu.IsOpen || selected != null && selected.TryGetComponent<TMP_InputField>(out var field) && field.isFocused)
+                return;
+        }
+
         if (_mainCamera == null)
         {
             _mainCamera = ResolvePlayerCamera();
@@ -451,14 +464,45 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         }
 
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
+#if ENABLE_INPUT_SYSTEM
+        if (UttWebPresentation.Active && Mouse.current != null)
+            ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
+#endif
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
             TrainSeatInteractable seat = hit.collider.GetComponentInParent<TrainSeatInteractable>();
             if (seat != null)
             {
                 seat.RequestOccupy(this);
+                return;
             }
         }
+
+        if (UttWebPresentation.Active && SceneManager.GetActiveScene().name == "YenTuHaLongXanh")
+            FindReachableDriverSeat(ray.origin)?.RequestOccupy(this);
+    }
+
+    private TrainSeatInteractable FindReachableDriverSeat(Vector3 origin)
+    {
+        TrainSeatInteractable nearest = null;
+        float nearestDistance = interactionRange;
+        Scene activeScene = SceneManager.GetActiveScene();
+        foreach (var seat in FindObjectsByType<TrainSeatInteractable>(FindObjectsSortMode.None))
+        {
+            if (seat.gameObject.scene != activeScene || seat.IsOccupied ||
+                !seat.TryGetComponent<Collider>(out var collider) || !collider.enabled) continue;
+
+            Vector3 offset = collider.bounds.center - origin;
+            float distance = offset.magnitude;
+            if (distance <= 0f || distance > nearestDistance) continue;
+
+            if (!Physics.Raycast(origin, offset / distance, out var hit, distance, interactableLayer, QueryTriggerInteraction.Ignore) ||
+                hit.collider != collider) continue;
+
+            nearest = seat;
+            nearestDistance = distance;
+        }
+        return nearest;
     }
 
     public void ThietLapVaoGhe(TrainSeatInteractable seat, Transform mountPoint)
@@ -478,11 +522,20 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         _horizontalRotation = target.eulerAngles.y;
         _verticalRotation = 0f;
 
+        if (UttWebPresentation.Active && !_xrMode)
+        {
+            _driverViewAnchor = target.Find("DriverViewAnchor");
+            _horizontalRotation = 0f;
+        }
+
         if (_xrMode && HasStateAuthority)
         {
             FindFirstObjectByType<YenTuHaLongCameraHeight>()?.SetSeated(true);
             EnterSeatedXRMode(seat, target);
         }
+
+        if (UttWebPresentation.Active && HasStateAuthority)
+            Debug.Log("[TrainSeat] Đã vào ghế lái.", this);
     }
 
     private void EnterSeatedXRMode(TrainSeatInteractable seat, Transform mountPoint)
@@ -593,6 +646,11 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
         isDriving = false;
         _currentSeat = null;
+        if (UttWebPresentation.Active && !_xrMode)
+        {
+            _horizontalRotation = _mainCamera != null ? _mainCamera.transform.eulerAngles.y : transform.eulerAngles.y;
+            _driverViewAnchor = null;
+        }
 
         // Clear the driver's control gate immediately. RequestVacate also arrives as an RPC,
         // but by then this local controller is already out of the seat and the RPC callback
@@ -617,8 +675,22 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         if (_cc != null) _cc.enabled = true;
     }
 
+    private bool DesktopLookActive()
+    {
+#if ENABLE_INPUT_SYSTEM
+        if (UttWebPresentation.Active)
+            return !SceneQuickMenu.IsOpen && !UttWebPresentation.PointerOverUi && Mouse.current?.rightButton.isPressed == true;
+#endif
+        return Cursor.lockState == CursorLockMode.Locked;
+    }
+
     private void HandleRaycastInteraction()
     {
+        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi))
+        {
+            ClearCurrentHover();
+            return;
+        }
         if (_mainCamera == null)
         {
             _mainCamera = ResolvePlayerCamera();
@@ -626,6 +698,10 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         }
 
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
+#if ENABLE_INPUT_SYSTEM
+        if (UttWebPresentation.Active && Mouse.current != null)
+            ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
+#endif
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
@@ -646,6 +722,12 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                 }
 
                 return;
+            }
+
+            if (UttWebPresentation.Active && WasMousePressedThisFrame())
+            {
+                var seat = hit.collider.GetComponentInParent<TrainSeatInteractable>();
+                if (seat != null) seat.RequestOccupy(this);
             }
         }
 
@@ -859,7 +941,8 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             return;
         }
 
-        if (Cursor.lockState != CursorLockMode.Locked) return;
+        if (!DesktopLookActive() && !UttWebPresentation.Active) return;
+        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>()?.isFocused == true)) return;
 
         if (_trainRoot != null)
         {
@@ -981,11 +1064,9 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                     Transform mount = _currentSeat.driverSeatPoint != null ? _currentSeat.driverSeatPoint : _currentSeat.transform;
                     transform.position = mount.position;
 
-                    // Đặt mắt người ngồi cao hơn sàn buồng lái 1.15m
-                    _mainCamera.transform.position = mount.position + new Vector3(0f, 1.15f, 0f);
-
-                    // Cho phép lia chuột tự do 360 độ quanh cabin
-                    Quaternion cabinBaseRot = mount.rotation;
+                    Transform view = UttWebPresentation.Active ? _driverViewAnchor : null;
+                    _mainCamera.transform.position = view != null ? view.position : mount.position + new Vector3(0f, 1.15f, 0f);
+                    Quaternion cabinBaseRot = view != null ? view.rotation : mount.rotation;
                     _mainCamera.transform.rotation = cabinBaseRot * Quaternion.Euler(_verticalRotation, _horizontalRotation, 0f);
                 }
                 else

@@ -13,8 +13,7 @@ using UnityEngine.InputSystem;
 using Fusion;
 
 /// <summary>
-/// App-wide scene menu. Offline startup keeps the configured Login XR rig,
-/// including its comfort and custom controller setup, while bypassing auth UI.
+/// Shared scene menu. Native offline startup preserves the configured Login XR rig.
 /// </summary>
 public sealed class SceneQuickMenu : MonoBehaviour
 {
@@ -36,10 +35,11 @@ public sealed class SceneQuickMenu : MonoBehaviour
 
     private Canvas _canvas;
     private Camera _viewCamera;
-    private Text _sceneLabel;
+    private System.Action<string> _setSceneLabel;
     private readonly List<Button> _buttons = new List<Button>();
     private bool _menuOpen;
     public bool IsMenuOpen=>_menuOpen;
+    public static bool IsOpen => _instance != null && _instance._menuOpen;
     private bool _startupRedirectStarted;
     private bool _leftToggleWasPressed;
     private bool _sceneLoadInProgress;
@@ -105,7 +105,7 @@ public sealed class SceneQuickMenu : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == StartupScene && !_startupRedirectStarted)
+        if (!UttWebPresentation.Active && scene.name == StartupScene && !_startupRedirectStarted)
         {
             _startupRedirectStarted = true;
             HideLoginInterface();
@@ -117,8 +117,11 @@ public sealed class SceneQuickMenu : MonoBehaviour
         {
             _sceneLoadInProgress = false;
             _viewCamera = null;
-            RefreshViewCamera();
-            UpdateSceneLabel();
+            if (!UttWebPresentation.Active)
+            {
+                RefreshViewCamera();
+                UpdateSceneLabel();
+            }
             SetMenuOpen(Application.isEditor);
         }
     }
@@ -146,13 +149,16 @@ public sealed class SceneQuickMenu : MonoBehaviour
 
     private void Update()
     {
-        RefreshViewCamera();
-        FollowViewCamera();
+        if (!UttWebPresentation.Active)
+        {
+            RefreshViewCamera();
+            FollowViewCamera();
+        }
 
         bool togglePressed = false;
 #if ENABLE_INPUT_SYSTEM
         Keyboard keyboard = Keyboard.current;
-        if (keyboard != null && keyboard.f1Key.wasPressedThisFrame)
+        if (keyboard != null && (keyboard.f1Key.wasPressedThisFrame || (UttWebPresentation.Active && keyboard.mKey.wasPressedThisFrame && !(EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()?.isFocused ?? false))))
             togglePressed = true;
 #endif
 #if ENABLE_LEGACY_INPUT_MANAGER
@@ -162,18 +168,21 @@ public sealed class SceneQuickMenu : MonoBehaviour
             togglePressed = true;
 #endif
 
-        if (!_leftController.isValid)
-            _leftController = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
+        if (!UttWebPresentation.Active)
+        {
+            if (!_leftController.isValid)
+                _leftController = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
 
-        bool controllerPressed = _leftController.isValid &&
-            (_leftController.TryGetFeatureValue(UnityEngine.XR.CommonUsages.secondaryButton, out bool secondary) && secondary);
+            bool controllerPressed = _leftController.isValid &&
+                (_leftController.TryGetFeatureValue(UnityEngine.XR.CommonUsages.secondaryButton, out bool secondary) && secondary);
 #if ENABLE_INPUT_SYSTEM
-        controllerPressed |= _leftMenuAction != null && _leftMenuAction.IsPressed();
+            controllerPressed |= _leftMenuAction != null && _leftMenuAction.IsPressed();
 #endif
 
-        if (controllerPressed && !_leftToggleWasPressed)
-            togglePressed = true;
-        _leftToggleWasPressed = controllerPressed;
+            if (controllerPressed && !_leftToggleWasPressed)
+                togglePressed = true;
+            _leftToggleWasPressed = controllerPressed;
+        }
 
         if (togglePressed && IsDestination(SceneManager.GetActiveScene().name))
             SetMenuOpen(!_menuOpen);
@@ -274,16 +283,33 @@ public sealed class SceneQuickMenu : MonoBehaviour
         CanvasScaler scaler = canvasObject.GetComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ConstantPixelSize;
         scaler.referencePixelsPerUnit = 100f;
+        RectTransform panel = canvasRect;
+        if (UttWebPresentation.Active)
+        {
+            // Canvas-space pointer events must reach the shared panel before any world-space UI.
+            _canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1280f, 720f);
+            scaler.matchWidthOrHeight = 1f;
+            canvasObject.AddComponent<GraphicRaycaster>();
+            canvasObject.GetComponent<TrackedDeviceGraphicRaycaster>().enabled = false;
+            panel = new GameObject("Scene Selector Panel", typeof(RectTransform)).GetComponent<RectTransform>();
+            panel.SetParent(canvasRect, false);
+            panel.anchorMin = panel.anchorMax = new Vector2(0.5f, 0.5f);
+            panel.anchoredPosition = Vector2.zero;
+            canvasRect.localScale = Vector3.one;
+            panel.sizeDelta = new Vector2(820f, 720f);
+        }
 
-        Image background = canvasObject.AddComponent<Image>();
+        Image background = panel.gameObject.AddComponent<Image>();
         background.color = new Color(0.035f, 0.075f, 0.12f, 0.94f);
         background.raycastTarget = true;
 
-        CreateText(canvasRect, "Scene Selector Title", "CHỌN KHÔNG GIAN", 38,
+        CreateText(panel, "Scene Selector Title", "CHỌN KHÔNG GIAN", 38,
             new Vector2(0f, 300f), new Vector2(720f, 70f), FontStyle.Bold,
             new Color(0.83f, 0.93f, 1f));
 
-        _sceneLabel = CreateText(canvasRect, "Current Scene Label", string.Empty, 24,
+        _setSceneLabel = CreateText(panel, "Current Scene Label", string.Empty, 24,
             new Vector2(0f, 245f), new Vector2(720f, 50f), FontStyle.Normal,
             new Color(0.72f, 0.83f, 0.91f));
 
@@ -291,13 +317,13 @@ public sealed class SceneQuickMenu : MonoBehaviour
         {
             int destinationIndex = i;
             float y = 160f - i * 88f;
-            Button button = CreateButton(canvasRect, Destinations[i].label,
+            Button button = CreateButton(panel, Destinations[i].label,
                 new Vector2(0f, y), new Vector2(650f, 70f),
                 () => LoadDestination(destinationIndex));
             _buttons.Add(button);
         }
 
-        CreateText(canvasRect, "Scene Selector Help", "F1 / Y tay trái: mở hoặc đóng  •  Esc: đóng  •  Phím 1–5: chọn nhanh",
+        CreateText(panel, "Scene Selector Help", "F1 / Y tay trái: mở hoặc đóng  •  Esc: đóng  •  Phím 1–5: chọn nhanh",
             19, new Vector2(0f, -300f), new Vector2(760f, 42f), FontStyle.Normal,
             new Color(0.67f, 0.78f, 0.88f));
 
@@ -312,10 +338,10 @@ public sealed class SceneQuickMenu : MonoBehaviour
         return Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
     }
 
-    private static Text CreateText(Transform parent, string objectName, string value,
+    private static System.Action<string> CreateText(Transform parent, string objectName, string value,
         int fontSize, Vector2 position, Vector2 size, FontStyle style, Color color)
     {
-        var textObject = new GameObject(objectName, typeof(RectTransform), typeof(Text));
+        var textObject = new GameObject(objectName, typeof(RectTransform));
         textObject.transform.SetParent(parent, false);
         RectTransform rect = textObject.GetComponent<RectTransform>();
         rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
@@ -323,7 +349,7 @@ public sealed class SceneQuickMenu : MonoBehaviour
         rect.anchoredPosition = position;
         rect.sizeDelta = size;
 
-        Text text = textObject.GetComponent<Text>();
+        Text text = textObject.AddComponent<Text>();
         text.font = BuiltinFont();
         text.text = value;
         text.fontSize = fontSize;
@@ -333,7 +359,7 @@ public sealed class SceneQuickMenu : MonoBehaviour
         text.horizontalOverflow = HorizontalWrapMode.Wrap;
         text.verticalOverflow = VerticalWrapMode.Truncate;
         text.raycastTarget = false;
-        return text;
+        return next => text.text = next;
     }
 
     private static Button CreateButton(Transform parent, string label, Vector2 position,
@@ -386,18 +412,15 @@ public sealed class SceneQuickMenu : MonoBehaviour
             }
         }
 
-        if (_canvas != null && _viewCamera != null)
-        {
+        if (_canvas != null)
             _canvas.worldCamera = _viewCamera;
-            _canvas.renderMode = RenderMode.WorldSpace;
-        }
     }
 
     // Moving the menu to the camera in Update shook it on moving trains (the rig moves later in the frame);
     // XRRigFollowPanel holds it relative to the rig, snaps it in front when opened and recentres lazily.
     private void FollowViewCamera()
     {
-        if (!_menuOpen || _canvas == null || _viewCamera == null)
+        if (UttWebPresentation.Active || !_menuOpen || _canvas == null || _viewCamera == null)
             return;
 
         XRRigFollowPanel follow = _canvas.GetComponent<XRRigFollowPanel>();
@@ -416,14 +439,18 @@ public sealed class SceneQuickMenu : MonoBehaviour
     private void SetMenuOpen(bool open)
     {
         _menuOpen = open;
+        if (UttWebPresentation.Active && open) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
         if (_canvas != null)
             _canvas.gameObject.SetActive(open);
 
         if (open)
         {
             UpdateSceneLabel();
-            RefreshViewCamera();
-            FollowViewCamera();
+            if (!UttWebPresentation.Active)
+            {
+                RefreshViewCamera();
+                FollowViewCamera();
+            }
             if (EventSystem.current != null && _buttons.Count > 0)
                 EventSystem.current.SetSelectedGameObject(_buttons[0].gameObject);
         }
@@ -431,11 +458,11 @@ public sealed class SceneQuickMenu : MonoBehaviour
 
     private void UpdateSceneLabel()
     {
-        if (_sceneLabel == null)
+        if (_setSceneLabel == null)
             return;
 
         string activeScene = SceneManager.GetActiveScene().name;
-        _sceneLabel.text = $"Đang ở: {GetSceneLabel(activeScene)}";
+        _setSceneLabel($"Đang ở: {GetSceneLabel(activeScene)}");
         foreach (Button button in _buttons)
         {
             if (button != null)

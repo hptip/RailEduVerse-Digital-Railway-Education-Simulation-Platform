@@ -48,7 +48,7 @@ public sealed class RailwayBimVrPresentation:MonoBehaviour
         if(dashboard.leftNav!=null)desktopLeft=new RectState((RectTransform)dashboard.leftNav.transform);desktopAsset=new RectState((RectTransform)dashboard.assetPanel.transform);
     }
     IEnumerator Start(){while(!controller.Ready&&controller.enabled)yield return null;if(WantsHeadset())SetVrMode(true);}
-    bool WantsHeadset()=>Application.platform==RuntimePlatform.Android||XRSettings.isDeviceActive||FindFirstObjectByType<XROrigin>()!=null;
+    bool WantsHeadset()=>!UttWebPresentation.Active && (Application.platform==RuntimePlatform.Android||XRSettings.isDeviceActive||FindFirstObjectByType<XROrigin>()!=null);
     void RequestView(){if(IsVr)pendingView=true;}
     static bool Typing()=>EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>()?.isFocused==true;
     void Update()

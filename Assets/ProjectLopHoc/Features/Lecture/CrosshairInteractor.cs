@@ -34,6 +34,7 @@ namespace ProjectLopHoc.Features.Lecture
             // Do not run a second, detached scene-camera ray in parallel.
             if (_xrDriven || UnityEngine.XR.XRSettings.isDeviceActive) return;
             if (_cam == null) return;
+            if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi)) return;
 
             ProcessHover();
 

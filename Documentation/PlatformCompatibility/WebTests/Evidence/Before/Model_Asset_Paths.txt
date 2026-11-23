@@ -1,0 +1,1843 @@
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/chair_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_006.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/Controller_Grey.mat
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/Dirt_Mat.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8129720142723837363_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0053.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/b230261898ba3304bbfa7c21e81c53cc_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B005.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_021_ResidentialStreets.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0104.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/window.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0057.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_6522819265319539159_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B006.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/source/TaiwanHSR700T.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0061.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_RG_blinn.mat
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Ground_01.jpg
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/desk_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0072.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_017_OverheadPortalSector.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0055.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C044.asset
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Prefabs/LoadingMessagePrefab.prefab
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Mirror_blinn.mat
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_025.unity
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/desk_Metallic.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0115.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_289819783523511185_L3.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor_Metallic.png
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_DecalsLeaking0339_1_masked_S.png
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_023.asset
+Assets/ProjectLopHoc/Prefabs/MountainRidge.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/0f1b42bf82e80714fb96b134888a7af0_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0113.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/058_Color #7f7f7fff.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_3920443483216605952_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C085.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C018.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B003.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 8.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B003.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/Interactable.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_3214630174436693773_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0099.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_7485205316709286908_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7550147739690262709_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/5e627d0d751020d429f50ae8bd98c541_4300000_L2.asset
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/Dirt_Mat_MaskMap.png
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/002_SRM_MVP_20261110_184700_Poles_Chunk_0107.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ca2358ed9a4a03447aa43a9a63292247_4300000_L3.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Tree_MirabelleBranch01_512_albedo.tif
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/OpenWindow.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Open Expression Capture.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0131.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/lambert1.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/roof_chimney.prefab
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/063_Mesh_57.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B010.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/BallastEarth_Matte.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0123.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C029.asset
+Assets/ProjectLopHoc/Scripts/XR/TrainExteriorAngularGuard.shader
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B008.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/fireplug_Mixed_AO.png
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/rope.fbx
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0114.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_Gray_Inside.mat
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_010_SubgradeReinforcedSlope.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B009.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/TerrainBoundaryRollingHills.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B002.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/412650107cae99944a8aa8c3d7dedd4e_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_022_ResidentialCluster.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Polished_Concrete_Old.jpg
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2e0399198ff9f514897cc3c1f6a76eda_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C009.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62d0fd02da9744645b5633b9b3afb976_4300000_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_1_bottom.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-3308322576996155682_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f1040a940df08a244b040b15c79f9745_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_3214630174436693773_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B002.asset
+Assets/ProjectLopHoc/Art/Materials/HightlightMat.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/044_L_0108_a.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_7485205316709286908_L3.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/033_R_0105_b.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_020.unity
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Interactors/Gaze Interactor.prefab
+Assets/ProjectLopHoc/Art/3DModels/Tunnel/Mat/ConcreteBridge0.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-7840820556741918105_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_5966030687666034592_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/008_TerrainTransition_Chunk_0108.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Open.png
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink01_albedo_opacity.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/Flat Blue.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0118.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B009.asset
+Assets/ProjectLopHoc/Art/3DModels/Showroom/Warehouse.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B010.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_018.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0102.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0066.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/OutlineShell.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0107.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B004.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/roof_chimney.fbx
+Assets/ProjectLopHoc/Art/3DModels/Showroom/textures/Marble2x2_Roughness.png
+Assets/ProjectLopHoc/Prefabs/pole.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8b217a26fc870154c9bd0593d6ec191f_1695438369_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B004.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0126.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B005.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_6877436581589748775_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0103.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0088.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0109.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/412650107cae99944a8aa8c3d7dedd4e_4300000_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/power_socket.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B007.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C081.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/power_socket_Mixed_AO.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/fireplug_Base_color.png
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Gary_blinn.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/048_L_0109_a.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0121.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/RD_blinn.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0121.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B009.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/screen_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-1177479828929432257_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/940d7a32ac84c1645bad42237a55de9a_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2684612576426301592_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0123.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-3958421516705074108_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B003.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0113.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor.001.mat
+Assets/ProjectLopHoc/Art/3DModels/Tunnel/Mat/Grass2.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/de4a3ea49bfc18d4dbb9744ffed6947a_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/air_con_Base_color.png
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_014_FarCluster.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/power_socket_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_1209335405442123116_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0094.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B003.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/t-desk_Metallic.png
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_000.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_3214630174436693773_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_580703767378532914_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_9_roof.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B008.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_BK_blinn.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_6236217435925985776_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/72cd01a94bb04c541a6a0fad9e29eacb_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-3308322576996155682_L2.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/057_Mesh_60.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-4622140529359514760_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2419393911490257906_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0083.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9272162ef3d7b304c9105697cbf3a42e_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_-6505156449491735521_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/066_Color #838383ff.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Interactors/Poke Interactor.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-2007363337321536394_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C034.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Seat_BU_lambert.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/012_RuralRoad_Chunk_0107.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0102.asset
+Assets/Terrain/Rocks and Terrains Pack - Low Poly/Models/Terrains/Mountains/NoLOD/Mountain_L_11.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/0f1b42bf82e80714fb96b134888a7af0_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/006_TerrainTransition_Chunk_0106.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_011.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/pillars_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0115.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/027_GrassGround.mat
+Assets/ProjectLopHoc/Art/Toa Nha.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B001.asset
+Assets/ProjectLopHoc/Features/Quiz/DeThi_01.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_1839796204927932541_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-1177479828929432257_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B007.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Head/Movement.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Head/xr_hmd.png
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Rope_BraidedMooring_512_normal.tif
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/Telport Anchor.mat
+Assets/ProjectLopHoc/Scripts/Lifecycle/BimOutlineMask.shader
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B008.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Rough_blinn.mat
+Assets/ProjectLopHoc/Scenes/Classroom/OcclusionCullingData.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B002.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/TunnelingVignette/TunnelingVignette.prefab
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Seat_Number_blinn.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8b217a26fc870154c9bd0593d6ec191f_1291700403_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/Showroom/textures/Marble2x2_Normal.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/047_R_0109_a.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_Door_Gray.mat
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 14.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_2070431741667574294_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0071.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_7732964924091442697_L1.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_9162622013225082336_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/751e8ea397335544faceb1b213cf2757_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e1daf9525b3e07540aa852e898e2c5c2_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_012.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 23.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B010.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B006.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/blinn31.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_6877436581589748775_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c35174eb31c0b154ab48e591d14d71f9_4300000_L2.asset
+Assets/Arabic Neoclassical/Street Road/Prefab/V3/V3_Road4Lane_Straight_02.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/0275d7f053ee59344bbd54a7a04b396d_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B002.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/metal.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0115.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C057.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C096.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Fist.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0096.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_6608865463248885661_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C047.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_Ground_blinn.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_-6505156449491735521_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B009.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Ctrl_Panel_blinn.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3958421516705074108_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B005.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Roofing_Bitumen_1.8x.1.8_512_albedo.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ce127cb4c84352148aaca17f6f8ce4e1_4300000_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Teleport/Blocking Teleport Reticle.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B001.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/THSR_Color_blinn.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0091.asset
+Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Frame Hover 256px.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_3822247309040838107_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-437919520799270731_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8129720142723837363_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Filters/AnyGazedAtTeleportAnchorFilter.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Shaders/Interactable.shadergraph
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/071_Mesh_53.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Station_End_TrainRide_ColorSlots.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/OutlineMask.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-7126204845632095809_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-4061120084548715867_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_5060444177187149915_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-4284182221599607849_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_1209335405442123116_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8b217a26fc870154c9bd0593d6ec191f_72106132_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C032.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/desk_Mixed_AO.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/air_con_Roughness.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B003.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C089.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0059.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B001.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0080.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B004.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/062_Color #8e8e8eff.mat
+Assets/ProjectLopHoc/Art/M_PlazaPaving.mat
+Assets/ProjectLopHoc/Art/3DModels/Robot/Robot.fbx
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_016_FarCluster.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0086.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0106.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/022_Material.004.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/5e627d0d751020d429f50ae8bd98c541_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_6236217435925985776_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B006.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0092.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/wood.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0072.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-3538003598956680809_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0094.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-679942719067557509_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_580703767378532914_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C060.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C056.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62b8f81716bf49f4e81b5775d2ce3865_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-4284182221599607849_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-5447637273788417547_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Animations/Climb Teleport Arrow.controller
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0100.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Marker_blinn.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3368545836799482859_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0073.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/98561980dafe1de43b9fdd28dbe4d7bf_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/upper_molding_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ac8f784becf48f64dae98e9c8e9c6bfb_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B004.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Seat_Gray_blinn1.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0056.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_7906354052944240508_L4.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_017.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0085.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/air_con_Metallic.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-3904461488521929675_L3.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Thumb Expression Capture.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_5189531334322955979_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Textures/DefaultMaterial_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C088.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/door_props.mat
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/chair_Base_color.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0114.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_004.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0118.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0096.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0130.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/screen.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_2_1 Variant.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B003.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_012_FarCluster.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0129.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2549278602852000602_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0105.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/Station_End_TrainRide_Combined.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0079.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_5189531334322955979_L2.asset
+Assets/XRI/QuestRayUnlit.mat
+Assets/ProjectLopHoc/Prefabs/Train_THSR_700T.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_6608865463248885661_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0078.asset
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/T_Road_Dirt_V03_AO.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8129720142723837363_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/molding_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_6745097852835617483_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C098.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Roofing_Bitumen_1.8x.1.8_512_normal.tif
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Controllers/XR Controller Left.prefab
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/T_Road_Dirt_V03_Height.png
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink_exterior02.mat
+Assets/ProjectLopHoc/Generated/StationAppearance/Glass.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ca2358ed9a4a03447aa43a9a63292247_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-7840820556741918105_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4f0dea9e067a7ca4693a4c4b1416779e_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ce127cb4c84352148aaca17f6f8ce4e1_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B010.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Models/Pinch_Pointer_LOD0.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B009.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0052.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-5052963394059084670_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B003.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Tree_MirabelleBranch01_512_normal.tif
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Poke.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0082.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9e3f35aebfad9254cbe01dc73b40dcc2_4300000_L3.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Controllers/XR Controller Right.prefab
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/screen_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0110.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_2_bottom.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C077.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/0275d7f053ee59344bbd54a7a04b396d_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/023_Material.007.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-1978577422382570800_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_2873169502259717111_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/t-desk_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_2959467708922500008_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0062.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0054.asset
+Assets/SlimUI/Modern Menu 1/Fonts/Poppins-Bold SDF.asset
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_2154909080876057544_L3.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/fireplug.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0079.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B007.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B003.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Brick_Modern_1K_normal.tif
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0064.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3308322576996155682_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_2959467708922500008_L4.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Polished_Concrete_Old.jpg
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/building_2.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B008.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0064.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_012.mat
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 13.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C067.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/front_light.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B007.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/GrassColour.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Fist Expression Capture.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_011.asset
+Assets/SkySeries Freebie/FreebieHdri/CloudedSunGlow4k.hdr
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/024_Material.002.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Default.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/PartMaterial_0.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_DecalsStain0092_1_masked_S.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/TunnelingVignette/TunnelingVignette.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0053.asset
+Assets/ProjectLopHoc/Scenes/YenTuHaLongXanh/LightingData.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7550147739690262709_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/KeyboardIcon.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4f0dea9e067a7ca4693a4c4b1416779e_4300000_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Car_No.jpg
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Controller/ControllerLeft.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0093.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/18bed0c36c4c4304f9502512e6af3b9b_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0088.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B001.asset
+Assets/Plugins/PixyzPluginForUnity/Editor/ImportSDK/Resources/IconPixyz.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-528327144337300102_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2866850402472294499_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_-6505156449491735521_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0119.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_2954858793080512207_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C037.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_3741162537542083803_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_-2130259702878950329_L2.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/GrassGround.mat
+Assets/Arabic Neoclassical/Street Road/Materials/V3/T_Road_V03_AlbedoTransparency.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c3e6d9096f4973442b47c1079a9bf55d_4239298160622359473_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C038.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B008.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/CycleXRDevices.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-1765337737086602200_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink_interior.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e1daf9525b3e07540aa852e898e2c5c2_4300000_L1.asset
+Assets/ProjectLopHoc/Prefabs/Mountain_Peak.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_7906354052944240508_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_3_middle.prefab
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_1_1 Variant.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C025.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_6_bottom.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_7732964924091442697_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0055.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7292569847554373119_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B005.asset
+Assets/ChiTietSaBan/ChiTiet/Railway_Combined_Mesh.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_016.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0067.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_1_3 Variant.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B003.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B009.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/053_Mesh_62.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_-2130259702878950329_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_RG_blinn1.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/DemoAssets/Textures/Concrete_Normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-5505785863868382421_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_9_middle.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_5217112195761610442_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C043.asset
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/UV8-korpus1.png
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Metal_SteelBrushed_1K_albedo.tif
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/rope.mat
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_024.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-5624356369280423816_L2.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/EnvironmentClusterFade.shader
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B002.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B009.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2419393911490257906_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-1256519914030377077_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8835290227940987202_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0067.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B003.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/013_RuralRoad_Chunk_0108.asset
+Assets/SkySeries Freebie/DayInTheClouds.mat
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_012.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B002.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/FarCluster.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B001.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/051_Mesh_51.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-2766811147855306684_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/7b16dfb55679034439219cb6117cfa01_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9b5ebc0bb11d5f5478ed0ccbd1f4cb1a_4300000_L2.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 1.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B001.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/ceiling.mat
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_022.unity
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/042_L_0107_b.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0112.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/5e627d0d751020d429f50ae8bd98c541_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B005.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_022.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B006.asset
+Assets/Arabic Neoclassical/Street Road/Prefab/V3/V3_Road4Lane_Intersection_3Way_02.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62b8f81716bf49f4e81b5775d2ce3865_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_014.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-679942719067557509_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_4564847448827134883_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/059_Mesh_58.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_007.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Decals/Decal 1.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0068.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/chair_Metallic.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Animations/ArrowBounce.anim
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Matel_01.jpg
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 12.mesh
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/029_FarCluster.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0052.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/1648b51d766afe94fa7ab8643b5d17a8_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C017.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c1928e3b56924834d81fe9323b524014_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink03_albedo_opacity.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_2070431741667574294_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0051.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Plastic_Shiny_1K_albedo.tif
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Metal_Rough.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0087.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/98561980dafe1de43b9fdd28dbe4d7bf_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_011_FarCluster.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0104.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C094.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0097.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-4622140529359514760_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_5010355444026992007_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B010.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B010.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C087.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0125.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B007.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/front_light_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B008.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Wood_BarkPine1_1x1_1K_normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_3916515047607418224_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ac8f784becf48f64dae98e9c8e9c6bfb_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/751e8ea397335544faceb1b213cf2757_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/050_L_0109_b.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0095.asset
+Assets/ProjectLopHoc/Scenes/YenTuHaLongXanh.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B002.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C092.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-7126204845632095809_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0131.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_024.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-8942655817801998122_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_1_top.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-5505785863868382421_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0101.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C097.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_018.unity
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_6608865463248885661_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-6264831526926562434_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0130.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0051.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_6650969335138528213_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Marker.jpg
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Poke Expression Capture.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B002.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_6745097852835617483_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_OldWood2_512_albedo.tif
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/fireplug_Normal_OpenGL.png
+Assets/ProjectLopHoc/Art/Materials/Classroom_Signboard.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2419393911490257906_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_3916515047607418224_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C024.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C050.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0090.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Catalog.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Materials/StaticRailway_ContactWire.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0090.asset
+Assets/SkySeries Freebie/FreebieHdri/Cloudymorning4k.hdr
+Assets/Photon/Fusion/Assemblies/Fusion.Runtime.dll
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0109.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Base.mat
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 17.mesh
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/019_Zone_021_ResidentialStreets.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/1648b51d766afe94fa7ab8643b5d17a8_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_2070431741667574294_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B010.asset
+Assets/ProjectLopHoc/Scenes/QuanLyVongDoiTaiSan.unity
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/tdesk_TR.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0075.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0110.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C011.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/038_L_0106_b.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B002.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/Please Read.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_OldWood2_512_normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c35174eb31c0b154ab48e591d14d71f9_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B009.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2e0399198ff9f514897cc3c1f6a76eda_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e9c6a90ba1fae5746803d9eba70d2e69_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/UV2-koridor2.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B006.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0121.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-8942655817801998122_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B005.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/white_board_Mixed_AO.png
+Assets/Arabic Neoclassical/Street Road/Materials/V3/T_Road_V03_AO.png
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_021_FarCluster.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62c51d938df51cb42ad3639ea8f81d33_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-4284182221599607849_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B010.asset
+Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Fram 256px.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0123.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2364732238595663823_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0096.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/30f848c3b2347364abbc72709a7ab946_4300000_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/blind_Base_color.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015.asset
+Assets/ProjectLopHoc/Prefabs/Multiplayer_Spawner.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-5447637273788417547_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2090856959947152379_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0126.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/aaf7e2b4f88879f48aad289dece80999_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_-7552435013969372862_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B006.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_019.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0129.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C079.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_-7387706064836869012_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B005.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0063.asset
+Assets/ProjectLopHoc/Art/3DModels/Showroom/textures/Map #19-Map #19.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0067.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/cc0cddd8a2bed0f499bf7d266ff195a3_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B006.asset
+Assets/ProjectLopHoc/Generated/QuestEnvironmentDensity/ExtendedBridge.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B004.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/043_R_0108_a.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 24.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B006.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TrainVisual_0.asset
+Assets/ProjectLopHoc/Prefabs/Deck Girder.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C012.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-2007363337321536394_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2419393911490257906_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C063.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/blind_Normal_OpenGL.png
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Prefabs/AIChatbot_Prefab.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0075.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0107.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Teleport/Climb Teleport Arrow.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/864d3c4e30e1beb40a411ddf3c4adeb7_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C086.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0054.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-7126204845632095809_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0058.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/metal-bronze.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B007.asset
+Assets/Arabic Neoclassical/Street Road/Materials/V3/M_V03_MaskMap.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/dd289195d50796548acb7e468a65578b_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0076.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C066.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-5052963394059084670_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0082.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-437919520799270731_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0091.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/building_6.fbx
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/005_TerrainTransition_Chunk_0105.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B010.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/025_Material.003.mat
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_022_FarCluster.asset
+Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Button Frame Press 256px.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/ceiling_Metallic.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0111.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/door_props_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_4428423091871140800_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B002.asset
+Assets/ProjectLopHoc/Prefabs/UTTVie.prefab
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_014.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/028_StaticRailway_ContactWire.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/building_5.fbx
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 7.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2621000904270929414_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C027.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0084.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-3538003598956680809_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/schol_19.obj
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/74dec0333e9e0e84cbed3bd18a63ef4a_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B010.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_014.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/011_RuralRoad_Chunk_0106.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_5010355444026992007_L2.asset
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_2070431741667574294_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/concrate.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_3214630174436693773_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/fe9100380e8f9304f9fb70b03c3c0a02_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B003.asset
+Assets/ProjectLopHoc/Art/logo.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_6650969335138528213_L3.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/RailwayMicroChunks.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B002.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B005.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_6877436581589748775_L2.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/XR Device Simulator Controls.inputactions
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/7c691d6e1ecf8904eb331dcde4117adb_4300000_L4.asset
+Assets/ProjectLopHoc/Art/3DModels/Showroom/textures/Marble2x2_Albedo.jpg
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/031_R_0105_a.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/db1d4762169bc7347870d741a2fd195d_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B001.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/068_Color #454545ff.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0099.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8835290227940987202_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C064.asset
+Assets/ProjectLopHoc/Scenes/YenTuHaLongXanh/ReflectionProbe-0.exr
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/0f1b42bf82e80714fb96b134888a7af0_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B008.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Interactors/Right_NearFarInteractor.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2684612576426301592_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_5047256137790225176_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B010.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/7c691d6e1ecf8904eb331dcde4117adb_4300000_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/molding_Metallic.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/cd7c05adc50dd124d97503b5289078b9_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B010.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_014.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0080.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B004.asset
+Assets/Terrain/Rocks and Terrains Pack - Low Poly/Models/Terrains/Mountains/NoLOD/Mountain_L_19.fbx
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_025_FarCluster.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B007.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0112.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B007.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/riyadh-metro/source/RiyadhMetro_D.fbx
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_013_FarCluster.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Leaves.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2866850402472294499_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0116.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/864d3c4e30e1beb40a411ddf3c4adeb7_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/72cd01a94bb04c541a6a0fad9e29eacb_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C054.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C082.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Plastic_Shiny_1K_normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_5189531334322955979_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B009.asset
+Assets/Arabic Neoclassical/Street Road/Materials/V3/T_Road_V03_MetallicSmoothness.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C010.asset
+Assets/SkySeries Freebie/CloudedSunGlow.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011.asset
+Assets/ProjectLopHoc/Art/concrete_pavers_02_diff_4k.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0129.asset
+Assets/Arabic Neoclassical/Street Road/Materials/V3/T_Road_V03_Height.png
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Seat_Color.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0071.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_3920443483216605952_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B004.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/Controller_White.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_3920443483216605952_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-1765337737086602200_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9272162ef3d7b304c9105697cbf3a42e_4300000_L2.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_3_middle_bottom.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0081.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0100.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_2537026529402509820_L1.asset
+Assets/ChiTietSaBan/ChiTiet/DuongRay_1Mesh.prefab
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/air_con_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_011_SubgradeReinforcedSlope.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0126.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_017.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B009.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0073.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0125.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_-5495902117074765545_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_2154909080876057544_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_7906354052944240508_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-437919520799270731_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/THSR_Color.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B005.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_933615028189122351_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0117.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_3214630174436693773_L4.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 15.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_-8839368762345780380_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0064.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/front_light_Metallic.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Thumb.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wooden_wall.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Head/HMD.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2866850402472294499_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B007.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor_Base_color.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B009.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_3_roof_high.prefab
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/tree.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B006.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Interactors/Left_NearFarInteractor.prefab
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Light_blinn.mat
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor.mat
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 25.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/74dec0333e9e0e84cbed3bd18a63ef4a_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0119.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-6264831526926562434_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C023.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7292569847554373119_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B006.asset
+Assets/ProjectLopHoc/Generated/QuestTunnelMountain/Forest_01Mountain_SourceRidge_OpenBore.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C042.asset
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/UV5-2.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0081.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_010.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Plaster_Rough_1K_normal.tif
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 3.mesh
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/XR Origin (XR Rig).prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_-8839368762345780380_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ac8f784becf48f64dae98e9c8e9c6bfb_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C014.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/desk_Base_color.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B005.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/045_R_0108_b.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B002.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/FresnelHighlight.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/000_SRM_MVP_20261110_184700_Poles_Chunk_0105.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B007.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/001_SRM_MVP_20261110_184700_Poles_Chunk_0106.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/53df8ca26c9290f49a430a8499d8ef3f_-833103645782805513_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Pinch.png
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Plaster_Rough_1K_albedo.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2e0399198ff9f514897cc3c1f6a76eda_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0076.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B004.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/073_Color #3c3c3ccc.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C052.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/fc698b9a6580b94448c2c4d1d9914720_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_SV_blinn.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0059.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2014614621063456167_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/train-ride/mat/Seethrough.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Affordances/PokePointerAffordance.prefab
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/upper_molding_Base_color.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C016.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-7126204845632095809_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/chair.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-7126204845632095809_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B006.asset
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Knowledge/UTT_QuyTac.txt
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62c51d938df51cb42ad3639ea8f81d33_4300000_L3.asset
+Assets/ProjectLopHoc/Art/villa.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0051.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Mouse/MouseR.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-1256519914030377077_L5.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0057.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-2007363337321536394_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/upper_molding_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/BimLocalXR.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B010.asset
+Assets/ProjectLopHoc/Art/3DModels/Showroom/textures/Bitmaptexture.jpg
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_2_top.prefab
+Assets/Arabic Neoclassical/Street Road/Prefab/Dirt/Dirt_Road4Lane_Intersection_4Way.prefab
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_3_bottom.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_3941114003567591502_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_2154909080876057544_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B009.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Rusted_blinn.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C035.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0076.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/Hand_Grab.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/door_props_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_2873169502259717111_L2.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Frames.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/052_Color #c0c0c0ff.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3958421516705074108_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_5966030687666034592_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/53df8ca26c9290f49a430a8499d8ef3f_-833103645782805513_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B002.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/pillars_Normal_OpenGL.png
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_Gray_blinn.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C074.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_1_middle.prefab
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Knowledge/YenTu_KienThuc.txt
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0127.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/source/glink_tram_skecthfab.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B007.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_020_ResidentialStreets.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/brick.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/18bed0c36c4c4304f9502512e6af3b9b_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B009.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/bark.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0100.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0105.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/source/_1163.fbx
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wooden_wall_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0069.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink_exterior03.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Decal Projector.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C039.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/064_Color #808080ff.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-869233684755976145_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/017_Zone_021_FarCluster.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B002.asset
+Assets/ProjectLopHoc/Art/concrete_pavers_02_disp_4k.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C033.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_2537026529402509820_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B002.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/light.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Paint_Epoxy_1K_albedo.tif
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B008.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Rope_BraidedMooring_512_albedo.tif
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C026.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C062.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2fef869d63340f64f97afea4541b8a23_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0104.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/Roboto Vietnamese SDF.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_003.mat
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/white_board_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2529177735766824402_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/069_Mesh_54.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Seat_Label.jpg
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/056_Color #c8c8c8ff.mat
+Assets/Photon/Fusion/Runtime/Statistics/Fonts/Roboto-Regular.ttf
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_013.unity
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0068.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-6264831526926562434_L4.asset
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Prefabs/UserMessagePrefab.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0122.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-5624356369280423816_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0122.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B001.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Columns.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B007.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C041.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B009.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8627937854399106316_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/0275d7f053ee59344bbd54a7a04b396d_4300000_L2.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_1_2 Variant.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0098.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7670289565280688119_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/009cae9feaa319947ba423805f89f313_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0097.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62c51d938df51cb42ad3639ea8f81d33_4300000_L1.asset
+Assets/SlimUI/Modern Menu 1/Graphics/Buttons/Handle Outline 256px.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/db1d4762169bc7347870d741a2fd195d_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e9c6a90ba1fae5746803d9eba70d2e69_4300000_L3.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Metal_CopperPolished_1K_albedo.tif
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B006.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0068.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C048.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8835290227940987202_L2.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 18.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_3214630174436693773_L2.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TrainVisual_1.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_002.mat
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_022_ResidentialStreets.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink_exterior01.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2621000904270929414_L3.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 16.mesh
+Assets/SkySeries Freebie/FreebieHdri/DayInTheClouds4k.hdr
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8627937854399106316_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/upper_molding.mat
+Assets/Arabic Neoclassical/Street Road/Materials/V3/M_V03.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B001.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TrainExteriorGuard.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-8942655817801998122_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C055.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0105.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0065.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/009cae9feaa319947ba423805f89f313_4300000_L3.asset
+Assets/ProjectLopHoc/Prefabs/RailLow.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C007.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0127.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_6_2 Variant.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C070.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_-125435165217083709_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_2954858793080512207_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B010.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Marker.jpg
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/072_Mesh_52.asset
+Assets/Photon/Fusion/Runtime/Statistics/Icons/StatsCloseIcon.png
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_024.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B008.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/blinn34.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B005.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/041_R_0107_b.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/screen_Metallic.png
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/textures/light_dif.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/TunnelingVignette/TunnelingVignette.shader
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C084.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0066.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B004.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor_Normal_OpenGL.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/pillars_Metallic.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_-7552435013969372862_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/ExistingGirderSupportGeometry.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_012.unity
+Assets/Arabic Neoclassical/Street Road/Prefab/Dirt/Dirt_Road2Lane_Corner .prefab
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wooden_wall_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B002.asset
+Assets/ProjectLopHoc/Scenes/Showroom.unity
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0124.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B005.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/molding.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/035_R_0106_a.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B010.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/TunnelingVignette/TunnelingVignetteHemisphere.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0070.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B004.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_024_FarCluster.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_4038874053963394110_L1.asset
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/T_Road_Dirt_V03_AlbedoTransparency.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0061.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/roof_building.fbx
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_017.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C049.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C065.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C030.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0102.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Seat_Color.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/032aaf745e4231f41b15060700d7b15e_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/blinn42.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/fe9100380e8f9304f9fb70b03c3c0a02_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9272162ef3d7b304c9105697cbf3a42e_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0081.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/054_Color #787878ff.mat
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 21.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C028.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B010.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011.asset
+Assets/ProjectLopHoc/Prefabs/Mau.prefab
+Assets/ProjectLopHoc/Prefabs/StudentNameButton.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0120.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/train-ride/mat/Train Texture.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B005.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_-1550514412580984892_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/940d7a32ac84c1645bad42237a55de9a_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2684612576426301592_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B008.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0058.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_4564847448827134883_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B003.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B008.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0098.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-5624356369280423816_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_6_1 Variant.prefab
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_001.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/fc698b9a6580b94448c2c4d1d9914720_4300000_L4.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/ceiling_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B009.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wall_material_normal.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C045.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2364732238595663823_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B002.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B002.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0077.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B007.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/building_1.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/7b16dfb55679034439219cb6117cfa01_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Concrete_blinn.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0092.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0083.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_289819783523511185_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0128.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-3538003598956680809_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B007.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B006.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/007_TerrainTransition_Chunk_0107.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B010.asset
+Assets/ProjectLopHoc/Art/Materials/concrete_pavers_02_diff_4k.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B003.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/glink02_albedo_opacity.png
+Assets/ProjectLopHoc/Generated/StationAppearance/Station_Start_TrainRide_ColorSlots.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/067_Mesh_55.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_8052602938568096326_L2.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Mouse/Cursor.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_5217112195761610442_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C015.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B007.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Ctrl_Panel.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0124.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_016.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-158261878019531087_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_2954858793080512207_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/7c691d6e1ecf8904eb331dcde4117adb_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C020.asset
+Assets/ProjectLopHoc/Prefabs/Pier Column.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0125.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/fe9100380e8f9304f9fb70b03c3c0a02_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0093.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_019.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/door_props_Metallic.png
+Assets/ProjectLopHoc/Scenes/UTTCampus.unity
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_016.unity
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0084.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B002.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/014_RuralRoad_Chunk_0109.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/032aaf745e4231f41b15060700d7b15e_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_2086175200721949154_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B002.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Glass_blinn32.mat
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Metal_Rusted_1.jpg
+Assets/ProjectLopHoc/Generated/QuestTunnelMountain/Forest_01TunnelInterior_SourcePrefab.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/db1d4762169bc7347870d741a2fd195d_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_4690644467119206816_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_015.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0070.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0095.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-528327144337300102_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0077.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0062.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/6684e4c60ed5bc44b9192280e8875c31_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_933615028189122351_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Mouse/MouseR_d.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/desk.mat
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/fireplug_Metallic.png
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/010_RuralRoad_Chunk_0105.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_580703767378532914_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C021.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-5447637273788417547_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-7840820556741918105_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Auto_Sale_blinn.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_2586362298472618410_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0117.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B001.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_015_FarCluster.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B003.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 20.mesh
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Models/Reticle_Torus.fbx
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B006.asset
+Assets/ProjectLopHoc/Generated/QuestTunnelMountain/Forest_02TunnelInterior_SourcePrefab.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/BallastAndEmbankment.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 22.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2529177735766824402_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_2959467708922500008_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B010.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/Look.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0083.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_7485205316709286908_L4.asset
+Assets/ProjectLopHoc/Scenes/Login.unity
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_3146234255863163663_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0117.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/Gripper.png
+Assets/SlimUI/Modern Menu 1/Graphics/Frames/Panel 1920x1080px.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C091.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Controller/xr_ctlr.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0058.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/source/sydney_metro_jotrain.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3368545836799482859_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ac7ba02d3870d8a489fa3bb55c00c2e0_4300000_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wooden_wall_Metallic.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B008.asset
+Assets/Terrain/Rocks and Terrains Pack - Low Poly/Models/Terrains/Mountains/NoLOD/Mountain_L_06.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/600a78e92ecd36641a3458bb611cf3d5_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_020_FarCluster.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_933615028189122351_L3.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/pillars_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2684612576426301592_L4.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/061_Mesh_59.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_6522819265319539159_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wall_mat.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_3_roof_low.prefab
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/t-desk_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_3741162537542083803_L4.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/009_TerrainTransition_Chunk_0109.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/195d9ac76a06f3641adb7e800f293344_-621983254599502552_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B005.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/DemoAssets/Sprites/LegibilityMask.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0069.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B002.asset
+Assets/ProjectLopHoc/Prefabs/EBS_Rail_2000_Prefab.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S010-B007.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0112.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Tree.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C051.asset
+Assets/Settings/SampleSceneProfile.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/62b8f81716bf49f4e81b5775d2ce3865_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B001.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Brick_Modern_1K_albedo.tif
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0116.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2684612576426301592_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_3146234255863163663_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C078.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/roof_building_small.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C040.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B003.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0062.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/electric+pole.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/195d9ac76a06f3641adb7e800f293344_-621983254599502552_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B005.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0061.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/roof.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3dda4aa62b4eb0d428deb0f81c1a2ad7_-8839368762345780380_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B004.asset
+Assets/ProjectLopHoc/Generated/QuestTunnelMountain/Forest_02Mountain_SourceRidge_OpenBore.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/940d7a32ac84c1645bad42237a55de9a_4300000_L3.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/XR Device Simulator UI.prefab
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0078.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-4061120084548715867_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Autosale.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0110.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C019.asset
+Assets/ProjectLopHoc/Prefabs/Mountain_GreenHill.prefab
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/034_L_0105_b.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0080.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B007.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/OverviewRail.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_005.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C061.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_3941114003567591502_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S015.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2529177735766824402_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_2070431741667574294_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2090856959947152379_L1.asset
+Assets/ProjectLopHoc/Generated/QuestEnvironmentDensity/ExistingBridgeConcrete.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B007.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/white_board_Metallic.png
+Assets/ProjectLopHoc/Features/Lecture/SlideScreenUnlit.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_6522819265319539159_L1.asset
+Assets/Arabic Neoclassical/Street Road/Mesh/Roads.fbx
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/CloseWindow.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0124.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Materials/UI-NoZTest.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_7906354052944240508_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_9162622013225082336_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B003.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/No2_Label.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B003.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0066.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_9_1 Variant.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/600a78e92ecd36641a3458bb611cf3d5_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B001.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0090.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0065.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/009cae9feaa319947ba423805f89f313_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/RailwayVertexColour.shader
+Assets/ProjectLopHoc/Scenes/Classroom.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B003.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/pillars.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_3_1 Variant.prefab
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/032_L_0105_a.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B002.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 6.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c3e6d9096f4973442b47c1079a9bf55d_4239298160622359473_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B001.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/DemoAssets/Sprites/Forward.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0085.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2926275011124139088_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/rail.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/de4a3ea49bfc18d4dbb9744ffed6947a_4300000_L3.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Prefabs/Teleport/Directional Teleport Reticle.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/cd7c05adc50dd124d97503b5289078b9_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/front_light_Base_color.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_2534964839176971238_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/XRI Default Input Actions.inputactions
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2364732238595663823_L2.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 11.mesh
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/030_RailwayFlatColour.mat
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/door_props_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B003.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0053.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/aaf7e2b4f88879f48aad289dece80999_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_4758399959694121390_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/upper_molding_Metallic.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_4564847448827134883_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B001.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/98561980dafe1de43b9fdd28dbe4d7bf_4300000_L3.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Net_lambert.mat
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_008.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0082.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0070.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-5624356369280423816_L2.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/015_ContactWire_Zone_021.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/com_desk_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_7906354052944240508_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C099.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_025.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/72cd01a94bb04c541a6a0fad9e29eacb_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C071.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-679942719067557509_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/roof_building.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B008.asset
+Assets/ProjectLopHoc/Generated/QuestEnvironmentDensity/Zone_017_Chunk_0088_8800m_to_8900m_Cut.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_023_FarCluster.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/rope.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_3822247309040838107_L4.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_023.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0122.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/roof_building_small.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_6745097852835617483_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B003.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_026.unity
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/blinn30.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/ShowroomQuestGeometry.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_4493585093827132993_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-158261878019531087_L3.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-1177479828929432257_L1.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/power_socket_Metallic.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_1930416916894907532_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/7b16dfb55679034439219cb6117cfa01_4300000_L4.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/textures/exterior_dif.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C075.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B004.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/040_L_0107_a.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Leaves0170_1_masked_S.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0075.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0128.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_2070431741667574294_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/textures/Glass_dif.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B001.asset
+Assets/Terrain/Rocks and Terrains Pack - Low Poly/Textures/ColorGrid.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0087.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2549278602852000602_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B001.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/049_R_0109_b.asset
+Assets/ChiTietSaBan/ChiTiet/ElementInfoRow 1.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_1839796204927932541_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0086.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0074.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B005.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/gold-coast-glink-light-rail-tram-flexity-2/textures/Copyright.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-7126204845632095809_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Resting Expression Capture.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-1256519914030377077_L1.asset
+Assets/SkySeries Freebie/Cloudymorning.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-3958421516705074108_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/XR Device Controller Controls.inputactions
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0091.asset
+Assets/ProjectLopHoc/Prefabs/Robot.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_3941114003567591502_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/cc0cddd8a2bed0f499bf7d266ff195a3_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0069.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_020.asset
+Assets/ProjectLopHoc/Prefabs/Train Ride.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_595330756393017343_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/trainy-mctrainface/source/McFace.FBX
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0060.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_020_ResidentialCluster.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C073.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012-B003.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B005.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/molding_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0103.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B008.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/065_Mesh_56.asset
+Assets/ProjectLopHoc/Generated/QuestEnvironmentDensity/Zone_019_Chunk_0099_9900m_to_10000m_Cut.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B002.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/air_con.mat
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_011.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S003-B006.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/SurroundingHills_Matte.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-5624356369280423816_L1.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/020_Material.mat
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Seat_blinn2.mat
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/blind.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B008.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/building_8.fbx
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0109.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_010.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8cd4a0144671d6a43a52e10bc2755431_4300000_L2.asset
+Assets/ProjectLopHoc/Prefabs/Tunnel.prefab
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-1765337737086602200_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C058.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/com_desk_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0101.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_5966030687666034592_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/wooden_wall_Base_color.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0063.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7670289565280688119_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B005.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/021_Material.001.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7550147739690262709_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-2766811147855306684_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0108.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0056.asset
+Assets/ProjectLopHoc/Scripts/Lifecycle/BimOutlineShell.shader
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/t-desk_Normal_OpenGL.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/power_socket_Base_color.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_1930416916894907532_L4.asset
+Assets/ProjectLopHoc/Art/3DModels/Rail/source/Railway_segment.fbx
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/source/TaiwanHSR700T_02.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/53df8ca26c9290f49a430a8499d8ef3f_-833103645782805513_L2.asset
+Assets/ChiTietSaBan/ChiTiet/ChiTietSaBan.unity
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0089.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S016-B003.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0052.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0073.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2684612576426301592_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_009.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C095.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0092.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Seat_Number.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B003.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_-125435165217083709_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_4758399959694121390_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c3e6d9096f4973442b47c1079a9bf55d_4239298160622359473_L1.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_026.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/039_R_0107_a.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_018.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C031.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C046.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S001-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-5505785863868382421_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B005.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/com_desk_Base_color.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/molding_Normal_OpenGL.png
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Knowledge/UTT_KienThuc.txt
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0054.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0060.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/train-ride/mat/Light Texture.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B008.asset
+Assets/ProjectLopHoc/Core/ScriptableObjects/Classroom_01_Config.asset
+Assets/ProjectLopHoc/Art/3DModels/Tunnel/ImageToStl.com_concrete_girder_beam_bridgestunnels_free.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-3958421516705074108_L2.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B005.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0077.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0086.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_2_middle.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B007.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0130.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/DeviceSimUI_bg.png
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/t-desk.mat
+Assets/ProjectLopHoc/Generated/QuestRailway/RailwayFlatColour.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0089.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S002-B009.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/textures/interior_dif.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C013.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/com_desk_Metallic.png
+Assets/ProjectLopHoc/Art/MinimapRT.renderTexture
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Controller/ControllerOverlayLinesRight.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0055.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0106.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_2873169502259717111_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-2419393911490257906_L4.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/060_Color #e0dfdbff.mat
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Models/BlinkVisual.fbx
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_3146234255863163663_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_2586362298472618410_L2.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Metal_SteelBrushed_1K_normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ca2358ed9a4a03447aa43a9a63292247_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_021.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-869233684755976145_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B003.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_025.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S005-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/dd289195d50796548acb7e468a65578b_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/ceiling_Base_color.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C068.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C083.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S010-B009.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0116.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0063.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_5060444177187149915_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Decals/Decal 3.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Buildings/building_2_2 Variant.prefab
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_026.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-528327144337300102_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0085.asset
+Assets/ProjectLopHoc/Generated/QuestEnvironmentDensity/BridgeWater.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Matel_01.jpg
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0114.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Ground_01.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B007.asset
+Assets/ProjectLopHoc/Generated/QuestFarSettlement/Zone_017_FarCluster.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8cd4a0144671d6a43a52e10bc2755431_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B005.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B009.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2014614621063456167_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S004-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3308322576996155682_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/UV7-korpus2.png
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/TexturesCom_Asphalt5_2x2_512_albedo.tif
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/037_R_0106_b.asset
+Assets/ProjectLopHoc/Art/utt.jpg
+Assets/ProjectLopHoc/Generated/ShowroomPerformance/Materials/rail_013.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0060.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_020.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Wood_BarkPine1_1x1_1K_roughness.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_5010355444026992007_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Models/UniversalController.fbx
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/046_L_0108_b.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0120.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/XR Device Hand Controls.inputactions
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0078.asset
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/textures/exterior_trailer_dif.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B008.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9e3f35aebfad9254cbe01dc73b40dcc2_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Controller/ControllerRight.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S014-B007.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-2766811147855306684_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/com_desk.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S009-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/b230261898ba3304bbfa7c21e81c53cc_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C093.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0118.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 5.mesh
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/General/btn_bgbottom.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0108.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S015-B001.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_021_ResidentialCluster.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/465675216c031e54fa1846996a64dad2_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/EnvironmentVisualFix/Water_Opaque.mat
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_021.asset
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/T_Road_Dirt_V03_MetallicSmoothness.png
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Mouse/Mouse.png
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_6_middle.prefab
+Assets/ProjectLopHoc/Art/3DModels/Showroom/textures/Bitmaptexture-Bitmaptexture.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_5451805538598770718_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B002.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/materials/Color_WH_blinn.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C022.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0095.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/white_board.mat
+Assets/ProjectLopHoc/Art/3DModels/Tunnel/Mat/ConcreteTunnel1.mat
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0074.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_015.unity
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0101.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B009.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 4.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/cd7c05adc50dd124d97503b5289078b9_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B009.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 9.mesh
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Grab Expression Capture.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-158261878019531087_L1.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_021.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_013.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/High-speed_train.fbx
+Assets/Arabic Neoclassical/Street Road/Materials/Dirty Version/T_Road_Dirt_V03_Normal.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f1040a940df08a244b040b15c79f9745_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_1930416916894907532_L3.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/070_Color #ff0000ff.mat
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Metal_Rough.jpg
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2926275011124139088_L4.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Shaders/Unlit_Fresnel.shadergraph
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0119.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0131.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_011.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S007-B006.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Matel_02.jpg
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Head/HMD_d.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_9162622013225082336_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S011-B001.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/Shaders/UI-NoZTest.shader
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_6650969335138528213_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/74dec0333e9e0e84cbed3bd18a63ef4a_4300000_L3.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/air_con_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S005-B009.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0087.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/018_Zone_021_ResidentialCluster.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B007.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Wood_BarkPine1_1x1_1K_albedo.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/aaf7e2b4f88879f48aad289dece80999_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0079.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_015.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-1978577422382570800_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0094.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/plaster.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/de4a3ea49bfc18d4dbb9744ffed6947a_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0127.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/055_Mesh_61.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7670289565280688119_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2621000904270929414_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0093.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/Hand Expression Captures/Pinch Expression Capture.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0065.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0111.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/train-ride/source/Train Ride.fbx
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C072.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/016_Terrain_021.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/18bed0c36c4c4304f9502512e6af3b9b_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_019.unity
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed.mesh
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0111.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/ac7ba02d3870d8a489fa3bb55c00c2e0_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9b5ebc0bb11d5f5478ed0ccbd1f4cb1a_4300000_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_6_roof.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B003.asset
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/004_SRM_MVP_20261110_184700_Poles_Chunk_0109.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C080.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0072.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C053.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-1978577422382570800_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_595330756393017343_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_7906354052944240508_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_4428423091871140800_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0107.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C036.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_016.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/Starter Assets/AffordanceThemes/PokeSphereColor.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0059.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9e3f35aebfad9254cbe01dc73b40dcc2_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-3904461488521929675_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_-2549278602852000602_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e9c6a90ba1fae5746803d9eba70d2e69_4300000_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Controller/ControllerOverlayLinesLeft.png
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_010.unity
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 19.mesh
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_1209335405442123116_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_2586362298472618410_L4.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Lights.mat
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_022.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S011-B010.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/412650107cae99944a8aa8c3d7dedd4e_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_3741162537542083803_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_4690644467119206816_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Decals/Decal 4.mat
+Assets/ProjectLopHoc/AIChatbot_Phase3_MetaConnect_Final_Unity6/AIChatbot_Phase3_MetaConnect_Final_Unity6/Unity/Assets/AIChatbot_Phase2_Final_Unity6/Prefabs/AIMessagePrefab.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-4622140529359514760_L4.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0089.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_023.unity
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B003.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/XR Device Simulator.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S012-B002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_5060444177187149915_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0097.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Decals/Decal 5.mat
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B003.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/cc0cddd8a2bed0f499bf7d266ff195a3_4300000_L2.asset
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B007.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Metal_CopperPolished_1K_normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_8627937854399106316_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C076.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/584bb0b8fd0a89042a65ad33119cb303_-5495902117074765545_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0056.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C002.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4d713a0cb4685da4a8e0f9e7f9faa625_2537026529402509820_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_8052602938568096326_L1.asset
+Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_015.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2014614621063456167_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/c1928e3b56924834d81fe9323b524014_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S004-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S006-B010.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0108.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S017-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3308322576996155682_L3.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Prefabs/Parts/building_9_bottom.prefab
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Seat_Number.jpg
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/blind_Mixed_AO.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B009.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S008-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S014-B002.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0128.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_DecalBottom0047_7_masked_S.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_8052602938568096326_L4.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/floor.png
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/003_SRM_MVP_20261110_184700_Poles_Chunk_0108.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/blind_Metallic.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B004.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S017-B002.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/screen_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/9b5ebc0bb11d5f5478ed0ccbd1f4cb1a_4300000_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-3308322576996155682_L1.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 2.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S006-B002.asset
+Assets/ProjectLopHoc/SimplifiedMeshes/GiamMesh/00_unnamed 10.mesh
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C090.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Head/MoveRotateTool.png
+Assets/ChiTietSaBan/ChiTiet/VRBimAiDashboard/VRBimAiDashboard_Contextual_Package/VRBimAiDashboard_Contextual.prefab
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S013-B005.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_3822247309040838107_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0084.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-5624356369280423816_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S012.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e1daf9525b3e07540aa852e898e2c5c2_4300000_L2.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0113.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/than/textures/Metal_Rusted_1.jpg
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S001-B010.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Walls.mat
+Assets/Arabic Neoclassical/Street Road/Materials/V3/T_Road_V03_Normal.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S009-B007.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0106.asset
+Assets/ProjectLopHoc/Generated/RuntimeZones/Meshes/ContactWire_Zone_013.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S013-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B006.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0071.asset
+Assets/ProjectLopHoc/Art/Materials/concrete_pavers_02_disp_4k.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/fc698b9a6580b94448c2c4d1d9914720_4300000_L1.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/195d9ac76a06f3641adb7e800f293344_-621983254599502552_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_Paint_Epoxy_1K_normal.tif
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/8f52b3c6c17d7b749946dc21106bbb22_595330756393017343_L4.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-4839535900218338178_L1.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S007-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2090856959947152379_L4.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S003-B005.asset
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/chair_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/026_Material.005.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Textures/TexturesCom_DecalsStain0094_2_masked_S.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0098.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3368545836799482859_L2.asset
+Assets/ProjectLopHoc/Generated/StationAppearance/Roof.mat
+Assets/ProjectLopHoc/Art/3DModels/TauShowroom/sydney-metro-driverless-train-alstom-metropolis/textures/undercarriage_dif.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C069.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C001.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S016-B004.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/2bfa2793a5bdd3448bc5326f7eadf6fd_-4839535900218338178_L3.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TR-S002-B006.asset
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Part_C059.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_-7292569847554373119_L1.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/RuralRoad_Chunk_0103.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/e64d20c20f859ec4fb8c82c9d0407b4b_-3958421516705074108_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/TauChay/dau/textures/Matel_02.jpg
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/b230261898ba3304bbfa7c21e81c53cc_4300000_L3.asset
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0057.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/a34640d4145ead141be6449445d58bad_-2419393911490257906_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/plastic.mat
+Assets/ProjectLopHoc/Generated/QuanLyVongDoiTaiSan/036_L_0106_a.asset
+Assets/ProjectLopHoc/Art/3DModels/OK/train-ride/mat/Trim Material.mat
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_1839796204927932541_L1.asset
+Assets/Samples/XR Interaction Toolkit/3.7.0/XR Device Simulator/UI/Hands/hand.png
+Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/Z021-TL-S008-B006.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_3916515047607418224_L4.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/concrate_painter.mat
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Models/building_3.fbx
+Assets/ProjectLopHoc/Art/3DModels/LectureHall/textures/white_board_Normal_OpenGL.png
+Assets/ProjectLopHoc/Generated/StaticRailwayEnvironmentMVP/Meshes/TerrainTransition_Chunk_0120.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/f7ede2d77225fcd41affc1a96ce614f0_5047256137790225176_L2.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/4f0dea9e067a7ca4693a4c4b1416779e_4300000_L2.asset
+Assets/ProjectLopHoc/Art/3DModels/School/source/18-triangulate/UV3.png
+Assets/ProjectLopHoc/Generated/StaticRailwayMap/Meshes/SRM_MVP_20261110_184700_Poles_Chunk_0074.asset
+Assets/ProjectLopHoc/Generated/QuestExperienceSectors/Zone_016_OverheadPortalSector.asset
+Assets/ProjectLopHoc/Generated/ShowroomGeometryV3/Meshes/3fa2ef5f5d312684296de0a55d40ace1_2926275011124139088_L1.asset
+Assets/(HDRP) NYC-Like City Buildings Set (PBR)/Materials/Decals/Decal 2.mat
+Assets/SlimUI/Modern Menu 1/Graphics/Frames/Panel Frame 512px.png

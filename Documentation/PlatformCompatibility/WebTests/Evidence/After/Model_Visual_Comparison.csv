@@ -1,0 +1,7 @@
+"Scene","Before","After","AreaXYXY","Samples","ChangedMoreThan8Rgb","Percent"
+"Login","Before\Evidence\Login_after_click.png","After\Release\Evidence\Login_at_start.png","0/0/224/720","6480","0","0"
+"UTTCampus","Before\Evidence\UTTCampus_after_click.png","After\Release\Evidence\UTTCampus_after_click.png","0/0/1280/720","36864","0","0"
+"Classroom","Before\Evidence\Classroom_menu_closed.png","After\Release\Evidence\Classroom_after_click.png","0/145/1280/696","28416","0","0"
+"Showroom (train exterior at spawn)","Before\Evidence\Showroom_after_click.png","After\Release\Evidence\Showroom_after_click.png","0/304/430/397","1634","4","0.245"
+"YenTuHaLongXanh (coach)","Before\Evidence\YenTuHaLongXanh_after_click.png","After\Release\Evidence\YenTuHaLongXanh_after_click.png","0/0/1280/720","36864","0","0"
+"QuanLyVongDoiTaiSan (model area)","Before\Evidence\QuanLyVongDoiTaiSan_after_click.png","After\Release\Evidence\QuanLyVongDoiTaiSan_after_click.png","318/220/812/718","9900","8","0.081"

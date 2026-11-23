@@ -49,7 +49,12 @@ namespace BIM4D.AI.Speech
             if (audio == null || audio.Pcm16 == null || audio.Pcm16.Length < 2 || audio.Channels < 1)
                 throw new BIMTtsException(BIMTtsErrorCode.InvalidAudio, "Không có dữ liệu âm thanh để phát.");
             byte[] pcm = audio.Pcm16;
+#if UNITY_WEBGL && !UNITY_EDITOR
+            await Task.Yield();
+            float[] samples = BIMWavParser.ToFloat(pcm);
+#else
             float[] samples = await Task.Run(() => BIMWavParser.ToFloat(pcm));
+#endif
             var clip = AudioClip.Create(name, samples.Length / audio.Channels, audio.Channels, audio.SampleRate, false);
             if (!clip.SetData(samples, 0))
             {

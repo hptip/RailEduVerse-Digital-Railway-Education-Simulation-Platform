@@ -26,7 +26,7 @@ namespace ProjectLopHoc.UI
         {
             // Kiểm tra quyền từ PlayerPrefs đã lưu từ màn hình Login
             _isLecturer = PlayerPrefs.GetInt("IsLecturer", 0) == 1;
-            _xrMode = FindFirstObjectByType<XROrigin>() != null || XRSettings.isDeviceActive;
+            _xrMode = !UttWebPresentation.Active && (FindFirstObjectByType<XROrigin>() != null || XRSettings.isDeviceActive);
 
             // Đóng cả 2 bảng khi mới vào Scene
             if (lecturerPanel != null) lecturerPanel.SetActive(false);
@@ -35,6 +35,7 @@ namespace ProjectLopHoc.UI
 
         private void Update()
         {
+            if (UttWebPresentation.Active && SceneQuickMenu.IsOpen) return;
             bool togglePressed = _xrMode ? WasXRControllerTogglePressed() : WasToggleKeyPressed();
             if (togglePressed)
             {
@@ -58,6 +59,9 @@ namespace ProjectLopHoc.UI
         {
 #if ENABLE_INPUT_SYSTEM
             if (Keyboard.current == null) return false;
+            if (UttWebPresentation.Active && Keyboard.current.lKey.wasPressedThisFrame)
+                return !UttWebPresentation.PointerOverUi ||
+                    UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()?.isFocused != true;
 
             string controlName = toggleKey.ToString().ToLowerInvariant();
             KeyControl control = Keyboard.current.TryGetChildControl<KeyControl>(controlName);
@@ -83,7 +87,7 @@ namespace ProjectLopHoc.UI
             }
 
             // Mouse cursor is only relevant in desktop mode; XR panels use the tracked ray.
-            if (!_xrMode)
+            if (!_xrMode && !UttWebPresentation.Active)
             {
                 Cursor.lockState = _isOpen ? CursorLockMode.None : CursorLockMode.Locked;
                 Cursor.visible = _isOpen;

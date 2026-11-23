@@ -1,0 +1,38 @@
+[
+  {
+    "Scene": "Startup",
+    "Action": "HTTP load",
+    "Observed": "Unity startup after 6.4 s",
+    "Status": "OBSERVED"
+  },
+  {
+    "Scene": "UTTCampus",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Showroom",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "YenTuHaLongXanh",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "QuanLyVongDoiTaiSan",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  },
+  {
+    "Scene": "Login",
+    "Action": "Mouse click menu destination",
+    "Observed": "Screenshot captured; inspect scene and errors",
+    "Status": "UNVERIFIED"
+  }
+]

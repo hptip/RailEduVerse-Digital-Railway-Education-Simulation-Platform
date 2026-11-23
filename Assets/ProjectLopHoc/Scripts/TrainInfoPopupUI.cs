@@ -57,7 +57,7 @@ public class TrainInfoPopupUI : MonoBehaviour
         if (popupPanel != null) popupPanel.SetActive(false);
 
         // Khóa chuột lại để tiếp tục điều khiển góc nhìn
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = UttWebPresentation.Active ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = UttWebPresentation.Active;
     }
 }

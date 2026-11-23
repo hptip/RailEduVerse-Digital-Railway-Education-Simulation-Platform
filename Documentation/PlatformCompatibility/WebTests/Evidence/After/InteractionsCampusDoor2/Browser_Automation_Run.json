@@ -1,0 +1,14 @@
+[
+  {
+    "Scene": "Startup",
+    "Action": "HTTP load",
+    "Observed": "Unity startup after 16.8 s",
+    "Status": "OBSERVED"
+  },
+  {
+    "Scene": "UTTCampus",
+    "Action": "Click physical door",
+    "Observed": "No door interaction logged",
+    "Status": "UNVERIFIED"
+  }
+]
