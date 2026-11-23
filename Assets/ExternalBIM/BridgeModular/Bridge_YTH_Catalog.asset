@@ -1,0 +1,5393 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71721005f749fec4ead195cdc0bafa70, type: 3}
+  m_Name: Bridge_YTH_Catalog
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimCatalog
+  schema: YTH-MODULAR-SIMULATION
+  sourceSha256: C7A5A1BF6464090C6565547B8E28C0DEC348CFB32C27DA89BEC08770CA9541BE
+  entries:
+  - globalId: span-03650002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 01"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03650002
+    assetId: YTH-BRIDGE-MAIN-DECK-03650002
+    parentGlobalId: span-03650002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3650.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03650002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03650002
+    parentGlobalId: span-03650002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3650.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03650002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03650002
+    parentGlobalId: span-03650002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3650.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03650002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03650002
+    parentGlobalId: span-03650002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3650.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03650002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03650002
+    parentGlobalId: span-03650002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3650.001\u20133670.001 m"
+  - globalId: span-03670002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 02"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03670002
+    assetId: YTH-BRIDGE-MAIN-DECK-03670002
+    parentGlobalId: span-03670002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03670002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03670002
+    parentGlobalId: span-03670002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03670002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03670002
+    parentGlobalId: span-03670002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03670002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03670002
+    parentGlobalId: span-03670002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03670002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03670002
+    parentGlobalId: span-03670002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133690.001 m"
+  - globalId: span-03690002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 03"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03690002
+    assetId: YTH-BRIDGE-MAIN-DECK-03690002
+    parentGlobalId: span-03690002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3690.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03690002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03690002
+    parentGlobalId: span-03690002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3690.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03690002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03690002
+    parentGlobalId: span-03690002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3690.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03690002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03690002
+    parentGlobalId: span-03690002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3690.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03690002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03690002
+    parentGlobalId: span-03690002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3690.001\u20133710.001 m"
+  - globalId: span-03710002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 04"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03710002
+    assetId: YTH-BRIDGE-MAIN-DECK-03710002
+    parentGlobalId: span-03710002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03710002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03710002
+    parentGlobalId: span-03710002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03710002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03710002
+    parentGlobalId: span-03710002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03710002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03710002
+    parentGlobalId: span-03710002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03710002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03710002
+    parentGlobalId: span-03710002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133730.001 m"
+  - globalId: span-03730002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 05"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03730002
+    assetId: YTH-BRIDGE-MAIN-DECK-03730002
+    parentGlobalId: span-03730002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3730.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03730002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03730002
+    parentGlobalId: span-03730002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3730.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03730002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03730002
+    parentGlobalId: span-03730002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3730.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03730002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03730002
+    parentGlobalId: span-03730002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3730.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03730002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03730002
+    parentGlobalId: span-03730002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3730.001\u20133750.001 m"
+  - globalId: span-03750002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 06"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03750002
+    assetId: YTH-BRIDGE-MAIN-DECK-03750002
+    parentGlobalId: span-03750002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03750002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03750002
+    parentGlobalId: span-03750002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03750002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03750002
+    parentGlobalId: span-03750002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03750002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03750002
+    parentGlobalId: span-03750002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03750002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03750002
+    parentGlobalId: span-03750002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133770.001 m"
+  - globalId: span-03770002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 07"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03770002
+    assetId: YTH-BRIDGE-MAIN-DECK-03770002
+    parentGlobalId: span-03770002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3770.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03770002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03770002
+    parentGlobalId: span-03770002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3770.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03770002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03770002
+    parentGlobalId: span-03770002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3770.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03770002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03770002
+    parentGlobalId: span-03770002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3770.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03770002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03770002
+    parentGlobalId: span-03770002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3770.001\u20133790.001 m"
+  - globalId: span-03790002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 08"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03790002
+    assetId: YTH-BRIDGE-MAIN-DECK-03790002
+    parentGlobalId: span-03790002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133810.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03790002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03790002
+    parentGlobalId: span-03790002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133810.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03790002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03790002
+    parentGlobalId: span-03790002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133810.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03790002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03790002
+    parentGlobalId: span-03790002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133810.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03790002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03790002
+    parentGlobalId: span-03790002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133810.001 m"
+  - globalId: span-03810002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 09"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03810002
+    assetId: YTH-BRIDGE-MAIN-DECK-03810002
+    parentGlobalId: span-03810002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3810.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03810002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03810002
+    parentGlobalId: span-03810002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3810.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03810002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03810002
+    parentGlobalId: span-03810002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3810.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03810002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03810002
+    parentGlobalId: span-03810002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3810.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03810002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03810002
+    parentGlobalId: span-03810002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3810.001\u20133830.001 m"
+  - globalId: span-03830002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 10"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03830002
+    assetId: YTH-BRIDGE-MAIN-DECK-03830002
+    parentGlobalId: span-03830002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133850.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03830002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03830002
+    parentGlobalId: span-03830002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133850.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03830002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03830002
+    parentGlobalId: span-03830002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133850.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03830002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03830002
+    parentGlobalId: span-03830002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133850.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03830002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03830002
+    parentGlobalId: span-03830002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133850.001 m"
+  - globalId: span-03850002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 11"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03850002
+    assetId: YTH-BRIDGE-MAIN-DECK-03850002
+    parentGlobalId: span-03850002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3850.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03850002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03850002
+    parentGlobalId: span-03850002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3850.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03850002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03850002
+    parentGlobalId: span-03850002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3850.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03850002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03850002
+    parentGlobalId: span-03850002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3850.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03850002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03850002
+    parentGlobalId: span-03850002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3850.001\u20133870.001 m"
+  - globalId: span-03870002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 12"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03870002
+    assetId: YTH-BRIDGE-MAIN-DECK-03870002
+    parentGlobalId: span-03870002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133890.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03870002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03870002
+    parentGlobalId: span-03870002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133890.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03870002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03870002
+    parentGlobalId: span-03870002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133890.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03870002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03870002
+    parentGlobalId: span-03870002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133890.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03870002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03870002
+    parentGlobalId: span-03870002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133890.001 m"
+  - globalId: span-03890002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 13"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03890002
+    assetId: YTH-BRIDGE-MAIN-DECK-03890002
+    parentGlobalId: span-03890002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3890.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03890002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03890002
+    parentGlobalId: span-03890002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3890.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03890002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03890002
+    parentGlobalId: span-03890002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3890.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03890002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03890002
+    parentGlobalId: span-03890002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3890.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03890002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03890002
+    parentGlobalId: span-03890002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3890.001\u20133910.001 m"
+  - globalId: span-03910002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 14"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03910002
+    assetId: YTH-BRIDGE-MAIN-DECK-03910002
+    parentGlobalId: span-03910002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133930.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03910002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03910002
+    parentGlobalId: span-03910002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133930.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03910002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03910002
+    parentGlobalId: span-03910002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133930.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03910002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03910002
+    parentGlobalId: span-03910002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133930.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03910002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03910002
+    parentGlobalId: span-03910002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133930.001 m"
+  - globalId: span-03930002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 15"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03930002
+    assetId: YTH-BRIDGE-MAIN-DECK-03930002
+    parentGlobalId: span-03930002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3930.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03930002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03930002
+    parentGlobalId: span-03930002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3930.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03930002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03930002
+    parentGlobalId: span-03930002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3930.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03930002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03930002
+    parentGlobalId: span-03930002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3930.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03930002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03930002
+    parentGlobalId: span-03930002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3930.001\u20133950.001 m"
+  - globalId: span-03950002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 16"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03950002
+    assetId: YTH-BRIDGE-MAIN-DECK-03950002
+    parentGlobalId: span-03950002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133970.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03950002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03950002
+    parentGlobalId: span-03950002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133970.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03950002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03950002
+    parentGlobalId: span-03950002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133970.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03950002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03950002
+    parentGlobalId: span-03950002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133970.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03950002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03950002
+    parentGlobalId: span-03950002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133970.001 m"
+  - globalId: span-03970002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 17"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03970002
+    assetId: YTH-BRIDGE-MAIN-DECK-03970002
+    parentGlobalId: span-03970002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3970.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03970002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03970002
+    parentGlobalId: span-03970002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3970.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03970002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03970002
+    parentGlobalId: span-03970002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3970.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03970002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03970002
+    parentGlobalId: span-03970002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3970.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03970002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03970002
+    parentGlobalId: span-03970002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3970.001\u20133990.001 m"
+  - globalId: span-03990002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 18"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-03990002
+    assetId: YTH-BRIDGE-MAIN-DECK-03990002
+    parentGlobalId: span-03990002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20134010.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-03990002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-03990002
+    parentGlobalId: span-03990002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20134010.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-03990002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-03990002
+    parentGlobalId: span-03990002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20134010.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-03990002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-03990002
+    parentGlobalId: span-03990002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20134010.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-03990002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-03990002
+    parentGlobalId: span-03990002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20134010.001 m"
+  - globalId: span-04010002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 19"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04010002
+    assetId: YTH-BRIDGE-MAIN-DECK-04010002
+    parentGlobalId: span-04010002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4010.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04010002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04010002
+    parentGlobalId: span-04010002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4010.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04010002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04010002
+    parentGlobalId: span-04010002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4010.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04010002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04010002
+    parentGlobalId: span-04010002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4010.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04010002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04010002
+    parentGlobalId: span-04010002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4010.001\u20134030.001 m"
+  - globalId: span-04030002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 20"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04030002
+    assetId: YTH-BRIDGE-MAIN-DECK-04030002
+    parentGlobalId: span-04030002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134050.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04030002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04030002
+    parentGlobalId: span-04030002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134050.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04030002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04030002
+    parentGlobalId: span-04030002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134050.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04030002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04030002
+    parentGlobalId: span-04030002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134050.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04030002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04030002
+    parentGlobalId: span-04030002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134050.001 m"
+  - globalId: span-04050002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 21"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04050002
+    assetId: YTH-BRIDGE-MAIN-DECK-04050002
+    parentGlobalId: span-04050002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4050.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04050002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04050002
+    parentGlobalId: span-04050002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4050.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04050002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04050002
+    parentGlobalId: span-04050002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4050.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04050002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04050002
+    parentGlobalId: span-04050002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4050.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04050002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04050002
+    parentGlobalId: span-04050002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4050.001\u20134070.001 m"
+  - globalId: span-04070002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 22"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04070002
+    assetId: YTH-BRIDGE-MAIN-DECK-04070002
+    parentGlobalId: span-04070002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134090.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04070002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04070002
+    parentGlobalId: span-04070002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134090.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04070002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04070002
+    parentGlobalId: span-04070002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134090.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04070002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04070002
+    parentGlobalId: span-04070002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134090.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04070002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04070002
+    parentGlobalId: span-04070002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134090.001 m"
+  - globalId: span-04090002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 23"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04090002
+    assetId: YTH-BRIDGE-MAIN-DECK-04090002
+    parentGlobalId: span-04090002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4090.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04090002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04090002
+    parentGlobalId: span-04090002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4090.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04090002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04090002
+    parentGlobalId: span-04090002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4090.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04090002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04090002
+    parentGlobalId: span-04090002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4090.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04090002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04090002
+    parentGlobalId: span-04090002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4090.001\u20134110.001 m"
+  - globalId: span-04110002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 24"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04110002
+    assetId: YTH-BRIDGE-MAIN-DECK-04110002
+    parentGlobalId: span-04110002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134130.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04110002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04110002
+    parentGlobalId: span-04110002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134130.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04110002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04110002
+    parentGlobalId: span-04110002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134130.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04110002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04110002
+    parentGlobalId: span-04110002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134130.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04110002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04110002
+    parentGlobalId: span-04110002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134130.001 m"
+  - globalId: span-04130002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 25"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04130002
+    assetId: YTH-BRIDGE-MAIN-DECK-04130002
+    parentGlobalId: span-04130002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4130.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04130002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04130002
+    parentGlobalId: span-04130002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4130.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04130002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04130002
+    parentGlobalId: span-04130002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4130.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04130002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04130002
+    parentGlobalId: span-04130002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4130.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04130002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04130002
+    parentGlobalId: span-04130002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4130.001\u20134150.001 m"
+  - globalId: span-04150002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 26"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04150002
+    assetId: YTH-BRIDGE-MAIN-DECK-04150002
+    parentGlobalId: span-04150002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134170.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04150002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04150002
+    parentGlobalId: span-04150002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134170.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04150002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04150002
+    parentGlobalId: span-04150002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134170.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04150002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04150002
+    parentGlobalId: span-04150002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134170.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04150002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04150002
+    parentGlobalId: span-04150002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134170.001 m"
+  - globalId: span-04170002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 27"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04170002
+    assetId: YTH-BRIDGE-MAIN-DECK-04170002
+    parentGlobalId: span-04170002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4170.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04170002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04170002
+    parentGlobalId: span-04170002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4170.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04170002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04170002
+    parentGlobalId: span-04170002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4170.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04170002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04170002
+    parentGlobalId: span-04170002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4170.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04170002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04170002
+    parentGlobalId: span-04170002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4170.001\u20134190.001 m"
+  - globalId: span-04190002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 28"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04190002
+    assetId: YTH-BRIDGE-MAIN-DECK-04190002
+    parentGlobalId: span-04190002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134210.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04190002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04190002
+    parentGlobalId: span-04190002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134210.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04190002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04190002
+    parentGlobalId: span-04190002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134210.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04190002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04190002
+    parentGlobalId: span-04190002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134210.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04190002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04190002
+    parentGlobalId: span-04190002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134210.001 m"
+  - globalId: span-04210002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 29"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04210002
+    assetId: YTH-BRIDGE-MAIN-DECK-04210002
+    parentGlobalId: span-04210002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4210.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04210002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04210002
+    parentGlobalId: span-04210002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4210.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04210002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04210002
+    parentGlobalId: span-04210002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4210.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04210002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04210002
+    parentGlobalId: span-04210002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4210.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04210002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04210002
+    parentGlobalId: span-04210002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4210.001\u20134230.001 m"
+  - globalId: span-04230002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 30"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04230002
+    assetId: YTH-BRIDGE-MAIN-DECK-04230002
+    parentGlobalId: span-04230002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134250.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04230002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04230002
+    parentGlobalId: span-04230002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134250.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04230002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04230002
+    parentGlobalId: span-04230002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134250.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04230002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04230002
+    parentGlobalId: span-04230002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134250.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04230002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04230002
+    parentGlobalId: span-04230002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134250.001 m"
+  - globalId: span-04250002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 31"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04250002
+    assetId: YTH-BRIDGE-MAIN-DECK-04250002
+    parentGlobalId: span-04250002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4250.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04250002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04250002
+    parentGlobalId: span-04250002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4250.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04250002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04250002
+    parentGlobalId: span-04250002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4250.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04250002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04250002
+    parentGlobalId: span-04250002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4250.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04250002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04250002
+    parentGlobalId: span-04250002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4250.001\u20134270.001 m"
+  - globalId: span-04270002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 32"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04270002
+    assetId: YTH-BRIDGE-MAIN-DECK-04270002
+    parentGlobalId: span-04270002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134290.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04270002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04270002
+    parentGlobalId: span-04270002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134290.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04270002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04270002
+    parentGlobalId: span-04270002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134290.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04270002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04270002
+    parentGlobalId: span-04270002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134290.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04270002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04270002
+    parentGlobalId: span-04270002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134290.001 m"
+  - globalId: span-04290002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 33"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04290002
+    assetId: YTH-BRIDGE-MAIN-DECK-04290002
+    parentGlobalId: span-04290002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4290.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04290002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04290002
+    parentGlobalId: span-04290002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4290.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04290002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04290002
+    parentGlobalId: span-04290002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4290.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04290002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04290002
+    parentGlobalId: span-04290002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4290.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04290002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04290002
+    parentGlobalId: span-04290002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4290.001\u20134310.001 m"
+  - globalId: span-04310002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 34"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04310002
+    assetId: YTH-BRIDGE-MAIN-DECK-04310002
+    parentGlobalId: span-04310002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134330.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04310002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04310002
+    parentGlobalId: span-04310002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134330.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04310002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04310002
+    parentGlobalId: span-04310002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134330.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04310002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04310002
+    parentGlobalId: span-04310002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134330.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04310002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04310002
+    parentGlobalId: span-04310002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134330.001 m"
+  - globalId: span-04330002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 35"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04330002
+    assetId: YTH-BRIDGE-MAIN-DECK-04330002
+    parentGlobalId: span-04330002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4330.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04330002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04330002
+    parentGlobalId: span-04330002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4330.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04330002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04330002
+    parentGlobalId: span-04330002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4330.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04330002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04330002
+    parentGlobalId: span-04330002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4330.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04330002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04330002
+    parentGlobalId: span-04330002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4330.001\u20134350.001 m"
+  - globalId: span-04350002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 36"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04350002
+    assetId: YTH-BRIDGE-MAIN-DECK-04350002
+    parentGlobalId: span-04350002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134370.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04350002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04350002
+    parentGlobalId: span-04350002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134370.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04350002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04350002
+    parentGlobalId: span-04350002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134370.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04350002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04350002
+    parentGlobalId: span-04350002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134370.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04350002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04350002
+    parentGlobalId: span-04350002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134370.001 m"
+  - globalId: span-04370002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 37"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04370002
+    assetId: YTH-BRIDGE-MAIN-DECK-04370002
+    parentGlobalId: span-04370002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4370.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04370002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04370002
+    parentGlobalId: span-04370002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4370.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04370002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04370002
+    parentGlobalId: span-04370002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4370.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04370002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04370002
+    parentGlobalId: span-04370002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4370.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04370002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04370002
+    parentGlobalId: span-04370002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4370.001\u20134390.001 m"
+  - globalId: span-04390002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 38"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04390002
+    assetId: YTH-BRIDGE-MAIN-DECK-04390002
+    parentGlobalId: span-04390002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134410.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04390002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04390002
+    parentGlobalId: span-04390002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134410.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04390002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04390002
+    parentGlobalId: span-04390002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134410.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04390002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04390002
+    parentGlobalId: span-04390002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134410.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04390002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04390002
+    parentGlobalId: span-04390002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134410.001 m"
+  - globalId: span-04410002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 39"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04410002
+    assetId: YTH-BRIDGE-MAIN-DECK-04410002
+    parentGlobalId: span-04410002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4410.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04410002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04410002
+    parentGlobalId: span-04410002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4410.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04410002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04410002
+    parentGlobalId: span-04410002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4410.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04410002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04410002
+    parentGlobalId: span-04410002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4410.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04410002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04410002
+    parentGlobalId: span-04410002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4410.001\u20134430.001 m"
+  - globalId: span-04430002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 40"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04430002
+    assetId: YTH-BRIDGE-MAIN-DECK-04430002
+    parentGlobalId: span-04430002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134450.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04430002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04430002
+    parentGlobalId: span-04430002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134450.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04430002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04430002
+    parentGlobalId: span-04430002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134450.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04430002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04430002
+    parentGlobalId: span-04430002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134450.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04430002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04430002
+    parentGlobalId: span-04430002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134450.001 m"
+  - globalId: span-04450002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 41"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04450002
+    assetId: YTH-BRIDGE-MAIN-DECK-04450002
+    parentGlobalId: span-04450002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4450.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04450002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04450002
+    parentGlobalId: span-04450002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4450.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04450002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04450002
+    parentGlobalId: span-04450002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4450.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04450002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04450002
+    parentGlobalId: span-04450002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4450.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04450002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04450002
+    parentGlobalId: span-04450002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4450.001\u20134470.001 m"
+  - globalId: span-04470002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 42"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04470002
+    assetId: YTH-BRIDGE-MAIN-DECK-04470002
+    parentGlobalId: span-04470002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134490.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04470002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04470002
+    parentGlobalId: span-04470002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134490.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04470002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04470002
+    parentGlobalId: span-04470002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134490.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04470002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04470002
+    parentGlobalId: span-04470002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134490.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04470002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04470002
+    parentGlobalId: span-04470002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134490.001 m"
+  - globalId: span-04490002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 43"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04490002
+    assetId: YTH-BRIDGE-MAIN-DECK-04490002
+    parentGlobalId: span-04490002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4490.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04490002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04490002
+    parentGlobalId: span-04490002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4490.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04490002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04490002
+    parentGlobalId: span-04490002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4490.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04490002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04490002
+    parentGlobalId: span-04490002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4490.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04490002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04490002
+    parentGlobalId: span-04490002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4490.001\u20134510.001 m"
+  - globalId: span-04510002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 44"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04510002
+    assetId: YTH-BRIDGE-MAIN-DECK-04510002
+    parentGlobalId: span-04510002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134530.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04510002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04510002
+    parentGlobalId: span-04510002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134530.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04510002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04510002
+    parentGlobalId: span-04510002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134530.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04510002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04510002
+    parentGlobalId: span-04510002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134530.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04510002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04510002
+    parentGlobalId: span-04510002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134530.001 m"
+  - globalId: span-04530002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 45"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04530002
+    assetId: YTH-BRIDGE-MAIN-DECK-04530002
+    parentGlobalId: span-04530002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4530.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04530002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04530002
+    parentGlobalId: span-04530002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4530.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04530002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04530002
+    parentGlobalId: span-04530002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4530.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04530002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04530002
+    parentGlobalId: span-04530002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4530.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04530002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04530002
+    parentGlobalId: span-04530002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4530.001\u20134550.001 m"
+  - globalId: span-04550002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 46"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04550002
+    assetId: YTH-BRIDGE-MAIN-DECK-04550002
+    parentGlobalId: span-04550002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134570.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04550002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04550002
+    parentGlobalId: span-04550002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134570.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04550002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04550002
+    parentGlobalId: span-04550002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134570.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04550002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04550002
+    parentGlobalId: span-04550002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134570.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04550002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04550002
+    parentGlobalId: span-04550002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134570.001 m"
+  - globalId: span-04570002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 47"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04570002
+    assetId: YTH-BRIDGE-MAIN-DECK-04570002
+    parentGlobalId: span-04570002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4570.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04570002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04570002
+    parentGlobalId: span-04570002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4570.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04570002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04570002
+    parentGlobalId: span-04570002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4570.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04570002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04570002
+    parentGlobalId: span-04570002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4570.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04570002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04570002
+    parentGlobalId: span-04570002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4570.001\u20134590.001 m"
+  - globalId: span-04590002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 48"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04590002
+    assetId: YTH-BRIDGE-MAIN-DECK-04590002
+    parentGlobalId: span-04590002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134610.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04590002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04590002
+    parentGlobalId: span-04590002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134610.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04590002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04590002
+    parentGlobalId: span-04590002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134610.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04590002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04590002
+    parentGlobalId: span-04590002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134610.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04590002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04590002
+    parentGlobalId: span-04590002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134610.001 m"
+  - globalId: span-04610002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 49"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04610002
+    assetId: YTH-BRIDGE-MAIN-DECK-04610002
+    parentGlobalId: span-04610002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4610.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04610002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04610002
+    parentGlobalId: span-04610002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4610.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04610002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04610002
+    parentGlobalId: span-04610002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4610.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04610002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04610002
+    parentGlobalId: span-04610002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4610.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04610002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04610002
+    parentGlobalId: span-04610002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4610.001\u20134630.001 m"
+  - globalId: span-04630002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 50"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04630002
+    assetId: YTH-BRIDGE-MAIN-DECK-04630002
+    parentGlobalId: span-04630002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134650.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04630002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04630002
+    parentGlobalId: span-04630002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134650.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04630002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04630002
+    parentGlobalId: span-04630002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134650.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04630002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04630002
+    parentGlobalId: span-04630002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134650.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04630002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04630002
+    parentGlobalId: span-04630002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134650.001 m"
+  - globalId: span-04650002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 51"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04650002
+    assetId: YTH-BRIDGE-MAIN-DECK-04650002
+    parentGlobalId: span-04650002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4650.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04650002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04650002
+    parentGlobalId: span-04650002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4650.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04650002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04650002
+    parentGlobalId: span-04650002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4650.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04650002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04650002
+    parentGlobalId: span-04650002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4650.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04650002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04650002
+    parentGlobalId: span-04650002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4650.001\u20134670.001 m"
+  - globalId: span-04670002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 52"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04670002
+    assetId: YTH-BRIDGE-MAIN-DECK-04670002
+    parentGlobalId: span-04670002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04670002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04670002
+    parentGlobalId: span-04670002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04670002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04670002
+    parentGlobalId: span-04670002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04670002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04670002
+    parentGlobalId: span-04670002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134690.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04670002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04670002
+    parentGlobalId: span-04670002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134690.001 m"
+  - globalId: span-04690002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 53"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04690002
+    assetId: YTH-BRIDGE-MAIN-DECK-04690002
+    parentGlobalId: span-04690002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4690.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04690002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04690002
+    parentGlobalId: span-04690002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4690.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04690002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04690002
+    parentGlobalId: span-04690002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4690.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04690002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04690002
+    parentGlobalId: span-04690002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4690.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04690002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04690002
+    parentGlobalId: span-04690002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4690.001\u20134710.001 m"
+  - globalId: span-04710002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 54"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04710002
+    assetId: YTH-BRIDGE-MAIN-DECK-04710002
+    parentGlobalId: span-04710002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04710002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04710002
+    parentGlobalId: span-04710002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04710002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04710002
+    parentGlobalId: span-04710002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04710002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04710002
+    parentGlobalId: span-04710002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134730.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04710002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04710002
+    parentGlobalId: span-04710002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134730.001 m"
+  - globalId: span-04730002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 55"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04730002
+    assetId: YTH-BRIDGE-MAIN-DECK-04730002
+    parentGlobalId: span-04730002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4730.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04730002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04730002
+    parentGlobalId: span-04730002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4730.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04730002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04730002
+    parentGlobalId: span-04730002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4730.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04730002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04730002
+    parentGlobalId: span-04730002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4730.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04730002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04730002
+    parentGlobalId: span-04730002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4730.001\u20134750.001 m"
+  - globalId: span-04750002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 56"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-DECK-04750002
+    assetId: YTH-BRIDGE-MAIN-DECK-04750002
+    parentGlobalId: span-04750002
+    ifcClass: deck
+    name: "B\u1EA3n m\u1EB7t c\u1EA7u"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 14.00 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-A-04750002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-A-04750002
+    parentGlobalId: span-04750002
+    ifcClass: girder-a
+    name: "D\u1EA7m \u0111\u1EE1 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-GIRDER-B-04750002
+    assetId: YTH-BRIDGE-MAIN-GIRDER-B-04750002
+    parentGlobalId: span-04750002
+    ifcClass: girder-b
+    name: "D\u1EA7m \u0111\u1EE1 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 1.25 \xD7 cao 1.10 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-A-04750002
+    assetId: YTH-BRIDGE-MAIN-RAIL-A-04750002
+    parentGlobalId: span-04750002
+    ifcClass: rail-a
+    name: Lan can A
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134770.001 m"
+  - globalId: YTH-BRIDGE-MAIN-RAIL-B-04750002
+    assetId: YTH-BRIDGE-MAIN-RAIL-B-04750002
+    parentGlobalId: span-04750002
+    ifcClass: rail-b
+    name: Lan can B
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "D\xE0i 20.00 \xD7 r\u1ED9ng 0.14 \xD7 cao 1.05 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134770.001 m"
+  - globalId: pier-03670002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 01"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03670002
+    assetId: YTH-BRIDGE-MAIN-CAP-03670002
+    parentGlobalId: pier-03670002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03670002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03670002
+    parentGlobalId: pier-03670002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03670002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03670002
+    parentGlobalId: pier-03670002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03670002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03670002
+    parentGlobalId: pier-03670002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03670002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03670002
+    parentGlobalId: pier-03670002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3670.001\u20133670.001 m"
+  - globalId: pier-03710002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 02"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03710002
+    assetId: YTH-BRIDGE-MAIN-CAP-03710002
+    parentGlobalId: pier-03710002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03710002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03710002
+    parentGlobalId: pier-03710002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03710002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03710002
+    parentGlobalId: pier-03710002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03710002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03710002
+    parentGlobalId: pier-03710002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03710002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03710002
+    parentGlobalId: pier-03710002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3710.001\u20133710.001 m"
+  - globalId: pier-03750002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 03"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03750002
+    assetId: YTH-BRIDGE-MAIN-CAP-03750002
+    parentGlobalId: pier-03750002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03750002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03750002
+    parentGlobalId: pier-03750002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03750002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03750002
+    parentGlobalId: pier-03750002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03750002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03750002
+    parentGlobalId: pier-03750002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03750002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03750002
+    parentGlobalId: pier-03750002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3750.001\u20133750.001 m"
+  - globalId: pier-03790002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 04"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03790002
+    assetId: YTH-BRIDGE-MAIN-CAP-03790002
+    parentGlobalId: pier-03790002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03790002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03790002
+    parentGlobalId: pier-03790002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03790002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03790002
+    parentGlobalId: pier-03790002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03790002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03790002
+    parentGlobalId: pier-03790002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133790.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03790002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03790002
+    parentGlobalId: pier-03790002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3790.001\u20133790.001 m"
+  - globalId: pier-03830002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 05"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03830002
+    assetId: YTH-BRIDGE-MAIN-CAP-03830002
+    parentGlobalId: pier-03830002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03830002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03830002
+    parentGlobalId: pier-03830002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03830002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03830002
+    parentGlobalId: pier-03830002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03830002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03830002
+    parentGlobalId: pier-03830002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133830.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03830002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03830002
+    parentGlobalId: pier-03830002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3830.001\u20133830.001 m"
+  - globalId: pier-03870002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 06"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03870002
+    assetId: YTH-BRIDGE-MAIN-CAP-03870002
+    parentGlobalId: pier-03870002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03870002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03870002
+    parentGlobalId: pier-03870002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03870002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03870002
+    parentGlobalId: pier-03870002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03870002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03870002
+    parentGlobalId: pier-03870002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133870.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03870002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03870002
+    parentGlobalId: pier-03870002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3870.001\u20133870.001 m"
+  - globalId: pier-03910002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 07"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03910002
+    assetId: YTH-BRIDGE-MAIN-CAP-03910002
+    parentGlobalId: pier-03910002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03910002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03910002
+    parentGlobalId: pier-03910002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03910002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03910002
+    parentGlobalId: pier-03910002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03910002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03910002
+    parentGlobalId: pier-03910002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133910.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03910002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03910002
+    parentGlobalId: pier-03910002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3910.001\u20133910.001 m"
+  - globalId: pier-03950002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 08"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03950002
+    assetId: YTH-BRIDGE-MAIN-CAP-03950002
+    parentGlobalId: pier-03950002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03950002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03950002
+    parentGlobalId: pier-03950002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03950002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03950002
+    parentGlobalId: pier-03950002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03950002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03950002
+    parentGlobalId: pier-03950002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133950.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03950002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03950002
+    parentGlobalId: pier-03950002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3950.001\u20133950.001 m"
+  - globalId: pier-03990002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 09"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-03990002
+    assetId: YTH-BRIDGE-MAIN-CAP-03990002
+    parentGlobalId: pier-03990002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-03990002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-03990002
+    parentGlobalId: pier-03990002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-03990002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-03990002
+    parentGlobalId: pier-03990002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-03990002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-03990002
+    parentGlobalId: pier-03990002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20133990.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-03990002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-03990002
+    parentGlobalId: pier-03990002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 3990.001\u20133990.001 m"
+  - globalId: pier-04030002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 10"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04030002
+    assetId: YTH-BRIDGE-MAIN-CAP-04030002
+    parentGlobalId: pier-04030002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04030002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04030002
+    parentGlobalId: pier-04030002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04030002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04030002
+    parentGlobalId: pier-04030002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04030002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04030002
+    parentGlobalId: pier-04030002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134030.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04030002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04030002
+    parentGlobalId: pier-04030002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4030.001\u20134030.001 m"
+  - globalId: pier-04070002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 11"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04070002
+    assetId: YTH-BRIDGE-MAIN-CAP-04070002
+    parentGlobalId: pier-04070002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04070002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04070002
+    parentGlobalId: pier-04070002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04070002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04070002
+    parentGlobalId: pier-04070002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04070002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04070002
+    parentGlobalId: pier-04070002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134070.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04070002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04070002
+    parentGlobalId: pier-04070002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4070.001\u20134070.001 m"
+  - globalId: pier-04110002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 12"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04110002
+    assetId: YTH-BRIDGE-MAIN-CAP-04110002
+    parentGlobalId: pier-04110002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04110002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04110002
+    parentGlobalId: pier-04110002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04110002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04110002
+    parentGlobalId: pier-04110002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04110002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04110002
+    parentGlobalId: pier-04110002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134110.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04110002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04110002
+    parentGlobalId: pier-04110002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4110.001\u20134110.001 m"
+  - globalId: pier-04150002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 13"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04150002
+    assetId: YTH-BRIDGE-MAIN-CAP-04150002
+    parentGlobalId: pier-04150002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04150002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04150002
+    parentGlobalId: pier-04150002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04150002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04150002
+    parentGlobalId: pier-04150002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04150002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04150002
+    parentGlobalId: pier-04150002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134150.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04150002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04150002
+    parentGlobalId: pier-04150002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4150.001\u20134150.001 m"
+  - globalId: pier-04190002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 14"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04190002
+    assetId: YTH-BRIDGE-MAIN-CAP-04190002
+    parentGlobalId: pier-04190002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04190002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04190002
+    parentGlobalId: pier-04190002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04190002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04190002
+    parentGlobalId: pier-04190002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04190002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04190002
+    parentGlobalId: pier-04190002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134190.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04190002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04190002
+    parentGlobalId: pier-04190002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4190.001\u20134190.001 m"
+  - globalId: pier-04230002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 15"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04230002
+    assetId: YTH-BRIDGE-MAIN-CAP-04230002
+    parentGlobalId: pier-04230002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04230002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04230002
+    parentGlobalId: pier-04230002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04230002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04230002
+    parentGlobalId: pier-04230002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04230002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04230002
+    parentGlobalId: pier-04230002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134230.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04230002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04230002
+    parentGlobalId: pier-04230002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4230.001\u20134230.001 m"
+  - globalId: pier-04270002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 16"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04270002
+    assetId: YTH-BRIDGE-MAIN-CAP-04270002
+    parentGlobalId: pier-04270002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04270002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04270002
+    parentGlobalId: pier-04270002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04270002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04270002
+    parentGlobalId: pier-04270002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04270002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04270002
+    parentGlobalId: pier-04270002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134270.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04270002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04270002
+    parentGlobalId: pier-04270002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4270.001\u20134270.001 m"
+  - globalId: pier-04310002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 17"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04310002
+    assetId: YTH-BRIDGE-MAIN-CAP-04310002
+    parentGlobalId: pier-04310002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04310002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04310002
+    parentGlobalId: pier-04310002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04310002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04310002
+    parentGlobalId: pier-04310002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04310002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04310002
+    parentGlobalId: pier-04310002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134310.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04310002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04310002
+    parentGlobalId: pier-04310002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4310.001\u20134310.001 m"
+  - globalId: pier-04350002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 18"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04350002
+    assetId: YTH-BRIDGE-MAIN-CAP-04350002
+    parentGlobalId: pier-04350002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04350002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04350002
+    parentGlobalId: pier-04350002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04350002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04350002
+    parentGlobalId: pier-04350002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04350002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04350002
+    parentGlobalId: pier-04350002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134350.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04350002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04350002
+    parentGlobalId: pier-04350002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4350.001\u20134350.001 m"
+  - globalId: pier-04390002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 19"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04390002
+    assetId: YTH-BRIDGE-MAIN-CAP-04390002
+    parentGlobalId: pier-04390002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04390002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04390002
+    parentGlobalId: pier-04390002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04390002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04390002
+    parentGlobalId: pier-04390002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04390002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04390002
+    parentGlobalId: pier-04390002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134390.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04390002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04390002
+    parentGlobalId: pier-04390002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4390.001\u20134390.001 m"
+  - globalId: pier-04430002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 20"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04430002
+    assetId: YTH-BRIDGE-MAIN-CAP-04430002
+    parentGlobalId: pier-04430002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04430002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04430002
+    parentGlobalId: pier-04430002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04430002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04430002
+    parentGlobalId: pier-04430002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04430002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04430002
+    parentGlobalId: pier-04430002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134430.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04430002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04430002
+    parentGlobalId: pier-04430002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4430.001\u20134430.001 m"
+  - globalId: pier-04470002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 21"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04470002
+    assetId: YTH-BRIDGE-MAIN-CAP-04470002
+    parentGlobalId: pier-04470002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04470002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04470002
+    parentGlobalId: pier-04470002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04470002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04470002
+    parentGlobalId: pier-04470002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04470002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04470002
+    parentGlobalId: pier-04470002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134470.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04470002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04470002
+    parentGlobalId: pier-04470002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4470.001\u20134470.001 m"
+  - globalId: pier-04510002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 22"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04510002
+    assetId: YTH-BRIDGE-MAIN-CAP-04510002
+    parentGlobalId: pier-04510002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04510002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04510002
+    parentGlobalId: pier-04510002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04510002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04510002
+    parentGlobalId: pier-04510002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04510002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04510002
+    parentGlobalId: pier-04510002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134510.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04510002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04510002
+    parentGlobalId: pier-04510002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4510.001\u20134510.001 m"
+  - globalId: pier-04550002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 23"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04550002
+    assetId: YTH-BRIDGE-MAIN-CAP-04550002
+    parentGlobalId: pier-04550002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04550002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04550002
+    parentGlobalId: pier-04550002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04550002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04550002
+    parentGlobalId: pier-04550002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04550002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04550002
+    parentGlobalId: pier-04550002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134550.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04550002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04550002
+    parentGlobalId: pier-04550002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4550.001\u20134550.001 m"
+  - globalId: pier-04590002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 24"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04590002
+    assetId: YTH-BRIDGE-MAIN-CAP-04590002
+    parentGlobalId: pier-04590002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04590002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04590002
+    parentGlobalId: pier-04590002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04590002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04590002
+    parentGlobalId: pier-04590002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04590002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04590002
+    parentGlobalId: pier-04590002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134590.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04590002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04590002
+    parentGlobalId: pier-04590002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4590.001\u20134590.001 m"
+  - globalId: pier-04630002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 25"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04630002
+    assetId: YTH-BRIDGE-MAIN-CAP-04630002
+    parentGlobalId: pier-04630002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04630002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04630002
+    parentGlobalId: pier-04630002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04630002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04630002
+    parentGlobalId: pier-04630002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04630002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04630002
+    parentGlobalId: pier-04630002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134630.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04630002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04630002
+    parentGlobalId: pier-04630002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4630.001\u20134630.001 m"
+  - globalId: pier-04670002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 26"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04670002
+    assetId: YTH-BRIDGE-MAIN-CAP-04670002
+    parentGlobalId: pier-04670002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04670002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04670002
+    parentGlobalId: pier-04670002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04670002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04670002
+    parentGlobalId: pier-04670002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04670002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04670002
+    parentGlobalId: pier-04670002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134670.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04670002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04670002
+    parentGlobalId: pier-04670002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4670.001\u20134670.001 m"
+  - globalId: pier-04710002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 27"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04710002
+    assetId: YTH-BRIDGE-MAIN-CAP-04710002
+    parentGlobalId: pier-04710002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04710002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04710002
+    parentGlobalId: pier-04710002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04710002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04710002
+    parentGlobalId: pier-04710002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04710002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04710002
+    parentGlobalId: pier-04710002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134710.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04710002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04710002
+    parentGlobalId: pier-04710002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4710.001\u20134710.001 m"
+  - globalId: pier-04750002
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "C\u1EE5m tr\u1EE5 28"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-BRIDGE-MAIN-CAP-04750002
+    assetId: YTH-BRIDGE-MAIN-CAP-04750002
+    parentGlobalId: pier-04750002
+    ifcClass: cap
+    name: "X\xE0 m\u0169 tr\u1EE5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 9.20 \xD7 cao 0.90 \xD7 s\xE2u 2.70 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-B-04750002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-B-04750002
+    parentGlobalId: pier-04750002
+    ifcClass: column-b
+    name: "Th\xE2n tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-B-04750002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-B-04750002
+    parentGlobalId: pier-04750002
+    ifcClass: footing-b
+    name: "B\u1EC7 tr\u1EE5 B"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-COLUMN-A-04750002
+    assetId: YTH-BRIDGE-MAIN-COLUMN-A-04750002
+    parentGlobalId: pier-04750002
+    ifcClass: column-a
+    name: "Th\xE2n tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 1.50 \xD7 cao 23.83 \xD7 s\xE2u 1.65 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134750.001 m"
+  - globalId: YTH-BRIDGE-MAIN-FOOTING-A-04750002
+    assetId: YTH-BRIDGE-MAIN-FOOTING-A-04750002
+    parentGlobalId: pier-04750002
+    ifcClass: footing-a
+    name: "B\u1EC7 tr\u1EE5 A"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "R\u1ED9ng 2.80 \xD7 cao 0.80 \xD7 s\xE2u 3.00 m"
+    - "L\xFD tr\xECnh m\xF4 h\xECnh: 4750.001\u20134750.001 m"

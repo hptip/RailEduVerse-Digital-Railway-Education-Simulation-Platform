@@ -1,0 +1,4554 @@
+{
+  "summary": {
+    "schema": "IFC4X3_ADD2",
+    "ifcOpenShell": "0.9.0post1",
+    "source": "demo-bridge-so201.ifc",
+    "sourceSha256": "f967e72ea1e7648a5d2bf82db806e4ab2f24397177ed2d6e9b795288f0aa261d",
+    "lengthUnitScaleToMeters": 1,
+    "units": {
+      "stepId": 14,
+      "ifcClass": "IfcUnitAssignment",
+      "Units": [
+        {
+          "stepId": 7,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "LENGTHUNIT",
+          "Prefix": null,
+          "Name": "METRE"
+        },
+        {
+          "stepId": 8,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "AREAUNIT",
+          "Prefix": null,
+          "Name": "SQUARE_METRE"
+        },
+        {
+          "stepId": 9,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "VOLUMEUNIT",
+          "Prefix": null,
+          "Name": "CUBIC_METRE"
+        },
+        {
+          "stepId": 10,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "PLANEANGLEUNIT",
+          "Prefix": null,
+          "Name": "RADIAN"
+        },
+        {
+          "stepId": 11,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "MASSUNIT",
+          "Prefix": "KILO",
+          "Name": "GRAM"
+        },
+        {
+          "stepId": 12,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "TIMEUNIT",
+          "Prefix": null,
+          "Name": "SECOND"
+        },
+        {
+          "stepId": 13,
+          "ifcClass": "IfcSIUnit",
+          "Dimensions": null,
+          "UnitType": "THERMODYNAMICTEMPERATUREUNIT",
+          "Prefix": null,
+          "Name": "KELVIN"
+        }
+      ]
+    },
+    "mapConversions": [
+      {
+        "stepId": 22,
+        "ifcClass": "IfcMapConversion",
+        "SourceCRS": {
+          "stepId": 19,
+          "ifcClass": "IfcGeometricRepresentationContext",
+          "ContextIdentifier": null,
+          "ContextType": "Model",
+          "CoordinateSpaceDimension": 3,
+          "Precision": 1e-05,
+          "WorldCoordinateSystem": {
+            "stepId": 18,
+            "ifcClass": "IfcAxis2Placement3D",
+            "Location": {
+              "stepId": 15,
+              "ifcClass": "IfcCartesianPoint",
+              "Coordinates": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "Axis": {
+              "stepId": 16,
+              "ifcClass": "IfcDirection",
+              "DirectionRatios": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            "RefDirection": {
+              "stepId": 17,
+              "ifcClass": "IfcDirection",
+              "DirectionRatios": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "TrueNorth": null
+        },
+        "TargetCRS": {
+          "stepId": 21,
+          "ifcClass": "IfcProjectedCRS",
+          "Name": "EPSG:5514",
+          "Description": null,
+          "GeodeticDatum": "S-JTSK",
+          "VerticalDatum": "Bpv",
+          "MapProjection": "Krovak East North",
+          "MapZone": null,
+          "MapUnit": {
+            "stepId": 7,
+            "ifcClass": "IfcSIUnit",
+            "Dimensions": null,
+            "UnitType": "LENGTHUNIT",
+            "Prefix": null,
+            "Name": "METRE"
+          }
+        },
+        "Eastings": 0.0,
+        "Northings": 0.0,
+        "OrthogonalHeight": 0.0,
+        "XAxisAbscissa": 1.0,
+        "XAxisOrdinate": 0.0,
+        "Scale": 1.0
+      }
+    ],
+    "productCount": 105,
+    "projectCount": 1,
+    "classCounts": {
+      "IfcProject": 1,
+      "IfcSite": 1,
+      "IfcBridge": 1,
+      "IfcBridgePart": 12,
+      "IfcPile": 30,
+      "IfcFooting": 12,
+      "IfcSlab": 13,
+      "IfcWall": 6,
+      "IfcEarthworksFill": 4,
+      "IfcCovering": 4,
+      "IfcPipeSegment": 2,
+      "IfcColumn": 2,
+      "IfcBeam": 17,
+      "IfcPavement": 1
+    },
+    "relationCounts": {
+      "IfcRelAggregates": 5,
+      "IfcRelNests": 0,
+      "IfcRelContainedInSpatialStructure": 10,
+      "IfcRelReferencedInSpatialStructure": 0
+    },
+    "represented": 91,
+    "meshes": 91,
+    "shapeErrors": [],
+    "min": [
+      -743048.3502984609,
+      -1043011.30189156,
+      476.94999694824196
+    ],
+    "max": [
+      -742959.0291406672,
+      -1042991.466208093,
+      504.71168287109396
+    ],
+    "triangles": 36175,
+    "propertySetProducts": 0,
+    "seconds": 5.309
+  },
+  "elements": [
+    {
+      "stepId": 23,
+      "globalId": "14crmQueRWZ3ioX1wUBIpL",
+      "ifcClass": "IfcProject",
+      "name": "Demo Bridge SO 201",
+      "description": null,
+      "predefinedType": null,
+      "tag": null,
+      "parentGlobalId": "",
+      "ambiguousParent": false,
+      "relations": [],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 28,
+      "globalId": "1dCXOsbB31t8Rtv0c$j1$a",
+      "ifcClass": "IfcSite",
+      "name": "Site",
+      "description": null,
+      "predefinedType": null,
+      "tag": null,
+      "parentGlobalId": "14crmQueRWZ3ioX1wUBIpL",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 933,
+          "relationGlobalId": "3R5VgSFPFkpcqlk0ItYwcL",
+          "parentGlobalId": "14crmQueRWZ3ioX1wUBIpL",
+          "parentStepId": 23
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 30,
+      "globalId": "11_QvFtKEbPmta5DWSknqV",
+      "ifcClass": "IfcBridge",
+      "name": "Bridge SO 201",
+      "description": null,
+      "predefinedType": "GIRDER",
+      "tag": null,
+      "parentGlobalId": "1dCXOsbB31t8Rtv0c$j1$a",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 932,
+          "relationGlobalId": "3MXmzTHWq8wm7BAMz74aMq",
+          "parentGlobalId": "1dCXOsbB31t8Rtv0c$j1$a",
+          "parentStepId": 28
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 32,
+      "globalId": "0g8y805UM2w5TGsj6dPqW9",
+      "ifcClass": "IfcBridgePart",
+      "name": "Foundations",
+      "description": null,
+      "predefinedType": "FOUNDATION",
+      "tag": null,
+      "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 931,
+          "relationGlobalId": "0xqPyt5k_TOfUyWcGFG_Td",
+          "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+          "parentStepId": 30
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 34,
+      "globalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ifcClass": "IfcBridgePart",
+      "name": "Foundation O1",
+      "description": null,
+      "predefinedType": "FOUNDATION",
+      "tag": null,
+      "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 396,
+          "relationGlobalId": "2TTHwF137eV4JoRlSnDema",
+          "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+          "parentStepId": 32
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 46,
+      "globalId": "2a4OvdgikJUy3uDSyU4yWd",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 1",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "68de5a7c-d8ed-47dd-80eb-81a06cf3bbec",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 44
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743037.5472367252,
+          -1043000.2355576359,
+          487.19999694824196
+        ],
+        "max": [
+          -743036.3501012423,
+          -1042999.038422153,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-2a4OvdgikJUy3uDSyU4yWd"
+    },
+    {
+      "stepId": 55,
+      "globalId": "0Kp1KG1q2H6xwjLCKODn1i",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 2",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "da2e65de-c840-4d88-8b01-83250f6b6e4b",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 53
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743036.3567992258,
+          -1043002.5861589652,
+          487.19999694824196
+        ],
+        "max": [
+          -743035.1596637429,
+          -1043001.3890234823,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0Kp1KG1q2H6xwjLCKODn1i"
+    },
+    {
+      "stepId": 64,
+      "globalId": "0_aM_11Zcyc8m$$61lV1Dz",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 3",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "b43ccfb0-de78-47bf-b185-68bc5abd2dcd",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 62
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.8508061907,
+          -1042998.1650239186,
+          487.19999694824196
+        ],
+        "max": [
+          -743034.6536607203,
+          -1042996.9678884357,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0_aM_11Zcyc8m$$61lV1Dz"
+    },
+    {
+      "stepId": 73,
+      "globalId": "1XHyI4eM6NrIJN28uH9AEQ",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 4",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "64b71ab9-6e5a-4ff5-b286-9b77535f1b86",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 71
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743037.0355498814,
+          -1042995.7647438461,
+          487.19999694824196
+        ],
+        "max": [
+          -743035.838404411,
+          -1042994.5676083632,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1XHyI4eM6NrIJN28uH9AEQ"
+    },
+    {
+      "stepId": 82,
+      "globalId": "1fyAxUxs4bEDupYhVyQL5e",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 5",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "a2000f7d-1979-4cfb-af7e-f5cc2f175ebe",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 80
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.3447969888,
+          -1042993.7438886442,
+          487.19999694824196
+        ],
+        "max": [
+          -743034.1476615058,
+          -1042992.5467531612,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1fyAxUxs4bEDupYhVyQL5e"
+    },
+    {
+      "stepId": 91,
+      "globalId": "3bdbo8NLsd1BoB5Ae7kYGn",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 6",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "bc42e40f-9ceb-4f7d-82b0-5c7ec1769275",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 89
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743039.9831265496,
+          -1043002.1711322118,
+          487.19999694824196
+        ],
+        "max": [
+          -743038.7859810792,
+          -1043000.9739967289,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-3bdbo8NLsd1BoB5Ae7kYGn"
+    },
+    {
+      "stepId": 100,
+      "globalId": "1p_t3_CvEaBc646XMc4rVY",
+      "ifcClass": "IfcPile",
+      "name": "Piles O1 7",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "08c21140-f794-4141-8930-c0716b50adce",
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 98
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743038.9711158486,
+          -1042993.3288541754,
+          487.19999694824196
+        ],
+        "max": [
+          -743037.7739803657,
+          -1042992.1317186925,
+          499.19999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1p_t3_CvEaBc646XMc4rVY"
+    },
+    {
+      "stepId": 112,
+      "globalId": "2gImNpnGyqpWl$gbNtpzMj",
+      "ifcClass": "IfcFooting",
+      "name": "Pile cap O1",
+      "description": null,
+      "predefinedType": "PILE_CAP",
+      "tag": null,
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 110
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743040.474761,
+          -1043002.9287467287,
+          499.199998474121
+        ],
+        "max": [
+          -743033.805051599,
+          -1042991.7720972917,
+          499.99999847412096
+        ],
+        "triangles": 212,
+        "vertices": 108
+      },
+      "assetId": "BRIDGE-SO201-2gImNpnGyqpWl$gbNtpzMj"
+    },
+    {
+      "stepId": 124,
+      "globalId": "2AWKmdFbxv_tuG7K9VZttg",
+      "ifcClass": "IfcSlab",
+      "name": "Blinding concrete O1",
+      "description": null,
+      "predefinedType": "BASESLAB",
+      "tag": null,
+      "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 125,
+          "relationGlobalId": "0KRS0c6U2W5ugIYki9uh23",
+          "parentGlobalId": "1GnyDA8Xz$hwSNtZo6oaJf",
+          "parentStepId": 34
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 122
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743041.7162610426,
+          -1043003.2055402698,
+          499.050003522949
+        ],
+        "max": [
+          -743033.5282820584,
+          -1042991.4952805152,
+          504.096343522949
+        ],
+        "triangles": 141,
+        "vertices": 77
+      },
+      "assetId": "BRIDGE-SO201-2AWKmdFbxv_tuG7K9VZttg"
+    },
+    {
+      "stepId": 127,
+      "globalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ifcClass": "IfcBridgePart",
+      "name": "Foundation P2",
+      "description": null,
+      "predefinedType": "FOUNDATION",
+      "tag": null,
+      "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 396,
+          "relationGlobalId": "2TTHwF137eV4JoRlSnDema",
+          "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+          "parentStepId": 32
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 136,
+      "globalId": "0RYStVBLOU3fK4TrSaxleL",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 1",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "971d4c0b-29dd-4f70-ad36-d6d5eda69cec",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 134
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743021.0358281779,
+          -1043002.83061997,
+          476.94999694824196
+        ],
+        "max": [
+          -743019.8373289643,
+          -1043001.6321207563,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0RYStVBLOU3fK4TrSaxleL"
+    },
+    {
+      "stepId": 145,
+      "globalId": "2iSvaPVQnmzi68Ayq9d6qY",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 2",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "ce43bf48-dd2c-4f7c-8429-6239bf6b3726",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 143
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.1546371254,
+          -1043003.160371979,
+          476.94999694824196
+        ],
+        "max": [
+          -743016.9561379118,
+          -1043001.9618727653,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-2iSvaPVQnmzi68Ayq9d6qY"
+    },
+    {
+      "stepId": 154,
+      "globalId": "2WJPpbnIyUCehnP4vK1ubq",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 3",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "977de529-fef0-4f8a-a161-f741d9e3c828",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 152
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743017.483761687,
+          -1042997.2986379851,
+          476.94999694824196
+        ],
+        "max": [
+          -743016.2852624733,
+          -1042996.1001387715,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-2WJPpbnIyUCehnP4vK1ubq"
+    },
+    {
+      "stepId": 163,
+      "globalId": "24ZD9cwOSNj_MNCV3GxP8N",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 4",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "d5b9299a-90f6-4375-b03d-3a80cd37cb35",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 161
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743020.364953686,
+          -1042996.9688858094,
+          476.94999694824196
+        ],
+        "max": [
+          -743019.1664544723,
+          -1042995.7703865957,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-24ZD9cwOSNj_MNCV3GxP8N"
+    },
+    {
+      "stepId": 172,
+      "globalId": "3GnYYy2Y1vHqMUV$7WWUQ4",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 5",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "73191c1f-fa8d-4bbc-af60-4c6d50bda9bd",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 170
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743020.5866836417,
+          -1042998.9062386209,
+          476.94999694824196
+        ],
+        "max": [
+          -743019.388184428,
+          -1042997.7077394072,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-3GnYYy2Y1vHqMUV$7WWUQ4"
+    },
+    {
+      "stepId": 181,
+      "globalId": "1Un2L8xHtG3sCOXzOK7NpB",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 6",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "98c209fd-498c-4e97-b4e6-46138b40ab5d",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 179
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743020.8140982215,
+          -1043000.89326714,
+          476.94999694824196
+        ],
+        "max": [
+          -743019.6155990078,
+          -1042999.6947679264,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1Un2L8xHtG3sCOXzOK7NpB"
+    },
+    {
+      "stepId": 190,
+      "globalId": "01Mx6ArG29CItpGjgBLuca",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 7",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "68656644-666d-4bfb-8db1-3409396af481",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 188
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743017.9329071748,
+          -1043001.223019268,
+          476.94999694824196
+        ],
+        "max": [
+          -743016.7344079611,
+          -1043000.0245200543,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-01Mx6ArG29CItpGjgBLuca"
+    },
+    {
+      "stepId": 199,
+      "globalId": "1cDdAUyvkpgIPk5Ufdffgw",
+      "ifcClass": "IfcPile",
+      "name": "Piles P2 8",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "edfae339-ea30-459a-8533-5f0e69c854b1",
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 197
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743017.70833443,
+          -1042999.260828608,
+          476.94999694824196
+        ],
+        "max": [
+          -743016.5098352163,
+          -1042998.0623293943,
+          491.94999694824196
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1cDdAUyvkpgIPk5Ufdffgw"
+    },
+    {
+      "stepId": 208,
+      "globalId": "2T12tBKsv4vL2Pc9ijqqSu",
+      "ifcClass": "IfcFooting",
+      "name": "Pile cap P2",
+      "description": null,
+      "predefinedType": "PILE_CAP",
+      "tag": null,
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 206
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743021.3777168716,
+          -1043003.502300964,
+          492.10000506591797
+        ],
+        "max": [
+          -743015.9434853328,
+          -1042995.4284970369,
+          493.70100506591797
+        ],
+        "triangles": 106,
+        "vertices": 55
+      },
+      "assetId": "BRIDGE-SO201-2T12tBKsv4vL2Pc9ijqqSu"
+    },
+    {
+      "stepId": 217,
+      "globalId": "0qpx6Ycve5tLEkuyiBy94y",
+      "ifcClass": "IfcSlab",
+      "name": "Blinding concrete P2",
+      "description": null,
+      "predefinedType": "BASESLAB",
+      "tag": null,
+      "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 218,
+          "relationGlobalId": "06DqBsK6XaAy8Dq0mTAlft",
+          "parentGlobalId": "1k90zKG0FcgqukjeHoEYQa",
+          "parentStepId": 127
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 215
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743021.654528286,
+          -1043003.7790672681,
+          491.95000152587903
+        ],
+        "max": [
+          -743015.666560532,
+          -1042995.1516934974,
+          492.100001525879
+        ],
+        "triangles": 12,
+        "vertices": 8
+      },
+      "assetId": "BRIDGE-SO201-0qpx6Ycve5tLEkuyiBy94y"
+    },
+    {
+      "stepId": 220,
+      "globalId": "2jtDmxyACUklgyEObbR8qm",
+      "ifcClass": "IfcBridgePart",
+      "name": "Foundation P3",
+      "description": null,
+      "predefinedType": "FOUNDATION",
+      "tag": null,
+      "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 396,
+          "relationGlobalId": "2TTHwF137eV4JoRlSnDema",
+          "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+          "parentStepId": 32
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 229,
+      "globalId": "1AlW5oK7Lzhz7PkYqKTq67",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 1",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "de950d79-12fa-4dac-90e7-e175b8c9ca8d",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 227
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742983.9288511629,
+          -1043003.1269000832,
+          477.85000610351597
+        ],
+        "max": [
+          -742982.7303519492,
+          -1043001.9284008695,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1AlW5oK7Lzhz7PkYqKTq67"
+    },
+    {
+      "stepId": 238,
+      "globalId": "3o2F4eFxVeKqGscvJZ1l5y",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 2",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "178b9030-7305-44fe-8820-44c5f896643c",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 236
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.153423903,
+          -1043005.0890906502,
+          477.85000610351597
+        ],
+        "max": [
+          -742982.9549246894,
+          -1043003.8905914365,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-3o2F4eFxVeKqGscvJZ1l5y"
+    },
+    {
+      "stepId": 247,
+      "globalId": "2xbB1CzKGfGuhKaJWpa8II",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 3",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "1033502f-aba0-475a-9ae4-301d44ca8cd4",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 245
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742987.0346154259,
+          -1043004.7593384983,
+          477.85000610351597
+        ],
+        "max": [
+          -742985.8361162122,
+          -1043003.5608392847,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-2xbB1CzKGfGuhKaJWpa8II"
+    },
+    {
+      "stepId": 256,
+      "globalId": "13xIsG3OU65cK6zC9udLB3",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 4",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "41f1c7bd-2817-4941-8ca8-7c92c0019ae5",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 254
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742986.8071998975,
+          -1043002.772310105,
+          477.85000610351597
+        ],
+        "max": [
+          -742985.6087006838,
+          -1043001.5738108914,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-13xIsG3OU65cK6zC9udLB3"
+    },
+    {
+      "stepId": 265,
+      "globalId": "0zIcQZf_T3Rb59CjoQc8X4",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 5",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "bcd93abf-c0b2-4dc7-8106-862e885eacd0",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 263
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742986.5854699395,
+          -1043000.8349572453,
+          477.85000610351597
+        ],
+        "max": [
+          -742985.3869707258,
+          -1042999.6364580316,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0zIcQZf_T3Rb59CjoQc8X4"
+    },
+    {
+      "stepId": 274,
+      "globalId": "2sK3Oj2Oxz1wiAepNQukNM",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 6",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "9f296dd8-6489-436c-95bd-70597d9e6e96",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 272
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742983.7042784182,
+          -1043001.1647094268,
+          477.85000610351597
+        ],
+        "max": [
+          -742982.5057792045,
+          -1042999.9662102131,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-2sK3Oj2Oxz1wiAepNQukNM"
+    },
+    {
+      "stepId": 283,
+      "globalId": "2vxXOtTmlBJAftg16Ip9lp",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 7",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "158a4079-8f61-43f5-82c8-98045ece2084",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 281
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.3751533908,
+          -1043007.0264436529,
+          477.85000610351597
+        ],
+        "max": [
+          -742983.1766541771,
+          -1043005.8279444393,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-2vxXOtTmlBJAftg16Ip9lp"
+    },
+    {
+      "stepId": 292,
+      "globalId": "0PDwbZP_Wjsa$t9tZlRWdn",
+      "ifcClass": "IfcPile",
+      "name": "Piles P3 8",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "268c7508-2b63-40ad-83a8-d16735bfe8ed",
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 290
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742987.2563449136,
+          -1043006.6966915011,
+          477.85000610351597
+        ],
+        "max": [
+          -742986.0578457,
+          -1043005.4981922874,
+          492.85000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0PDwbZP_Wjsa$t9tZlRWdn"
+    },
+    {
+      "stepId": 301,
+      "globalId": "2gojBJ8751ev0VZT3WtTz5",
+      "ifcClass": "IfcFooting",
+      "name": "Pile cap P3",
+      "description": null,
+      "predefinedType": "PILE_CAP",
+      "tag": null,
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 299
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742987.598231211,
+          -1043007.3683726286,
+          492.998993652344
+        ],
+        "max": [
+          -742982.1638897498,
+          -1042999.293573452,
+          494.60049365234397
+        ],
+        "triangles": 106,
+        "vertices": 55
+      },
+      "assetId": "BRIDGE-SO201-2gojBJ8751ev0VZT3WtTz5"
+    },
+    {
+      "stepId": 310,
+      "globalId": "1tghNyhC9BFNfrENkrKFon",
+      "ifcClass": "IfcSlab",
+      "name": "Blinding concrete P3",
+      "description": null,
+      "predefinedType": "BASESLAB",
+      "tag": null,
+      "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 311,
+          "relationGlobalId": "1bQBNR425FVBtYXhiZ1svF",
+          "parentGlobalId": "2jtDmxyACUklgyEObbR8qm",
+          "parentStepId": 220
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 308
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742987.8750350103,
+          -1043007.645138323,
+          492.85000305175805
+        ],
+        "max": [
+          -742981.8870872313,
+          -1042999.0177645523,
+          493.00000305175803
+        ],
+        "triangles": 66,
+        "vertices": 35
+      },
+      "assetId": "BRIDGE-SO201-1tghNyhC9BFNfrENkrKFon"
+    },
+    {
+      "stepId": 313,
+      "globalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ifcClass": "IfcBridgePart",
+      "name": "Foundation O4",
+      "description": null,
+      "predefinedType": "FOUNDATION",
+      "tag": null,
+      "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 396,
+          "relationGlobalId": "2TTHwF137eV4JoRlSnDema",
+          "parentGlobalId": "0g8y805UM2w5TGsj6dPqW9",
+          "parentStepId": 32
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 322,
+      "globalId": "35JRfDfc7AG4pP03LjzGAP",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 1",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "6b385f17-6cc9-4491-8ff9-071caef30d70",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 320
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742967.7031923519,
+          -1043008.2292282671,
+          487.60000610351597
+        ],
+        "max": [
+          -742966.5060468814,
+          -1043007.0320927842,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-35JRfDfc7AG4pP03LjzGAP"
+    },
+    {
+      "stepId": 331,
+      "globalId": "1GKGPBUnqotpvITYVkO07n",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 2",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "0b563742-c96c-4ba2-b42c-bcaba57c437b",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 329
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742969.3939411843,
+          -1043010.2500886469,
+          487.60000610351597
+        ],
+        "max": [
+          -742968.1968057014,
+          -1043009.052933189,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1GKGPBUnqotpvITYVkO07n"
+    },
+    {
+      "stepId": 340,
+      "globalId": "0n$nC0OxnClTt3F0eMLOM5",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 3",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "c87f3178-175f-4f7e-9089-c5069bf6f52f",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 338
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742968.8879457747,
+          -1043005.8289430937,
+          487.60000610351597
+        ],
+        "max": [
+          -742967.6908102918,
+          -1043004.6317976232,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0n$nC0OxnClTt3F0eMLOM5"
+    },
+    {
+      "stepId": 349,
+      "globalId": "3kML_OdcG2anTA0GEmMref",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 4",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "4870da74-be18-410e-acbe-54e50556a06f",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 347
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742967.1915092837,
+          -1043003.7584136021,
+          487.60000610351597
+        ],
+        "max": [
+          -742965.9943738008,
+          -1043002.5612781192,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-3kML_OdcG2anTA0GEmMref"
+    },
+    {
+      "stepId": 358,
+      "globalId": "1hWA3$l8573Uj8fVXRVyVv",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 5",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "c6fcd6bb-1e3d-4a0e-8dd2-a42d38ebf752",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 356
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742968.3819474007,
+          -1043001.4078055354,
+          487.60000610351597
+        ],
+        "max": [
+          -742967.1848119178,
+          -1043000.2106700524,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-1hWA3$l8573Uj8fVXRVyVv"
+    },
+    {
+      "stepId": 367,
+      "globalId": "3cS$RggRVZLcARadfuvY0u",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 6",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "cfbd8ab8-2534-4ce1-ad05-af9f5903f9b5",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 365
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742965.7676241936,
+          -1043010.6651123184,
+          487.60000610351597
+        ],
+        "max": [
+          -742964.5704787232,
+          -1043009.4679768354,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-3cS$RggRVZLcARadfuvY0u"
+    },
+    {
+      "stepId": 376,
+      "globalId": "0GzCGpNTHvETrMS_kiVMMm",
+      "ifcClass": "IfcPile",
+      "name": "Piles O4 7",
+      "description": null,
+      "predefinedType": "BORED",
+      "tag": "28197074-e33d-43b4-84cc-20001dd97a2c",
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 374
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742964.7556293684,
+          -1043001.8228374589,
+          487.60000610351597
+        ],
+        "max": [
+          -742963.5584938854,
+          -1043000.6256919885,
+          499.60000610351597
+        ],
+        "triangles": 124,
+        "vertices": 64
+      },
+      "assetId": "BRIDGE-SO201-0GzCGpNTHvETrMS_kiVMMm"
+    },
+    {
+      "stepId": 385,
+      "globalId": "1lz6L5kkiHsqe1FPFY7si4",
+      "ifcClass": "IfcFooting",
+      "name": "Pile cap O4",
+      "description": null,
+      "predefinedType": "PILE_CAP",
+      "tag": null,
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 383
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742969.7365254097,
+          -1043011.0247365307,
+          499.60000798095706
+        ],
+        "max": [
+          -742963.0668155088,
+          -1042999.8680865937,
+          500.401227980957
+        ],
+        "triangles": 188,
+        "vertices": 96
+      },
+      "assetId": "BRIDGE-SO201-1lz6L5kkiHsqe1FPFY7si4"
+    },
+    {
+      "stepId": 394,
+      "globalId": "1I2uRKupnTfpjQ_qcjCzM8",
+      "ifcClass": "IfcSlab",
+      "name": "Blinding concrete O4",
+      "description": null,
+      "predefinedType": "BASESLAB",
+      "tag": null,
+      "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 395,
+          "relationGlobalId": "0cwLPaqi43XMPDFbZGVHe$",
+          "parentGlobalId": "2qDMMBkvPrrGbGUfWqrgu2",
+          "parentStepId": 313
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 392
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742970.0132913601,
+          -1043011.3015534272,
+          499.449996479492
+        ],
+        "max": [
+          -742961.6434192413,
+          -1042999.5912936726,
+          503.61503647949195
+        ],
+        "triangles": 92,
+        "vertices": 52
+      },
+      "assetId": "BRIDGE-SO201-1I2uRKupnTfpjQ_qcjCzM8"
+    },
+    {
+      "stepId": 398,
+      "globalId": "0ivZYnqcRPA9n_gSzd$pcO",
+      "ifcClass": "IfcBridgePart",
+      "name": "Substructure",
+      "description": null,
+      "predefinedType": "SUBSTRUCTURE",
+      "tag": null,
+      "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 931,
+          "relationGlobalId": "0xqPyt5k_TOfUyWcGFG_Td",
+          "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+          "parentStepId": 30
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 400,
+      "globalId": "34A8503nOCckjA5mHKZDdI",
+      "ifcClass": "IfcBridgePart",
+      "name": "Abutment O1",
+      "description": null,
+      "predefinedType": "ABUTMENT",
+      "tag": null,
+      "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 678,
+          "relationGlobalId": "3fqDn5bTi3hMz3XM$gk4Y8",
+          "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+          "parentStepId": 398
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 412,
+      "globalId": "1lGkPEWaJvRI70HQAZkSP1",
+      "ifcClass": "IfcWall",
+      "name": "Abutment stem O1",
+      "description": null,
+      "predefinedType": "SOLIDWALL",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 410
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743037.8135046215,
+          -1043002.6178167138,
+          499.999981608887
+        ],
+        "max": [
+          -743034.3799075851,
+          -1042992.3217939987,
+          504.424441608887
+        ],
+        "triangles": 1024,
+        "vertices": 508
+      },
+      "assetId": "BRIDGE-SO201-1lGkPEWaJvRI70HQAZkSP1"
+    },
+    {
+      "stepId": 421,
+      "globalId": "2WyzbqEDrdQD_6mdClrFMD",
+      "ifcClass": "IfcWall",
+      "name": "Wing walls O1 1",
+      "description": null,
+      "predefinedType": "RETAININGWALL",
+      "tag": "5119084e-5b92-4354-9176-7d343143ca95",
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 419
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743042.6817260513,
+          -1043002.3847241169,
+          499.998003388672
+        ],
+        "max": [
+          -743037.4741563925,
+          -1043001.0043689588,
+          504.459943388672
+        ],
+        "triangles": 188,
+        "vertices": 96
+      },
+      "assetId": "BRIDGE-SO201-2WyzbqEDrdQD_6mdClrFMD"
+    },
+    {
+      "stepId": 430,
+      "globalId": "3Rf3PcEJNlyC4z_uZD0RvN",
+      "ifcClass": "IfcWall",
+      "name": "Wing walls O1 2",
+      "description": null,
+      "predefinedType": "RETAININGWALL",
+      "tag": "00fb7f40-64fc-4605-9337-9f4ed39ce171",
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 428
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743041.5958112568,
+          -1042993.1166206915,
+          499.999873071289
+        ],
+        "max": [
+          -743036.416652505,
+          -1042991.7646359904,
+          504.416173071289
+        ],
+        "triangles": 232,
+        "vertices": 114
+      },
+      "assetId": "BRIDGE-SO201-3Rf3PcEJNlyC4z_uZD0RvN"
+    },
+    {
+      "stepId": 442,
+      "globalId": "1bF2ohDSbAdPq9Dzb0x5mt",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths O1 1",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "adc26e11-2e62-4cb4-956e-f302db2bbc38",
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 440
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.788363838,
+          -1042995.3289518896,
+          501.795382810059
+        ],
+        "max": [
+          -743034.6811312273,
+          -1042994.221739254,
+          501.940502810059
+        ],
+        "triangles": 12,
+        "vertices": 8
+      },
+      "assetId": "BRIDGE-SO201-1bF2ohDSbAdPq9Dzb0x5mt"
+    },
+    {
+      "stepId": 451,
+      "globalId": "0bbLNJarvOpl60V0gvYLWj",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths O1 2",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "248ac99c-5064-45bb-b662-a47990fea38d",
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 449
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743036.419441715,
+          -1043000.8429475875,
+          501.793625429688
+        ],
+        "max": [
+          -743035.3122091043,
+          -1042999.7357349518,
+          501.940505429688
+        ],
+        "triangles": 12,
+        "vertices": 8
+      },
+      "assetId": "BRIDGE-SO201-0bbLNJarvOpl60V0gvYLWj"
+    },
+    {
+      "stepId": 463,
+      "globalId": "3iT5z0CoNDwNpNmPzWxk40",
+      "ifcClass": "IfcSlab",
+      "name": "Approach slab O1",
+      "description": null,
+      "predefinedType": "APPROACH_SLAB",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 461
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743041.5175614043,
+          -1043008.7915453024,
+          503.127532375488
+        ],
+        "max": [
+          -742961.8421186482,
+          -1042992.4655836462,
+          504.420212375488
+        ],
+        "triangles": 284,
+        "vertices": 148
+      },
+      "assetId": "BRIDGE-SO201-3iT5z0CoNDwNpNmPzWxk40"
+    },
+    {
+      "stepId": 475,
+      "globalId": "17DJ2RbhfnN0BHLHFkAewB",
+      "ifcClass": "IfcEarthworksFill",
+      "name": "Transition backfill O1",
+      "description": null,
+      "predefinedType": "TRANSITIONSECTION",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 473
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743044.0458053914,
+          -1043001.5615245608,
+          499.050007241211
+        ],
+        "max": [
+          -743036.727625256,
+          -1042992.1734421642,
+          503.965587241211
+        ],
+        "triangles": 950,
+        "vertices": 457
+      },
+      "assetId": "BRIDGE-SO201-17DJ2RbhfnN0BHLHFkAewB"
+    },
+    {
+      "stepId": 487,
+      "globalId": "2hc6pR6YODqykbpLXUn1EI",
+      "ifcClass": "IfcCovering",
+      "name": "Waterproofing O1",
+      "description": null,
+      "predefinedType": "MEMBRANE",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 485
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743041.3687980307,
+          -1043001.561800263,
+          500.963535297852
+        ],
+        "max": [
+          -743036.7506365059,
+          -1042992.4484568441,
+          501.29357529785204
+        ],
+        "triangles": 193,
+        "vertices": 119
+      },
+      "assetId": "BRIDGE-SO201-2hc6pR6YODqykbpLXUn1EI"
+    },
+    {
+      "stepId": 499,
+      "globalId": "23UWminMd0M6qR8XJiS60t",
+      "ifcClass": "IfcCovering",
+      "name": "Protective coating O1",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 497
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743042.6817320206,
+          -1043002.9287466407,
+          499.20000076416005
+        ],
+        "max": [
+          -743033.8050533583,
+          -1042991.7646282064,
+          504.46194076416003
+        ],
+        "triangles": 657,
+        "vertices": 422
+      },
+      "assetId": "BRIDGE-SO201-23UWminMd0M6qR8XJiS60t"
+    },
+    {
+      "stepId": 511,
+      "globalId": "0h_i1N8JV0y5VdxtxZmtS7",
+      "ifcClass": "IfcPipeSegment",
+      "name": "Drainage O1",
+      "description": null,
+      "predefinedType": "RIGIDSEGMENT",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 509
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743037.9063379334,
+          -1043001.5592756385,
+          500.82010129394496
+        ],
+        "max": [
+          -743034.8729357517,
+          -1042993.0458843429,
+          501.336301293945
+        ],
+        "triangles": 192,
+        "vertices": 97
+      },
+      "assetId": "BRIDGE-SO201-0h_i1N8JV0y5VdxtxZmtS7"
+    },
+    {
+      "stepId": 523,
+      "globalId": "0tcbaUa47yoBP$OzuYEZrC",
+      "ifcClass": "IfcEarthworksFill",
+      "name": "Drainage protection O1",
+      "description": null,
+      "predefinedType": "BACKFILL",
+      "tag": null,
+      "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 524,
+          "relationGlobalId": "12iIJnLkZU92ifbmG55B87",
+          "parentGlobalId": "34A8503nOCckjA5mHKZDdI",
+          "parentStepId": 400
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 521
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743038.0206270043,
+          -1043001.5618679741,
+          500.963745463867
+        ],
+        "max": [
+          -743036.7504026724,
+          -1042993.0327940778,
+          501.47970546386694
+        ],
+        "triangles": 256,
+        "vertices": 129
+      },
+      "assetId": "BRIDGE-SO201-0tcbaUa47yoBP$OzuYEZrC"
+    },
+    {
+      "stepId": 526,
+      "globalId": "1pfHs3XtRXlc3ku62Hk53s",
+      "ifcClass": "IfcBridgePart",
+      "name": "Pier P2",
+      "description": null,
+      "predefinedType": "PIER",
+      "tag": null,
+      "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 678,
+          "relationGlobalId": "3fqDn5bTi3hMz3XM$gk4Y8",
+          "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+          "parentStepId": 398
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 535,
+      "globalId": "0Fx3Ykz9Zoo5T0r0sZtWPp",
+      "ifcClass": "IfcColumn",
+      "name": "Pier stem P2",
+      "description": null,
+      "predefinedType": "PIERSTEM",
+      "tag": null,
+      "parentGlobalId": "1pfHs3XtRXlc3ku62Hk53s",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 554,
+          "relationGlobalId": "3xIBnNPFSugKFfqcqo1fn2",
+          "parentGlobalId": "1pfHs3XtRXlc3ku62Hk53s",
+          "parentStepId": 526
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 533
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743019.72256591,
+          -1043002.2543916891,
+          493.66563555175804
+        ],
+        "max": [
+          -743017.5985220628,
+          -1042996.6763702672,
+          501.44999555175804
+        ],
+        "triangles": 116,
+        "vertices": 68
+      },
+      "assetId": "BRIDGE-SO201-0Fx3Ykz9Zoo5T0r0sZtWPp"
+    },
+    {
+      "stepId": 544,
+      "globalId": "0vpwLjckQCzsA1Wvzwc8EX",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths P2 1",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "190ecf6d-c952-4e84-b436-bb3ad5230577",
+      "parentGlobalId": "1pfHs3XtRXlc3ku62Hk53s",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 554,
+          "relationGlobalId": "3xIBnNPFSugKFfqcqo1fn2",
+          "parentGlobalId": "1pfHs3XtRXlc3ku62Hk53s",
+          "parentStepId": 526
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 542
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.9782056853,
+          -1042997.9574502456,
+          501.425001525879
+        ],
+        "max": [
+          -743017.8709930496,
+          -1042996.8502376099,
+          501.62500152587904
+        ],
+        "triangles": 12,
+        "vertices": 10
+      },
+      "assetId": "BRIDGE-SO201-0vpwLjckQCzsA1Wvzwc8EX"
+    },
+    {
+      "stepId": 553,
+      "globalId": "3RkpYxGpfcYT2I1t_zwJ_Z",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths P2 2",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "3df48fa2-e4d0-43a0-87b3-9ed9c2af55da",
+      "parentGlobalId": "1pfHs3XtRXlc3ku62Hk53s",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 554,
+          "relationGlobalId": "3xIBnNPFSugKFfqcqo1fn2",
+          "parentGlobalId": "1pfHs3XtRXlc3ku62Hk53s",
+          "parentStepId": 526
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 551
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743019.4500932386,
+          -1043002.0805293471,
+          501.425001525879
+        ],
+        "max": [
+          -743018.3428806029,
+          -1043000.9733167114,
+          501.62500152587904
+        ],
+        "triangles": 12,
+        "vertices": 10
+      },
+      "assetId": "BRIDGE-SO201-3RkpYxGpfcYT2I1t_zwJ_Z"
+    },
+    {
+      "stepId": 556,
+      "globalId": "1oAnp37N8ZqgAQOnAgZRj2",
+      "ifcClass": "IfcBridgePart",
+      "name": "Pier P3",
+      "description": null,
+      "predefinedType": "PIER",
+      "tag": null,
+      "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 678,
+          "relationGlobalId": "3fqDn5bTi3hMz3XM$gk4Y8",
+          "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+          "parentStepId": 398
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 565,
+      "globalId": "13i89sZ2IbZp1Sk$Woa$xz",
+      "ifcClass": "IfcColumn",
+      "name": "Pier stem P3",
+      "description": null,
+      "predefinedType": "PIERSTEM",
+      "tag": null,
+      "parentGlobalId": "1oAnp37N8ZqgAQOnAgZRj2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 584,
+          "relationGlobalId": "0Evx$xmA5HElUWtBS3TOK_",
+          "parentGlobalId": "1oAnp37N8ZqgAQOnAgZRj2",
+          "parentStepId": 556
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 563
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742985.9430831136,
+          -1043006.1204630326,
+          494.565077841797
+        ],
+        "max": [
+          -742983.8190392664,
+          -1043000.5424421107,
+          501.19999784179697
+        ],
+        "triangles": 116,
+        "vertices": 68
+      },
+      "assetId": "BRIDGE-SO201-13i89sZ2IbZp1Sk$Woa$xz"
+    },
+    {
+      "stepId": 574,
+      "globalId": "1fawtDnfode$lnlifl1tTK",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths P3 1",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "b9808e94-1486-4dcd-ad15-7fe2d86d4471",
+      "parentGlobalId": "1oAnp37N8ZqgAQOnAgZRj2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 584,
+          "relationGlobalId": "0Evx$xmA5HElUWtBS3TOK_",
+          "parentGlobalId": "1oAnp37N8ZqgAQOnAgZRj2",
+          "parentStepId": 556
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 572
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742985.6706104416,
+          -1043005.9466006756,
+          501.175001525879
+        ],
+        "max": [
+          -742984.5633978059,
+          -1043004.8393880399,
+          501.37500152587904
+        ],
+        "triangles": 12,
+        "vertices": 10
+      },
+      "assetId": "BRIDGE-SO201-1fawtDnfode$lnlifl1tTK"
+    },
+    {
+      "stepId": 583,
+      "globalId": "2UbYxl2Z_QFNLU3y2qrM_l",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths P3 2",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "c76fcc51-f676-4b33-aff6-04b54bd844c2",
+      "parentGlobalId": "1oAnp37N8ZqgAQOnAgZRj2",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 584,
+          "relationGlobalId": "0Evx$xmA5HElUWtBS3TOK_",
+          "parentGlobalId": "1oAnp37N8ZqgAQOnAgZRj2",
+          "parentStepId": 556
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 581
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742985.1987214605,
+          -1043001.8235216661,
+          501.175001525879
+        ],
+        "max": [
+          -742984.0915088248,
+          -1043000.7163090304,
+          501.37500152587904
+        ],
+        "triangles": 12,
+        "vertices": 10
+      },
+      "assetId": "BRIDGE-SO201-2UbYxl2Z_QFNLU3y2qrM_l"
+    },
+    {
+      "stepId": 586,
+      "globalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ifcClass": "IfcBridgePart",
+      "name": "Abutment O4",
+      "description": null,
+      "predefinedType": "ABUTMENT",
+      "tag": null,
+      "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 678,
+          "relationGlobalId": "3fqDn5bTi3hMz3XM$gk4Y8",
+          "parentGlobalId": "0ivZYnqcRPA9n_gSzd$pcO",
+          "parentStepId": 398
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 595,
+      "globalId": "3pw3ckthnwuHJM5cpTcvE6",
+      "ifcClass": "IfcWall",
+      "name": "Abutment stem O4",
+      "description": null,
+      "predefinedType": "SOLIDWALL",
+      "tag": null,
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 593
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742969.1616532322,
+          -1043010.4750397004,
+          500.399995268555
+        ],
+        "max": [
+          -742965.7280951458,
+          -1043000.1791103608,
+          503.94555526855504
+        ],
+        "triangles": 1214,
+        "vertices": 601
+      },
+      "assetId": "BRIDGE-SO201-3pw3ckthnwuHJM5cpTcvE6"
+    },
+    {
+      "stepId": 604,
+      "globalId": "3plihVbpz2bZeSicQgJ7Q3",
+      "ifcClass": "IfcWall",
+      "name": "Wing walls O4 1",
+      "description": null,
+      "predefinedType": "RETAININGWALL",
+      "tag": "7a072c74-50e4-4081-a1f3-0509fc95ced9",
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 602
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742967.12492265,
+          -1043011.0037386133,
+          500.401367421875
+        ],
+        "max": [
+          -742962.1657195184,
+          -1043009.651817837,
+          503.943847421875
+        ],
+        "triangles": 256,
+        "vertices": 128
+      },
+      "assetId": "BRIDGE-SO201-3plihVbpz2bZeSicQgJ7Q3"
+    },
+    {
+      "stepId": 613,
+      "globalId": "3cNL7_0F15nTXH_ayJgL7q",
+      "ifcClass": "IfcWall",
+      "name": "Wing walls O4 2",
+      "description": null,
+      "predefinedType": "RETAININGWALL",
+      "tag": "e5f13510-ef33-4eda-96b0-067a13aa5c57",
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 611
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742966.0389994482,
+          -1043001.515718701,
+          500.40122743652296
+        ],
+        "max": [
+          -742961.1082491735,
+          -1043000.4121165143,
+          503.899767436523
+        ],
+        "triangles": 196,
+        "vertices": 98
+      },
+      "assetId": "BRIDGE-SO201-3cNL7_0F15nTXH_ayJgL7q"
+    },
+    {
+      "stepId": 622,
+      "globalId": "0IuTtWx0525uN7KFTYADuC",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths O4 1",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "34f94ead-21c4-4a06-9d85-15b6c49f5e5b",
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 620
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742968.2293854011,
+          -1043003.0610947345,
+          501.34002547851594
+        ],
+        "max": [
+          -742967.1221727654,
+          -1043001.9538820988,
+          501.559205478516
+        ],
+        "triangles": 12,
+        "vertices": 8
+      },
+      "assetId": "BRIDGE-SO201-0IuTtWx0525uN7KFTYADuC"
+    },
+    {
+      "stepId": 631,
+      "globalId": "09OvP1gzRXygHRqEoB_YxG",
+      "ifcClass": "IfcFooting",
+      "name": "Bearing plinths O4 2",
+      "description": null,
+      "predefinedType": "PAD_FOOTING",
+      "tag": "e0ac5aca-d7ad-4133-802d-aa14192e1b1b",
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 629
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742968.860459475,
+          -1043008.575090757,
+          501.33832098632803
+        ],
+        "max": [
+          -742967.7532468393,
+          -1043007.4678781213,
+          501.559200986328
+        ],
+        "triangles": 12,
+        "vertices": 8
+      },
+      "assetId": "BRIDGE-SO201-09OvP1gzRXygHRqEoB_YxG"
+    },
+    {
+      "stepId": 640,
+      "globalId": "05sPYA2jmp_rm8FG7R_0SM",
+      "ifcClass": "IfcEarthworksFill",
+      "name": "Transition backfill O4",
+      "description": null,
+      "predefinedType": "TRANSITIONSECTION",
+      "tag": null,
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 638
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742966.7855769802,
+          -1043010.2875257077,
+          499.449998310547
+        ],
+        "max": [
+          -742960.3863755155,
+          -1043000.9869764757,
+          503.83753831054696
+        ],
+        "triangles": 685,
+        "vertices": 314
+      },
+      "assetId": "BRIDGE-SO201-05sPYA2jmp_rm8FG7R_0SM"
+    },
+    {
+      "stepId": 649,
+      "globalId": "3TdYNOFNO5yhSv4k028PCx",
+      "ifcClass": "IfcCovering",
+      "name": "Waterproofing O4",
+      "description": null,
+      "predefinedType": "MEMBRANE",
+      "tag": null,
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 647
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742966.7855821203,
+          -1043010.0952597448,
+          501.64219582275405
+        ],
+        "max": [
+          -742962.0771209433,
+          -1043001.235330165,
+          501.874115822754
+        ],
+        "triangles": 184,
+        "vertices": 112
+      },
+      "assetId": "BRIDGE-SO201-3TdYNOFNO5yhSv4k028PCx"
+    },
+    {
+      "stepId": 658,
+      "globalId": "0vGsrIW4H44_POC_KNDXuU",
+      "ifcClass": "IfcCovering",
+      "name": "Protective coating O4",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": null,
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 656
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742969.7365214201,
+          -1043011.0247367305,
+          499.600005893555
+        ],
+        "max": [
+          -742961.1082512347,
+          -1042999.8680867935,
+          503.92132589355504
+        ],
+        "triangles": 546,
+        "vertices": 340
+      },
+      "assetId": "BRIDGE-SO201-0vGsrIW4H44_POC_KNDXuU"
+    },
+    {
+      "stepId": 667,
+      "globalId": "32bV9A$JM32dAu1Zg3q3Lj",
+      "ifcClass": "IfcPipeSegment",
+      "name": "Drainage O4",
+      "description": null,
+      "predefinedType": "RIGIDSEGMENT",
+      "tag": null,
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 665
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742966.8687954552,
+          -1043010.6453467364,
+          501.613482055664
+        ],
+        "max": [
+          -742965.5272664877,
+          -1043000.294106786,
+          501.930982055664
+        ],
+        "triangles": 104,
+        "vertices": 54
+      },
+      "assetId": "BRIDGE-SO201-32bV9A$JM32dAu1Zg3q3Lj"
+    },
+    {
+      "stepId": 676,
+      "globalId": "1ySGyun85Flak8wqdc22Ch",
+      "ifcClass": "IfcEarthworksFill",
+      "name": "Drainage protection O4",
+      "description": null,
+      "predefinedType": "BACKFILL",
+      "tag": null,
+      "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 677,
+          "relationGlobalId": "1fmvUlr2umrx_d$XkTTv2l",
+          "parentGlobalId": "1QzUjoeiJSSAO3vaoTPAhT",
+          "parentStepId": 586
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 674
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742966.7855827588,
+          -1043009.7143751456,
+          501.642200270996
+        ],
+        "max": [
+          -742965.5210018727,
+          -1043001.2353324237,
+          502.07098027099596
+        ],
+        "triangles": 176,
+        "vertices": 84
+      },
+      "assetId": "BRIDGE-SO201-1ySGyun85Flak8wqdc22Ch"
+    },
+    {
+      "stepId": 680,
+      "globalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ifcClass": "IfcBridgePart",
+      "name": "Superstructure",
+      "description": null,
+      "predefinedType": "SUPERSTRUCTURE",
+      "tag": null,
+      "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 931,
+          "relationGlobalId": "0xqPyt5k_TOfUyWcGFG_Td",
+          "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+          "parentStepId": 30
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 692,
+      "globalId": "2jnx$V1Bq1aR$OfEx$ULOH",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 1 1",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "60037b8a-eb50-44d7-bd43-7568ecc0646d",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 690
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.795665754,
+          -1043000.3220326593,
+          502.42551690918003
+        ],
+        "max": [
+          -743018.9752648431,
+          -1042996.6011937314,
+          504.15489690918
+        ],
+        "triangles": 1116,
+        "vertices": 564
+      },
+      "assetId": "BRIDGE-SO201-2jnx$V1Bq1aR$OfEx$ULOH"
+    },
+    {
+      "stepId": 701,
+      "globalId": "35_$at319vYpeinIpxhdix",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 1 2",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "c9951675-128a-4fc3-9da6-026291dad484",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 699
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.5637386119,
+          -1042998.3003694194,
+          502.416856447754
+        ],
+        "max": [
+          -743018.744579818,
+          -1042994.5769188161,
+          504.150236447754
+        ],
+        "triangles": 1292,
+        "vertices": 648
+      },
+      "assetId": "BRIDGE-SO201-35_$at319vYpeinIpxhdix"
+    },
+    {
+      "stepId": 710,
+      "globalId": "1HfwXIbME2yQxwO10KnFqY",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 1 3",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "8657e30b-4806-464f-a06a-dbc80d6108f9",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 708
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743036.2602894112,
+          -1043004.3712943115,
+          502.32852146484396
+        ],
+        "max": [
+          -743019.4413430345,
+          -1043000.6451276818,
+          504.061981464844
+        ],
+        "triangles": 1176,
+        "vertices": 595
+      },
+      "assetId": "BRIDGE-SO201-1HfwXIbME2yQxwO10KnFqY"
+    },
+    {
+      "stepId": 719,
+      "globalId": "1M2Dt6zBVBF$17xO1ZrlWq",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 1 4",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "7e0daa50-a5d0-4442-898e-d3267c0ab9f9",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 717
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743036.0248598742,
+          -1043002.3441634799,
+          502.37934939209
+        ],
+        "max": [
+          -743019.2056540106,
+          -1042998.6233191242,
+          504.11202939208994
+        ],
+        "triangles": 1214,
+        "vertices": 614
+      },
+      "assetId": "BRIDGE-SO201-1M2Dt6zBVBF$17xO1ZrlWq"
+    },
+    {
+      "stepId": 728,
+      "globalId": "28v_6QK2bjMvQbMN44eCdk",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 1 5",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "3db577d3-e554-4045-bf50-d846a78e926f",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 726
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.3324918124,
+          -1042996.2786212054,
+          502.366228303223
+        ],
+        "max": [
+          -743018.5132330715,
+          -1042992.5562192769,
+          504.099668303223
+        ],
+        "triangles": 1334,
+        "vertices": 669
+      },
+      "assetId": "BRIDGE-SO201-28v_6QK2bjMvQbMN44eCdk"
+    },
+    {
+      "stepId": 737,
+      "globalId": "2T$enmmSvZ90zW4gQLjHBr",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 2 1",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "038c4227-625e-444b-9d3e-471414290a3c",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 735
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.3525673175,
+          -1043004.1931431587,
+          502.191097058105
+        ],
+        "max": [
+          -742985.1972123305,
+          -1042998.5909211002,
+          504.033497058105
+        ],
+        "triangles": 1184,
+        "vertices": 596
+      },
+      "assetId": "BRIDGE-SO201-2T$enmmSvZ90zW4gQLjHBr"
+    },
+    {
+      "stepId": 746,
+      "globalId": "3e41$wYQjhAnolzZ3fv5Ep",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 2 2",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "908c5fb2-ba0f-41b3-bc29-e44836f618cd",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 744
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.5846355916,
+          -1043006.2151749172,
+          502.145066921387
+        ],
+        "max": [
+          -742985.4292606296,
+          -1043000.6129563586,
+          503.992246921387
+        ],
+        "triangles": 1133,
+        "vertices": 571
+      },
+      "assetId": "BRIDGE-SO201-3e41$wYQjhAnolzZ3fv5Ep"
+    },
+    {
+      "stepId": 755,
+      "globalId": "2GapfdkKr6OHl15ivSvILG",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 2 3",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "7de8afb7-4963-444d-8cc6-88ae93b00a78",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 753
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.8166851148,
+          -1043008.2368993264,
+          502.09422463623
+        ],
+        "max": [
+          -742985.6613301277,
+          -1043002.6346807678,
+          503.94140463623
+        ],
+        "triangles": 1134,
+        "vertices": 572
+      },
+      "assetId": "BRIDGE-SO201-2GapfdkKr6OHl15ivSvILG"
+    },
+    {
+      "stepId": 764,
+      "globalId": "08X3nXPrQ8kjF15zlU0Bh1",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 2 4",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "faf1ecaf-0dea-48b1-b3cd-29b503a5d532",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 762
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743017.889578515,
+          -1043000.1497819595,
+          502.13180229248
+        ],
+        "max": [
+          -742984.7343229029,
+          -1042994.5475099275,
+          503.97902229248
+        ],
+        "triangles": 1295,
+        "vertices": 652
+      },
+      "assetId": "BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1"
+    },
+    {
+      "stepId": 773,
+      "globalId": "3$3eDVPuGaQ5yf$btPJT5P",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 2 5",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "a11bd15f-9a97-4efc-96ff-92846b726dcc",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 771
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.1209443448,
+          -1043002.1715832877,
+          502.18243332519495
+        ],
+        "max": [
+          -742984.9656887327,
+          -1042996.5693112557,
+          504.029633325195
+        ],
+        "triangles": 1284,
+        "vertices": 645
+      },
+      "assetId": "BRIDGE-SO201-3$3eDVPuGaQ5yf$btPJT5P"
+    },
+    {
+      "stepId": 782,
+      "globalId": "0s3As3_b2cSGwniRNDr6D1",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 3 1",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "924a2a28-4867-4993-9aa3-02865c4767cd",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 780
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742985.037504501,
+          -1043010.2295116397,
+          501.974013283691
+        ],
+        "max": [
+          -742968.2248155549,
+          -1043006.5064900345,
+          503.707093283691
+        ],
+        "triangles": 1167,
+        "vertices": 590
+      },
+      "assetId": "BRIDGE-SO201-0s3As3_b2cSGwniRNDr6D1"
+    },
+    {
+      "stepId": 791,
+      "globalId": "3tG6jetBkp$mhtqagjVDIL",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 3 2",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "5efe6980-a98e-4fbf-afea-26e22aac47a1",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 789
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.574494799,
+          -1043006.1857489446,
+          502.07088807617197
+        ],
+        "max": [
+          -742967.7608360782,
+          -1043002.4624960672,
+          503.799168076172
+        ],
+        "triangles": 1181,
+        "vertices": 596
+      },
+      "assetId": "BRIDGE-SO201-3tG6jetBkp$mhtqagjVDIL"
+    },
+    {
+      "stepId": 800,
+      "globalId": "2TyakGRp4Naj7Zqx1es5f$",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 3 3",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "7aa3d896-a836-4138-9934-5ef8181ad0e7",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 798
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.3420677715,
+          -1043004.1643473346,
+          502.06221197265603
+        ],
+        "max": [
+          -742967.5293183525,
+          -1043000.442004831,
+          503.795331972656
+        ],
+        "triangles": 1272,
+        "vertices": 638
+      },
+      "assetId": "BRIDGE-SO201-2TyakGRp4Naj7Zqx1es5f$"
+    },
+    {
+      "stepId": 809,
+      "globalId": "0fiZXRDD3n9d7Gl1JSAhdI",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 3 4",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "1f7671d3-aa4b-4a04-a5b3-45aa61f52724",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 807
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.1106411713,
+          -1043002.1425528234,
+          502.011580939941
+        ],
+        "max": [
+          -742967.2978917523,
+          -1042998.4202103198,
+          503.74472093994103
+        ],
+        "triangles": 1271,
+        "vertices": 638
+      },
+      "assetId": "BRIDGE-SO201-0fiZXRDD3n9d7Gl1JSAhdI"
+    },
+    {
+      "stepId": 818,
+      "globalId": "3WdnBfsmpFEohD23snJk1H",
+      "ifcClass": "IfcBeam",
+      "name": "Girders — span 3 5",
+      "description": null,
+      "predefinedType": "BEAM",
+      "tag": "96f7678e-cd16-4091-acf8-5309ceaab624",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 816
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.8055105029,
+          -1043008.2077797734,
+          502.024855568848
+        ],
+        "max": [
+          -742967.9928215569,
+          -1043004.4847581682,
+          503.757935568848
+        ],
+        "triangles": 1126,
+        "vertices": 569
+      },
+      "assetId": "BRIDGE-SO201-3WdnBfsmpFEohD23snJk1H"
+    },
+    {
+      "stepId": 830,
+      "globalId": "0Xt7wYVSDqdfWTrHZZJUX8",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 1",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "8d2222d8-e91d-4677-9b7e-f2a23edf059f",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 828
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.5153922081,
+          -1043010.2322113521,
+          503.601886386719
+        ],
+        "max": [
+          -742967.8663473902,
+          -1042998.4215125516,
+          504.05570638671895
+        ],
+        "triangles": 566,
+        "vertices": 290
+      },
+      "assetId": "BRIDGE-SO201-0Xt7wYVSDqdfWTrHZZJUX8"
+    },
+    {
+      "stepId": 839,
+      "globalId": "1M$A$Wm56UpStZNE5SyBhd",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 2",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "01e9132f-a326-40cb-a126-02246b3949ed",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 837
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742969.0172228328,
+          -1043010.3497979213,
+          501.80997858886695
+        ],
+        "max": [
+          -742966.8224042832,
+          -1043000.1957817678,
+          503.94987858886697
+        ],
+        "triangles": 220,
+        "vertices": 112
+      },
+      "assetId": "BRIDGE-SO201-1M$A$Wm56UpStZNE5SyBhd"
+    },
+    {
+      "stepId": 848,
+      "globalId": "3bmWj0FUjv2EP8Vj6Q08p$",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 3",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "565a4893-3dae-43a7-bf91-ab4954cf07b2",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 846
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742986.4042476838,
+          -1043008.4562654723,
+          501.61492968017603
+        ],
+        "max": [
+          -742983.3649054273,
+          -1042998.2058192499,
+          504.069289680176
+        ],
+        "triangles": 42,
+        "vertices": 23
+      },
+      "assetId": "BRIDGE-SO201-3bmWj0FUjv2EP8Vj6Q08p$"
+    },
+    {
+      "stepId": 857,
+      "globalId": "1wRZg9tVY0G1mM1$phV_hJ",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 4",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "8ff44818-7250-4fa7-9626-05ed1c104a49",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 855
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -742984.5133247442,
+          -1043008.4564616228,
+          503.964832021484
+        ],
+        "max": [
+          -742984.2515476613,
+          -1043006.1713519287,
+          504.05781202148404
+        ],
+        "triangles": 1,
+        "vertices": 3
+      },
+      "assetId": "BRIDGE-SO201-1wRZg9tVY0G1mM1$phV_hJ"
+    },
+    {
+      "stepId": 866,
+      "globalId": "1rynT78KU8V45XMmnyMFss",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 5",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "8094c50c-e3f3-49f3-8251-3db97e67fe17",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 864
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743035.6844067295,
+          -1043004.3259061227,
+          503.95442281738303
+        ],
+        "max": [
+          -743019.0304921146,
+          -1042992.557265121,
+          504.41560281738305
+        ],
+        "triangles": 697,
+        "vertices": 358
+      },
+      "assetId": "BRIDGE-SO201-1rynT78KU8V45XMmnyMFss"
+    },
+    {
+      "stepId": 875,
+      "globalId": "00TgNFCH9HGoplDgAwRwDO",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 6",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "79865292-02d3-4b7a-8250-cc7872a708ef",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 873
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743020.181398421,
+          -1043004.5420222434,
+          501.855634885254
+        ],
+        "max": [
+          -743017.1420971145,
+          -1042994.2916389457,
+          504.30325488525403
+        ],
+        "triangles": 42,
+        "vertices": 23
+      },
+      "assetId": "BRIDGE-SO201-00TgNFCH9HGoplDgAwRwDO"
+    },
+    {
+      "stepId": 884,
+      "globalId": "1GC1biql57VxFFm1sZbxUT",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 7",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "7b3c17b9-5118-43f4-95d4-63fb9d94d7ba",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 882
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743018.2928875048,
+          -1043008.2401115554,
+          503.72012458252
+        ],
+        "max": [
+          -742985.2533923815,
+          -1042994.5078055004,
+          504.29014458252
+        ],
+        "triangles": 961,
+        "vertices": 496
+      },
+      "assetId": "BRIDGE-SO201-1GC1biql57VxFFm1sZbxUT"
+    },
+    {
+      "stepId": 893,
+      "globalId": "2cjVPrIwoPdZrGNh7P1lv9",
+      "ifcClass": "IfcSlab",
+      "name": "Deck with crossbeams 8",
+      "description": null,
+      "predefinedType": "NOTDEFINED",
+      "tag": "3becf1da-73ae-4763-be65-d1a6186cfb3d",
+      "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 894,
+          "relationGlobalId": "2V8_CbGmccc8$C0aC87k98",
+          "parentGlobalId": "28w_kw8AhOY6XLBluJX_7T",
+          "parentStepId": 680
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 891
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743036.7279971174,
+          -1043002.5918365645,
+          502.27999473632804
+        ],
+        "max": [
+          -743034.5335809714,
+          -1042992.4402375326,
+          504.422214736328
+        ],
+        "triangles": 150,
+        "vertices": 77
+      },
+      "assetId": "BRIDGE-SO201-2cjVPrIwoPdZrGNh7P1lv9"
+    },
+    {
+      "stepId": 896,
+      "globalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+      "ifcClass": "IfcBridgePart",
+      "name": "Surface structure",
+      "description": null,
+      "predefinedType": "SURFACESTRUCTURE",
+      "tag": null,
+      "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelAggregates",
+          "relationStepId": 931,
+          "relationGlobalId": "0xqPyt5k_TOfUyWcGFG_Td",
+          "parentGlobalId": "11_QvFtKEbPmta5DWSknqV",
+          "parentStepId": 30
+        }
+      ],
+      "representations": [],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": null,
+      "assetId": ""
+    },
+    {
+      "stepId": 908,
+      "globalId": "0r$xTC36ULMGQJvAkStNpQ",
+      "ifcClass": "IfcPavement",
+      "name": "Pavement",
+      "description": null,
+      "predefinedType": "FLEXIBLE",
+      "tag": null,
+      "parentGlobalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 930,
+          "relationGlobalId": "1iaXhHpW9pE6qbH6DI$oUr",
+          "parentGlobalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+          "parentStepId": 896
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 906
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743048.3502984609,
+          -1043009.2121339071,
+          503.819914953613
+        ],
+        "max": [
+          -742959.0291406672,
+          -1042991.6364661704,
+          504.632614953613
+        ],
+        "triangles": 901,
+        "vertices": 460
+      },
+      "assetId": "BRIDGE-SO201-0r$xTC36ULMGQJvAkStNpQ"
+    },
+    {
+      "stepId": 920,
+      "globalId": "3kkITbleAntOJQnuOdF4GD",
+      "ifcClass": "IfcBeam",
+      "name": "Cornices 1",
+      "description": null,
+      "predefinedType": "CORNICE",
+      "tag": "cc79666d-de0a-4f67-8509-eceeac74f1dd",
+      "parentGlobalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 930,
+          "relationGlobalId": "1iaXhHpW9pE6qbH6DI$oUr",
+          "parentGlobalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+          "parentStepId": 896
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 918
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743041.596028967,
+          -1043001.5157382217,
+          503.39165063476594
+        ],
+        "max": [
+          -742961.0727931259,
+          -1042991.466208093,
+          504.692150634766
+        ],
+        "triangles": 1060,
+        "vertices": 532
+      },
+      "assetId": "BRIDGE-SO201-3kkITbleAntOJQnuOdF4GD"
+    },
+    {
+      "stepId": 929,
+      "globalId": "12RF4BQYE2nAFXhB_ESiPM",
+      "ifcClass": "IfcBeam",
+      "name": "Cornices 2",
+      "description": null,
+      "predefinedType": "CORNICE",
+      "tag": "e4efaddf-b09d-4fea-aa4c-7c5f98e5e5ff",
+      "parentGlobalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+      "ambiguousParent": false,
+      "relations": [
+        {
+          "kind": "IfcRelContainedInSpatialStructure",
+          "relationStepId": 930,
+          "relationGlobalId": "1iaXhHpW9pE6qbH6DI$oUr",
+          "parentGlobalId": "0i4ebDrB6ovWr_dQ7ka9lb",
+          "parentStepId": 896
+        }
+      ],
+      "representations": [
+        {
+          "identifier": "Body",
+          "shapeType": "Tessellation",
+          "stepId": 927
+        }
+      ],
+      "propertySets": [],
+      "typePropertySets": [],
+      "geometry": {
+        "min": [
+          -743042.7195892874,
+          -1043011.30189156,
+          503.371202871094
+        ],
+        "max": [
+          -742962.0234036061,
+          -1042999.762363614,
+          504.71168287109396
+        ],
+        "triangles": 1048,
+        "vertices": 526
+      },
+      "assetId": "BRIDGE-SO201-12RF4BQYE2nAFXhB_ESiPM"
+    }
+  ]
+}

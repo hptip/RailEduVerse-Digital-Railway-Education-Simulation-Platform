@@ -89,6 +89,23 @@ public sealed partial class RailwayBimStore:IDisposable
     }
     public void SaveProperties(string id,IEnumerable<BimProperty> properties)
     {Require(id);var ps=properties.ToArray();foreach(var p in ps)ValueValid(p.Value,p.DataType);Db.RunInTransaction(()=>{foreach(var p in ps)Property(id,p.Name,p.Value,p.Unit,p.DataType);});}
+    public void SaveTechnicalProfile(string id, string name, IReadOnlyList<BimProperty> properties)
+    {
+        Require(id);
+        if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Tên không được rỗng");
+        foreach (var property in properties) ValueValid(property.Value, property.DataType);
+        var asset = Assets[id];
+        Db.RunInTransaction(() =>
+        {
+            if (asset.DisplayName != name)
+            {
+                Db.Execute("UPDATE Assets SET DisplayName=? WHERE AssetID=?", name, id);
+                Event(id, "Name", "DisplayName", asset.DisplayName, name);
+            }
+            foreach (var property in properties) Property(id, property.Name, property.Value, property.Unit, property.DataType);
+        });
+        asset.DisplayName = name;
+    }
     public void Rename(string id,string name){Require(id);if(string.IsNullOrWhiteSpace(name))throw new ArgumentException("Tên không được rỗng");Db.RunInTransaction(()=>{string old=Assets[id].DisplayName;Db.Execute("UPDATE Assets SET DisplayName=? WHERE AssetID=?",name,id);Event(id,"Name","DisplayName",old,name);});Assets[id].DisplayName=name;}
     public void SaveLifecycle(BimLifecycle life,bool log=true)
     {

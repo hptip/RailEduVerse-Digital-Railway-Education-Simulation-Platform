@@ -1,0 +1,107 @@
+﻿stepId,ifcClass,globalId,name,parentGlobalId,parentRelationTypes,ambiguousParent,representations,assetId,geometryTriangles,directPropertySets,typePropertySets
+23,IfcProject,14crmQueRWZ3ioX1wUBIpL,Demo Bridge SO 201,,,False,,,0,0,0
+28,IfcSite,1dCXOsbB31t8Rtv0c$j1$a,Site,14crmQueRWZ3ioX1wUBIpL,IfcRelAggregates,False,,,0,0,0
+30,IfcBridge,11_QvFtKEbPmta5DWSknqV,Bridge SO 201,1dCXOsbB31t8Rtv0c$j1$a,IfcRelAggregates,False,,,0,0,0
+32,IfcBridgePart,0g8y805UM2w5TGsj6dPqW9,Foundations,11_QvFtKEbPmta5DWSknqV,IfcRelAggregates,False,,,0,0,0
+34,IfcBridgePart,1GnyDA8Xz$hwSNtZo6oaJf,Foundation O1,0g8y805UM2w5TGsj6dPqW9,IfcRelAggregates,False,,,0,0,0
+46,IfcPile,2a4OvdgikJUy3uDSyU4yWd,Piles O1 1,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2a4OvdgikJUy3uDSyU4yWd,124,0,0
+55,IfcPile,0Kp1KG1q2H6xwjLCKODn1i,Piles O1 2,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0Kp1KG1q2H6xwjLCKODn1i,124,0,0
+64,IfcPile,0_aM_11Zcyc8m$$61lV1Dz,Piles O1 3,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0_aM_11Zcyc8m$$61lV1Dz,124,0,0
+73,IfcPile,1XHyI4eM6NrIJN28uH9AEQ,Piles O1 4,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1XHyI4eM6NrIJN28uH9AEQ,124,0,0
+82,IfcPile,1fyAxUxs4bEDupYhVyQL5e,Piles O1 5,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1fyAxUxs4bEDupYhVyQL5e,124,0,0
+91,IfcPile,3bdbo8NLsd1BoB5Ae7kYGn,Piles O1 6,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3bdbo8NLsd1BoB5Ae7kYGn,124,0,0
+100,IfcPile,1p_t3_CvEaBc646XMc4rVY,Piles O1 7,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1p_t3_CvEaBc646XMc4rVY,124,0,0
+112,IfcFooting,2gImNpnGyqpWl$gbNtpzMj,Pile cap O1,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2gImNpnGyqpWl$gbNtpzMj,212,0,0
+124,IfcSlab,2AWKmdFbxv_tuG7K9VZttg,Blinding concrete O1,1GnyDA8Xz$hwSNtZo6oaJf,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2AWKmdFbxv_tuG7K9VZttg,141,0,0
+127,IfcBridgePart,1k90zKG0FcgqukjeHoEYQa,Foundation P2,0g8y805UM2w5TGsj6dPqW9,IfcRelAggregates,False,,,0,0,0
+136,IfcPile,0RYStVBLOU3fK4TrSaxleL,Piles P2 1,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0RYStVBLOU3fK4TrSaxleL,124,0,0
+145,IfcPile,2iSvaPVQnmzi68Ayq9d6qY,Piles P2 2,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2iSvaPVQnmzi68Ayq9d6qY,124,0,0
+154,IfcPile,2WJPpbnIyUCehnP4vK1ubq,Piles P2 3,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2WJPpbnIyUCehnP4vK1ubq,124,0,0
+163,IfcPile,24ZD9cwOSNj_MNCV3GxP8N,Piles P2 4,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-24ZD9cwOSNj_MNCV3GxP8N,124,0,0
+172,IfcPile,3GnYYy2Y1vHqMUV$7WWUQ4,Piles P2 5,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3GnYYy2Y1vHqMUV$7WWUQ4,124,0,0
+181,IfcPile,1Un2L8xHtG3sCOXzOK7NpB,Piles P2 6,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1Un2L8xHtG3sCOXzOK7NpB,124,0,0
+190,IfcPile,01Mx6ArG29CItpGjgBLuca,Piles P2 7,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-01Mx6ArG29CItpGjgBLuca,124,0,0
+199,IfcPile,1cDdAUyvkpgIPk5Ufdffgw,Piles P2 8,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1cDdAUyvkpgIPk5Ufdffgw,124,0,0
+208,IfcFooting,2T12tBKsv4vL2Pc9ijqqSu,Pile cap P2,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2T12tBKsv4vL2Pc9ijqqSu,106,0,0
+217,IfcSlab,0qpx6Ycve5tLEkuyiBy94y,Blinding concrete P2,1k90zKG0FcgqukjeHoEYQa,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0qpx6Ycve5tLEkuyiBy94y,12,0,0
+220,IfcBridgePart,2jtDmxyACUklgyEObbR8qm,Foundation P3,0g8y805UM2w5TGsj6dPqW9,IfcRelAggregates,False,,,0,0,0
+229,IfcPile,1AlW5oK7Lzhz7PkYqKTq67,Piles P3 1,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1AlW5oK7Lzhz7PkYqKTq67,124,0,0
+238,IfcPile,3o2F4eFxVeKqGscvJZ1l5y,Piles P3 2,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3o2F4eFxVeKqGscvJZ1l5y,124,0,0
+247,IfcPile,2xbB1CzKGfGuhKaJWpa8II,Piles P3 3,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2xbB1CzKGfGuhKaJWpa8II,124,0,0
+256,IfcPile,13xIsG3OU65cK6zC9udLB3,Piles P3 4,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-13xIsG3OU65cK6zC9udLB3,124,0,0
+265,IfcPile,0zIcQZf_T3Rb59CjoQc8X4,Piles P3 5,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0zIcQZf_T3Rb59CjoQc8X4,124,0,0
+274,IfcPile,2sK3Oj2Oxz1wiAepNQukNM,Piles P3 6,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2sK3Oj2Oxz1wiAepNQukNM,124,0,0
+283,IfcPile,2vxXOtTmlBJAftg16Ip9lp,Piles P3 7,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2vxXOtTmlBJAftg16Ip9lp,124,0,0
+292,IfcPile,0PDwbZP_Wjsa$t9tZlRWdn,Piles P3 8,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0PDwbZP_Wjsa$t9tZlRWdn,124,0,0
+301,IfcFooting,2gojBJ8751ev0VZT3WtTz5,Pile cap P3,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2gojBJ8751ev0VZT3WtTz5,106,0,0
+310,IfcSlab,1tghNyhC9BFNfrENkrKFon,Blinding concrete P3,2jtDmxyACUklgyEObbR8qm,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1tghNyhC9BFNfrENkrKFon,66,0,0
+313,IfcBridgePart,2qDMMBkvPrrGbGUfWqrgu2,Foundation O4,0g8y805UM2w5TGsj6dPqW9,IfcRelAggregates,False,,,0,0,0
+322,IfcPile,35JRfDfc7AG4pP03LjzGAP,Piles O4 1,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-35JRfDfc7AG4pP03LjzGAP,124,0,0
+331,IfcPile,1GKGPBUnqotpvITYVkO07n,Piles O4 2,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1GKGPBUnqotpvITYVkO07n,124,0,0
+340,IfcPile,0n$nC0OxnClTt3F0eMLOM5,Piles O4 3,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0n$nC0OxnClTt3F0eMLOM5,124,0,0
+349,IfcPile,3kML_OdcG2anTA0GEmMref,Piles O4 4,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3kML_OdcG2anTA0GEmMref,124,0,0
+358,IfcPile,1hWA3$l8573Uj8fVXRVyVv,Piles O4 5,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1hWA3$l8573Uj8fVXRVyVv,124,0,0
+367,IfcPile,3cS$RggRVZLcARadfuvY0u,Piles O4 6,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3cS$RggRVZLcARadfuvY0u,124,0,0
+376,IfcPile,0GzCGpNTHvETrMS_kiVMMm,Piles O4 7,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0GzCGpNTHvETrMS_kiVMMm,124,0,0
+385,IfcFooting,1lz6L5kkiHsqe1FPFY7si4,Pile cap O4,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1lz6L5kkiHsqe1FPFY7si4,188,0,0
+394,IfcSlab,1I2uRKupnTfpjQ_qcjCzM8,Blinding concrete O4,2qDMMBkvPrrGbGUfWqrgu2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1I2uRKupnTfpjQ_qcjCzM8,92,0,0
+398,IfcBridgePart,0ivZYnqcRPA9n_gSzd$pcO,Substructure,11_QvFtKEbPmta5DWSknqV,IfcRelAggregates,False,,,0,0,0
+400,IfcBridgePart,34A8503nOCckjA5mHKZDdI,Abutment O1,0ivZYnqcRPA9n_gSzd$pcO,IfcRelAggregates,False,,,0,0,0
+412,IfcWall,1lGkPEWaJvRI70HQAZkSP1,Abutment stem O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1lGkPEWaJvRI70HQAZkSP1,1024,0,0
+421,IfcWall,2WyzbqEDrdQD_6mdClrFMD,Wing walls O1 1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2WyzbqEDrdQD_6mdClrFMD,188,0,0
+430,IfcWall,3Rf3PcEJNlyC4z_uZD0RvN,Wing walls O1 2,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3Rf3PcEJNlyC4z_uZD0RvN,232,0,0
+442,IfcFooting,1bF2ohDSbAdPq9Dzb0x5mt,Bearing plinths O1 1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1bF2ohDSbAdPq9Dzb0x5mt,12,0,0
+451,IfcFooting,0bbLNJarvOpl60V0gvYLWj,Bearing plinths O1 2,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0bbLNJarvOpl60V0gvYLWj,12,0,0
+463,IfcSlab,3iT5z0CoNDwNpNmPzWxk40,Approach slab O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3iT5z0CoNDwNpNmPzWxk40,284,0,0
+475,IfcEarthworksFill,17DJ2RbhfnN0BHLHFkAewB,Transition backfill O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-17DJ2RbhfnN0BHLHFkAewB,950,0,0
+487,IfcCovering,2hc6pR6YODqykbpLXUn1EI,Waterproofing O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2hc6pR6YODqykbpLXUn1EI,193,0,0
+499,IfcCovering,23UWminMd0M6qR8XJiS60t,Protective coating O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-23UWminMd0M6qR8XJiS60t,657,0,0
+511,IfcPipeSegment,0h_i1N8JV0y5VdxtxZmtS7,Drainage O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0h_i1N8JV0y5VdxtxZmtS7,192,0,0
+523,IfcEarthworksFill,0tcbaUa47yoBP$OzuYEZrC,Drainage protection O1,34A8503nOCckjA5mHKZDdI,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0tcbaUa47yoBP$OzuYEZrC,256,0,0
+526,IfcBridgePart,1pfHs3XtRXlc3ku62Hk53s,Pier P2,0ivZYnqcRPA9n_gSzd$pcO,IfcRelAggregates,False,,,0,0,0
+535,IfcColumn,0Fx3Ykz9Zoo5T0r0sZtWPp,Pier stem P2,1pfHs3XtRXlc3ku62Hk53s,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0Fx3Ykz9Zoo5T0r0sZtWPp,116,0,0
+544,IfcFooting,0vpwLjckQCzsA1Wvzwc8EX,Bearing plinths P2 1,1pfHs3XtRXlc3ku62Hk53s,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0vpwLjckQCzsA1Wvzwc8EX,12,0,0
+553,IfcFooting,3RkpYxGpfcYT2I1t_zwJ_Z,Bearing plinths P2 2,1pfHs3XtRXlc3ku62Hk53s,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3RkpYxGpfcYT2I1t_zwJ_Z,12,0,0
+556,IfcBridgePart,1oAnp37N8ZqgAQOnAgZRj2,Pier P3,0ivZYnqcRPA9n_gSzd$pcO,IfcRelAggregates,False,,,0,0,0
+565,IfcColumn,13i89sZ2IbZp1Sk$Woa$xz,Pier stem P3,1oAnp37N8ZqgAQOnAgZRj2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-13i89sZ2IbZp1Sk$Woa$xz,116,0,0
+574,IfcFooting,1fawtDnfode$lnlifl1tTK,Bearing plinths P3 1,1oAnp37N8ZqgAQOnAgZRj2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1fawtDnfode$lnlifl1tTK,12,0,0
+583,IfcFooting,2UbYxl2Z_QFNLU3y2qrM_l,Bearing plinths P3 2,1oAnp37N8ZqgAQOnAgZRj2,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2UbYxl2Z_QFNLU3y2qrM_l,12,0,0
+586,IfcBridgePart,1QzUjoeiJSSAO3vaoTPAhT,Abutment O4,0ivZYnqcRPA9n_gSzd$pcO,IfcRelAggregates,False,,,0,0,0
+595,IfcWall,3pw3ckthnwuHJM5cpTcvE6,Abutment stem O4,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3pw3ckthnwuHJM5cpTcvE6,1214,0,0
+604,IfcWall,3plihVbpz2bZeSicQgJ7Q3,Wing walls O4 1,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3plihVbpz2bZeSicQgJ7Q3,256,0,0
+613,IfcWall,3cNL7_0F15nTXH_ayJgL7q,Wing walls O4 2,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3cNL7_0F15nTXH_ayJgL7q,196,0,0
+622,IfcFooting,0IuTtWx0525uN7KFTYADuC,Bearing plinths O4 1,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0IuTtWx0525uN7KFTYADuC,12,0,0
+631,IfcFooting,09OvP1gzRXygHRqEoB_YxG,Bearing plinths O4 2,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-09OvP1gzRXygHRqEoB_YxG,12,0,0
+640,IfcEarthworksFill,05sPYA2jmp_rm8FG7R_0SM,Transition backfill O4,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-05sPYA2jmp_rm8FG7R_0SM,685,0,0
+649,IfcCovering,3TdYNOFNO5yhSv4k028PCx,Waterproofing O4,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3TdYNOFNO5yhSv4k028PCx,184,0,0
+658,IfcCovering,0vGsrIW4H44_POC_KNDXuU,Protective coating O4,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0vGsrIW4H44_POC_KNDXuU,546,0,0
+667,IfcPipeSegment,32bV9A$JM32dAu1Zg3q3Lj,Drainage O4,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-32bV9A$JM32dAu1Zg3q3Lj,104,0,0
+676,IfcEarthworksFill,1ySGyun85Flak8wqdc22Ch,Drainage protection O4,1QzUjoeiJSSAO3vaoTPAhT,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1ySGyun85Flak8wqdc22Ch,176,0,0
+680,IfcBridgePart,28w_kw8AhOY6XLBluJX_7T,Superstructure,11_QvFtKEbPmta5DWSknqV,IfcRelAggregates,False,,,0,0,0
+692,IfcBeam,2jnx$V1Bq1aR$OfEx$ULOH,Girders — span 1 1,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2jnx$V1Bq1aR$OfEx$ULOH,1116,0,0
+701,IfcBeam,35_$at319vYpeinIpxhdix,Girders — span 1 2,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-35_$at319vYpeinIpxhdix,1292,0,0
+710,IfcBeam,1HfwXIbME2yQxwO10KnFqY,Girders — span 1 3,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1HfwXIbME2yQxwO10KnFqY,1176,0,0
+719,IfcBeam,1M2Dt6zBVBF$17xO1ZrlWq,Girders — span 1 4,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1M2Dt6zBVBF$17xO1ZrlWq,1214,0,0
+728,IfcBeam,28v_6QK2bjMvQbMN44eCdk,Girders — span 1 5,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-28v_6QK2bjMvQbMN44eCdk,1334,0,0
+737,IfcBeam,2T$enmmSvZ90zW4gQLjHBr,Girders — span 2 1,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2T$enmmSvZ90zW4gQLjHBr,1184,0,0
+746,IfcBeam,3e41$wYQjhAnolzZ3fv5Ep,Girders — span 2 2,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3e41$wYQjhAnolzZ3fv5Ep,1133,0,0
+755,IfcBeam,2GapfdkKr6OHl15ivSvILG,Girders — span 2 3,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2GapfdkKr6OHl15ivSvILG,1134,0,0
+764,IfcBeam,08X3nXPrQ8kjF15zlU0Bh1,Girders — span 2 4,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1,1295,0,0
+773,IfcBeam,3$3eDVPuGaQ5yf$btPJT5P,Girders — span 2 5,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3$3eDVPuGaQ5yf$btPJT5P,1284,0,0
+782,IfcBeam,0s3As3_b2cSGwniRNDr6D1,Girders — span 3 1,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0s3As3_b2cSGwniRNDr6D1,1167,0,0
+791,IfcBeam,3tG6jetBkp$mhtqagjVDIL,Girders — span 3 2,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3tG6jetBkp$mhtqagjVDIL,1181,0,0
+800,IfcBeam,2TyakGRp4Naj7Zqx1es5f$,Girders — span 3 3,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2TyakGRp4Naj7Zqx1es5f$,1272,0,0
+809,IfcBeam,0fiZXRDD3n9d7Gl1JSAhdI,Girders — span 3 4,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0fiZXRDD3n9d7Gl1JSAhdI,1271,0,0
+818,IfcBeam,3WdnBfsmpFEohD23snJk1H,Girders — span 3 5,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3WdnBfsmpFEohD23snJk1H,1126,0,0
+830,IfcSlab,0Xt7wYVSDqdfWTrHZZJUX8,Deck with crossbeams 1,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0Xt7wYVSDqdfWTrHZZJUX8,566,0,0
+839,IfcSlab,1M$A$Wm56UpStZNE5SyBhd,Deck with crossbeams 2,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1M$A$Wm56UpStZNE5SyBhd,220,0,0
+848,IfcSlab,3bmWj0FUjv2EP8Vj6Q08p$,Deck with crossbeams 3,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3bmWj0FUjv2EP8Vj6Q08p$,42,0,0
+857,IfcSlab,1wRZg9tVY0G1mM1$phV_hJ,Deck with crossbeams 4,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1wRZg9tVY0G1mM1$phV_hJ,1,0,0
+866,IfcSlab,1rynT78KU8V45XMmnyMFss,Deck with crossbeams 5,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1rynT78KU8V45XMmnyMFss,697,0,0
+875,IfcSlab,00TgNFCH9HGoplDgAwRwDO,Deck with crossbeams 6,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-00TgNFCH9HGoplDgAwRwDO,42,0,0
+884,IfcSlab,1GC1biql57VxFFm1sZbxUT,Deck with crossbeams 7,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-1GC1biql57VxFFm1sZbxUT,961,0,0
+893,IfcSlab,2cjVPrIwoPdZrGNh7P1lv9,Deck with crossbeams 8,28w_kw8AhOY6XLBluJX_7T,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-2cjVPrIwoPdZrGNh7P1lv9,150,0,0
+896,IfcBridgePart,0i4ebDrB6ovWr_dQ7ka9lb,Surface structure,11_QvFtKEbPmta5DWSknqV,IfcRelAggregates,False,,,0,0,0
+908,IfcPavement,0r$xTC36ULMGQJvAkStNpQ,Pavement,0i4ebDrB6ovWr_dQ7ka9lb,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-0r$xTC36ULMGQJvAkStNpQ,901,0,0
+920,IfcBeam,3kkITbleAntOJQnuOdF4GD,Cornices 1,0i4ebDrB6ovWr_dQ7ka9lb,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-3kkITbleAntOJQnuOdF4GD,1060,0,0
+929,IfcBeam,12RF4BQYE2nAFXhB_ESiPM,Cornices 2,0i4ebDrB6ovWr_dQ7ka9lb,IfcRelContainedInSpatialStructure,False,Body,BRIDGE-SO201-12RF4BQYE2nAFXhB_ESiPM,1048,0,0

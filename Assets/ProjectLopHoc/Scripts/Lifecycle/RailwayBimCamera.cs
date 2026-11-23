@@ -24,7 +24,8 @@ public sealed class RailwayBimCamera:MonoBehaviour
         if(!initialized){current.yaw=130;current.pitch=42;}
         current.min=newMode==0?.6f:newMode==1?.4f:.12f;current.max=newMode==0?1600:newMode==1?180:30;
         var camera=GetComponent<Camera>();camera.nearClipPlane=.01f;
-        current.distance=Mathf.Clamp(FitDistance(bounds,Quaternion.Euler(current.pitch,current.yaw,0),camera.fieldOfView,camera.aspect,xrPresentation?1:.40f,xrPresentation?1:.72f),current.min,current.max);
+        bool fullView = xrPresentation || UttWebPresentation.Active;
+        current.distance=Mathf.Clamp(FitDistance(bounds,Quaternion.Euler(current.pitch,current.yaw,0),camera.fieldOfView,camera.aspect,fullView?1:.40f,fullView?1:.72f),current.min,current.max);
         if(!initialized){smoothCenter=current.center;smoothDistance=current.distance;initialized=true;}ViewRequested?.Invoke();
     }
     public void Restore(int toMode,Bounds fallback){FreeMode=false;mode=toMode;if(hasPrevious[toMode]){current=previous[toMode];FocusBounds=current.bounds;ViewRequested?.Invoke();}else Focus(fallback,toMode,false);}
@@ -47,10 +48,11 @@ public sealed class RailwayBimCamera:MonoBehaviour
         current.distance=Mathf.Clamp(current.distance*Mathf.Exp(-scroll*.12f),current.min,current.max);
     }
     static bool Typing()=>EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()?.isFocused==true;
+    public void Pan(Vector2 delta) => current.center += (-transform.right * delta.x - transform.up * delta.y) * current.distance * .001f;
     void Update()
     {
         if(xrPresentation||Typing())return;var mouse=Mouse.current;
-        if(mouse!=null&&!(EventSystem.current!=null&&EventSystem.current.IsPointerOverGameObject()))
+        if(!UttWebPresentation.Active&&mouse!=null&&!(EventSystem.current!=null&&EventSystem.current.IsPointerOverGameObject()))
         {
             if(mouse.rightButton.isPressed)Orbit(mouse.delta.ReadValue());Zoom(mouse.scroll.ReadValue().y/120);
             if(mouse.middleButton.isPressed){var d=mouse.delta.ReadValue();var shift=(-transform.right*d.x-transform.up*d.y)*current.distance*.001f;current.center+=shift;}

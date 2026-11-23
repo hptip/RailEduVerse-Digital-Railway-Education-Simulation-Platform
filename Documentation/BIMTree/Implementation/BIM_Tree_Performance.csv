@@ -1,0 +1,19 @@
+build,platform,viewport,operation,measured_ms,visible_rows,pooled_rows,gc_allocated_bytes,canvas_batch_ns,evidence
+initial_release,Chrome WebGL,1280x720,Exact AssetID search,23.700,1,3,,,Unity console BIMTree Search; initial implementation
+development_final,Chrome WebGL,1280x720,Collapse zone,0.200,1,3,,,Unity stopwatch
+development_final,Chrome WebGL,1280x720,Expand zone,0.200,3,3,,,Unity stopwatch
+development_final,Chrome WebGL,1280x720,Expand right track,6.800,20,19,,,Unity stopwatch
+development_final,Chrome WebGL,1280x720,Expand segment S001,0.300,30,19,,,Unity stopwatch
+development_final,Chrome WebGL,1280x720,Expand block B001,0.900,129,19,,,Unity stopwatch; 99 additional logical rows
+development_final,Chrome WebGL,1280x720,Select C005 on tree,5.100,129,19,,,Unity stopwatch
+development_final,Chrome WebGL,1280x720,Exact AssetID search,17.600,1,19,,,Unity stopwatch after debounce
+development_final,Chrome WebGL,1280x720,Search Concrete,8.900,150,19,,,Unity stopwatch after debounce; capped at 150
+development_final,Chrome WebGL,1280x720,Clear search,0.700,129,19,,,Unity stopwatch
+development_final,Chrome WebGL,1280x720,Scroll RAF median,8.300,129,19,,,505 browser requestAnimationFrame intervals over 5 seconds
+development_final,Chrome WebGL,1280x720,Scroll RAF p95,8.400,129,19,,,505 intervals
+development_final,Chrome WebGL,1280x720,Scroll RAF p99,16.600,129,19,,,505 intervals
+development_final,Chrome WebGL,1280x720,Scroll RAF maximum,250.000,129,19,,,505 intervals
+development_final,Chrome WebGL,1280x720,Scroll Unity frame sample 1,256.000,129,19,0,300001,ProfilerRecorder point sample
+development_final,Chrome WebGL,1280x720,Scroll Unity frame sample 2,9.000,129,19,0,0,ProfilerRecorder point sample
+development_final,Chrome WebGL,1280x720,Scroll Unity frame sample 3,9.000,129,19,0,0,ProfilerRecorder point sample
+development_final,Chrome WebGL,1280x720,Scene entry delayed frame,36556.000,3,3,110274670,200000,Scene entry all activity; cause not isolated

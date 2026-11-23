@@ -1,0 +1,23 @@
+﻿NodeKey,Label,Domain,AssetID,OwnerZoneID,CoveredZoneIDs,ChainageStart,ChainageEnd,GeometryBindings,ParentNodeKey
+zone:Zone_010,"Đoạn tuyến 01 (Zone_010)",Zone,,Zone_010,Zone_010,0,300.001465,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_010.unity",route:YTH
+zone:Zone_011,"Đoạn tuyến 02 (Zone_011)",Zone,,Zone_011,Zone_011,300.001465,800.001465,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_011.unity",route:YTH
+zone:Zone_012,"Đoạn tuyến 03 (Zone_012)",Zone,,Zone_012,Zone_012,800.001465,1300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_012.unity",route:YTH
+zone:Zone_013,"Đoạn tuyến 04 (Zone_013)",Zone,,Zone_013,Zone_013,1300.00146,1800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_013.unity",route:YTH
+zone:Zone_014,"Đoạn tuyến 05 (Zone_014)",Zone,,Zone_014,Zone_014,1800.00146,2300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_014.unity",route:YTH
+zone:Zone_015,"Đoạn tuyến 06 (Zone_015)",Zone,,Zone_015,Zone_015,2300.00146,2800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_015.unity",route:YTH
+zone:Zone_016,"Đoạn tuyến 07 (Zone_016)",Zone,,Zone_016,Zone_016,2800.00146,3300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_016.unity",route:YTH
+zone:Zone_017,"Đoạn tuyến 08 (Zone_017)",Zone,,Zone_017,Zone_017,3300.00146,3800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_017.unity",route:YTH
+zone:Zone_018,"Đoạn tuyến 09 (Zone_018)",Zone,,Zone_018,Zone_018,3800.00146,4300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_018.unity",route:YTH
+zone:Zone_019,"Đoạn tuyến 10 (Zone_019)",Zone,,Zone_019,Zone_019,4300.00146,4800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_019.unity",route:YTH
+zone:Zone_020,"Đoạn tuyến 11 (Zone_020)",Zone,,Zone_020,Zone_020,4800.00146,5300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_020.unity",route:YTH
+zone:Zone_021,"Đoạn tuyến 12 (Zone_021)",Zone,,Zone_021,Zone_021,5300.00146,5800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_021.unity",route:YTH
+zone:Zone_022,"Đoạn tuyến 13 (Zone_022)",Zone,,Zone_022,Zone_022,5800.00146,6300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_022.unity",route:YTH
+zone:Zone_023,"Đoạn tuyến 14 (Zone_023)",Zone,,Zone_023,Zone_023,6300.00146,6800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_023.unity",route:YTH
+zone:Zone_024,"Đoạn tuyến 15 (Zone_024)",Zone,,Zone_024,Zone_024,6800.00146,7300.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_024.unity",route:YTH
+zone:Zone_025,"Đoạn tuyến 16 (Zone_025)",Zone,,Zone_025,Zone_025,7300.00146,7800.00146,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_025.unity",route:YTH
+zone:Zone_026,"Đoạn tuyến 17 (Zone_026)",Zone,,Zone_026,Zone_026,7800.00146,7999.98975,"Assets/ProjectLopHoc/Generated/RuntimeZones/Zone_026.unity",route:YTH
+Bridge_Main,"Cầu chính",Cầu,,Zone_018,"Zone_017|Zone_018|Zone_019",3650.00146,4770.00146,"Zone_018/RuntimeZoneContent/FixedInfrastructure_Bridge/ExtendedBridgeQuest","zone:Zone_018:Cầu"
+TunnelMountain_Forest_01,"Hầm Forest_01",Hầm,,Zone_015,"Zone_014|Zone_015|Zone_016",2200,2800,"Zone_015/RuntimeZoneContent/TunnelMountainGroup_Forest_01","zone:Zone_015:Hầm"
+TunnelMountain_Forest_02,"Hầm Forest_02",Hầm,,Zone_013,"Zone_012|Zone_013",1100,1700,"Zone_013/RuntimeZoneContent/TunnelMountainGroup_Forest_02","zone:Zone_013:Hầm"
+OCL_Portal,"Đoạn cổng OCL",OCL,,Zone_016,"Zone_016|Zone_017",3000,3500,"Zone_016/RuntimeZoneContent/Experience_OverheadPortalSector|Zone_017/RuntimeZoneContent/Experience_OverheadPortalSector","zone:Zone_016:OCL"
+Subgrade_Bilateral,"Gia cố mái dốc hai bên",Subgrade,,Zone_011,"Zone_010|Zone_011",300,800,"Zone_010/RuntimeZoneContent/Experience_SubgradeReinforcedSlope|Zone_011/RuntimeZoneContent/Experience_SubgradeReinforcedSlope","zone:Zone_011:Subgrade"
