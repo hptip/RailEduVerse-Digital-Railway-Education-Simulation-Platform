@@ -186,7 +186,7 @@ namespace ProjectLopHoc.Features.Authentication.Views
             var textRect = label.GetComponent<RectTransform>();
             textRect.anchorMin = Vector2.zero; textRect.anchorMax = Vector2.one; textRect.offsetMin = Vector2.zero; textRect.offsetMax = Vector2.zero;
             var text = label.GetComponent<TextMeshProUGUI>();
-            text.font = TMP_Settings.defaultFontAsset;
+            text.font = UttProjectFonts.Vietnamese;
             text.text = caption;
             text.fontSize = 35f;
             text.alignment = TextAlignmentOptions.Center;

@@ -1,27 +1,68 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
-/// <summary>URP X-Ray selection adapter: stencil silhouette + expanded shell, without replacing original materials.</summary>
-public sealed class RailwayBimOutline:MonoBehaviour
+/// <summary>Selection geometry for the lifecycle viewer, independent of BIM domain and source materials.</summary>
+public sealed class RailwayBimOutline : MonoBehaviour
 {
-    public Material maskMaterial,outlineMaterial;
-    readonly List<GameObject> slots=new List<GameObject>();
-    public int HighlightedRenderers{get;private set;}
-    public void Show(Renderer[] sources)
+    public Material maskMaterial, outlineMaterial;
+
+    internal static readonly HashSet<RailwayBimOutline> Active = new();
+    internal readonly List<Renderer> Sources = new();
+    Camera desktopCamera;
+    RailwayBimVrPresentation vrPresentation;
+
+    public int HighlightedRenderers
     {
-        Clear();if(sources==null)return;int slot=0;
-        foreach(var source in sources)
+        get
         {
-            var mesh=source.GetComponent<MeshFilter>()?.sharedMesh;if(mesh==null)continue;
-            for(int pass=0;pass<2;pass++)
-            {
-                if(slot==slots.Count){var g=new GameObject("PooledOutline_"+slot);g.transform.SetParent(transform,false);g.AddComponent<MeshFilter>();var r=g.AddComponent<MeshRenderer>();r.shadowCastingMode=ShadowCastingMode.Off;r.receiveShadows=false;r.lightProbeUsage=LightProbeUsage.Off;r.reflectionProbeUsage=ReflectionProbeUsage.Off;slots.Add(g);}
-                var go=slots[slot++];go.GetComponent<MeshFilter>().sharedMesh=mesh;var mr=go.GetComponent<MeshRenderer>();var materials=new Material[mesh.subMeshCount];for(int i=0;i<materials.Length;i++)materials[i]=pass==0?maskMaterial:outlineMaterial;mr.sharedMaterials=materials;
-                go.transform.SetPositionAndRotation(source.transform.position,source.transform.rotation);go.transform.localScale=source.transform.lossyScale;go.SetActive(true);
-            }
-            HighlightedRenderers++;
+            int count = 0;
+            foreach (var source in Sources)
+                if (IsRenderable(source)) count++;
+            return count;
         }
     }
-    public void Clear(){foreach(var g in slots)g.SetActive(false);HighlightedRenderers=0;}
+
+    internal void Configure(Camera desktop, RailwayBimVrPresentation vr)
+    {
+        desktopCamera = desktop;
+        vrPresentation = vr;
+    }
+
+    internal bool RendersOn(Camera camera) =>
+        camera != null && camera == (vrPresentation != null && vrPresentation.IsVr
+            ? vrPresentation.Origin?.Camera : desktopCamera);
+
+    public void Show(IEnumerable<Renderer> sources)
+    {
+        Clear();
+        if (sources == null) return;
+        foreach (var source in sources)
+            if (SubmeshCount(source) > 0 && !Sources.Contains(source)) Sources.Add(source);
+    }
+
+    public void Clear() => Sources.Clear();
+
+    internal static bool IsRenderable(Renderer source) =>
+        source != null && source.enabled && source.gameObject.activeInHierarchy && !source.forceRenderingOff;
+
+    internal bool HasVisibleSource(int layers)
+    {
+        foreach (var source in Sources)
+            if (IsRenderable(source) && (layers & (1 << source.gameObject.layer)) != 0) return true;
+        return false;
+    }
+
+    internal static int SubmeshCount(Renderer source)
+    {
+        Mesh mesh = source switch
+        {
+            SkinnedMeshRenderer skinned => skinned.sharedMesh,
+            MeshRenderer renderer when renderer.TryGetComponent<MeshFilter>(out var filter) => filter.sharedMesh,
+            _ => null
+        };
+        return mesh != null ? mesh.subMeshCount : 0;
+    }
+
+    void OnEnable() => Active.Add(this);
+    void OnDisable() => Active.Remove(this);
 }

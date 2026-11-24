@@ -45,7 +45,7 @@ public static class RailwayBimVisualTests
                 case 2:ui.detailButton.onClick.Invoke();ui.NavigationButtons[block].onClick.Invoke();Move(3,2);break;
                 case 3:Capture("02_Block");Move(4,.3);break;
                 case 4:ui.detailButton.onClick.Invoke();ui.NavigationButtons[rail].onClick.Invoke();Move(5,2.5);break;
-                case 5:Capture("03_Rail");Pass(c.outline.HighlightedRenderers==1,"Rail outline targets one physical renderer; source material retained");Pass(OutlinePixels>20,"Rendered image contains visible cyan outline pixels");Move(51,.4);break;
+                case 5:Capture("03_Rail");Pass(c.outline.HighlightedRenderers==1,"Rail outline targets one physical renderer; source material retained");Pass(OutlinePixels>20,"Rendered image contains visible orange outline pixels");Move(51,.4);break;
                 case 51:ui.NavigationButtons[bolt].onClick.Invoke();ui.focusButton.onClick.Invoke();Move(6,2);break;
                 case 6:Capture("04_Bolt");Pass(OutlinePixels>20,"Small bolt outline visible after Focus");Move(61,.4);break;
                 case 61:ui.NavigationButtons[rail].onClick.Invoke();Canvas.ForceUpdateCanvases();var rect=(RectTransform)ui.NavigationButtons[bolt].transform;pointer=RectTransformUtility.WorldToScreenPoint(null,rect.TransformPoint(rect.rect.center));Mouse(false);Move(7,.2);break;
@@ -85,8 +85,8 @@ public static class RailwayBimVisualTests
     static void Capture(string name)
     {
         var camera=c.cameraController.GetComponent<Camera>();var rt=new RenderTexture(1440,900,24);rt.Create();var old=RenderTexture.active;Texture2D img=null;
-        try{RenderPipeline.SubmitRenderRequest(camera,new UniversalRenderPipeline.SingleCameraRequest{destination=rt});RenderTexture.active=rt;img=new Texture2D(1440,900,TextureFormat.RGB24,false);img.ReadPixels(new Rect(0,0,1440,900),0,0);img.Apply();OutlinePixels=img.GetPixels32().Count(p=>p.r<80&&p.g>150&&p.b>180);File.WriteAllBytes(Dir+"/"+name+"_Model.png",img.EncodeToPNG());}finally{RenderTexture.active=old;rt.Release();Object.DestroyImmediate(rt);if(img!=null)Object.DestroyImmediate(img);}
-        ScreenCapture.CaptureScreenshot(Dir+"/"+name+"_UI.png");report.Add(name+" cyan outline pixels="+OutlinePixels);
+        try{RenderPipeline.SubmitRenderRequest(camera,new UniversalRenderPipeline.SingleCameraRequest{destination=rt});RenderTexture.active=rt;img=new Texture2D(1440,900,TextureFormat.RGB24,false);img.ReadPixels(new Rect(0,0,1440,900),0,0);img.Apply();OutlinePixels=img.GetPixels32().Count(p=>p.r>180&&p.g>55&&p.g<185&&p.b<85);File.WriteAllBytes(Dir+"/"+name+"_Model.png",img.EncodeToPNG());}finally{RenderTexture.active=old;rt.Release();Object.DestroyImmediate(rt);if(img!=null)Object.DestroyImmediate(img);}
+        ScreenCapture.CaptureScreenshot(Dir+"/"+name+"_UI.png");report.Add(name+" orange outline pixels="+OutlinePixels);
     }
     static void Finish(bool pass){File.WriteAllLines(Dir+"/Report.txt",report.Concat(new[]{pass?"VISUAL_INPUT_PASS":"FAILED"}));SessionState.SetBool(Key,false);SessionState.SetBool("UTT.Bim.VisualDone",true);EditorApplication.isPlaying=false;}
 }

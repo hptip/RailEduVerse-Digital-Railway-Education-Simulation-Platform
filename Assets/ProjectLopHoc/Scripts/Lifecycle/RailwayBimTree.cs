@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UttVr.BridgePilot;
 
 
 // Each row is rebound as it enters the ScrollRect. The model pool is managed by the controller.
@@ -19,6 +20,8 @@ sealed class RailwayBimTree
         public string Label;
         public string SearchText;
         public string ZoneToOpen;
+        public string BridgeGroup;
+        public Action LoadChildren;
         public Node Parent;
         public int Depth;
         public readonly List<Node> Children = new List<Node>();
@@ -45,6 +48,11 @@ sealed class RailwayBimTree
     readonly HashSet<string> expanded = new HashSet<string>(StringComparer.Ordinal);
     readonly List<Node> visible = new List<Node>();
     readonly List<Row> rows = new List<Row>();
+    readonly Dictionary<string, BridgeBimEntry> bridgeByKey = new Dictionary<string, BridgeBimEntry>(StringComparer.Ordinal);
+    readonly Dictionary<string, BridgeBimEntry> bridgeByAsset = new Dictionary<string, BridgeBimEntry>(StringComparer.Ordinal);
+    readonly Dictionary<string, Node> bridgeNodes = new Dictionary<string, Node>(StringComparer.Ordinal);
+    ILookup<string, BridgeBimEntry> bridgeChildren;
+    Node bridgeRoot;
     readonly ScrollRect scroll;
     readonly Button template;
     readonly TMP_Text count;
@@ -112,25 +120,20 @@ sealed class RailwayBimTree
                     string label = work.label + (catalog != null ? "" :
                         work.owner == zone.id ? " · Chưa có hồ sơ" : " · Xem tại " + work.owner);
                     var node = new Node { Key = root.Key + ":" + work.key, Label = label,
-                        SearchText = label + " " + work.key, ZoneToOpen = work.owner };
+                        SearchText = label + " " + work.key, ZoneToOpen = work.owner,
+                        BridgeGroup = catalog != null ? "" : null };
                     Attach(group, node);
                     if (work.owner == zone.id) searchableGroups.Add(node);
                     if (catalog != null)
                     {
-                        var bridgeNodes = new Dictionary<string, Node>(StringComparer.Ordinal);
+                        bridgeRoot = node;
+                        bridgeChildren = catalog.entries.ToLookup(e => e.parentGlobalId ?? "", StringComparer.Ordinal);
                         foreach (var entry in catalog.entries)
                         {
-                            BimAsset asset = entry.IsElement ? new BimAsset { AssetID=entry.assetId,
-                                AssetType="Component", DisplayName=entry.Label, ComponentType=entry.ifcClass, ZoneID="Z018" } : null;
-                            var child = new Node { Key="bridge:"+entry.globalId, Asset=asset, Label=entry.Label,
-                                SearchText=string.Join(" ",entry.Label,entry.assetId,entry.ifcClass) };
-                            bridgeNodes.Add(entry.globalId,child);
-                            if (asset != null) { assets.Add(asset.AssetID,child); orderedAssets.Add(child); }
-                            else searchableGroups.Add(child);
+                            bridgeByKey.Add(entry.globalId, entry);
+                            if (entry.IsElement) bridgeByAsset.Add(entry.assetId, entry);
                         }
-                        foreach (var entry in catalog.entries)
-                            Attach(!string.IsNullOrEmpty(entry.parentGlobalId) && bridgeNodes.TryGetValue(entry.parentGlobalId,out var parent)
-                                ? parent : node,bridgeNodes[entry.globalId]);
+                        node.LoadChildren = () => LoadBridgeChildren("");
                     }
                 }
                 if (works.Length == 0) Attach(group, new Node { Key = group.Key + ":preview", Label = "Chưa có hồ sơ", ZoneToOpen = zone.id });
@@ -145,9 +148,48 @@ sealed class RailwayBimTree
         RefreshNames(store);
     }
 
+    void LoadBridgeChildren(string key)
+    {
+        foreach (var entry in bridgeChildren[key]) GetBridgeNode(entry);
+    }
+
+    Node GetBridgeNode(BridgeBimEntry entry)
+    {
+        if (bridgeNodes.TryGetValue(entry.globalId, out var existing)) return existing;
+        var parent = !string.IsNullOrEmpty(entry.parentGlobalId) && bridgeByKey.TryGetValue(entry.parentGlobalId, out var parentEntry)
+            ? GetBridgeNode(parentEntry) : bridgeRoot;
+        var node = new Node
+        {
+            Key = "bridge:" + entry.globalId, Label = entry.Label, SearchText = BridgeSearch(entry),
+            BridgeGroup = entry.IsElement ? null : entry.globalId
+        };
+        if (entry.IsElement)
+        {
+            node.Asset = new BimAsset { AssetID = entry.assetId, AssetType = "Component",
+                DisplayName = entry.Label, ComponentType = entry.ifcClass, ZoneID = "Z018" };
+            assets.Add(entry.assetId, node);
+        }
+        else node.LoadChildren = () => LoadBridgeChildren(entry.globalId);
+        bridgeNodes.Add(entry.globalId, node);
+        Attach(parent, node);
+        return node;
+    }
+
+    static string BridgeSearch(BridgeBimEntry entry) =>
+        string.Join(" ", entry.Label, entry.assetId, entry.ifcClass, entry.sourceGlobalId, entry.sourceIfcClass);
+
+    bool TryGetAsset(string id, out Node node)
+    {
+        if (assets.TryGetValue(id, out node)) return true;
+        if (!bridgeByAsset.TryGetValue(id, out var entry)) return false;
+        node = GetBridgeNode(entry);
+        return true;
+    }
+
     static void Attach(Node parent, Node child)
     {
         child.Parent = parent;
+        child.Depth = parent.Depth + 1;
         parent.Children.Add(child);
     }
 
@@ -183,14 +225,14 @@ sealed class RailwayBimTree
 
     public string Location(string id, bool includeElement = true)
     {
-        if (id == null || !assets.TryGetValue(id, out var node)) return "";
+        if (id == null || !TryGetAsset(id, out var node)) return "";
         var path = new Stack<string>();
         for (var cursor = includeElement ? node : node.Parent; cursor != null; cursor = cursor.Parent)
             path.Push(cursor.Label);
         return string.Join("  /  ", path);
     }
 
-    public string Label(string id) => id != null && assets.TryGetValue(id, out var node) ? node.Label : "";
+    public string Label(string id) => id != null && TryGetAsset(id, out var node) ? node.Label : "";
 
     public void Search(string value)
     {
@@ -206,7 +248,7 @@ sealed class RailwayBimTree
     {
         bool changed = selected != id;
         selected = id;
-        if (id != null && assets.TryGetValue(id, out var node))
+        if (id != null && TryGetAsset(id, out var node))
             for (var cursor = node.Parent; cursor != null; cursor = cursor.Parent) changed |= expanded.Add(cursor.Key);
         if (!changed) return false;
         Rebuild();
@@ -240,7 +282,7 @@ sealed class RailwayBimTree
         }
         else
         {
-            foreach (var node in searchableGroups.Concat(orderedAssets))
+            foreach (var node in SearchResults())
             {
                 if (node.SearchText.IndexOf(query, StringComparison.OrdinalIgnoreCase) < 0) continue;
                 visible.Add(node);
@@ -254,10 +296,23 @@ sealed class RailwayBimTree
         Render();
     }
 
+    IEnumerable<Node> SearchResults()
+    {
+        foreach (var group in searchableGroups) yield return group;
+        foreach (var entry in bridgeByKey.Values)
+            if (BridgeSearch(entry).IndexOf(query, StringComparison.OrdinalIgnoreCase) >= 0)
+                yield return GetBridgeNode(entry);
+        foreach (var node in orderedAssets) yield return node;
+    }
+
     void Append(Node node)
     {
         visible.Add(node);
-        if (expanded.Contains(node.Key)) foreach (var child in node.Children) Append(child);
+        if (!expanded.Contains(node.Key)) return;
+        var load = node.LoadChildren;
+        node.LoadChildren = null;
+        load?.Invoke();
+        foreach (var child in node.Children) Append(child);
     }
 
     void Click(Row row)
@@ -275,7 +330,8 @@ sealed class RailwayBimTree
                 query = "";
                 CloseSearch?.Invoke();
             }
-            if (node.ZoneToOpen != null) select("view:" + node.ZoneToOpen, true);
+            if (node.BridgeGroup != null) select("bridge-view:" + node.BridgeGroup, true);
+            else if (node.ZoneToOpen != null) select("view:" + node.ZoneToOpen, true);
             Rebuild();
             RailwayBimExplorer.Metric("ExpandOrCollapse", started, VisibleCount, PooledCount);
             return;
@@ -285,7 +341,7 @@ sealed class RailwayBimTree
         bool focus = lastClick == id && now - clickTime < .35f;
         lastClick = id;
         clickTime = now;
-        select(id, focus);
+        select(id, focus || bridgeByAsset.ContainsKey(id));
     }
 
     public event Action CloseSearch;

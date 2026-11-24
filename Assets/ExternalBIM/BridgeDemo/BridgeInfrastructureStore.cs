@@ -24,8 +24,12 @@ namespace UttVr.BridgePilot
         public BridgeInfrastructureStore(BridgeBimCatalog catalog)
         {
             ids = new HashSet<string>(catalog.entries.Where(e => e.IsElement).Select(e => e.globalId), StringComparer.Ordinal);
-            string database = catalog.schema == "YTH-MODULAR-SIMULATION"
-                ? "BridgeYTH_Infrastructure.db" : "BridgeSO201_Infrastructure.db";
+            string database = catalog.schema switch
+            {
+                "YTH-MODULAR-SIMULATION" => "BridgeYTH_Infrastructure.db",
+                BridgeBimCatalog.SO201RouteSchema => "BridgeYTH_SO201Route.db",
+                _ => "BridgeSO201_Infrastructure.db"
+            };
             db = new SQLiteConnection(Path.Combine(Application.persistentDataPath, database));
             try
             {

@@ -1,0 +1,842 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71721005f749fec4ead195cdc0bafa70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimCatalog
+  schema: YTH-SO201-DERIVED
+  sourceSha256: f967e72ea1e7648a5d2bf82db806e4ab2f24397177ed2d6e9b795288f0aa261d
+  entries:
+  - globalId: so201/B32
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 32"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: so201/B33
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "Nh\u1ECBp 33"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: so201/P31
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "G\u1ED1i \u0111\u1EE1 31"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: so201/P32
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "G\u1ED1i \u0111\u1EE1 32"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: so201/P33
+    assetId: 
+    parentGlobalId: 
+    ifcClass: 
+    name: "G\u1ED1i \u0111\u1EE1 33"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+  - globalId: YTH-SO201-B32-SLAB
+    assetId: YTH-SO201-B32-SLAB
+    parentGlobalId: so201/B32
+    ifcClass: SLAB
+    name: "T\u1EA5m b\xEA t\xF4ng SO 201"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Deck with crossbeams 5 \xB7 1rynT78KU8V45XMmnyMFss"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GIRDER-1
+    assetId: YTH-SO201-B32-GIRDER-1
+    parentGlobalId: so201/B32
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 3 \xB7 1HfwXIbME2yQxwO10KnFqY"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GIRDER-2
+    assetId: YTH-SO201-B32-GIRDER-2
+    parentGlobalId: so201/B32
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 4 \xB7 1M2Dt6zBVBF$17xO1ZrlWq"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GIRDER-3
+    assetId: YTH-SO201-B32-GIRDER-3
+    parentGlobalId: so201/B32
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 3"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 1 \xB7 2jnx$V1Bq1aR$OfEx$ULOH"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GIRDER-4
+    assetId: YTH-SO201-B32-GIRDER-4
+    parentGlobalId: so201/B32
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 4"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 2 \xB7 35_$at319vYpeinIpxhdix"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GIRDER-5
+    assetId: YTH-SO201-B32-GIRDER-5
+    parentGlobalId: so201/B32
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 5 \xB7 28v_6QK2bjMvQbMN44eCdk"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-CAP
+    assetId: YTH-SO201-B32-CAP
+    parentGlobalId: so201/B32
+    ifcClass: RAIL_DECK
+    name: "S\xE0n ray \u0111\xF4i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GUARD-L
+    assetId: YTH-SO201-B32-GUARD-L
+    parentGlobalId: so201/B32
+    ifcClass: GUARD
+    name: "Lan can tr\xE1i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B32-GUARD-R
+    assetId: YTH-SO201-B32-GUARD-R
+    parentGlobalId: so201/B32
+    ifcClass: GUARD
+    name: "Lan can ph\u1EA3i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4201.251 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-SLAB
+    assetId: YTH-SO201-B33-SLAB
+    parentGlobalId: so201/B33
+    ifcClass: SLAB
+    name: "T\u1EA5m b\xEA t\xF4ng SO 201"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Deck with crossbeams 5 \xB7 1rynT78KU8V45XMmnyMFss"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GIRDER-1
+    assetId: YTH-SO201-B33-GIRDER-1
+    parentGlobalId: so201/B33
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 3 \xB7 1HfwXIbME2yQxwO10KnFqY"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GIRDER-2
+    assetId: YTH-SO201-B33-GIRDER-2
+    parentGlobalId: so201/B33
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 4 \xB7 1M2Dt6zBVBF$17xO1ZrlWq"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GIRDER-3
+    assetId: YTH-SO201-B33-GIRDER-3
+    parentGlobalId: so201/B33
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 3"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 1 \xB7 2jnx$V1Bq1aR$OfEx$ULOH"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GIRDER-4
+    assetId: YTH-SO201-B33-GIRDER-4
+    parentGlobalId: so201/B33
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 4"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 2 \xB7 35_$at319vYpeinIpxhdix"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GIRDER-5
+    assetId: YTH-SO201-B33-GIRDER-5
+    parentGlobalId: so201/B33
+    ifcClass: GIRDER
+    name: "D\u1EA7m SO 201 5"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcBeam \xB7 Girders \u2014 span 1 5 \xB7 28v_6QK2bjMvQbMN44eCdk"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-CAP
+    assetId: YTH-SO201-B33-CAP
+    parentGlobalId: so201/B33
+    ifcClass: RAIL_DECK
+    name: "S\xE0n ray \u0111\xF4i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GUARD-L
+    assetId: YTH-SO201-B33-GUARD-L
+    parentGlobalId: so201/B33
+    ifcClass: GUARD
+    name: "Lan can tr\xE1i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-B33-GUARD-R
+    assetId: YTH-SO201-B33-GUARD-R
+    parentGlobalId: so201/B33
+    ifcClass: GUARD
+    name: "Lan can ph\u1EA3i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4218.751 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-DIAPHRAGM
+    assetId: YTH-SO201-P31-DIAPHRAGM
+    parentGlobalId: so201/P31
+    ifcClass: DIAPHRAGM
+    name: "D\u1EA7m ngang SO 201"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Deck with crossbeams 6 \xB7 00TgNFCH9HGoplDgAwRwDO"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-HEAD
+    assetId: YTH-SO201-P31-HEAD
+    parentGlobalId: so201/P31
+    ifcClass: CROSSHEAD
+    name: "X\xE0 m\u0169 ray \u0111\xF4i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-L-PLINTH-1
+    assetId: YTH-SO201-P31-L-PLINTH-1
+    parentGlobalId: so201/P31
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 -1 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 1 \xB7 0vpwLjckQCzsA1Wvzwc8EX"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-L-PLINTH-2
+    assetId: YTH-SO201-P31-L-PLINTH-2
+    parentGlobalId: so201/P31
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 -1 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 2 \xB7 3RkpYxGpfcYT2I1t_zwJ_Z"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-L-STEM
+    assetId: YTH-SO201-P31-L-STEM
+    parentGlobalId: so201/P31
+    ifcClass: STEM
+    name: "Th\xE2n tr\u1EE5 SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcColumn \xB7 Pier stem P2 \xB7 0Fx3Ykz9Zoo5T0r0sZtWPp"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-L-FOUND
+    assetId: YTH-SO201-P31-L-FOUND
+    parentGlobalId: so201/P31
+    ifcClass: PILE_CAP
+    name: "\u0110\xE0i m\xF3ng SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Pile cap P2 \xB7 2T12tBKsv4vL2Pc9ijqqSu"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-L-BLIND
+    assetId: YTH-SO201-P31-L-BLIND
+    parentGlobalId: so201/P31
+    ifcClass: BLINDING
+    name: "B\xEA t\xF4ng l\xF3t SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Blinding concrete P2 \xB7 0qpx6Ycve5tLEkuyiBy94y"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-L-SHAFT
+    assetId: YTH-SO201-P31-L-SHAFT
+    parentGlobalId: so201/P31
+    ifcClass: SHAFT_EXTENSION
+    name: "\u0110o\u1EA1n n\u1ED1i th\xE2n tr\u1EE5 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-R-PLINTH-1
+    assetId: YTH-SO201-P31-R-PLINTH-1
+    parentGlobalId: so201/P31
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 1 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 1 \xB7 0vpwLjckQCzsA1Wvzwc8EX"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-R-PLINTH-2
+    assetId: YTH-SO201-P31-R-PLINTH-2
+    parentGlobalId: so201/P31
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 1 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 2 \xB7 3RkpYxGpfcYT2I1t_zwJ_Z"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-R-STEM
+    assetId: YTH-SO201-P31-R-STEM
+    parentGlobalId: so201/P31
+    ifcClass: STEM
+    name: "Th\xE2n tr\u1EE5 SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcColumn \xB7 Pier stem P2 \xB7 0Fx3Ykz9Zoo5T0r0sZtWPp"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-R-FOUND
+    assetId: YTH-SO201-P31-R-FOUND
+    parentGlobalId: so201/P31
+    ifcClass: PILE_CAP
+    name: "\u0110\xE0i m\xF3ng SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Pile cap P2 \xB7 2T12tBKsv4vL2Pc9ijqqSu"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-R-BLIND
+    assetId: YTH-SO201-P31-R-BLIND
+    parentGlobalId: so201/P31
+    ifcClass: BLINDING
+    name: "B\xEA t\xF4ng l\xF3t SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Blinding concrete P2 \xB7 0qpx6Ycve5tLEkuyiBy94y"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P31-R-SHAFT
+    assetId: YTH-SO201-P31-R-SHAFT
+    parentGlobalId: so201/P31
+    ifcClass: SHAFT_EXTENSION
+    name: "\u0110o\u1EA1n n\u1ED1i th\xE2n tr\u1EE5 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4192.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-DIAPHRAGM
+    assetId: YTH-SO201-P32-DIAPHRAGM
+    parentGlobalId: so201/P32
+    ifcClass: DIAPHRAGM
+    name: "D\u1EA7m ngang SO 201"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Deck with crossbeams 6 \xB7 00TgNFCH9HGoplDgAwRwDO"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-HEAD
+    assetId: YTH-SO201-P32-HEAD
+    parentGlobalId: so201/P32
+    ifcClass: CROSSHEAD
+    name: "X\xE0 m\u0169 ray \u0111\xF4i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-L-PLINTH-1
+    assetId: YTH-SO201-P32-L-PLINTH-1
+    parentGlobalId: so201/P32
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 -1 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 1 \xB7 0vpwLjckQCzsA1Wvzwc8EX"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-L-PLINTH-2
+    assetId: YTH-SO201-P32-L-PLINTH-2
+    parentGlobalId: so201/P32
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 -1 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 2 \xB7 3RkpYxGpfcYT2I1t_zwJ_Z"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-L-STEM
+    assetId: YTH-SO201-P32-L-STEM
+    parentGlobalId: so201/P32
+    ifcClass: STEM
+    name: "Th\xE2n tr\u1EE5 SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcColumn \xB7 Pier stem P2 \xB7 0Fx3Ykz9Zoo5T0r0sZtWPp"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-L-FOUND
+    assetId: YTH-SO201-P32-L-FOUND
+    parentGlobalId: so201/P32
+    ifcClass: PILE_CAP
+    name: "\u0110\xE0i m\xF3ng SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Pile cap P2 \xB7 2T12tBKsv4vL2Pc9ijqqSu"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-L-BLIND
+    assetId: YTH-SO201-P32-L-BLIND
+    parentGlobalId: so201/P32
+    ifcClass: BLINDING
+    name: "B\xEA t\xF4ng l\xF3t SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Blinding concrete P2 \xB7 0qpx6Ycve5tLEkuyiBy94y"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-L-SHAFT
+    assetId: YTH-SO201-P32-L-SHAFT
+    parentGlobalId: so201/P32
+    ifcClass: SHAFT_EXTENSION
+    name: "\u0110o\u1EA1n n\u1ED1i th\xE2n tr\u1EE5 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-R-PLINTH-1
+    assetId: YTH-SO201-P32-R-PLINTH-1
+    parentGlobalId: so201/P32
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 1 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 1 \xB7 0vpwLjckQCzsA1Wvzwc8EX"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-R-PLINTH-2
+    assetId: YTH-SO201-P32-R-PLINTH-2
+    parentGlobalId: so201/P32
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 1 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 2 \xB7 3RkpYxGpfcYT2I1t_zwJ_Z"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-R-STEM
+    assetId: YTH-SO201-P32-R-STEM
+    parentGlobalId: so201/P32
+    ifcClass: STEM
+    name: "Th\xE2n tr\u1EE5 SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcColumn \xB7 Pier stem P2 \xB7 0Fx3Ykz9Zoo5T0r0sZtWPp"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-R-FOUND
+    assetId: YTH-SO201-P32-R-FOUND
+    parentGlobalId: so201/P32
+    ifcClass: PILE_CAP
+    name: "\u0110\xE0i m\xF3ng SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Pile cap P2 \xB7 2T12tBKsv4vL2Pc9ijqqSu"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-R-BLIND
+    assetId: YTH-SO201-P32-R-BLIND
+    parentGlobalId: so201/P32
+    ifcClass: BLINDING
+    name: "B\xEA t\xF4ng l\xF3t SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Blinding concrete P2 \xB7 0qpx6Ycve5tLEkuyiBy94y"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P32-R-SHAFT
+    assetId: YTH-SO201-P32-R-SHAFT
+    parentGlobalId: so201/P32
+    ifcClass: SHAFT_EXTENSION
+    name: "\u0110o\u1EA1n n\u1ED1i th\xE2n tr\u1EE5 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4210.001 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-DIAPHRAGM
+    assetId: YTH-SO201-P33-DIAPHRAGM
+    parentGlobalId: so201/P33
+    ifcClass: DIAPHRAGM
+    name: "D\u1EA7m ngang SO 201"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Deck with crossbeams 6 \xB7 00TgNFCH9HGoplDgAwRwDO"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-HEAD
+    assetId: YTH-SO201-P33-HEAD
+    parentGlobalId: so201/P33
+    ifcClass: CROSSHEAD
+    name: "X\xE0 m\u0169 ray \u0111\xF4i"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-L-PLINTH-1
+    assetId: YTH-SO201-P33-L-PLINTH-1
+    parentGlobalId: so201/P33
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 -1 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 1 \xB7 0vpwLjckQCzsA1Wvzwc8EX"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-L-PLINTH-2
+    assetId: YTH-SO201-P33-L-PLINTH-2
+    parentGlobalId: so201/P33
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 -1 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 2 \xB7 3RkpYxGpfcYT2I1t_zwJ_Z"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-L-STEM
+    assetId: YTH-SO201-P33-L-STEM
+    parentGlobalId: so201/P33
+    ifcClass: STEM
+    name: "Th\xE2n tr\u1EE5 SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcColumn \xB7 Pier stem P2 \xB7 0Fx3Ykz9Zoo5T0r0sZtWPp"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-L-FOUND
+    assetId: YTH-SO201-P33-L-FOUND
+    parentGlobalId: so201/P33
+    ifcClass: PILE_CAP
+    name: "\u0110\xE0i m\xF3ng SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Pile cap P2 \xB7 2T12tBKsv4vL2Pc9ijqqSu"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-L-BLIND
+    assetId: YTH-SO201-P33-L-BLIND
+    parentGlobalId: so201/P33
+    ifcClass: BLINDING
+    name: "B\xEA t\xF4ng l\xF3t SO 201 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Blinding concrete P2 \xB7 0qpx6Ycve5tLEkuyiBy94y"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-L-SHAFT
+    assetId: YTH-SO201-P33-L-SHAFT
+    parentGlobalId: so201/P33
+    ifcClass: SHAFT_EXTENSION
+    name: "\u0110o\u1EA1n n\u1ED1i th\xE2n tr\u1EE5 -1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-R-PLINTH-1
+    assetId: YTH-SO201-P33-R-PLINTH-1
+    parentGlobalId: so201/P33
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 1 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 1 \xB7 0vpwLjckQCzsA1Wvzwc8EX"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-R-PLINTH-2
+    assetId: YTH-SO201-P33-R-PLINTH-2
+    parentGlobalId: so201/P33
+    ifcClass: PLINTH
+    name: "B\u1EC7 g\u1ED1i SO 201 1 2"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Bearing plinths P2 2 \xB7 3RkpYxGpfcYT2I1t_zwJ_Z"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-R-STEM
+    assetId: YTH-SO201-P33-R-STEM
+    parentGlobalId: so201/P33
+    ifcClass: STEM
+    name: "Th\xE2n tr\u1EE5 SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcColumn \xB7 Pier stem P2 \xB7 0Fx3Ykz9Zoo5T0r0sZtWPp"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-R-FOUND
+    assetId: YTH-SO201-P33-R-FOUND
+    parentGlobalId: so201/P33
+    ifcClass: PILE_CAP
+    name: "\u0110\xE0i m\xF3ng SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcFooting \xB7 Pile cap P2 \xB7 2T12tBKsv4vL2Pc9ijqqSu"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-R-BLIND
+    assetId: YTH-SO201-P33-R-BLIND
+    parentGlobalId: so201/P33
+    ifcClass: BLINDING
+    name: "B\xEA t\xF4ng l\xF3t SO 201 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "IFC ngu\u1ED3n: IfcSlab \xB7 Blinding concrete P2 \xB7 0qpx6Ycve5tLEkuyiBy94y"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"
+  - globalId: YTH-SO201-P33-R-SHAFT
+    assetId: YTH-SO201-P33-R-SHAFT
+    parentGlobalId: so201/P33
+    ifcClass: SHAFT_EXTENSION
+    name: "\u0110o\u1EA1n n\u1ED1i th\xE2n tr\u1EE5 1"
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines:
+    - "H\xECnh h\u1ECDc b\u1ED5 sung cho m\xF4 h\xECnh tuy\u1EBFn"
+    - "L\xFD tr\xECnh theo m\xF4 h\xECnh: 4227.501 m"
+    - "H\u1ED3 s\u01A1 k\u1EF9 thu\u1EADt v\xE0 v\xF2ng \u0111\u1EDDi c\u1EE7a c\u1EA5u
+      ki\u1EC7n tr\xEAn tuy\u1EBFn: Ch\u01B0a c\xF3 d\u1EEF li\u1EC7u"

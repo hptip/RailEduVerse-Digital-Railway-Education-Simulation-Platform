@@ -34,6 +34,16 @@ public sealed class RailwayBimController:MonoBehaviour
     public void ReportZone(string status) => Message(status);
     public void FocusZone(Bounds bounds) => cameraController.Focus(bounds, 0, false);
     public void FocusDetailedZone() => cameraController.Focus(cameraController.zoneBounds, 0, false);
+    public bool FocusBridge(string target, string group, RailwayBimCamera.BridgeFrame frame)
+    {
+        if (bridge == null) return false;
+        var renderers = (frame == RailwayBimCamera.BridgeFrame.Component
+            ? bridge.SelectedRenderers : bridge.FocusRenderers(group)).ToArray();
+        if (!cameraController.FocusBridge(renderers, bridge.RailwayDirection(), frame)) return false;
+        RailwayBimExplorer.Audit(FormattableString.Invariant(
+            $"BridgeFocus,{target},{frame},{renderers.Length},{cameraController.current.distance:F2}"));
+        return true;
+    }
 
     public void SetZonePresentation(bool detailed)
     {
@@ -57,10 +67,10 @@ public sealed class RailwayBimController:MonoBehaviour
 
     public bool SelectBridge(string id, bool focus)
     {
-        if (bridge == null || !bridge.SelectAsset(id)) return false;
+        if (bridge == null || !bridge.SelectAsset(id, useMaterialHighlight: false)) return false;
         RestoreIsolation();
         SelectedID = null;
-        outline.Clear();
+        RefreshOutline();
         if (focus) FocusSelected();
         Changed?.Invoke();
         return true;
@@ -68,7 +78,11 @@ public sealed class RailwayBimController:MonoBehaviour
 
     public bool IsIsolated=>isolated.Count>0;
     public bool Ready=>Store!=null;public int ActiveDetailedParts=>detailRoot!=null&&detailRoot.gameObject.activeSelf?partPool.Count:0;
-    void Awake(){StartCoroutine(PrepareDatabase());}
+    void Awake()
+    {
+        outline.Configure(cameraController.GetComponent<Camera>(), GetComponent<RailwayBimVrPresentation>());
+        StartCoroutine(PrepareDatabase());
+    }
     IEnumerator PrepareDatabase()
     {
         string seed=Path.Combine(Application.streamingAssetsPath,"RailwayLifecycle","Initial.db");
@@ -156,7 +170,8 @@ public sealed class RailwayBimController:MonoBehaviour
     public void Locate(string id) => Locate(id, true);
     public void Locate(string id, bool focus)
     {
-        if (SelectBridge(id, focus || SelectedBridge == null) || zoneViewer?.OpenBridgeAsset(id) == true) return;
+        bool bridgeContext = zoneViewer == null || zoneViewer.ActiveZone == RailwayBimZoneViewer.BridgeZone;
+        if ((bridgeContext && SelectBridge(id, focus || SelectedBridge == null)) || zoneViewer?.OpenBridgeAsset(id) == true) return;
         Store.Require(id);
         zoneViewer?.Open(RailwayBimZoneViewer.DetailedZone, false);
         var asset=Store.Assets[id];suppressFocus=true;
@@ -203,17 +218,28 @@ public sealed class RailwayBimController:MonoBehaviour
     {bridge?.Clear();RestoreIsolation();outline.Clear();detailRoot.gameObject.SetActive(false);foreach(var p in blockPool)p.gameObject.SetActive(false);foreach(var p in overview.Values)p.gameObject.SetActive(true);visible.Clear();Level=0;SelectedID=null;SegmentID=null;BlockID=null;cameraController.Restore(0,cameraController.zoneBounds);Changed?.Invoke();}
     public BimAssetProxy Visible(string id)
     {if(overview.TryGetValue(id,out var proxy)&&Level==0)return proxy;if(visible.TryGetValue(id,out proxy)&&Level==1)return proxy;if(Level==2)return partPool.FirstOrDefault(p=>p.assetID==id);return null;}
-    void RefreshOutline(){var proxy=SelectedID!=null?Visible(SelectedID):null;outline.Show(proxy!=null?proxy.GetComponents<Renderer>().Where(r=>r.enabled&&r.gameObject.activeInHierarchy).ToArray():Array.Empty<Renderer>());}
+    void RefreshOutline()
+    {
+        if (SelectedBridge != null)
+        {
+            outline.Show(bridge.SelectedRenderers);
+            return;
+        }
+        var proxy = SelectedID != null ? Visible(SelectedID) : null;
+        outline.Show(proxy != null ? proxy.GetComponentsInChildren<Renderer>(true) : null);
+    }
     public void FocusSelected()
     {
         if (bridge != null && bridge.TryGetSelectedBounds(out var bridgeBounds))
         {
-            cameraController.Focus(bridgeBounds, 0, false);
+            if (zoneViewer?.ActiveZone != RailwayBimZoneViewer.BridgeZone ||
+                !FocusBridge(SelectedBridge.assetId, null, RailwayBimCamera.BridgeFrame.Component))
+                cameraController.Focus(bridgeBounds, 0, false);
             return;
         }
-        if (!ViewingDetailedZone) { zoneViewer.Open(zoneViewer.ActiveZone); return; }
+        if (!ViewingDetailedZone) { zoneViewer.Refocus(); return; }
         if(SelectedID==null){cameraController.Focus(Level==0?cameraController.zoneBounds:Level==1?segments[SegmentID].bounds:blocks[BlockID].bounds,Level,false);return;}var proxy=Visible(SelectedID);if(proxy!=null)cameraController.Focus(proxy.GetComponent<Renderer>().bounds,Level,false);}
-    public void ToggleVisibility(){if(SelectedID==null)return;var proxy=Visible(SelectedID);if(proxy==null)return;var renderer=proxy.GetComponent<Renderer>();renderer.enabled=!renderer.enabled;outline.Clear();Message(renderer.enabled?"Đã hiện đối tượng":"Đã ẩn đối tượng; chọn lại từ danh sách để hiện");}
+    public void ToggleVisibility(){if(SelectedID==null)return;var proxy=Visible(SelectedID);if(proxy==null)return;var renderer=proxy.GetComponent<Renderer>();renderer.enabled=!renderer.enabled;RefreshOutline();Message(renderer.enabled?"Đã hiện đối tượng":"Đã ẩn đối tượng; chọn lại từ danh sách để hiện");}
     public void ToggleIsolation()
     {
         if(IsIsolated){RestoreIsolation();RefreshOutline();Changed?.Invoke();return;}if(SelectedID==null)return;
@@ -226,7 +252,7 @@ public sealed class RailwayBimController:MonoBehaviour
     public bool Pick(Ray ray,bool cycle=false)
     {
         if (!ViewingDetailedZone)
-            return bridge != null && bridge.Pick(ray) && SelectBridge(bridge.Selected.assetId, !suppressFocus);
+            return bridge != null && bridge.TryPick(ray, out var pickedBridge) && SelectBridge(pickedBridge.assetId, !suppressFocus);
         var hits=Physics.RaycastAll(ray,2000,~0,QueryTriggerInteraction.Ignore).OrderBy(h=>h.distance).ToArray();var valid=new List<BimAssetProxy>();
         foreach(var hit in hits){
             if (valid.Count == 0 && bridge != null)
@@ -303,7 +329,7 @@ public sealed class RailwayBimController:MonoBehaviour
         finally { suppressFocus = false; }
         if (!picked) return;
         if (RailwayBimExplorer.BeginMetric() != 0)
-            RailwayBimExplorer.Audit("ModelPick," + (SelectedBridge?.assetId ?? SelectedID) + "," + (SelectedBridge != null ? bridge.HighlightedCount : outline.HighlightedRenderers));
+            RailwayBimExplorer.Audit("ModelPick," + (SelectedBridge?.assetId ?? SelectedID) + "," + outline.HighlightedRenderers);
         string pickedId = SelectedBridge?.assetId ?? SelectedID;
         if (webLastID == pickedId && Time.unscaledTime - webLastClick < .35f)
         {

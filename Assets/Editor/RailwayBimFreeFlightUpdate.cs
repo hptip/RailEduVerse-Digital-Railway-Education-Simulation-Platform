@@ -17,10 +17,10 @@ public static partial class RailwayBimRefinement
         var material=outline.outlineMaterial;
         if(AssetDatabase.GetAssetPath(material)!="Assets/ProjectLopHoc/Generated/RailwayLifecycleBim/OutlineShell.mat")throw new Exception("Unexpected highlight material");
         Undo.RecordObject(material,"Improve BIM selection contrast");
-        material.SetColor("_BaseColor",new Color(1,.08f,.45f,1));material.SetFloat("_Width",5);
+        material.SetColor("_BaseColor",new Color(1,.45f,.03f,1));material.SetFloat("_Width",2);
         EditorUtility.SetDirty(material);AssetDatabase.SaveAssetIfDirty(material);
         EditorSceneManager.SaveScene(scene);
-        File.WriteAllText(Dir+"/FreeFlightApplied.txt","PC noclip flight; VR Origin noclip flight (right stick Y altitude); hot-pink outline RGB(1,.08,.45), width 5px. Source materials and tracked HMD local pose untouched.");
+        File.WriteAllText(Dir+"/FreeFlightApplied.txt","PC noclip flight; VR Origin noclip flight (right stick Y altitude); orange X-ray outline RGB(1,.45,.03), width 2px. Source materials and tracked HMD local pose untouched.");
         File.WriteAllText("Temp/BimRefinementTest.request","flight");
     }
 }
@@ -63,7 +63,7 @@ public static partial class RailwayBimRefinementTests
                 Check(head.position.y>y+.8f,"Right joystick Y raises VR Origin in free flight");
                 Check(head.localPosition==local,"VR flight preserves tracked HMD local pose");
                 var color=c.outline.outlineMaterial.GetColor("_BaseColor");
-                Check(color.r>.99f&&color.g<.1f&&color.b>.4f&&c.outline.outlineMaterial.GetFloat("_Width")==5,"High-contrast pink highlight and 5px outline applied");
+                Check(color.r>.99f&&color.g>.4f&&color.g<.5f&&color.b<.1f&&c.outline.outlineMaterial.GetFloat("_Width")==2,"Orange X-ray highlight and 2px outline applied");
                 c.SetOverview();c.Select(c.catalog.segments[0].id);Check(c.outline.HighlightedRenderers>0,"Selection still produces outline renderers");
                 vr.SetPanelVisible(true);vr.SetVrMode(false);
                 EditorWindow.GetWindow(typeof(Editor).Assembly.GetType("UnityEditor.GameView")).maximized=oldMaximized;

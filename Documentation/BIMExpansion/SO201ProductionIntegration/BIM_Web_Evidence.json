@@ -1,0 +1,38 @@
+{
+  "checked": [
+    "[BIMTree] BridgeFocus,Zone_018,Zone,1486,1503.88",
+    "[BIMTree] BridgeFocus,Bridge_Main,Structure,1486,1291.13",
+    "[BIMTree] BridgeFocus,YTH-SO201-B32-GIRDER-1,Component,1,23.68",
+    "[BIMTree] BridgeFocus,YTH-SO201-B32-SLAB,Component,1,30.96",
+    "[BIMTree] BridgeFocus,YTH-SO201-B32-CAP,Component,1,43.39",
+    "[BIMTree] BridgeFocus,YTH-SO201-P32-L-FOUND,Component,1,14.45",
+    "[BIMTree] BridgeFocus,YTH-SO201-P32-L-STEM,Component,1,15.35"
+  ],
+  "modelPick": "[BIMTree] ModelPick,YTH-SO201-P32-L-STEM,1\n",
+  "events": [
+    "[BIMTree] ExpandOrCollapse,1.700,25,22\n",
+    "[BIMTree] BridgeFocus,Zone_018,Zone,1486,1503.88\n",
+    "[BIMTree] ZoneReady,Zone_018,3,1598,Zone_017|Zone_018|Zone_019\n",
+    "[BIMTree] BridgeFocus,Bridge_Main,Structure,1486,1291.13\n",
+    "[BIMTree] ExpandOrCollapse,6.100,155,22\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-B32-GIRDER-1,Component,1,23.68\n",
+    "[BIMTree] Select,21.000,YTH-SO201-B32-GIRDER-1\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-B32-SLAB,Component,1,30.96\n",
+    "[BIMTree] Select,21.200,YTH-SO201-B32-SLAB\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-B32-CAP,Component,1,43.39\n",
+    "[BIMTree] Select,21.600,YTH-SO201-B32-CAP\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-P32-L-FOUND,Component,1,14.45\n",
+    "[BIMTree] Select,20.800,YTH-SO201-P32-L-FOUND\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-P32-L-STEM,Component,1,15.35\n",
+    "[BIMTree] Select,21.000,YTH-SO201-P32-L-STEM\n",
+    "[BIMTree] ModelPick,YTH-SO201-P32-L-STEM,1\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-P32-L-STEM,Component,1,15.35\n",
+    "[BIMTree] Select,0.500,YTH-SO201-P32-L-STEM\n",
+    "[BIMTree] BridgeSave,YTH-SO201-P32-L-STEM,Lifecycle,Operation\n",
+    "[BIMTree] Select,0.500,YTH-SO201-P32-L-STEM\n",
+    "[BIMTree] ZoneReady,Zone_018,3,1598,Zone_017|Zone_018|Zone_019\n",
+    "[BIMTree] BridgeFocus,YTH-SO201-P32-L-STEM,Component,1,15.35\n",
+    "[BIMTree] ZoneReady,Zone_021,0,0,\n",
+    "[BIMTree] Select,29.200,Z021-TR-S001-B001-C005\n"
+  ]
+}

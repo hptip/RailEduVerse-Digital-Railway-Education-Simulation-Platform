@@ -1,0 +1,1 @@
+World origin XYZ: 9338.154, 9.331662, -1274.91089; source prefab root uses local offsets in route axes.

@@ -163,7 +163,7 @@ namespace UTT.SaBan
         {
             RectTransform rt = NewRect(name, parent, size, position);
             Text text = rt.gameObject.AddComponent<Text>();
-            text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            text.font = UttProjectFonts.LegacyVietnamese;
             text.text = value;
             text.fontSize = fontSize;
             text.fontStyle = FontStyle.Bold;

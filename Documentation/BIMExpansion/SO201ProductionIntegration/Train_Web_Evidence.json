@@ -1,0 +1,92 @@
+{
+  "result": "[BridgeYTH] Result,25.00,5169.65,5464.76,missingFrames=0,overhead=True,right=True,cabin=True,bridgeLoaded=False\n",
+  "cadence": {
+    "cabin-entry": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.5,
+      "max": 8.5
+    },
+    "overhead-middle": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.5,
+      "max": 8.5
+    },
+    "outside-middle": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.5,
+      "max": 8.5
+    },
+    "cabin-middle": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.5,
+      "max": 8.5
+    },
+    "cabin-exit": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.5,
+      "max": 8.5
+    }
+  },
+  "browser": {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002487) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "canvas": [
+      1280,
+      720
+    ]
+  },
+  "events": [
+    "[BridgeYTH] DriveStart,25.00\n",
+    "[RailwayStreaming] Loaded Zone_017\n",
+    "[RailwayStreaming] Loaded Zone_018\n",
+    "[BridgeYTH] ZoneAdded,2954.39\n",
+    "[BridgeYTH] Structure,2954.72,129,507129,491794,7,582,9338.4990,-4.0865,-1273.5760,1095.0330,28.1271,281.4209,2.00\n",
+    "[RailwayStreaming] Loaded Zone_019\n",
+    "[BridgeYTH] Sample,3400.04,200.00,129,552,661352863,9.00\n",
+    "[BridgeYTH] Sample,3500.02,200.00,129,603,661867783,9.00\n",
+    "[BridgeYTH] Sample,3600.01,200.00,129,676,667221928,9.00\n",
+    "[BridgeYTH] Camera,cabin-entry,3675.44,-1,117,452231\n",
+    "[BridgeYTH] Sample,3700.44,200.00,129,714,667133692,8.00\n",
+    "[BridgeYTH] Sample,3800.42,200.00,129,680,667349408,8.00\n",
+    "[BridgeYTH] Sample,3900.41,200.00,129,627,666936500,8.00\n",
+    "[BridgeYTH] Exterior overhead camera\n",
+    "[BridgeYTH] Sample,4000.39,200.00,129,206,662048959,8.00\n",
+    "[BridgeYTH] Camera,overhead-middle,4055.49,0,19,50208\n",
+    "[BridgeYTH] Sample,4100.37,200.00,129,208,662513707,8.00\n",
+    "[BridgeYTH] Sample,4200.36,200.00,129,218,670417634,8.00\n",
+    "[BridgeYTH] Exterior right camera\n",
+    "[BridgeYTH] Camera,outside-middle,4275.35,1,60,230250\n",
+    "[BridgeYTH] Sample,4300.34,200.00,129,475,672056654,8.00\n",
+    "[BridgeYTH] Sample,4400.33,200.00,129,415,671821402,8.00\n",
+    "[BridgeYTH] Sample,4500.31,200.00,129,361,671741874,8.00\n",
+    "[BridgeYTH] Restored cabin camera\n",
+    "[BridgeYTH] Camera,cabin-middle,4535.03,-1,26,99775\n",
+    "[BridgeYTH] Sample,4600.30,200.00,129,267,671300386,8.00\n",
+    "[BridgeYTH] Camera,cabin-exit,4685.01,-1,10,38375\n",
+    "[BridgeYTH] Sample,4700.28,200.00,129,235,680945962,8.00\n",
+    "[BridgeYTH] Sample,4800.27,200.00,129,179,676567561,8.00\n",
+    "[BridgeYTH] Sample,4900.25,200.00,129,169,676518261,8.00\n",
+    "[BridgeYTH] Sample,5000.23,200.00,129,159,676837329,8.00\n",
+    "[BridgeYTH] Sample,5100.22,200.00,129,143,676820821,8.00\n",
+    "[RailwayStreaming] Unloaded Zone_017\n",
+    "[RailwayStreaming] Unloaded Zone_018\n",
+    "[BridgeYTH] ZoneRemoved,5175.21\n",
+    "[RailwayStreaming] Unloaded Zone_019\n",
+    "[BridgeYTH] Performance,cabin-entry,3700,108,8.000,9.000,9.000,713,1798194,659660904,8300001\n",
+    "[BridgeYTH] Performance,overhead-middle,4080,107,8.000,9.000,9.000,213,464284,654818223,8300000\n",
+    "[BridgeYTH] Performance,outside-middle,4300,108,8.000,9.000,9.000,474,1633174,664772974,8300000\n",
+    "[BridgeYTH] Performance,cabin-middle,4560,108,8.000,9.000,9.000,285,1398756,663822366,8300001\n",
+    "[BridgeYTH] Performance,cabin-exit,4710,109,8.000,9.000,9.000,230,1373639,673405308,8300000\n",
+    "[BridgeYTH] Result,25.00,5169.65,5464.76,missingFrames=0,overhead=True,right=True,cabin=True,bridgeLoaded=False\n"
+  ]
+}

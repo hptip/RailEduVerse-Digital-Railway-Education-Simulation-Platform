@@ -5206,7 +5206,7 @@ MonoBehaviour:
     - OCL
   facilities:
   - key: Bridge_Main
-    label: "C\u1EA7u ch\xEDnh"
+    label: "C\u1EA7u ch\xEDnh SO 201"
     domain: "C\u1EA7u"
     owner: Zone_018
     assetId: 
@@ -5269,7 +5269,7 @@ MonoBehaviour:
     - Zone_011/RuntimeZoneContent/Experience_SubgradeReinforcedSlope
     start: 300
     end: 800
-  modularBridgeCatalog: {fileID: 11400000, guid: e092fde2f5181f34d9d9671f3986d81e, type: 2}
+  modularBridgeCatalog: {fileID: 11400000, guid: 46a8535217ca10b4f8492b879439dd68, type: 2}
   detailedEnvironment: {fileID: 1585156192}
   controller: {fileID: 616518835}
 --- !u!1 &623705190

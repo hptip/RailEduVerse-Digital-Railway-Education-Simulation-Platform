@@ -32,25 +32,37 @@ namespace UttVr.BridgePilot
             if (bindings.Count != byAssetId.Count) throw new InvalidOperationException("Bridge catalog and geometry binding counts differ.");
         }
 
-        public bool SelectAsset(string assetId) => assetId != null && byAssetId.TryGetValue(assetId, out var entry) && Select(entry);
+        public bool SelectAsset(string assetId, bool useMaterialHighlight = true) =>
+            assetId != null && byAssetId.TryGetValue(assetId, out var entry) && Select(entry, useMaterialHighlight);
 
         public bool Owns(BridgeBimIdentity identity) => identity != null &&
             bindings.TryGetValue(identity.GlobalId, out var bound) && bound == identity;
 
-        public bool Pick(Ray ray)
+        public bool Pick(Ray ray) => TryPick(ray, out var entry) && Select(entry, true);
+
+        public bool TryPick(Ray ray, out BridgeBimEntry entry)
         {
+            entry = null;
             if (!Physics.Raycast(ray, out var hit, 2000, ~0, QueryTriggerInteraction.Ignore)) return false;
             var identity = hit.collider.GetComponentInParent<BridgeBimIdentity>();
-            return Owns(identity) && byGlobalId.TryGetValue(identity.GlobalId, out var entry) && Select(entry);
+            return Owns(identity) && byGlobalId.TryGetValue(identity.GlobalId, out entry);
         }
 
-        bool Select(BridgeBimEntry entry)
+        bool Select(BridgeBimEntry entry, bool useMaterialHighlight)
         {
             if (!bindings.TryGetValue(entry.globalId, out var binding)) return false;
-            if (ReferenceEquals(Selected, entry)) return true;
+            bool changed = !ReferenceEquals(Selected, entry);
+            if (!changed && useMaterialHighlight == (originalMaterials.Count != 0)) return true;
             RestoreMaterials();
             Selected = entry;
-            foreach (var renderer in binding.Renderers)
+            if (useMaterialHighlight) ApplyMaterials(binding.Renderers);
+            if (changed) SelectionChanged?.Invoke(entry);
+            return true;
+        }
+
+        void ApplyMaterials(IEnumerable<Renderer> renderers)
+        {
+            foreach (var renderer in renderers)
             {
                 var original = renderer.sharedMaterials;
                 originalMaterials.Add(renderer, original);
@@ -58,8 +70,6 @@ namespace UttVr.BridgePilot
                 Array.Fill(selected, highlightMaterial);
                 renderer.sharedMaterials = selected;
             }
-            SelectionChanged?.Invoke(entry);
-            return true;
         }
 
         public bool TryGetSelectedBounds(out Bounds bounds)
@@ -70,6 +80,37 @@ namespace UttVr.BridgePilot
             bounds = binding.Renderers[0].bounds;
             foreach (var renderer in binding.Renderers) bounds.Encapsulate(renderer.bounds);
             return true;
+        }
+
+        public IEnumerable<Renderer> FocusRenderers(string groupId)
+        {
+            foreach (var entry in catalog.entries)
+            {
+                if (!entry.IsElement || (groupId != null && entry.parentGlobalId != groupId) ||
+                    !bindings.TryGetValue(entry.globalId, out var identity)) continue;
+                foreach (var renderer in identity.Renderers)
+                    if (renderer != null && renderer.enabled && renderer.gameObject.activeInHierarchy)
+                        yield return renderer;
+            }
+        }
+
+        public IEnumerable<Renderer> SelectedRenderers =>
+            Selected != null && bindings.TryGetValue(Selected.globalId, out var identity)
+                ? identity.Renderers : Array.Empty<Renderer>();
+
+        public Vector3 RailwayDirection()
+        {
+            Renderer first = null, last = null;
+            foreach (var entry in catalog.entries)
+            {
+                if ((entry.ifcClass != "deck" && entry.ifcClass != "RAIL_DECK") ||
+                    !bindings.TryGetValue(entry.globalId, out var identity) ||
+                    identity.Renderers.Length == 0) continue;
+                var renderer = identity.Renderers[0];
+                first ??= renderer;
+                last = renderer;
+            }
+            return first != null && last != null ? last.bounds.center - first.bounds.center : transform.forward;
         }
 
         public void Clear()

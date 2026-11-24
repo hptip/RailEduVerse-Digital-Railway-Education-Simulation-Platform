@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e633efa953fdc4f4d8dea0ff2e1c3332, type: 3}
+  m_Name: UTT Project Fonts
+  m_EditorClassIdentifier: Assembly-CSharp::UttProjectFonts
+  legacyVietnamese: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  vietnamese: {fileID: 11400000, guid: b91957196d6fafb4b828467deb8f2868, type: 2}

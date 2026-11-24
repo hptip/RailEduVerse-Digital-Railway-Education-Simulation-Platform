@@ -26,17 +26,40 @@ public sealed class RailwayBimFacility
 public sealed class RailwayBimZoneViewer : MonoBehaviour
 {
     public const string DetailedZone = "Zone_021";
+    public const string BridgeZone = "Zone_018";
     public RailwayBimZone[] zones;
     public RailwayBimFacility[] facilities;
     public BridgeBimCatalog modularBridgeCatalog;
-    string pendingBridgeAsset;
+    string pendingBridgeAsset, pendingBridgeGroup, activeBridgeGroup;
 
     public bool OpenBridgeAsset(string assetId)
     {
         if (modularBridgeCatalog == null || !modularBridgeCatalog.entries.Any(e => e.assetId == assetId)) return false;
-        Open("Zone_018", false);
+        Open(BridgeZone, false);
         pendingBridgeAsset = assetId;
         return true;
+    }
+
+    public void OpenBridgeGroup(string group)
+    {
+        if (modularBridgeCatalog == null || (group.Length != 0 &&
+            !modularBridgeCatalog.entries.Any(entry => !entry.IsElement && entry.globalId == group))) return;
+        Open(BridgeZone, false);
+        if (ActiveZone == BridgeZone) FocusBridgeGroup(group);
+        else pendingBridgeGroup = group;
+    }
+
+    void FocusBridgeGroup(string group)
+    {
+        activeBridgeGroup = group;
+        controller.FocusBridge(group.Length == 0 ? "Bridge_Main" : group, group.Length == 0 ? null : group,
+            group.Length == 0 ? RailwayBimCamera.BridgeFrame.Structure : RailwayBimCamera.BridgeFrame.Group);
+    }
+
+    public void Refocus()
+    {
+        if (ActiveZone == BridgeZone && activeBridgeGroup != null) FocusBridgeGroup(activeBridgeGroup);
+        else Open(ActiveZone);
     }
     public Transform detailedEnvironment;
     public RailwayBimController controller;
@@ -75,6 +98,8 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
     {
         if (!zones.Any(x => x.id == zoneId)) return;
         pendingBridgeAsset = null;
+        pendingBridgeGroup = null;
+        activeBridgeGroup = null;
         requested = zoneId;
         if (zoneId == DetailedZone)
         {
@@ -85,7 +110,7 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
         if (transition != null) return;
         if (ActiveZone == zoneId)
         {
-            if (focus) controller.FocusZone(zones.First(z => z.id == zoneId).focus);
+            if (focus) FocusZone(zoneId);
             return;
         }
         transition = StartCoroutine(Load());
@@ -169,7 +194,7 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
         }
         foreach (var instance in loaded.Values) instance.SetActive(true);
         ActiveZone = id;
-        controller.bridge = loaded.TryGetValue("Zone_018", out var bridgeZone)
+        controller.bridge = loaded.TryGetValue(BridgeZone, out var bridgeZone)
             ? bridgeZone.GetComponentInChildren<BridgeBimAdapter>() : null;
         UseOverviewDistance(id != DetailedZone);
         controller.SetZonePresentation(id == DetailedZone);
@@ -182,23 +207,29 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
                 StartCoroutine(ReleaseAfterFrame());
             }
         }
-        else if (focus)
-        {
-            var bounds = zones.First(x => x.id == id).focus;
-            foreach (var facility in facilities.Where(x => x.covered.Contains(id)))
-                foreach (string zoneId in facility.covered)
-                    bounds.Encapsulate(zones.First(x => x.id == zoneId).focus);
-            controller.FocusZone(bounds);
-        }
+        else if (pendingBridgeGroup != null && id == BridgeZone)
+            FocusBridgeGroup(pendingBridgeGroup);
+        else if (focus && pendingBridgeAsset == null) FocusZone(id);
         int renders = loaded.Values.Sum(x => x.GetComponentsInChildren<Renderer>().Count(r => r.enabled));
         controller.ReportZone(id + " · " + (id == DetailedZone ? "hồ sơ ray hiện có" : "hình học tuyến"));
         RailwayBimExplorer.Audit($"ZoneReady,{id},{loaded.Count},{renders},{string.Join("|", wanted)}");
-        if (id == "Zone_018" && pendingBridgeAsset != null)
+        pendingBridgeGroup = null;
+        if (id == BridgeZone && pendingBridgeAsset != null)
         {
             string asset = pendingBridgeAsset;
             pendingBridgeAsset = null;
             controller.SelectBridge(asset, true);
         }
+    }
+
+    void FocusZone(string id)
+    {
+        if (id == BridgeZone && controller.FocusBridge(id, null, RailwayBimCamera.BridgeFrame.Zone)) return;
+        var bounds = zones.First(x => x.id == id).focus;
+        foreach (var facility in facilities.Where(x => x.covered.Contains(id)))
+            foreach (string zoneId in facility.covered)
+                bounds.Encapsulate(zones.First(x => x.id == zoneId).focus);
+        controller.FocusZone(bounds);
     }
 
     IEnumerator ReleaseAfterFrame()

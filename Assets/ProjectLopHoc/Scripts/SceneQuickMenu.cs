@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -331,13 +332,6 @@ public sealed class SceneQuickMenu : MonoBehaviour
         UpdateSceneLabel();
     }
 
-    private static Font BuiltinFont()
-    {
-        // Unity 6 no longer exposes Arial.ttf as a built-in font resource.
-        // LegacyRuntime.ttf remains the supported runtime font.
-        return Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-    }
-
     private static System.Action<string> CreateText(Transform parent, string objectName, string value,
         int fontSize, Vector2 position, Vector2 size, FontStyle style, Color color)
     {
@@ -349,15 +343,14 @@ public sealed class SceneQuickMenu : MonoBehaviour
         rect.anchoredPosition = position;
         rect.sizeDelta = size;
 
-        Text text = textObject.AddComponent<Text>();
-        text.font = BuiltinFont();
+        var text = textObject.AddComponent<TextMeshProUGUI>();
+        text.font = UttProjectFonts.Vietnamese;
         text.text = value;
         text.fontSize = fontSize;
-        text.fontStyle = style;
+        text.fontStyle = style == FontStyle.Bold ? FontStyles.Bold : FontStyles.Normal;
         text.color = color;
-        text.alignment = TextAnchor.MiddleCenter;
-        text.horizontalOverflow = HorizontalWrapMode.Wrap;
-        text.verticalOverflow = VerticalWrapMode.Truncate;
+        text.alignment = TextAlignmentOptions.Center;
+        text.overflowMode = TextOverflowModes.Truncate;
         text.raycastTarget = false;
         return next => text.text = next;
     }

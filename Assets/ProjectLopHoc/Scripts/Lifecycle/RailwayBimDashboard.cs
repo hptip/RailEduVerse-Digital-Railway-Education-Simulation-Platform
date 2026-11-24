@@ -38,7 +38,7 @@ public sealed class RailwayBimDashboard:MonoBehaviour
     {
         if (UttWebPresentation.Active) explorer = new RailwayBimExplorer(this, SelectInExplorer);
         controller.Changed+=Refresh;controller.Status+=SetStatus;
-        detailButton.onClick.AddListener(()=>Run(controller.EnterDetails));backButton.onClick.AddListener(()=>Run(controller.Back));resetButton.onClick.AddListener(()=>Run(()=>{if (!controller.ViewingDetailedZone) controller.zoneViewer.Open(controller.zoneViewer.ActiveZone); else { controller.SetOverview(); controller.cameraController.ResetView(); } Refresh();}));
+        detailButton.onClick.AddListener(()=>Run(controller.EnterDetails));backButton.onClick.AddListener(()=>Run(controller.Back));resetButton.onClick.AddListener(()=>Run(ResetOverview));
         hideButton.onClick.AddListener(()=>Run(controller.ToggleIsolation));
         saveButton.onClick.AddListener(()=>Run(Save));addInspectionButton.onClick.AddListener(()=>Run(AddInspection));addMaintenanceButton.onClick.AddListener(()=>Run(AddMaintenance));
         exportButton.onClick.AddListener(()=>Run(()=>{if (UttWebPresentation.Active) { ExportSelectedForWeb(); return; } string path=FilePath(false);if(!string.IsNullOrEmpty(path))Export(path);}));importButton.onClick.AddListener(()=>Run(()=>{if (UttWebPresentation.Active) { UttBrowserWorkbook.Pick(this, path => Run(() => Preview(path)), SetStatus); return; } string path=FilePath(true);if(!string.IsNullOrEmpty(path))Preview(path);}));applyButton.onClick.AddListener(()=>Run(Apply));
@@ -52,10 +52,32 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         Refresh();
     }
 
+    void ResetOverview()
+    {
+        if (controller.ViewingDetailedZone)
+        {
+            controller.SetOverview();
+            controller.cameraController.ResetView();
+        }
+        else
+        {
+            controller.ClearSelection();
+            controller.zoneViewer.Open(controller.zoneViewer.ActiveZone);
+        }
+        Refresh();
+    }
+
     void SelectInExplorer(string id, bool focus)
     {
         Run(() =>
         {
+            const string bridgeView = "bridge-view:";
+            if (id.StartsWith(bridgeView, StringComparison.Ordinal))
+            {
+                controller.ClearSelection();
+                controller.zoneViewer?.OpenBridgeGroup(id.Substring(bridgeView.Length));
+                return;
+            }
             if (id.StartsWith("view:", StringComparison.Ordinal))
             {
                 controller.ClearSelection();
@@ -96,7 +118,7 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         if (explorer == null) RefreshList();
         else
         {
-            focusButton.interactable = DisplayedID != null;
+            focusButton.interactable = DisplayedID != null || controller.zoneViewer?.ActiveZone == RailwayBimZoneViewer.BridgeZone;
             explorer.Refresh(SelectedElement);
         }
         RefreshInfo();
@@ -109,12 +131,11 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         if(!controller.Ready)return;byID.Clear();string text=search.text.Trim();
         var assets=text.Length>0?controller.Store.Assets.Values.Where(a=>a.AssetID.IndexOf(text,StringComparison.OrdinalIgnoreCase)>=0||a.DisplayName.IndexOf(text,StringComparison.OrdinalIgnoreCase)>=0||RailwayBimVietnamese.Name(a).IndexOf(text,StringComparison.OrdinalIgnoreCase)>=0).OrderBy(a=>a.AssetID).Take(150).ToList():controller.CurrentItems();
         listTitle.text=text.Length>0?"KẾT QUẢ TÌM KIẾM · tối đa 150":controller.Level==0?"PHÂN ĐOẠN · HAI ĐƯỜNG RAY":controller.Level==1?"DANH SÁCH MÔ-ĐUN":"DANH SÁCH CẤU KIỆN";
-        var bridgeEntries = controller.bridge == null ? Array.Empty<BridgeBimEntry>() :
+        var bridgeEntries = controller.bridge == null || text.Length == 0 ? Array.Empty<BridgeBimEntry>() :
             controller.bridge.catalog.entries.Where(e => e.IsElement &&
-                (text.Length == 0 ? controller.SelectedBridge != null :
-                    e.Label.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                (e.Label.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0 ||
                     e.assetId.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                    e.ifcClass.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)).ToArray();
+                    e.ifcClass.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)).Take(150).ToArray();
         bool showBridgeFolder = text.Length == 0 && controller.bridge != null && controller.Level == 0;
         var zones = controller.zoneViewer != null && text.Length == 0 && controller.Level == 0
             ? controller.zoneViewer.zones : Array.Empty<RailwayBimZone>();
@@ -137,7 +158,7 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             {
                 var entry = assetIndex - assets.Count < bridgeEntries.Length ? bridgeEntries[assetIndex - assets.Count] : null;
                 var bridgeLabel = button.GetComponentInChildren<TMP_Text>();
-                bridgeLabel.text = entry == null ? "Cầu → Cầu mẫu SO 201" : entry.Label + "\n<size=75%>" + entry.ifcClass + "</size>";
+                bridgeLabel.text = entry == null ? "Cầu → Cầu chính SO 201" : entry.Label + "\n<size=75%>" + entry.ifcClass + "</size>";
                 bridgeLabel.fontSize = 22;
                 RailwayBimExplorer.ColorButton(button, entry != null && controller.SelectedBridge == entry, true);
                 if (entry == null) button.onClick.AddListener(() => search.text = "BRIDGE-SO201-");
@@ -277,6 +298,45 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             foreach (var field in fields) Field("BridgeStage:" + field.Key.key, field.Value, true, field.Key.unit, field.Key.label);
             return;
         }
+        if (controller.bridge.catalog.schema == BridgeBimCatalog.SO201RouteSchema) RenderSO201Provenance(entry);
+        else RenderBridgeSource(entry);
+        Field("BridgeUser", "", displayLabel: "DỮ LIỆU NGƯỜI DÙNG", section: true);
+        Field("BridgeTechnicalNote", controller.BridgeStore.TechnicalNote(entry.globalId), true, displayLabel: "Ghi chú kỹ thuật");
+        foreach (var parameter in controller.BridgeStore.Parameters(entry.globalId))
+        {
+            Field("BridgeParam:" + parameter.Name, parameter.Value, true, displayLabel: parameter.Name);
+            Field("BridgeUnit:" + parameter.Name, parameter.Unit, true, displayLabel: "Đơn vị · " + parameter.Name);
+        }
+        Field("BridgeNewName", "", true, displayLabel: "Tên thông số mới");
+        Field("BridgeNewValue", "", true, displayLabel: "Giá trị mới");
+        Field("BridgeNewUnit", "", true, displayLabel: "Đơn vị mới");
+    }
+
+    void RenderSO201Provenance(BridgeBimEntry entry)
+    {
+        bool hasSource = !string.IsNullOrEmpty(entry.sourceGlobalId);
+        Field("AssetID", entry.assetId);
+        Field("Nguồn hình học", hasSource ? "Mesh IFC SO 201" : "Hình học bổ sung / mô phỏng");
+        if (hasSource)
+        {
+            Field("IfcSource", "", displayLabel: "DỮ LIỆU IFC NGUỒN", section: true);
+            Field("SourceGlobalId", entry.sourceGlobalId);
+            Field("GlobalId cha nguồn", entry.sourceParentGlobalId);
+            Field("Lớp IFC", entry.sourceIfcClass);
+            Field("Tên IFC", entry.sourceName);
+            if (!string.IsNullOrEmpty(entry.description)) Field("Mô tả IFC", entry.description);
+            if (!string.IsNullOrEmpty(entry.tag)) Field("Tag IFC", entry.tag);
+            if (!string.IsNullOrEmpty(entry.predefinedType)) Field("PredefinedType", entry.predefinedType);
+            Field("Bộ thuộc tính IFC", "Chưa có dữ liệu");
+        }
+        Field("Modeled", "", displayLabel: "THÔNG SỐ MÔ HÌNH MÔ PHỎNG", section: true);
+        Field("Lý trình", FormattableString.Invariant($"{entry.modeledStation:F3} m"));
+        var size = entry.modeledBounds;
+        Field("Bao hình học X/Y/Z", FormattableString.Invariant($"{size.x:F3} × {size.y:F3} × {size.z:F3} m"));
+    }
+
+    void RenderBridgeSource(BridgeBimEntry entry)
+    {
         bool simulated = controller.bridge.catalog.schema == "YTH-MODULAR-SIMULATION";
         Field("BridgeIFC", "", displayLabel: simulated ? "THÔNG SỐ MÔ HÌNH MÔ PHỎNG" : "DỮ LIỆU GỐC IFC", section: true);
         Field("AssetID", entry.assetId);
@@ -299,16 +359,6 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             if (entry.propertyLines.Length == 0) Field("Property Sets", "Chưa có dữ liệu");
         }
         foreach (string property in entry.propertyLines) Field(simulated ? "Mô phỏng" : "Thuộc tính IFC", property);
-        Field("BridgeUser", "", displayLabel: "DỮ LIỆU NGƯỜI DÙNG", section: true);
-        Field("BridgeTechnicalNote", controller.BridgeStore.TechnicalNote(entry.globalId), true, displayLabel: "Ghi chú kỹ thuật");
-        foreach (var parameter in controller.BridgeStore.Parameters(entry.globalId))
-        {
-            Field("BridgeParam:" + parameter.Name, parameter.Value, true, displayLabel: parameter.Name);
-            Field("BridgeUnit:" + parameter.Name, parameter.Unit, true, displayLabel: "Đơn vị · " + parameter.Name);
-        }
-        Field("BridgeNewName", "", true, displayLabel: "Tên thông số mới");
-        Field("BridgeNewValue", "", true, displayLabel: "Giá trị mới");
-        Field("BridgeNewUnit", "", true, displayLabel: "Đơn vị mới");
     }
 
     void RenderTechnical(string id)

@@ -1,0 +1,3261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1503934738054812599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302291245350909683, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6720952201131200192, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      propertyPath: m_Name
+      value: SO201_Sample_Detailed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6720952201131200192, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5041482295112486602}
+    - targetCorrespondingSourceObject: {fileID: 2656736883562187034, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1149894356787488101}
+    - targetCorrespondingSourceObject: {fileID: 2656736883562187034, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8672143615401801150}
+    - targetCorrespondingSourceObject: {fileID: 8853311998515309011, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4697921419929596569}
+    - targetCorrespondingSourceObject: {fileID: 8853311998515309011, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7158640993920284455}
+    - targetCorrespondingSourceObject: {fileID: 2108001916677091185, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7866164894712306973}
+    - targetCorrespondingSourceObject: {fileID: 2108001916677091185, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5658382955691130707}
+    - targetCorrespondingSourceObject: {fileID: 3963344779098618641, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8488403279215639303}
+    - targetCorrespondingSourceObject: {fileID: 3963344779098618641, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3091920181782471734}
+    - targetCorrespondingSourceObject: {fileID: 1948459669801919853, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5001033770736280369}
+    - targetCorrespondingSourceObject: {fileID: 1948459669801919853, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3729031932696083757}
+    - targetCorrespondingSourceObject: {fileID: 2638894162347871362, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2233257429634465719}
+    - targetCorrespondingSourceObject: {fileID: 2638894162347871362, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1664025236855226413}
+    - targetCorrespondingSourceObject: {fileID: 386721419440610963, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7839634284306714307}
+    - targetCorrespondingSourceObject: {fileID: 386721419440610963, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 645481597167157290}
+    - targetCorrespondingSourceObject: {fileID: 5984233956836587328, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4441521692215145360}
+    - targetCorrespondingSourceObject: {fileID: 5984233956836587328, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1481691709944077708}
+    - targetCorrespondingSourceObject: {fileID: 4686912130676867882, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8583658100104117943}
+    - targetCorrespondingSourceObject: {fileID: 4686912130676867882, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5230564274602504754}
+    - targetCorrespondingSourceObject: {fileID: 878564949360431632, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5719602181872855213}
+    - targetCorrespondingSourceObject: {fileID: 878564949360431632, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9017852444313029033}
+    - targetCorrespondingSourceObject: {fileID: 826677432248673350, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3700334772851944920}
+    - targetCorrespondingSourceObject: {fileID: 826677432248673350, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3919158199280473402}
+    - targetCorrespondingSourceObject: {fileID: 4968552582572703144, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8989836849253552598}
+    - targetCorrespondingSourceObject: {fileID: 4968552582572703144, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6889827459813236382}
+    - targetCorrespondingSourceObject: {fileID: 7140024187366557899, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5714390430259501263}
+    - targetCorrespondingSourceObject: {fileID: 7140024187366557899, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4900042461918905880}
+    - targetCorrespondingSourceObject: {fileID: 7121677194362194470, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8381515798114490963}
+    - targetCorrespondingSourceObject: {fileID: 7121677194362194470, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6206804673048527405}
+    - targetCorrespondingSourceObject: {fileID: 5068026809805619042, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8243561366155619775}
+    - targetCorrespondingSourceObject: {fileID: 5068026809805619042, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2326790037050003131}
+    - targetCorrespondingSourceObject: {fileID: 5936558861411260168, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3710683397762532902}
+    - targetCorrespondingSourceObject: {fileID: 5936558861411260168, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1617788847552455489}
+    - targetCorrespondingSourceObject: {fileID: 2338788643831619033, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8016012863584030861}
+    - targetCorrespondingSourceObject: {fileID: 2338788643831619033, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1894318248922773898}
+    - targetCorrespondingSourceObject: {fileID: 1444661769338346420, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3852902236880706353}
+    - targetCorrespondingSourceObject: {fileID: 1444661769338346420, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7658993603265157744}
+    - targetCorrespondingSourceObject: {fileID: 4818832224317872986, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9216273302781366659}
+    - targetCorrespondingSourceObject: {fileID: 4818832224317872986, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1433040801216159674}
+    - targetCorrespondingSourceObject: {fileID: 6646907361384114206, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3337430116356178835}
+    - targetCorrespondingSourceObject: {fileID: 6646907361384114206, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5349985232538969946}
+    - targetCorrespondingSourceObject: {fileID: 6131770794236485248, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 889179128279039570}
+    - targetCorrespondingSourceObject: {fileID: 6131770794236485248, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6575664222022502453}
+    - targetCorrespondingSourceObject: {fileID: 3756925581506770448, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3296034018711444392}
+    - targetCorrespondingSourceObject: {fileID: 3756925581506770448, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5542919319196350608}
+    - targetCorrespondingSourceObject: {fileID: 3971045700606504799, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6614080652241867051}
+    - targetCorrespondingSourceObject: {fileID: 3971045700606504799, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4137131734407762786}
+    - targetCorrespondingSourceObject: {fileID: 2152816450548421210, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7430504442842212968}
+    - targetCorrespondingSourceObject: {fileID: 2152816450548421210, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636606403993037673}
+    - targetCorrespondingSourceObject: {fileID: 7177224600584256667, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2672458458591377317}
+    - targetCorrespondingSourceObject: {fileID: 7177224600584256667, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6752667365440570911}
+    - targetCorrespondingSourceObject: {fileID: 1329997403831633131, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6764230189654179302}
+    - targetCorrespondingSourceObject: {fileID: 1329997403831633131, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 526271393327249204}
+    - targetCorrespondingSourceObject: {fileID: 4093619240330620203, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1564234694197267295}
+    - targetCorrespondingSourceObject: {fileID: 4093619240330620203, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8023144326521211184}
+    - targetCorrespondingSourceObject: {fileID: 1016398285175571014, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 625720355480918239}
+    - targetCorrespondingSourceObject: {fileID: 1016398285175571014, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2957716890794633196}
+    - targetCorrespondingSourceObject: {fileID: 8165566669845322156, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7284138846134104867}
+    - targetCorrespondingSourceObject: {fileID: 8165566669845322156, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2953755325899267615}
+    - targetCorrespondingSourceObject: {fileID: 850989625368983192, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1990824559977705163}
+    - targetCorrespondingSourceObject: {fileID: 850989625368983192, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2459893987204540391}
+    - targetCorrespondingSourceObject: {fileID: 4134695092377713178, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2636006954933254299}
+    - targetCorrespondingSourceObject: {fileID: 4134695092377713178, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1356876823275668898}
+    - targetCorrespondingSourceObject: {fileID: 5852700042076492388, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6953438485910239089}
+    - targetCorrespondingSourceObject: {fileID: 5852700042076492388, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7231736968657344476}
+    - targetCorrespondingSourceObject: {fileID: 4486443226231346006, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1442740892013062160}
+    - targetCorrespondingSourceObject: {fileID: 4486443226231346006, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4044061523632091566}
+    - targetCorrespondingSourceObject: {fileID: 8407589822463299297, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4359334992888826211}
+    - targetCorrespondingSourceObject: {fileID: 8407589822463299297, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146701817935597672}
+    - targetCorrespondingSourceObject: {fileID: 8381107551842738066, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2171012713092359353}
+    - targetCorrespondingSourceObject: {fileID: 8381107551842738066, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2209798894771818510}
+    - targetCorrespondingSourceObject: {fileID: 6104468897570913109, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1923477361297322107}
+    - targetCorrespondingSourceObject: {fileID: 6104468897570913109, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6737608779078638690}
+    - targetCorrespondingSourceObject: {fileID: 5511763515914398003, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3363460339308263133}
+    - targetCorrespondingSourceObject: {fileID: 5511763515914398003, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8040491145162128260}
+    - targetCorrespondingSourceObject: {fileID: 1962391810478032705, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6498059359913838729}
+    - targetCorrespondingSourceObject: {fileID: 1962391810478032705, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 488435377824357860}
+    - targetCorrespondingSourceObject: {fileID: 1946153911573306419, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5844069724920631705}
+    - targetCorrespondingSourceObject: {fileID: 1946153911573306419, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2365220175697777076}
+    - targetCorrespondingSourceObject: {fileID: 7455072791798270569, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7487008503499303276}
+    - targetCorrespondingSourceObject: {fileID: 7455072791798270569, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6817240634346376810}
+    - targetCorrespondingSourceObject: {fileID: 4977484549549971344, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 630175856828227880}
+    - targetCorrespondingSourceObject: {fileID: 4977484549549971344, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6917323180886581507}
+    - targetCorrespondingSourceObject: {fileID: 2740336541684973359, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8015814384307656472}
+    - targetCorrespondingSourceObject: {fileID: 2740336541684973359, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2874170226149469841}
+    - targetCorrespondingSourceObject: {fileID: 2393842728788532634, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4160469844386861695}
+    - targetCorrespondingSourceObject: {fileID: 2393842728788532634, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8858545174865978892}
+    - targetCorrespondingSourceObject: {fileID: 4866728830180810009, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4101619629160442010}
+    - targetCorrespondingSourceObject: {fileID: 4866728830180810009, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4896643628368691803}
+    - targetCorrespondingSourceObject: {fileID: 7623978761414323008, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6601720611074527866}
+    - targetCorrespondingSourceObject: {fileID: 7623978761414323008, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8689406436161369614}
+    - targetCorrespondingSourceObject: {fileID: 7285904352857721781, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3134165269237868195}
+    - targetCorrespondingSourceObject: {fileID: 7285904352857721781, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4277143276650164741}
+    - targetCorrespondingSourceObject: {fileID: 7703882842508105526, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5177081965958064632}
+    - targetCorrespondingSourceObject: {fileID: 7703882842508105526, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 180215287714620502}
+    - targetCorrespondingSourceObject: {fileID: 8044542028637089561, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7857995620260600850}
+    - targetCorrespondingSourceObject: {fileID: 8044542028637089561, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1779855638532503441}
+    - targetCorrespondingSourceObject: {fileID: 7403977138765390366, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7680371364715376028}
+    - targetCorrespondingSourceObject: {fileID: 7403977138765390366, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6506125580361648729}
+    - targetCorrespondingSourceObject: {fileID: 795188314928262354, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5335832971167459009}
+    - targetCorrespondingSourceObject: {fileID: 795188314928262354, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348278887937918860}
+    - targetCorrespondingSourceObject: {fileID: 33675133347838006, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7093059242869202862}
+    - targetCorrespondingSourceObject: {fileID: 33675133347838006, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6698496325717124190}
+    - targetCorrespondingSourceObject: {fileID: 8608880549475626668, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1841882763286882925}
+    - targetCorrespondingSourceObject: {fileID: 8608880549475626668, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4436590974572133892}
+    - targetCorrespondingSourceObject: {fileID: 3434348118215045873, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6416719612925734771}
+    - targetCorrespondingSourceObject: {fileID: 3434348118215045873, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3306941163166049681}
+    - targetCorrespondingSourceObject: {fileID: 3654263137810106951, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3760848411820950966}
+    - targetCorrespondingSourceObject: {fileID: 3654263137810106951, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7036912840068239096}
+    - targetCorrespondingSourceObject: {fileID: 6263337777034827067, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6815645734471021694}
+    - targetCorrespondingSourceObject: {fileID: 6263337777034827067, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7391016000878623488}
+    - targetCorrespondingSourceObject: {fileID: 4445638321553350157, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6029341805935191714}
+    - targetCorrespondingSourceObject: {fileID: 4445638321553350157, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 794671801328359057}
+    - targetCorrespondingSourceObject: {fileID: 3126884280723711302, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5231556541451194291}
+    - targetCorrespondingSourceObject: {fileID: 3126884280723711302, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7622993718364144912}
+    - targetCorrespondingSourceObject: {fileID: 3037218880348250329, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2118311372354517168}
+    - targetCorrespondingSourceObject: {fileID: 3037218880348250329, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8335697462503922253}
+    - targetCorrespondingSourceObject: {fileID: 7417716716686700184, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5546947380446257047}
+    - targetCorrespondingSourceObject: {fileID: 7417716716686700184, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7359472107660169176}
+    - targetCorrespondingSourceObject: {fileID: 141308172855498581, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6819330273997650020}
+    - targetCorrespondingSourceObject: {fileID: 141308172855498581, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 982210165823801490}
+  m_SourcePrefab: {fileID: 100100000, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+--- !u!23 &5429551720166627 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1498650339202656084, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &36116607044323400 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1467966159620807679, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &59519401486927875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1444661769338346420, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3852902236880706353
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59519401486927875}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: cb6415246a698004b91d1eea11b18653, type: 2}
+--- !u!114 &7658993603265157744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59519401486927875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GUARD-R
+  renderers:
+  - {fileID: 1025643028273842293}
+--- !u!23 &162518889866703981 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1629861871721588698, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &234317491585184008 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1702213502589526719, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &321057737498384057 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1201243815388366094, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &443619942942159413 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1366562462714306946, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &480219651346995036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1329997403831633131, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6764230189654179302
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480219651346995036}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 8086d7a25c5a1b84e80150fd769a4dc3, type: 2}
+--- !u!114 &526271393327249204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480219651346995036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-L-SHAFT
+  renderers:
+  - {fileID: 2649603768544298315}
+--- !u!23 &501547825387361326 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1309095835857176473, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &666351921538187757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2152816450548421210, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7430504442842212968
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666351921538187757}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5642476567527611157, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &1636606403993037673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666351921538187757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-L-FOUND
+  renderers:
+  - {fileID: 6813727758695966073}
+--- !u!1 &693040037566217414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2108001916677091185, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7866164894712306973
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693040037566217414}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1229583932984974900, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &5658382955691130707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693040037566217414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GIRDER-2
+  renderers:
+  - {fileID: 4091247998561722518}
+--- !u!23 &848198657225964093 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2241214275652299146, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1025643028273842293 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1937915956466473922, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1134262095852289305 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1973344030579732142, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1140920413012326106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1948459669801919853, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5001033770736280369
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140920413012326106}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7693590462237635694, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &3729031932696083757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140920413012326106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GIRDER-4
+  renderers:
+  - {fileID: 2590063965386585098}
+--- !u!1 &1143118288775073668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1946153911573306419, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5844069724920631705
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143118288775073668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6039673883223695483, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2365220175697777076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143118288775073668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-L-BLIND
+  renderers:
+  - {fileID: 1365412342195267744}
+--- !u!1 &1145282481252816118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1962391810478032705, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6498059359913838729
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145282481252816118}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5642476567527611157, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &488435377824357860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145282481252816118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-L-FOUND
+  renderers:
+  - {fileID: 321057737498384057}
+--- !u!1 &1261823424388025636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 386721419440610963, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7839634284306714307
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261823424388025636}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 2d6b07812c3430848a78623791e31434, type: 2}
+--- !u!114 &645481597167157290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261823424388025636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-CAP
+  renderers:
+  - {fileID: 2157558122559466357}
+--- !u!23 &1365412342195267744 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 445266919371258647, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1386739153529158143 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 567914543181441608, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1488633156194446209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 33675133347838006, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7093059242869202862
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488633156194446209}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3646855337454622061, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6698496325717124190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488633156194446209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-L-STEM
+  renderers:
+  - {fileID: 6838830721972501533}
+--- !u!1 &1524762755457467618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 141308172855498581, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6819330273997650020
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524762755457467618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 35728adb223af894bae0d54438f36b22, type: 2}
+--- !u!114 &982210165823801490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524762755457467618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-R-SHAFT
+  renderers:
+  - {fileID: 4671511357166032360}
+--- !u!1 &1796450850048852391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 878564949360431632, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5719602181872855213
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796450850048852391}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6654630414308982865, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &9017852444313029033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796450850048852391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-SLAB
+  renderers:
+  - {fileID: 3054696054702858608}
+--- !u!23 &1854919166352752889 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 964601046366524238, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1917393550493272958 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1028228001556748489, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1929216811112616433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1016398285175571014, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &625720355480918239
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929216811112616433}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8703729664364880960, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2957716890794633196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929216811112616433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-R-PLINTH-2
+  renderers:
+  - {fileID: 8049397067345250453}
+--- !u!23 &2027042949668253949 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 648109876635968330, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2117616964009081232 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 701512357280131623, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2157558122559466357 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 661504693046540482, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2227542153129027066 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 736019012103075405, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2238392519833003311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 850989625368983192, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1990824559977705163
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238392519833003311}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5642476567527611157, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2459893987204540391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238392519833003311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-R-FOUND
+  renderers:
+  - {fileID: 1134262095852289305}
+--- !u!23 &2270526596743993290 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 818963839597937789, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2271247178300346463 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 817996980475380712, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2281071096900040689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 826677432248673350, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3700334772851944920
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281071096900040689}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5020098778299551743, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &3919158199280473402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281071096900040689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GIRDER-1
+  renderers:
+  - {fileID: 1386739153529158143}
+--- !u!1 &2294055291684634469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 795188314928262354, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5335832971167459009
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294055291684634469}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8703729664364880960, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &1348278887937918860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294055291684634469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-L-PLINTH-2
+  renderers:
+  - {fileID: 6953604294636632635}
+--- !u!23 &2352137039869956967 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3781744413388849360, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2376857460358604199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3756925581506770448, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3296034018711444392
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376857460358604199}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8703729664364880960, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &5542919319196350608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376857460358604199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-L-PLINTH-2
+  renderers:
+  - {fileID: 2117616964009081232}
+--- !u!23 &2412836388381617004 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3864951890139674843, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2577450605121289448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3971045700606504799, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6614080652241867051
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577450605121289448}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3646855337454622061, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &4137131734407762786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577450605121289448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-L-STEM
+  renderers:
+  - {fileID: 4036126966557460455}
+--- !u!1 &2584975746509498534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3963344779098618641, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8488403279215639303
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584975746509498534}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8627552081257827488, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &3091920181782471734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584975746509498534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GIRDER-3
+  renderers:
+  - {fileID: 7832109629434337515}
+--- !u!23 &2590063965386585098 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3976341853867386813, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2649603768544298315 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3466157886776678140, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2767884576068557296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3654263137810106951, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3760848411820950966
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767884576068557296}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7f252473ab6348f42ab6d0214047a7ea, type: 2}
+--- !u!114 &7036912840068239096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767884576068557296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-L-SHAFT
+  renderers:
+  - {fileID: 8886606443698957128}
+--- !u!1 &2985069421714574778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4445638321553350157, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6029341805935191714
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2985069421714574778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8703729664364880960, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &794671801328359057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2985069421714574778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-R-PLINTH-2
+  renderers:
+  - {fileID: 8484946115182739057}
+--- !u!23 &3054696054702858608 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4520340024871973575, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3070330098350194913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4486443226231346006, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1442740892013062160
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3070330098350194913}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3640920368698619107, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &4044061523632091566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3070330098350194913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-DIAPHRAGM
+  renderers:
+  - {fileID: 8729075722697911464}
+--- !u!1 &3175171532150079132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4093619240330620203, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1564234694197267295
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3175171532150079132}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2204188599656750318, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &8023144326521211184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3175171532150079132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-R-PLINTH-1
+  renderers:
+  - {fileID: 8759015952072554185}
+--- !u!1 &3296195031191906733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4134695092377713178, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2636006954933254299
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296195031191906733}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6039673883223695483, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &1356876823275668898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296195031191906733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-R-BLIND
+  renderers:
+  - {fileID: 7378574324822968528}
+--- !u!23 &3398891169129415382 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4320154013087256929, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &3452251866398007453 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4267108304317428522, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3459235875966655149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2656736883562187034, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1149894356787488101
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459235875966655149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6654630414308982865, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &8672143615401801150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459235875966655149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-SLAB
+  renderers:
+  - {fileID: 8002483403976234271}
+--- !u!23 &3466318267859982314 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2649764424438334557, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3476832716622159669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2638894162347871362, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2233257429634465719
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476832716622159669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6741968679524883377, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &1664025236855226413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476832716622159669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GIRDER-5
+  renderers:
+  - {fileID: 5676006808284256164}
+--- !u!1 &3663868777709644952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2740336541684973359, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8015814384307656472
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663868777709644952}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8703729664364880960, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2874170226149469841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663868777709644952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-R-PLINTH-2
+  renderers:
+  - {fileID: 3452251866398007453}
+--- !u!1 &3794853660143226478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2338788643831619033, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8016012863584030861
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794853660143226478}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 130bda33418be8b4ea5d4f8e2c90fb72, type: 2}
+--- !u!114 &1894318248922773898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794853660143226478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GUARD-L
+  renderers:
+  - {fileID: 1854919166352752889}
+--- !u!1 &3884266624441060909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2393842728788532634, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4160469844386861695
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884266624441060909}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3646855337454622061, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &8858545174865978892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884266624441060909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-R-STEM
+  renderers:
+  - {fileID: 501547825387361326}
+--- !u!23 &4036126966557460455 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3232521005891638352, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4091247998561722518 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3177294819004003105, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4284697616712573254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3434348118215045873, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6416719612925734771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284697616712573254}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6039673883223695483, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &3306941163166049681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284697616712573254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-L-BLIND
+  renderers:
+  - {fileID: 9143324190276467893}
+--- !u!23 &4340455537908497589 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2946315119653105410, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4537749186269213550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3037218880348250329, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2118311372354517168
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537749186269213550}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5642476567527611157, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &8335697462503922253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537749186269213550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-R-FOUND
+  renderers:
+  - {fileID: 36116607044323400}
+--- !u!1 &4592510547004143345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3126884280723711302, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5231556541451194291
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592510547004143345}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3646855337454622061, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &7622993718364144912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592510547004143345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-R-STEM
+  renderers:
+  - {fileID: 6826643220850121254}
+--- !u!1 &4641067939175524578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6104468897570913109, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1923477361297322107
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4641067939175524578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8703729664364880960, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6737608779078638690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4641067939175524578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-L-PLINTH-2
+  renderers:
+  - {fileID: 8498500473854162055}
+--- !u!23 &4671511357166032360 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6056081979038041695, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4739864480466603319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6131770794236485248, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &889179128279039570
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739864480466603319}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2204188599656750318, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6575664222022502453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739864480466603319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-L-PLINTH-1
+  renderers:
+  - {fileID: 8019453658215877753}
+--- !u!1 &4770671186966382220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6263337777034827067, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6815645734471021694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770671186966382220}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2204188599656750318, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &7391016000878623488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770671186966382220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-R-PLINTH-1
+  renderers:
+  - {fileID: 2271247178300346463}
+--- !u!1 &5037270689879589331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5852700042076492388, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6953438485910239089
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5037270689879589331}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e1be17911853da143ab58099f2902f73, type: 2}
+--- !u!114 &7231736968657344476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5037270689879589331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-R-SHAFT
+  renderers:
+  - {fileID: 5782473503257418595}
+--- !u!1 &5097485963294999743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5936558861411260168, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3710683397762532902
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097485963294999743}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a6325c52b534e54468acfb7219558dd6, type: 2}
+--- !u!114 &1617788847552455489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097485963294999743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-CAP
+  renderers:
+  - {fileID: 8766337546667826914}
+--- !u!23 &5162973903147407854 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6015012242915199577, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5175561480949703927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5984233956836587328, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4441521692215145360
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175561480949703927}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1d5db803356bf0b4081da5c58131f576, type: 2}
+--- !u!114 &1481691709944077708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175561480949703927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GUARD-L
+  renderers:
+  - {fileID: 6892197929324075235}
+--- !u!23 &5177366513053259786 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5982680006657723325, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5251623408019061673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6646907361384114206, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3337430116356178835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251623408019061673}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 79bead9ac036e55468e21f287805e5eb, type: 2}
+--- !u!114 &5349985232538969946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251623408019061673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-HEAD
+  renderers:
+  - {fileID: 8378571374720476635}
+--- !u!1 &5303712898469502327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6720952201131200192, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5041482295112486602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5303712898469502327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb92a4089f23d8d4d8115418da67013f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimAdapter
+  catalog: {fileID: 11400000, guid: fc8ae925d2c4cb142b787fe3c61ab3d4, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: b7b30f51762529c4eb2e4043798fa9f8, type: 2}
+--- !u!23 &5576957453629849895 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6465579087811547792, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5676006808284256164 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6492561957875074067, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5727265008059623487 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6603501373357800328, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5777226148882214431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4968552582572703144, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8989836849253552598
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777226148882214431}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1229583932984974900, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6889827459813236382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777226148882214431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GIRDER-2
+  renderers:
+  - {fileID: 7856967706100187532}
+--- !u!23 &5782473503257418595 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4963096182766487764, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5894261377476543527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4977484549549971344, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &630175856828227880
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894261377476543527}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2204188599656750318, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6917323180886581507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894261377476543527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-R-PLINTH-1
+  renderers:
+  - {fileID: 5727265008059623487}
+--- !u!1 &5947622492938841301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5068026809805619042, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8243561366155619775
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947622492938841301}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6741968679524883377, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2326790037050003131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947622492938841301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GIRDER-5
+  renderers:
+  - {fileID: 2270526596743993290}
+--- !u!1 &6184653319661047965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4686912130676867882, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8583658100104117943
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184653319661047965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1fef6ec1861e2b54fa3372071d1fa5c2, type: 2}
+--- !u!114 &5230564274602504754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184653319661047965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GUARD-R
+  renderers:
+  - {fileID: 234317491585184008}
+--- !u!1 &6197202458994575597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4818832224317872986, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &9216273302781366659
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6197202458994575597}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3640920368698619107, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &1433040801216159674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6197202458994575597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-DIAPHRAGM
+  renderers:
+  - {fileID: 6747819122193718081}
+--- !u!1 &6292958848084135598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4866728830180810009, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4101619629160442010
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6292958848084135598}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5642476567527611157, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &4896643628368691803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6292958848084135598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-R-FOUND
+  renderers:
+  - {fileID: 2412836388381617004}
+--- !u!1 &6386872942028503684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5511763515914398003, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3363460339308263133
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386872942028503684}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3646855337454622061, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &8040491145162128260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386872942028503684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-L-STEM
+  renderers:
+  - {fileID: 2352137039869956967}
+--- !u!23 &6406806075484615335 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5491718096847872272, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6747819122193718081 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5294576268259444982, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6813727758695966073 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5354839221828466382, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6826643220850121254 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5359872319415716241, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6838830721972501533 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5347854011952426922, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6892197929324075235 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5438392511954144084, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6949844537170582870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8407589822463299297, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4359334992888826211
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949844537170582870}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 43425f7b54747ef4ea5f546658132fa7, type: 2}
+--- !u!114 &1146701817935597672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949844537170582870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-HEAD
+  renderers:
+  - {fileID: 6406806075484615335}
+--- !u!23 &6953604294636632635 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8385463837806225804, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6958237641440398373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8381107551842738066, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2171012713092359353
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958237641440398373}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2204188599656750318, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2209798894771818510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958237641440398373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-L-PLINTH-1
+  renderers:
+  - {fileID: 5177366513053259786}
+--- !u!1 &7180971542994697499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8608880549475626668, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1841882763286882925
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180971542994697499}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5642476567527611157, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &4436590974572133892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180971542994697499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-L-FOUND
+  renderers:
+  - {fileID: 5429551720166627}
+--- !u!1 &7318040649054734875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8165566669845322156, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7284138846134104867
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318040649054734875}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3646855337454622061, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &2953755325899267615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318040649054734875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-R-STEM
+  renderers:
+  - {fileID: 8060742063994506309}
+--- !u!23 &7378574324822968528 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8267195959000472423, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7832109629434337515 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8677929173885979484, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7856967706100187532 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8779347654446535227, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7926974117580241508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8853311998515309011, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4697921419929596569
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926974117580241508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5020098778299551743, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &7158640993920284455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926974117580241508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B32-GIRDER-1
+  renderers:
+  - {fileID: 2227542153129027066}
+--- !u!23 &8002483403976234271 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8922058489532434088, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8019453658215877753 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8905268144215072718, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8049397067345250453 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8892990031926385442, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8060742063994506309 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8863803825963769842, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8197597803492284418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7285904352857721781, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3134165269237868195
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197597803492284418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 44e20356209d6c64497779fc9ea5cb16, type: 2}
+--- !u!114 &4277143276650164741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197597803492284418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-R-SHAFT
+  renderers:
+  - {fileID: 5162973903147407854}
+--- !u!1 &8223354493683233193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7403977138765390366, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7680371364715376028
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8223354493683233193}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2204188599656750318, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6506125580361648729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8223354493683233193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-L-PLINTH-1
+  renderers:
+  - {fileID: 4340455537908497589}
+--- !u!1 &8227525253806882095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7417716716686700184, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5546947380446257047
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8227525253806882095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6039673883223695483, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &7359472107660169176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8227525253806882095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-R-BLIND
+  renderers:
+  - {fileID: 443619942942159413}
+--- !u!1 &8334669333421644254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7455072791798270569, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7487008503499303276
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334669333421644254}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 583f601fc668b1f4e99411937ac8c322, type: 2}
+--- !u!114 &6817240634346376810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334669333421644254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-L-SHAFT
+  renderers:
+  - {fileID: 3398891169129415382}
+--- !u!23 &8378571374720476635 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6960778227331167852, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8484946115182739057 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6998480727179046342, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8498500473854162055 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7003011153872840496, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8505693310115191185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7121677194362194470, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8381515798114490963
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505693310115191185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7693590462237635694, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6206804673048527405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505693310115191185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GIRDER-4
+  renderers:
+  - {fileID: 2027042949668253949}
+--- !u!1 &8594437171373698860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7177224600584256667, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2672458458591377317
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594437171373698860}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6039673883223695483, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &6752667365440570911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594437171373698860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P31-L-BLIND
+  renderers:
+  - {fileID: 5576957453629849895}
+--- !u!1 &8631564877524032380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140024187366557899, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5714390430259501263
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631564877524032380}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8627552081257827488, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &4900042461918905880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631564877524032380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-B33-GIRDER-3
+  renderers:
+  - {fileID: 1917393550493272958}
+--- !u!23 &8729075722697911464 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7925460897819377439, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8759015952072554185 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7877158814580155774, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8766337546667826914 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7887849277872835925, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8886606443698957128 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8037972982707992831, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8898260705644231854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8044542028637089561, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7857995620260600850
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898260705644231854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 500e56ab81f863348bf7bda4c8b30455, type: 2}
+--- !u!114 &1779855638532503441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898260705644231854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-HEAD
+  renderers:
+  - {fileID: 848198657225964093}
+--- !u!1 &9012508689723668727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7623978761414323008, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6601720611074527866
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012508689723668727}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6039673883223695483, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &8689406436161369614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012508689723668727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P32-R-BLIND
+  renderers:
+  - {fileID: 3466318267859982314}
+--- !u!1 &9094663264927515777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7703882842508105526, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5177081965958064632
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094663264927515777}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3640920368698619107, guid: 92646493350f53546ae3c3506ad1aba9, type: 3}
+--- !u!114 &180215287714620502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094663264927515777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667befaef4fb3c643a905599872ced79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimIdentity
+  globalId: YTH-SO201-P33-DIAPHRAGM
+  renderers:
+  - {fileID: 162518889866703981}
+--- !u!23 &9143324190276467893 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7655152093867192066, guid: 9cd01b0751f577d4ca3067cf8732a0ac, type: 3}
+  m_PrefabInstance: {fileID: 1503934738054812599}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,90 @@
+{
+  "result": "[BridgeYTH] Result,25.00,5169.73,5464.84,missingFrames=0,overhead=True,right=True,cabin=True,bridgeLoaded=False\n",
+  "cadence": {
+    "cabin-entry": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 9.19999999999709,
+      "p99": 9.5,
+      "max": 9.5
+    },
+    "overhead-middle": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.5,
+      "p99": 9,
+      "max": 9
+    },
+    "outside-middle": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 9.19999999999709,
+      "p99": 9.39999999999418,
+      "max": 9.39999999999418
+    },
+    "cabin-middle": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.60000000000582,
+      "max": 8.60000000000582
+    },
+    "cabin-exit": {
+      "frames": 72,
+      "median": 8.30000000000291,
+      "p95": 8.400000000008731,
+      "p99": 8.5,
+      "max": 8.5
+    }
+  },
+  "browser": {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002487) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "canvas": [
+      1280,
+      720
+    ]
+  },
+  "events": [
+    "[BridgeYTH] DriveStart,25.00\n",
+    "[RailwayStreaming] Loaded Zone_017\n",
+    "[BridgeYTH] ZoneAdded,2954.62\n",
+    "[BridgeYTH] Structure,2955.23,129,507129,491794,7,582,9338.4990,-4.0865,-1273.5760,1095.0330,28.1271,281.4209,2.00\n",
+    "[RailwayStreaming] Loaded Zone_019\n",
+    "[BridgeYTH] Sample,3400.10,200.00,129,545,655001350,9.00\n",
+    "[BridgeYTH] Sample,3500.09,200.00,129,609,655869566,9.00\n",
+    "[BridgeYTH] Sample,3600.07,200.00,129,673,661124911,9.00\n",
+    "[BridgeYTH] Camera,cabin-entry,3675.12,-1,117,452231\n",
+    "[BridgeYTH] Sample,3700.06,200.00,129,711,660846307,9.00\n",
+    "[BridgeYTH] Sample,3800.04,200.00,129,677,661034999,9.00\n",
+    "[BridgeYTH] Sample,3900.03,200.00,129,625,660651971,9.00\n",
+    "[BridgeYTH] Exterior overhead camera\n",
+    "[BridgeYTH] Sample,4000.07,200.00,129,202,655732454,10.00\n",
+    "[BridgeYTH] Camera,overhead-middle,4055.07,0,19,50208\n",
+    "[BridgeYTH] Sample,4100.01,200.00,129,204,656218594,9.00\n",
+    "[BridgeYTH] Sample,4200.43,200.00,129,214,664173265,8.00\n",
+    "[BridgeYTH] Exterior right camera\n",
+    "[BridgeYTH] Camera,outside-middle,4275.42,1,60,230250\n",
+    "[BridgeYTH] Sample,4300.47,200.00,129,471,665599813,9.00\n",
+    "[BridgeYTH] Sample,4400.40,200.00,129,411,665559521,8.00\n",
+    "[BridgeYTH] Sample,4500.44,200.00,129,357,665587685,9.00\n",
+    "[BridgeYTH] Restored cabin camera\n",
+    "[BridgeYTH] Camera,cabin-middle,4535.10,-1,26,99775\n",
+    "[BridgeYTH] Sample,4600.37,200.00,129,259,665028429,8.00\n",
+    "[BridgeYTH] Camera,cabin-exit,4685.08,-1,10,38375\n",
+    "[BridgeYTH] Sample,4700.36,200.00,129,239,674754069,8.00\n",
+    "[BridgeYTH] Sample,4800.34,200.00,129,169,670328956,8.00\n",
+    "[BridgeYTH] Sample,4900.33,200.00,129,166,670364164,8.00\n",
+    "[BridgeYTH] Sample,5000.31,200.00,129,154,670733524,8.00\n",
+    "[BridgeYTH] Sample,5100.29,200.00,129,147,670706252,8.00\n",
+    "[RailwayStreaming] Unloaded Zone_017\n",
+    "[BridgeYTH] ZoneRemoved,5180.84\n",
+    "[RailwayStreaming] Unloaded Zone_019\n",
+    "[BridgeYTH] Performance,cabin-entry,3700,108,8.000,9.000,10.000,709,1798188,653393239,8300001\n",
+    "[BridgeYTH] Performance,overhead-middle,4080,108,8.000,9.000,9.000,209,464276,648519454,8300001\n",
+    "[BridgeYTH] Performance,outside-middle,4300,107,8.000,9.000,10.000,470,1633166,658402993,8300000\n",
+    "[BridgeYTH] Performance,cabin-middle,4560,108,8.000,9.000,10.000,282,1398750,657562333,8300001\n",
+    "[BridgeYTH] Performance,cabin-exit,4710,108,8.000,9.000,9.000,232,1373633,667206283,8300001\n",
+    "[BridgeYTH] Result,25.00,5169.73,5464.84,missingFrames=0,overhead=True,right=True,cabin=True,bridgeLoaded=False\n"
+  ]
+}
