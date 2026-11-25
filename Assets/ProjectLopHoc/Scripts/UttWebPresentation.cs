@@ -66,6 +66,19 @@ public static class UttWebPresentation
                 if (scaler == null) scaler = canvas.gameObject.AddComponent<CanvasScaler>();
                 scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
                 scaler.referenceResolution = new Vector2(1920, 1080);
+                // Co giãn theo cả chiều ngang lẫn chiều dọc: cửa sổ rộng không làm ô nhập/nút to quá khổ
+                scaler.matchWidthOrHeight = 0.5f;
+                // Ảnh nền phủ kín nhưng GIỮ TỈ LỆ (cắt bớt mép thừa), không bị kéo ngang khi cửa sổ rộng
+                foreach (var image in canvas.GetComponentsInChildren<Image>(true))
+                {
+                    var rect = image.rectTransform;
+                    if (image.sprite == null || image.sprite.rect.height <= 0f || image.sprite.rect.width < 512f) continue;
+                    if (rect.anchorMin != Vector2.zero || rect.anchorMax != Vector2.one) continue;
+                    var fitter = image.GetComponent<AspectRatioFitter>();
+                    if (fitter == null) fitter = image.gameObject.AddComponent<AspectRatioFitter>();
+                    fitter.aspectRatio = image.sprite.rect.width / image.sprite.rect.height;
+                    fitter.aspectMode = AspectRatioFitter.AspectMode.EnvelopeParent;
+                }
             }
         }
 

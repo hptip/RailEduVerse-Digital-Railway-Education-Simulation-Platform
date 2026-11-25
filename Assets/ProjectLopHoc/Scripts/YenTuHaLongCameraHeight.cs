@@ -6,6 +6,9 @@ public sealed class YenTuHaLongCameraHeight : MonoBehaviour
 {
     [SerializeField, Range(0.5f, 1f)] private float standingHeightMultiplier = 0.53333336f;
 
+    /// <summary>Tỉ lệ chiều cao người đứng trong scene này (dùng cho model góc nhìn thứ ba trên Web).</summary>
+    public float StandingHeightMultiplier => standingHeightMultiplier;
+
     private XROrigin _xrOrigin;
     private float _originalCameraYOffset;
     private float _originalCameraOffsetLocalY;

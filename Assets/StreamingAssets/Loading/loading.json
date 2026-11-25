@@ -1,0 +1,44 @@
+{
+  "_huong_dan": "Đặt ảnh (JPG/WebP, khoảng 1920x1080, dưới 300 KB) vào cùng thư mục này rồi ghi tên file vào 'image'. Không có ảnh thì dùng màu 'color'. Sửa file này không cần build lại: chép đè vào Vuilds/StreamingAssets/Loading/.",
+  "shift": 0,
+  "_shift_huong_dan": "Đẩy ảnh lên cao bao nhiêu % chiều cao màn hình (0 = ảnh đầy đủ, mặc định; 10–20 = đẩy ảnh lên cao, cắt bớt phía trên). Có thể ghi riêng cho từng scene.",
+  "Classroom": {
+    "title": "Lớp học",
+    "image": "quanly.png",
+    "color": "linear-gradient(180deg,#D7CBB4 0%,#8C7A62 55%,#0B1630 100%)"
+  },
+  "UTTCampus": {
+    "title": "Khuôn viên UTT",
+    "image": "campus.jpg",
+    "color": "linear-gradient(180deg,#86B3E6 0%,#6F8F72 55%,#0B1630 100%)"
+  },
+  "Showroom": {
+    "title": "Phòng trưng bày",
+    "image": "showroom.jpg",
+    "color": "linear-gradient(180deg,#5A6E8C 0%,#252F45 55%,#0B1630 100%)"
+  },
+  "YenTuHaLongXanh": {
+    "title": "Yên Tử – Hạ Long",
+    "image": "yentu.jpg",
+    "color": "linear-gradient(180deg,#9CC3E8 0%,#3F6B4E 55%,#0B1630 100%)"
+  },
+  "QuanLyVongDoiTaiSan": {
+    "title": "Quản lý vòng đời tài sản",
+    "image": "quanly.png",
+    "color": "linear-gradient(180deg,#3E6FB8 0%,#24497E 55%,#0B1630 100%)",
+    "tips": [
+      "Scene này cần nạp dữ liệu tài sản nên lần đầu sẽ lâu hơn một chút.",
+      "Dùng ô tìm kiếm để tra nhanh cấu kiện theo mã."
+    ]
+  },
+  "Login": {
+    "title": "Đăng nhập",
+    "color": "linear-gradient(180deg,#3E6FB8 0%,#24497E 55%,#0B1630 100%)"
+  },
+  "tips": [
+    "Bấm <b>E</b> để mở menu: cá nhân, chuyển khu vực, cài đặt.",
+    "Bấm <b>V</b> để đổi góc nhìn: chuột tự do, thứ nhất, thứ ba.",
+    "Máy chạy chậm? Mở menu <b>E</b> → Cài đặt → Chất lượng đồ họa = Thấp.",
+    "Bấm <b>H</b> để ẩn hoặc hiện bảng phím ở viền phải màn hình."
+  ]
+}

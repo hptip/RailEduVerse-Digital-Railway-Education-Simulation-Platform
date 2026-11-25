@@ -27,6 +27,15 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     public float mouseSensitivity = 1.5f;
     public float eyeHeight = 1.65f;
 
+    [Header("Web – góc nhìn thứ ba")]
+    [Tooltip("Model người hiện khi ở góc nhìn thứ ba (bản Web).")]
+    [SerializeField] private GameObject webAvatarPrefab;
+    [SerializeField] private RuntimeAnimatorController webAvatarController;
+    [SerializeField, Min(0.5f)] private float thirdPersonDistance = 3f;
+    private UttWebAvatar _webAvatar;
+    private float _thirdPersonCamOffset;
+    private static readonly RaycastHit[] CameraHits = new RaycastHit[16];
+
     private float _verticalRotation = 0f;
     private float _horizontalRotation = 0f;
     private bool _xrMode;
@@ -463,11 +472,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             if (_mainCamera == null) return;
         }
 
-        Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
-#if ENABLE_INPUT_SYSTEM
-        if (UttWebPresentation.Active && Mouse.current != null)
-            ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-#endif
+        Ray ray = BuildViewRay();
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
             TrainSeatInteractable seat = hit.collider.GetComponentInParent<TrainSeatInteractable>();
@@ -679,14 +684,27 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     {
 #if ENABLE_INPUT_SYSTEM
         if (UttWebPresentation.Active)
+        {
+            if (UttProfilePanel.IsOpen) return false;
+            // Góc nhìn thứ nhất / thứ ba (khóa chuột): di chuyển chuột là xoay góc nhìn.
+            if (UttWebView.MouseLookActive)
+                return !SceneQuickMenu.IsOpen && Cursor.lockState == CursorLockMode.Locked;
+            // Chuột tự do: giữ chuột phải để xoay.
             return !SceneQuickMenu.IsOpen && !UttWebPresentation.PointerOverUi && Mouse.current?.rightButton.isPressed == true;
+        }
 #endif
         return Cursor.lockState == CursorLockMode.Locked;
     }
 
     private void HandleRaycastInteraction()
     {
-        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi))
+        bool webFirstPerson = UttWebPresentation.Active && UttWebView.MouseLookActive;
+        if (webFirstPerson && (SceneQuickMenu.IsOpen || Cursor.lockState != CursorLockMode.Locked))
+        {
+            ClearCurrentHover();
+            return;
+        }
+        if (UttWebPresentation.Active && !webFirstPerson && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi))
         {
             ClearCurrentHover();
             return;
@@ -697,11 +715,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             if (_mainCamera == null) return;
         }
 
-        Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
-#if ENABLE_INPUT_SYSTEM
-        if (UttWebPresentation.Active && Mouse.current != null)
-            ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-#endif
+        Ray ray = BuildViewRay();
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
@@ -716,7 +730,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                     _currentHoveredObject.OnHoverEnter();
                 }
 
-                if (WasMousePressedThisFrame() || WasKeyPressedThisFrame(KeyCode.E))
+                if ((WasMousePressedThisFrame() && UttWebView.LockClickFrame != Time.frameCount) || (!UttWebPresentation.Active && WasKeyPressedThisFrame(KeyCode.E)))
                 {
                     target.OnInteract();
                 }
@@ -724,7 +738,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                 return;
             }
 
-            if (UttWebPresentation.Active && WasMousePressedThisFrame())
+            if (UttWebPresentation.Active && WasMousePressedThisFrame() && UttWebView.LockClickFrame != Time.frameCount)
             {
                 var seat = hit.collider.GetComponentInParent<TrainSeatInteractable>();
                 if (seat != null) seat.RequestOccupy(this);
@@ -932,7 +946,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             Vector3 forward = _mainCamera != null ? Vector3.ProjectOnPlane(_mainCamera.transform.forward, Vector3.up).normalized : transform.forward;
             Vector3 right = Vector3.Cross(Vector3.up, forward).normalized;
             Vector3 xrMoveDirection = forward * _xrMove.y + right * _xrMove.x;
-            _ncc.Move(xrMoveDirection * xrMoveSpeed * Runner.DeltaTime);
+            MoveCharacter(xrMoveDirection * xrMoveSpeed * Runner.DeltaTime);
             if (_jumpRequested)
             {
                 _ncc.Jump();
@@ -942,7 +956,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         }
 
         if (!DesktopLookActive() && !UttWebPresentation.Active) return;
-        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>()?.isFocused == true)) return;
+        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttProfilePanel.IsOpen || UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>()?.isFocused == true)) return;
 
         if (_trainRoot != null)
         {
@@ -958,13 +972,85 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         float moveVertical = keyboardMove.y;
 
         Vector3 moveDirection = (transform.forward * moveVertical + transform.right * moveHorizontal).normalized;
-        _ncc.Move(moveDirection * moveSpeed * Runner.DeltaTime);
+        MoveCharacter(moveDirection * moveSpeed * Runner.DeltaTime);
 
         if (_jumpRequested)
         {
             _ncc.Jump();
             _jumpRequested = false;
         }
+    }
+
+    /// <summary>
+    /// NetworkCharacterController tính vận tốc = quãng dịch trong tick × TickRate. Khi CharacterController
+    /// bị đẩy ra khỏi collider (spawn lún vào sàn, chạm mép bậc) chỉ vài cm cũng thành cú bật lên rất mạnh
+    /// rồi rơi xuống. Không cho vận tốc đi lên vượt quá lực nhảy thật.
+    /// </summary>
+    private void MoveCharacter(Vector3 motion)
+    {
+        _ncc.Move(motion);
+        Vector3 velocity = _ncc.Velocity;
+        if (velocity.y > _ncc.jumpImpulse + 0.5f)
+        {
+            velocity.y = 0f;
+            _ncc.Velocity = velocity;
+        }
+    }
+
+    // ---------- Web: góc nhìn thứ ba ----------
+
+    /// <summary>Tia ngắm: theo con trỏ (chuột tự do) hoặc tâm màn hình (góc nhìn 1/3).</summary>
+    private Ray BuildViewRay()
+    {
+        Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
+#if ENABLE_INPUT_SYSTEM
+        if (UttWebPresentation.Active && !UttWebView.MouseLookActive && Mouse.current != null)
+            return _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
+#endif
+        // Góc nhìn thứ ba: bắt đầu tia từ ngang đầu nhân vật để không trúng chính mình
+        // và giữ nguyên tầm tương tác như góc nhìn thứ nhất.
+        if (_thirdPersonCamOffset > 0f)
+            ray.origin += ray.direction * _thirdPersonCamOffset;
+        return ray;
+    }
+
+    private void PlaceThirdPersonCamera(Vector3 head, Quaternion lookRotation)
+    {
+        // Camera đặt sau vai phải, lùi lại thirdPersonDistance, tự kéo gần khi bị tường che.
+        // Scene thu nhỏ (tầm mắt bị hạ, ví dụ Yên Tử – Hạ Long): camera lùi và lệch vai theo cùng tỉ lệ.
+        float scale = Mathf.Clamp(eyeHeight / 1.65f, 0.4f, 1f);
+        Vector3 shoulder = lookRotation * (new Vector3(0.4f, 0.15f, 0f) * scale);
+        float shoulderLength = shoulder.magnitude;
+        Vector3 shoulderDir = shoulder / shoulderLength;
+        Vector3 pivot = head + shoulderDir * CameraClearDistance(head, shoulderDir, shoulderLength);
+
+        Vector3 back = lookRotation * Vector3.back;
+        float distance = CameraClearDistance(pivot, back, thirdPersonDistance * scale);
+        _mainCamera.transform.SetPositionAndRotation(pivot + back * distance, lookRotation);
+        _thirdPersonCamOffset = distance;
+    }
+
+    private float CameraClearDistance(Vector3 origin, Vector3 direction, float maxDistance)
+    {
+        const float radius = 0.2f;
+        int count = Physics.SphereCastNonAlloc(origin, radius, direction, CameraHits, maxDistance, ~0, QueryTriggerInteraction.Ignore);
+        float clear = maxDistance;
+        for (int i = 0; i < count; i++)
+        {
+            var hit = CameraHits[i];
+            if (hit.collider == null || hit.distance <= 0f) continue;
+            if (hit.collider.transform.IsChildOf(transform)) continue;
+            if (hit.distance < clear) clear = hit.distance;
+        }
+        return Mathf.Max(0f, clear);
+    }
+
+    private void UpdateWebAvatar()
+    {
+        bool show = UttWebPresentation.Active && !isDriving && UttWebView.ThirdPersonActive;
+        if (show && _webAvatar == null && webAvatarPrefab != null)
+            _webAvatar = UttWebAvatar.Create(transform, webAvatarPrefab, webAvatarController, moveSpeed);
+        if (_webAvatar != null) _webAvatar.SetVisible(show);
     }
 
     private static Vector2 ReadMouseDelta()
@@ -1068,21 +1154,28 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                     _mainCamera.transform.position = view != null ? view.position : mount.position + new Vector3(0f, 1.15f, 0f);
                     Quaternion cabinBaseRot = view != null ? view.rotation : mount.rotation;
                     _mainCamera.transform.rotation = cabinBaseRot * Quaternion.Euler(_verticalRotation, _horizontalRotation, 0f);
+                    _thirdPersonCamOffset = 0f;
                 }
                 else
                 {
-                    _mainCamera.transform.position = transform.position + new Vector3(0f, eyeHeight, 0f);
+                    Vector3 head = transform.position + new Vector3(0f, eyeHeight, 0f);
+                    Quaternion lookRotation = _trainRoot != null
+                        ? transform.rotation * Quaternion.Euler(_verticalRotation, 0f, 0f)
+                        : Quaternion.Euler(_verticalRotation, _horizontalRotation, 0f);
 
-                    if (_trainRoot != null)
+                    if (UttWebView.ThirdPersonActive)
                     {
-                        _mainCamera.transform.rotation = transform.rotation * Quaternion.Euler(_verticalRotation, 0f, 0f);
+                        PlaceThirdPersonCamera(head, lookRotation);
                     }
                     else
                     {
-                        _mainCamera.transform.rotation = Quaternion.Euler(_verticalRotation, _horizontalRotation, 0f);
+                        _mainCamera.transform.SetPositionAndRotation(head, lookRotation);
+                        _thirdPersonCamOffset = 0f;
                     }
                 }
             }
+
+            if (!_xrMode) UpdateWebAvatar();
         }
 
         if (nameplateObject != null)
