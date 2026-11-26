@@ -60,9 +60,6 @@ public class AIChatbotUIController : MonoBehaviour
     public bool IsBusy => _busy;
     public bool IsVoiceOperationLocked => _voiceOperationLocked;
 
-    CursorLockMode _prevLock;
-    bool _prevVisible;
-    bool _crosshairWasActive;
     readonly List<Behaviour> _disabled = new List<Behaviour>();
     bool _busy;
     bool _voiceOperationLocked;
@@ -108,38 +105,22 @@ public class AIChatbotUIController : MonoBehaviour
         else if (!typing && ChatbotInputController.TogglePressed()) Close();
     }
 
-    void LateUpdate()
-    {
-        // Giữ chuột mở dù script khác cố khóa lại
-        if (IsOpen)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-    }
-
     // ---------- Mở / đóng ----------
     public void Open()
     {
         if (IsOpen) return;
         IsOpen = true;
-        _prevLock = Cursor.lockState;
-        _prevVisible = Cursor.visible;
 
         panel.SetActive(true);
         if (!_busy) SetStatusText("Sẵn sàng");
 
-        if (crosshair == null) crosshair = GameObject.Find("Crosshair");
-        _crosshairWasActive = crosshair != null && crosshair.activeSelf;
-        if (crosshair != null) crosshair.SetActive(false);
 
         _disabled.Clear();
         if (behavioursToDisable != null)
             foreach (var b in behavioursToDisable)
                 if (b != null && b.enabled) { b.enabled = false; _disabled.Add(b); }
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        UttDesktopCursor.SetModal(panel, true);
 
         StartCoroutine(FocusNextFrame());
         StartCoroutine(ScrollToBottom());
@@ -156,10 +137,8 @@ public class AIChatbotUIController : MonoBehaviour
         foreach (var b in _disabled) if (b != null) b.enabled = true;
         _disabled.Clear();
 
-        if (crosshair != null && _crosshairWasActive) crosshair.SetActive(true);
 
-        Cursor.lockState = _prevLock;
-        Cursor.visible = _prevVisible;
+        UttDesktopCursor.SetModal(panel, false);
         if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
         onClosed.Invoke();
     }

@@ -1,0 +1,1610 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71721005f749fec4ead195cdc0bafa70, type: 3}
+  m_Name: SO201 Original Railway Layout
+  m_EditorClassIdentifier: Assembly-CSharp::UttVr.BridgePilot.BridgeBimCatalog
+  schema: IFC4X3_ADD2
+  sourceSha256: f967e72ea1e7648a5d2bf82db806e4ab2f24397177ed2d6e9b795288f0aa261d
+  modeledScale: 2.4
+  modeledZone: Zone_018
+  modeledForward: {x: -0.99351376, y: 0, z: 0.11371204}
+  entries:
+  - globalId: 14crmQueRWZ3ioX1wUBIpL
+    assetId: 
+    parentGlobalId: 
+    ifcClass: IfcProject
+    name: Demo Bridge SO 201
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 1dCXOsbB31t8Rtv0c$j1$a
+    assetId: 
+    parentGlobalId: 14crmQueRWZ3ioX1wUBIpL
+    ifcClass: IfcSite
+    name: Site
+    description: 
+    predefinedType: 
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 11_QvFtKEbPmta5DWSknqV
+    assetId: 
+    parentGlobalId: 1dCXOsbB31t8Rtv0c$j1$a
+    ifcClass: IfcBridge
+    name: Bridge SO 201
+    description: 
+    predefinedType: GIRDER
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 0g8y805UM2w5TGsj6dPqW9
+    assetId: 
+    parentGlobalId: 11_QvFtKEbPmta5DWSknqV
+    ifcClass: IfcBridgePart
+    name: Foundations
+    description: 
+    predefinedType: FOUNDATION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    assetId: 
+    parentGlobalId: 0g8y805UM2w5TGsj6dPqW9
+    ifcClass: IfcBridgePart
+    name: Foundation O1
+    description: 
+    predefinedType: FOUNDATION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 2a4OvdgikJUy3uDSyU4yWd
+    assetId: BRIDGE-SO201-2a4OvdgikJUy3uDSyU4yWd
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 1
+    description: 
+    predefinedType: BORED
+    tag: 68de5a7c-d8ed-47dd-80eb-81a06cf3bbec
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3877.3484
+    modeledBounds: {x: 2.8799849, y: 28.800009, z: 2.8799744}
+  - globalId: 0Kp1KG1q2H6xwjLCKODn1i
+    assetId: BRIDGE-SO201-0Kp1KG1q2H6xwjLCKODn1i
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 2
+    description: 
+    predefinedType: BORED
+    tag: da2e65de-c840-4d88-8b01-83250f6b6e4b
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3880.8284
+    modeledBounds: {x: 2.8799837, y: 28.800009, z: 2.8799927}
+  - globalId: 0_aM_11Zcyc8m$$61lV1Dz
+    assetId: BRIDGE-SO201-0_aM_11Zcyc8m$$61lV1Dz
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 3
+    description: 
+    predefinedType: BORED
+    tag: b43ccfb0-de78-47bf-b185-68bc5abd2dcd
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3880.8284
+    modeledBounds: {x: 2.8799844, y: 28.800005, z: 2.8799562}
+  - globalId: 1XHyI4eM6NrIJN28uH9AEQ
+    assetId: BRIDGE-SO201-1XHyI4eM6NrIJN28uH9AEQ
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 4
+    description: 
+    predefinedType: BORED
+    tag: 64b71ab9-6e5a-4ff5-b286-9b77535f1b86
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3877.3484
+    modeledBounds: {x: 2.8799837, y: 28.800009, z: 2.8799927}
+  - globalId: 1fyAxUxs4bEDupYhVyQL5e
+    assetId: BRIDGE-SO201-1fyAxUxs4bEDupYhVyQL5e
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 5
+    description: 
+    predefinedType: BORED
+    tag: a2000f7d-1979-4cfb-af7e-f5cc2f175ebe
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3880.8281
+    modeledBounds: {x: 2.8799837, y: 28.800009, z: 2.8799562}
+  - globalId: 3bdbo8NLsd1BoB5Ae7kYGn
+    assetId: BRIDGE-SO201-3bdbo8NLsd1BoB5Ae7kYGn
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 6
+    description: 
+    predefinedType: BORED
+    tag: bc42e40f-9ceb-4f7d-82b0-5c7ec1769275
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3872.0684
+    modeledBounds: {x: 2.8799837, y: 28.800005, z: 2.8799744}
+  - globalId: 1p_t3_CvEaBc646XMc4rVY
+    assetId: BRIDGE-SO201-1p_t3_CvEaBc646XMc4rVY
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcPile
+    name: Piles O1 7
+    description: 
+    predefinedType: BORED
+    tag: 08c21140-f794-4141-8930-c0716b50adce
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3872.0684
+    modeledBounds: {x: 2.8799887, y: 28.800009, z: 2.8800294}
+  - globalId: 2gImNpnGyqpWl$gbNtpzMj
+    assetId: BRIDGE-SO201-2gImNpnGyqpWl$gbNtpzMj
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcFooting
+    name: Pile cap O1
+    description: 
+    predefinedType: PILE_CAP
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3876.2683
+    modeledBounds: {x: 25.440086, y: 1.9200028, z: 13.200074}
+  - globalId: 2AWKmdFbxv_tuG7K9VZttg
+    assetId: BRIDGE-SO201-2AWKmdFbxv_tuG7K9VZttg
+    parentGlobalId: 1GnyDA8Xz$hwSNtZo6oaJf
+    ifcClass: IfcSlab
+    name: Blinding concrete O1
+    description: 
+    predefinedType: BASESLAB
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3874.7322
+    modeledBounds: {x: 26.640053, y: 12.111218, z: 17.472162}
+  - globalId: 1k90zKG0FcgqukjeHoEYQa
+    assetId: 
+    parentGlobalId: 0g8y805UM2w5TGsj6dPqW9
+    ifcClass: IfcBridgePart
+    name: Foundation P2
+    description: 
+    predefinedType: FOUNDATION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 0RYStVBLOU3fK4TrSaxleL
+    assetId: BRIDGE-SO201-0RYStVBLOU3fK4TrSaxleL
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 1
+    description: 
+    predefinedType: BORED
+    tag: 971d4c0b-29dd-4f70-ad36-d6d5eda69cec
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3917.4282
+    modeledBounds: {x: 2.8741198, y: 36.00001, z: 2.874115}
+  - globalId: 2iSvaPVQnmzi68Ayq9d6qY
+    assetId: BRIDGE-SO201-2iSvaPVQnmzi68Ayq9d6qY
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 2
+    description: 
+    predefinedType: BORED
+    tag: ce43bf48-dd2c-4f7c-8429-6239bf6b3726
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3924.3884
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 2WJPpbnIyUCehnP4vK1ubq
+    assetId: BRIDGE-SO201-2WJPpbnIyUCehnP4vK1ubq
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 3
+    description: 
+    predefinedType: BORED
+    tag: 977de529-fef0-4f8a-a161-f741d9e3c828
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3924.3882
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 24ZD9cwOSNj_MNCV3GxP8N
+    assetId: BRIDGE-SO201-24ZD9cwOSNj_MNCV3GxP8N
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 4
+    description: 
+    predefinedType: BORED
+    tag: d5b9299a-90f6-4375-b03d-3a80cd37cb35
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3917.4282
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 3GnYYy2Y1vHqMUV$7WWUQ4
+    assetId: BRIDGE-SO201-3GnYYy2Y1vHqMUV$7WWUQ4
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 5
+    description: 
+    predefinedType: BORED
+    tag: 73191c1f-fa8d-4bbc-af60-4c6d50bda9bd
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3917.4282
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 1Un2L8xHtG3sCOXzOK7NpB
+    assetId: BRIDGE-SO201-1Un2L8xHtG3sCOXzOK7NpB
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 6
+    description: 
+    predefinedType: BORED
+    tag: 98c209fd-498c-4e97-b4e6-46138b40ab5d
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3917.4282
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 01Mx6ArG29CItpGjgBLuca
+    assetId: BRIDGE-SO201-01Mx6ArG29CItpGjgBLuca
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 7
+    description: 
+    predefinedType: BORED
+    tag: 68656644-666d-4bfb-8db1-3409396af481
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3924.3882
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 1cDdAUyvkpgIPk5Ufdffgw
+    assetId: BRIDGE-SO201-1cDdAUyvkpgIPk5Ufdffgw
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcPile
+    name: Piles P2 8
+    description: 
+    predefinedType: BORED
+    tag: edfae339-ea30-459a-8533-5f0e69c854b1
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3924.3882
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.8741198}
+  - globalId: 2T12tBKsv4vL2Pc9ijqqSu
+    assetId: BRIDGE-SO201-2T12tBKsv4vL2Pc9ijqqSu
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcFooting
+    name: Pile cap P2
+    description: 
+    predefinedType: PILE_CAP
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3920.9087
+    modeledBounds: {x: 18.24, y: 3.8424003, z: 11.040875}
+  - globalId: 0qpx6Ycve5tLEkuyiBy94y
+    assetId: BRIDGE-SO201-0qpx6Ycve5tLEkuyiBy94y
+    parentGlobalId: 1k90zKG0FcgqukjeHoEYQa
+    ifcClass: IfcSlab
+    name: Blinding concrete P2
+    description: 
+    predefinedType: BASESLAB
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3920.9082
+    modeledBounds: {x: 19.440062, y: 0.3600014, z: 12.240079}
+  - globalId: 2jtDmxyACUklgyEObbR8qm
+    assetId: 
+    parentGlobalId: 0g8y805UM2w5TGsj6dPqW9
+    ifcClass: IfcBridgePart
+    name: Foundation P3
+    description: 
+    predefinedType: FOUNDATION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 1AlW5oK7Lzhz7PkYqKTq67
+    assetId: BRIDGE-SO201-1AlW5oK7Lzhz7PkYqKTq67
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 1
+    description: 
+    predefinedType: BORED
+    tag: de950d79-12fa-4dac-90e7-e175b8c9ca8d
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4005.9883
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 3o2F4eFxVeKqGscvJZ1l5y
+    assetId: BRIDGE-SO201-3o2F4eFxVeKqGscvJZ1l5y
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 2
+    description: 
+    predefinedType: BORED
+    tag: 178b9030-7305-44fe-8820-44c5f896643c
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4005.9883
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 2xbB1CzKGfGuhKaJWpa8II
+    assetId: BRIDGE-SO201-2xbB1CzKGfGuhKaJWpa8II
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 3
+    description: 
+    predefinedType: BORED
+    tag: 1033502f-aba0-475a-9ae4-301d44ca8cd4
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3999.0283
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.8741198}
+  - globalId: 13xIsG3OU65cK6zC9udLB3
+    assetId: BRIDGE-SO201-13xIsG3OU65cK6zC9udLB3
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 4
+    description: 
+    predefinedType: BORED
+    tag: 41f1c7bd-2817-4941-8ca8-7c92c0019ae5
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3999.0283
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 0zIcQZf_T3Rb59CjoQc8X4
+    assetId: BRIDGE-SO201-0zIcQZf_T3Rb59CjoQc8X4
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 5
+    description: 
+    predefinedType: BORED
+    tag: bcd93abf-c0b2-4dc7-8106-862e885eacd0
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3999.0283
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 2sK3Oj2Oxz1wiAepNQukNM
+    assetId: BRIDGE-SO201-2sK3Oj2Oxz1wiAepNQukNM
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 6
+    description: 
+    predefinedType: BORED
+    tag: 9f296dd8-6489-436c-95bd-70597d9e6e96
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4005.9883
+    modeledBounds: {x: 2.8741207, y: 36.00001, z: 2.874115}
+  - globalId: 2vxXOtTmlBJAftg16Ip9lp
+    assetId: BRIDGE-SO201-2vxXOtTmlBJAftg16Ip9lp
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 7
+    description: 
+    predefinedType: BORED
+    tag: 158a4079-8f61-43f5-82c8-98045ece2084
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4005.9883
+    modeledBounds: {x: 2.8741198, y: 36.00001, z: 2.874115}
+  - globalId: 0PDwbZP_Wjsa$t9tZlRWdn
+    assetId: BRIDGE-SO201-0PDwbZP_Wjsa$t9tZlRWdn
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcPile
+    name: Piles P3 8
+    description: 
+    predefinedType: BORED
+    tag: 268c7508-2b63-40ad-83a8-d16735bfe8ed
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3999.0283
+    modeledBounds: {x: 2.8741198, y: 36.00001, z: 2.874115}
+  - globalId: 2gojBJ8751ev0VZT3WtTz5
+    assetId: BRIDGE-SO201-2gojBJ8751ev0VZT3WtTz5
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcFooting
+    name: Pile cap P3
+    description: 
+    predefinedType: PILE_CAP
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4002.5088
+    modeledBounds: {x: 18.242403, y: 3.8436031, z: 11.040867}
+  - globalId: 1tghNyhC9BFNfrENkrKFon
+    assetId: BRIDGE-SO201-1tghNyhC9BFNfrENkrKFon
+    parentGlobalId: 2jtDmxyACUklgyEObbR8qm
+    ifcClass: IfcSlab
+    name: Blinding concrete P3
+    description: 
+    predefinedType: BASESLAB
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4002.5083
+    modeledBounds: {x: 19.440056, y: 0.36000252, z: 12.240079}
+  - globalId: 2qDMMBkvPrrGbGUfWqrgu2
+    assetId: 
+    parentGlobalId: 0g8y805UM2w5TGsj6dPqW9
+    ifcClass: IfcBridgePart
+    name: Foundation O4
+    description: 
+    predefinedType: FOUNDATION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 35JRfDfc7AG4pP03LjzGAP
+    assetId: BRIDGE-SO201-35JRfDfc7AG4pP03LjzGAP
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 1
+    description: 
+    predefinedType: BORED
+    tag: 6b385f17-6cc9-4491-8ff9-071caef30d70
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4046.0684
+    modeledBounds: {x: 2.8799849, y: 28.800009, z: 2.8799744}
+  - globalId: 1GKGPBUnqotpvITYVkO07n
+    assetId: BRIDGE-SO201-1GKGPBUnqotpvITYVkO07n
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 2
+    description: 
+    predefinedType: BORED
+    tag: 0b563742-c96c-4ba2-b42c-bcaba57c437b
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4042.5884
+    modeledBounds: {x: 2.8799858, y: 28.800009, z: 2.8799744}
+  - globalId: 0n$nC0OxnClTt3F0eMLOM5
+    assetId: BRIDGE-SO201-0n$nC0OxnClTt3F0eMLOM5
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 3
+    description: 
+    predefinedType: BORED
+    tag: c87f3178-175f-4f7e-9089-c5069bf6f52f
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4042.5884
+    modeledBounds: {x: 2.879984, y: 28.800009, z: 2.8799927}
+  - globalId: 3kML_OdcG2anTA0GEmMref
+    assetId: BRIDGE-SO201-3kML_OdcG2anTA0GEmMref
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 4
+    description: 
+    predefinedType: BORED
+    tag: 4870da74-be18-410e-acbe-54e50556a06f
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4046.0684
+    modeledBounds: {x: 2.8799849, y: 28.800009, z: 2.8799927}
+  - globalId: 1hWA3$l8573Uj8fVXRVyVv
+    assetId: BRIDGE-SO201-1hWA3$l8573Uj8fVXRVyVv
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 5
+    description: 
+    predefinedType: BORED
+    tag: c6fcd6bb-1e3d-4a0e-8dd2-a42d38ebf752
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4042.5881
+    modeledBounds: {x: 2.8799849, y: 28.800009, z: 2.8799927}
+  - globalId: 3cS$RggRVZLcARadfuvY0u
+    assetId: BRIDGE-SO201-3cS$RggRVZLcARadfuvY0u
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 6
+    description: 
+    predefinedType: BORED
+    tag: cfbd8ab8-2534-4ce1-ad05-af9f5903f9b5
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4051.3484
+    modeledBounds: {x: 2.8799841, y: 28.800009, z: 2.8799744}
+  - globalId: 0GzCGpNTHvETrMS_kiVMMm
+    assetId: BRIDGE-SO201-0GzCGpNTHvETrMS_kiVMMm
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcPile
+    name: Piles O4 7
+    description: 
+    predefinedType: BORED
+    tag: 28197074-e33d-43b4-84cc-20001dd97a2c
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4051.3481
+    modeledBounds: {x: 2.8799837, y: 28.800009, z: 2.8799744}
+  - globalId: 1lz6L5kkiHsqe1FPFY7si4
+    assetId: BRIDGE-SO201-1lz6L5kkiHsqe1FPFY7si4
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcFooting
+    name: Pile cap O4
+    description: 
+    predefinedType: PILE_CAP
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4047.1484
+    modeledBounds: {x: 25.44011, y: 1.922928, z: 13.200074}
+  - globalId: 1I2uRKupnTfpjQ_qcjCzM8
+    assetId: BRIDGE-SO201-1I2uRKupnTfpjQ_qcjCzM8
+    parentGlobalId: 2qDMMBkvPrrGbGUfWqrgu2
+    ifcClass: IfcSlab
+    name: Blinding concrete O4
+    description: 
+    predefinedType: BASESLAB
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4048.6843
+    modeledBounds: {x: 26.640053, y: 9.9960985, z: 17.47209}
+  - globalId: 0ivZYnqcRPA9n_gSzd$pcO
+    assetId: 
+    parentGlobalId: 11_QvFtKEbPmta5DWSknqV
+    ifcClass: IfcBridgePart
+    name: Substructure
+    description: 
+    predefinedType: SUBSTRUCTURE
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 34A8503nOCckjA5mHKZDdI
+    assetId: 
+    parentGlobalId: 0ivZYnqcRPA9n_gSzd$pcO
+    ifcClass: IfcBridgePart
+    name: Abutment O1
+    description: 
+    predefinedType: ABUTMENT
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 1lGkPEWaJvRI70HQAZkSP1
+    assetId: BRIDGE-SO201-1lGkPEWaJvRI70HQAZkSP1
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcWall
+    name: Abutment stem O1
+    description: 
+    predefinedType: SOLIDWALL
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3878.7883
+    modeledBounds: {x: 24.240044, y: 10.618708, z: 5.520172}
+  - globalId: 2WyzbqEDrdQD_6mdClrFMD
+    assetId: BRIDGE-SO201-2WyzbqEDrdQD_6mdClrFMD
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcWall
+    name: Wing walls O1 1
+    description: 
+    predefinedType: RETAININGWALL
+    tag: 5119084e-5b92-4354-9176-7d343143ca95
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3870.4482
+    modeledBounds: {x: 1.9199044, y: 10.708658, z: 12.360023}
+  - globalId: 3Rf3PcEJNlyC4z_uZD0RvN
+    assetId: BRIDGE-SO201-3Rf3PcEJNlyC4z_uZD0RvN
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcWall
+    name: Wing walls O1 2
+    description: 
+    predefinedType: RETAININGWALL
+    tag: 00fb7f40-64fc-4605-9337-9f4ed39ce171
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3870.4482
+    modeledBounds: {x: 1.9203278, y: 10.59912, z: 12.360059}
+  - globalId: 1bF2ohDSbAdPq9Dzb0x5mt
+    assetId: BRIDGE-SO201-1bF2ohDSbAdPq9Dzb0x5mt
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcFooting
+    name: Bearing plinths O1 1
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: adc26e11-2e62-4cb4-956e-f302db2bbc38
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3880.1082
+    modeledBounds: {x: 2.4000025, y: 0.3482895, z: 2.4}
+  - globalId: 0bbLNJarvOpl60V0gvYLWj
+    assetId: BRIDGE-SO201-0bbLNJarvOpl60V0gvYLWj
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcFooting
+    name: Bearing plinths O1 2
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: 248ac99c-5064-45bb-b662-a47990fea38d
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3880.1084
+    modeledBounds: {x: 2.4000025, y: 0.35251465, z: 2.4}
+  - globalId: 3iT5z0CoNDwNpNmPzWxk40
+    assetId: BRIDGE-SO201-3iT5z0CoNDwNpNmPzWxk40
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcSlab
+    name: Approach slab O1
+    description: 
+    predefinedType: APPROACH_SLAB
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.7083
+    modeledBounds: {x: 20.880932, y: 3.1024294, z: 190.46423}
+  - globalId: 17DJ2RbhfnN0BHLHFkAewB
+    assetId: BRIDGE-SO201-17DJ2RbhfnN0BHLHFkAewB
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcEarthworksFill
+    name: Transition backfill O1
+    description: 
+    predefinedType: TRANSITIONSECTION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3868.3901
+    modeledBounds: {x: 21.00079, y: 11.797394, z: 15.27627}
+  - globalId: 2hc6pR6YODqykbpLXUn1EI
+    assetId: BRIDGE-SO201-2hc6pR6YODqykbpLXUn1EI
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcCovering
+    name: Waterproofing O1
+    description: 
+    predefinedType: MEMBRANE
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3871.596
+    modeledBounds: {x: 21.000294, y: 0.79209596, z: 8.864649}
+  - globalId: 23UWminMd0M6qR8XJiS60t
+    assetId: BRIDGE-SO201-23UWminMd0M6qR8XJiS60t
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcCovering
+    name: Protective coating O1
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3873.568
+    modeledBounds: {x: 25.440086, y: 12.628661, z: 18.600294}
+  - globalId: 0h_i1N8JV0y5VdxtxZmtS7
+    assetId: BRIDGE-SO201-0h_i1N8JV0y5VdxtxZmtS7
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcPipeSegment
+    name: Drainage O1
+    description: 
+    predefinedType: RIGIDSEGMENT
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3878.5715
+    modeledBounds: {x: 20.528187, y: 1.2388802, z: 5.9757204}
+  - globalId: 0tcbaUa47yoBP$OzuYEZrC
+    assetId: BRIDGE-SO201-0tcbaUa47yoBP$OzuYEZrC
+    parentGlobalId: 34A8503nOCckjA5mHKZDdI
+    ifcClass: IfcEarthworksFill
+    name: Drainage protection O1
+    description: 
+    predefinedType: BACKFILL
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3875.668
+    modeledBounds: {x: 20.520943, y: 1.2383034, z: 0.72081304}
+  - globalId: 1pfHs3XtRXlc3ku62Hk53s
+    assetId: 
+    parentGlobalId: 0ivZYnqcRPA9n_gSzd$pcO
+    ifcClass: IfcBridgePart
+    name: Pier P2
+    description: 
+    predefinedType: PIER
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 0Fx3Ykz9Zoo5T0r0sZtWPp
+    assetId: BRIDGE-SO201-0Fx3Ykz9Zoo5T0r0sZtWPp
+    parentGlobalId: 1pfHs3XtRXlc3ku62Hk53s
+    ifcClass: IfcColumn
+    name: Pier stem P2
+    description: 
+    predefinedType: PIERSTEM
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3920.9082
+    modeledBounds: {x: 13.199986, y: 18.682468, z: 3.8400605}
+  - globalId: 0vpwLjckQCzsA1Wvzwc8EX
+    assetId: BRIDGE-SO201-0vpwLjckQCzsA1Wvzwc8EX
+    parentGlobalId: 1pfHs3XtRXlc3ku62Hk53s
+    ifcClass: IfcFooting
+    name: Bearing plinths P2 1
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: 190ecf6d-c952-4e84-b436-bb3ad5230577
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3920.9082
+    modeledBounds: {x: 2.4000092, y: 0.4799984, z: 2.4}
+  - globalId: 3RkpYxGpfcYT2I1t_zwJ_Z
+    assetId: BRIDGE-SO201-3RkpYxGpfcYT2I1t_zwJ_Z
+    parentGlobalId: 1pfHs3XtRXlc3ku62Hk53s
+    ifcClass: IfcFooting
+    name: Bearing plinths P2 2
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: 3df48fa2-e4d0-43a0-87b3-9ed9c2af55da
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3920.9082
+    modeledBounds: {x: 2.4000103, y: 0.4799984, z: 2.4}
+  - globalId: 1oAnp37N8ZqgAQOnAgZRj2
+    assetId: 
+    parentGlobalId: 0ivZYnqcRPA9n_gSzd$pcO
+    ifcClass: IfcBridgePart
+    name: Pier P3
+    description: 
+    predefinedType: PIER
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 13i89sZ2IbZp1Sk$Woa$xz
+    assetId: BRIDGE-SO201-13i89sZ2IbZp1Sk$Woa$xz
+    parentGlobalId: 1oAnp37N8ZqgAQOnAgZRj2
+    ifcClass: IfcColumn
+    name: Pier stem P3
+    description: 
+    predefinedType: PIERSTEM
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4002.5083
+    modeledBounds: {x: 13.199988, y: 15.923811, z: 3.8400514}
+  - globalId: 1fawtDnfode$lnlifl1tTK
+    assetId: BRIDGE-SO201-1fawtDnfode$lnlifl1tTK
+    parentGlobalId: 1oAnp37N8ZqgAQOnAgZRj2
+    ifcClass: IfcFooting
+    name: Bearing plinths P3 1
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: b9808e94-1486-4dcd-ad15-7fe2d86d4471
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4002.5083
+    modeledBounds: {x: 2.4000092, y: 0.4799984, z: 2.4}
+  - globalId: 2UbYxl2Z_QFNLU3y2qrM_l
+    assetId: BRIDGE-SO201-2UbYxl2Z_QFNLU3y2qrM_l
+    parentGlobalId: 1oAnp37N8ZqgAQOnAgZRj2
+    ifcClass: IfcFooting
+    name: Bearing plinths P3 2
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: c76fcc51-f676-4b33-aff6-04b54bd844c2
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4002.5083
+    modeledBounds: {x: 2.400007, y: 0.4799984, z: 2.4}
+  - globalId: 1QzUjoeiJSSAO3vaoTPAhT
+    assetId: 
+    parentGlobalId: 0ivZYnqcRPA9n_gSzd$pcO
+    ifcClass: IfcBridgePart
+    name: Abutment O4
+    description: 
+    predefinedType: ABUTMENT
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 3pw3ckthnwuHJM5cpTcvE6
+    assetId: BRIDGE-SO201-3pw3ckthnwuHJM5cpTcvE6
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcWall
+    name: Abutment stem O4
+    description: 
+    predefinedType: SOLIDWALL
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4044.6282
+    modeledBounds: {x: 24.240053, y: 8.509351, z: 5.5202637}
+  - globalId: 3plihVbpz2bZeSicQgJ7Q3
+    assetId: BRIDGE-SO201-3plihVbpz2bZeSicQgJ7Q3
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcWall
+    name: Wing walls O4 1
+    description: 
+    predefinedType: RETAININGWALL
+    tag: 7a072c74-50e4-4081-a1f3-0509fc95ced9
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4052.6685
+    modeledBounds: {x: 1.9200212, y: 8.501953, z: 11.760059}
+  - globalId: 3cNL7_0F15nTXH_ayJgL7q
+    assetId: BRIDGE-SO201-3cNL7_0F15nTXH_ayJgL7q
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcWall
+    name: Wing walls O4 2
+    description: 
+    predefinedType: RETAININGWALL
+    tag: e5f13510-ef33-4eda-96b0-067a13aa5c57
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4052.6682
+    modeledBounds: {x: 1.9200073, y: 8.396499, z: 11.760022}
+  - globalId: 0IuTtWx0525uN7KFTYADuC
+    assetId: BRIDGE-SO201-0IuTtWx0525uN7KFTYADuC
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcFooting
+    name: Bearing plinths O4 1
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: 34f94ead-21c4-4a06-9d85-15b6c49f5e5b
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4043.3083
+    modeledBounds: {x: 2.399999, y: 0.52603227, z: 2.4}
+  - globalId: 09OvP1gzRXygHRqEoB_YxG
+    assetId: BRIDGE-SO201-09OvP1gzRXygHRqEoB_YxG
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcFooting
+    name: Bearing plinths O4 2
+    description: 
+    predefinedType: PAD_FOOTING
+    tag: e0ac5aca-d7ad-4133-802d-aa14192e1b1b
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4043.3083
+    modeledBounds: {x: 2.4, y: 0.5301132, z: 2.4}
+  - globalId: 05sPYA2jmp_rm8FG7R_0SM
+    assetId: BRIDGE-SO201-05sPYA2jmp_rm8FG7R_0SM
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcEarthworksFill
+    name: Transition backfill O4
+    description: 
+    predefinedType: TRANSITIONSECTION
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4053.9158
+    modeledBounds: {x: 21.000166, y: 10.530098, z: 13.054908}
+  - globalId: 3TdYNOFNO5yhSv4k028PCx
+    assetId: BRIDGE-SO201-3TdYNOFNO5yhSv4k028PCx
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcCovering
+    name: Waterproofing O4
+    description: 
+    predefinedType: MEMBRANE
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4051.8735
+    modeledBounds: {x: 21.00012, y: 0.5566086, z: 8.970868}
+  - globalId: 0vGsrIW4H44_POC_KNDXuU
+    assetId: BRIDGE-SO201-0vGsrIW4H44_POC_KNDXuU
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcCovering
+    name: Protective coating O4
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4049.5483
+    modeledBounds: {x: 25.440107, y: 10.371172, z: 18.000147}
+  - globalId: 32bV9A$JM32dAu1Zg3q3Lj
+    assetId: BRIDGE-SO201-32bV9A$JM32dAu1Zg3q3Lj
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcPipeSegment
+    name: Drainage O4
+    description: 
+    predefinedType: RIGIDSEGMENT
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4047.6404
+    modeledBounds: {x: 24.971622, y: 0.7620026, z: 0.38410035}
+  - globalId: 1ySGyun85Flak8wqdc22Ch
+    assetId: BRIDGE-SO201-1ySGyun85Flak8wqdc22Ch
+    parentGlobalId: 1QzUjoeiJSSAO3vaoTPAhT
+    ifcClass: IfcEarthworksFill
+    name: Drainage protection O4
+    description: 
+    predefinedType: BACKFILL
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4047.7483
+    modeledBounds: {x: 20.400175, y: 1.0290711, z: 0.7200989}
+  - globalId: 28w_kw8AhOY6XLBluJX_7T
+    assetId: 
+    parentGlobalId: 11_QvFtKEbPmta5DWSknqV
+    ifcClass: IfcBridgePart
+    name: Superstructure
+    description: 
+    predefinedType: SUPERSTRUCTURE
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 2jnx$V1Bq1aR$OfEx$ULOH
+    assetId: BRIDGE-SO201-2jnx$V1Bq1aR$OfEx$ULOH
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 1 1"
+    description: 
+    predefinedType: BEAM
+    tag: 60037b8a-eb50-44d7-bd43-7568ecc0646d
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3899.8293
+    modeledBounds: {x: 4.7051005, y: 4.150516, z: 40.467793}
+  - globalId: 35_$at319vYpeinIpxhdix
+    assetId: BRIDGE-SO201-35_$at319vYpeinIpxhdix
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 1 2"
+    description: 
+    predefinedType: BEAM
+    tag: c9951675-128a-4fc3-9da6-026291dad484
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3899.8289
+    modeledBounds: {x: 4.7094555, y: 4.1601105, z: 40.465588}
+  - globalId: 1HfwXIbME2yQxwO10KnFqY
+    assetId: BRIDGE-SO201-1HfwXIbME2yQxwO10KnFqY
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 1 3"
+    description: 
+    predefinedType: BEAM
+    tag: 8657e30b-4806-464f-a06a-dbc80d6108f9
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3899.8242
+    modeledBounds: {x: 4.71625, y: 4.160303, z: 40.465843}
+  - globalId: 1M2Dt6zBVBF$17xO1ZrlWq
+    assetId: BRIDGE-SO201-1M2Dt6zBVBF$17xO1ZrlWq
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 1 4"
+    description: 
+    predefinedType: BEAM
+    tag: 7e0daa50-a5d0-4442-898e-d3267c0ab9f9
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3899.8333
+    modeledBounds: {x: 4.704863, y: 4.1584353, z: 40.46509}
+  - globalId: 28v_6QK2bjMvQbMN44eCdk
+    assetId: BRIDGE-SO201-28v_6QK2bjMvQbMN44eCdk
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 1 5"
+    description: 
+    predefinedType: BEAM
+    tag: 3db577d3-e554-4045-bf50-d846a78e926f
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3899.8289
+    modeledBounds: {x: 4.7068863, y: 4.1602573, z: 40.465595}
+  - globalId: 2T$enmmSvZ90zW4gQLjHBr
+    assetId: BRIDGE-SO201-2T$enmmSvZ90zW4gQLjHBr
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 2 1"
+    description: 
+    predefinedType: BEAM
+    tag: 038c4227-625e-444b-9d3e-471414290a3c
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.6968
+    modeledBounds: {x: 4.715777, y: 4.421759, z: 79.92894}
+  - globalId: 3e41$wYQjhAnolzZ3fv5Ep
+    assetId: BRIDGE-SO201-3e41$wYQjhAnolzZ3fv5Ep
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 2 2"
+    description: 
+    predefinedType: BEAM
+    tag: 908c5fb2-ba0f-41b3-bc29-e44836f618cd
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.6953
+    modeledBounds: {x: 4.715788, y: 4.433231, z: 79.92899}
+  - globalId: 2GapfdkKr6OHl15ivSvILG
+    assetId: BRIDGE-SO201-2GapfdkKr6OHl15ivSvILG
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 2 3"
+    description: 
+    predefinedType: BEAM
+    tag: 7de8afb7-4963-444d-8cc6-88ae93b00a78
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.6936
+    modeledBounds: {x: 4.715788, y: 4.433231, z: 79.92895}
+  - globalId: 08X3nXPrQ8kjF15zlU0Bh1
+    assetId: BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 2 4"
+    description: 
+    predefinedType: BEAM
+    tag: faf1ecaf-0dea-48b1-b3cd-29b503a5d532
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.6973
+    modeledBounds: {x: 4.730901, y: 4.4333224, z: 79.92874}
+  - globalId: 3$3eDVPuGaQ5yf$btPJT5P
+    assetId: BRIDGE-SO201-3$3eDVPuGaQ5yf$btPJT5P
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 2 5"
+    description: 
+    predefinedType: BEAM
+    tag: a11bd15f-9a97-4efc-96ff-92846b726dcc
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.6973
+    modeledBounds: {x: 4.730903, y: 4.4332767, z: 79.92874}
+  - globalId: 0s3As3_b2cSGwniRNDr6D1
+    assetId: BRIDGE-SO201-0s3As3_b2cSGwniRNDr6D1
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 3 1"
+    description: 
+    predefinedType: BEAM
+    tag: 924a2a28-4867-4993-9aa3-02865c4767cd
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4023.555
+    modeledBounds: {x: 4.7085342, y: 4.1593876, z: 40.44964}
+  - globalId: 3tG6jetBkp$mhtqagjVDIL
+    assetId: BRIDGE-SO201-3tG6jetBkp$mhtqagjVDIL
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 3 2"
+    description: 
+    predefinedType: BEAM
+    tag: 5efe6980-a98e-4fbf-afea-26e22aac47a1
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4023.5564
+    modeledBounds: {x: 4.7088084, y: 4.14787, z: 40.45201}
+  - globalId: 2TyakGRp4Naj7Zqx1es5f$
+    assetId: BRIDGE-SO201-2TyakGRp4Naj7Zqx1es5f$
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 3 3"
+    description: 
+    predefinedType: BEAM
+    tag: 7aa3d896-a836-4138-9934-5ef8181ad0e7
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4023.558
+    modeledBounds: {x: 4.7070007, y: 4.159488, z: 40.449703}
+  - globalId: 0fiZXRDD3n9d7Gl1JSAhdI
+    assetId: BRIDGE-SO201-0fiZXRDD3n9d7Gl1JSAhdI
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 3 4"
+    description: 
+    predefinedType: BEAM
+    tag: 1f7671d3-aa4b-4a04-a5b3-45aa61f52724
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4023.558
+    modeledBounds: {x: 4.7070007, y: 4.1595383, z: 40.449703}
+  - globalId: 3WdnBfsmpFEohD23snJk1H
+    assetId: BRIDGE-SO201-3WdnBfsmpFEohD23snJk1H
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcBeam
+    name: "Girders \u2014 span 3 5"
+    description: 
+    predefinedType: BEAM
+    tag: 96f7678e-cd16-4091-acf8-5309ceaab624
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4023.5564
+    modeledBounds: {x: 4.7085342, y: 4.1593876, z: 40.44964}
+  - globalId: 0Xt7wYVSDqdfWTrHZZJUX8
+    assetId: BRIDGE-SO201-0Xt7wYVSDqdfWTrHZZJUX8
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 1
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 8d2222d8-e91d-4677-9b7e-f2a23edf059f
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4023.501
+    modeledBounds: {x: 24.247686, y: 1.0891663, z: 37.444374}
+  - globalId: 1M$A$Wm56UpStZNE5SyBhd
+    assetId: BRIDGE-SO201-1M$A$Wm56UpStZNE5SyBhd
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 2
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 01e9132f-a326-40cb-a126-02246b3949ed
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4043.4812
+    modeledBounds: {x: 24.240126, y: 5.135761, z: 2.528119}
+  - globalId: 3bmWj0FUjv2EP8Vj6Q08p$
+    assetId: BRIDGE-SO201-3bmWj0FUjv2EP8Vj6Q08p$
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 3
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 565a4893-3dae-43a7-bf91-ab4954cf07b2
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4002.4998
+    modeledBounds: {x: 24.240164, y: 5.8904667, z: 4.567667}
+  - globalId: 1wRZg9tVY0G1mM1$phV_hJ
+    assetId: BRIDGE-SO201-1wRZg9tVY0G1mM1$phV_hJ
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 4
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 8ff44818-7250-4fa7-9626-05ed1c104a49
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 4004.7842
+    modeledBounds: {x: 5.520132, y: 0.22315064, z: 0.00056762696}
+  - globalId: 1rynT78KU8V45XMmnyMFss
+    assetId: BRIDGE-SO201-1rynT78KU8V45XMmnyMFss
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 5
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 8094c50c-e3f3-49f3-8251-3db97e67fe17
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3899.894
+    modeledBounds: {x: 24.336155, y: 1.106836, z: 37.449554}
+  - globalId: 00TgNFCH9HGoplDgAwRwDO
+    assetId: BRIDGE-SO201-00TgNFCH9HGoplDgAwRwDO
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 6
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 79865292-02d3-4b7a-8250-cc7872a708ef
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3920.892
+    modeledBounds: {x: 24.24006, y: 5.874289, z: 4.567566}
+  - globalId: 1GC1biql57VxFFm1sZbxUT
+    assetId: BRIDGE-SO201-1GC1biql57VxFFm1sZbxUT
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 7
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 7b3c17b9-5118-43f4-95d4-63fb9d94d7ba
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.696
+    modeledBounds: {x: 24.366425, y: 1.3680451, z: 77.05126}
+  - globalId: 2cjVPrIwoPdZrGNh7P1lv9
+    assetId: BRIDGE-SO201-2cjVPrIwoPdZrGNh7P1lv9
+    parentGlobalId: 28w_kw8AhOY6XLBluJX_7T
+    ifcClass: IfcSlab
+    name: Deck with crossbeams 8
+    description: 
+    predefinedType: NOTDEFINED
+    tag: 3becf1da-73ae-4763-be65-d1a6186cfb3d
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3879.9116
+    modeledBounds: {x: 24.243723, y: 5.1413364, z: 2.5261781}
+  - globalId: 0i4ebDrB6ovWr_dQ7ka9lb
+    assetId: 
+    parentGlobalId: 11_QvFtKEbPmta5DWSknqV
+    ifcClass: IfcBridgePart
+    name: Surface structure
+    description: 
+    predefinedType: SURFACESTRUCTURE
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 0
+    modeledBounds: {x: 0, y: 0, z: 0}
+  - globalId: 0r$xTC36ULMGQJvAkStNpQ
+    assetId: BRIDGE-SO201-0r$xTC36ULMGQJvAkStNpQ
+    parentGlobalId: 0i4ebDrB6ovWr_dQ7ka9lb
+    ifcClass: IfcPavement
+    name: Pavement
+    description: 
+    predefinedType: FLEXIBLE
+    tag: 
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3956.862
+    modeledBounds: {x: 18.084858, y: 1.9504807, z: 213.72066}
+  - globalId: 3kkITbleAntOJQnuOdF4GD
+    assetId: BRIDGE-SO201-3kkITbleAntOJQnuOdF4GD
+    parentGlobalId: 0i4ebDrB6ovWr_dQ7ka9lb
+    ifcClass: IfcBeam
+    name: Cornices 1
+    description: 
+    predefinedType: CORNICE
+    tag: cc79666d-de0a-4f67-8509-eceeac74f1dd
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.406
+    modeledBounds: {x: 2.139718, y: 3.1211977, z: 194.29128}
+  - globalId: 12RF4BQYE2nAFXhB_ESiPM
+    assetId: BRIDGE-SO201-12RF4BQYE2nAFXhB_ESiPM
+    parentGlobalId: 0i4ebDrB6ovWr_dQ7ka9lb
+    ifcClass: IfcBeam
+    name: Cornices 2
+    description: 
+    predefinedType: CORNICE
+    tag: e4efaddf-b09d-4fea-aa4c-7c5f98e5e5ff
+    propertyLines: []
+    sourceGlobalId: 
+    sourceParentGlobalId: 
+    sourceIfcClass: 
+    sourceName: 
+    modeledStation: 3961.4053
+    modeledBounds: {x: 5.739954, y: 3.217154, z: 194.29213}

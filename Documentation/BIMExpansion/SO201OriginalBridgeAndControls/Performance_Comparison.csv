@@ -1,0 +1,10 @@
+Variant,Camera,Chainage_m,Frames,UnityFrameMedian_ms,UnityFrameP95_ms,UnityFrameP99_ms,DrawCallsMedian,TrianglesMedian,UsedMemoryMedian_bytes,MainThreadMedian_ns
+SO201_original,cabin-entry,3882,26,8.000,9.000,9.000,247,1345388,601728175,8300000
+SO201_original,overhead-middle,3930,26,8.000,9.000,9.000,172,492166,601535554,8300000
+SO201_original,outside-middle,3986,26,8.000,9.000,9.000,250,1402707,608989200,8300001
+SO201_original,cabin-exit,4040,26,8.000,9.000,9.000,137,1251287,608404514,8300000
+SO201_1486_historical,cabin-entry,3700,,,9.000,9.000,713,1798194,659660904,
+SO201_1486_historical,overhead-middle,4080,,,9.000,9.000,213,464284,654818223,
+SO201_1486_historical,outside-middle,4300,,,9.000,9.000,474,1633174,664772974,
+SO201_1486_historical,cabin-middle,4560,,,9.000,9.000,285,1398756,663822366,
+SO201_1486_historical,cabin-exit,4710,,,9.000,9.000,230,1373639,673405308,

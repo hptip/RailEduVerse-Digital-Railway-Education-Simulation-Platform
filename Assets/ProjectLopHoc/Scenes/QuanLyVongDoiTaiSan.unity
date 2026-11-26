@@ -5211,13 +5211,11 @@ MonoBehaviour:
     owner: Zone_018
     assetId: 
     covered:
-    - Zone_017
     - Zone_018
-    - Zone_019
     bindings:
-    - Zone_018/RuntimeZoneContent/FixedInfrastructure_Bridge/Bridge_YTH_Visual
-    start: 3650.0015
-    end: 4770.0015
+    - Zone_018/RuntimeZoneContent/FixedInfrastructure_Bridge/Bridge_SO201_Original
+    start: 3850.001
+    end: 4063.722
   - key: TunnelMountain_Forest_01
     label: "H\u1EA7m Forest_01"
     domain: "H\u1EA7m"
@@ -5269,7 +5267,7 @@ MonoBehaviour:
     - Zone_011/RuntimeZoneContent/Experience_SubgradeReinforcedSlope
     start: 300
     end: 800
-  modularBridgeCatalog: {fileID: 11400000, guid: 46a8535217ca10b4f8492b879439dd68, type: 2}
+  modularBridgeCatalog: {fileID: 11400000, guid: d2d8228ad1f86544b982c48f2d4f991f, type: 2}
   detailedEnvironment: {fileID: 1585156192}
   controller: {fileID: 616518835}
 --- !u!1 &623705190
@@ -19377,6 +19375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0b4beee29750b4e9656a85adf10283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RailwayBimCamera
+  zoomSensitivity: 0.18
+  zoomSmoothing: 16
+  detailMinimumDistance: 0.04
+  focusDistanceMultiplier: 1
   xrPresentation: 0
   freeSpeed: 12
   current:

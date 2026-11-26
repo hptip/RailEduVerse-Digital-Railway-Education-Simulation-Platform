@@ -1,0 +1,9 @@
+Scene,ExpectedCursor,Modal,XR,WebStatus
+Login,Free,LoginCanvas,VR NOT TESTED,PASS free cursor and login
+UTTCampus,Pointer Lock,Cảnh chung và minimap,VR NOT TESTED,BLOCKED browser pointer lock; scene loaded
+Classroom,Pointer Lock,Dashboard plus scene menu and quiz,VR NOT TESTED,BLOCKED browser pointer lock; scene loaded
+Showroom,Pointer Lock,Train information and chatbot,VR NOT TESTED,BLOCKED browser pointer lock; scene loaded
+YenTuHaLongXanh,Pointer Lock,Scene menu and chatbot,VR NOT TESTED,BLOCKED browser pointer lock; scene loaded
+QuanLyVongDoiTaiSan,Free,BIM panel and Excel file picker,VR NOT TESTED,PASS free cursor and picker
+Campus or Classroom variants,Shared player policy,Same owners if present,VR NOT TESTED,NOT TESTED
+Chatbot Demo,Pointer Lock,Chat input,VR NOT TESTED,NOT TESTED

@@ -1,0 +1,14 @@
+{
+  "controls": {
+    "Lifecycle": "Save event received; retained field verified from screenshot"
+  },
+  "zoom": [],
+  "observations": [
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (35.00, 0.00, 0.00)\n",
+    "[BIMTree] Select,0.400,BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1\n",
+    "[BIMTree] ZoneReady,Zone_018,1,134,Zone_018\n",
+    "[BIMTree] BridgeFocus,BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1,Component,1,80.28\n"
+  ],
+  "errors": [],
+  "loginAndCampusSeconds": 10.2479487
+}

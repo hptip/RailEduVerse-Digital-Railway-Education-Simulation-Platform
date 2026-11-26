@@ -90,6 +90,7 @@ public class TrainSplineMover : MonoBehaviour
             return;
         }
 
+        if (UttDesktopCursor.ModalOpen) return;
 #if ENABLE_INPUT_SYSTEM
         if (Keyboard.current == null) return;
         if (Keyboard.current.wKey.isPressed)

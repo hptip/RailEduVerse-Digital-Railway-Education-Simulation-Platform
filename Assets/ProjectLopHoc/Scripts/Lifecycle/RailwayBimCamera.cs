@@ -6,6 +6,12 @@ using UnityEngine.InputSystem;
 public sealed class RailwayBimCamera:MonoBehaviour
 {
     public event System.Action ViewRequested;
+    [Header("Orbit zoom")]
+    [SerializeField, Min(.01f)] float zoomSensitivity = .18f;
+    [SerializeField, Min(0f)] float zoomSmoothing = 16f;
+    [SerializeField, Min(.01f)] float detailMinimumDistance = .04f;
+    [SerializeField, Min(1f)] float focusDistanceMultiplier = 1f;
+
     public bool xrPresentation;public bool FreeMode{get;private set;}public float freeSpeed=12;
     [System.Serializable] public struct View{public Vector3 center;public float yaw,pitch,distance,min,max;public Bounds bounds;}
     public View current;public int mode;public Bounds zoneBounds;public Bounds FocusBounds{get;private set;}
@@ -71,7 +77,7 @@ public sealed class RailwayBimCamera:MonoBehaviour
         current = new View
         {
             bounds = world, center = origin + rotation * projected.center, yaw = yaw, pitch = pitch,
-            distance = Mathf.Max(distance, .05f), min = .05f,
+            distance = Mathf.Max(distance * focusDistanceMultiplier, .05f), min = .05f,
             max = Mathf.Max(60, distance * 2.35f)
         };
         bridgeFrame = true;
@@ -97,10 +103,10 @@ public sealed class RailwayBimCamera:MonoBehaviour
         if(preserve&&initialized&&mode!=newMode){previous[mode]=current;hasPrevious[mode]=true;}
         mode=newMode;FocusBounds=bounds;current.bounds=bounds;current.center=bounds.center;FreeMode=false;
         if(!initialized){current.yaw=130;current.pitch=42;}
-        current.min=newMode==0?.6f:newMode==1?.4f:.12f;current.max=newMode==0?1600:newMode==1?180:30;
+        current.min=newMode==0?.6f:newMode==1?.4f:detailMinimumDistance;current.max=newMode==0?1600:newMode==1?180:30;
         var camera=GetComponent<Camera>();camera.nearClipPlane=.01f;
         bool fullView = xrPresentation || UttWebPresentation.Active;
-        current.distance=Mathf.Clamp(FitDistance(bounds,Quaternion.Euler(current.pitch,current.yaw,0),camera.fieldOfView,camera.aspect,fullView?1:.40f,fullView?1:.72f),current.min,current.max);
+        current.distance=Mathf.Clamp(FitDistance(bounds,Quaternion.Euler(current.pitch,current.yaw,0),camera.fieldOfView,camera.aspect,fullView?1:.40f,fullView?1:.72f)*focusDistanceMultiplier,current.min,current.max);
         if(!initialized){smoothCenter=current.center;smoothDistance=current.distance;initialized=true;}ViewRequested?.Invoke();
     }
     public void Restore(int toMode,Bounds fallback){FreeMode=false;bridgeFrame=false;mode=toMode;if(hasPrevious[toMode]){current=previous[toMode];FocusBounds=current.bounds;ViewRequested?.Invoke();}else Focus(fallback,toMode,false);}
@@ -120,9 +126,30 @@ public sealed class RailwayBimCamera:MonoBehaviour
     public void Zoom(float scroll)
     {
         if(FreeMode){current.center+=Quaternion.Euler(current.pitch,current.yaw,0)*Vector3.forward*(scroll*freeSpeed*.5f);return;}
-        float minimum = bridgeFrame ? BridgeMinimum(current.center) : current.min;
-        current.distance=Mathf.Clamp(current.distance*Mathf.Exp(-scroll*.12f),minimum,Mathf.Max(minimum,current.max));
+        float minimum = MinimumDistance(current.center);
+        current.distance = ZoomDistance(current.distance, scroll, zoomSensitivity, minimum, Mathf.Max(minimum, current.max));
     }
+
+    public static float ZoomDistance(float distance, float scroll, float sensitivity, float minimum, float maximum) =>
+        Mathf.Clamp(distance * Mathf.Exp(-Mathf.Clamp(scroll, -5f, 5f) * sensitivity), minimum, maximum);
+
+    public static float ScrollSteps(float delta)
+    {
+        bool windows = Application.platform is RuntimePlatform.WindowsEditor or RuntimePlatform.WindowsPlayer;
+        bool platformUnits = InputSystem.settings.scrollDeltaBehavior == InputSettings.ScrollDeltaBehavior.KeepPlatformSpecificInputRange;
+        return windows && platformUnits ? delta / 120f : delta;
+    }
+
+    float MinimumDistance(Vector3 center)
+    {
+        if (bridgeFrame) return BridgeMinimum(center);
+        if (mode != 2) return current.min;
+        var forward = Quaternion.Euler(current.pitch, current.yaw, 0) * Vector3.forward;
+        var extent = current.bounds.extents;
+        float reach = Vector3.Dot(extent, new Vector3(Mathf.Abs(forward.x), Mathf.Abs(forward.y), Mathf.Abs(forward.z)));
+        return Mathf.Max(current.min, Vector3.Dot(center - current.bounds.center, forward) + reach + .025f);
+    }
+
     float BridgeMinimum(Vector3 center)
     {
         var forward = Quaternion.Euler(current.pitch, current.yaw, 0) * Vector3.forward;
@@ -139,10 +166,11 @@ public sealed class RailwayBimCamera:MonoBehaviour
     public void Pan(Vector2 delta) => current.center += (-transform.right * delta.x - transform.up * delta.y) * current.distance * .001f;
     void Update()
     {
-        if(xrPresentation||Typing())return;var mouse=Mouse.current;
+        if(xrPresentation||Typing()||SceneQuickMenu.IsOpen)return;var mouse=Mouse.current;
         if(!UttWebPresentation.Active&&mouse!=null)
         {
-            bool overView = EventSystem.current == null || !EventSystem.current.IsPointerOverGameObject();
+            bool overView = GetComponent<Camera>().pixelRect.Contains(mouse.position.ReadValue()) &&
+                (EventSystem.current == null || !EventSystem.current.IsPointerOverGameObject());
             if (mouse.rightButton.wasPressedThisFrame) orbitStarted = overView;
             if (mouse.middleButton.wasPressedThisFrame) panStarted = overView;
             if (!mouse.rightButton.isPressed) orbitStarted = false;
@@ -151,7 +179,7 @@ public sealed class RailwayBimCamera:MonoBehaviour
             {
                 if (orbitStarted) Orbit(mouse.delta.ReadValue());
                 float scroll = mouse.scroll.ReadValue().y;
-                if (scroll != 0) Zoom(scroll / 120);
+                if (scroll != 0) Zoom(ScrollSteps(scroll));
                 if (panStarted) Pan(mouse.delta.ReadValue());
             }
         }
@@ -165,8 +193,8 @@ public sealed class RailwayBimCamera:MonoBehaviour
     void LateUpdate()
     {
         if(xrPresentation)return;float t=1-Mathf.Exp(-Time.unscaledDeltaTime*14);
-        smoothCenter=FreeMode?current.center:Vector3.Lerp(smoothCenter,current.center,t);smoothDistance=FreeMode?current.distance:Mathf.Lerp(smoothDistance,current.distance,t);
-        if (bridgeFrame && !FreeMode) smoothDistance = Mathf.Max(smoothDistance, BridgeMinimum(smoothCenter));
+        smoothCenter=FreeMode?current.center:Vector3.Lerp(smoothCenter,current.center,t);smoothDistance=FreeMode||zoomSmoothing<=0?current.distance:Mathf.Lerp(smoothDistance,current.distance,1-Mathf.Exp(-Time.unscaledDeltaTime*zoomSmoothing));
+        if (!FreeMode) smoothDistance = Mathf.Max(smoothDistance, MinimumDistance(smoothCenter));
         var r=Quaternion.Euler(current.pitch,current.yaw,0);var desired=smoothCenter-r*Vector3.forward*smoothDistance;
         transform.SetPositionAndRotation(desired,r);
     }

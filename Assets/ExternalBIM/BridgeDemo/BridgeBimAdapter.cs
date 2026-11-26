@@ -86,12 +86,22 @@ namespace UttVr.BridgePilot
         {
             foreach (var entry in catalog.entries)
             {
-                if (!entry.IsElement || (groupId != null && entry.parentGlobalId != groupId) ||
+                if (!entry.IsElement || (groupId != null && !InGroup(entry, groupId)) ||
                     !bindings.TryGetValue(entry.globalId, out var identity)) continue;
                 foreach (var renderer in identity.Renderers)
                     if (renderer != null && renderer.enabled && renderer.gameObject.activeInHierarchy)
                         yield return renderer;
             }
+        }
+
+        bool InGroup(BridgeBimEntry entry, string groupId)
+        {
+            for (int depth = 0; depth < byGlobalId.Count && !string.IsNullOrEmpty(entry.parentGlobalId); depth++)
+            {
+                if (entry.parentGlobalId == groupId) return true;
+                if (!byGlobalId.TryGetValue(entry.parentGlobalId, out entry)) return false;
+            }
+            return false;
         }
 
         public IEnumerable<Renderer> SelectedRenderers =>
@@ -100,6 +110,8 @@ namespace UttVr.BridgePilot
 
         public Vector3 RailwayDirection()
         {
+            if (catalog.modeledForward.sqrMagnitude > .01f)
+                return transform.TransformDirection(catalog.modeledForward);
             Renderer first = null, last = null;
             foreach (var entry in catalog.entries)
             {

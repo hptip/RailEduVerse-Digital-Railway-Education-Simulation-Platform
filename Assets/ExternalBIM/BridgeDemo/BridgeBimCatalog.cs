@@ -27,6 +27,9 @@ namespace UttVr.BridgePilot
         public const string SO201RouteSchema = "YTH-SO201-DERIVED";
         public string schema;
         public string sourceSha256;
+        public float modeledScale;
+        public string modeledZone;
+        public Vector3 modeledForward;
         public BridgeBimEntry[] entries;
     }
 }

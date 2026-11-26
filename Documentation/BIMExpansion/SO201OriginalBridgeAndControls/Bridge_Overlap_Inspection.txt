@@ -1,0 +1,16 @@
+PASS: one Visual (91 native meshes), one Detailed in BIM, no transitive legacy bridge references.
+Other active renderer bounds intersecting the bridge envelope:
+YenTuHaLongXanh/CorridorRidge_008_1_Near550m|Assets/Terrain/Rocks and Terrains Pack - Low Poly/Models/Terrains/Mountains/NoLOD/Mountain_L_19.fbx
+YenTuHaLongXanh/CorridorRidge_009_-1_Near550m|Assets/Terrain/Rocks and Terrains Pack - Low Poly/Models/Terrains/Mountains/NoLOD/Mountain_L_19.fbx
+Zone_017/TerrainZone_017|Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_017.asset
+Zone_018/TerrainZone_018|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_RiverbedTerrain.asset
+Zone_018/SO201_Approach_Entry|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_Approach_Entry.asset
+Zone_018/SO201_Approach_Exit|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_Approach_Exit.asset
+Zone_018/SO201_Track_Bed|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_Track_Bed.asset
+Zone_018/SO201_River|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_River.asset
+Zone_018/SO201_FoundationSoil_O1|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_FoundationSoil_O1.asset
+Zone_018/SO201_FoundationSoil_P2|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_FoundationSoil_P2.asset
+Zone_018/SO201_FoundationSoil_P3|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_FoundationSoil_P3.asset
+Zone_018/SO201_FoundationSoil_O4|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_FoundationSoil_O4.asset
+Zone_018/SO201_Bank_Entry|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_Bank_Entry.asset
+Zone_018/SO201_Bank_Exit|Assets/ExternalBIM/SO201Original/Placement/Zone_018_SO201_Bank_Exit.asset

@@ -11,12 +11,16 @@ public class DemoPlayer : MonoBehaviour
     {
         var e = transform.eulerAngles;
         yaw = e.y; pitch = e.x;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+
+
     }
+
+    void OnDisable() => UttDesktopCursor.UsePlayer(this, false);
 
     void Update()
     {
+        UttDesktopCursor.UsePlayer(this, true);
+        if (!UttDesktopCursor.CanLook) return;
         Vector2 look; Vector2 move;
 #if ENABLE_LEGACY_INPUT_MANAGER
         look = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * (sensitivity * 10f);

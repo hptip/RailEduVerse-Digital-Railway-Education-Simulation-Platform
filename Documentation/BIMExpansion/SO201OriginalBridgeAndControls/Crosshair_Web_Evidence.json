@@ -1,0 +1,24 @@
+{
+  "campus": {
+    "locked": false,
+    "available": true,
+    "fallback": true
+  },
+  "menu": {
+    "locked": false,
+    "available": false,
+    "fallback": false
+  },
+  "classroom": {
+    "locked": false,
+    "available": true,
+    "fallback": true
+  },
+  "lecture": {
+    "locked": false,
+    "available": false,
+    "fallback": false
+  },
+  "ok": true,
+  "issues": []
+}

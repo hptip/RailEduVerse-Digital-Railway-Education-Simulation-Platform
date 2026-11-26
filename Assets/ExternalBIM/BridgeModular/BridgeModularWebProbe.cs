@@ -33,12 +33,6 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
         public Window(string label, float chainage) { this.label = label; this.chainage = chainage; }
     }
 
-    static readonly (string Label, float Chainage)[] Stations =
-    {
-        ("cabin-entry", 3700), ("overhead-middle", 4080), ("outside-middle", 4300),
-        ("cabin-middle", 4560), ("cabin-exit", 4710)
-    };
-
     IEnumerator Start()
     {
         var seat = FindFirstObjectByType<TrainSeatInteractable>();
@@ -64,7 +58,14 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
         memory = ProfilerRecorder.StartNew(ProfilerCategory.Memory, "Total Used Memory");
         triangles = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Triangles Count");
         mainThread = ProfilerRecorder.StartNew(ProfilerCategory.Internal, "Main Thread");
-        var windows = Stations.Select(x => new Window(x.Label, x.Chainage)).ToArray();
+        var facility = FindFirstObjectByType<RailwayZoneStreamingManager>().fixedInfrastructure
+            .Single(record => record.id == "Bridge_Main");
+        float entry = facility.startChainage, exit = facility.endChainage, span = exit - entry;
+        var windows = new[]
+        {
+            new Window("cabin-entry", entry + 7), new Window("overhead-middle", entry + span * .34f),
+            new Window("outside-middle", entry + span * .69f), new Window("cabin-exit", exit + 5)
+        };
         int missing = 0;
         float next = 3400, max = start;
         bool overhead = false, right = false, cabin = false;
@@ -91,19 +92,19 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
             train.SetVRControlInput(Vector2.up);
             float d = train.currentDistanceMeters;
             max = Mathf.Max(max, d);
-            if (d > 3910 && !overhead)
+            if (d > entry + span * .24f && !overhead)
             {
                 view.ToggleView();
                 overhead = view.IsExterior && view.ViewIndex==0;
                 if (overhead) Debug.Log("[BridgeYTH] Exterior overhead camera");
             }
-            if (d > 4230 && overhead && !right)
+            if (d > entry + span * .52f && overhead && !right)
             {
                 view.ToggleView();
                 right = view.IsExterior && view.ViewIndex==1;
                 if(right)Debug.Log("[BridgeYTH] Exterior right camera");
             }
-            if (d > 4520 && right && !cabin)
+            if (d > exit - 12 && right && !cabin)
             {
                 view.ToggleView();
                 view.ToggleView();
@@ -114,7 +115,7 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
             {
                 if (cachedBridge == null && SceneManager.GetSceneByName("Zone_018").isLoaded)
                 {
-                    cachedBridge = GameObject.Find("Bridge_YTH_Visual");
+                    cachedBridge = ActiveBridge();
                     if (cachedBridge != null)
                     {
                         renderers = cachedBridge.GetComponentsInChildren<MeshRenderer>();
@@ -123,7 +124,7 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
                 }
                 foreach (var window in windows)
                 {
-                    if (d < window.chainage - 25f || d > window.chainage + 25f) continue;
+                    if (d < window.chainage - 5f || d > window.chainage + 7f) continue;
                     if (window.frame.Count == 0) LogCamera(window.label, d, view.ViewIndex, renderers);
                     window.frame.Add(Time.unscaledDeltaTime * 1000);
                     window.draw.Add(Counter(draws));
@@ -132,11 +133,11 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
                     window.cpu.Add(Counter(mainThread));
                 }
             }
-            if (d >= 3650.01f && d <= 4770 && !Loaded()) missing++;
+            if (d >= entry && d <= exit && !Loaded()) missing++;
             if (d >= next)
             {
                 next += 100;
-                var bridge = GameObject.Find("Bridge_YTH_Visual");
+                var bridge = ActiveBridge();
                 int activeRenderers=bridge==null?0:bridge.GetComponentsInChildren<MeshRenderer>().Count(r=>r.enabled && r.gameObject.activeInHierarchy);
                 Debug.Log(FormattableString.Invariant($"[BridgeYTH] Sample,{d:F2},{train.currentSpeedKmh:F2},{activeRenderers},{Counter(draws)},{Counter(memory)},{Time.unscaledDeltaTime*1000:F2}"));
             }
@@ -207,7 +208,8 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
             $"[BridgeYTH] Camera,{label},{distance:F2},{index},{inFrustum},{trianglesInFrustum}"));
     }
 
-    static bool Loaded() => SceneManager.GetSceneByName("Zone_018").isLoaded && GameObject.Find("Bridge_YTH_Visual") != null;
+    static GameObject ActiveBridge() => GameObject.Find("Bridge_SO201_Original") ?? GameObject.Find("Bridge_YTH_Visual");
+    static bool Loaded() => SceneManager.GetSceneByName("Zone_018").isLoaded && ActiveBridge() != null;
     static long Counter(ProfilerRecorder recorder) => recorder.Valid && recorder.Count>0 ? recorder.LastValue : -1;
     void OnDestroy()
     {

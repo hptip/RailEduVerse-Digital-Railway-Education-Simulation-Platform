@@ -1,0 +1,69 @@
+{
+  "controls": {
+    "Campus": "FAIL: Campus Pointer Lock: The referenced script on this Behaviour (Game Object 'Decal Projector (157)') is missing!",
+    "Classroom": "FAIL: Classroom Pointer Lock: Unloading 8 Unused Serialized files (Serialized files now loaded: 0)",
+    "Showroom": "FAIL: Showroom Pointer Lock: Unloading 4 Unused Serialized files (Serialized files now loaded: 0)",
+    "Railway": "FAIL: Railway Pointer Lock: Unloading 6 Unused Serialized files (Serialized files now loaded: 0)",
+    "BIM_RailOverview": "PASS",
+    "BIM_BridgeNative": "PASS",
+    "Excel": "PASS: exported XLSX and reopened chooser with BIM cursor free",
+    "BIM_RailDetailed": "PASS"
+  },
+  "zoom": [
+    {
+      "label": "Zone021",
+      "asset": "",
+      "before": 573.083,
+      "after": 478.6792,
+      "steps": 1
+    },
+    {
+      "label": "Girder",
+      "asset": "BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1",
+      "before": 80.28161,
+      "after": 67.05684,
+      "steps": 1
+    },
+    {
+      "label": "Column",
+      "asset": "BRIDGE-SO201-0Fx3Ykz9Zoo5T0r0sZtWPp",
+      "before": 27.62949,
+      "after": 23.07809,
+      "steps": 1
+    },
+    {
+      "label": "Footing",
+      "asset": "BRIDGE-SO201-2T12tBKsv4vL2Pc9ijqqSu",
+      "before": 26.02044,
+      "after": 21.7341,
+      "steps": 1
+    },
+    {
+      "label": "C005",
+      "asset": "Z021-TR-S001-B001-C005",
+      "before": 6.71539,
+      "after": 5.60917,
+      "steps": 1
+    }
+  ],
+  "observations": [
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (35.00, 0.00, 0.00)\n",
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (0.61, 1.76, -1.32)\n",
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (17.00, 0.20, -2.40)\n",
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (5203.23, 12.79, -620.23)\n",
+    "[BIMTree] Select,0.500,BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1\n",
+    "[BIMTree] ZoneReady,Zone_018,1,134,Zone_018\n",
+    "[BIMTree] BridgeFocus,BRIDGE-SO201-08X3nXPrQ8kjF15zlU0Bh1,Component,1,80.28\n",
+    "[BIMTree] BridgeFocus,BRIDGE-SO201-0Fx3Ykz9Zoo5T0r0sZtWPp,Component,1,27.63\n",
+    "[BIMTree] Select,22.400,BRIDGE-SO201-0Fx3Ykz9Zoo5T0r0sZtWPp\n",
+    "[BIMTree] BridgeFocus,BRIDGE-SO201-2T12tBKsv4vL2Pc9ijqqSu,Component,1,26.02\n",
+    "[BIMTree] Select,21.000,BRIDGE-SO201-2T12tBKsv4vL2Pc9ijqqSu\n",
+    "[BIMTree] ZoneReady,Zone_021,0,0,\n",
+    "[BIMTree] Select,32.300,Z021-TR-S001-B001-C005\n"
+  ],
+  "errors": [],
+  "webInitSec": 2.3577266000000003,
+  "campusLoadSec": 1.7701408,
+  "bimLoadSec": 37.043849400000006,
+  "bridgeZoneLoadWithSelectionSec": 3.8487655000000087
+}

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
@@ -18,8 +17,6 @@ using Fusion;
 /// </summary>
 public sealed class SceneQuickMenu : MonoBehaviour
 {
-    private const string StartupScene = "Login";
-    private const string DefaultScene = "Classroom";
     private const string MenuObjectName = "UTT Scene Quick Menu";
 
     private static SceneQuickMenu _instance;
@@ -41,7 +38,6 @@ public sealed class SceneQuickMenu : MonoBehaviour
     private bool _menuOpen;
     public bool IsMenuOpen=>_menuOpen;
     public static bool IsOpen => _instance != null && _instance._menuOpen;
-    private bool _startupRedirectStarted;
     private bool _leftToggleWasPressed;
     private bool _sceneLoadInProgress;
     private UnityEngine.XR.InputDevice _leftController;
@@ -106,14 +102,6 @@ public sealed class SceneQuickMenu : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (!UttWebPresentation.Active && scene.name == StartupScene && !_startupRedirectStarted)
-        {
-            _startupRedirectStarted = true;
-            HideLoginInterface();
-            StartCoroutine(OpenDefaultScene());
-            return;
-        }
-
         if (IsDestination(scene.name))
         {
             _sceneLoadInProgress = false;
@@ -125,27 +113,6 @@ public sealed class SceneQuickMenu : MonoBehaviour
             }
             SetMenuOpen(Application.isEditor);
         }
-    }
-
-    private IEnumerator OpenDefaultScene()
-    {
-        // Preserve the authored comfort, camera and controller configuration.
-        // Readiness/rebinding belongs to that rig, not a replacement prefab.
-        yield return null;
-        AsyncOperation operation = SceneManager.LoadSceneAsync(DefaultScene, LoadSceneMode.Single);
-        if (operation == null)
-            Debug.LogError($"[SceneQuickMenu] Không tải được Scene mặc định '{DefaultScene}'.");
-    }
-
-    private static void HideLoginInterface()
-    {
-        GameObject loginCanvas = GameObject.Find("LoginCanvas");
-        if (loginCanvas != null)
-            loginCanvas.SetActive(false);
-
-        GameObject loginPanel = GameObject.Find("LoginPanel");
-        if (loginPanel != null)
-            loginPanel.SetActive(false);
     }
 
     private void Update()
@@ -432,9 +399,11 @@ public sealed class SceneQuickMenu : MonoBehaviour
     private void SetMenuOpen(bool open)
     {
         _menuOpen = open;
-        if (UttWebPresentation.Active && open) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
         if (_canvas != null)
+        {
             _canvas.gameObject.SetActive(open);
+            UttDesktopCursor.SetModal(_canvas.gameObject, open);
+        }
 
         if (open)
         {

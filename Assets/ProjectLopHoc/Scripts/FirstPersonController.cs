@@ -97,7 +97,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     [Networked] public NetworkString<_32> NetworkPlayerRole { get; set; }
 
     private bool _jumpRequested = false;
-    private InteractableObject _currentHoveredObject;
+    private IInteractable _currentHoveredObject;
     private IInteractable _currentXRHoveredObject;
 
     private void Awake()
@@ -111,6 +111,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        UttDesktopCursor.UsePlayer(this, false);
         UpdateTunnelingVignette(false);
         if (HasStateAuthority && _currentSeat != null && _currentSeat.trainMover != null)
         {
@@ -177,14 +178,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                     _rightController = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
                 }
             }
-            else
-            {
-                if (!UttWebPresentation.Active)
-                {
-                    Cursor.lockState = CursorLockMode.Locked;
-                    Cursor.visible = false;
-                }
-            }
+
 
             GameObject trainObj = GameObject.Find("Train_THSR_700T");
             if (trainObj != null)
@@ -210,6 +204,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         if (!HasStateAuthority) return;
 
         RefreshXRMode();
+        UttDesktopCursor.UsePlayer(this, !_xrMode);
 
         if (_xrMode)
         {
@@ -282,6 +277,12 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
         ClearXRCurrentHover();
         UpdateTunnelingVignette(false);
+        if (!UttDesktopCursor.CanInteract)
+        {
+            ClearCurrentHover();
+            _jumpRequested = false;
+            return;
+        }
 
         // Xoay góc nhìn chuột liên tục cho cả khi đi bộ lẫn khi ngồi ghế lái
         if (DesktopLookActive())
@@ -449,14 +450,6 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
     private void KiemTraNgoiVaoGheBangPhimF()
     {
-        if (UttWebPresentation.Active)
-        {
-            var events = UnityEngine.EventSystems.EventSystem.current;
-            var selected = events != null ? events.currentSelectedGameObject : null;
-            if (SceneQuickMenu.IsOpen || selected != null && selected.TryGetComponent<TMP_InputField>(out var field) && field.isFocused)
-                return;
-        }
-
         if (_mainCamera == null)
         {
             _mainCamera = ResolvePlayerCamera();
@@ -464,10 +457,6 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         }
 
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
-#if ENABLE_INPUT_SYSTEM
-        if (UttWebPresentation.Active && Mouse.current != null)
-            ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-#endif
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
             TrainSeatInteractable seat = hit.collider.GetComponentInParent<TrainSeatInteractable>();
@@ -675,18 +664,11 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         if (_cc != null) _cc.enabled = true;
     }
 
-    private bool DesktopLookActive()
-    {
-#if ENABLE_INPUT_SYSTEM
-        if (UttWebPresentation.Active)
-            return !SceneQuickMenu.IsOpen && !UttWebPresentation.PointerOverUi && Mouse.current?.rightButton.isPressed == true;
-#endif
-        return Cursor.lockState == CursorLockMode.Locked;
-    }
+    private bool DesktopLookActive() => UttDesktopCursor.CanLook;
 
     private void HandleRaycastInteraction()
     {
-        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi))
+        if (UttDesktopCursor.PointerOverCenteredUi)
         {
             ClearCurrentHover();
             return;
@@ -698,14 +680,10 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         }
 
         Ray ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
-#if ENABLE_INPUT_SYSTEM
-        if (UttWebPresentation.Active && Mouse.current != null)
-            ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-#endif
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
-            InteractableObject target = hit.collider.GetComponentInParent<InteractableObject>();
+            IInteractable target = hit.collider.GetComponentInParent<IInteractable>();
 
             if (target != null)
             {
@@ -718,7 +696,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
                 if (WasMousePressedThisFrame() || WasKeyPressedThisFrame(KeyCode.E))
                 {
-                    target.OnInteract();
+                    target.OnInteract(gameObject);
                 }
 
                 return;
@@ -941,8 +919,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             return;
         }
 
-        if (!DesktopLookActive() && !UttWebPresentation.Active) return;
-        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>()?.isFocused == true)) return;
+        if (!UttDesktopCursor.CanInteract) return;
 
         if (_trainRoot != null)
         {

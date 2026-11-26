@@ -18,7 +18,6 @@ namespace ProjectLopHoc.UI
         public KeyCode toggleKey = KeyCode.Tab;
 
         private bool _isLecturer;
-        private bool _isOpen = false;
         private bool _xrMode;
         private bool _xrToggleWasPressed;
 
@@ -75,23 +74,11 @@ namespace ProjectLopHoc.UI
 
         public void ToggleDashboard()
         {
-            _isOpen = !_isOpen;
-
-            if (_isLecturer)
-            {
-                if (lecturerPanel != null) lecturerPanel.SetActive(_isOpen);
-            }
-            else
-            {
-                if (studentSlidePanel != null) studentSlidePanel.SetActive(_isOpen);
-            }
-
-            // Mouse cursor is only relevant in desktop mode; XR panels use the tracked ray.
-            if (!_xrMode && !UttWebPresentation.Active)
-            {
-                Cursor.lockState = _isOpen ? CursorLockMode.None : CursorLockMode.Locked;
-                Cursor.visible = _isOpen;
-            }
+            var panel = _isLecturer ? lecturerPanel : studentSlidePanel;
+            if (panel == null) return;
+            bool open = !panel.activeSelf;
+            panel.SetActive(open);
+            UttDesktopCursor.SetModal(panel, open);
         }
     }
 }

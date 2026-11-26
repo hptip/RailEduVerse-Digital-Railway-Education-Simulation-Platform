@@ -299,7 +299,20 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             return;
         }
         if (controller.bridge.catalog.schema == BridgeBimCatalog.SO201RouteSchema) RenderSO201Provenance(entry);
-        else RenderBridgeSource(entry);
+        else
+        {
+            RenderBridgeSource(entry);
+            var catalog = controller.bridge.catalog;
+            if (catalog.modeledScale > 0)
+            {
+                Field("Modeled", "", displayLabel: "DỮ LIỆU MÔ HÌNH MÔ PHỎNG", section: true);
+                Field("Hệ số tỷ lệ đồng nhất", FormattableString.Invariant($"{catalog.modeledScale:F2}"));
+                Field("Đoạn tuyến", catalog.modeledZone);
+                Field("Lý trình", FormattableString.Invariant($"{entry.modeledStation:F3} m"));
+                var size = entry.modeledBounds;
+                Field("Bao hình học ngang/cao/dọc", FormattableString.Invariant($"{size.x:F3} × {size.y:F3} × {size.z:F3} m"));
+            }
+        }
         Field("BridgeUser", "", displayLabel: "DỮ LIỆU NGƯỜI DÙNG", section: true);
         Field("BridgeTechnicalNote", controller.BridgeStore.TechnicalNote(entry.globalId), true, displayLabel: "Ghi chú kỹ thuật");
         foreach (var parameter in controller.BridgeStore.Parameters(entry.globalId))

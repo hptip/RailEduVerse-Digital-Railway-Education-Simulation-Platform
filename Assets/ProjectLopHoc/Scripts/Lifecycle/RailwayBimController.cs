@@ -310,7 +310,13 @@ public sealed class RailwayBimController:MonoBehaviour
             if (webLeftDown && webDragged && mouse.leftButton.isPressed) cameraController.Orbit(delta);
             if (webRightDown && mouse.rightButton.isPressed) cameraController.Pan(delta);
             float wheel = mouse.scroll.ReadValue().y;
-            if (wheel != 0) cameraController.Zoom(wheel / 120);
+            if (wheel != 0)
+            {
+                float before = cameraController.current.distance;
+                float steps = RailwayBimCamera.ScrollSteps(wheel);
+                cameraController.Zoom(steps);
+                RailwayBimExplorer.Audit(FormattableString.Invariant($"Zoom,{SelectedBridge?.assetId ?? SelectedID},{before:F5},{cameraController.current.distance:F5},{steps:F3}"));
+            }
         }
         if (!mouse.leftButton.wasReleasedThisFrame) return;
         bool click = webLeftDown && !webDragged && inView;
