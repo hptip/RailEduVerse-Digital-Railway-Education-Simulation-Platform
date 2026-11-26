@@ -11,16 +11,12 @@ public class DemoPlayer : MonoBehaviour
     {
         var e = transform.eulerAngles;
         yaw = e.y; pitch = e.x;
-
-
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
-
-    void OnDisable() => UttDesktopCursor.UsePlayer(this, false);
 
     void Update()
     {
-        UttDesktopCursor.UsePlayer(this, true);
-        if (!UttDesktopCursor.CanLook) return;
         Vector2 look; Vector2 move;
 #if ENABLE_LEGACY_INPUT_MANAGER
         look = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * (sensitivity * 10f);
@@ -30,7 +26,7 @@ public class DemoPlayer : MonoBehaviour
         var k = UnityEngine.InputSystem.Keyboard.current;
         look = m != null ? m.delta.ReadValue() * sensitivity : Vector2.zero;
         move = Vector2.zero;
-        if (k != null)
+        if (k != null && !UttChat.IsTyping) // đang gõ chat: W/A/S/D là chữ
         {
             move.x = (k.dKey.isPressed ? 1 : 0) - (k.aKey.isPressed ? 1 : 0);
             move.y = (k.wKey.isPressed ? 1 : 0) - (k.sKey.isPressed ? 1 : 0);

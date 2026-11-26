@@ -37,9 +37,17 @@ public sealed class UttDesktopCursor : MonoBehaviour
     [DllImport("__Internal")] static extern int UttCursorCaptured();
 #endif
 
+    /// <summary>
+    /// TẮT: dự án giữ hệ thống chuột cũ (UttWebView: chuột tự do / góc nhìn thứ nhất / thứ ba).
+    /// Bật lại = đặt true, nhưng phải chuyển các script đang tự khoá/mở chuột sang SetModal/UsePlayer trước,
+    /// nếu không 2 hệ thống sẽ giành nhau khoá chuột.
+    /// </summary>
+    const bool Enabled = false;
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Create()
     {
+        if (!Enabled) return;
         var root = new GameObject(nameof(UttDesktopCursor));
         DontDestroyOnLoad(root);
         instance = root.AddComponent<UttDesktopCursor>();

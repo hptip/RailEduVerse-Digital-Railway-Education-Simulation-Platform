@@ -36,7 +36,9 @@ public class TrainInfoPopupUI : MonoBehaviour
 
         popupPanel.SetActive(true);
 
-        UttDesktopCursor.SetModal(popupPanel, true);
+        // Mở khóa chuột để tương tác với thanh cuộn
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         // Reset vị trí cuộn về dòng đầu tiên
         if (scrollRect != null)
@@ -54,6 +56,8 @@ public class TrainInfoPopupUI : MonoBehaviour
     {
         if (popupPanel != null) popupPanel.SetActive(false);
 
-        UttDesktopCursor.SetModal(popupPanel, false);
+        // Khóa chuột lại để tiếp tục điều khiển góc nhìn
+        Cursor.lockState = UttWebPresentation.Active ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = UttWebPresentation.Active;
     }
 }

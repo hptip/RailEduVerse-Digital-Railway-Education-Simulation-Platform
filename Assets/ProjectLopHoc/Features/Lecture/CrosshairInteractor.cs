@@ -33,8 +33,8 @@ namespace ProjectLopHoc.Features.Lecture
             // XR interactions are processed from the tracked controller ray by FirstPersonController.
             // Do not run a second, detached scene-camera ray in parallel.
             if (_xrDriven || UnityEngine.XR.XRSettings.isDeviceActive) return;
-            if (_cam == null || UttDesktopCursor.HasPlayer) { OnDisable(); return; }
-            if (UttDesktopCursor.ModalOpen || UttWebPresentation.PointerOverUi) { OnDisable(); return; }
+            if (_cam == null) return;
+            if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi)) return;
 
             ProcessHover();
 
@@ -49,7 +49,7 @@ namespace ProjectLopHoc.Features.Lecture
         {
 #if ENABLE_INPUT_SYSTEM
             return (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
-                   (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame);
+                   (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame && !UttChat.IsTyping);
 #elif ENABLE_LEGACY_INPUT_MANAGER
             return Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E);
 #else

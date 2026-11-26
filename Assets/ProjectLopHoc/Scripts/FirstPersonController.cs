@@ -33,6 +33,13 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     [SerializeField] private RuntimeAnimatorController webAvatarController;
     [SerializeField, Min(0.5f)] private float thirdPersonDistance = 3f;
     private UttWebAvatar _webAvatar;
+    // Bản Web: khối VisualModel có sẵn của prefab (tĩnh, không animation)
+    private Renderer[] _defaultBody;
+    private bool _defaultBodyVisible = true;
+    private UttAvatarLod.Entry _lod;
+    // Bảng tên: chỉ dựng lại chữ khi tên/vai trò đổi
+    private bool _nameplateSet, _shownDriving;
+    private NetworkString<_32> _shownName, _shownRole;
     private float _thirdPersonCamOffset;
     private static readonly RaycastHit[] CameraHits = new RaycastHit[16];
 
@@ -106,8 +113,41 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     [Networked] public NetworkString<_32> NetworkPlayerName { get; set; }
     [Networked] public NetworkString<_32> NetworkPlayerRole { get; set; }
 
+    // Đứng trong tàu Yên Tử: gửi vị trí TÍNH THEO CON TÀU, để khi tàu chạy nhanh người khác không thấy mình bị trôi lệch.
+    [Networked] public NetworkBool NetInTrain { get; set; }
+    [Networked] public Vector3 NetTrainLocalPos { get; set; }
+    [Networked] public float NetTrainLocalYaw { get; set; }
+    /// <summary>Ghế khách đang ngồi: 0 = không ngồi, n = ghế số n-1 (UttTrainSeats).</summary>
+    [Networked] public int NetSeat { get; set; }
+    private int _passengerSeat = -1;
+    private Transform _preSeatCar;      // chỗ đứng ngay trước khi ngồi, tính theo toa (để đứng dậy vẫn ở trong toa)
+    private Vector3 _preSeatLocal;
+    private bool _standLocked;          // tàu đang chạy, hết ghế: đứng cố định trong toa
+    private Transform _lockCar;
+    private Vector3 _lockLocal;
+    private float _nextSeatCheck;
+    private Transform _remoteTrainRoot;
+    private Vector3 _remoteLocalPos;
+    private float _remoteLocalYaw;
+    private bool _remoteHasPose;
+
+    /// <summary>Gửi tin nhắn chat (bản Web) tới mọi người trong phòng, kể cả chính mình.</summary>
+    public void SendChat(string message)
+    {
+        if (Object == null || !Object.IsValid || !HasStateAuthority) return;
+        message = UttChat.Clean(message);
+        if (message.Length == 0) return;
+        RpcChat(message);
+    }
+
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void RpcChat(string message)
+    {
+        UttChat.Receive(this, message);
+    }
+
     private bool _jumpRequested = false;
-    private IInteractable _currentHoveredObject;
+    private InteractableObject _currentHoveredObject;
     private IInteractable _currentXRHoveredObject;
 
     private void Awake()
@@ -121,7 +161,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        UttDesktopCursor.UsePlayer(this, false);
+        if (_lod != null) { UttAvatarLod.Unregister(_lod); _lod = null; }
         UpdateTunnelingVignette(false);
         if (HasStateAuthority && _currentSeat != null && _currentSeat.trainMover != null)
         {
@@ -188,7 +228,14 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                     _rightController = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
                 }
             }
-
+            else
+            {
+                if (!UttWebPresentation.Active)
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
+            }
 
             GameObject trainObj = GameObject.Find("Train_THSR_700T");
             if (trainObj != null)
@@ -202,8 +249,8 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                 _horizontalRotation = transform.eulerAngles.y;
             }
 
-            string myName = PlayerPrefs.GetString("PlayerName", "Sinh viên");
-            bool isLecturer = PlayerPrefs.GetInt("IsLecturer", 0) == 1;
+            string myName = UttSession.DisplayName;
+            bool isLecturer = UttSession.IsLecturer;
             NetworkPlayerName = myName;
             NetworkPlayerRole = isLecturer ? "Giảng viên" : "Lớp: 74DCTT21";
         }
@@ -214,7 +261,6 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         if (!HasStateAuthority) return;
 
         RefreshXRMode();
-        UttDesktopCursor.UsePlayer(this, !_xrMode);
 
         if (_xrMode)
         {
@@ -287,12 +333,6 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
         ClearXRCurrentHover();
         UpdateTunnelingVignette(false);
-        if (!UttDesktopCursor.CanInteract)
-        {
-            ClearCurrentHover();
-            _jumpRequested = false;
-            return;
-        }
 
         // Xoay góc nhìn chuột liên tục cho cả khi đi bộ lẫn khi ngồi ghế lái
         if (DesktopLookActive() && !(isDriving && _seatedViewOverride != null))
@@ -315,6 +355,14 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             }
             return;
         }
+
+        // Ngồi ghế khách: F để đứng dậy (chỉ khi tàu dừng)
+        if (_passengerSeat >= 0)
+        {
+            if (WasKeyPressedThisFrame(KeyCode.F)) StandFromPassengerSeat();
+            return;
+        }
+        if (_standLocked) return; // tàu đang chạy, đứng cố định trong toa
 
         // Đang đi bộ tự do
         if (WasKeyPressedThisFrame(KeyCode.Space))
@@ -460,6 +508,14 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
     private void KiemTraNgoiVaoGheBangPhimF()
     {
+        if (UttWebPresentation.Active)
+        {
+            var events = UnityEngine.EventSystems.EventSystem.current;
+            var selected = events != null ? events.currentSelectedGameObject : null;
+            if (SceneQuickMenu.IsOpen || selected != null && selected.TryGetComponent<TMP_InputField>(out var field) && field.isFocused)
+                return;
+        }
+
         if (_mainCamera == null)
         {
             _mainCamera = ResolvePlayerCamera();
@@ -478,7 +534,14 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         }
 
         if (UttWebPresentation.Active && SceneManager.GetActiveScene().name == "YenTuHaLongXanh")
-            FindReachableDriverSeat(ray.origin)?.RequestOccupy(this);
+        {
+            TrainSeatInteractable driverSeat = FindReachableDriverSeat(ray.origin);
+            if (driverSeat != null) { driverSeat.RequestOccupy(this); return; }
+        }
+
+        // Không có ghế lái trong tầm: ngồi ghế khách gần nhất (trong 2,5 m)
+        int passengerSeat = UttTrainSeats.FindNearestFree(transform.position, 2.5f, this);
+        if (passengerSeat >= 0) SitInPassengerSeat(passengerSeat);
     }
 
     private TrainSeatInteractable FindReachableDriverSeat(Vector3 origin)
@@ -674,12 +737,31 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         if (_cc != null) _cc.enabled = true;
     }
 
-    private bool DesktopLookActive() => UttDesktopCursor.CanLook;
+    private bool DesktopLookActive()
+    {
+#if ENABLE_INPUT_SYSTEM
+        if (UttWebPresentation.Active)
+        {
+            if (UttOverlay.BlocksGameplay) return false; // menu E, bản đồ M, đang gõ chat
+            // Góc nhìn thứ nhất / thứ ba (khóa chuột): di chuyển chuột là xoay góc nhìn.
+            if (UttWebView.MouseLookActive)
+                return !SceneQuickMenu.IsOpen && Cursor.lockState == CursorLockMode.Locked;
+            // Chuột tự do: giữ chuột phải để xoay.
+            return !SceneQuickMenu.IsOpen && !UttWebPresentation.PointerOverUi && Mouse.current?.rightButton.isPressed == true;
+        }
+#endif
+        return Cursor.lockState == CursorLockMode.Locked;
+    }
 
     private void HandleRaycastInteraction()
     {
-        if (UttDesktopCursor.PointerOverCenteredUi ||
-            (UttWebPresentation.Active && !UttWebView.MouseLookActive && UttWebPresentation.PointerOverUi))
+        bool webFirstPerson = UttWebPresentation.Active && UttWebView.MouseLookActive;
+        if (webFirstPerson && (SceneQuickMenu.IsOpen || Cursor.lockState != CursorLockMode.Locked))
+        {
+            ClearCurrentHover();
+            return;
+        }
+        if (UttWebPresentation.Active && !webFirstPerson && (SceneQuickMenu.IsOpen || UttWebPresentation.PointerOverUi))
         {
             ClearCurrentHover();
             return;
@@ -694,7 +776,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactionRange, interactableLayer))
         {
-            IInteractable target = hit.collider.GetComponentInParent<IInteractable>();
+            InteractableObject target = hit.collider.GetComponentInParent<InteractableObject>();
 
             if (target != null)
             {
@@ -707,7 +789,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
                 if ((WasMousePressedThisFrame() && UttWebView.LockClickFrame != Time.frameCount) || (!UttWebPresentation.Active && WasKeyPressedThisFrame(KeyCode.E)))
                 {
-                    target.OnInteract(gameObject);
+                    target.OnInteract();
                 }
 
                 return;
@@ -913,7 +995,8 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
     public override void FixedUpdateNetwork()
     {
-        if (!HasStateAuthority || isDriving) return;
+        if (HasStateAuthority) PublishTrainPose();
+        if (!HasStateAuthority || isDriving || _passengerSeat >= 0 || _standLocked) return;
 
         if (_xrMode)
         {
@@ -930,7 +1013,8 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
             return;
         }
 
-        if (!UttDesktopCursor.CanInteract) return;
+        if (!DesktopLookActive() && !UttWebPresentation.Active) return;
+        if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttOverlay.BlocksGameplay || UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>()?.isFocused == true)) return;
 
         if (_trainRoot != null)
         {
@@ -1024,7 +1108,298 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         bool show = UttWebPresentation.Active && !isDriving && UttWebView.ThirdPersonActive;
         if (show && _webAvatar == null && webAvatarPrefab != null)
             _webAvatar = UttWebAvatar.Create(transform, webAvatarPrefab, webAvatarController, moveSpeed);
-        if (_webAvatar != null) _webAvatar.SetVisible(show);
+        if (_webAvatar != null)
+        {
+            _webAvatar.SetVisible(show);
+            _webAvatar.Seated = _passengerSeat >= 0;
+        }
+        // Góc nhìn thứ ba: model người đã hiện thì ẩn khối trắng để không bị chồng 2 model.
+        if (UttWebPresentation.Active) SetDefaultBodyVisible(!(show && _webAvatar != null && _webAvatar.IsShowing));
+    }
+
+    /// <summary>
+    /// Bản Web, người chơi khác: model người có animation thay cho khối trắng, giảm chi tiết theo khoảng cách
+    /// (gần: đầy đủ; vừa: animation thưa, không bóng; xa: khối tĩnh; rất xa: ẩn cả bảng tên).
+    /// </summary>
+    private void UpdateRemoteAppearance()
+    {
+        if (_lod == null) _lod = UttAvatarLod.Register(transform);
+        UttAvatarLod.Refresh();
+        var tier = _lod.tier;
+        bool wantAvatar = tier == UttAvatarLod.Tier.Full || tier == UttAvatarLod.Tier.Mid;
+
+        if (wantAvatar && _webAvatar == null && webAvatarPrefab != null)
+            _webAvatar = UttWebAvatar.Create(transform, webAvatarPrefab, webAvatarController, moveSpeed, true);
+        if (_webAvatar != null)
+        {
+            _webAvatar.SetVisible(wantAvatar);
+            _webAvatar.Seated = isDriving || NetSeat > 0;
+            if (wantAvatar) _webAvatar.SetTier(tier);
+        }
+
+        bool avatarShown = wantAvatar && _webAvatar != null && _webAvatar.IsShowing;
+        // Khối trắng: dùng cho mức Xa, và tạm thời trong vài khung hình model người đang được co giãn.
+        SetDefaultBodyVisible(tier == UttAvatarLod.Tier.Far || (wantAvatar && !avatarShown));
+
+        bool plate = tier != UttAvatarLod.Tier.Hidden;
+        if (nameplateObject != null && nameplateObject.activeSelf != plate) nameplateObject.SetActive(plate);
+    }
+
+    // ---------- Tàu Yên Tử: đồng bộ người lái và người đứng trong toa ----------
+
+    private void PublishTrainPose()
+    {
+        NetSeat = _passengerSeat + 1;
+        bool inTrain = _trainRoot != null && transform.parent == _trainRoot && !isDriving && _passengerSeat < 0;
+        NetInTrain = inTrain;
+        if (!inTrain) return;
+        NetTrainLocalPos = transform.localPosition;
+        NetTrainLocalYaw = transform.localEulerAngles.y;
+    }
+
+    public bool IsSeatedIn(TrainSeatInteractable seat) => isDriving && _currentSeat == seat;
+
+    // ---------- Ghế khách (tối đa 20, mỗi ghế 1 người) ----------
+
+    private TrainSplineMover _seatTrain;
+    private bool TrainMoving()
+    {
+        if (_seatTrain == null) _seatTrain = _trainRoot != null ? _trainRoot.GetComponentInChildren<TrainSplineMover>() : null;
+        if (_seatTrain == null) _seatTrain = FindFirstObjectByType<TrainSplineMover>();
+        return _seatTrain != null && _seatTrain.currentSpeedKmh > 0.5f;
+    }
+
+    private void SitInPassengerSeat(int seat)
+    {
+        if (seat < 0 || isDriving) return;
+        ReleaseStandLock(false);
+        // Nhớ chỗ đang đứng (trong toa) để lúc đứng dậy quay về đúng chỗ này
+        _preSeatCar = UttTrainSeats.GetCar(seat);
+        if (_preSeatCar != null) _preSeatLocal = _preSeatCar.InverseTransformPoint(transform.position);
+        _passengerSeat = seat;
+        _horizontalRotation = 0f;   // nhìn về đầu tàu; chuột vẫn xoay nhìn quanh được
+        _verticalRotation = 0f;
+        if (_ncc != null) _ncc.enabled = false;
+        if (_cc != null) _cc.enabled = false;
+        ApplyPassengerSeatPose();
+    }
+
+    private void StandFromPassengerSeat()
+    {
+        if (_passengerSeat < 0 || TrainMoving()) return; // tàu đang chạy: phải ngồi yên
+        int seat = _passengerSeat;
+        Quaternion look = transform.rotation;
+        _passengerSeat = -1;
+        _horizontalRotation = (Quaternion.Inverse(_trainRoot.rotation) * look).eulerAngles.y;
+        PlaceInsideCar(StandUpPoint(seat));
+    }
+
+    /// <summary>
+    /// Chỗ đứng dậy: ưu tiên đúng chỗ đã đứng trước khi ngồi (tính theo toa nên tàu chạy rồi vẫn đúng),
+    /// không có thì ra lối đi cạnh ghế.
+    /// </summary>
+    private Vector3 StandUpPoint(int seat)
+    {
+        if (_preSeatCar != null) return _preSeatCar.TransformPoint(_preSeatLocal);
+        return UttTrainSeats.TryGetAisle(seat, out Vector3 aisle) ? aisle : transform.position;
+    }
+
+    /// <summary>Đặt người lên đúng mặt sàn toa tại điểm này rồi bật lại di chuyển (không rơi xuyên sàn).</summary>
+    private void PlaceInsideCar(Vector3 point)
+    {
+        Vector3 target = point;
+        var hits = Physics.RaycastAll(point + Vector3.up * 1.2f, Vector3.down, 3f, ~0, QueryTriggerInteraction.Ignore);
+        float best = float.MaxValue;
+        foreach (var hit in hits)
+        {
+            if (hit.collider == null || hit.collider.transform.IsChildOf(transform)) continue;
+            if (hit.distance < best) { best = hit.distance; target = hit.point + Vector3.up * 0.05f; }
+        }
+        transform.position = target;
+        if (_cc != null) _cc.enabled = true;
+        if (_ncc != null) { _ncc.enabled = true; _ncc.Teleport(target); }
+    }
+
+    private void ApplyPassengerSeatPose()
+    {
+        if (UttTrainSeats.TryGetPose(_passengerSeat, _horizontalRotation, out Vector3 pos, out Quaternion rot))
+            transform.SetPositionAndRotation(pos, rot);
+    }
+
+    private void LockStanding(Transform car)
+    {
+        _standLocked = true;
+        _lockCar = car;
+        _lockLocal = car.InverseTransformPoint(transform.position);
+        _horizontalRotation = (Quaternion.Inverse(car.rotation) * transform.rotation).eulerAngles.y;
+        if (_ncc != null) _ncc.enabled = false;
+        if (_cc != null) _cc.enabled = false;
+    }
+
+    private void ReleaseStandLock(bool restoreMovement)
+    {
+        if (!_standLocked) return;
+        _standLocked = false;
+        Quaternion look = transform.rotation;
+        _lockCar = null;
+        if (!restoreMovement) return;
+        if (_cc != null) _cc.enabled = true;
+        if (_ncc != null) { _ncc.enabled = true; _ncc.Teleport(transform.position); }
+        _horizontalRotation = (Quaternion.Inverse(_trainRoot.rotation) * look).eulerAngles.y;
+    }
+
+    /// <summary>
+    /// Mỗi khung hình (chỉ người chơi của mình, ở scene có tàu):
+    ///  - Đang ngồi ghế khách: gắn chặt vào ghế (ghế thuộc toa nên vào cua, tăng tốc không văng).
+    ///  - Tàu bắt đầu chạy mà đang đứng trong toa: tự ngồi ghế trống gần nhất; hết ghế thì đứng cố định trong toa.
+    ///  - Tàu dừng hẳn: người đứng cố định được đi lại bình thường.
+    /// Tìm ghế chỉ chạy tối đa 2 lần/giây.
+    /// </summary>
+    private void UpdatePassengerState()
+    {
+        if (_passengerSeat >= 0)
+        {
+            if (Time.unscaledTime >= _nextSeatCheck)
+            {
+                _nextSeatCheck = Time.unscaledTime + 0.5f;
+                // Hai người cùng bấm một ghế: người vào phòng trước giữ ghế, mình sang ghế trống gần nhất.
+                if (UttTrainSeats.MustYield(_passengerSeat, this))
+                {
+                    int other = UttTrainSeats.FindNearestFree(transform.position, 100f, this);
+                    if (other >= 0) _passengerSeat = other;
+                    else
+                    {
+                        int seat = _passengerSeat;
+                        _passengerSeat = -1;
+                        PlaceInsideCar(StandUpPoint(seat));
+                        if (TrainMoving() && UttTrainSeats.TryGetCarAt(transform.position, out Transform car)) LockStanding(car);
+                    }
+                }
+            }
+            if (_passengerSeat >= 0) ApplyPassengerSeatPose();
+            return;
+        }
+
+        if (_standLocked)
+        {
+            if (_lockCar == null || !TrainMoving()) { ReleaseStandLock(true); return; }
+            transform.SetPositionAndRotation(_lockCar.TransformPoint(_lockLocal),
+                _lockCar.rotation * Quaternion.Euler(0f, _horizontalRotation, 0f));
+            return;
+        }
+
+        if (Time.unscaledTime < _nextSeatCheck) return;
+        _nextSeatCheck = Time.unscaledTime + 0.5f;
+        if (!TrainMoving() || !UttTrainSeats.TryGetCarAt(transform.position, out Transform inCar)) return;
+
+        int free = UttTrainSeats.FindNearestFree(transform.position, 100f, this);
+        if (free >= 0) SitInPassengerSeat(free);
+        else LockStanding(inCar);
+    }
+
+    /// <summary>Máy người khác: đánh dấu nhân vật này đang/không còn ngồi ghế lái (TrainSeatInteractable gọi).</summary>
+    public void SetRemoteSeated(TrainSeatInteractable seat, bool seated)
+    {
+        if (HasStateAuthority) return;
+        if (seated)
+        {
+            isDriving = true;
+            _currentSeat = seat;
+            if (_ncc != null) _ncc.enabled = false;
+            if (_cc != null) _cc.enabled = false;
+        }
+        else if (_currentSeat == seat)
+        {
+            isDriving = false;
+            _currentSeat = null;
+            if (_ncc != null) _ncc.enabled = true;
+            if (_cc != null) _cc.enabled = true;
+        }
+    }
+
+    /// <summary>
+    /// Máy người khác: người lái luôn nằm đúng ghế của con tàu (đã đồng bộ) trên máy này;
+    /// người đứng trong toa đặt theo vị trí tính theo con tàu.
+    /// </summary>
+    private void ApplyRemoteTrainPose()
+    {
+        if (isDriving && _currentSeat != null)
+        {
+            Transform mount = _currentSeat.driverSeatPoint != null ? _currentSeat.driverSeatPoint : _currentSeat.transform;
+            transform.SetPositionAndRotation(mount.position, mount.rotation);
+            _remoteHasPose = false;
+            return;
+        }
+
+        if (NetSeat > 0)
+        {
+            if (UttTrainSeats.TryGetPose(NetSeat - 1, 0f, out Vector3 seatPos, out Quaternion seatRot))
+                transform.SetPositionAndRotation(seatPos, seatRot);
+            _remoteHasPose = false;
+            return;
+        }
+
+        if (NetInTrain)
+        {
+            if (_remoteTrainRoot == null)
+            {
+                GameObject train = GameObject.Find("Train_THSR_700T");
+                _remoteTrainRoot = train != null ? train.transform : null;
+                if (_remoteTrainRoot == null) return;
+            }
+            if (transform.parent != _remoteTrainRoot)
+            {
+                transform.SetParent(_remoteTrainRoot, true);
+                _remoteHasPose = false;
+            }
+
+            Vector3 target = NetTrainLocalPos;
+            float yaw = NetTrainLocalYaw;
+            if (!_remoteHasPose || (target - _remoteLocalPos).sqrMagnitude > 9f)
+            {
+                _remoteLocalPos = target;
+                _remoteLocalYaw = yaw;
+                _remoteHasPose = true;
+            }
+            else
+            {
+                float k = 1f - Mathf.Exp(-15f * Time.deltaTime);
+                _remoteLocalPos = Vector3.Lerp(_remoteLocalPos, target, k);
+                _remoteLocalYaw = Mathf.LerpAngle(_remoteLocalYaw, yaw, k);
+            }
+            transform.localPosition = _remoteLocalPos;
+            transform.localRotation = Quaternion.Euler(0f, _remoteLocalYaw, 0f);
+        }
+        else if (_remoteTrainRoot != null && transform.parent == _remoteTrainRoot)
+        {
+            transform.SetParent(null, true);
+            _remoteHasPose = false;
+        }
+    }
+
+    private void SetDefaultBodyVisible(bool visible)
+    {
+        if (_defaultBody == null)
+        {
+            Transform body = FindChildRecursive(transform, "Model_Offset") ?? FindChildRecursive(transform, "VisualModel");
+            _defaultBody = body != null ? body.GetComponentsInChildren<Renderer>(true) : new Renderer[0];
+            _defaultBodyVisible = true;
+        }
+        if (_defaultBodyVisible == visible) return;
+        _defaultBodyVisible = visible;
+        foreach (var r in _defaultBody)
+            if (r != null) r.enabled = visible;
+    }
+
+    private static Transform FindChildRecursive(Transform parent, string name)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.name == name) return child;
+            var found = FindChildRecursive(child, name);
+            if (found != null) return found;
+        }
+        return null;
     }
 
     private static Vector2 ReadMouseDelta()
@@ -1040,6 +1415,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
     private static bool WasKeyPressedThisFrame(KeyCode key)
     {
+        if (UttChat.IsTyping) return false; // đang gõ chat: F, Space, E không điều khiển nhân vật
 #if ENABLE_INPUT_SYSTEM
         if (Keyboard.current == null) return false;
         return key switch
@@ -1089,6 +1465,8 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
         if (HasStateAuthority)
         {
+            if (_trainRoot != null && !isDriving) UpdatePassengerState();
+
             if (_xrMode)
             {
                 if (_xrOrigin == null)
@@ -1156,12 +1534,27 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
 
             if (!_xrMode) UpdateWebAvatar();
         }
+        else
+        {
+            ApplyRemoteTrainPose();
+            if (UttWebPresentation.Active) UpdateRemoteAppearance();
+        }
 
-        if (nameplateObject != null)
+        if (nameplateObject != null && nameplateObject.activeInHierarchy)
         {
             if (nameplateText != null)
             {
-                nameplateText.text = $"{NetworkPlayerName}\n<size=70%><color=#FFD700>{NetworkPlayerRole}</color></size>";
+                var plateName = NetworkPlayerName;
+                var plateRole = NetworkPlayerRole;
+                if (!_nameplateSet || !plateName.Equals(_shownName) || !plateRole.Equals(_shownRole) || _shownDriving != isDriving)
+                {
+                    _nameplateSet = true;
+                    _shownName = plateName;
+                    _shownRole = plateRole;
+                    _shownDriving = isDriving;
+                    string driving = isDriving ? " · Đang lái tàu" : "";
+                    nameplateText.text = $"{plateName}\n<size=70%><color=#FFD700>{plateRole}{driving}</color></size>";
+                }
             }
 
             Camera cam = Camera.main;

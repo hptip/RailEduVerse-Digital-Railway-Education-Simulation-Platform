@@ -14,7 +14,7 @@ using UnityEngine.InputSystem;
 ///  - Góc nhìn thứ nhất: khóa chuột, di chuyển chuột là xoay góc nhìn, tâm ngắm ở giữa màn hình.
 ///  - Góc nhìn thứ ba: như góc nhìn thứ nhất nhưng camera ở sau lưng, hiện model người.
 /// Phím V để đổi lần lượt: chuột tự do → thứ nhất → thứ ba. Scene Quản lý vòng đời tài sản và Login luôn dùng chuột tự do.
-/// Khi đang khóa chuột: giữ Alt hoặc bấm Esc để hiện chuột; mở menu (M/F1), bảng (L, Tab) cũng tự hiện chuột.
+/// Khi đang khóa chuột: giữ Alt hoặc bấm Esc để hiện chuột; mở menu (F1), bản đồ (M), bảng (L, Tab) cũng tự hiện chuột.
 /// Click vào khung cảnh để khóa chuột lại.
 /// Bảng phím điều khiển ở viền phải màn hình (phím H để ẩn/hiện), tự đổi nội dung khi đang lái tàu.
 /// </summary>
@@ -70,6 +70,8 @@ public static class UttWebView
         go.AddComponent<UttProfilePanel>();
         go.AddComponent<UttLoadingScreen>();
         go.AddComponent<UttWebSkins>();
+        go.AddComponent<UttMinimap>();
+        go.AddComponent<UttChat>();
     }
 
     public static void SetMode(Mode mode)
@@ -158,7 +160,8 @@ public sealed class UttWebViewRunner : MonoBehaviour
         bool openedPanel = kb != null && !typing &&
                            (kb.lKey.wasPressedThisFrame || kb.tabKey.wasPressedThisFrame || kb.escapeKey.wasPressedThisFrame);
 
-        if (SceneQuickMenu.IsOpen || UttProfilePanel.IsOpen || typing || alt || openedPanel)
+        // Gõ chat không mở khoá chuột (vẫn ở góc nhìn thứ nhất/thứ ba, chỉ khoá di chuyển và xoay).
+        if (SceneQuickMenu.IsOpen || UttProfilePanel.IsOpen || UttMinimap.WorldMapOpen || (typing && !UttChat.IsTyping) || alt || openedPanel)
         {
             if (Cursor.lockState == CursorLockMode.Locked) Unlock();
         }
@@ -175,7 +178,7 @@ public sealed class UttWebViewRunner : MonoBehaviour
         }
 
         bool locked = Cursor.lockState == CursorLockMode.Locked;
-        UpdateUi(locked, !locked && !SceneQuickMenu.IsOpen && !UttProfilePanel.IsOpen);
+        UpdateUi(locked, !locked && !SceneQuickMenu.IsOpen && !UttProfilePanel.IsOpen && !UttMinimap.WorldMapOpen);
 #endif
     }
 
@@ -276,7 +279,9 @@ public sealed class UttWebViewRunner : MonoBehaviour
         Key(sb, "V", "Đổi góc nhìn (đang: " + mode + ")");
         if (locked) Key(sb, "Alt / Esc", "Hiện chuột");
         Key(sb, "E", "Menu: cá nhân, khu vực, cài đặt");
-        Key(sb, "M / F1", "Menu chuyển khu vực (1–5)");
+        Key(sb, "M", "Bản đồ");
+        Key(sb, "F1", "Menu chuyển khu vực (1–5)");
+        Key(sb, "T", "Chat");
         if (_hasDashboard) Key(sb, "L / Tab", "Bảng bài giảng");
         Key(sb, "H", "Ẩn bảng này");
         return sb.ToString().TrimEnd('\n');

@@ -18,13 +18,14 @@ namespace ProjectLopHoc.UI
         public KeyCode toggleKey = KeyCode.Tab;
 
         private bool _isLecturer;
+        private bool _isOpen = false;
         private bool _xrMode;
         private bool _xrToggleWasPressed;
 
         private void Start()
         {
-            // Kiểm tra quyền từ PlayerPrefs đã lưu từ màn hình Login
-            _isLecturer = PlayerPrefs.GetInt("IsLecturer", 0) == 1;
+            // Kiểm tra quyền từ phiên đăng nhập (bản Web: riêng từng tab)
+            _isLecturer = UttSession.IsLecturer;
             _xrMode = !UttWebPresentation.Active && (FindFirstObjectByType<XROrigin>() != null || XRSettings.isDeviceActive);
 
             // Đóng cả 2 bảng khi mới vào Scene
@@ -34,7 +35,7 @@ namespace ProjectLopHoc.UI
 
         private void Update()
         {
-            if (UttWebPresentation.Active && SceneQuickMenu.IsOpen) return;
+            if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttChat.IsTyping)) return;
             bool togglePressed = _xrMode ? WasXRControllerTogglePressed() : WasToggleKeyPressed();
             if (togglePressed)
             {
@@ -74,11 +75,23 @@ namespace ProjectLopHoc.UI
 
         public void ToggleDashboard()
         {
-            var panel = _isLecturer ? lecturerPanel : studentSlidePanel;
-            if (panel == null) return;
-            bool open = !panel.activeSelf;
-            panel.SetActive(open);
-            UttDesktopCursor.SetModal(panel, open);
+            _isOpen = !_isOpen;
+
+            if (_isLecturer)
+            {
+                if (lecturerPanel != null) lecturerPanel.SetActive(_isOpen);
+            }
+            else
+            {
+                if (studentSlidePanel != null) studentSlidePanel.SetActive(_isOpen);
+            }
+
+            // Mouse cursor is only relevant in desktop mode; XR panels use the tracked ray.
+            if (!_xrMode && !UttWebPresentation.Active)
+            {
+                Cursor.lockState = _isOpen ? CursorLockMode.None : CursorLockMode.Locked;
+                Cursor.visible = _isOpen;
+            }
         }
     }
 }

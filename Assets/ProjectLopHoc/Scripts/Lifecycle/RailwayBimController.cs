@@ -266,7 +266,7 @@ public sealed class RailwayBimController:MonoBehaviour
     }
     void Update()
     {
-        if(!Ready)return;if(Keyboard.current!=null&&Keyboard.current.fKey.wasPressedThisFrame&&(!UttWebPresentation.Active||!SceneQuickMenu.IsOpen)&&!(EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()!=null))FocusSelected();
+        if(!Ready)return;if(Keyboard.current!=null&&Keyboard.current.fKey.wasPressedThisFrame&&(!UttWebPresentation.Active||!SceneQuickMenu.IsOpen&&!UttProfilePanel.IsOpen)&&!(EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()!=null))FocusSelected();
         if(cameraController.xrPresentation)return;
         if(UttWebPresentation.Active){UpdateWebPointer();return;}
         if(Mouse.current==null||EventSystem.current!=null&&EventSystem.current.IsPointerOverGameObject())return;
@@ -281,7 +281,7 @@ public sealed class RailwayBimController:MonoBehaviour
     {
         var keyboard = Keyboard.current;
         var typing = EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()?.isFocused == true;
-        bool menuOpen = SceneQuickMenu.IsOpen;
+        bool menuOpen = SceneQuickMenu.IsOpen || UttProfilePanel.IsOpen; // menu E: không chọn/xoay mô hình, Esc chỉ đóng menu
         bool menuHandledEscape = menuOpen || webMenuWasOpen;
         webMenuWasOpen = menuOpen;
         if (menuOpen)

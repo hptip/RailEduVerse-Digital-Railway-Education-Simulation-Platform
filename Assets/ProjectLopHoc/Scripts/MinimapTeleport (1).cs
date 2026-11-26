@@ -29,7 +29,10 @@ public class MinimapTeleport : MonoBehaviour, IPointerClickHandler
             bool open = !mapPanel.activeSelf;
             mapPanel.SetActive(open);
 
-            UttDesktopCursor.SetModal(mapPanel, open);
+            // FirstPersonController chỉ cho di chuyển khi chuột đang bị khoá,
+            // nên mở bản đồ thì mở khoá chuột để bấm, đóng bản đồ thì khoá lại.
+            Cursor.lockState = open || UttWebPresentation.Active ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = open || UttWebPresentation.Active;
         }
     }
 

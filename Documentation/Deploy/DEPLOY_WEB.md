@@ -12,7 +12,7 @@
 2. Chép `nginx-uttvr.conf` vào `/etc/nginx/sites-available/uttvr`, sửa `TEN_MIEN` và đường dẫn, rồi:
    `sudo ln -s /etc/nginx/sites-available/uttvr /etc/nginx/sites-enabled/ && sudo nginx -t && sudo systemctl reload nginx`
 3. Bật HTTPS: `sudo certbot --nginx -d TEN_MIEN`. Bản Web và kết nối Photon nên chạy qua HTTPS.
-4. Backend (nếu dùng tài khoản/điểm): chạy `Backend/server.py` bằng gunicorn ở `127.0.0.1:5000` dưới dạng dịch vụ systemd. Đổi mật khẩu mặc định trong `server.py` trước khi mở ra ngoài.
+4. Backend (**bắt buộc**: bản Web mặc định đăng nhập qua backend; chỉ chạy offline khi địa chỉ trang có `?offline=1`): chạy `Backend/server.py` bằng gunicorn ở `127.0.0.1:5000` dưới dạng dịch vụ systemd. Đổi mật khẩu mặc định trong `server.py` trước khi mở ra ngoài.
 
 ## 3. Cập nhật bản mới
 Chép đè thư mục build. `index.html` và các file nén được đặt `no-cache`, trình duyệt hỏi lại bằng ETag và chỉ tải lại phần đã đổi.

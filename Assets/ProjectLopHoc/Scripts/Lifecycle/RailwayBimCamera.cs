@@ -183,7 +183,7 @@ public sealed class RailwayBimCamera:MonoBehaviour
                 if (panStarted) Pan(mouse.delta.ReadValue());
             }
         }
-        if(FreeMode&&Keyboard.current!=null)
+        if(FreeMode&&Keyboard.current!=null&&!UttProfilePanel.IsOpen) // menu E đang mở: WASD/Q/E không bay camera
         {
             var k=Keyboard.current;Vector3 move=transform.right*((k.dKey.isPressed?1:0)-(k.aKey.isPressed?1:0))+transform.forward*((k.wKey.isPressed?1:0)-(k.sKey.isPressed?1:0))+Vector3.up*((k.eKey.isPressed?1:0)-(k.qKey.isPressed?1:0));
             Vector3 delta=Vector3.ClampMagnitude(move,1)*freeSpeed*(k.leftShiftKey.isPressed||k.rightShiftKey.isPressed?3:1)*Time.unscaledDeltaTime;

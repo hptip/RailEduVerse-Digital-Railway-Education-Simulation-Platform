@@ -28,6 +28,7 @@ public sealed class RailwayLifecycleInspector : MonoBehaviour
     }
     void Update()
     {
+        if (UttProfilePanel.IsOpen) return; // menu E đang mở
 #if ENABLE_INPUT_SYSTEM
         if(Keyboard.current!=null&&Keyboard.current.fKey.wasPressedThisFrame)FocusModule();
         if(Mouse.current!=null&&Mouse.current.leftButton.wasPressedThisFrame&&inspectionCamera!=null)

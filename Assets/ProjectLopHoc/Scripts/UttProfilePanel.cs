@@ -22,9 +22,9 @@ public sealed class UttProfilePanel : MonoBehaviour
 {
     public static bool IsOpen { get; private set; }
     static UttProfilePanel _inst;
-    bool _forAreas; // mở bằng M/F1: cho phép cả ở scene không có nhân vật (Quản lý vòng đời)
+    bool _forAreas; // mở bằng F1: cho phép cả ở scene không có nhân vật (Quản lý vòng đời)
 
-    /// <summary>M / F1: mở/đóng menu ở mục Chuyển khu vực.</summary>
+    /// <summary>F1: mở/đóng menu ở mục Chuyển khu vực.</summary>
     public static void ToggleAreas()
     {
         if (_inst == null) return;
@@ -140,14 +140,18 @@ public sealed class UttProfilePanel : MonoBehaviour
             if (PlayerPrefs.HasKey(MousePref)) p.mouseSensitivity = PlayerPrefs.GetFloat(MousePref);
         }
 
-        bool allowed = UttWebView.SceneAllowsFirstPerson;
+        // Menu E dùng được ở mọi scene có nhân vật, và cả Quản lý vòng đời tài sản (không có ở Login).
+        bool lifecycle = IsLifecycleScene();
+        bool allowed = UttWebView.SceneAllowsFirstPerson || lifecycle;
         if (!allowed && IsOpen && !_forAreas) Close();
 
 #if ENABLE_INPUT_SYSTEM
         var kb = Keyboard.current;
         if (kb != null && (allowed || IsOpen) && !IsTyping() && !SceneQuickMenu.IsOpen)
         {
-            if (kb.eKey.wasPressedThisFrame) { if (IsOpen) Close(); else Open(); }
+            // Quản lý vòng đời, camera bay tự do: E đang là phím bay lên, nên E chỉ đóng menu chứ không mở (mở bằng F1).
+            bool eFlies = lifecycle && !IsOpen && LifecycleCameraFlying();
+            if (kb.eKey.wasPressedThisFrame && !eFlies) { if (IsOpen) Close(); else Open(); }
             else if (IsOpen && kb.escapeKey.wasPressedThisFrame) Close();
             else if (IsOpen && _tab == Tab.Areas)
             {
@@ -187,6 +191,29 @@ public sealed class UttProfilePanel : MonoBehaviour
     }
 
     void Close() { IsOpen = false; _forAreas = false; }
+
+    const string LifecycleScene = "QuanLyVongDoiTaiSan";
+    int _lifecycleHandle = int.MinValue;
+    bool _isLifecycle;
+    RailwayBimCamera _bimCamera;
+
+    bool IsLifecycleScene()
+    {
+        var scene = SceneManager.GetActiveScene();
+        if (scene.handle != _lifecycleHandle)
+        {
+            _lifecycleHandle = scene.handle;
+            _isLifecycle = scene.name == LifecycleScene;
+            _bimCamera = _isLifecycle ? FindFirstObjectByType<RailwayBimCamera>() : null;
+        }
+        return _isLifecycle;
+    }
+
+    bool LifecycleCameraFlying()
+    {
+        if (_bimCamera == null) _bimCamera = FindFirstObjectByType<RailwayBimCamera>();
+        return _bimCamera != null && _bimCamera.FreeMode;
+    }
 
     void SetVisible(bool visible)
     {
@@ -231,11 +258,21 @@ public sealed class UttProfilePanel : MonoBehaviour
         SceneQuickMenu.GoTo(index);
     }
 
+    /// <summary>Đăng xuất ngay (ví dụ máy chủ báo phiên hết hạn). Không có menu thì vẫn xoá phiên và về Login.</summary>
+    public static void ForceLogout()
+    {
+        if (_inst != null) { _inst.Logout(); return; }
+        UttSession.Clear();
+        if (SceneManager.GetActiveScene().name != "Login") SceneManager.LoadScene("Login");
+    }
+
     async void Logout()
     {
         if (_loggingOut) return;
         _loggingOut = true;
         Close();
+        if (DataBridge.Instance != null) DataBridge.Instance.Logout();
+        else UttSession.Clear();
         var runner = FindFirstObjectByType<NetworkRunner>();
         try
         {
@@ -264,8 +301,8 @@ public sealed class UttProfilePanel : MonoBehaviour
     {
         var player = FindLocalPlayerCached();
         string name = player != null ? player.NetworkPlayerName.ToString() : "";
-        if (string.IsNullOrWhiteSpace(name)) name = PlayerPrefs.GetString("PlayerName", "Sinh viên");
-        bool lecturer = PlayerPrefs.GetInt("IsLecturer", 0) == 1;
+        if (string.IsNullOrWhiteSpace(name)) name = UttSession.DisplayName;
+        bool lecturer = UttSession.IsLecturer;
         string roleLine = player != null ? player.NetworkPlayerRole.ToString() : "";
         string cls = roleLine.StartsWith("Lớp:") ? roleLine.Substring(4).Trim() : "";
         string role = lecturer ? "Giảng viên" : "Sinh viên";
@@ -284,7 +321,7 @@ public sealed class UttProfilePanel : MonoBehaviour
                 _pRole.color = lecturer ? new Color32(0xFF, 0xE3, 0xA3, 0xFF) : new Color32(0xD4, 0xEB, 0xFF, 0xFF);
                 _pClass.transform.parent.gameObject.SetActive(cls.Length > 0);
                 _pClass.text = cls;
-                string account = PlayerPrefs.GetString("Username", "");
+                string account = UttSession.Username;
                 _rAccount.text = string.IsNullOrEmpty(account) ? "Khách" : account;
                 _rRole.text = role;
                 _rClass.text = cls.Length > 0 ? cls : "—";
@@ -727,7 +764,8 @@ public sealed class UttProfilePanel : MonoBehaviour
         (string k, string a)[] right =
         {
             ("E", "Mở / đóng menu này"), ("V", "Đổi góc nhìn"), ("Alt / Esc", "Hiện chuột"),
-            ("M / F1", "Menu chuyển khu vực nhanh"), ("L / Tab", "Bảng bài giảng (Lớp học)"), ("H", "Ẩn / hiện bảng phím"),
+            ("M", "Bản đồ"), ("F1", "Menu chuyển khu vực nhanh"), ("T", "Chat"),
+            ("L / Tab", "Bảng bài giảng (Lớp học)"), ("H", "Ẩn / hiện bảng phím"),
         };
         float y = 0f;
         foreach (var it in left) { KeyRow(page, it.k, it.a, 0f, y); y -= 52f; }

@@ -57,7 +57,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
         if (_standaloneXROrigin == null || _hasSpawned)
             return;
 
-        Transform spawnPoint = ResolveSpawnPoint(PlayerPrefs.GetInt("IsLecturer", 0) == 1);
+        Transform spawnPoint = ResolveSpawnPoint(UttSession.IsLecturer);
         if (spawnPoint != null)
             _standaloneXROrigin.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
     }
@@ -77,7 +77,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
         GameObject rig = Instantiate(standaloneXROriginPrefab);
         rig.name = "XR Origin (VR)";
         _standaloneXROrigin = rig.transform;
-        Transform spawnPoint = ResolveSpawnPoint(PlayerPrefs.GetInt("IsLecturer", 0) == 1);
+        Transform spawnPoint = ResolveSpawnPoint(UttSession.IsLecturer);
         if (spawnPoint != null)
             rig.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
 
@@ -133,8 +133,8 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         var result = await runner.StartGame(new StartGameArgs()
         {
-            GameMode = PlayerPrefs.GetInt("OfflineDemo", 1) == 1 ? GameMode.Single : GameMode.Shared,
-            SessionName = PlayerPrefs.GetInt("OfflineDemo", 1) == 1 ? null : "TestDirect_YenTu",
+            GameMode = DirectStartOffline() ? GameMode.Single : GameMode.Shared,
+            SessionName = DirectStartOffline() ? null : "TestDirect_YenTu",
             Scene = activeSceneRef,
             SceneManager = runnerObj.GetComponent<NetworkSceneManagerDefault>()
         });
@@ -150,6 +150,9 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
         else if (this != null)
             Debug.LogError($"[PlayerSpawner] Direct scene startup failed: {result.ShutdownReason}", this);
     }
+
+    /// <summary>Mở thẳng scene không qua Login: chưa có phiên thì chạy offline như trước.</summary>
+    private static bool DirectStartOffline() => !UttSession.IsLoggedIn || UttSession.Offline;
 
     public void OnSceneLoadDone(NetworkRunner runner)
     {
@@ -174,7 +177,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         _isSpawning = true; // Khóa ngay lập tức tại frame này
 
-        bool isLecturer = PlayerPrefs.GetInt("IsLecturer", 0) == 1;
+        bool isLecturer = UttSession.IsLecturer;
         NetworkPrefabRef prefabToSpawn = isLecturer ? lecturerPrefab : studentPrefab;
 
         if (!await WaitForTrainReadyAsync())
