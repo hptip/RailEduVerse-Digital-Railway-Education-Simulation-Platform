@@ -9,6 +9,7 @@ public class NetworkManager : MonoBehaviour
     public static NetworkManager Instance { get; private set; }
     
     private NetworkRunner _runner;
+    [Tooltip("Editor/VR: bật = Photon chạy một người. Bản Web luôn online (Shared), trừ khi địa chỉ trang có ?offline=1.")]
     [SerializeField] private bool offlineDemo = true;
 
     private void Awake()
@@ -38,11 +39,8 @@ public class NetworkManager : MonoBehaviour
         var sceneManager = gameObject.GetComponent<NetworkSceneManagerDefault>();
         if (sceneManager == null) sceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>();
 
-        // Lưu tạm thông tin để khi vào Campus, hệ thống sinh nhân vật sẽ đọc và gán quyền
-        PlayerPrefs.SetString("Username", username);
-        PlayerPrefs.SetInt("IsLecturer", isLecturer ? 1 : 0);
-        PlayerPrefs.SetInt("OfflineDemo", offlineDemo ? 1 : 0);
-        PlayerPrefs.Save();
+        // Tên và vai trò đọc từ UttSession khi sinh nhân vật (bản Web: riêng từng tab).
+        bool offline = UttSession.ResolveOffline(offlineDemo);
 
         // Đăng nhập xong vào thẳng Lớp học (giống bản VR, xem SceneQuickMenu.DefaultScene).
         int campusIndex = SceneUtility.GetBuildIndexByScenePath("Assets/ProjectLopHoc/Scenes/Classroom.unity");
@@ -55,13 +53,13 @@ public class NetworkManager : MonoBehaviour
         // Thiết lập thông số phòng
         var args = new StartGameArgs()
         {
-            GameMode = offlineDemo ? GameMode.Single : GameMode.Shared,
-            SessionName = offlineDemo ? null : "UTTCampus",
+            GameMode = offline ? GameMode.Single : GameMode.Shared,
+            SessionName = offline ? null : "UTTCampus",
             Scene = SceneRef.FromIndex(campusIndex),
             SceneManager = sceneManager
         };
 
-        Debug.Log(offlineDemo ? "Đang khởi chạy Lớp học ở chế độ offline." : "Đang kết nối Photon Shared...");
+        Debug.Log(offline ? "Đang khởi chạy Lớp học ở chế độ offline." : "Đang kết nối Photon Shared...");
         UttLoadingScreen.Begin("Classroom", true); // màn hình chờ sau khi đăng nhập
         var result = await _runner.StartGame(args);
         if (!result.Ok)

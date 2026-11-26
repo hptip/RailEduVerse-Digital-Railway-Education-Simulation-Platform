@@ -23,7 +23,7 @@ namespace ProjectLopHoc.Features.Lecture
         public Sprite DisplaySprite => SlideCount == 0 ? null : _loadedSlides[Mathf.Clamp(DisplaySlideIndex, 0, SlideCount - 1)];
         public string DisplayLectureName => DisplayLectureIndex >= 0 && DisplayLectureIndex < LectureCount ? classroomConfig.availableLectures[DisplayLectureIndex] : "";
         // Local study is allowed; shared presentation controls retain the lecturer role.
-        public bool CanNavigate => !HasNetworkState || Runner == null || Runner.GameMode == GameMode.Single || PlayerPrefs.GetInt("IsLecturer", 0) == 1;
+        public bool CanNavigate => !HasNetworkState || Runner == null || Runner.GameMode == GameMode.Single || UttSession.IsLecturer;
         public bool CanPreviousLecture => CanNavigate && LectureCount > 0 && DisplayLectureIndex > 0;
         public bool CanNextLecture => CanNavigate && DisplayLectureIndex + 1 < LectureCount;
         public event Action PresentationChanged;

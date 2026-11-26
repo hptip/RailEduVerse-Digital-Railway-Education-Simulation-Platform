@@ -67,6 +67,23 @@ namespace ProjectLopHoc.Features.Quiz
             ForceHide(false); // Khởi tạo: chỉ ẩn panel, không can thiệp chuột
         }
 
+        private void LateUpdate()
+        {
+            // Ép buộc mở khóa chuột MỌI FRAME trong lúc bảng trắc nghiệm hoặc bảng kết quả đang mở
+            if ((rootPanel != null && rootPanel.activeInHierarchy) || 
+                (resultPanel != null && resultPanel.activeInHierarchy))
+            {
+                if (Cursor.lockState != CursorLockMode.None)
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                if (!Cursor.visible)
+                {
+                    Cursor.visible = true;
+                }
+            }
+        }
+
         public void ShowQuiz(QuizSO quiz, QuizSessionController session)
         {
             if (quiz == null || quiz.questions == null || quiz.questions.Count == 0)
@@ -84,7 +101,15 @@ namespace ProjectLopHoc.Features.Quiz
             resultPanel.SetActive(false);
             rootPanel.SetActive(true);
 
-            UttDesktopCursor.SetModal(rootPanel, true);
+            // Ẩn tâm ngắm khi bắt đầu làm bài
+            if (crosshairUI != null)
+            {
+                crosshairUI.SetActive(false);
+            }
+
+            // Mở chuột để thao tác UI
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
             RefreshQuestion();
         }
@@ -94,8 +119,18 @@ namespace ProjectLopHoc.Features.Quiz
             if (rootPanel != null) rootPanel.SetActive(false);
             if (resultPanel != null) resultPanel.SetActive(false);
 
-            UttDesktopCursor.SetModal(rootPanel, false);
-            UttDesktopCursor.SetModal(resultPanel, false);
+            // Bật lại tâm ngắm Crosshair
+            if (crosshairUI != null)
+            {
+                crosshairUI.SetActive(true);
+            }
+
+            // Khóa chuột trở lại tâm màn hình FPS
+            if (lockCursor && !UttWebPresentation.Active)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
         }
 
         private void ExitPopup()
@@ -154,7 +189,6 @@ namespace ProjectLopHoc.Features.Quiz
 
             resultText.text = $"Bạn trả lời đúng {score}/{_quiz.questions.Count} câu.";
             resultPanel.SetActive(true);
-            UttDesktopCursor.SetModal(resultPanel, true);
 
             // 1. Lấy tên thật từ DataBridge (nếu chưa có thì lấy tên mặc định)
             string studentName = (DataBridge.Instance != null && !string.IsNullOrEmpty(DataBridge.Instance.CurrentFullName)) 

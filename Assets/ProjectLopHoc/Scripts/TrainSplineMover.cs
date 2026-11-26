@@ -42,6 +42,44 @@ public class TrainSplineMover : MonoBehaviour
     [Header("Trạng thái Điều khiển")]
     public bool isDriverSeated = false; // Chỉ nhận phím ga và phanh khi có người ngồi ghế
 
+    // ----- Đồng bộ mạng (TrainSeatInteractable điều khiển) -----
+    /// <summary>
+    /// true = máy này không tự chạy tàu mà làm theo trạng thái nhận từ người đang giữ quyền tàu (thường là người lái).
+    /// false = máy này tự chạy tàu (offline, hoặc đang giữ quyền tàu).
+    /// </summary>
+    [System.NonSerialized] public bool followNetwork;
+    private float _netDistance = -1f;
+    private float _netReceivedAt;
+
+    /// <summary>Nhận trạng thái tàu từ mạng: vị trí trên tuyến (m), tốc độ, tốc độ đặt, cấp tốc độ.</summary>
+    public void SetNetworkState(float distance, float speedKmh, float targetKmh, int level)
+    {
+        if (distance <= 0f) return; // người giữ quyền chưa gửi lần nào
+        if (!Mathf.Approximately(distance, _netDistance))
+        {
+            _netDistance = distance;
+            _netReceivedAt = Time.time;
+        }
+        currentSpeedKmh = Mathf.Max(0f, speedKmh);
+        targetSpeedKmh = Mathf.Max(0f, targetKmh);
+        speedLevel = Mathf.Clamp(level, 1, 5);
+    }
+
+    /// <summary>Chạy tiếp theo tốc độ nhận được và kéo dần về vị trí nhận được (không giật).</summary>
+    void FollowNetwork()
+    {
+        if (_netDistance < 0f) return;
+        float dt = Time.deltaTime;
+        float speedMps = currentSpeedKmh / 3.6f;
+        // Vị trí nhận được đã cũ một chút: ước lượng tàu đã chạy thêm bao xa kể từ lúc nhận.
+        float expected = _netDistance + speedMps * Mathf.Min(Time.time - _netReceivedAt, 0.5f);
+        currentDistanceMeters += speedMps * dt;
+        float error = expected - currentDistanceMeters;
+        if (Mathf.Abs(error) > 30f) currentDistanceMeters = expected; // lệch quá xa (mới vào phòng): đặt thẳng
+        else currentDistanceMeters += error * Mathf.Clamp01(dt * 4f);
+        currentDistanceMeters = Mathf.Clamp(currentDistanceMeters, carSpacing, totalRouteLength);
+    }
+
     void Start()
     {
         if (splineRoute != null)
@@ -59,8 +97,15 @@ public class TrainSplineMover : MonoBehaviour
     {
         if (splineRoute == null || totalRouteLength <= 0f) return;
 
-        XuLyNhapLenhLaiTau();
-        CapNhatVanToc();
+        if (followNetwork)
+        {
+            FollowNetwork();
+        }
+        else
+        {
+            XuLyNhapLenhLaiTau();
+            CapNhatVanToc();
+        }
         CapNhatViTriToaXe();
     }
 
@@ -90,9 +135,8 @@ public class TrainSplineMover : MonoBehaviour
             return;
         }
 
-        if (UttDesktopCursor.ModalOpen) return;
 #if ENABLE_INPUT_SYSTEM
-        if (Keyboard.current == null) return;
+        if (Keyboard.current == null || UttChat.IsTyping) return; // đang gõ chat: W/S/Space không lái tàu
         if (Keyboard.current.wKey.isPressed)
             targetSpeedKmh = Mathf.Min(targetSpeedKmh + 25f * Time.deltaTime, SpeedLimitForLevel);
         if (Keyboard.current.sKey.isPressed)

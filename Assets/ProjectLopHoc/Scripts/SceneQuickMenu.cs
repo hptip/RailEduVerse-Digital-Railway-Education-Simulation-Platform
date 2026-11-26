@@ -133,7 +133,9 @@ public sealed class SceneQuickMenu : MonoBehaviour
         bool togglePressed = false;
 #if ENABLE_INPUT_SYSTEM
         Keyboard keyboard = Keyboard.current;
-        if (keyboard != null && (keyboard.f1Key.wasPressedThisFrame || (UttWebPresentation.Active && keyboard.mKey.wasPressedThisFrame && !(EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()?.isFocused ?? false))))
+        // Bản Web: M mở bản đồ (UttMinimap), menu chuyển khu vực chỉ còn F1.
+        if (keyboard != null && keyboard.f1Key.wasPressedThisFrame &&
+            !(UttWebPresentation.Active && (EventSystem.current?.currentSelectedGameObject?.GetComponent<TMPro.TMP_InputField>()?.isFocused ?? false)))
             togglePressed = true;
 #endif
 #if ENABLE_LEGACY_INPUT_MANAGER
@@ -159,9 +161,9 @@ public sealed class SceneQuickMenu : MonoBehaviour
             _leftToggleWasPressed = controllerPressed;
         }
 
-        if (togglePressed && IsDestination(SceneManager.GetActiveScene().name))
+        if (togglePressed && !UttChat.IsTyping && IsDestination(SceneManager.GetActiveScene().name))
         {
-            // Bản Web: M / F1 mở menu Liquid Glass (menu E) ở mục Chuyển khu vực cho đồng bộ giao diện
+            // Bản Web: F1 mở menu Liquid Glass (menu E) ở mục Chuyển khu vực cho đồng bộ giao diện
             if (UttWebPresentation.Active) UttProfilePanel.ToggleAreas();
             else SetMenuOpen(!_menuOpen);
         }
@@ -410,11 +412,9 @@ public sealed class SceneQuickMenu : MonoBehaviour
     private void SetMenuOpen(bool open)
     {
         _menuOpen = open;
+        if (UttWebPresentation.Active && open) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
         if (_canvas != null)
-        {
             _canvas.gameObject.SetActive(open);
-            UttDesktopCursor.SetModal(_canvas.gameObject, open);
-        }
 
         if (open)
         {

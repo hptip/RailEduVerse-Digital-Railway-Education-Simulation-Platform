@@ -10,7 +10,11 @@ public class DataBridge : MonoBehaviour
     public static DataBridge Instance;
 
     [Header("Offline VR Demo")]
+    [Tooltip("Editor/VR: bật = không gọi backend. Bản Web luôn online, trừ khi địa chỉ trang có ?offline=1.")]
     [SerializeField] private bool offlineDemo = true;
+
+    /// <summary>Đang chạy offline thật sự (đã tính cả bản Web).</summary>
+    public bool Offline => UttSession.ResolveOffline(offlineDemo);
 
     #if UNITY_EDITOR
     private string baseUrl = "http://127.0.0.1:5000/api";
@@ -18,10 +22,11 @@ public class DataBridge : MonoBehaviour
     private string baseUrl = "/api";
     #endif
 
-    public int CurrentUserId { get; private set; } = -1;
-    public string CurrentUsername { get; private set; }
-    public string CurrentFullName { get; private set; }
-    public string CurrentRole { get; private set; }
+    // Đọc từ UttSession: bản Web mỗi tab một phiên riêng.
+    public int CurrentUserId => UttSession.UserId;
+    public string CurrentUsername => UttSession.Username;
+    public string CurrentFullName => UttSession.FullName;
+    public string CurrentRole => UttSession.Role;
 
     private void Awake()
     {
@@ -50,6 +55,7 @@ public class DataBridge : MonoBehaviour
         public string username;
         public string full_name;
         public string role;
+        public string token;
     }
 
     [Serializable]
@@ -72,7 +78,7 @@ public class DataBridge : MonoBehaviour
     // Đăng nhập trả về kết quả async
     public async Task<(bool success, string message)> LoginAsync(string username, string password)
     {
-        if (offlineDemo)
+        if (Offline)
         {
             // This path never constructs or sends a UnityWebRequest.
             await Task.Yield();
@@ -81,10 +87,7 @@ public class DataBridge : MonoBehaviour
             if (!OfflineAuthenticationService.VerifyPassword(user, password))
                 return (false, "Mật khẩu không chính xác.");
 
-            CurrentUserId = user.id;
-            CurrentUsername = user.username;
-            CurrentFullName = user.full_name;
-            CurrentRole = user.role;
+            UttSession.Set(user.id, user.username, user.full_name, user.role, "", true);
             return (true, $"Xin chào {CurrentFullName}!");
         }
 
@@ -106,10 +109,9 @@ public class DataBridge : MonoBehaviour
                 try
                 {
                     LoginResponse res = JsonUtility.FromJson<LoginResponse>(req.downloadHandler.text);
-                    CurrentUserId = res.data.user_id;
-                    CurrentUsername = res.data.username;
-                    CurrentFullName = res.data.full_name;
-                    CurrentRole = res.data.role;
+                    if (res == null || res.data == null || string.IsNullOrEmpty(res.data.token))
+                        return (false, "Máy chủ trả về dữ liệu đăng nhập không hợp lệ.");
+                    UttSession.Set(res.data.user_id, res.data.username, res.data.full_name, res.data.role, res.data.token, false);
 
                     return (true, $"Xin chào {CurrentFullName}!");
                 }
@@ -118,16 +120,68 @@ public class DataBridge : MonoBehaviour
                     return (false, "Lỗi phân tích dữ liệu server: " + e.Message);
                 }
             }
-            else
+            else if (req.responseCode == 401)
             {
                 return (false, "Tài khoản hoặc mật khẩu không chính xác!");
+            }
+            else
+            {
+                Debug.LogWarning($"[DataBridge] Đăng nhập lỗi {req.responseCode}: {req.error}");
+                return (false, "Không kết nối được máy chủ. Kiểm tra backend (Backend/start_backend.bat) hoặc mở trang với ?offline=1.");
             }
         }
     }
 
+    /// <summary>Gắn token của phiên hiện tại vào request.</summary>
+    private static void AddAuth(UnityWebRequest req)
+    {
+        if (UttSession.HasToken) req.SetRequestHeader("Authorization", "Bearer " + UttSession.Token);
+    }
+
+    /// <summary>Máy chủ báo token sai hoặc hết hạn: xoá phiên và quay về màn hình đăng nhập.</summary>
+    private static void HandleUnauthorized(UnityWebRequest req)
+    {
+        if (req.responseCode != 401) return;
+        Debug.LogWarning("[DataBridge] Phiên đăng nhập hết hạn, quay về màn hình đăng nhập.");
+        UttProfilePanel.ForceLogout();
+    }
+
+    /// <summary>
+    /// Kiểm tra phiên đã lưu (sau khi bấm F5) còn dùng được không.
+    /// Trả về false khi token sai/hết hạn; true khi hợp lệ, offline, hoặc máy chủ tạm thời không trả lời.
+    /// </summary>
+    public async Task<bool> ValidateSessionAsync()
+    {
+        if (!UttSession.IsLoggedIn) return false;
+        if (UttSession.Offline || !UttSession.HasToken) return UttSession.Offline;
+
+        using (UnityWebRequest req = UnityWebRequest.Get($"{baseUrl}/me"))
+        {
+            AddAuth(req);
+            var op = req.SendWebRequest();
+            while (!op.isDone) await Task.Yield();
+            if (req.result == UnityWebRequest.Result.Success) return true;
+            return req.responseCode != 401 && req.responseCode != 403;
+        }
+    }
+
+    /// <summary>Đăng xuất: huỷ token trên máy chủ (không chờ) và xoá phiên ở tab này.</summary>
+    public void Logout()
+    {
+        if (UttSession.HasToken && !UttSession.Offline)
+        {
+            var req = new UnityWebRequest($"{baseUrl}/auth/logout", "POST");
+            req.downloadHandler = new DownloadHandlerBuffer();
+            AddAuth(req);
+            var op = req.SendWebRequest();
+            op.completed += _ => req.Dispose();
+        }
+        UttSession.Clear();
+    }
+
     public void SaveQuizResult(string quizTitle, int score, int totalQuestions)
     {
-        if (offlineDemo) return;
+        if (Offline || UttSession.Offline) return;
         if (CurrentUserId <= 0)
         {
             Debug.LogError("[DataBridge] Chưa đăng nhập. Không thể lưu điểm!");
@@ -153,7 +207,13 @@ public class DataBridge : MonoBehaviour
             req.uploadHandler = new UploadHandlerRaw(bodyRaw);
             req.downloadHandler = new DownloadHandlerBuffer();
             req.SetRequestHeader("Content-Type", "application/json");
+            AddAuth(req);
             yield return req.SendWebRequest();
+            if (req.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogWarning($"[DataBridge] {url} lỗi {req.responseCode}: {req.error}");
+                HandleUnauthorized(req);
+            }
         }
     }
 
@@ -177,7 +237,7 @@ public class DataBridge : MonoBehaviour
     {
         var list = new System.Collections.Generic.List<StudentScoreRecord>();
 
-        if (offlineDemo)
+        if (Offline || UttSession.Offline)
         {
             AddFallbackStudentRecords(list);
             return list;
@@ -185,6 +245,7 @@ public class DataBridge : MonoBehaviour
 
         using (UnityWebRequest req = UnityWebRequest.Get($"{baseUrl}/students/scores"))
         {
+            AddAuth(req);
             var op = req.SendWebRequest();
             while (!op.isDone) await Task.Yield();
 
@@ -206,7 +267,8 @@ public class DataBridge : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("[DataBridge] Chưa kết nối được endpoint /students/scores. Dùng dữ liệu mẫu.");
+                Debug.LogWarning($"[DataBridge] /students/scores lỗi {req.responseCode}. Dùng dữ liệu mẫu.");
+                HandleUnauthorized(req);
             }
         }
 

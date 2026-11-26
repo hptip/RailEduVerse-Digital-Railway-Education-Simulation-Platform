@@ -67,7 +67,7 @@ public sealed class YenTuStandaloneXRBootstrap : MonoBehaviour
         if (spawner == null)
             return;
 
-        Transform spawnPoint = PlayerPrefs.GetInt("IsLecturer", 0) == 1
+        Transform spawnPoint = UttSession.IsLecturer
             ? spawner.lecturerSpawnPoint
             : spawner.studentSpawnPoint;
         if (spawnPoint != null)

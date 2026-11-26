@@ -3,13 +3,35 @@ import sqlite3
 import datetime
 import csv
 import io
-from flask import Flask, request, jsonify, render_template_string
+import secrets
+from functools import wraps
+from flask import Flask, request, jsonify, render_template_string, g
 from flask_cors import CORS
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 CORS(app)
 
 DB_NAME = os.path.join(os.path.dirname(os.path.abspath(__file__)), "classroom.db")
+
+# Phiên đăng nhập hết hạn sau SESSION_HOURS giờ không hoạt động.
+SESSION_HOURS = 8
+HASH_PREFIXES = ("scrypt:", "pbkdf2:")
+
+def now_str():
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+def is_hashed(stored):
+    return isinstance(stored, str) and stored.startswith(HASH_PREFIXES)
+
+def hash_password(raw):
+    return generate_password_hash(raw)
+
+def verify_password(stored, raw):
+    """Hỗ trợ cả mật khẩu cũ lưu dạng chữ thường (tự nâng cấp lên dạng băm khi đăng nhập)."""
+    if is_hashed(stored):
+        return check_password_hash(stored, raw)
+    return secrets.compare_digest(str(stored), str(raw))
 
 def get_db_connection():
     conn = sqlite3.connect(DB_NAME, timeout=30.0)
@@ -51,6 +73,17 @@ def init_db():
                         updated_at TEXT NOT NULL
                     )''')
 
+        # 4. Bảng phiên đăng nhập: mỗi tab trình duyệt / mỗi lần đăng nhập có một token riêng
+        c.execute('''CREATE TABLE IF NOT EXISTS sessions (
+                        token TEXT PRIMARY KEY,
+                        user_id INTEGER NOT NULL,
+                        created_at TEXT NOT NULL,
+                        last_seen TEXT NOT NULL,
+                        expires_at TEXT NOT NULL,
+                        FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+                    )''')
+        c.execute("CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id)")
+
         # Cấp sẵn 3 tài khoản ban đầu nếu chưa có
         default_users = [
             ("admin", "admin123", "Quản Trị Viên Hệ Thống", "admin"),
@@ -58,8 +91,10 @@ def init_db():
             ("sv01", "123456", "Nguyễn Văn A (K74)", "student")
         ]
         for u, p, fn, r in default_users:
-            c.execute("INSERT OR IGNORE INTO users (username, password, full_name, role) VALUES (?, ?, ?, ?)", (u, p, fn, r))
-        
+            c.execute("INSERT OR IGNORE INTO users (username, password, full_name, role) VALUES (?, ?, ?, ?)", (u, hash_password(p), fn, r))
+
+        # Xoá phiên đã hết hạn
+        c.execute("DELETE FROM sessions WHERE expires_at < ?", (now_str(),))
         conn.commit()
 
 init_db()
@@ -216,7 +251,7 @@ def admin_add_user():
     if u and p and fn:
         with get_db_connection() as conn:
             try:
-                conn.execute("INSERT INTO users (username, password, full_name, role) VALUES (?, ?, ?, ?)", (u, p, fn, r))
+                conn.execute("INSERT INTO users (username, password, full_name, role) VALUES (?, ?, ?, ?)", (u, hash_password(p), fn, r))
                 conn.commit()
             except sqlite3.IntegrityError:
                 pass
@@ -234,7 +269,7 @@ def admin_import_csv():
                     fn = row[1].strip()
                     p = row[2].strip()
                     try:
-                        conn.execute("INSERT INTO users (username, password, full_name, role) VALUES (?, ?, ?, 'student')", (u, p, fn))
+                        conn.execute("INSERT INTO users (username, password, full_name, role) VALUES (?, ?, ?, 'student')", (u, hash_password(p), fn))
                     except sqlite3.IntegrityError:
                         continue
             conn.commit()
@@ -248,6 +283,60 @@ def admin_delete_user(user_id):
     return render_template_string("<script>window.location.href='/admin';</script>")
 
 # ==============================================================================
+# XÁC THỰC BẰNG TOKEN (mỗi tab một phiên, nhiều tài khoản đăng nhập cùng lúc)
+# ==============================================================================
+def _token_from_request():
+    auth = request.headers.get('Authorization', '')
+    if auth.lower().startswith('bearer '):
+        return auth[7:].strip()
+    return ''
+
+def _session_user(conn, token):
+    if not token:
+        return None
+    row = conn.execute("""
+        SELECT u.id, u.username, u.full_name, u.role, s.expires_at
+        FROM sessions s INNER JOIN users u ON u.id = s.user_id
+        WHERE s.token = ?""", (token,)).fetchone()
+    if row is None:
+        return None
+    now = datetime.datetime.now()
+    if row["expires_at"] < now.strftime("%Y-%m-%d %H:%M:%S"):
+        conn.execute("DELETE FROM sessions WHERE token = ?", (token,))
+        conn.commit()
+        return None
+    # Gia hạn phiên khi còn hoạt động
+    expires = (now + datetime.timedelta(hours=SESSION_HOURS)).strftime("%Y-%m-%d %H:%M:%S")
+    conn.execute("UPDATE sessions SET last_seen = ?, expires_at = ? WHERE token = ?",
+                 (now.strftime("%Y-%m-%d %H:%M:%S"), expires, token))
+    conn.commit()
+    return row
+
+def require_auth(*roles):
+    """Bắt buộc có token hợp lệ. Truyền roles để giới hạn vai trò, ví dụ require_auth('teacher', 'admin')."""
+    def deco(fn):
+        @wraps(fn)
+        def wrapper(*args, **kwargs):
+            with get_db_connection() as conn:
+                user = _session_user(conn, _token_from_request())
+            if user is None:
+                return jsonify({"status": "error", "message": "Phiên đăng nhập đã hết hạn, vui lòng đăng nhập lại."}), 401
+            if roles and user["role"] not in roles:
+                return jsonify({"status": "error", "message": "Tài khoản không có quyền thực hiện thao tác này."}), 403
+            g.user = user
+            return fn(*args, **kwargs)
+        return wrapper
+    return deco
+
+def _user_json(user):
+    return {
+        "user_id": user["id"],
+        "username": user["username"],
+        "full_name": user["full_name"],
+        "role": user["role"]
+    }
+
+# ==============================================================================
 # REST API (DÀNH CHO UNITY WEBGL GỌI LÊN)
 # ==============================================================================
 @app.route('/api/auth/login', methods=['POST'])
@@ -257,26 +346,48 @@ def login():
     password = str(data.get('password', '')).strip()
 
     with get_db_connection() as conn:
-        user = conn.execute("SELECT id, username, full_name, role FROM users WHERE username = ? AND password = ?", 
-                            (username, password)).fetchone()
+        user = conn.execute("SELECT id, username, password, full_name, role FROM users WHERE username = ?",
+                            (username,)).fetchone()
+        if user is None or not verify_password(user["password"], password):
+            return jsonify({"status": "error", "message": "Sai tài khoản hoặc mật khẩu!"}), 401
 
-    if user:
-        return jsonify({
-            "status": "success",
-            "data": {
-                "user_id": user["id"],
-                "username": user["username"],
-                "full_name": user["full_name"],
-                "role": user["role"]
-            }
-        }), 200
+        # Mật khẩu cũ dạng chữ thường: nâng cấp lên dạng băm ngay lần đăng nhập này
+        if not is_hashed(user["password"]):
+            conn.execute("UPDATE users SET password = ? WHERE id = ?", (hash_password(password), user["id"]))
 
-    return jsonify({"status": "error", "message": "Sai tài khoản hoặc mật khẩu!"}), 401
+        token = secrets.token_urlsafe(32)
+        now = datetime.datetime.now()
+        expires = (now + datetime.timedelta(hours=SESSION_HOURS)).strftime("%Y-%m-%d %H:%M:%S")
+        conn.execute("INSERT INTO sessions (token, user_id, created_at, last_seen, expires_at) VALUES (?, ?, ?, ?, ?)",
+                     (token, user["id"], now_str(), now_str(), expires))
+        conn.execute("DELETE FROM sessions WHERE expires_at < ?", (now_str(),))
+        conn.commit()
+
+    payload = _user_json(user)
+    payload["token"] = token
+    payload["expires_at"] = expires
+    return jsonify({"status": "success", "data": payload}), 200
+
+@app.route('/api/auth/logout', methods=['POST'])
+def logout():
+    token = _token_from_request()
+    if token:
+        with get_db_connection() as conn:
+            conn.execute("DELETE FROM sessions WHERE token = ?", (token,))
+            conn.commit()
+    return jsonify({"status": "success"}), 200
+
+@app.route('/api/me', methods=['GET'])
+@require_auth()
+def me():
+    return jsonify({"status": "success", "data": _user_json(g.user)}), 200
 
 @app.route('/api/quiz/submit', methods=['POST'])
+@require_auth()
 def submit_quiz():
     data = request.get_json(silent=True) or {}
-    user_id = data.get('user_id')
+    # Lấy người nộp từ token, không tin user_id do máy gửi lên
+    user_id = g.user["id"]
     quiz_title = data.get('quiz_title', 'Bài kiểm tra trắc nghiệm')
     score = data.get('score', 0)
     total_questions = data.get('total_questions', 0)
@@ -294,6 +405,7 @@ def submit_quiz():
             return jsonify({"status": "error", "message": f"Lỗi ràng buộc dữ liệu: {str(e)}"}), 400
 
 @app.route('/api/quiz/results', methods=['GET'])
+@require_auth('teacher', 'admin')
 def get_quiz_results():
     with get_db_connection() as conn:
         rows = conn.execute("""
@@ -308,6 +420,7 @@ def get_quiz_results():
 # API LẤY DANH SÁCH SINH VIÊN VÀ ĐIỂM SỐ CHO UNITY LECTURE DASHBOARD
 @app.route('/api/students/scores', methods=['GET'])
 @app.route('/api/students/scores/', methods=['GET'])
+@require_auth('teacher', 'admin')
 def get_students_scores():
     with get_db_connection() as conn:
         # Lấy tất cả sinh viên (role = student) và lấy điểm bài thi gần nhất
@@ -342,6 +455,7 @@ def get_students_scores():
     }), 200
 
 @app.route('/api/slide/update', methods=['POST'])
+@require_auth('teacher', 'admin')
 def update_slide():
     data = request.get_json(silent=True) or {}
     pres_name = data.get('presentation_name', 'DefaultPresentation')

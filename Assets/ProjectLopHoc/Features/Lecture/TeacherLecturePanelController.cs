@@ -26,8 +26,8 @@ namespace ProjectLopHoc.Features.Lecture
             if (board != null) board.PresentationChanged -= RefreshView;
             if (lectureDropdown != null) lectureDropdown.onValueChanged.RemoveListener(LoadLecture);
         }
-        public void Open() { if (panel != null) { panel.SetActive(true); UttDesktopCursor.SetModal(panel, true); } if (board != null) { board.RefreshPresentation(); RefreshView(); } }
-        public void Close() { if (panel != null) { panel.SetActive(false); UttDesktopCursor.SetModal(panel, false); } }
+        public void Open() { if (panel != null) panel.SetActive(true); if (board != null) { board.RefreshPresentation(); RefreshView(); } }
+        public void Close() { if (panel != null) panel.SetActive(false); }
         public void NextSlide() { if (actionManager != null) actionManager.NextSlide(); }
         public void PreviousSlide() { if (actionManager != null) actionManager.PreviousSlide(); }
         public void NextLecture() { if (actionManager != null) actionManager.NextLecture(); }

@@ -32592,6 +32592,8 @@ MonoBehaviour:
   maxSpeedKmh: 200
   accelerationRate: 4.5
   brakeRate: 8
+  controllerInputSmoothing: 4
+  speedLevel: 1
   currentDistanceMeters: 0
   totalRouteLength: 0
   isDriverSeated: 0
@@ -93006,7 +93008,7 @@ MonoBehaviour:
   SortKey: 0
   SendPriority: 1
   EnableInterpolation: 1
-  Flags: 786432
+  Flags: 524288
   NestedObjects: []
   NetworkedBehaviours: []
   ForceRemoteRenderTimeframe: 0
@@ -93024,6 +93026,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TrainSeatInteractable
   driverSeatPoint: {fileID: 1629345805781503975}
   trainMover: {fileID: 2192914011406988549}
+  _NetDistance: 0
+  _NetSpeedKmh: 0
+  _NetTargetKmh: 0
+  _NetSpeedLevel: 0
 --- !u!1 &9121790011450976988
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,6 +39,29 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
 
             loginView.OnRoleChanged += HandleRoleChanged;
             loginView.OnLoginClicked += HandleLogin;
+
+            // Bản Web: tab này đã đăng nhập trước khi bấm F5 thì vào lại luôn, không bắt nhập lại.
+            if (UttWebPresentation.Active && UttSession.IsLoggedIn)
+                ResumeSavedSession();
+        }
+
+        private async void ResumeSavedSession()
+        {
+            if (_loginInProgress || DataBridge.Instance == null) return;
+            _loginInProgress = true;
+            loginView.SetError("Đang khôi phục phiên đăng nhập...");
+
+            bool valid = await DataBridge.Instance.ValidateSessionAsync();
+            if (this == null || loginView == null) return;
+            if (!valid)
+            {
+                UttSession.Clear();
+                loginView.SetError("Phiên đăng nhập đã hết hạn, vui lòng đăng nhập lại.");
+                _loginInProgress = false;
+                return;
+            }
+
+            await EnterCampusAsync(UttSession.DisplayName, UttSession.IsLecturer);
         }
 
         private void OnDestroy()
@@ -80,7 +103,7 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
             }
 
             _loginInProgress = true;
-            loginView.SetError("Đang xác thực tài khoản offline...");
+            loginView.SetError(DataBridge.Instance.Offline ? "Đang xác thực tài khoản offline..." : "Đang xác thực tài khoản...");
 
             // =========================================================
             // 1. XÁC THỰC TÀI KHOẢN VỚI SQLITE SERVER
@@ -105,6 +128,7 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
 
             if (!roleMatches)
             {
+                DataBridge.Instance.Logout();
                 loginView.SetError("Vai trò đã chọn không khớp với tài khoản.");
                 _loginInProgress = false;
                 return;
@@ -118,14 +142,13 @@ namespace ProjectLopHoc.Features.Authentication.Controllers
             string realFullName = DataBridge.Instance.CurrentFullName;
             _model.SetUserData(realFullName, isActuallyTeacher);
 
-            // Gán đầy đủ cả 2 khóa để Fusion và QuizPopupUI đọc đồng bộ
-            PlayerPrefs.SetInt("IsLecturer", isActuallyTeacher ? 1 : 0);
-            PlayerPrefs.SetString("PlayerName", realFullName);
-            PlayerPrefs.SetString("Username", realFullName);
-            PlayerPrefs.SetInt("UserId", DataBridge.Instance.CurrentUserId);
-            PlayerPrefs.SetString("UserRole", userRole);
-            PlayerPrefs.Save();
+            // Tên, vai trò, token đã nằm trong UttSession (DataBridge.LoginAsync ghi).
+            // Bản Web không ghi PlayerPrefs để 2 tab đăng nhập 2 tài khoản không đè lên nhau.
+            await EnterCampusAsync(realFullName, isActuallyTeacher);
+        }
 
+        private async Task EnterCampusAsync(string realFullName, bool isActuallyTeacher)
+        {
             loginView.SetError("Đang kết nối vào khuôn viên UTT...");
 
             try
