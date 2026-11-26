@@ -1,0 +1,1 @@
+PASS: 196 matching mesh placements, 196 pickable IDs, 91 preserved original IDs, 105 new occurrences; no old production bridge or sandbox dependency

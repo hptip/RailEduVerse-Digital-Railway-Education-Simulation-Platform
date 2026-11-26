@@ -5206,16 +5206,17 @@ MonoBehaviour:
     - OCL
   facilities:
   - key: Bridge_Main
-    label: "C\u1EA7u ch\xEDnh SO 201"
+    label: "C\u1EA7u SO 201 \xB7 7 nh\u1ECBp"
     domain: "C\u1EA7u"
     owner: Zone_018
     assetId: 
     covered:
+    - Zone_017
     - Zone_018
     bindings:
-    - Zone_018/RuntimeZoneContent/FixedInfrastructure_Bridge/Bridge_SO201_Original
-    start: 3850.001
-    end: 4063.722
+    - Zone_018/RuntimeZoneContent/FixedInfrastructure_Bridge/Bridge_SO201_SevenSpans
+    start: 3694.0015
+    end: 4234.122
   - key: TunnelMountain_Forest_01
     label: "H\u1EA7m Forest_01"
     domain: "H\u1EA7m"
@@ -5267,7 +5268,7 @@ MonoBehaviour:
     - Zone_011/RuntimeZoneContent/Experience_SubgradeReinforcedSlope
     start: 300
     end: 800
-  modularBridgeCatalog: {fileID: 11400000, guid: d2d8228ad1f86544b982c48f2d4f991f, type: 2}
+  modularBridgeCatalog: {fileID: 11400000, guid: be578c3de15ead2468a721d827b33d3d, type: 2}
   detailedEnvironment: {fileID: 1585156192}
   controller: {fileID: 616518835}
 --- !u!1 &623705190

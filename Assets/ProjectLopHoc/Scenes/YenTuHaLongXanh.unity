@@ -18221,12 +18221,13 @@ MonoBehaviour:
   fixedInfrastructure:
   - id: Bridge_Main
     kind: Bridge
-    startChainage: 3850.001
-    endChainage: 4063.722
+    startChainage: 3694.0015
+    endChainage: 4234.122
     zoneId: Zone_018
     mountainAssetReference: 
     tunnelAssetReference: 
     zoneIds:
+    - Zone_017
     - Zone_018
   - id: TunnelMountain_Forest_01
     kind: TunnelMountain

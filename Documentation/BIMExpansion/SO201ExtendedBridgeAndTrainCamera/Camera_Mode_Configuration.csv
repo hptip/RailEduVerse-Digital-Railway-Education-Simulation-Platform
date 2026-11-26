@@ -1,0 +1,10 @@
+Platform,Sequence,Mode,Input,Orbit,Zoom,Reset
+Desktop/Web,0,Cabin,B,Look mặc định,Không,Không
+Desktop/Web,1,Trên cao,B,Chuột phải,Cuộn,Home
+Desktop/Web,2,Bên phải,B,Chuột phải,Cuộn,Home
+Desktop/Web,3,Bên trái,B,Chuột phải,Cuộn,Home
+Desktop/Web,4,Kết cấu,B,Chuột phải,Cuộn,Home
+VR,0,Cabin,B tay phải,Head tracking,Không,Không
+VR,1,Trên cao,B tay phải,Giới hạn yaw và pitch,Không,Không
+VR,2,Bên phải,B tay phải,Giới hạn yaw và pitch,Không,Không
+VR,3,Bên trái,B tay phải,Giới hạn yaw và pitch,Không,Không

@@ -64,11 +64,12 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
         var windows = new[]
         {
             new Window("cabin-entry", entry + 7), new Window("overhead-middle", entry + span * .34f),
-            new Window("outside-middle", entry + span * .69f), new Window("cabin-exit", exit + 5)
+            new Window("outside-middle", entry + span * .69f), new Window("structure-middle", entry + span * .84f),
+            new Window("cabin-exit", exit + 5)
         };
         int missing = 0;
         float next = 3400, max = start;
-        bool overhead = false, right = false, cabin = false;
+        bool overhead = false, right = false, structure = false, cabin = false;
         bool timed = Application.absoluteURL.Contains("bridgePerf=1");
         double addedAt = 0;
         SceneManager.sceneLoaded += MeasureLoad;
@@ -104,10 +105,20 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
                 right = view.IsExterior && view.ViewIndex==1;
                 if(right)Debug.Log("[BridgeYTH] Exterior right camera");
             }
-            if (d > exit - 12 && right && !cabin)
+            if (d > entry + span * .77f && right && !structure && view.ViewIndex == 1)
             {
                 view.ToggleView();
                 view.ToggleView();
+                structure = view.IsExterior && view.ViewIndex == 3;
+                if (structure) Debug.Log("[BridgeYTH] Exterior structure camera");
+            }
+            if (d > exit - 12 && right && !cabin)
+            {
+                for (int step = 0; step < 3 && view.IsExterior; step++)
+                {
+                    view.ToggleView();
+                    if (view.ViewIndex == 3) Debug.Log("[BridgeYTH] Exterior structure camera");
+                }
                 cabin=!view.IsExterior;
                 if(cabin)Debug.Log("[BridgeYTH] Restored cabin camera");
             }
@@ -154,7 +165,7 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
         foreach (var window in windows.Where(x => x.frame.Count > 0))
             Debug.Log(FormattableString.Invariant(
                 $"[BridgeYTH] Performance,{window.label},{window.chainage:F0},{window.frame.Count},{Percentile(window.frame,.5):F3},{Percentile(window.frame,.95):F3},{Percentile(window.frame,.99):F3},{Median(window.draw)},{Median(window.triangle)},{Median(window.used)},{Median(window.cpu)}"));
-        Debug.Log(FormattableString.Invariant($"[BridgeYTH] Result,{start:F2},{max:F2},{train.currentDistanceMeters:F2},missingFrames={missing},overhead={overhead},right={right},cabin={cabin},bridgeLoaded={Loaded()}"));
+        Debug.Log(FormattableString.Invariant($"[BridgeYTH] Result,{start:F2},{max:F2},{train.currentDistanceMeters:F2},missingFrames={missing},overhead={overhead},right={right},cabin={cabin},structure={structure},bridgeLoaded={Loaded()}"));
     }
 
     static double Percentile(List<float> values, double p)
@@ -208,7 +219,8 @@ public sealed class BridgeModularWebProbe : MonoBehaviour
             $"[BridgeYTH] Camera,{label},{distance:F2},{index},{inFrustum},{trianglesInFrustum}"));
     }
 
-    static GameObject ActiveBridge() => GameObject.Find("Bridge_SO201_Original") ?? GameObject.Find("Bridge_YTH_Visual");
+    static GameObject ActiveBridge() => GameObject.Find("Bridge_SO201_SevenSpans") ??
+        GameObject.Find("Bridge_SO201_Original") ?? GameObject.Find("Bridge_YTH_Visual");
     static bool Loaded() => SceneManager.GetSceneByName("Zone_018").isLoaded && ActiveBridge() != null;
     static long Counter(ProfilerRecorder recorder) => recorder.Valid && recorder.Count>0 ? recorder.LastValue : -1;
     void OnDestroy()

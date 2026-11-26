@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR;
 
 /// <summary>Local seated-only exterior viewpoint; reuses the tracked stereo camera.</summary>
-[DefaultExecutionOrder(2000)]
+[DefaultExecutionOrder(-100)]
 public sealed class TrainExteriorView : MonoBehaviour
 {
     [SerializeField] private TrainSplineMover train;
@@ -21,8 +21,11 @@ public sealed class TrainExteriorView : MonoBehaviour
     private InputAction toggle, look;
     private float yaw, pitch, nextSearch;
     private bool active;
+    private RailwayZoneStreamingManager route;
+    private readonly RaycastHit[] obstructions = new RaycastHit[24];
+    private float zoom = 1f, targetZoom = 1f;
     private int viewIndex = -1;
-    public int ViewIndex => viewIndex; // -1 cabin, 0 overhead, 1 right, 2 left
+    public int ViewIndex => viewIndex; // -1 cabin, 0 overhead, 1 right, 2 left, 3 structure (desktop)
     public bool IsExterior => active;
     public Transform ViewAnchor => anchor;
     public void Configure(TrainSplineMover mover, Material material) { train = mover; restrictedViewMaterial = material; }
@@ -48,8 +51,13 @@ public sealed class TrainExteriorView : MonoBehaviour
                 if (player.Object != null && player.Object.IsValid && player.HasStateAuthority && player.IsDrivingTrain(train)) { driver = player; break; }
         }
         if (active && !LocalDriver) SetExterior(false);
-        if (toggle.WasPressedThisFrame()) ToggleView();
+        if (toggle.WasPressedThisFrame() && !UttDesktopCursor.ModalOpen) ToggleView();
         if (!active) return;
+        if (!driver.UsesXrView)
+        {
+            UpdateDesktopInput();
+            return;
+        }
         Vector2 input = look.ReadValue<Vector2>();
         if (input.magnitude < .2f) input = Vector2.zero;
         yaw = Mathf.Clamp(yaw + input.x * 25 * Time.unscaledDeltaTime, -yawRange, yawRange);
@@ -60,19 +68,18 @@ public sealed class TrainExteriorView : MonoBehaviour
             yaw = Mathf.Clamp(yaw + delta.x * .08f, -yawRange, yawRange);
             pitch = Mathf.Clamp(pitch - delta.y * .08f, -pitchRange, pitchRange);
         }
-        UpdateAnchor();
     }
     public bool ToggleView()
     {
         if (!active && !LocalDriver) return false;
         if (!active) { viewIndex = 0; SetExterior(true); }
-        else if (viewIndex < 2) { viewIndex++; yaw = pitch = 0; UpdateAnchor(); }
+        else if (viewIndex < (driver.UsesXrView ? 2 : 3)) { viewIndex++; ResetOrbit(); UpdateAnchor(); }
         else SetExterior(false);
         return active;
     }
     private void SetExterior(bool enabled)
     {
-        if (enabled && (!LocalDriver || restrictedViewMaterial == null)) return;
+        if (enabled && (!LocalDriver || (driver.UsesXrView && restrictedViewMaterial == null))) return;
         if (active == enabled) return;
         active = enabled;
         if (!enabled) viewIndex = -1;
@@ -80,17 +87,50 @@ public sealed class TrainExteriorView : MonoBehaviour
         {
             viewCamera = Camera.main;
             if (viewCamera == null) { active = false; return; }
-            yaw = pitch = 0; UpdateAnchor(); CreateMask();
+            ResetOrbit();
+            route = FindFirstObjectByType<RailwayZoneStreamingManager>();
+            UpdateAnchor();
+            if (!active) return;
+            if (driver.UsesXrView) CreateMask();
             driver.SetSeatedViewOverride(anchor);
         }
         else if (driver != null) driver.SetSeatedViewOverride(null);
-        if (mask != null) mask.SetActive(active);
+        if (mask != null) mask.SetActive(active && driver.UsesXrView);
     }
+    private void ResetOrbit()
+    {
+        yaw = pitch = 0f;
+        zoom = targetZoom = 1f;
+    }
+
+    private void UpdateDesktopInput()
+    {
+        var mouse = Mouse.current;
+        if (mouse == null || !UttDesktopCursor.CanInteract || UttDesktopCursor.PointerOverCenteredUi)
+            return;
+        if (Keyboard.current?.homeKey.wasPressedThisFrame == true) ResetOrbit();
+        if (mouse.rightButton.isPressed)
+        {
+            Vector2 delta = mouse.delta.ReadValue() * .13f;
+            yaw = Mathf.Clamp(yaw + delta.x, -42f, 42f);
+            pitch = Mathf.Clamp(pitch - delta.y, -16f, 24f);
+        }
+        float scroll = RailwayBimCamera.ScrollSteps(mouse.scroll.ReadValue().y);
+        if (Mathf.Abs(scroll) > .01f)
+            targetZoom = RailwayBimCamera.ZoomDistance(targetZoom, scroll, .16f, .7f, 1.5f);
+        zoom = Mathf.Lerp(zoom, targetZoom, 1f - Mathf.Exp(-12f * Time.unscaledDeltaTime));
+    }
+
     private void UpdateAnchor()
     {
         var car = train.frontCar;
         Vector3 forward = Vector3.ProjectOnPlane(car.forward, Vector3.up).normalized;
         Quaternion rotation = Quaternion.LookRotation(forward, Vector3.up);
+        if (!driver.UsesXrView)
+        {
+            PlaceDesktopCamera(car, rotation);
+            return;
+        }
         Vector3 position = viewIndex == 0 ? overheadOffset : new Vector3(viewIndex == 2 ? -offset.x : offset.x, offset.y, offset.z);
         float baseYaw = viewIndex == 0 ? 0 : viewIndex == 2 ? 22 : -22;
         anchor.SetPositionAndRotation(car.position + rotation * position, rotation * Quaternion.Euler((viewIndex == 0 ? 40 : 12) + pitch, baseYaw + yaw, 0));
@@ -98,10 +138,56 @@ public sealed class TrainExteriorView : MonoBehaviour
     private void LateUpdate()
     {
         if (!active || viewCamera == null) return;
-        // Desktop fallback only. XR retains its pose driver and headset orientation.
-        var origin = viewCamera.GetComponentInParent<Unity.XR.CoreUtils.XROrigin>();
-        if (origin == null) viewCamera.transform.SetPositionAndRotation(anchor.position, anchor.rotation);
+        if (!LocalDriver) { SetExterior(false); return; }
+        UpdateAnchor();
         UpdateMask();
+    }
+
+    private void PlaceDesktopCamera(Transform car, Quaternion frame)
+    {
+        float carSpacing = train.rearCar != null ? Vector3.Distance(car.position, train.rearCar.position) : 24f;
+        float span = Mathf.Clamp(carSpacing + 29f, 38f, 78f);
+        Vector3 pivot = car.position + frame * new Vector3(0f, 2.5f, -carSpacing * .44f);
+        float distance = train.currentDistanceMeters;
+        bool nearBridge = false;
+        if (route != null)
+        {
+            foreach (var facility in route.fixedInfrastructure)
+            {
+                if (facility == null || distance < facility.startChainage - 18f || distance > facility.endChainage + 18f)
+                    continue;
+                if (facility.kind == "TunnelMountain" || facility.kind == "Tunnel")
+                {
+                    SetExterior(false);
+                    return;
+                }
+                nearBridge |= facility.id == "Bridge_Main";
+            }
+        }
+        Vector3 offset = viewIndex switch
+        {
+            0 => new Vector3(0f, .88f, .59f),
+            1 => new Vector3(.99f, .36f, .38f),
+            2 => new Vector3(-.99f, .36f, .38f),
+            _ => new Vector3(.85f, nearBridge ? -.14f : .34f, .29f)
+        };
+        Vector3 arm = frame * (Quaternion.Euler(pitch, yaw, 0f) * offset) * (span * zoom);
+        Vector3 eye = pivot + arm;
+        int count = Physics.SphereCastNonAlloc(pivot, .45f, arm.normalized, obstructions, arm.magnitude, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+        float clearance = arm.magnitude;
+        for (int i = 0; i < count; i++)
+        {
+            var hit = obstructions[i];
+            if (hit.transform.IsChildOf(train.transform) || hit.transform.IsChildOf(car) ||
+                (train.rearCar != null && hit.transform.IsChildOf(train.rearCar)) ||
+                (driver != null && hit.transform.IsChildOf(driver.transform))) continue;
+            clearance = Mathf.Min(clearance, hit.distance - .55f);
+        }
+        if (clearance < span * .42f)
+            eye = pivot + frame * new Vector3(0f, span * .85f, span * .4f);
+        else if (clearance < arm.magnitude)
+            eye = pivot + arm.normalized * clearance;
+        anchor.SetPositionAndRotation(eye, Quaternion.LookRotation(pivot - eye, Vector3.up));
     }
     private void UpdateMask()
     {

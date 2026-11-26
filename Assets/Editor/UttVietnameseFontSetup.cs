@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEditor;
+using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 using UnityEngine.TextCore.LowLevel;
@@ -29,6 +30,7 @@ static class UttVietnameseFontSetup
         try
         {
             if (action == "setup") Setup();
+            else if (action == "verify") Verify();
             else if (action == "web") BuildWeb();
         }
         catch (Exception error)
@@ -45,8 +47,7 @@ static class UttVietnameseFontSetup
         var source = AssetDatabase.LoadAssetAtPath<Font>(Source);
         if (source == null) throw new FileNotFoundException(Source);
         // Latin-1, Vietnamese base vowels and pairwise diacritics, plus the existing UI punctuation.
-        string required = new string(Enumerable.Range(32, 95).Concat(Enumerable.Range(0x1EA0, 90))
-            .Select(code => (char)code).Concat("ÀÁÃÈÉÌÍÒÓÕÙÚÝàáãèéìíòóõùúý".Concat(Extra)).Distinct().ToArray());
+        string required = RequiredGlyphs();
         var atlas = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(Atlas);
         if (atlas == null)
         {
@@ -106,6 +107,41 @@ static class UttVietnameseFontSetup
                 string.Join(", ", missing.Select(value => $"U+{value:X4}")));
     }
 
+    static string RequiredGlyphs() => new string(Enumerable.Range(32, 95).Concat(Enumerable.Range(0x1EA0, 90))
+        .Select(code => (char)code).Concat("ÀÁÃÈÉÌÍÒÓÕÙÚÝàáãèéìíòóõùúỵ̛́̀́̃̉̂̆".Concat(Extra)).Distinct().ToArray());
+
+    [MenuItem("Tools/UTTVR/Fonts/Verify Vietnamese before publishing")]
+    static void Verify()
+    {
+        Directory.CreateDirectory(Work);
+        CheckBuildFonts();
+        var previous = TMP_Settings.fallbackFontAssets;
+        try
+        {
+            TMP_Settings.fallbackFontAssets = new System.Collections.Generic.List<TMP_FontAsset>();
+            UttProjectFonts.RegisterFallback();
+            if (TMP_Settings.fallbackFontAssets.Count != 1 || TMP_Settings.fallbackFontAssets[0] != UttProjectFonts.Vietnamese)
+                throw new InvalidOperationException("The runtime could not recover a missing TMP fallback.");
+        }
+        finally { TMP_Settings.fallbackFontAssets = previous; }
+        File.WriteAllText(Work + "verify.txt", $"PASS: {RequiredGlyphs().Length} glyphs in static atlas, packaged legacy font; restored a missing runtime fallback.");
+    }
+
+    internal static void CheckBuildFonts()
+    {
+        var settings = AssetDatabase.LoadAssetAtPath<TMP_Settings>(Settings);
+        var atlas = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(Atlas);
+        var configuration = AssetDatabase.LoadAssetAtPath<UttProjectFonts>(Configuration);
+        if (settings == null || atlas == null || configuration == null || configuration.vietnamese != atlas ||
+            configuration.legacyVietnamese == null || atlas.atlasPopulationMode != AtlasPopulationMode.Static ||
+            atlas.material == null || atlas.atlasTextures == null || atlas.atlasTextures.Length == 0 ||
+            atlas.atlasTextures.Any(texture => texture == null || texture.width < 16))
+            throw new BuildFailedException("Vietnamese font references or the baked atlas changed. Verify the asset and .meta files together, then run Tools/UTTVR/Fonts/Verify Vietnamese before publishing.");
+        Validate(atlas, RequiredGlyphs());
+        if ("Đường sắt Việt Nam – Quản lý vòng đời".Any(character => !configuration.legacyVietnamese.HasCharacter(character)))
+            throw new BuildFailedException("The packaged legacy font is missing Vietnamese glyphs.");
+    }
+
     static void BuildWeb()
     {
         File.WriteAllText(Work + "web.txt", "Building");
@@ -124,4 +160,10 @@ static class UttVietnameseFontSetup
             $"{report.result}; {report.totalErrors} errors; {report.totalWarnings} warnings; {report.totalSize} bytes; {report.totalTime}");
         if (report.result != BuildResult.Succeeded) throw new InvalidOperationException("Web build failed.");
     }
+}
+
+sealed class UttVietnameseFontBuildCheck : IPreprocessBuildWithReport
+{
+    public int callbackOrder => -200;
+    public void OnPreprocessBuild(BuildReport report) => UttVietnameseFontSetup.CheckBuildFonts();
 }

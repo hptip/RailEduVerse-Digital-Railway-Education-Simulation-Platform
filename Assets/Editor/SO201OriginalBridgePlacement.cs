@@ -646,7 +646,8 @@ static partial class SO201OriginalBridgeAudit
         return node;
     }
 
-    static void RenderSandbox(Scene scene, Vector3 center, Vector3 side, Vector3 first, Vector3 last)
+    static void RenderSandbox(Scene scene, Vector3 center, Vector3 side, Vector3 first, Vector3 last,
+        string output = Reports + "Screenshots/", float viewingDistance = 125f)
     {
         var light = new GameObject("Sun", typeof(Light));
         SceneManager.MoveGameObjectToScene(light, scene);
@@ -654,7 +655,7 @@ static partial class SO201OriginalBridgeAudit
         light.GetComponent<Light>().type = LightType.Directional;
         var views = new[]
         {
-            ("SO201_Sandbox",center + side * 125 + Vector3.up * 66, center),
+            ("SO201_Sandbox",center + side * viewingDistance + Vector3.up * (viewingDistance * .53f), center),
             ("SO201_Entry",first + side * 38 + Vector3.up * 12, first + (center-first)*.3f),
             ("SO201_Exit",last - side * 38 + Vector3.up * 12, last + (center-last)*.3f)
         };
@@ -681,7 +682,7 @@ static partial class SO201OriginalBridgeAudit
                 RenderTexture.active = target;
                 image.ReadPixels(new Rect(0,0,1280,720),0,0);
                 image.Apply();
-                File.WriteAllBytes(Reports + "Screenshots/" + name + ".png",image.EncodeToPNG());
+                File.WriteAllBytes(output + name + ".png",image.EncodeToPNG());
             }
         }
         finally

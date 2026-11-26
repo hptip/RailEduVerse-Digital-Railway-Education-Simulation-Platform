@@ -1,0 +1,85 @@
+Version,TestID,Lower,Upper,LowerID,UpperID,LocalStation_m,Samples,WithinTolerance,MinimumGap_m,MedianGap_m,MaximumGap_m,Tolerance_m,Status
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,-40.2942,66,0,3.46257,3.53108,3.59959,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,-40.2942,66,0,3.37199,3.44090,3.50979,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-00TgNFCH9HGoplDgAwRwDO,41.3058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.49406,3.55816,3.62224,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.48059,3.54911,3.61762,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-00TgNFCH9HGoplDgAwRwDO,41.3059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.40650,3.47026,3.53401,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.39130,3.46021,3.52910,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",P3-1fawtDnfode$lnlifl1tTK,S03-3e41$wYQjhAnolzZ3fv5Ep,122.9058,66,0,3.40650,3.47026,3.53400,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",P3-2UbYxl2Z_QFNLU3y2qrM_l,S03-3$3eDVPuGaQ5yf$btPJT5P,122.9058,66,0,3.49405,3.55816,3.62225,0.035,OBSERVED
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-0vpwLjckQCzsA1Wvzwc8EX,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-3RkpYxGpfcYT2I1t_zwJ_Z,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+2Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P01-2T12tBKsv4vL2Pc9ijqqSu,P01-0Fx3Ykz9Zoo5T0r0sZtWPp,-40.2938,12,12,-0.00003,0.00000,0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7741,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P01-01Mx6ArG29CItpGjgBLuca,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P01-01Mx6ArG29CItpGjgBLuca,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8141,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8141,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P01-0qpx6Ycve5tLEkuyiBy94y,P01-2T12tBKsv4vL2Pc9ijqqSu,-40.2942,121,121,0.00003,0.00044,0.00219,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-0vpwLjckQCzsA1Wvzwc8EX,41.3058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-3RkpYxGpfcYT2I1t_zwJ_Z,41.3058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+2Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P02-2T12tBKsv4vL2Pc9ijqqSu,P02-0Fx3Ykz9Zoo5T0r0sZtWPp,41.3062,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-0qpx6Ycve5tLEkuyiBy94y,37.8259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P02-01Mx6ArG29CItpGjgBLuca,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P02-01Mx6ArG29CItpGjgBLuca,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-0qpx6Ycve5tLEkuyiBy94y,44.7859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P02-0qpx6Ycve5tLEkuyiBy94y,P02-2T12tBKsv4vL2Pc9ijqqSu,41.3058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-1fawtDnfode$lnlifl1tTK,122.9058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-2UbYxl2Z_QFNLU3y2qrM_l,122.9058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+2Spans,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",P3-2gojBJ8751ev0VZT3WtTz5,P3-13i89sZ2IbZp1Sk$Woa$xz,122.9062,12,12,-0.00003,0.00000,0.00003,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 8","Pile cap P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35965,0.35982,0.35993,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 5","Pile cap P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35787,0.35817,0.35845,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 1","Pile cap P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-2gojBJ8751ev0VZT3WtTz5,126.3858,97,0,0.35948,0.35975,0.35990,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-1tghNyhC9BFNfrENkrKFon,126.3858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 6","Pile cap P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-2gojBJ8751ev0VZT3WtTz5,126.3858,97,0,0.35934,0.35964,0.35990,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-1tghNyhC9BFNfrENkrKFon,126.3858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 7","Pile cap P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-2gojBJ8751ev0VZT3WtTz5,126.3859,97,0,0.35981,0.35989,0.35993,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-1tghNyhC9BFNfrENkrKFon,126.3859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 3","Pile cap P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35907,0.35927,0.35944,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 2","Pile cap P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-2gojBJ8751ev0VZT3WtTz5,126.3858,97,0,0.35968,0.35978,0.35990,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-1tghNyhC9BFNfrENkrKFon,126.3858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 4","Pile cap P3",P3-13xIsG3OU65cK6zC9udLB3,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35843,0.35869,0.35894,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",P3-13xIsG3OU65cK6zC9udLB3,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",P3-1tghNyhC9BFNfrENkrKFon,P3-2gojBJ8751ev0VZT3WtTz5,122.9058,121,121,-0.00223,-0.00043,-0.00003,0.035,PASS
+2Spans,T03-Deck-Vertical,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,5,5,0.00000,,0.00007,0.025,PASS
+2Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,1,1,0.00000,,,0.025,PASS
