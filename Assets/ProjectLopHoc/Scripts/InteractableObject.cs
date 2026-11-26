@@ -75,6 +75,8 @@ public class InteractableObject : MonoBehaviour, IInteractable
             return;
         }
 
+        UttLoadingScreen.Begin(SceneUtility.GetScenePathByBuildIndex(sceneIndex));
+
         // Nếu đang chạy mạng Photon Fusion
         if (runner != null && runner.IsRunning)
         {

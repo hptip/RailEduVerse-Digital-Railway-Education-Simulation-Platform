@@ -207,6 +207,8 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
             }
         }
 
+        spawnPos = SnapToGround(spawnPos);
+
         try
         {
             PlayerRef? inputAuthority = runner.GameMode == GameMode.Single
@@ -264,6 +266,26 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         Debug.LogError("[PlayerSpawner] Spawn cancelled: YenTu train did not initialize its spline within 10 seconds.", this);
         return false;
+    }
+
+    /// <summary>
+    /// Đặt điểm spawn ngay trên mặt collider gần nhất. Điểm spawn đặt theo mặt sàn nhìn thấy có thể
+    /// thấp hơn collider thật (Floor ở Campus: collider cao hơn mặt Plane khoảng 0,26 m); nhân vật
+    /// xuất hiện lún vào sàn sẽ bị đẩy ra và bật lên cao.
+    /// </summary>
+    private static Vector3 SnapToGround(Vector3 position)
+    {
+        const float above = 1.5f, below = 4f;
+        RaycastHit[] hits = Physics.RaycastAll(position + Vector3.up * above, Vector3.down, above + below, ~0, QueryTriggerInteraction.Ignore);
+        bool found = false;
+        float bestY = position.y, bestGap = float.MaxValue;
+        foreach (RaycastHit hit in hits)
+        {
+            float gap = Mathf.Abs(hit.point.y - position.y);
+            if (gap < bestGap) { bestGap = gap; bestY = hit.point.y; found = true; }
+        }
+        if (found) position.y = bestY + 0.05f;
+        return position;
     }
 
     private Transform ResolveSpawnPoint(bool isLecturer)

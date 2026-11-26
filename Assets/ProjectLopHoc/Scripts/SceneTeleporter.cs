@@ -15,6 +15,7 @@ public class SceneTeleporter : InteractableObject
     private void ChuyenScene()
     {
         NetworkRunner runner = FindFirstObjectByType<NetworkRunner>();
+        UttLoadingScreen.Begin(destinationScene);
 
         if (runner != null && runner.IsRunning)
         {
@@ -26,6 +27,7 @@ public class SceneTeleporter : InteractableObject
             }
             else
             {
+                UttLoadingScreen.Cancel();
                 Debug.LogError($"[SceneTeleporter] Scene '{destinationScene}' chưa được tích chọn trong Build Settings/Build Profiles!");
             }
         }

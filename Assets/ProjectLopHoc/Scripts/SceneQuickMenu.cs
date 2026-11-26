@@ -38,6 +38,13 @@ public sealed class SceneQuickMenu : MonoBehaviour
     private bool _menuOpen;
     public bool IsMenuOpen=>_menuOpen;
     public static bool IsOpen => _instance != null && _instance._menuOpen;
+
+    /// <summary>Chuyển tới khu vực theo thứ tự trong menu (0 = Khuôn viên … 4 = Quản lý vòng đời). Dùng cho menu E của bản Web.</summary>
+    public static void GoTo(int destinationIndex)
+    {
+        if (_instance != null) _instance.LoadDestination(destinationIndex);
+    }
+    private bool _startupRedirectStarted;
     private bool _leftToggleWasPressed;
     private bool _sceneLoadInProgress;
     private UnityEngine.XR.InputDevice _leftController;
@@ -153,7 +160,11 @@ public sealed class SceneQuickMenu : MonoBehaviour
         }
 
         if (togglePressed && IsDestination(SceneManager.GetActiveScene().name))
-            SetMenuOpen(!_menuOpen);
+        {
+            // Bản Web: M / F1 mở menu Liquid Glass (menu E) ở mục Chuyển khu vực cho đồng bộ giao diện
+            if (UttWebPresentation.Active) UttProfilePanel.ToggleAreas();
+            else SetMenuOpen(!_menuOpen);
+        }
 
 #if ENABLE_INPUT_SYSTEM
         if (_menuOpen && keyboard != null)
@@ -473,6 +484,7 @@ public sealed class SceneQuickMenu : MonoBehaviour
 
         _sceneLoadInProgress = true;
         SetMenuOpen(false);
+        UttLoadingScreen.Begin(targetScene);
 
         NetworkRunner runner = FindFirstObjectByType<NetworkRunner>();
         if (runner != null && runner.IsRunning && runner.GameMode != GameMode.Single)
@@ -481,7 +493,7 @@ public sealed class SceneQuickMenu : MonoBehaviour
             return;
         }
 
-        SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Single);
+        UttLoadingScreen.Track(SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Single));
     }
 
     private static int FindBuildIndex(string sceneName)

@@ -44,10 +44,11 @@ public class NetworkManager : MonoBehaviour
         PlayerPrefs.SetInt("OfflineDemo", offlineDemo ? 1 : 0);
         PlayerPrefs.Save();
 
-        int campusIndex = SceneUtility.GetBuildIndexByScenePath("Assets/ProjectLopHoc/Scenes/UTTCampus.unity");
+        // Đăng nhập xong vào thẳng Lớp học (giống bản VR, xem SceneQuickMenu.DefaultScene).
+        int campusIndex = SceneUtility.GetBuildIndexByScenePath("Assets/ProjectLopHoc/Scenes/Classroom.unity");
         if (campusIndex < 0)
         {
-            Debug.LogError("[NetworkManager] UTTCampus không có trong Build Settings.");
+            Debug.LogError("[NetworkManager] Classroom không có trong Build Settings.");
             return false;
         }
 
@@ -60,11 +61,13 @@ public class NetworkManager : MonoBehaviour
             SceneManager = sceneManager
         };
 
-        Debug.Log(offlineDemo ? "Đang khởi chạy Campus ở chế độ offline." : "Đang kết nối Photon Shared...");
+        Debug.Log(offlineDemo ? "Đang khởi chạy Lớp học ở chế độ offline." : "Đang kết nối Photon Shared...");
+        UttLoadingScreen.Begin("Classroom", true); // màn hình chờ sau khi đăng nhập
         var result = await _runner.StartGame(args);
         if (!result.Ok)
         {
-            Debug.LogError("[NetworkManager] Không thể khởi chạy Campus: " + result.ShutdownReason);
+            UttLoadingScreen.Cancel();
+            Debug.LogError("[NetworkManager] Không thể khởi chạy Lớp học: " + result.ShutdownReason);
             return false;
         }
         return true;
