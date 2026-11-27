@@ -1,0 +1,935 @@
+Version,TestID,Lower,Upper,LowerID,UpperID,LocalStation_m,Samples,WithinTolerance,MinimumGap_m,MedianGap_m,MaximumGap_m,Tolerance_m,Status
+Source,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 5",0bbLNJarvOpl60V0gvYLWj,1rynT78KU8V45XMmnyMFss,-81.0942,121,0,5.09187,5.10567,5.13385,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 8",0bbLNJarvOpl60V0gvYLWj,2cjVPrIwoPdZrGNh7P1lv9,-81.0942,121,0,0.81517,0.81926,0.82337,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 3",0bbLNJarvOpl60V0gvYLWj,1HfwXIbME2yQxwO10KnFqY,-81.0942,11,0,4.81872,4.83571,4.85557,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 4",0bbLNJarvOpl60V0gvYLWj,1M2Dt6zBVBF$17xO1ZrlWq,-81.0942,21,0,1.31356,1.32414,4.85342,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 1",0IuTtWx0525uN7KFTYADuC,0Xt7wYVSDqdfWTrHZZJUX8,82.1058,121,0,4.99262,5.01373,5.04136,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 2",0IuTtWx0525uN7KFTYADuC,1M$A$Wm56UpStZNE5SyBhd,82.1058,121,0,0.60268,0.60474,0.60647,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 4",0IuTtWx0525uN7KFTYADuC,0fiZXRDD3n9d7Gl1JSAhdI,82.1058,11,0,4.72198,4.73824,4.75823,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 3",0IuTtWx0525uN7KFTYADuC,2TyakGRp4Naj7Zqx1es5f$,82.1058,21,0,1.20755,1.21781,4.75843,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",0vpwLjckQCzsA1Wvzwc8EX,00TgNFCH9HGoplDgAwRwDO,-40.2942,121,0,0.55802,0.56222,0.56637,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",0vpwLjckQCzsA1Wvzwc8EX,3$3eDVPuGaQ5yf$btPJT5P,-40.2942,66,0,4.01846,4.08815,4.15784,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 1 2",0vpwLjckQCzsA1Wvzwc8EX,35_$at319vYpeinIpxhdix,-40.2942,66,0,4.04830,4.11131,4.17431,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 5",1bF2ohDSbAdPq9Dzb0x5mt,1rynT78KU8V45XMmnyMFss,-81.0942,121,0,5.18144,5.20587,5.23359,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 8",1bF2ohDSbAdPq9Dzb0x5mt,2cjVPrIwoPdZrGNh7P1lv9,-81.0942,121,0,0.81519,0.81931,0.82343,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 5",1bF2ohDSbAdPq9Dzb0x5mt,28v_6QK2bjMvQbMN44eCdk,-81.0942,11,0,4.91251,4.92806,4.95097,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 2",1bF2ohDSbAdPq9Dzb0x5mt,35_$at319vYpeinIpxhdix,-81.0942,21,0,1.40647,1.41723,4.94704,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",1fawtDnfode$lnlifl1tTK,3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,0,0.58034,0.58423,0.58818,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",1fawtDnfode$lnlifl1tTK,3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.99684,4.05949,4.12214,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 3 5",1fawtDnfode$lnlifl1tTK,3WdnBfsmpFEohD23snJk1H,41.3059,66,0,3.96568,4.03558,4.10548,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",2UbYxl2Z_QFNLU3y2qrM_l,3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,0,0.58128,0.58541,0.58955,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 3 3",2UbYxl2Z_QFNLU3y2qrM_l,2TyakGRp4Naj7Zqx1es5f$,41.3058,66,0,4.05619,4.12573,4.19527,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",2UbYxl2Z_QFNLU3y2qrM_l,3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,4.08568,4.14867,4.21165,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",3RkpYxGpfcYT2I1t_zwJ_Z,00TgNFCH9HGoplDgAwRwDO,-40.2942,121,0,0.55802,0.56222,0.56637,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 1 4",3RkpYxGpfcYT2I1t_zwJ_Z,1M2Dt6zBVBF$17xO1ZrlWq,-40.2942,66,0,3.95680,4.02081,4.08474,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",3RkpYxGpfcYT2I1t_zwJ_Z,3e41$wYQjhAnolzZ3fv5Ep,-40.2942,66,0,3.92788,3.99797,4.06805,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 1",09OvP1gzRXygHRqEoB_YxG,0Xt7wYVSDqdfWTrHZZJUX8,82.1059,121,0,4.90268,4.92401,4.95165,0.035,OBSERVED
+Source,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 2",09OvP1gzRXygHRqEoB_YxG,1M$A$Wm56UpStZNE5SyBhd,82.1059,121,0,0.60268,0.60470,0.60648,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 1",09OvP1gzRXygHRqEoB_YxG,0s3As3_b2cSGwniRNDr6D1,82.1059,11,0,4.63157,4.64809,4.67242,0.035,OBSERVED
+Source,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 5",09OvP1gzRXygHRqEoB_YxG,3WdnBfsmpFEohD23snJk1H,82.1059,21,0,1.11791,1.12816,4.66872,0.035,OBSERVED
+Source,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",0Fx3Ykz9Zoo5T0r0sZtWPp,0vpwLjckQCzsA1Wvzwc8EX,-40.2942,121,0,0.42001,0.45273,0.47454,0.035,FAIL
+Source,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",0Fx3Ykz9Zoo5T0r0sZtWPp,3RkpYxGpfcYT2I1t_zwJ_Z,-40.2942,121,0,0.42001,0.45273,0.47454,0.035,FAIL
+Source,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",2T12tBKsv4vL2Pc9ijqqSu,0Fx3Ykz9Zoo5T0r0sZtWPp,-40.2938,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 1","Pile cap P2",0RYStVBLOU3fK4TrSaxleL,2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36006,0.36011,0.36018,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",0RYStVBLOU3fK4TrSaxleL,0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 8","Pile cap P2",1cDdAUyvkpgIPk5Ufdffgw,2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36102,0.36125,0.36151,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",1cDdAUyvkpgIPk5Ufdffgw,0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 7","Pile cap P2",01Mx6ArG29CItpGjgBLuca,2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36054,0.36069,0.36090,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",01Mx6ArG29CItpGjgBLuca,0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 6","Pile cap P2",1Un2L8xHtG3sCOXzOK7NpB,2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36020,0.36031,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",1Un2L8xHtG3sCOXzOK7NpB,0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 2","Pile cap P2",2iSvaPVQnmzi68Ayq9d6qY,2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36006,0.36017,0.36034,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",2iSvaPVQnmzi68Ayq9d6qY,0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 3","Pile cap P2",2WJPpbnIyUCehnP4vK1ubq,2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36150,0.36178,0.36208,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",2WJPpbnIyUCehnP4vK1ubq,0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 5","Pile cap P2",3GnYYy2Y1vHqMUV$7WWUQ4,2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36023,0.36049,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",3GnYYy2Y1vHqMUV$7WWUQ4,0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P2 4","Pile cap P2",24ZD9cwOSNj_MNCV3GxP8N,2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36034,0.36064,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",24ZD9cwOSNj_MNCV3GxP8N,0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Source,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",0qpx6Ycve5tLEkuyiBy94y,2T12tBKsv4vL2Pc9ijqqSu,-40.2942,121,121,0.00003,0.00044,0.00219,0.035,PASS
+Source,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 5",1lGkPEWaJvRI70HQAZkSP1,1rynT78KU8V45XMmnyMFss,-82.4142,121,0,5.32818,5.43090,5.50673,0.035,OBSERVED
+Source,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 8",1lGkPEWaJvRI70HQAZkSP1,2cjVPrIwoPdZrGNh7P1lv9,-82.4142,121,0,0.92813,1.09709,1.24396,0.035,OBSERVED
+Source,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 2",1lGkPEWaJvRI70HQAZkSP1,0bbLNJarvOpl60V0gvYLWj,-82.4142,121,121,-0.00002,0.00001,0.00002,0.035,OBSERVED
+Source,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 1",1lGkPEWaJvRI70HQAZkSP1,1bF2ohDSbAdPq9Dzb0x5mt,-82.4142,121,121,-0.00003,0.00000,0.00003,0.035,OBSERVED
+Source,T04-Cap-Stem,"Pile cap O1","Abutment stem O1",2gImNpnGyqpWl$gbNtpzMj,1lGkPEWaJvRI70HQAZkSP1,-84.9342,121,121,-0.00003,0.00007,0.00028,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 3","Pile cap O1",0_aM_11Zcyc8m$$61lV1Dz,2gImNpnGyqpWl$gbNtpzMj,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 2","Pile cap O1",0Kp1KG1q2H6xwjLCKODn1i,2gImNpnGyqpWl$gbNtpzMj,-80.3741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 5","Pile cap O1",1fyAxUxs4bEDupYhVyQL5e,2gImNpnGyqpWl$gbNtpzMj,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 7","Pile cap O1",1p_t3_CvEaBc646XMc4rVY,2gImNpnGyqpWl$gbNtpzMj,-89.1342,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 4","Pile cap O1",1XHyI4eM6NrIJN28uH9AEQ,2gImNpnGyqpWl$gbNtpzMj,-83.8542,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 1","Pile cap O1",2a4OvdgikJUy3uDSyU4yWd,2gImNpnGyqpWl$gbNtpzMj,-83.8542,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O1 6","Pile cap O1",3bdbo8NLsd1BoB5Ae7kYGn,2gImNpnGyqpWl$gbNtpzMj,-89.1341,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Blinding-Cap,"Blinding concrete O1","Pile cap O1",2AWKmdFbxv_tuG7K9VZttg,2gImNpnGyqpWl$gbNtpzMj,-86.4702,86,81,-11.46450,0.00001,0.00001,0.035,PASS
+Source,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 1",3pw3ckthnwuHJM5cpTcvE6,0Xt7wYVSDqdfWTrHZZJUX8,83.4258,121,0,5.32792,5.41767,5.49384,0.035,OBSERVED
+Source,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 2",3pw3ckthnwuHJM5cpTcvE6,1M$A$Wm56UpStZNE5SyBhd,83.4258,121,0,0.89615,1.05508,1.19879,0.035,OBSERVED
+Source,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 1",3pw3ckthnwuHJM5cpTcvE6,0IuTtWx0525uN7KFTYADuC,83.4258,121,121,-0.00003,-0.00001,0.00001,0.035,OBSERVED
+Source,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 2",3pw3ckthnwuHJM5cpTcvE6,09OvP1gzRXygHRqEoB_YxG,83.4258,121,121,0.00000,0.00002,0.00004,0.035,OBSERVED
+Source,T04-Cap-Stem,"Pile cap O4","Abutment stem O4",1lz6L5kkiHsqe1FPFY7si4,3pw3ckthnwuHJM5cpTcvE6,85.9459,121,121,-0.00277,-0.00081,0.00012,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 7","Pile cap O4",0GzCGpNTHvETrMS_kiVMMm,1lz6L5kkiHsqe1FPFY7si4,90.1457,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 3","Pile cap O4",0n$nC0OxnClTt3F0eMLOM5,1lz6L5kkiHsqe1FPFY7si4,81.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 2","Pile cap O4",1GKGPBUnqotpvITYVkO07n,1lz6L5kkiHsqe1FPFY7si4,81.3859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 5","Pile cap O4",1hWA3$l8573Uj8fVXRVyVv,1lz6L5kkiHsqe1FPFY7si4,81.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 6","Pile cap O4",3cS$RggRVZLcARadfuvY0u,1lz6L5kkiHsqe1FPFY7si4,90.1459,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 4","Pile cap O4",3kML_OdcG2anTA0GEmMref,1lz6L5kkiHsqe1FPFY7si4,84.8658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Pile-Cap,"Piles O4 1","Pile cap O4",35JRfDfc7AG4pP03LjzGAP,1lz6L5kkiHsqe1FPFY7si4,84.8658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Source,T04-Blinding-Cap,"Blinding concrete O4","Pile cap O4",1I2uRKupnTfpjQ_qcjCzM8,1lz6L5kkiHsqe1FPFY7si4,87.4819,86,81,-9.34901,0.00000,0.00000,0.035,PASS
+Source,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",13i89sZ2IbZp1Sk$Woa$xz,1fawtDnfode$lnlifl1tTK,41.3058,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Source,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",13i89sZ2IbZp1Sk$Woa$xz,2UbYxl2Z_QFNLU3y2qrM_l,41.3058,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Source,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",2gojBJ8751ev0VZT3WtTz5,13i89sZ2IbZp1Sk$Woa$xz,41.3062,12,12,-0.00003,0.00000,0.00003,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 8","Pile cap P3",0PDwbZP_Wjsa$t9tZlRWdn,2gojBJ8751ev0VZT3WtTz5,37.8259,97,0,0.35965,0.35983,0.35994,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",0PDwbZP_Wjsa$t9tZlRWdn,1tghNyhC9BFNfrENkrKFon,37.8259,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 5","Pile cap P3",0zIcQZf_T3Rb59CjoQc8X4,2gojBJ8751ev0VZT3WtTz5,37.8258,97,0,0.35788,0.35818,0.35846,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",0zIcQZf_T3Rb59CjoQc8X4,1tghNyhC9BFNfrENkrKFon,37.8258,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 1","Pile cap P3",1AlW5oK7Lzhz7PkYqKTq67,2gojBJ8751ev0VZT3WtTz5,44.7858,97,0,0.35949,0.35976,0.35991,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",1AlW5oK7Lzhz7PkYqKTq67,1tghNyhC9BFNfrENkrKFon,44.7858,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 6","Pile cap P3",2sK3Oj2Oxz1wiAepNQukNM,2gojBJ8751ev0VZT3WtTz5,44.7858,97,0,0.35935,0.35965,0.35991,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",2sK3Oj2Oxz1wiAepNQukNM,1tghNyhC9BFNfrENkrKFon,44.7858,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 7","Pile cap P3",2vxXOtTmlBJAftg16Ip9lp,2gojBJ8751ev0VZT3WtTz5,44.7859,97,0,0.35982,0.35989,0.35994,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",2vxXOtTmlBJAftg16Ip9lp,1tghNyhC9BFNfrENkrKFon,44.7859,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 3","Pile cap P3",2xbB1CzKGfGuhKaJWpa8II,2gojBJ8751ev0VZT3WtTz5,37.8258,97,0,0.35908,0.35928,0.35944,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",2xbB1CzKGfGuhKaJWpa8II,1tghNyhC9BFNfrENkrKFon,37.8258,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 2","Pile cap P3",3o2F4eFxVeKqGscvJZ1l5y,2gojBJ8751ev0VZT3WtTz5,44.7858,97,0,0.35969,0.35979,0.35991,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",3o2F4eFxVeKqGscvJZ1l5y,1tghNyhC9BFNfrENkrKFon,44.7858,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Pile-Cap,"Piles P3 4","Pile cap P3",13xIsG3OU65cK6zC9udLB3,2gojBJ8751ev0VZT3WtTz5,37.8258,97,0,0.35844,0.35870,0.35895,0.035,OBSERVED
+Source,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",13xIsG3OU65cK6zC9udLB3,1tghNyhC9BFNfrENkrKFon,37.8258,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Source,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",1tghNyhC9BFNfrENkrKFon,2gojBJ8751ev0VZT3WtTz5,41.3058,121,121,-0.00223,-0.00043,-0.00002,0.035,PASS
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 5",0bbLNJarvOpl60V0gvYLWj,1rynT78KU8V45XMmnyMFss,-81.0937,121,0,5.09187,5.10567,5.13385,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 8",0bbLNJarvOpl60V0gvYLWj,2cjVPrIwoPdZrGNh7P1lv9,-81.0937,121,0,0.81517,0.81926,0.82337,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 3",0bbLNJarvOpl60V0gvYLWj,1HfwXIbME2yQxwO10KnFqY,-81.0937,11,0,4.81871,4.83571,4.85557,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 4",0bbLNJarvOpl60V0gvYLWj,1M2Dt6zBVBF$17xO1ZrlWq,-81.0937,21,0,1.31357,1.32415,4.85342,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 1",0IuTtWx0525uN7KFTYADuC,0Xt7wYVSDqdfWTrHZZJUX8,82.1067,121,0,4.99262,5.01373,5.04135,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 2",0IuTtWx0525uN7KFTYADuC,1M$A$Wm56UpStZNE5SyBhd,82.1067,121,0,0.60268,0.60474,0.60647,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 4",0IuTtWx0525uN7KFTYADuC,0fiZXRDD3n9d7Gl1JSAhdI,82.1067,11,0,4.72198,4.73824,4.75823,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 3",0IuTtWx0525uN7KFTYADuC,2TyakGRp4Naj7Zqx1es5f$,82.1067,21,0,1.20755,1.21781,4.75842,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",0vpwLjckQCzsA1Wvzwc8EX,00TgNFCH9HGoplDgAwRwDO,-40.2939,121,0,0.55803,0.56222,0.56637,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",0vpwLjckQCzsA1Wvzwc8EX,3$3eDVPuGaQ5yf$btPJT5P,-40.2939,66,0,4.01876,4.08831,4.15785,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 1 2",0vpwLjckQCzsA1Wvzwc8EX,35_$at319vYpeinIpxhdix,-40.2939,66,0,4.04804,4.11118,4.17429,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 5",1bF2ohDSbAdPq9Dzb0x5mt,1rynT78KU8V45XMmnyMFss,-81.0939,121,0,5.18144,5.20588,5.23359,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 8",1bF2ohDSbAdPq9Dzb0x5mt,2cjVPrIwoPdZrGNh7P1lv9,-81.0939,121,0,0.81519,0.81931,0.82343,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 5",1bF2ohDSbAdPq9Dzb0x5mt,28v_6QK2bjMvQbMN44eCdk,-81.0939,11,0,4.91253,4.92807,4.95098,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 2",1bF2ohDSbAdPq9Dzb0x5mt,35_$at319vYpeinIpxhdix,-81.0939,21,0,1.40648,1.41723,4.94705,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",1fawtDnfode$lnlifl1tTK,3bmWj0FUjv2EP8Vj6Q08p$,41.3069,121,0,0.58034,0.58422,0.58817,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",1fawtDnfode$lnlifl1tTK,3e41$wYQjhAnolzZ3fv5Ep,41.3069,66,0,3.99706,4.05961,4.12215,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 3 5",1fawtDnfode$lnlifl1tTK,3WdnBfsmpFEohD23snJk1H,41.3069,66,0,3.96570,4.03559,4.10548,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",2UbYxl2Z_QFNLU3y2qrM_l,3bmWj0FUjv2EP8Vj6Q08p$,41.3064,121,0,0.58127,0.58540,0.58955,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 3 3",2UbYxl2Z_QFNLU3y2qrM_l,2TyakGRp4Naj7Zqx1es5f$,41.3064,66,0,4.05611,4.12569,4.19526,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",2UbYxl2Z_QFNLU3y2qrM_l,3$3eDVPuGaQ5yf$btPJT5P,41.3064,66,0,4.08549,4.14857,4.21164,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",3RkpYxGpfcYT2I1t_zwJ_Z,00TgNFCH9HGoplDgAwRwDO,-40.2934,121,0,0.55803,0.56222,0.56638,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 1 4",3RkpYxGpfcYT2I1t_zwJ_Z,1M2Dt6zBVBF$17xO1ZrlWq,-40.2934,66,0,3.95685,4.02084,4.08474,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",3RkpYxGpfcYT2I1t_zwJ_Z,3e41$wYQjhAnolzZ3fv5Ep,-40.2934,66,0,3.92776,3.99791,4.06804,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 1",09OvP1gzRXygHRqEoB_YxG,0Xt7wYVSDqdfWTrHZZJUX8,82.1069,121,0,4.90268,4.92401,4.95164,0.035,OBSERVED
+Production214,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 2",09OvP1gzRXygHRqEoB_YxG,1M$A$Wm56UpStZNE5SyBhd,82.1069,121,0,0.60268,0.60470,0.60648,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 1",09OvP1gzRXygHRqEoB_YxG,0s3As3_b2cSGwniRNDr6D1,82.1069,11,0,4.63157,4.64809,4.67242,0.035,OBSERVED
+Production214,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 5",09OvP1gzRXygHRqEoB_YxG,3WdnBfsmpFEohD23snJk1H,82.1069,21,0,1.11791,1.12815,4.66872,0.035,OBSERVED
+Production214,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",0Fx3Ykz9Zoo5T0r0sZtWPp,0vpwLjckQCzsA1Wvzwc8EX,-40.2937,121,0,0.42002,0.45272,0.47455,0.035,FAIL
+Production214,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",0Fx3Ykz9Zoo5T0r0sZtWPp,3RkpYxGpfcYT2I1t_zwJ_Z,-40.2937,121,0,0.42002,0.45271,0.47455,0.035,FAIL
+Production214,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",2T12tBKsv4vL2Pc9ijqqSu,0Fx3Ykz9Zoo5T0r0sZtWPp,-40.2932,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 1","Pile cap P2",0RYStVBLOU3fK4TrSaxleL,2T12tBKsv4vL2Pc9ijqqSu,-43.7736,97,0,0.36007,0.36011,0.36018,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",0RYStVBLOU3fK4TrSaxleL,0qpx6Ycve5tLEkuyiBy94y,-43.7736,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 8","Pile cap P2",1cDdAUyvkpgIPk5Ufdffgw,2T12tBKsv4vL2Pc9ijqqSu,-36.8135,97,0,0.36102,0.36126,0.36152,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",1cDdAUyvkpgIPk5Ufdffgw,0qpx6Ycve5tLEkuyiBy94y,-36.8135,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 7","Pile cap P2",01Mx6ArG29CItpGjgBLuca,2T12tBKsv4vL2Pc9ijqqSu,-36.8133,97,0,0.36054,0.36070,0.36090,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",01Mx6ArG29CItpGjgBLuca,0qpx6Ycve5tLEkuyiBy94y,-36.8133,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 6","Pile cap P2",1Un2L8xHtG3sCOXzOK7NpB,2T12tBKsv4vL2Pc9ijqqSu,-43.7731,97,0,0.36010,0.36020,0.36031,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",1Un2L8xHtG3sCOXzOK7NpB,0qpx6Ycve5tLEkuyiBy94y,-43.7731,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 2","Pile cap P2",2iSvaPVQnmzi68Ayq9d6qY,2T12tBKsv4vL2Pc9ijqqSu,-36.8138,97,0,0.36007,0.36017,0.36034,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",2iSvaPVQnmzi68Ayq9d6qY,0qpx6Ycve5tLEkuyiBy94y,-36.8138,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 3","Pile cap P2",2WJPpbnIyUCehnP4vK1ubq,2T12tBKsv4vL2Pc9ijqqSu,-36.8137,97,0,0.36151,0.36178,0.36208,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",2WJPpbnIyUCehnP4vK1ubq,0qpx6Ycve5tLEkuyiBy94y,-36.8137,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 5","Pile cap P2",3GnYYy2Y1vHqMUV$7WWUQ4,2T12tBKsv4vL2Pc9ijqqSu,-43.7731,97,0,0.36009,0.36023,0.36050,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",3GnYYy2Y1vHqMUV$7WWUQ4,0qpx6Ycve5tLEkuyiBy94y,-43.7731,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P2 4","Pile cap P2",24ZD9cwOSNj_MNCV3GxP8N,2T12tBKsv4vL2Pc9ijqqSu,-43.7735,97,0,0.36009,0.36035,0.36064,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",24ZD9cwOSNj_MNCV3GxP8N,0qpx6Ycve5tLEkuyiBy94y,-43.7735,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",0qpx6Ycve5tLEkuyiBy94y,2T12tBKsv4vL2Pc9ijqqSu,-40.2936,121,121,0.00003,0.00044,0.00219,0.035,PASS
+Production214,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 5",1lGkPEWaJvRI70HQAZkSP1,1rynT78KU8V45XMmnyMFss,-82.4133,121,0,5.32818,5.43091,5.50675,0.035,OBSERVED
+Production214,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 8",1lGkPEWaJvRI70HQAZkSP1,2cjVPrIwoPdZrGNh7P1lv9,-82.4133,121,0,0.92812,1.09708,1.24396,0.035,OBSERVED
+Production214,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 2",1lGkPEWaJvRI70HQAZkSP1,0bbLNJarvOpl60V0gvYLWj,-82.4133,121,121,0.00000,0.00003,0.00004,0.035,OBSERVED
+Production214,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 1",1lGkPEWaJvRI70HQAZkSP1,1bF2ohDSbAdPq9Dzb0x5mt,-82.4133,121,121,-0.00001,0.00002,0.00005,0.035,OBSERVED
+Production214,T04-Cap-Stem,"Pile cap O1","Abutment stem O1",2gImNpnGyqpWl$gbNtpzMj,1lGkPEWaJvRI70HQAZkSP1,-84.9334,121,121,-0.00003,0.00007,0.00028,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 3","Pile cap O1",0_aM_11Zcyc8m$$61lV1Dz,2gImNpnGyqpWl$gbNtpzMj,-80.3730,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 2","Pile cap O1",0Kp1KG1q2H6xwjLCKODn1i,2gImNpnGyqpWl$gbNtpzMj,-80.3733,97,97,0.00000,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 5","Pile cap O1",1fyAxUxs4bEDupYhVyQL5e,2gImNpnGyqpWl$gbNtpzMj,-80.3737,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 7","Pile cap O1",1p_t3_CvEaBc646XMc4rVY,2gImNpnGyqpWl$gbNtpzMj,-89.1333,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 4","Pile cap O1",1XHyI4eM6NrIJN28uH9AEQ,2gImNpnGyqpWl$gbNtpzMj,-83.8535,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 1","Pile cap O1",2a4OvdgikJUy3uDSyU4yWd,2gImNpnGyqpWl$gbNtpzMj,-83.8533,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O1 6","Pile cap O1",3bdbo8NLsd1BoB5Ae7kYGn,2gImNpnGyqpWl$gbNtpzMj,-89.1338,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Blinding-Cap,"Blinding concrete O1","Pile cap O1",2AWKmdFbxv_tuG7K9VZttg,2gImNpnGyqpWl$gbNtpzMj,-86.4693,86,81,-11.46450,0.00001,0.00001,0.035,PASS
+Production214,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 1",3pw3ckthnwuHJM5cpTcvE6,0Xt7wYVSDqdfWTrHZZJUX8,83.4262,121,0,5.32792,5.41767,5.49384,0.035,OBSERVED
+Production214,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 2",3pw3ckthnwuHJM5cpTcvE6,1M$A$Wm56UpStZNE5SyBhd,83.4262,121,0,0.89617,1.05509,1.19880,0.035,OBSERVED
+Production214,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 1",3pw3ckthnwuHJM5cpTcvE6,0IuTtWx0525uN7KFTYADuC,83.4262,121,121,0.00000,0.00001,0.00004,0.035,OBSERVED
+Production214,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 2",3pw3ckthnwuHJM5cpTcvE6,09OvP1gzRXygHRqEoB_YxG,83.4262,121,121,0.00003,0.00004,0.00006,0.035,OBSERVED
+Production214,T04-Cap-Stem,"Pile cap O4","Abutment stem O4",1lz6L5kkiHsqe1FPFY7si4,3pw3ckthnwuHJM5cpTcvE6,85.9463,121,121,-0.00277,-0.00081,0.00012,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 7","Pile cap O4",0GzCGpNTHvETrMS_kiVMMm,1lz6L5kkiHsqe1FPFY7si4,90.1468,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 3","Pile cap O4",0n$nC0OxnClTt3F0eMLOM5,1lz6L5kkiHsqe1FPFY7si4,81.3870,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 2","Pile cap O4",1GKGPBUnqotpvITYVkO07n,1lz6L5kkiHsqe1FPFY7si4,81.3867,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 5","Pile cap O4",1hWA3$l8573Uj8fVXRVyVv,1lz6L5kkiHsqe1FPFY7si4,81.3863,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 6","Pile cap O4",3cS$RggRVZLcARadfuvY0u,1lz6L5kkiHsqe1FPFY7si4,90.1462,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 4","Pile cap O4",3kML_OdcG2anTA0GEmMref,1lz6L5kkiHsqe1FPFY7si4,84.8663,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Production214,T04-Pile-Cap,"Piles O4 1","Pile cap O4",35JRfDfc7AG4pP03LjzGAP,1lz6L5kkiHsqe1FPFY7si4,84.8665,97,97,0.00001,0.00001,0.00001,0.035,PASS
+Production214,T04-Blinding-Cap,"Blinding concrete O4","Pile cap O4",1I2uRKupnTfpjQ_qcjCzM8,1lz6L5kkiHsqe1FPFY7si4,87.4827,86,81,-9.34904,0.00000,0.00001,0.035,PASS
+Production214,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",13i89sZ2IbZp1Sk$Woa$xz,1fawtDnfode$lnlifl1tTK,41.3066,121,0,0.42002,0.45271,0.47455,0.035,FAIL
+Production214,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",13i89sZ2IbZp1Sk$Woa$xz,2UbYxl2Z_QFNLU3y2qrM_l,41.3066,121,0,0.42002,0.45271,0.47455,0.035,FAIL
+Production214,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",2gojBJ8751ev0VZT3WtTz5,13i89sZ2IbZp1Sk$Woa$xz,41.3068,12,12,-0.00003,0.00000,0.00004,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 8","Pile cap P3",0PDwbZP_Wjsa$t9tZlRWdn,2gojBJ8751ev0VZT3WtTz5,37.8267,97,0,0.35965,0.35983,0.35994,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",0PDwbZP_Wjsa$t9tZlRWdn,1tghNyhC9BFNfrENkrKFon,37.8267,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 5","Pile cap P3",0zIcQZf_T3Rb59CjoQc8X4,2gojBJ8751ev0VZT3WtTz5,37.8268,97,0,0.35788,0.35818,0.35846,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",0zIcQZf_T3Rb59CjoQc8X4,1tghNyhC9BFNfrENkrKFon,37.8268,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 1","Pile cap P3",1AlW5oK7Lzhz7PkYqKTq67,2gojBJ8751ev0VZT3WtTz5,44.7868,97,0,0.35949,0.35976,0.35991,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",1AlW5oK7Lzhz7PkYqKTq67,1tghNyhC9BFNfrENkrKFon,44.7868,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 6","Pile cap P3",2sK3Oj2Oxz1wiAepNQukNM,2gojBJ8751ev0VZT3WtTz5,44.7866,97,0,0.35935,0.35964,0.35991,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",2sK3Oj2Oxz1wiAepNQukNM,1tghNyhC9BFNfrENkrKFon,44.7866,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 7","Pile cap P3",2vxXOtTmlBJAftg16Ip9lp,2gojBJ8751ev0VZT3WtTz5,44.7865,97,0,0.35982,0.35989,0.35994,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",2vxXOtTmlBJAftg16Ip9lp,1tghNyhC9BFNfrENkrKFon,44.7865,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 3","Pile cap P3",2xbB1CzKGfGuhKaJWpa8II,2gojBJ8751ev0VZT3WtTz5,37.8263,97,0,0.35908,0.35928,0.35944,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",2xbB1CzKGfGuhKaJWpa8II,1tghNyhC9BFNfrENkrKFon,37.8263,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 2","Pile cap P3",3o2F4eFxVeKqGscvJZ1l5y,2gojBJ8751ev0VZT3WtTz5,44.7870,97,0,0.35969,0.35979,0.35991,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",3o2F4eFxVeKqGscvJZ1l5y,1tghNyhC9BFNfrENkrKFon,44.7870,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Pile-Cap,"Piles P3 4","Pile cap P3",13xIsG3OU65cK6zC9udLB3,2gojBJ8751ev0VZT3WtTz5,37.8263,97,0,0.35844,0.35870,0.35895,0.035,OBSERVED
+Production214,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",13xIsG3OU65cK6zC9udLB3,1tghNyhC9BFNfrENkrKFon,37.8263,97,97,-0.00001,-0.00001,-0.00001,0.035,PASS
+Production214,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",1tghNyhC9BFNfrENkrKFon,2gojBJ8751ev0VZT3WtTz5,41.3066,121,121,-0.00223,-0.00043,-0.00003,0.035,PASS
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01/Bearing plinths P2 1,S01/Deck with crossbeams 6,-40.2942,121,0,0.56243,0.56450,0.56658,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01/Bearing plinths P2 1,S02/Deck with crossbeams 6,-40.2942,121,0,0.56238,0.56405,0.56571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 1 2",P01/Bearing plinths P2 1,S01/Girders — span 1 2,-40.2942,66,0,4.04830,4.11131,4.17431,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P01/Bearing plinths P2 1,S02/Girders — span 2 5,-40.2942,66,0,4.02661,4.09513,4.16364,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01/Bearing plinths P2 2,S01/Deck with crossbeams 6,-40.2942,121,0,0.56243,0.56450,0.56658,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01/Bearing plinths P2 2,S02/Deck with crossbeams 6,-40.2942,121,0,0.56238,0.56405,0.56571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 1 4",P01/Bearing plinths P2 2,S01/Girders — span 1 4,-40.2942,66,0,3.95680,4.02081,4.08474,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P01/Bearing plinths P2 2,S02/Girders — span 2 2,-40.2942,66,0,3.93604,4.00495,4.07384,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P02/Bearing plinths P2 1,S02/Deck with crossbeams 3,41.3058,121,0,0.54412,0.54603,0.54793,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P02/Bearing plinths P2 1,S03/Deck with crossbeams 6,41.3058,121,0,0.56238,0.56405,0.56571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02/Bearing plinths P2 1,S02/Girders — span 2 5,41.3058,66,0,4.04009,4.10419,4.16827,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02/Bearing plinths P2 1,S03/Girders — span 2 5,41.3058,66,0,4.02661,4.09514,4.16365,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P02/Bearing plinths P2 2,S02/Deck with crossbeams 3,41.3059,121,0,0.54274,0.54474,0.54673,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P02/Bearing plinths P2 2,S03/Deck with crossbeams 6,41.3059,121,0,0.56238,0.56405,0.56571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02/Bearing plinths P2 2,S02/Girders — span 2 2,41.3059,66,0,3.95124,4.01500,4.07875,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02/Bearing plinths P2 2,S03/Girders — span 2 2,41.3059,66,0,3.93604,4.00495,4.07384,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P03/Bearing plinths P2 1,S03/Deck with crossbeams 3,122.9058,121,0,0.54412,0.54603,0.54793,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P03/Bearing plinths P2 1,S04/Deck with crossbeams 6,122.9058,121,0,0.56238,0.56405,0.56571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P03/Bearing plinths P2 1,S03/Girders — span 2 5,122.9058,66,0,4.04009,4.10419,4.16828,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P03/Bearing plinths P2 1,S04/Girders — span 2 5,122.9058,66,0,4.02661,4.09513,4.16364,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P03/Bearing plinths P2 2,S03/Deck with crossbeams 3,122.9059,121,0,0.54274,0.54474,0.54673,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P03/Bearing plinths P2 2,S04/Deck with crossbeams 6,122.9059,121,0,0.56238,0.56405,0.56571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P03/Bearing plinths P2 2,S03/Girders — span 2 2,122.9059,66,0,3.95125,4.01500,4.07874,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P03/Bearing plinths P2 2,S04/Girders — span 2 2,122.9059,66,0,3.93604,4.00495,4.07383,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 5",O1/Bearing plinths O1 2,S01/Deck with crossbeams 5,-81.0941,121,0,5.09187,5.10567,5.13385,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 8",O1/Bearing plinths O1 2,S01/Deck with crossbeams 8,-81.0941,121,0,0.81517,0.81926,0.82337,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 3",O1/Bearing plinths O1 2,S01/Girders — span 1 3,-81.0941,11,0,4.81872,4.83571,4.85557,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 4",O1/Bearing plinths O1 2,S01/Girders — span 1 4,-81.0941,21,0,1.31356,1.32414,4.85342,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 5",O1/Bearing plinths O1 1,S01/Deck with crossbeams 5,-81.0942,121,0,5.18143,5.20587,5.23358,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 8",O1/Bearing plinths O1 1,S01/Deck with crossbeams 8,-81.0942,121,0,0.81519,0.81931,0.82343,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 5",O1/Bearing plinths O1 1,S01/Girders — span 1 5,-81.0942,11,0,4.91251,4.92806,4.95098,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 2",O1/Bearing plinths O1 1,S01/Girders — span 1 2,-81.0942,21,0,1.40647,1.41722,4.94704,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3/Bearing plinths P3 1,S04/Deck with crossbeams 3,204.5059,121,0,0.58018,0.58217,0.58416,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3/Bearing plinths P3 1,S05/Deck with crossbeams 3,204.5059,121,0,0.58015,0.58214,0.58416,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",P3/Bearing plinths P3 1,S04/Girders — span 2 2,204.5059,66,0,3.98867,4.05243,4.11619,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 3 5",P3/Bearing plinths P3 1,S05/Girders — span 3 5,204.5059,66,0,3.96566,4.03557,4.10548,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3/Bearing plinths P3 2,S04/Deck with crossbeams 3,204.5058,121,0,0.58155,0.58346,0.58536,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3/Bearing plinths P3 2,S05/Deck with crossbeams 3,204.5058,121,0,0.58108,0.58317,0.58533,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",P3/Bearing plinths P3 2,S04/Girders — span 2 5,204.5058,66,0,4.07750,4.14161,4.20571,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 3 3",P3/Bearing plinths P3 2,S05/Girders — span 3 3,204.5058,66,0,4.05620,4.12573,4.19525,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 1",O4/Bearing plinths O4 1,S05/Deck with crossbeams 1,245.3058,121,0,4.99262,5.01373,5.04136,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 2",O4/Bearing plinths O4 1,S05/Deck with crossbeams 2,245.3058,121,0,0.60268,0.60474,0.60647,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 4",O4/Bearing plinths O4 1,S05/Girders — span 3 4,245.3058,11,0,4.72198,4.73824,4.75823,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 3",O4/Bearing plinths O4 1,S05/Girders — span 3 3,245.3058,21,0,1.20755,1.21781,4.75843,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 1",O4/Bearing plinths O4 2,S05/Deck with crossbeams 1,245.3059,121,0,4.90268,4.92401,4.95165,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 2",O4/Bearing plinths O4 2,S05/Deck with crossbeams 2,245.3059,121,0,0.60268,0.60470,0.60648,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 1",O4/Bearing plinths O4 2,S05/Girders — span 3 1,245.3059,11,0,4.63157,4.64809,4.67242,0.035,OBSERVED
+Prototype5Before,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 5",O4/Bearing plinths O4 2,S05/Girders — span 3 5,245.3059,21,0,1.11791,1.12815,4.66872,0.035,OBSERVED
+Prototype5Before,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P01/Pier stem P2,P01/Bearing plinths P2 1,-40.2942,121,0,0.42001,0.45272,0.47454,0.035,FAIL
+Prototype5Before,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P01/Pier stem P2,P01/Bearing plinths P2 2,-40.2942,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Prototype5Before,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P01/Pile cap P2,P01/Pier stem P2,-40.2938,12,12,-0.00003,-0.00001,0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P01/Piles P2 1,P01/Pile cap P2,-43.7741,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P01/Piles P2 1,P01/Blinding concrete P2,-43.7741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P01/Piles P2 8,P01/Pile cap P2,-36.8142,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P01/Piles P2 8,P01/Blinding concrete P2,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P01/Piles P2 7,P01/Pile cap P2,-36.8142,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P01/Piles P2 7,P01/Blinding concrete P2,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P01/Piles P2 6,P01/Pile cap P2,-43.7742,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P01/Piles P2 6,P01/Blinding concrete P2,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P01/Piles P2 2,P01/Pile cap P2,-36.8141,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P01/Piles P2 2,P01/Blinding concrete P2,-36.8141,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P01/Piles P2 3,P01/Pile cap P2,-36.8142,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P01/Piles P2 3,P01/Blinding concrete P2,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P01/Piles P2 5,P01/Pile cap P2,-43.7742,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P01/Piles P2 5,P01/Blinding concrete P2,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P01/Piles P2 4,P01/Pile cap P2,-43.7742,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P01/Piles P2 4,P01/Blinding concrete P2,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P01/Blinding concrete P2,P01/Pile cap P2,-40.2942,121,121,0.00003,0.00044,0.00219,0.035,PASS
+Prototype5Before,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P02/Pier stem P2,P02/Bearing plinths P2 1,41.3058,121,0,0.42001,0.45272,0.47454,0.035,FAIL
+Prototype5Before,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P02/Pier stem P2,P02/Bearing plinths P2 2,41.3058,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Prototype5Before,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P02/Pile cap P2,P02/Pier stem P2,41.3062,12,12,-0.00003,0.00000,0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P02/Piles P2 1,P02/Pile cap P2,37.8259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P02/Piles P2 1,P02/Blinding concrete P2,37.8259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P02/Piles P2 8,P02/Pile cap P2,44.7858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P02/Piles P2 8,P02/Blinding concrete P2,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P02/Piles P2 7,P02/Pile cap P2,44.7858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P02/Piles P2 7,P02/Blinding concrete P2,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P02/Piles P2 6,P02/Pile cap P2,37.8258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P02/Piles P2 6,P02/Blinding concrete P2,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P02/Piles P2 2,P02/Pile cap P2,44.7859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P02/Piles P2 2,P02/Blinding concrete P2,44.7859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P02/Piles P2 3,P02/Pile cap P2,44.7858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P02/Piles P2 3,P02/Blinding concrete P2,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P02/Piles P2 5,P02/Pile cap P2,37.8258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P02/Piles P2 5,P02/Blinding concrete P2,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P02/Piles P2 4,P02/Pile cap P2,37.8258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P02/Piles P2 4,P02/Blinding concrete P2,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P02/Blinding concrete P2,P02/Pile cap P2,41.3058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+Prototype5Before,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P03/Pier stem P2,P03/Bearing plinths P2 1,122.9058,121,0,0.42001,0.45272,0.47454,0.035,FAIL
+Prototype5Before,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P03/Pier stem P2,P03/Bearing plinths P2 2,122.9058,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Prototype5Before,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P03/Pile cap P2,P03/Pier stem P2,122.9062,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P03/Piles P2 1,P03/Pile cap P2,119.4259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P03/Piles P2 1,P03/Blinding concrete P2,119.4259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P03/Piles P2 8,P03/Pile cap P2,126.3858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P03/Piles P2 8,P03/Blinding concrete P2,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P03/Piles P2 7,P03/Pile cap P2,126.3858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P03/Piles P2 7,P03/Blinding concrete P2,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P03/Piles P2 6,P03/Pile cap P2,119.4258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P03/Piles P2 6,P03/Blinding concrete P2,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P03/Piles P2 2,P03/Pile cap P2,126.3859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P03/Piles P2 2,P03/Blinding concrete P2,126.3859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P03/Piles P2 3,P03/Pile cap P2,126.3858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P03/Piles P2 3,P03/Blinding concrete P2,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P03/Piles P2 5,P03/Pile cap P2,119.4258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P03/Piles P2 5,P03/Blinding concrete P2,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P03/Piles P2 4,P03/Pile cap P2,119.4258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P03/Piles P2 4,P03/Blinding concrete P2,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P03/Blinding concrete P2,P03/Pile cap P2,122.9058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+Prototype5Before,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 5",O1/Abutment stem O1,S01/Deck with crossbeams 5,-82.4142,121,0,5.32818,5.43090,5.50673,0.035,OBSERVED
+Prototype5Before,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 8",O1/Abutment stem O1,S01/Deck with crossbeams 8,-82.4142,121,0,0.92812,1.09708,1.24396,0.035,OBSERVED
+Prototype5Before,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 2",O1/Abutment stem O1,O1/Bearing plinths O1 2,-82.4142,121,121,-0.00002,0.00001,0.00002,0.035,OBSERVED
+Prototype5Before,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 1",O1/Abutment stem O1,O1/Bearing plinths O1 1,-82.4142,121,121,-0.00003,0.00000,0.00003,0.035,OBSERVED
+Prototype5Before,T04-Cap-Stem,"Pile cap O1","Abutment stem O1",O1/Pile cap O1,O1/Abutment stem O1,-84.9342,121,121,-0.00003,0.00007,0.00028,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 3","Pile cap O1",O1/Piles O1 3,O1/Pile cap O1,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 2","Pile cap O1",O1/Piles O1 2,O1/Pile cap O1,-80.3741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 5","Pile cap O1",O1/Piles O1 5,O1/Pile cap O1,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 7","Pile cap O1",O1/Piles O1 7,O1/Pile cap O1,-89.1342,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 4","Pile cap O1",O1/Piles O1 4,O1/Pile cap O1,-83.8542,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 1","Pile cap O1",O1/Piles O1 1,O1/Pile cap O1,-83.8541,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O1 6","Pile cap O1",O1/Piles O1 6,O1/Pile cap O1,-89.1341,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Blinding-Cap,"Blinding concrete O1","Pile cap O1",O1/Blinding concrete O1,O1/Pile cap O1,-86.4702,86,81,-11.46451,0.00001,0.00001,0.035,PASS
+Prototype5Before,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",P3/Pier stem P3,P3/Bearing plinths P3 1,204.5058,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Prototype5Before,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",P3/Pier stem P3,P3/Bearing plinths P3 2,204.5058,121,0,0.42001,0.45272,0.47453,0.035,FAIL
+Prototype5Before,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",P3/Pile cap P3,P3/Pier stem P3,204.5062,12,12,-0.00003,0.00000,0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 8","Pile cap P3",P3/Piles P3 8,P3/Pile cap P3,201.0259,97,0,0.35965,0.35982,0.35993,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",P3/Piles P3 8,P3/Blinding concrete P3,201.0259,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 5","Pile cap P3",P3/Piles P3 5,P3/Pile cap P3,201.0258,97,0,0.35787,0.35817,0.35845,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",P3/Piles P3 5,P3/Blinding concrete P3,201.0258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 1","Pile cap P3",P3/Piles P3 1,P3/Pile cap P3,207.9858,97,0,0.35948,0.35975,0.35990,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",P3/Piles P3 1,P3/Blinding concrete P3,207.9858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 6","Pile cap P3",P3/Piles P3 6,P3/Pile cap P3,207.9858,97,0,0.35934,0.35964,0.35990,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",P3/Piles P3 6,P3/Blinding concrete P3,207.9858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 7","Pile cap P3",P3/Piles P3 7,P3/Pile cap P3,207.9859,97,0,0.35981,0.35989,0.35993,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",P3/Piles P3 7,P3/Blinding concrete P3,207.9859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 3","Pile cap P3",P3/Piles P3 3,P3/Pile cap P3,201.0258,97,0,0.35907,0.35927,0.35944,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",P3/Piles P3 3,P3/Blinding concrete P3,201.0258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 2","Pile cap P3",P3/Piles P3 2,P3/Pile cap P3,207.9859,97,0,0.35968,0.35978,0.35990,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",P3/Piles P3 2,P3/Blinding concrete P3,207.9859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles P3 4","Pile cap P3",P3/Piles P3 4,P3/Pile cap P3,201.0258,97,0,0.35843,0.35869,0.35894,0.035,OBSERVED
+Prototype5Before,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",P3/Piles P3 4,P3/Blinding concrete P3,201.0258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+Prototype5Before,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",P3/Blinding concrete P3,P3/Pile cap P3,204.5059,121,121,-0.00223,-0.00043,-0.00003,0.035,PASS
+Prototype5Before,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 1",O4/Abutment stem O4,S05/Deck with crossbeams 1,246.6258,121,0,5.32791,5.41767,5.49384,0.035,OBSERVED
+Prototype5Before,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 2",O4/Abutment stem O4,S05/Deck with crossbeams 2,246.6258,121,0,0.89615,1.05508,1.19879,0.035,OBSERVED
+Prototype5Before,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 1",O4/Abutment stem O4,O4/Bearing plinths O4 1,246.6258,121,121,-0.00003,-0.00001,0.00001,0.035,OBSERVED
+Prototype5Before,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 2",O4/Abutment stem O4,O4/Bearing plinths O4 2,246.6258,121,121,0.00000,0.00002,0.00004,0.035,OBSERVED
+Prototype5Before,T04-Cap-Stem,"Pile cap O4","Abutment stem O4",O4/Pile cap O4,O4/Abutment stem O4,249.1459,121,121,-0.00277,-0.00081,0.00012,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 7","Pile cap O4",O4/Piles O4 7,O4/Pile cap O4,253.3458,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 3","Pile cap O4",O4/Piles O4 3,O4/Pile cap O4,244.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 2","Pile cap O4",O4/Piles O4 2,O4/Pile cap O4,244.5859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 5","Pile cap O4",O4/Piles O4 5,O4/Pile cap O4,244.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 6","Pile cap O4",O4/Piles O4 6,O4/Pile cap O4,253.3459,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 4","Pile cap O4",O4/Piles O4 4,O4/Pile cap O4,248.0658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Pile-Cap,"Piles O4 1","Pile cap O4",O4/Piles O4 1,O4/Pile cap O4,248.0658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+Prototype5Before,T04-Blinding-Cap,"Blinding concrete O4","Pile cap O4",O4/Blinding concrete O4,O4/Pile cap O4,250.6819,86,81,-9.34901,0.00000,0.00001,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+2Spans,T04-Bearing-Fit,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,-40.2942,66,0,3.46257,3.53108,3.59959,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,-40.2942,66,0,3.37199,3.44090,3.50979,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-00TgNFCH9HGoplDgAwRwDO,41.3058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.49406,3.55816,3.62224,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.48059,3.54911,3.61762,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-00TgNFCH9HGoplDgAwRwDO,41.3059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.40650,3.47026,3.53401,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.39130,3.46021,3.52910,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",P3-1fawtDnfode$lnlifl1tTK,S03-3e41$wYQjhAnolzZ3fv5Ep,122.9058,66,0,3.40650,3.47026,3.53400,0.035,OBSERVED
+2Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+2Spans,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",P3-2UbYxl2Z_QFNLU3y2qrM_l,S03-3$3eDVPuGaQ5yf$btPJT5P,122.9058,66,0,3.49405,3.55816,3.62225,0.035,OBSERVED
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-0vpwLjckQCzsA1Wvzwc8EX,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-3RkpYxGpfcYT2I1t_zwJ_Z,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+2Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P01-2T12tBKsv4vL2Pc9ijqqSu,P01-0Fx3Ykz9Zoo5T0r0sZtWPp,-40.2938,12,12,-0.00003,0.00000,0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7741,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P01-01Mx6ArG29CItpGjgBLuca,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P01-01Mx6ArG29CItpGjgBLuca,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8141,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8141,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P01-0qpx6Ycve5tLEkuyiBy94y,P01-2T12tBKsv4vL2Pc9ijqqSu,-40.2942,121,121,0.00003,0.00044,0.00219,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-0vpwLjckQCzsA1Wvzwc8EX,41.3058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-3RkpYxGpfcYT2I1t_zwJ_Z,41.3058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+2Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P02-2T12tBKsv4vL2Pc9ijqqSu,P02-0Fx3Ykz9Zoo5T0r0sZtWPp,41.3062,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-0qpx6Ycve5tLEkuyiBy94y,37.8259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P02-01Mx6ArG29CItpGjgBLuca,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P02-01Mx6ArG29CItpGjgBLuca,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-0qpx6Ycve5tLEkuyiBy94y,44.7859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+2Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P02-0qpx6Ycve5tLEkuyiBy94y,P02-2T12tBKsv4vL2Pc9ijqqSu,41.3058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-1fawtDnfode$lnlifl1tTK,122.9058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+2Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-2UbYxl2Z_QFNLU3y2qrM_l,122.9058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+2Spans,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",P3-2gojBJ8751ev0VZT3WtTz5,P3-13i89sZ2IbZp1Sk$Woa$xz,122.9062,12,12,-0.00003,0.00000,0.00003,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 8","Pile cap P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35965,0.35982,0.35993,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 5","Pile cap P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35787,0.35817,0.35845,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 1","Pile cap P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-2gojBJ8751ev0VZT3WtTz5,126.3858,97,0,0.35948,0.35975,0.35990,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-1tghNyhC9BFNfrENkrKFon,126.3858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 6","Pile cap P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-2gojBJ8751ev0VZT3WtTz5,126.3858,97,0,0.35934,0.35964,0.35990,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-1tghNyhC9BFNfrENkrKFon,126.3858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 7","Pile cap P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-2gojBJ8751ev0VZT3WtTz5,126.3859,97,0,0.35981,0.35989,0.35993,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-1tghNyhC9BFNfrENkrKFon,126.3859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 3","Pile cap P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35907,0.35927,0.35944,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 2","Pile cap P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-2gojBJ8751ev0VZT3WtTz5,126.3858,97,0,0.35968,0.35978,0.35990,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-1tghNyhC9BFNfrENkrKFon,126.3858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Pile-Cap,"Piles P3 4","Pile cap P3",P3-13xIsG3OU65cK6zC9udLB3,P3-2gojBJ8751ev0VZT3WtTz5,119.4258,97,0,0.35843,0.35869,0.35894,0.035,OBSERVED
+2Spans,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",P3-13xIsG3OU65cK6zC9udLB3,P3-1tghNyhC9BFNfrENkrKFon,119.4258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+2Spans,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",P3-1tghNyhC9BFNfrENkrKFon,P3-2gojBJ8751ev0VZT3WtTz5,122.9058,121,121,-0.00223,-0.00043,-0.00003,0.035,PASS
+2Spans,T03-Deck-Vertical,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,5,5,0.00000,,0.00007,0.025,PASS
+2Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,1,1,0.00000,,,0.025,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P03-0vpwLjckQCzsA1Wvzwc8EX,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths O1 2","Deck with crossbeams 8",O1-0bbLNJarvOpl60V0gvYLWj,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0941,121,121,-0.00409,0.00000,0.00410,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths O1 1","Deck with crossbeams 8",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0942,121,121,-0.00413,0.00000,0.00412,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S05-3bmWj0FUjv2EP8Vj6Q08p$,204.5059,121,121,-0.00198,0.00000,0.00202,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S05-3bmWj0FUjv2EP8Vj6Q08p$,204.5058,121,121,-0.00210,0.00000,0.00216,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths O4 1","Deck with crossbeams 2",O4-0IuTtWx0525uN7KFTYADuC,S05-1M$A$Wm56UpStZNE5SyBhd,245.3057,121,121,-0.00206,0.00000,0.00173,0.035,PASS
+5Spans,T04-Bearing-Fit,"Bearing plinths O4 2","Deck with crossbeams 2",O4-09OvP1gzRXygHRqEoB_YxG,S05-1M$A$Wm56UpStZNE5SyBhd,245.3059,121,121,-0.00202,0.00000,0.00178,0.035,PASS
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S01-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00162,0.00045,0.00253,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 1 2",P01-0vpwLjckQCzsA1Wvzwc8EX,S01-35_$at319vYpeinIpxhdix,-40.2942,66,0,3.48425,3.54726,3.61026,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,-40.2942,66,0,3.46257,3.53108,3.59959,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S01-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00162,0.00045,0.00253,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 1 4",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S01-1M2Dt6zBVBF$17xO1ZrlWq,-40.2942,66,0,3.39276,3.45676,3.52069,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,-40.2942,66,0,3.37199,3.44090,3.50979,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-00TgNFCH9HGoplDgAwRwDO,41.3058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.49406,3.55816,3.62224,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.48059,3.54911,3.61762,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-00TgNFCH9HGoplDgAwRwDO,41.3059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.40650,3.47026,3.53401,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.39130,3.46021,3.52910,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P03-0vpwLjckQCzsA1Wvzwc8EX,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P03-0vpwLjckQCzsA1Wvzwc8EX,S04-00TgNFCH9HGoplDgAwRwDO,122.9058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P03-0vpwLjckQCzsA1Wvzwc8EX,S03-3$3eDVPuGaQ5yf$btPJT5P,122.9058,66,0,3.49406,3.55816,3.62225,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P03-0vpwLjckQCzsA1Wvzwc8EX,S04-3$3eDVPuGaQ5yf$btPJT5P,122.9058,66,0,3.48059,3.54911,3.61761,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S04-00TgNFCH9HGoplDgAwRwDO,122.9059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3e41$wYQjhAnolzZ3fv5Ep,122.9059,66,0,3.40651,3.47026,3.53400,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S04-3e41$wYQjhAnolzZ3fv5Ep,122.9059,66,0,3.39130,3.46021,3.52910,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 5",O1-0bbLNJarvOpl60V0gvYLWj,S01-1rynT78KU8V45XMmnyMFss,-81.0941,121,0,4.27260,4.28640,4.31458,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 8",O1-0bbLNJarvOpl60V0gvYLWj,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0941,121,121,-0.00409,0.00000,0.00410,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 3",O1-0bbLNJarvOpl60V0gvYLWj,S01-1HfwXIbME2yQxwO10KnFqY,-81.0941,11,0,3.99945,4.01645,4.03630,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 4",O1-0bbLNJarvOpl60V0gvYLWj,S01-1M2Dt6zBVBF$17xO1ZrlWq,-81.0941,21,0,0.49430,0.50488,4.03415,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 5",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-1rynT78KU8V45XMmnyMFss,-81.0942,121,0,4.36212,4.38656,4.41427,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 8",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0942,121,121,-0.00413,0.00000,0.00412,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 5",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-28v_6QK2bjMvQbMN44eCdk,-81.0942,11,0,4.09320,4.10875,4.13166,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 2",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-35_$at319vYpeinIpxhdix,-81.0942,21,0,0.58716,0.59791,4.12773,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S04-3bmWj0FUjv2EP8Vj6Q08p$,204.5059,121,121,-0.00196,0.00003,0.00203,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S05-3bmWj0FUjv2EP8Vj6Q08p$,204.5059,121,121,-0.00198,0.00000,0.00202,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",P3-1fawtDnfode$lnlifl1tTK,S04-3e41$wYQjhAnolzZ3fv5Ep,204.5059,66,0,3.40654,3.47030,3.53405,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 3 5",P3-1fawtDnfode$lnlifl1tTK,S05-3WdnBfsmpFEohD23snJk1H,204.5059,66,0,3.38353,3.45344,3.52334,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S04-3bmWj0FUjv2EP8Vj6Q08p$,204.5058,121,121,-0.00162,0.00028,0.00219,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S05-3bmWj0FUjv2EP8Vj6Q08p$,204.5058,121,121,-0.00210,0.00000,0.00216,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",P3-2UbYxl2Z_QFNLU3y2qrM_l,S04-3$3eDVPuGaQ5yf$btPJT5P,204.5058,66,0,3.49433,3.55844,3.62254,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 3 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S05-2TyakGRp4Naj7Zqx1es5f$,204.5058,66,0,3.47302,3.54255,3.61208,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 1",O4-0IuTtWx0525uN7KFTYADuC,S05-0Xt7wYVSDqdfWTrHZZJUX8,245.3057,121,0,4.38788,4.40899,4.43662,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 2",O4-0IuTtWx0525uN7KFTYADuC,S05-1M$A$Wm56UpStZNE5SyBhd,245.3057,121,121,-0.00206,0.00000,0.00173,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 4",O4-0IuTtWx0525uN7KFTYADuC,S05-0fiZXRDD3n9d7Gl1JSAhdI,245.3057,11,0,4.11724,4.13350,4.15349,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 3",O4-0IuTtWx0525uN7KFTYADuC,S05-2TyakGRp4Naj7Zqx1es5f$,245.3057,21,0,0.60281,0.61307,4.15369,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 1",O4-09OvP1gzRXygHRqEoB_YxG,S05-0Xt7wYVSDqdfWTrHZZJUX8,245.3059,121,0,4.29798,4.31931,4.34695,0.035,OBSERVED
+5Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 2",O4-09OvP1gzRXygHRqEoB_YxG,S05-1M$A$Wm56UpStZNE5SyBhd,245.3059,121,121,-0.00202,0.00000,0.00178,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 1",O4-09OvP1gzRXygHRqEoB_YxG,S05-0s3As3_b2cSGwniRNDr6D1,245.3059,11,0,4.02687,4.04339,4.06772,0.035,OBSERVED
+5Spans,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 5",O4-09OvP1gzRXygHRqEoB_YxG,S05-3WdnBfsmpFEohD23snJk1H,245.3059,21,0,0.51321,0.52345,4.06402,0.035,OBSERVED
+5Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-0vpwLjckQCzsA1Wvzwc8EX,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-3RkpYxGpfcYT2I1t_zwJ_Z,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+5Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P01-2T12tBKsv4vL2Pc9ijqqSu,P01-0Fx3Ykz9Zoo5T0r0sZtWPp,-40.2938,12,12,-0.00003,-0.00001,0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7741,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P01-01Mx6ArG29CItpGjgBLuca,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P01-01Mx6ArG29CItpGjgBLuca,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8141,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8141,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P01-0qpx6Ycve5tLEkuyiBy94y,P01-2T12tBKsv4vL2Pc9ijqqSu,-40.2942,121,121,0.00003,0.00044,0.00219,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-0vpwLjckQCzsA1Wvzwc8EX,41.3058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-3RkpYxGpfcYT2I1t_zwJ_Z,41.3058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+5Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P02-2T12tBKsv4vL2Pc9ijqqSu,P02-0Fx3Ykz9Zoo5T0r0sZtWPp,41.3062,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-0qpx6Ycve5tLEkuyiBy94y,37.8259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P02-01Mx6ArG29CItpGjgBLuca,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P02-01Mx6ArG29CItpGjgBLuca,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-0qpx6Ycve5tLEkuyiBy94y,44.7859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P02-0qpx6Ycve5tLEkuyiBy94y,P02-2T12tBKsv4vL2Pc9ijqqSu,41.3058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P03-0Fx3Ykz9Zoo5T0r0sZtWPp,P03-0vpwLjckQCzsA1Wvzwc8EX,122.9058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P03-0Fx3Ykz9Zoo5T0r0sZtWPp,P03-3RkpYxGpfcYT2I1t_zwJ_Z,122.9058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+5Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P03-2T12tBKsv4vL2Pc9ijqqSu,P03-0Fx3Ykz9Zoo5T0r0sZtWPp,122.9062,12,12,-0.00002,-0.00001,0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P03-0RYStVBLOU3fK4TrSaxleL,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P03-0RYStVBLOU3fK4TrSaxleL,P03-0qpx6Ycve5tLEkuyiBy94y,119.4259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P03-1cDdAUyvkpgIPk5Ufdffgw,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P03-1cDdAUyvkpgIPk5Ufdffgw,P03-0qpx6Ycve5tLEkuyiBy94y,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P03-01Mx6ArG29CItpGjgBLuca,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P03-01Mx6ArG29CItpGjgBLuca,P03-0qpx6Ycve5tLEkuyiBy94y,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P03-1Un2L8xHtG3sCOXzOK7NpB,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P03-1Un2L8xHtG3sCOXzOK7NpB,P03-0qpx6Ycve5tLEkuyiBy94y,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P03-2iSvaPVQnmzi68Ayq9d6qY,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P03-2iSvaPVQnmzi68Ayq9d6qY,P03-0qpx6Ycve5tLEkuyiBy94y,126.3859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P03-2WJPpbnIyUCehnP4vK1ubq,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P03-2WJPpbnIyUCehnP4vK1ubq,P03-0qpx6Ycve5tLEkuyiBy94y,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P03-3GnYYy2Y1vHqMUV$7WWUQ4,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P03-3GnYYy2Y1vHqMUV$7WWUQ4,P03-0qpx6Ycve5tLEkuyiBy94y,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P03-24ZD9cwOSNj_MNCV3GxP8N,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P03-24ZD9cwOSNj_MNCV3GxP8N,P03-0qpx6Ycve5tLEkuyiBy94y,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P03-0qpx6Ycve5tLEkuyiBy94y,P03-2T12tBKsv4vL2Pc9ijqqSu,122.9058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+5Spans,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 5",O1-1lGkPEWaJvRI70HQAZkSP1,S01-1rynT78KU8V45XMmnyMFss,-82.4142,121,0,5.32818,5.43090,5.50673,0.035,OBSERVED
+5Spans,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 8",O1-1lGkPEWaJvRI70HQAZkSP1,S01-2cjVPrIwoPdZrGNh7P1lv9,-82.4142,121,0,0.92812,1.09708,1.24396,0.035,OBSERVED
+5Spans,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 2",O1-1lGkPEWaJvRI70HQAZkSP1,O1-0bbLNJarvOpl60V0gvYLWj,-82.4142,121,3,0.01507,0.16604,0.31691,0.035,OBSERVED
+5Spans,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 1",O1-1lGkPEWaJvRI70HQAZkSP1,O1-1bF2ohDSbAdPq9Dzb0x5mt,-82.4142,121,2,0.01553,0.17081,0.32611,0.035,OBSERVED
+5Spans,T04-Cap-Stem,"Pile cap O1","Abutment stem O1",O1-2gImNpnGyqpWl$gbNtpzMj,O1-1lGkPEWaJvRI70HQAZkSP1,-84.9342,121,121,-0.00003,0.00007,0.00028,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 3","Pile cap O1",O1-0_aM_11Zcyc8m$$61lV1Dz,O1-2gImNpnGyqpWl$gbNtpzMj,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 2","Pile cap O1",O1-0Kp1KG1q2H6xwjLCKODn1i,O1-2gImNpnGyqpWl$gbNtpzMj,-80.3741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 5","Pile cap O1",O1-1fyAxUxs4bEDupYhVyQL5e,O1-2gImNpnGyqpWl$gbNtpzMj,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 7","Pile cap O1",O1-1p_t3_CvEaBc646XMc4rVY,O1-2gImNpnGyqpWl$gbNtpzMj,-89.1342,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 4","Pile cap O1",O1-1XHyI4eM6NrIJN28uH9AEQ,O1-2gImNpnGyqpWl$gbNtpzMj,-83.8542,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 1","Pile cap O1",O1-2a4OvdgikJUy3uDSyU4yWd,O1-2gImNpnGyqpWl$gbNtpzMj,-83.8541,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O1 6","Pile cap O1",O1-3bdbo8NLsd1BoB5Ae7kYGn,O1-2gImNpnGyqpWl$gbNtpzMj,-89.1341,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Blinding-Cap,"Blinding concrete O1","Pile cap O1",O1-2AWKmdFbxv_tuG7K9VZttg,O1-2gImNpnGyqpWl$gbNtpzMj,-86.4702,86,81,-11.46451,0.00001,0.00001,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-1fawtDnfode$lnlifl1tTK,204.5058,121,121,-0.03324,-0.00052,0.02129,0.035,PASS
+5Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-2UbYxl2Z_QFNLU3y2qrM_l,204.5058,121,121,-0.03220,0.00052,0.02233,0.035,PASS
+5Spans,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",P3-2gojBJ8751ev0VZT3WtTz5,P3-13i89sZ2IbZp1Sk$Woa$xz,204.5062,12,12,-0.00003,0.00000,0.00003,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 8","Pile cap P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-2gojBJ8751ev0VZT3WtTz5,201.0259,97,0,0.35965,0.35982,0.35993,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-1tghNyhC9BFNfrENkrKFon,201.0259,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 5","Pile cap P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-2gojBJ8751ev0VZT3WtTz5,201.0258,97,0,0.35787,0.35817,0.35845,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-1tghNyhC9BFNfrENkrKFon,201.0258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 1","Pile cap P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-2gojBJ8751ev0VZT3WtTz5,207.9858,97,0,0.35948,0.35975,0.35990,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-1tghNyhC9BFNfrENkrKFon,207.9858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 6","Pile cap P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-2gojBJ8751ev0VZT3WtTz5,207.9858,97,0,0.35934,0.35964,0.35990,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-1tghNyhC9BFNfrENkrKFon,207.9858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 7","Pile cap P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-2gojBJ8751ev0VZT3WtTz5,207.9859,97,0,0.35981,0.35989,0.35993,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-1tghNyhC9BFNfrENkrKFon,207.9859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 3","Pile cap P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-2gojBJ8751ev0VZT3WtTz5,201.0258,97,0,0.35907,0.35927,0.35944,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-1tghNyhC9BFNfrENkrKFon,201.0258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 2","Pile cap P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-2gojBJ8751ev0VZT3WtTz5,207.9859,97,0,0.35968,0.35978,0.35990,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-1tghNyhC9BFNfrENkrKFon,207.9859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles P3 4","Pile cap P3",P3-13xIsG3OU65cK6zC9udLB3,P3-2gojBJ8751ev0VZT3WtTz5,201.0258,97,0,0.35843,0.35869,0.35894,0.035,OBSERVED
+5Spans,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",P3-13xIsG3OU65cK6zC9udLB3,P3-1tghNyhC9BFNfrENkrKFon,201.0258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+5Spans,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",P3-1tghNyhC9BFNfrENkrKFon,P3-2gojBJ8751ev0VZT3WtTz5,204.5059,121,121,-0.00223,-0.00043,-0.00003,0.035,PASS
+5Spans,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 1",O4-3pw3ckthnwuHJM5cpTcvE6,S05-0Xt7wYVSDqdfWTrHZZJUX8,246.6258,121,0,5.32791,5.41767,5.49384,0.035,OBSERVED
+5Spans,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 2",O4-3pw3ckthnwuHJM5cpTcvE6,S05-1M$A$Wm56UpStZNE5SyBhd,246.6258,121,0,0.89615,1.05508,1.19879,0.035,OBSERVED
+5Spans,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 1",O4-3pw3ckthnwuHJM5cpTcvE6,O4-0IuTtWx0525uN7KFTYADuC,246.6258,121,12,0.00757,0.08345,0.15940,0.035,OBSERVED
+5Spans,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 2",O4-3pw3ckthnwuHJM5cpTcvE6,O4-09OvP1gzRXygHRqEoB_YxG,246.6258,121,12,0.00743,0.08150,0.15555,0.035,OBSERVED
+5Spans,T04-Cap-Stem,"Pile cap O4","Abutment stem O4",O4-1lz6L5kkiHsqe1FPFY7si4,O4-3pw3ckthnwuHJM5cpTcvE6,249.1459,121,121,-0.00277,-0.00081,0.00012,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 7","Pile cap O4",O4-0GzCGpNTHvETrMS_kiVMMm,O4-1lz6L5kkiHsqe1FPFY7si4,253.3458,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 3","Pile cap O4",O4-0n$nC0OxnClTt3F0eMLOM5,O4-1lz6L5kkiHsqe1FPFY7si4,244.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 2","Pile cap O4",O4-1GKGPBUnqotpvITYVkO07n,O4-1lz6L5kkiHsqe1FPFY7si4,244.5859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 5","Pile cap O4",O4-1hWA3$l8573Uj8fVXRVyVv,O4-1lz6L5kkiHsqe1FPFY7si4,244.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 6","Pile cap O4",O4-3cS$RggRVZLcARadfuvY0u,O4-1lz6L5kkiHsqe1FPFY7si4,253.3459,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 4","Pile cap O4",O4-3kML_OdcG2anTA0GEmMref,O4-1lz6L5kkiHsqe1FPFY7si4,248.0658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Pile-Cap,"Piles O4 1","Pile cap O4",O4-35JRfDfc7AG4pP03LjzGAP,O4-1lz6L5kkiHsqe1FPFY7si4,248.0658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+5Spans,T04-Blinding-Cap,"Blinding concrete O4","Pile cap O4",O4-1I2uRKupnTfpjQ_qcjCzM8,O4-1lz6L5kkiHsqe1FPFY7si4,250.6819,86,81,-9.34901,0.00000,0.00001,0.035,PASS
+5Spans,T03-Deck-Vertical,"Pavement","Pavement",S01-0r$xTC36ULMGQJvAkStNpQ,S02-0r$xTC36ULMGQJvAkStNpQ,-40.2942,5,5,-0.00005,,-0.00005,0.025,PASS
+5Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S01-0r$xTC36ULMGQJvAkStNpQ,S02-0r$xTC36ULMGQJvAkStNpQ,-40.2942,1,1,0.00000,,,0.025,PASS
+5Spans,T03-Deck-Vertical,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,5,5,0.00000,,0.00007,0.025,PASS
+5Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,1,1,0.00000,,,0.025,PASS
+5Spans,T03-Deck-Vertical,"Pavement","Pavement",S03-0r$xTC36ULMGQJvAkStNpQ,S04-0r$xTC36ULMGQJvAkStNpQ,122.9058,5,5,0.00000,,0.00007,0.025,PASS
+5Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S03-0r$xTC36ULMGQJvAkStNpQ,S04-0r$xTC36ULMGQJvAkStNpQ,122.9058,1,1,0.00000,,,0.025,PASS
+5Spans,T03-Deck-Vertical,"Pavement","Pavement",S04-0r$xTC36ULMGQJvAkStNpQ,S05-0r$xTC36ULMGQJvAkStNpQ,204.5058,5,5,-0.00005,,-0.00005,0.025,PASS
+5Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S04-0r$xTC36ULMGQJvAkStNpQ,S05-0r$xTC36ULMGQJvAkStNpQ,204.5058,1,1,-0.00002,,,0.025,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2941,121,121,-0.00166,0.00000,0.00166,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P03-0vpwLjckQCzsA1Wvzwc8EX,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P04-0vpwLjckQCzsA1Wvzwc8EX,S04-3bmWj0FUjv2EP8Vj6Q08p$,204.5058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P04-3RkpYxGpfcYT2I1t_zwJ_Z,S04-3bmWj0FUjv2EP8Vj6Q08p$,204.5059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 1","Deck with crossbeams 3",P05-0vpwLjckQCzsA1Wvzwc8EX,S05-3bmWj0FUjv2EP8Vj6Q08p$,286.1058,121,121,-0.00191,0.00000,0.00191,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P2 2","Deck with crossbeams 3",P05-3RkpYxGpfcYT2I1t_zwJ_Z,S05-3bmWj0FUjv2EP8Vj6Q08p$,286.1059,121,121,-0.00199,0.00000,0.00199,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths O1 2","Deck with crossbeams 8",O1-0bbLNJarvOpl60V0gvYLWj,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0941,121,121,-0.00409,0.00000,0.00410,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths O1 1","Deck with crossbeams 8",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0942,121,121,-0.00413,0.00000,0.00412,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S07-3bmWj0FUjv2EP8Vj6Q08p$,367.7059,121,121,-0.00198,0.00000,0.00202,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S07-3bmWj0FUjv2EP8Vj6Q08p$,367.7058,121,121,-0.00210,0.00000,0.00216,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths O4 1","Deck with crossbeams 2",O4-0IuTtWx0525uN7KFTYADuC,S07-1M$A$Wm56UpStZNE5SyBhd,408.5058,121,121,-0.00206,0.00000,0.00173,0.035,PASS
+7Spans,T04-Bearing-Fit,"Bearing plinths O4 2","Deck with crossbeams 2",O4-09OvP1gzRXygHRqEoB_YxG,S07-1M$A$Wm56UpStZNE5SyBhd,408.5058,121,121,-0.00202,0.00000,0.00178,0.035,PASS
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S01-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00162,0.00045,0.00253,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-00TgNFCH9HGoplDgAwRwDO,-40.2942,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 1 2",P01-0vpwLjckQCzsA1Wvzwc8EX,S01-35_$at319vYpeinIpxhdix,-40.2942,66,0,3.48425,3.54726,3.61026,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P01-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,-40.2942,66,0,3.46257,3.53108,3.59959,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S01-00TgNFCH9HGoplDgAwRwDO,-40.2941,121,121,-0.00162,0.00045,0.00253,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-00TgNFCH9HGoplDgAwRwDO,-40.2941,121,121,-0.00166,0.00000,0.00166,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 1 4",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S01-1M2Dt6zBVBF$17xO1ZrlWq,-40.2941,66,0,3.39276,3.45676,3.52069,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P01-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,-40.2941,66,0,3.37199,3.44090,3.50979,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-00TgNFCH9HGoplDgAwRwDO,41.3058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S02-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.49406,3.55816,3.62224,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P02-0vpwLjckQCzsA1Wvzwc8EX,S03-3$3eDVPuGaQ5yf$btPJT5P,41.3058,66,0,3.48059,3.54911,3.61762,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3bmWj0FUjv2EP8Vj6Q08p$,41.3059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-00TgNFCH9HGoplDgAwRwDO,41.3059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S02-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.40650,3.47026,3.53401,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P02-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3e41$wYQjhAnolzZ3fv5Ep,41.3059,66,0,3.39130,3.46021,3.52910,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P03-0vpwLjckQCzsA1Wvzwc8EX,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P03-0vpwLjckQCzsA1Wvzwc8EX,S04-00TgNFCH9HGoplDgAwRwDO,122.9058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P03-0vpwLjckQCzsA1Wvzwc8EX,S03-3$3eDVPuGaQ5yf$btPJT5P,122.9058,66,0,3.49406,3.55816,3.62225,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P03-0vpwLjckQCzsA1Wvzwc8EX,S04-3$3eDVPuGaQ5yf$btPJT5P,122.9058,66,0,3.48059,3.54911,3.61761,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3bmWj0FUjv2EP8Vj6Q08p$,122.9059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S04-00TgNFCH9HGoplDgAwRwDO,122.9059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S03-3e41$wYQjhAnolzZ3fv5Ep,122.9059,66,0,3.40651,3.47026,3.53400,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P03-3RkpYxGpfcYT2I1t_zwJ_Z,S04-3e41$wYQjhAnolzZ3fv5Ep,122.9059,66,0,3.39130,3.46021,3.52910,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P04-0vpwLjckQCzsA1Wvzwc8EX,S04-3bmWj0FUjv2EP8Vj6Q08p$,204.5058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P04-0vpwLjckQCzsA1Wvzwc8EX,S05-00TgNFCH9HGoplDgAwRwDO,204.5058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P04-0vpwLjckQCzsA1Wvzwc8EX,S04-3$3eDVPuGaQ5yf$btPJT5P,204.5058,66,0,3.49404,3.55816,3.62225,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P04-0vpwLjckQCzsA1Wvzwc8EX,S05-3$3eDVPuGaQ5yf$btPJT5P,204.5058,66,0,3.48059,3.54911,3.61762,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P04-3RkpYxGpfcYT2I1t_zwJ_Z,S04-3bmWj0FUjv2EP8Vj6Q08p$,204.5059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P04-3RkpYxGpfcYT2I1t_zwJ_Z,S05-00TgNFCH9HGoplDgAwRwDO,204.5059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P04-3RkpYxGpfcYT2I1t_zwJ_Z,S04-3e41$wYQjhAnolzZ3fv5Ep,204.5059,66,0,3.40650,3.47026,3.53402,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P04-3RkpYxGpfcYT2I1t_zwJ_Z,S05-3e41$wYQjhAnolzZ3fv5Ep,204.5059,66,0,3.39129,3.46020,3.52909,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 3",P05-0vpwLjckQCzsA1Wvzwc8EX,S05-3bmWj0FUjv2EP8Vj6Q08p$,286.1058,121,121,-0.00191,0.00000,0.00191,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 1","Deck with crossbeams 6",P05-0vpwLjckQCzsA1Wvzwc8EX,S06-00TgNFCH9HGoplDgAwRwDO,286.1058,121,121,0.01636,0.01802,0.01968,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P05-0vpwLjckQCzsA1Wvzwc8EX,S05-3$3eDVPuGaQ5yf$btPJT5P,286.1058,66,0,3.49407,3.55816,3.62224,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 1","Girders — span 2 5",P05-0vpwLjckQCzsA1Wvzwc8EX,S06-3$3eDVPuGaQ5yf$btPJT5P,286.1058,66,0,3.48058,3.54911,3.61763,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 3",P05-3RkpYxGpfcYT2I1t_zwJ_Z,S05-3bmWj0FUjv2EP8Vj6Q08p$,286.1059,121,121,-0.00199,0.00000,0.00199,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P2 2","Deck with crossbeams 6",P05-3RkpYxGpfcYT2I1t_zwJ_Z,S06-00TgNFCH9HGoplDgAwRwDO,286.1059,121,121,0.01765,0.01931,0.02097,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P05-3RkpYxGpfcYT2I1t_zwJ_Z,S05-3e41$wYQjhAnolzZ3fv5Ep,286.1059,66,0,3.40651,3.47027,3.53402,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P2 2","Girders — span 2 2",P05-3RkpYxGpfcYT2I1t_zwJ_Z,S06-3e41$wYQjhAnolzZ3fv5Ep,286.1059,66,0,3.39130,3.46020,3.52908,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 5",O1-0bbLNJarvOpl60V0gvYLWj,S01-1rynT78KU8V45XMmnyMFss,-81.0941,121,0,4.27260,4.28640,4.31458,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 2","Deck with crossbeams 8",O1-0bbLNJarvOpl60V0gvYLWj,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0941,121,121,-0.00409,0.00000,0.00410,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 3",O1-0bbLNJarvOpl60V0gvYLWj,S01-1HfwXIbME2yQxwO10KnFqY,-81.0941,11,0,3.99945,4.01645,4.03630,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O1 2","Girders — span 1 4",O1-0bbLNJarvOpl60V0gvYLWj,S01-1M2Dt6zBVBF$17xO1ZrlWq,-81.0941,21,0,0.49430,0.50488,4.03415,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 5",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-1rynT78KU8V45XMmnyMFss,-81.0942,121,0,4.36212,4.38656,4.41427,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O1 1","Deck with crossbeams 8",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-2cjVPrIwoPdZrGNh7P1lv9,-81.0942,121,121,-0.00413,0.00000,0.00412,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 5",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-28v_6QK2bjMvQbMN44eCdk,-81.0942,11,0,4.09320,4.10875,4.13166,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O1 1","Girders — span 1 2",O1-1bF2ohDSbAdPq9Dzb0x5mt,S01-35_$at319vYpeinIpxhdix,-81.0942,21,0,0.58716,0.59791,4.12773,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S06-3bmWj0FUjv2EP8Vj6Q08p$,367.7059,121,121,-0.00196,0.00003,0.00203,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 1","Deck with crossbeams 3",P3-1fawtDnfode$lnlifl1tTK,S07-3bmWj0FUjv2EP8Vj6Q08p$,367.7059,121,121,-0.00198,0.00000,0.00202,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 2 2",P3-1fawtDnfode$lnlifl1tTK,S06-3e41$wYQjhAnolzZ3fv5Ep,367.7059,66,0,3.40654,3.47028,3.53403,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P3 1","Girders — span 3 5",P3-1fawtDnfode$lnlifl1tTK,S07-3WdnBfsmpFEohD23snJk1H,367.7059,66,0,3.38354,3.45345,3.52333,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S06-3bmWj0FUjv2EP8Vj6Q08p$,367.7058,121,121,-0.00162,0.00028,0.00219,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths P3 2","Deck with crossbeams 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S07-3bmWj0FUjv2EP8Vj6Q08p$,367.7058,121,121,-0.00210,0.00000,0.00216,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 2 5",P3-2UbYxl2Z_QFNLU3y2qrM_l,S06-3$3eDVPuGaQ5yf$btPJT5P,367.7058,66,0,3.49434,3.55844,3.62251,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths P3 2","Girders — span 3 3",P3-2UbYxl2Z_QFNLU3y2qrM_l,S07-2TyakGRp4Naj7Zqx1es5f$,367.7058,66,0,3.47303,3.54258,3.61210,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 1",O4-0IuTtWx0525uN7KFTYADuC,S07-0Xt7wYVSDqdfWTrHZZJUX8,408.5058,121,0,4.38788,4.40899,4.43662,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 1","Deck with crossbeams 2",O4-0IuTtWx0525uN7KFTYADuC,S07-1M$A$Wm56UpStZNE5SyBhd,408.5058,121,121,-0.00206,0.00000,0.00173,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 4",O4-0IuTtWx0525uN7KFTYADuC,S07-0fiZXRDD3n9d7Gl1JSAhdI,408.5058,11,0,4.11724,4.13350,4.15349,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O4 1","Girders — span 3 3",O4-0IuTtWx0525uN7KFTYADuC,S07-2TyakGRp4Naj7Zqx1es5f$,408.5058,21,0,0.60281,0.61307,4.15369,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 1",O4-09OvP1gzRXygHRqEoB_YxG,S07-0Xt7wYVSDqdfWTrHZZJUX8,408.5058,121,0,4.29798,4.31931,4.34695,0.035,OBSERVED
+7Spans,T04-Plinth-Crossbeam,"Bearing plinths O4 2","Deck with crossbeams 2",O4-09OvP1gzRXygHRqEoB_YxG,S07-1M$A$Wm56UpStZNE5SyBhd,408.5058,121,121,-0.00202,0.00000,0.00178,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 1",O4-09OvP1gzRXygHRqEoB_YxG,S07-0s3As3_b2cSGwniRNDr6D1,408.5058,11,0,4.02687,4.04339,4.06772,0.035,OBSERVED
+7Spans,T04-Plinth-Girder,"Bearing plinths O4 2","Girders — span 3 5",O4-09OvP1gzRXygHRqEoB_YxG,S07-3WdnBfsmpFEohD23snJk1H,408.5058,21,0,0.51320,0.52345,4.06402,0.035,OBSERVED
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-0vpwLjckQCzsA1Wvzwc8EX,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P01-0Fx3Ykz9Zoo5T0r0sZtWPp,P01-3RkpYxGpfcYT2I1t_zwJ_Z,-40.2942,121,121,-0.03272,0.00000,0.02181,0.035,PASS
+7Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P01-2T12tBKsv4vL2Pc9ijqqSu,P01-0Fx3Ykz9Zoo5T0r0sZtWPp,-40.2938,12,12,-0.00003,-0.00001,0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P01-0RYStVBLOU3fK4TrSaxleL,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P01-1cDdAUyvkpgIPk5Ufdffgw,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P01-01Mx6ArG29CItpGjgBLuca,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P01-01Mx6ArG29CItpGjgBLuca,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P01-1Un2L8xHtG3sCOXzOK7NpB,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8141,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P01-2iSvaPVQnmzi68Ayq9d6qY,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8141,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-2T12tBKsv4vL2Pc9ijqqSu,-36.8142,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P01-2WJPpbnIyUCehnP4vK1ubq,P01-0qpx6Ycve5tLEkuyiBy94y,-36.8142,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P01-3GnYYy2Y1vHqMUV$7WWUQ4,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-2T12tBKsv4vL2Pc9ijqqSu,-43.7742,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P01-24ZD9cwOSNj_MNCV3GxP8N,P01-0qpx6Ycve5tLEkuyiBy94y,-43.7742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P01-0qpx6Ycve5tLEkuyiBy94y,P01-2T12tBKsv4vL2Pc9ijqqSu,-40.2942,121,121,0.00003,0.00044,0.00219,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-0vpwLjckQCzsA1Wvzwc8EX,41.3058,121,121,-0.03208,0.00064,0.02245,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P02-0Fx3Ykz9Zoo5T0r0sZtWPp,P02-3RkpYxGpfcYT2I1t_zwJ_Z,41.3058,121,121,-0.03337,-0.00065,0.02116,0.035,PASS
+7Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P02-2T12tBKsv4vL2Pc9ijqqSu,P02-0Fx3Ykz9Zoo5T0r0sZtWPp,41.3062,12,12,-0.00002,0.00000,0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P02-0RYStVBLOU3fK4TrSaxleL,P02-0qpx6Ycve5tLEkuyiBy94y,37.8259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P02-1cDdAUyvkpgIPk5Ufdffgw,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P02-01Mx6ArG29CItpGjgBLuca,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P02-01Mx6ArG29CItpGjgBLuca,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P02-1Un2L8xHtG3sCOXzOK7NpB,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P02-2iSvaPVQnmzi68Ayq9d6qY,P02-0qpx6Ycve5tLEkuyiBy94y,44.7859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-2T12tBKsv4vL2Pc9ijqqSu,44.7858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P02-2WJPpbnIyUCehnP4vK1ubq,P02-0qpx6Ycve5tLEkuyiBy94y,44.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P02-3GnYYy2Y1vHqMUV$7WWUQ4,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-2T12tBKsv4vL2Pc9ijqqSu,37.8258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P02-24ZD9cwOSNj_MNCV3GxP8N,P02-0qpx6Ycve5tLEkuyiBy94y,37.8258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P02-0qpx6Ycve5tLEkuyiBy94y,P02-2T12tBKsv4vL2Pc9ijqqSu,41.3058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P03-0Fx3Ykz9Zoo5T0r0sZtWPp,P03-0vpwLjckQCzsA1Wvzwc8EX,122.9059,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P03-0Fx3Ykz9Zoo5T0r0sZtWPp,P03-3RkpYxGpfcYT2I1t_zwJ_Z,122.9059,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+7Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P03-2T12tBKsv4vL2Pc9ijqqSu,P03-0Fx3Ykz9Zoo5T0r0sZtWPp,122.9062,12,12,-0.00003,-0.00001,0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P03-0RYStVBLOU3fK4TrSaxleL,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P03-0RYStVBLOU3fK4TrSaxleL,P03-0qpx6Ycve5tLEkuyiBy94y,119.4259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P03-1cDdAUyvkpgIPk5Ufdffgw,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P03-1cDdAUyvkpgIPk5Ufdffgw,P03-0qpx6Ycve5tLEkuyiBy94y,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P03-01Mx6ArG29CItpGjgBLuca,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P03-01Mx6ArG29CItpGjgBLuca,P03-0qpx6Ycve5tLEkuyiBy94y,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P03-1Un2L8xHtG3sCOXzOK7NpB,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P03-1Un2L8xHtG3sCOXzOK7NpB,P03-0qpx6Ycve5tLEkuyiBy94y,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P03-2iSvaPVQnmzi68Ayq9d6qY,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P03-2iSvaPVQnmzi68Ayq9d6qY,P03-0qpx6Ycve5tLEkuyiBy94y,126.3859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P03-2WJPpbnIyUCehnP4vK1ubq,P03-2T12tBKsv4vL2Pc9ijqqSu,126.3858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P03-2WJPpbnIyUCehnP4vK1ubq,P03-0qpx6Ycve5tLEkuyiBy94y,126.3858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P03-3GnYYy2Y1vHqMUV$7WWUQ4,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P03-3GnYYy2Y1vHqMUV$7WWUQ4,P03-0qpx6Ycve5tLEkuyiBy94y,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P03-24ZD9cwOSNj_MNCV3GxP8N,P03-2T12tBKsv4vL2Pc9ijqqSu,119.4258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P03-24ZD9cwOSNj_MNCV3GxP8N,P03-0qpx6Ycve5tLEkuyiBy94y,119.4258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P03-0qpx6Ycve5tLEkuyiBy94y,P03-2T12tBKsv4vL2Pc9ijqqSu,122.9059,121,121,0.00003,0.00044,0.00219,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P04-0Fx3Ykz9Zoo5T0r0sZtWPp,P04-0vpwLjckQCzsA1Wvzwc8EX,204.5058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P04-0Fx3Ykz9Zoo5T0r0sZtWPp,P04-3RkpYxGpfcYT2I1t_zwJ_Z,204.5058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+7Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P04-2T12tBKsv4vL2Pc9ijqqSu,P04-0Fx3Ykz9Zoo5T0r0sZtWPp,204.5062,12,12,-0.00003,-0.00001,0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P04-0RYStVBLOU3fK4TrSaxleL,P04-2T12tBKsv4vL2Pc9ijqqSu,201.0259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P04-0RYStVBLOU3fK4TrSaxleL,P04-0qpx6Ycve5tLEkuyiBy94y,201.0259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P04-1cDdAUyvkpgIPk5Ufdffgw,P04-2T12tBKsv4vL2Pc9ijqqSu,207.9858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P04-1cDdAUyvkpgIPk5Ufdffgw,P04-0qpx6Ycve5tLEkuyiBy94y,207.9858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P04-01Mx6ArG29CItpGjgBLuca,P04-2T12tBKsv4vL2Pc9ijqqSu,207.9859,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P04-01Mx6ArG29CItpGjgBLuca,P04-0qpx6Ycve5tLEkuyiBy94y,207.9859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P04-1Un2L8xHtG3sCOXzOK7NpB,P04-2T12tBKsv4vL2Pc9ijqqSu,201.0258,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P04-1Un2L8xHtG3sCOXzOK7NpB,P04-0qpx6Ycve5tLEkuyiBy94y,201.0258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P04-2iSvaPVQnmzi68Ayq9d6qY,P04-2T12tBKsv4vL2Pc9ijqqSu,207.9859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P04-2iSvaPVQnmzi68Ayq9d6qY,P04-0qpx6Ycve5tLEkuyiBy94y,207.9859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P04-2WJPpbnIyUCehnP4vK1ubq,P04-2T12tBKsv4vL2Pc9ijqqSu,207.9858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P04-2WJPpbnIyUCehnP4vK1ubq,P04-0qpx6Ycve5tLEkuyiBy94y,207.9858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P04-3GnYYy2Y1vHqMUV$7WWUQ4,P04-2T12tBKsv4vL2Pc9ijqqSu,201.0258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P04-3GnYYy2Y1vHqMUV$7WWUQ4,P04-0qpx6Ycve5tLEkuyiBy94y,201.0258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P04-24ZD9cwOSNj_MNCV3GxP8N,P04-2T12tBKsv4vL2Pc9ijqqSu,201.0258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P04-24ZD9cwOSNj_MNCV3GxP8N,P04-0qpx6Ycve5tLEkuyiBy94y,201.0258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P04-0qpx6Ycve5tLEkuyiBy94y,P04-2T12tBKsv4vL2Pc9ijqqSu,204.5059,121,121,0.00003,0.00044,0.00219,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 1",P05-0Fx3Ykz9Zoo5T0r0sZtWPp,P05-0vpwLjckQCzsA1Wvzwc8EX,286.1058,121,121,-0.03207,0.00064,0.02245,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P2","Bearing plinths P2 2",P05-0Fx3Ykz9Zoo5T0r0sZtWPp,P05-3RkpYxGpfcYT2I1t_zwJ_Z,286.1058,121,121,-0.03336,-0.00065,0.02116,0.035,PASS
+7Spans,T04-Cap-Stem-Rim,"Pile cap P2","Pier stem P2",P05-2T12tBKsv4vL2Pc9ijqqSu,P05-0Fx3Ykz9Zoo5T0r0sZtWPp,286.1062,12,12,-0.00002,-0.00001,0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 1","Pile cap P2",P05-0RYStVBLOU3fK4TrSaxleL,P05-2T12tBKsv4vL2Pc9ijqqSu,282.6259,97,0,0.36006,0.36010,0.36017,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 1","Blinding concrete P2",P05-0RYStVBLOU3fK4TrSaxleL,P05-0qpx6Ycve5tLEkuyiBy94y,282.6259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 8","Pile cap P2",P05-1cDdAUyvkpgIPk5Ufdffgw,P05-2T12tBKsv4vL2Pc9ijqqSu,289.5858,97,0,0.36101,0.36125,0.36151,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 8","Blinding concrete P2",P05-1cDdAUyvkpgIPk5Ufdffgw,P05-0qpx6Ycve5tLEkuyiBy94y,289.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 7","Pile cap P2",P05-01Mx6ArG29CItpGjgBLuca,P05-2T12tBKsv4vL2Pc9ijqqSu,289.5858,97,0,0.36053,0.36069,0.36089,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 7","Blinding concrete P2",P05-01Mx6ArG29CItpGjgBLuca,P05-0qpx6Ycve5tLEkuyiBy94y,289.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 6","Pile cap P2",P05-1Un2L8xHtG3sCOXzOK7NpB,P05-2T12tBKsv4vL2Pc9ijqqSu,282.6259,97,0,0.36009,0.36019,0.36030,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 6","Blinding concrete P2",P05-1Un2L8xHtG3sCOXzOK7NpB,P05-0qpx6Ycve5tLEkuyiBy94y,282.6259,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 2","Pile cap P2",P05-2iSvaPVQnmzi68Ayq9d6qY,P05-2T12tBKsv4vL2Pc9ijqqSu,289.5859,97,0,0.36006,0.36016,0.36033,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 2","Blinding concrete P2",P05-2iSvaPVQnmzi68Ayq9d6qY,P05-0qpx6Ycve5tLEkuyiBy94y,289.5859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 3","Pile cap P2",P05-2WJPpbnIyUCehnP4vK1ubq,P05-2T12tBKsv4vL2Pc9ijqqSu,289.5858,97,0,0.36150,0.36177,0.36207,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 3","Blinding concrete P2",P05-2WJPpbnIyUCehnP4vK1ubq,P05-0qpx6Ycve5tLEkuyiBy94y,289.5858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 5","Pile cap P2",P05-3GnYYy2Y1vHqMUV$7WWUQ4,P05-2T12tBKsv4vL2Pc9ijqqSu,282.6258,97,0,0.36008,0.36022,0.36049,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 5","Blinding concrete P2",P05-3GnYYy2Y1vHqMUV$7WWUQ4,P05-0qpx6Ycve5tLEkuyiBy94y,282.6258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P2 4","Pile cap P2",P05-24ZD9cwOSNj_MNCV3GxP8N,P05-2T12tBKsv4vL2Pc9ijqqSu,282.6258,97,0,0.36008,0.36034,0.36063,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P2 4","Blinding concrete P2",P05-24ZD9cwOSNj_MNCV3GxP8N,P05-0qpx6Ycve5tLEkuyiBy94y,282.6258,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete P2","Pile cap P2",P05-0qpx6Ycve5tLEkuyiBy94y,P05-2T12tBKsv4vL2Pc9ijqqSu,286.1058,121,121,0.00003,0.00044,0.00219,0.035,PASS
+7Spans,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 5",O1-1lGkPEWaJvRI70HQAZkSP1,S01-1rynT78KU8V45XMmnyMFss,-82.4142,121,0,5.32818,5.43090,5.50673,0.035,OBSERVED
+7Spans,T04-Abutment-Crossbeam,"Abutment stem O1","Deck with crossbeams 8",O1-1lGkPEWaJvRI70HQAZkSP1,S01-2cjVPrIwoPdZrGNh7P1lv9,-82.4142,121,0,0.92812,1.09708,1.24396,0.035,OBSERVED
+7Spans,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 2",O1-1lGkPEWaJvRI70HQAZkSP1,O1-0bbLNJarvOpl60V0gvYLWj,-82.4142,121,3,0.01507,0.16604,0.31691,0.035,OBSERVED
+7Spans,T04-Stem-Plinth,"Abutment stem O1","Bearing plinths O1 1",O1-1lGkPEWaJvRI70HQAZkSP1,O1-1bF2ohDSbAdPq9Dzb0x5mt,-82.4142,121,2,0.01553,0.17081,0.32610,0.035,OBSERVED
+7Spans,T04-Cap-Stem,"Pile cap O1","Abutment stem O1",O1-2gImNpnGyqpWl$gbNtpzMj,O1-1lGkPEWaJvRI70HQAZkSP1,-84.9342,121,121,-0.00003,0.00007,0.00028,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 3","Pile cap O1",O1-0_aM_11Zcyc8m$$61lV1Dz,O1-2gImNpnGyqpWl$gbNtpzMj,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 2","Pile cap O1",O1-0Kp1KG1q2H6xwjLCKODn1i,O1-2gImNpnGyqpWl$gbNtpzMj,-80.3741,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 5","Pile cap O1",O1-1fyAxUxs4bEDupYhVyQL5e,O1-2gImNpnGyqpWl$gbNtpzMj,-80.3742,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 7","Pile cap O1",O1-1p_t3_CvEaBc646XMc4rVY,O1-2gImNpnGyqpWl$gbNtpzMj,-89.1342,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 4","Pile cap O1",O1-1XHyI4eM6NrIJN28uH9AEQ,O1-2gImNpnGyqpWl$gbNtpzMj,-83.8542,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 1","Pile cap O1",O1-2a4OvdgikJUy3uDSyU4yWd,O1-2gImNpnGyqpWl$gbNtpzMj,-83.8541,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O1 6","Pile cap O1",O1-3bdbo8NLsd1BoB5Ae7kYGn,O1-2gImNpnGyqpWl$gbNtpzMj,-89.1341,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete O1","Pile cap O1",O1-2AWKmdFbxv_tuG7K9VZttg,O1-2gImNpnGyqpWl$gbNtpzMj,-86.4702,86,81,-11.46451,0.00001,0.00001,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 1",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-1fawtDnfode$lnlifl1tTK,367.7057,121,121,-0.03323,-0.00053,0.02129,0.035,PASS
+7Spans,T04-Stem-Plinth,"Pier stem P3","Bearing plinths P3 2",P3-13i89sZ2IbZp1Sk$Woa$xz,P3-2UbYxl2Z_QFNLU3y2qrM_l,367.7057,121,121,-0.03219,0.00051,0.02233,0.035,PASS
+7Spans,T04-Cap-Stem-Rim,"Pile cap P3","Pier stem P3",P3-2gojBJ8751ev0VZT3WtTz5,P3-13i89sZ2IbZp1Sk$Woa$xz,367.7062,12,12,-0.00003,0.00000,0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 8","Pile cap P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-2gojBJ8751ev0VZT3WtTz5,364.2258,97,0,0.35965,0.35982,0.35993,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 8","Blinding concrete P3",P3-0PDwbZP_Wjsa$t9tZlRWdn,P3-1tghNyhC9BFNfrENkrKFon,364.2258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 5","Pile cap P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-2gojBJ8751ev0VZT3WtTz5,364.2258,97,0,0.35787,0.35817,0.35845,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 5","Blinding concrete P3",P3-0zIcQZf_T3Rb59CjoQc8X4,P3-1tghNyhC9BFNfrENkrKFon,364.2258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 1","Pile cap P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-2gojBJ8751ev0VZT3WtTz5,371.1858,97,0,0.35948,0.35975,0.35990,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 1","Blinding concrete P3",P3-1AlW5oK7Lzhz7PkYqKTq67,P3-1tghNyhC9BFNfrENkrKFon,371.1858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 6","Pile cap P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-2gojBJ8751ev0VZT3WtTz5,371.1858,97,0,0.35934,0.35964,0.35990,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 6","Blinding concrete P3",P3-2sK3Oj2Oxz1wiAepNQukNM,P3-1tghNyhC9BFNfrENkrKFon,371.1858,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 7","Pile cap P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-2gojBJ8751ev0VZT3WtTz5,371.1859,97,0,0.35981,0.35989,0.35993,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 7","Blinding concrete P3",P3-2vxXOtTmlBJAftg16Ip9lp,P3-1tghNyhC9BFNfrENkrKFon,371.1859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 3","Pile cap P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-2gojBJ8751ev0VZT3WtTz5,364.2258,97,0,0.35907,0.35927,0.35944,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 3","Blinding concrete P3",P3-2xbB1CzKGfGuhKaJWpa8II,P3-1tghNyhC9BFNfrENkrKFon,364.2258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 2","Pile cap P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-2gojBJ8751ev0VZT3WtTz5,371.1859,97,0,0.35968,0.35978,0.35990,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 2","Blinding concrete P3",P3-3o2F4eFxVeKqGscvJZ1l5y,P3-1tghNyhC9BFNfrENkrKFon,371.1859,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles P3 4","Pile cap P3",P3-13xIsG3OU65cK6zC9udLB3,P3-2gojBJ8751ev0VZT3WtTz5,364.2258,97,0,0.35843,0.35869,0.35894,0.035,OBSERVED
+7Spans,T04-Pile-Blinding,"Piles P3 4","Blinding concrete P3",P3-13xIsG3OU65cK6zC9udLB3,P3-1tghNyhC9BFNfrENkrKFon,364.2258,97,97,-0.00002,-0.00002,-0.00002,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete P3","Pile cap P3",P3-1tghNyhC9BFNfrENkrKFon,P3-2gojBJ8751ev0VZT3WtTz5,367.7058,121,121,-0.00223,-0.00043,-0.00003,0.035,PASS
+7Spans,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 1",O4-3pw3ckthnwuHJM5cpTcvE6,S07-0Xt7wYVSDqdfWTrHZZJUX8,409.8258,121,0,5.32791,5.41767,5.49384,0.035,OBSERVED
+7Spans,T04-Abutment-Crossbeam,"Abutment stem O4","Deck with crossbeams 2",O4-3pw3ckthnwuHJM5cpTcvE6,S07-1M$A$Wm56UpStZNE5SyBhd,409.8258,121,0,0.89616,1.05508,1.19879,0.035,OBSERVED
+7Spans,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 1",O4-3pw3ckthnwuHJM5cpTcvE6,O4-0IuTtWx0525uN7KFTYADuC,409.8258,121,12,0.00757,0.08345,0.15940,0.035,OBSERVED
+7Spans,T04-Stem-Plinth,"Abutment stem O4","Bearing plinths O4 2",O4-3pw3ckthnwuHJM5cpTcvE6,O4-09OvP1gzRXygHRqEoB_YxG,409.8258,121,12,0.00742,0.08149,0.15556,0.035,OBSERVED
+7Spans,T04-Cap-Stem,"Pile cap O4","Abutment stem O4",O4-1lz6L5kkiHsqe1FPFY7si4,O4-3pw3ckthnwuHJM5cpTcvE6,412.3459,121,121,-0.00277,-0.00081,0.00012,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 7","Pile cap O4",O4-0GzCGpNTHvETrMS_kiVMMm,O4-1lz6L5kkiHsqe1FPFY7si4,416.5457,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 3","Pile cap O4",O4-0n$nC0OxnClTt3F0eMLOM5,O4-1lz6L5kkiHsqe1FPFY7si4,407.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 2","Pile cap O4",O4-1GKGPBUnqotpvITYVkO07n,O4-1lz6L5kkiHsqe1FPFY7si4,407.7859,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 5","Pile cap O4",O4-1hWA3$l8573Uj8fVXRVyVv,O4-1lz6L5kkiHsqe1FPFY7si4,407.7858,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 6","Pile cap O4",O4-3cS$RggRVZLcARadfuvY0u,O4-1lz6L5kkiHsqe1FPFY7si4,416.5459,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 4","Pile cap O4",O4-3kML_OdcG2anTA0GEmMref,O4-1lz6L5kkiHsqe1FPFY7si4,411.2658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Pile-Cap,"Piles O4 1","Pile cap O4",O4-35JRfDfc7AG4pP03LjzGAP,O4-1lz6L5kkiHsqe1FPFY7si4,411.2658,97,97,0.00000,0.00000,0.00000,0.035,PASS
+7Spans,T04-Blinding-Cap,"Blinding concrete O4","Pile cap O4",O4-1I2uRKupnTfpjQ_qcjCzM8,O4-1lz6L5kkiHsqe1FPFY7si4,413.8820,86,81,-9.34901,0.00000,0.00001,0.035,PASS
+7Spans,T03-Deck-Vertical,"Pavement","Pavement",S01-0r$xTC36ULMGQJvAkStNpQ,S02-0r$xTC36ULMGQJvAkStNpQ,-40.2942,5,5,-0.00005,,-0.00005,0.025,PASS
+7Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S01-0r$xTC36ULMGQJvAkStNpQ,S02-0r$xTC36ULMGQJvAkStNpQ,-40.2942,1,1,0.00000,,,0.025,PASS
+7Spans,T03-Deck-Vertical,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,5,5,0.00000,,0.00007,0.025,PASS
+7Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S02-0r$xTC36ULMGQJvAkStNpQ,S03-0r$xTC36ULMGQJvAkStNpQ,41.3058,1,1,-0.00001,,,0.025,PASS
+7Spans,T03-Deck-Vertical,"Pavement","Pavement",S03-0r$xTC36ULMGQJvAkStNpQ,S04-0r$xTC36ULMGQJvAkStNpQ,122.9058,5,5,0.00000,,0.00007,0.025,PASS
+7Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S03-0r$xTC36ULMGQJvAkStNpQ,S04-0r$xTC36ULMGQJvAkStNpQ,122.9058,1,1,0.00000,,,0.025,PASS
+7Spans,T03-Deck-Vertical,"Pavement","Pavement",S04-0r$xTC36ULMGQJvAkStNpQ,S05-0r$xTC36ULMGQJvAkStNpQ,204.5058,5,5,0.00000,,0.00007,0.025,PASS
+7Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S04-0r$xTC36ULMGQJvAkStNpQ,S05-0r$xTC36ULMGQJvAkStNpQ,204.5058,1,1,-0.00002,,,0.025,PASS
+7Spans,T03-Deck-Vertical,"Pavement","Pavement",S05-0r$xTC36ULMGQJvAkStNpQ,S06-0r$xTC36ULMGQJvAkStNpQ,286.1058,5,5,0.00000,,0.00007,0.025,PASS
+7Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S05-0r$xTC36ULMGQJvAkStNpQ,S06-0r$xTC36ULMGQJvAkStNpQ,286.1058,1,1,0.00000,,,0.025,PASS
+7Spans,T03-Deck-Vertical,"Pavement","Pavement",S06-0r$xTC36ULMGQJvAkStNpQ,S07-0r$xTC36ULMGQJvAkStNpQ,367.7058,5,5,-0.00005,,-0.00005,0.025,PASS
+7Spans,T03-Deck-Longitudinal,"Pavement","Pavement",S06-0r$xTC36ULMGQJvAkStNpQ,S07-0r$xTC36ULMGQJvAkStNpQ,367.7058,1,1,0.00000,,,0.025,PASS
+Installed7,T01-Scale,"Bridge",,,,,1,1,0.00000,,,0.00010,PASS
+Installed7,T06-Cap-Count,"Bridge",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T06-Pile-Count,"Bridge",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T05-Deck-Coverage,"Rail footprints",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T05-Deck-Intrusion,"Rail footprints",,,,,1,1,0.00000,,,0.02000,PASS
+Installed7,T05-Superstructure-Intrusion,"Both train paths",,,,,1,1,0.00000,,,0.02000,PASS
+Installed7,T05-Corridor-Support,"Both tracks throughout former 1120m bridge",,,,,1,1,0.03500,,,0.07500,PASS
+Installed7,T07-Terrain-Intrusion,"Under both tracks",,,,,1,1,0.00000,,,0.02500,PASS
+Installed7,T07-Water-Clearance,"Rail and river",,,,,1,1,-16.43953,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"O1-2gImNpnGyqpWl$gbNtpzMj",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Dry-Abutment,"O1-2gImNpnGyqpWl$gbNtpzMj",,,,,1,1,-7.37624,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"O1-2gImNpnGyqpWl$gbNtpzMj",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"P01-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Submerged-Cap,"P01-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,-5.32134,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"P01-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"P02-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Submerged-Cap,"P02-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,-5.32134,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"P02-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"P03-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Submerged-Cap,"P03-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,-5.32134,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"P03-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"P04-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Submerged-Cap,"P04-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,-5.32134,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"P04-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"P05-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Submerged-Cap,"P05-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,-5.32134,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"P05-2T12tBKsv4vL2Pc9ijqqSu",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"P3-2gojBJ8751ev0VZT3WtTz5",,,,,1,1,0.00029,,,0.16000,PASS
+Installed7,T07-Submerged-Cap,"P3-2gojBJ8751ev0VZT3WtTz5",,,,,1,1,-2.60000,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"P3-2gojBJ8751ev0VZT3WtTz5",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Bed-Cap,"O4-1lz6L5kkiHsqe1FPFY7si4",,,,,1,1,0.00013,,,0.16000,PASS
+Installed7,T07-Dry-Abutment,"O4-1lz6L5kkiHsqe1FPFY7si4",,,,,1,1,-8.89883,,,0.00000,PASS
+Installed7,T07-Water-Footprint,"O4-1lz6L5kkiHsqe1FPFY7si4",,,,,1,1,0.00000,,,0.00000,PASS
+Installed7,T07-Pile-Soil,"P01-0RYStVBLOU3fK4TrSaxleL",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-1cDdAUyvkpgIPk5Ufdffgw",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-01Mx6ArG29CItpGjgBLuca",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-1Un2L8xHtG3sCOXzOK7NpB",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-2iSvaPVQnmzi68Ayq9d6qY",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-2WJPpbnIyUCehnP4vK1ubq",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-3GnYYy2Y1vHqMUV$7WWUQ4",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P01-24ZD9cwOSNj_MNCV3GxP8N",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-0RYStVBLOU3fK4TrSaxleL",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-1cDdAUyvkpgIPk5Ufdffgw",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-01Mx6ArG29CItpGjgBLuca",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-1Un2L8xHtG3sCOXzOK7NpB",,,,,1,1,-0.36000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-2iSvaPVQnmzi68Ayq9d6qY",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-2WJPpbnIyUCehnP4vK1ubq",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-3GnYYy2Y1vHqMUV$7WWUQ4",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P02-24ZD9cwOSNj_MNCV3GxP8N",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-0RYStVBLOU3fK4TrSaxleL",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-1cDdAUyvkpgIPk5Ufdffgw",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-01Mx6ArG29CItpGjgBLuca",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-1Un2L8xHtG3sCOXzOK7NpB",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-2iSvaPVQnmzi68Ayq9d6qY",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-2WJPpbnIyUCehnP4vK1ubq",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-3GnYYy2Y1vHqMUV$7WWUQ4",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P03-24ZD9cwOSNj_MNCV3GxP8N",,,,,1,1,-0.36000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-0RYStVBLOU3fK4TrSaxleL",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-1cDdAUyvkpgIPk5Ufdffgw",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-01Mx6ArG29CItpGjgBLuca",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-1Un2L8xHtG3sCOXzOK7NpB",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-2iSvaPVQnmzi68Ayq9d6qY",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-2WJPpbnIyUCehnP4vK1ubq",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-3GnYYy2Y1vHqMUV$7WWUQ4",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P04-24ZD9cwOSNj_MNCV3GxP8N",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-0RYStVBLOU3fK4TrSaxleL",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-1cDdAUyvkpgIPk5Ufdffgw",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-01Mx6ArG29CItpGjgBLuca",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-1Un2L8xHtG3sCOXzOK7NpB",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-2iSvaPVQnmzi68Ayq9d6qY",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-2WJPpbnIyUCehnP4vK1ubq",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-3GnYYy2Y1vHqMUV$7WWUQ4",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P05-24ZD9cwOSNj_MNCV3GxP8N",,,,,1,1,-0.36001,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-0_aM_11Zcyc8m$$61lV1Dz",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-0Kp1KG1q2H6xwjLCKODn1i",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-1fyAxUxs4bEDupYhVyQL5e",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-1p_t3_CvEaBc646XMc4rVY",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-1XHyI4eM6NrIJN28uH9AEQ",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-2a4OvdgikJUy3uDSyU4yWd",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O1-3bdbo8NLsd1BoB5Ae7kYGn",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-0PDwbZP_Wjsa$t9tZlRWdn",,,,,1,1,-0.35688,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-0zIcQZf_T3Rb59CjoQc8X4",,,,,1,1,-0.35685,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-1AlW5oK7Lzhz7PkYqKTq67",,,,,1,1,-0.35756,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-2sK3Oj2Oxz1wiAepNQukNM",,,,,1,1,-0.35756,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-2vxXOtTmlBJAftg16Ip9lp",,,,,1,1,-0.35756,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-2xbB1CzKGfGuhKaJWpa8II",,,,,1,1,-0.35685,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-3o2F4eFxVeKqGscvJZ1l5y",,,,,1,1,-0.35756,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"P3-13xIsG3OU65cK6zC9udLB3",,,,,1,1,-0.35685,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-0GzCGpNTHvETrMS_kiVMMm",,,,,1,1,0.00002,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-0n$nC0OxnClTt3F0eMLOM5",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-1GKGPBUnqotpvITYVkO07n",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-1hWA3$l8573Uj8fVXRVyVv",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-3cS$RggRVZLcARadfuvY0u",,,,,1,1,0.00025,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-3kML_OdcG2anTA0GEmMref",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T07-Pile-Soil,"O4-35JRfDfc7AG4pP03LjzGAP",,,,,1,1,0.00000,,,0.16000,PASS
+Installed7,T08-BIM-Identity,"Visual-Detailed catalog",,,,,1,1,0,,,0,PASS

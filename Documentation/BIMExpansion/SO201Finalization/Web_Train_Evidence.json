@@ -1,0 +1,60 @@
+{
+  "controls": {
+    "canvasFocused": true,
+    "pointerLocked": false
+  },
+  "zoom": [],
+  "observations": [
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (0.61, 0.05, -1.32)\n",
+    "[PlayerSpawner] Đã đưa Sinh viên lên tàu tại (5203.23, 12.79, -620.23)\n"
+  ],
+  "errors": [],
+  "train": {
+    "outcome": "[BridgeYTH] Result,25.00,5169.72,5464.83,missingFrames=0,overhead=True,right=True,cabin=True,structure=True,bridgeLoaded=False\n",
+    "events": [
+      "[BridgeYTH] DriveStart,25.00\n",
+      "[RailwayStreaming] Loaded Zone_017\n",
+      "[RailwayStreaming] Loaded Zone_018\n",
+      "[BridgeYTH] ZoneAdded,2995.50\n",
+      "[BridgeYTH] Structure,2996.00,196,161587,74197,15,196,9099.3420,-24.2202,-1218.3400,528.7695,66.6281,151.1704,2.00\n",
+      "[BridgeYTH] Sample,3400.10,200.00,196,345,606545917,9.00\n",
+      "[BridgeYTH] Sample,3500.09,200.00,196,341,607293513,9.00\n",
+      "[BridgeYTH] Sample,3600.07,200.00,196,331,610865438,9.00\n",
+      "[RailwayStreaming] Loaded Zone_019\n",
+      "[BridgeYTH] Camera,cabin-entry,3696.33,-1,189,73329\n",
+      "[BridgeYTH] Sample,3700.05,200.00,196,383,618079303,8.00\n",
+      "[BridgeYTH] Sample,3800.04,200.00,196,322,617948107,8.00\n",
+      "[BridgeYTH] Exterior overhead camera\n",
+      "[BridgeYTH] Camera,overhead-middle,3872.69,0,51,19242\n",
+      "[BridgeYTH] Sample,3900.02,200.00,196,167,616956483,8.00\n",
+      "[BridgeYTH] Exterior right camera\n",
+      "[BridgeYTH] Sample,4000.01,200.00,196,216,617180935,9.00\n",
+      "[BridgeYTH] Camera,outside-middle,4062.00,1,75,34996\n",
+      "[BridgeYTH] Sample,4100.44,200.00,196,205,617590771,8.00\n",
+      "[BridgeYTH] Exterior structure camera\n",
+      "[BridgeYTH] Camera,structure-middle,4143.04,3,42,25811\n",
+      "[BridgeYTH] Sample,4200.42,200.00,196,232,626167862,8.00\n",
+      "[BridgeYTH] Restored cabin camera\n",
+      "[BridgeYTH] Camera,cabin-exit,4234.20,-1,0,0\n",
+      "[BridgeYTH] Sample,4300.46,200.00,196,161,625066766,9.00\n",
+      "[BridgeYTH] Sample,4400.39,200.00,196,152,625560066,8.00\n",
+      "[BridgeYTH] Sample,4500.38,200.00,196,145,625493122,8.00\n",
+      "[BridgeYTH] Sample,4600.36,200.00,196,147,625562166,8.00\n",
+      "[RailwayStreaming] Unloaded Zone_017\n",
+      "[BridgeYTH] Sample,4700.34,200.00,196,173,635833343,8.00\n",
+      "[RailwayStreaming] Unloaded Zone_018\n",
+      "[BridgeYTH] ZoneRemoved,4717.01\n",
+      "[BridgeYTH] Sample,4800.33,200.00,0,178,631415288,8.00\n",
+      "[BridgeYTH] Sample,4900.31,200.00,0,164,631306687,8.00\n",
+      "[BridgeYTH] Sample,5000.30,200.00,0,157,631706299,8.00\n",
+      "[BridgeYTH] Sample,5100.28,200.00,0,150,631573894,8.00\n",
+      "[RailwayStreaming] Unloaded Zone_019\n",
+      "[BridgeYTH] Performance,cabin-entry,3701,26,8.000,9.000,9.000,383,1415975,610286381,8300000\n",
+      "[BridgeYTH] Performance,overhead-middle,3878,26,8.000,9.000,9.000,174,566653,609381087,8399999\n",
+      "[BridgeYTH] Performance,outside-middle,4067,26,8.000,9.000,12.000,219,768626,609874847,8300000\n",
+      "[BridgeYTH] Performance,structure-middle,4148,26,8.000,9.000,9.000,201,684038,625105124,8300001\n",
+      "[BridgeYTH] Performance,cabin-exit,4239,26,8.000,9.000,9.000,175,1286759,625333020,8300000\n",
+      "[BridgeYTH] Result,25.00,5169.72,5464.83,missingFrames=0,overhead=True,right=True,cabin=True,structure=True,bridgeLoaded=False\n"
+    ]
+  }
+}

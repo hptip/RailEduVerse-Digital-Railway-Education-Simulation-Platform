@@ -70,6 +70,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     private bool _comfortVignetteActive;
     private Transform _driverViewAnchor;
     private Transform _seatedViewOverride;
+    public bool UsesXrView => _xrMode;
     public bool IsDrivingTrain(TrainSplineMover mover) => isDriving && _currentSeat != null && _currentSeat.trainMover == mover;
     public void SetSeatedViewOverride(Transform anchor)
     {
@@ -346,7 +347,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         UpdateTunnelingVignette(false);
 
         // Xoay góc nhìn chuột liên tục cho cả khi đi bộ lẫn khi ngồi ghế lái
-        if (DesktopLookActive())
+        if (DesktopLookActive() && !(isDriving && _seatedViewOverride != null))
         {
             Vector2 mouseDelta = ReadMouseDelta();
             float mouseX = mouseDelta.x * mouseSensitivity;
@@ -1514,9 +1515,14 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                     transform.position = mount.position;
 
                     Transform view = UttWebPresentation.Active ? _driverViewAnchor : null;
-                    _mainCamera.transform.position = view != null ? view.position : mount.position + new Vector3(0f, 1.15f, 0f);
-                    Quaternion cabinBaseRot = view != null ? view.rotation : mount.rotation;
-                    _mainCamera.transform.rotation = cabinBaseRot * Quaternion.Euler(_verticalRotation, _horizontalRotation, 0f);
+                    if (_seatedViewOverride != null)
+                        _mainCamera.transform.SetPositionAndRotation(_seatedViewOverride.position, _seatedViewOverride.rotation);
+                    else
+                    {
+                        _mainCamera.transform.position = view != null ? view.position : mount.position + new Vector3(0f, 1.15f, 0f);
+                        Quaternion cabinBaseRot = view != null ? view.rotation : mount.rotation;
+                        _mainCamera.transform.rotation = cabinBaseRot * Quaternion.Euler(_verticalRotation, _horizontalRotation, 0f);
+                    }
                     _thirdPersonCamOffset = 0f;
                 }
                 else

@@ -1,0 +1,2 @@
+PASS: 243 glyphs in static atlas, packaged legacy font; restored a missing runtime fallback.
+PASS: 23 accented/punctuation glyphs rendered, 23 from the recovered static atlas

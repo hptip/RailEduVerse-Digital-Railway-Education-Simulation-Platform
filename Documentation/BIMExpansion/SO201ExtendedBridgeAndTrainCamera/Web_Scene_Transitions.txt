@@ -1,0 +1,6 @@
+[UttLoading] Đã tải scene QuanLyVongDoiTaiSan, chờ nhân vật và camera
+
+[RailwayBim] Ready 13.78s after scene load
+
+[UttLoading] QuanLyVongDoiTaiSan sẵn sàng sau 54.5s
+

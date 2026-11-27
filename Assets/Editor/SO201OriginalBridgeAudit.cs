@@ -46,6 +46,15 @@ static partial class SO201OriginalBridgeAudit
             if (action == "sandbox") PlaceOriginal(false);
             if (action == "install") PlaceOriginal(true);
             if (action == "overlap") AuditInstalledBridge();
+            if (action == "extended-sandbox") CreateExtendedSandbox();
+            if (action == "extended-web") Build(true);
+            if (action == "finalization-baseline") AuditFinalizationBaseline();
+            if (action == "finalization-two") CreateExtendedSandbox(2, false, true);
+            if (action == "finalization-five") CreateExtendedSandbox(3, true, true);
+            if (action == "finalization-seven") CreateExtendedSandbox(5, true, true);
+            if (action == "finalization-stage") FinalizeExtendedBridge(false);
+            if (action == "finalization-install") FinalizeExtendedBridge(true);
+            if (action == "finalization-web") Build(true, true);
         }
         catch (Exception error)
         {
@@ -244,19 +253,25 @@ static partial class SO201OriginalBridgeAudit
             new[] { "AssetID,GlobalId,ParentGlobalId,IfcClass,Name,MeshAsset,MeshLocalFileID,Triangles" }.Concat(rows));
     }
 
-    static void Build()
+    static void Build(bool extendedAudit = false, bool finalization = false)
     {
-        File.WriteAllText(Job + "web.txt", "Building");
+        string statusPath = Job + (finalization ? "finalization-web.txt" : extendedAudit ? "extended-web.txt" : "web.txt");
+        if (finalization && (!File.Exists(FinalReports + "Installed_Bridge.txt") ||
+            !File.ReadAllText(ZoneRoot + "Zone_018.unity").Contains(FinalBridgeObject, StringComparison.Ordinal)))
+            throw new InvalidOperationException("The build scene does not contain the installed seven-span bridge.");
+        File.WriteAllText(statusPath, "Building");
         var scenes = EditorBuildSettings.scenes.Where(scene => scene.enabled).Select(scene => scene.path).ToArray();
         if (scenes.Length == 0 || Path.GetFileNameWithoutExtension(scenes[0]) != "Login" || !scenes.Contains(Route))
             throw new InvalidOperationException("Unexpected Web scene list.");
         var result = BuildPipeline.BuildPlayer(new BuildPlayerOptions
         {
-            scenes = scenes, locationPathName = "Builds/UTTVR_SO201_Original_Controls", target = BuildTarget.WebGL,
+            scenes = scenes, locationPathName = finalization ? "Builds/UTTVR_SO201_SevenSpan_Web" :
+                extendedAudit ? "Builds/UTTVR_SO201_Extended_Web" : "Builds/UTTVR_SO201_Original_Controls",
+            target = BuildTarget.WebGL,
             targetGroup = BuildTargetGroup.WebGL, options = BuildOptions.Development,
             extraScriptingDefines = new[] { "BRIDGE_MODULAR_AUDIT" }
         }).summary;
-        File.WriteAllText(Job + "web.txt",
+        File.WriteAllText(statusPath,
             $"{result.result}; {result.totalErrors} errors; {result.totalWarnings} warnings; {result.totalSize} bytes; {result.totalTime}");
         if (result.result != BuildResult.Succeeded) throw new InvalidOperationException("Web build failed.");
     }

@@ -292,7 +292,15 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             Field("BridgeStage", "", displayLabel: stage.name + " · DỮ LIỆU NGƯỜI DÙNG", section: true);
             var fields = stage.fields.Where(f => !f.readOnly).ToDictionary(f => f, f => controller.BridgeStore.StageField(entry.globalId, ActiveStage, f.key));
             if (saved.Status.Length == 0 && saved.Notes.Length == 0 && fields.Values.All(string.IsNullOrEmpty))
-                Field("Hồ sơ", "Chưa có dữ liệu");
+            {
+                if (entry.globalId.StartsWith("SO201-EXTENDED/", StringComparison.Ordinal) && !string.IsNullOrEmpty(entry.sourceGlobalId))
+                {
+                    Field("Hồ sơ mô phỏng", stage.name + " · Cấu kiện mở rộng trong mô hình đào tạo");
+                    Field("Phạm vi mô phỏng", FormattableString.Invariant($"{entry.Label} tại lý trình {entry.modeledStation:F3} m"));
+                    Field("Nguồn tham chiếu", entry.sourceGlobalId);
+                }
+                else Field("Hồ sơ", "Chưa có dữ liệu");
+            }
             Field("BridgeStatus", saved.Status, true, displayLabel: "Trạng thái");
             Field("BridgeStageNotes", saved.Notes, true, displayLabel: "Ghi chú giai đoạn");
             foreach (var field in fields) Field("BridgeStage:" + field.Key.key, field.Value, true, field.Key.unit, field.Key.label);
