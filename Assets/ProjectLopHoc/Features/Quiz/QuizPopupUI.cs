@@ -92,6 +92,15 @@ namespace ProjectLopHoc.Features.Quiz
                 return;
             }
 
+            // Bản Web: dùng thẻ Quiz Live kiểu kính (UttQuizLive), popup cũ của bản VR luôn ẩn.
+            if (UttWebPresentation.Active)
+            {
+                if (rootPanel != null) rootPanel.SetActive(false);
+                if (resultPanel != null) resultPanel.SetActive(false);
+                UttQuizLive.Show(quiz, session);
+                return;
+            }
+
             _quiz = quiz;
             _session = session;
             _currentIndex = 0;
@@ -116,6 +125,7 @@ namespace ProjectLopHoc.Features.Quiz
 
         public void ForceHide(bool lockCursor = true)
         {
+            if (UttWebPresentation.Active) UttQuizLive.Hide();
             if (rootPanel != null) rootPanel.SetActive(false);
             if (resultPanel != null) resultPanel.SetActive(false);
 

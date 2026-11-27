@@ -821,5 +821,5 @@ public sealed class UttMinimap : MonoBehaviour
 /// </summary>
 public static class UttOverlay
 {
-    public static bool BlocksGameplay => UttProfilePanel.IsOpen || UttMinimap.WorldMapOpen || UttChat.IsTyping;
+    public static bool BlocksGameplay => UttProfilePanel.IsOpen || UttMinimap.WorldMapOpen || UttChat.IsTyping || UttPresenter.ZoomOpen || UttClassPanel.IsOpen || UttQuizLive.IsOpen;
 }

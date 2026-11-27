@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d28084cc82390e4ebc685a0db1c487e, type: 3}
+  m_Name: DeThi_01
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectLopHoc.Features.Quiz.QuizSO
+  quizName: "Quiz BIM \u2013 \u0110\u01B0\u1EDDng s\u1EAFt"
+  questions:
+  - questionText: "C\u00E2u 1: BIM l\u00E0 vi\u1EBFt t\u1EAFt c\u1EE7a c\u1EE5m t\u1EEB n\u00E0o?"
+    options:
+    - "Building Information Modeling"
+    - "Basic Infrastructure Management"
+    - "Building Inspection Method"
+    - "Business Information Model"
+    correctIndex: 0
+  - questionText: "C\u00E2u 2: \u0110i\u1EC3m kh\u00E1c bi\u1EC7t ch\u00EDnh c\u1EE7a BIM so v\u1EDBi b\u1EA3n v\u1EBD CAD 2D l\u00E0 g\u00EC?"
+    options:
+    - "V\u1EBD nhanh h\u01A1n"
+    - "\u0110\u1ED1i t\u01B0\u1EE3ng trong m\u00F4 h\u00ECnh mang thu\u1ED9c t\u00EDnh v\u00E0 d\u1EEF li\u1EC7u"
+    - "Ch\u1EC9 d\u00F9ng cho nh\u00E0 d\u00E2n d\u1EE5ng"
+    - "Kh\u00F4ng c\u1EA7n m\u00E1y t\u00EDnh"
+    correctIndex: 1
+  - questionText: "C\u00E2u 3: Trong c\u00E1c chi\u1EC1u c\u1EE7a BIM, 4D g\u1EAFn m\u00F4 h\u00ECnh v\u1EDBi y\u1EBFu t\u1ED1 n\u00E0o?"
+    options:
+    - "Chi ph\u00ED"
+    - "Ti\u1EBFn \u0111\u1ED9 thi c\u00F4ng"
+    - "N\u0103ng l\u01B0\u1EE3ng"
+    - "V\u1EADn h\u00E0nh, b\u1EA3o tr\u00EC"
+    correctIndex: 1
+  - questionText: "C\u00E2u 4: Trong c\u00E1c chi\u1EC1u c\u1EE7a BIM, 5D g\u1EAFn m\u00F4 h\u00ECnh v\u1EDBi y\u1EBFu t\u1ED1 n\u00E0o?"
+    options:
+    - "Ti\u1EBFn \u0111\u1ED9"
+    - "Chi ph\u00ED, kh\u1ED1i l\u01B0\u1EE3ng"
+    - "\u00C2m thanh"
+    - "\u00C1nh s\u00E1ng"
+    correctIndex: 1
+  - questionText: "C\u00E2u 5: M\u1EE9c LOD n\u00E0o th\u1EC3 hi\u1EC7n c\u00F4ng tr\u00ECnh \u0111\u00FAng nh\u01B0 th\u1EF1c t\u1EBF \u0111\u00E3 x\u00E2y (ho\u00E0n c\u00F4ng)?"
+    options:
+    - "LOD 100"
+    - "LOD 200"
+    - "LOD 300"
+    - "LOD 500"
+    correctIndex: 3
+  - questionText: "C\u00E2u 6: CDE trong quy tr\u00ECnh BIM l\u00E0 g\u00EC?"
+    options:
+    - "Ph\u1EA7n m\u1EC1m d\u1EF1ng h\u00ECnh 3D"
+    - "M\u00F4i tr\u01B0\u1EDDng d\u1EEF li\u1EC7u chung \u0111\u1EC3 l\u01B0u v\u00E0 chia s\u1EBB th\u00F4ng tin d\u1EF1 \u00E1n"
+    - "M\u1ED9t lo\u1EA1i m\u00E1y qu\u00E9t laser"
+    - "Ti\u00EAu chu\u1EA9n v\u1EBD k\u00FD hi\u1EC7u"
+    correctIndex: 1
+  - questionText: "C\u00E2u 7: B\u1ED9 ti\u00EAu chu\u1EA9n qu\u1ED1c t\u1EBF v\u1EC1 qu\u1EA3n l\u00FD th\u00F4ng tin theo BIM trong CDE l\u00E0:"
+    options:
+    - "ISO 9001"
+    - "ISO 19650"
+    - "ISO 14001"
+    - "ISO 27001"
+    correctIndex: 1
+  - questionText: "C\u00E2u 8: Phi\u00EAn b\u1EA3n IFC n\u00E0o b\u1ED5 sung h\u1EA1 t\u1EA7ng nh\u01B0 c\u1EA7u, \u0111\u01B0\u1EDDng b\u1ED9, \u0111\u01B0\u1EDDng s\u1EAFt?"
+    options:
+    - "IFC 2x3"
+    - "IFC 4.0"
+    - "IFC 4.3"
+    - "IFC 1.0"
+    correctIndex: 2
+  - questionText: "C\u00E2u 9: Ph\u00E1t hi\u1EC7n xung \u0111\u1ED9t (clash detection) gi\u00FAp \u00EDch g\u00EC?"
+    options:
+    - "T\u00ECm va ch\u1EA1m gi\u1EEFa c\u00E1c b\u1ED9 m\u00F4n tr\u01B0\u1EDBc khi thi c\u00F4ng"
+    - "T\u0103ng t\u1ED1c \u0111\u1ED9 t\u00E0u"
+    - "Gi\u1EA3m dung l\u01B0\u1EE3ng file"
+    - "T\u1EF1 \u0111\u1ED9ng v\u1EBD b\u1EA3n \u0111\u1ED3"
+    correctIndex: 0
+  - questionText: "C\u00E2u 10: V\u0103n b\u1EA3n ph\u00EA duy\u1EC7t l\u1ED9 tr\u00ECnh \u00E1p d\u1EE5ng BIM t\u1EA1i Vi\u1EC7t Nam l\u00E0:"
+    options:
+    - "Quy\u1EBFt \u0111\u1ECBnh 258/Q\u0110-TTg (2023)"
+    - "Lu\u1EADt \u0110\u01B0\u1EDDng s\u1EAFt 2017"
+    - "Ngh\u1ECB \u0111\u1ECBnh 100/2019"
+    - "Th\u00F4ng t\u01B0 01/2020"
+    correctIndex: 0

@@ -14,6 +14,10 @@ namespace ProjectLopHoc.Features.Lecture
         public Image boardImage;
         [Networked] public int CurrentSlideIndex { get; set; }
         [Networked] public int CurrentLectureIndex { get; set; }
+        // Chế độ trình chiếu (bản Web): giảng viên bật, mọi người trong phòng đều thấy.
+        [Networked] public NetworkBool IsPresenting { get; set; }
+        [Networked] public NetworkString<_64> PresenterName { get; set; }
+        private bool _offlinePresenting; private string _offlinePresenter = "";
         private int _offlineSlideIndex, _offlineLectureIndex;
         private bool HasNetworkState => Object != null && Object.IsValid;
         public int DisplaySlideIndex => HasNetworkState ? CurrentSlideIndex : _offlineSlideIndex;
@@ -33,7 +37,7 @@ namespace ProjectLopHoc.Features.Lecture
         private string _cachedFolder;
         private readonly Dictionary<string, Sprite[]> _lectureCache = new Dictionary<string, Sprite[]>(StringComparer.Ordinal);
         private readonly Dictionary<Texture2D, Sprite> _textureSprites = new Dictionary<Texture2D, Sprite>();
-        private MaterialPropertyBlock _propBlock;
+        private Material _boardMat;
         private static readonly int BaseMapId = Shader.PropertyToID("_BaseMap"), MainTexId = Shader.PropertyToID("_MainTex");
         private void Start() => RefreshPresentation();
         public override void Spawned() { _cachedLectureIndex = -1; RefreshPresentation(); }
@@ -51,11 +55,16 @@ namespace ProjectLopHoc.Features.Lecture
             if (boardImage != null) { boardImage.sprite = sprite; boardImage.enabled = sprite != null; boardImage.preserveAspect = true; }
             if (boardRenderer != null)
             {
-                if (_propBlock == null) _propBlock = new MaterialPropertyBlock();
-                boardRenderer.GetPropertyBlock(_propBlock);
+                // Material riêng của màn chiếu (MaterialPropertyBlock không ổn định trên bản Web), hiển thị cả 2 mặt.
+                if (_boardMat == null)
+                {
+                    _boardMat = boardRenderer.material;
+                    if (_boardMat.HasProperty("_Cull")) _boardMat.SetFloat("_Cull", 0f);
+                    if (_boardMat.HasProperty("_BaseColor")) _boardMat.SetColor("_BaseColor", Color.white);
+                }
                 Texture texture = sprite != null ? sprite.texture : Texture2D.whiteTexture;
-                _propBlock.SetTexture(BaseMapId, texture); _propBlock.SetTexture(MainTexId, texture);
-                boardRenderer.SetPropertyBlock(_propBlock);
+                if (_boardMat.HasProperty(BaseMapId)) _boardMat.SetTexture(BaseMapId, texture);
+                if (_boardMat.HasProperty(MainTexId)) _boardMat.SetTexture(MainTexId, texture);
             }
             PresentationChanged?.Invoke();
         }
@@ -119,8 +128,54 @@ namespace ProjectLopHoc.Features.Lecture
         }
         [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
         private void RPC_RequestSelectLecture(int index) => ApplyLecture(index);
+        // ===== Trình chiếu =====
+        public bool Presenting => HasNetworkState ? (bool)IsPresenting : _offlinePresenting;
+        public string PresenterDisplayName => HasNetworkState ? PresenterName.ToString() : _offlinePresenter;
+        public event Action<string, bool> HandChanged;
+        public event Action LookRequested;
+        public Sprite GetSlide(int index) => index >= 0 && index < SlideCount ? _loadedSlides[index] : null;
+        public Vector3 BoardCenter => boardRenderer != null ? boardRenderer.bounds.center : boardImage != null ? boardImage.transform.position : transform.position;
+        private static string Short(string s) { s = s ?? ""; return s.Length > 60 ? s.Substring(0, 60) : s; }
+        public void SetPresenting(bool on, string presenter)
+        {
+            if (!CanNavigate) return;
+            presenter = Short(presenter);
+            if (HasNetworkState) RPC_SetPresenting(on, presenter);
+            else { _offlinePresenting = on; _offlinePresenter = on ? presenter : ""; }
+        }
+        [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+        private void RPC_SetPresenting(NetworkBool on, string presenter) { IsPresenting = on; PresenterName = on ? presenter : ""; }
+        public void GoToSlide(int index)
+        {
+            if (!CanNavigate) return;
+            RefreshPresentation();
+            if (HasNetworkState) RPC_RequestGoToSlide(index);
+            else { _offlineSlideIndex = SlideCount == 0 ? 0 : Mathf.Clamp(index, 0, SlideCount - 1); RefreshPresentation(); }
+        }
+        [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+        public void RPC_RequestGoToSlide(int index)
+        {
+            RefreshPresentation(); CurrentSlideIndex = SlideCount == 0 ? 0 : Mathf.Clamp(index, 0, SlideCount - 1); RefreshPresentation();
+        }
+        /// <summary>Học viên giơ/hạ tay; giảng viên cũng gọi được để hạ tay hộ.</summary>
+        public void RaiseHand(string who, bool up)
+        {
+            who = Short(who);
+            if (HasNetworkState) RPC_Hand(who, up); else HandChanged?.Invoke(who, up);
+        }
+        [Rpc(RpcSources.All, RpcTargets.All)]
+        private void RPC_Hand(string who, NetworkBool up) => HandChanged?.Invoke(who, up);
+        /// <summary>Giảng viên gọi cả lớp quay góc nhìn về màn chiếu.</summary>
+        public void CallClassToBoard()
+        {
+            if (!CanNavigate) return;
+            if (HasNetworkState) RPC_LookAtBoard(); else LookRequested?.Invoke();
+        }
+        [Rpc(RpcSources.All, RpcTargets.All)]
+        private void RPC_LookAtBoard() => LookRequested?.Invoke();
         private void OnDestroy()
         {
+            if (_boardMat != null) Destroy(_boardMat);
             foreach (var sprite in _textureSprites.Values) if (sprite != null) Destroy(sprite);
             _textureSprites.Clear(); _lectureCache.Clear();
         }

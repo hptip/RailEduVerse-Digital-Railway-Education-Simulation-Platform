@@ -35,6 +35,8 @@ namespace ProjectLopHoc.UI
 
         private void Update()
         {
+            // Bản Web: phím L/Tab do UttClassPanel tự xử lý.
+            if (UttWebPresentation.Active) return;
             if (UttWebPresentation.Active && (SceneQuickMenu.IsOpen || UttChat.IsTyping)) return;
             bool togglePressed = _xrMode ? WasXRControllerTogglePressed() : WasToggleKeyPressed();
             if (togglePressed)
@@ -75,6 +77,15 @@ namespace ProjectLopHoc.UI
 
         public void ToggleDashboard()
         {
+            // Bản Web: dùng bảng Liquid Glass mới (UttClassPanel), bảng cũ của bản VR luôn tắt.
+            if (UttWebPresentation.Active)
+            {
+                if (lecturerPanel != null) lecturerPanel.SetActive(false);
+                if (studentSlidePanel != null) studentSlidePanel.SetActive(false);
+                UttClassPanel.Toggle();
+                return;
+            }
+
             _isOpen = !_isOpen;
 
             if (_isLecturer)

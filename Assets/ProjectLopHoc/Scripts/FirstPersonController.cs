@@ -130,6 +130,18 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
     private float _remoteLocalYaw;
     private bool _remoteHasPose;
 
+    /// <summary>Quay góc nhìn về một điểm (bản Web: giảng viên gọi cả lớp nhìn lên màn chiếu).</summary>
+    public void FaceTowards(Vector3 worldPoint)
+    {
+        if (!HasStateAuthority || isDriving || _passengerSeat >= 0 || _trainRoot != null) return;
+        Vector3 eye = _mainCamera != null ? _mainCamera.transform.position : transform.position + Vector3.up * 1.6f;
+        Vector3 d = worldPoint - eye;
+        if (d.sqrMagnitude < 0.01f) return;
+        _horizontalRotation = Mathf.Atan2(d.x, d.z) * Mathf.Rad2Deg;
+        _verticalRotation = Mathf.Clamp(-Mathf.Atan2(d.y, new Vector2(d.x, d.z).magnitude) * Mathf.Rad2Deg, -85f, 85f);
+        transform.rotation = Quaternion.Euler(0f, _horizontalRotation, 0f);
+    }
+
     /// <summary>Gửi tin nhắn chat (bản Web) tới mọi người trong phòng, kể cả chính mình.</summary>
     public void SendChat(string message)
     {

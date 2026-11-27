@@ -232,10 +232,14 @@ public class DataBridge : MonoBehaviour
         public StudentScoreRecord[] data;
     }
 
+    /// <summary>Lỗi của lần gọi GetStudentRecordsAsync gần nhất (rỗng khi lấy được từ máy chủ hoặc đang offline).</summary>
+    public string LastStudentRecordsError { get; private set; } = "";
+
     // Hàm lấy danh sách sinh viên từ máy chủ API
     public async Task<System.Collections.Generic.List<StudentScoreRecord>> GetStudentRecordsAsync()
     {
         var list = new System.Collections.Generic.List<StudentScoreRecord>();
+        LastStudentRecordsError = "";
 
         if (Offline || UttSession.Offline)
         {
@@ -259,6 +263,7 @@ public class DataBridge : MonoBehaviour
                         list.AddRange(res.data);
                         return list;
                     }
+                    LastStudentRecordsError = "Máy chủ trả về dữ liệu không đọc được.";
                 }
                 catch (Exception e)
                 {
@@ -267,8 +272,16 @@ public class DataBridge : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"[DataBridge] /students/scores lỗi {req.responseCode}. Dùng dữ liệu mẫu.");
-                HandleUnauthorized(req);
+                // Không đăng xuất ở đây: xem bảng điểm lỗi không được làm mất phiên học/trình chiếu đang chạy.
+                Debug.LogWarning($"[DataBridge] /students/scores lỗi {req.responseCode}.");
+                LastStudentRecordsError = req.responseCode == 401
+                    ? "Phiên đăng nhập của tab này không còn hợp lệ trên máy chủ (401). Hãy đăng nhập lại bằng tài khoản giảng viên khi rảnh."
+                    : req.responseCode == 403
+                        ? "Tài khoản này không có quyền xem điểm (403)."
+                        : req.responseCode == 0
+                            ? "Không kết nối được máy chủ. Kiểm tra Backend/server.py đang chạy."
+                            : $"Máy chủ báo lỗi {req.responseCode}.";
+                return list;
             }
         }
 

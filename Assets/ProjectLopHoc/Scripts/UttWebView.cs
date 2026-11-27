@@ -72,6 +72,9 @@ public static class UttWebView
         go.AddComponent<UttWebSkins>();
         go.AddComponent<UttMinimap>();
         go.AddComponent<UttChat>();
+        go.AddComponent<UttPresenter>();
+        go.AddComponent<UttClassPanel>();
+        go.AddComponent<UttQuizLive>();
     }
 
     public static void SetMode(Mode mode)
@@ -161,7 +164,7 @@ public sealed class UttWebViewRunner : MonoBehaviour
                            (kb.lKey.wasPressedThisFrame || kb.tabKey.wasPressedThisFrame || kb.escapeKey.wasPressedThisFrame);
 
         // Gõ chat không mở khoá chuột (vẫn ở góc nhìn thứ nhất/thứ ba, chỉ khoá di chuyển và xoay).
-        if (SceneQuickMenu.IsOpen || UttProfilePanel.IsOpen || UttMinimap.WorldMapOpen || (typing && !UttChat.IsTyping) || alt || openedPanel)
+        if (SceneQuickMenu.IsOpen || UttProfilePanel.IsOpen || UttMinimap.WorldMapOpen || UttClassPanel.IsOpen || UttPresenter.ZoomOpen || UttQuizLive.IsOpen || (typing && !UttChat.IsTyping) || alt || openedPanel)
         {
             if (Cursor.lockState == CursorLockMode.Locked) Unlock();
         }

@@ -481,4 +481,6 @@ def get_current_slide():
     return jsonify({"status": "success", "current_slide": current_slide}), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False, threaded=True)
+    # Chỉ nghe trên chính máy này: máy khác (LAN) gọi /api qua serve.mjs, không vào thẳng cổng 5000 hay trang /admin được.
+    # Muốn mở cho mạng (không khuyến khích): đặt biến môi trường UTT_BACKEND_HOST=0.0.0.0 trước khi chạy.
+    app.run(host=os.environ.get('UTT_BACKEND_HOST', '127.0.0.1'), port=5000, debug=False, threaded=True)

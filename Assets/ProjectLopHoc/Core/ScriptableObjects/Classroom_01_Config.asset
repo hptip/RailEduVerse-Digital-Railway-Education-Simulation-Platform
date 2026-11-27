@@ -17,4 +17,8 @@ MonoBehaviour:
     s\u1EAFt"
   maxStudents: 30
   slideImages: []
+  availableLectures:
+  - BaiGiang_01
+  - BaiGiang_02
+  - "BIM trong \u0111\u01B0\u1EDDng s\u1EAFt"
   lecturerSecretPin: 123456
