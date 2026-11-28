@@ -54,6 +54,36 @@ public static class UttTrainSeats
 
     public static int Count { get { EnsureBuilt(); return Seats.Count; } }
 
+    static int _realTrainScene = int.MinValue;
+    static Transform _realTrain;
+
+    /// <summary>
+    /// Tàu thật để người chơi lên (Train_THSR_700T ở Yên Tử – Hạ Long). Bỏ qua bản sao thu nhỏ cùng tên nằm trong sa bàn
+    /// (SaBanRoot, ở Showroom): gắn người chơi vào tàu mô hình đang chạy sẽ kéo người chơi văng khỏi map.
+    /// Kết quả lưu theo scene, chỉ tìm lại khi đổi scene hoặc tàu bị huỷ.
+    /// </summary>
+    public static Transform FindRealTrain()
+    {
+        var scene = SceneManager.GetActiveScene();
+        if (scene.handle == _realTrainScene && _realTrain != null) return _realTrain;
+        _realTrainScene = scene.handle;
+        _realTrain = null;
+
+        GameObject go = GameObject.Find(TrainName);
+        if (go != null && !InSaBan(go.transform)) { _realTrain = go.transform; return _realTrain; }
+
+        // Trùng tên (có cả tàu mô hình): tìm qua TrainSplineMover, chỉ tàu thật mới có thành phần này
+        foreach (var mover in UnityEngine.Object.FindObjectsByType<TrainSplineMover>(FindObjectsSortMode.None))
+        {
+            if (mover == null || InSaBan(mover.transform)) continue;
+            for (Transform t = mover.transform; t != null; t = t.parent)
+                if (t.name == TrainName) { _realTrain = t; return _realTrain; }
+        }
+        return null;
+    }
+
+    static bool InSaBan(Transform t) => t != null && t.GetComponentInParent<UTT.SaBan.SaBanRoot>(true) != null;
+
     static void EnsureBuilt()
     {
         var scene = SceneManager.GetActiveScene();
@@ -61,8 +91,7 @@ public static class UttTrainSeats
         _sceneHandle = scene.handle;
         Seats.Clear();
         Cars.Clear();
-        GameObject trainGo = GameObject.Find(TrainName);
-        _train = trainGo != null ? trainGo.transform : null;
+        _train = FindRealTrain();
         if (_train == null) return;
 
         foreach (string carName in CarOrder)

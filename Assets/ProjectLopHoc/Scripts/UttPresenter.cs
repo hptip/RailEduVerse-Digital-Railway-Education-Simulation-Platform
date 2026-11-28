@@ -90,7 +90,7 @@ public sealed class UttPresenter : MonoBehaviour
         if (mode == LoadSceneMode.Additive) return;
         _screenGo = null; _screenFor = null; _screenTex = null; // đã bị huỷ cùng scene cũ
         Unhook();
-        _board = null; _quiz = null; _nextFind = 0f;
+        _board = null; _quiz = null; _nextFind = Time.unscaledTime + 0.5f;
         ResetSession();
     }
 
@@ -199,9 +199,10 @@ public sealed class UttPresenter : MonoBehaviour
         if (_board != null && !hasBoard) { Unhook(); _board = null; }
         bool hasQuiz = _quiz != null && _quiz;
         if ((hasBoard && hasQuiz) || Time.unscaledTime < _nextFind) return;
-        _nextFind = Time.unscaledTime + 1f;
         if (!hasBoard) { var b = FindFirstObjectByType<LectureBoardController>(); if (b != null) Hook(b); }
         if (!hasQuiz) _quiz = FindFirstObjectByType<QuizSessionController>();
+        // Scene không có màn chiếu (Campus, Showroom, tàu): dò thưa hơn
+        _nextFind = Time.unscaledTime + (_board != null ? 1f : 5f);
     }
 
     void HandleKeys(bool active, bool lecturer, bool presenting)
