@@ -147,6 +147,7 @@ internal static class QuestRailwayOptimize
         var route=new RouteTable(streamer.train.splineRoute);var output=new List<RailwayMicroChunkData.Chunk>();var retired=new List<string>();
         var shader=Shader.Find("UTT/Railway Vertex Colour Matte");if(shader==null||ShaderUtil.ShaderHasError(shader))throw new InvalidOperationException("Rail colour shader failed");
         var material=new Material(shader);material.enableInstancing=true;AssetDatabase.CreateAsset(material,Folder+"/RailwayFlatColour.mat");
+        var deckMaterials=RailwayTrackOnlyVisuals.DeckMaterials();
         long before=0,after=0;
         foreach(var c in data.chunks)
         {
@@ -160,9 +161,11 @@ internal static class QuestRailwayOptimize
                 var positions=new[]{new List<Vector3>(),new List<Vector3>()};var ns=new[]{new List<Vector3>(),new List<Vector3>()};var colours=new[]{new List<Color32>(),new List<Color32>()};var indices=new[]{new List<int>(),new List<int>()};
                 for(int sub=0;sub<mesh.subMeshCount;sub++)
                 {
+                    var mat=sub<track.materials.Length?track.materials[sub]:null;
+                    if(deckMaterials.Contains(mat))continue;
                     var source=mesh.GetTriangles(sub);before+=source.Length;
                     var maps=new[]{new Dictionary<int,int>(),new Dictionary<int,int>()};
-                    Color color=Color.gray;var mat=sub<track.materials.Length?track.materials[sub]:null;
+                    Color color=Color.gray;
                     if(mat!=null){if(mat.HasProperty("_BaseColor"))color=mat.GetColor("_BaseColor");else if(mat.HasProperty("_Color"))color=mat.GetColor("_Color");}color.a=1;
                     for(int t=0;t<source.Length;t+=3)
                     {
@@ -188,6 +191,10 @@ internal static class QuestRailwayOptimize
         }
         if(before!=after)throw new InvalidOperationException("Triangle conservation failed");
         data.chunks=output.ToArray();EditorUtility.SetDirty(data);streamer.poolCapacity=28;streamer.operationsPerFrame=1;streamer.millisecondsPerFrame=.5f;
+        RailwayBimGeometryOverlapAudit.RepairRailCoplanar(data);
+        RailwayBimGeometryOverlapAudit.RepairRailInternal(data);
+        RailwayBimGeometryOverlapAudit.RepairOccludedRailPairs(data,
+            data.chunks.SelectMany(c => new[] { c.right.meshResource, c.left.meshResource }).ToArray());
         var migration=JsonUtility.FromJson<Migration>(File.ReadAllText(Folder+"/Migration.json"));migration.railChunks=output.Count;File.WriteAllText(Folder+"/Migration.json",JsonUtility.ToJson(migration,true));
         EditorUtility.SetDirty(streamer);EditorSceneManager.MarkSceneDirty(manager.gameObject.scene);EditorSceneManager.SaveScene(manager.gameObject.scene);AssetDatabase.SaveAssets();
         var referenced=new HashSet<string>(data.chunks.SelectMany(c=>new[]{c.right.meshResource,c.left.meshResource}));

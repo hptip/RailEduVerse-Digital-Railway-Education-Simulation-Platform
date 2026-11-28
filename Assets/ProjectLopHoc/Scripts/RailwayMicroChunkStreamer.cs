@@ -62,9 +62,11 @@ public sealed class RailwayMicroChunkStreamer : MonoBehaviour
                 }
             }
             if(s.root.activeSelf)ActiveChunks++;
-            if(loading==0 && s.request==null && (chunk.end<min-100 || chunk.start>max+100) && operations<operationsPerFrame && RailwayStreamingBudget.TryAcquire(this))
+            if(loading==0 && s.request==null && (s.phase==3 || chunk.end<min-100 || chunk.start>max+100) && operations<operationsPerFrame && RailwayStreamingBudget.TryAcquire(this))
             {
                 s.root.SetActive(false);
+                // Once retirement starts, finish both sides before this slot can be selected again.
+                s.phase=3;
                 // Release one mesh at a time. No UnloadUnusedAssets/GC.Collect at boundaries.
                 int side=s.filters[0].sharedMesh!=null?0:1;
                 var mesh=s.filters[side].sharedMesh;s.filters[side].sharedMesh=null;
@@ -107,7 +109,7 @@ public sealed class RailwayMicroChunkStreamer : MonoBehaviour
         for(int k=0;k<data.chunks.Length;k++)
         {
             var c=data.chunks[k];if(c.end<d-train.carSpacing-35 || c.start>d+30)continue;
-            bool ready=false;for(int i=0;i<warmed;i++)if(slots[i].index==k && slots[i].phase==2){ready=true;break;}
+            bool ready=false;for(int i=0;i<warmed;i++)if(slots[i].index==k && slots[i].root.activeSelf){ready=true;break;}
             if(!ready){EssentialReady=false;break;}
         }
         if(!EssentialReady && Time.timeSinceLevelLoad>15)MissingEssentialFrames++;

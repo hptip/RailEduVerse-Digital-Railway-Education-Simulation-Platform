@@ -20,8 +20,11 @@ namespace UttVr.BridgePilot
         public event Action<BridgeBimEntry> SelectionChanged;
         public bool TryGetGlobalId(string id, out BridgeBimEntry entry) => byGlobalId.TryGetValue(id, out entry);
 
-        void Awake()
+        void Awake() => InitializeBindings();
+
+        public void InitializeBindings()
         {
+            if (byGlobalId.Count > 0) return;
             foreach (var entry in catalog.entries)
             {
                 byGlobalId.Add(entry.globalId, entry);

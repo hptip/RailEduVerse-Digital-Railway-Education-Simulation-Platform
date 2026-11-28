@@ -62,6 +62,14 @@ public sealed partial class RailwayBimStore:IDisposable
     public void Require(string id){if(string.IsNullOrWhiteSpace(id)||!Assets.ContainsKey(id))throw new ArgumentException("AssetID không tồn tại trong mô hình: "+id);}
     public List<BimAsset> Children(string id)=>Assets.Values.Where(a=>a.ParentAssetID==id).OrderBy(a=>a.AssetID,StringComparer.Ordinal).ToList();
     public List<BimProperty> Properties(string id){Require(id);return Db.Query<BimProperty>("SELECT * FROM AssetProperties WHERE AssetID=? ORDER BY Name",id);}
+    public IReadOnlyCollection<string> CompleteProfileIds() => Db.QueryScalars<string>(
+        @"SELECT p.AssetID FROM AssetProperties p
+          JOIN Assets a ON a.AssetID=p.AssetID AND a.AssetType='Component'
+          WHERE length(trim(coalesce(p.Value,'')))>0
+            AND p.Name NOT IN ('DataProvenance','ModelSource','VerificationParameter')
+          GROUP BY p.AssetID HAVING count(*)>=2
+            AND (SELECT count(DISTINCT f.StageKey) FROM AssetStageFields f
+                 WHERE f.AssetID=p.AssetID AND length(trim(coalesce(f.Value,'')))>0)=6");
     public BimLifecycle Lifecycle(string id){Require(id);return Db.Query<BimLifecycle>("SELECT * FROM AssetLifecycle WHERE AssetID=?",id).Single();}
     public List<BimInspection> Inspections(string id)=>Db.Query<BimInspection>("SELECT * FROM AssetInspections WHERE AssetID=? ORDER BY InspectionDate DESC,InspectionID",id);
     public List<BimMaintenance> Maintenance(string id)=>Db.Query<BimMaintenance>("SELECT * FROM AssetMaintenance WHERE AssetID=? ORDER BY MaintenanceDate DESC,MaintenanceID",id);

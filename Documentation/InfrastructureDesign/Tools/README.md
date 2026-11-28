@@ -1,0 +1,6 @@
+# Validator
+Yêu cầu Python 3.9+ (standard library). Không thay thế validator Unity; kiểm tra hash nguồn, cấu trúc hồ sơ, kết quả, evidence, approval và ID/slot trùng.
+`py -3 Documentation/InfrastructureDesign/Tools/validate_kit.py preflight --project .`
+`py -3 Documentation/InfrastructureDesign/Tools/validate_kit.py gate --stage G1`
+`py -3 Documentation/InfrastructureDesign/Tools/validate_kit.py gate --stage G3`
+Copy Templates/Acceptance_Results.csv vào Evidence/ trước khi chạy Unity tests. Status PASS/FAIL/BLOCKED/NOT_RUN/NOT_TESTED; chỉ VR optional được NOT_TESTED khi gate G3. Evidence là đường dẫn file tương đối trong Evidence/, không phải text tự khai. Candidate_Manifest.csv lưu path + SHA256 của generator, resolved config, model output, ảnh mẫu; freeze sau G1; candidate_fingerprint = SHA256 của manifest đó. Codex phải đối chiếu hash các file trong manifest với bản được duyệt trước khi sinh full. Asset_Registry dùng domain đúng OCL/Tunnel/Subgrade; physical_slot duy nhất trong domain, không nhầm GlobalId với occurrence ID; visual_ref được phép trống cho leaf nội bộ không render. Nếu cần thay đổi schema, cập nhật tool và ghi lý do, không nới test để PASS. G1 PASS không có nghĩa là user đã duyệt. Tất cả kết quả chưa có bằng chứng phải là NOT_RUN/BLOCKED; không điền PASS hàng loạt.

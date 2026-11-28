@@ -1,0 +1,46 @@
+{
+  "actions": {
+    "Exploded": {
+      "ok": true
+    },
+    "Section": {
+      "ok": true
+    },
+    "Isolation": {
+      "ok": true
+    },
+    "Reset": {
+      "ok": true
+    },
+    "SaveLifecycle": {
+      "ok": false,
+      "error": "Lifecycle save: [BIMTree] Frame,8.000,19,0,0"
+    },
+    "Excel": {
+      "ok": true
+    },
+    "LifecycleReopen": {
+      "ok": true
+    },
+    "Z021": {
+      "ok": true
+    }
+  },
+  "measurements": {
+    "bimReadyMs": 678.3296000000119
+  },
+  "logs": [
+    "[RailwayBim] Ready 0.09s after scene load\n",
+    "[BIMTree] Select,2.565,G2-Subgrade-S0400-000-Layer00\n",
+    "[BIMTree] ZoneReady,Zone_011,2,123,Zone_010|Zone_011\n",
+    "[BIMTree] InfraView,Exploded,G2-Subgrade-S0400-000-Layer00\n",
+    "[BIMTree] InfraView,Section,G2-Subgrade-S0400-000-Layer00\n",
+    "[BIMTree] InfraView,Isolation,G2-Subgrade-S0400-000-Layer00\n",
+    "[BIMTree] InfraView,Reset,G2-Subgrade-S0400-000-Layer00\n",
+    "[RailwayBim] Ready 3.88s after scene load\n",
+    "[BIMTree] Select,2.260,G2-Subgrade-S0400-000-Layer00\n",
+    "[BIMTree] ZoneReady,Zone_011,2,123,Zone_010|Zone_011\n",
+    "[BIMTree] ZoneReady,Zone_021,0,0,\n",
+    "[BIMTree] Select,38.000,Z021-TR-S001-B001-C005\n"
+  ]
+}

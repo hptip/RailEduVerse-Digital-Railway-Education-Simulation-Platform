@@ -1,0 +1,6 @@
+Route 7999.983 m; rail chunk 3150.001–3200.001; source YenTuQuestRails/R_0083_b / YenTuQuestRails/L_0083_b
+Accepted bridge: Assets/ExternalBIM/SO201Extended/Finalization/Placed/SO201_SevenSpan_Visual.prefab; 196 meshes
+Existing terrain: Assets/ProjectLopHoc/Generated/QuestRailway/TerrainMeshes/Terrain_010.asset
+Bridge_Main Bridge 3694.001–4234.122 Zone_018
+TunnelMountain_Forest_01 TunnelMountain 2200.000–2800.000 Zone_015
+TunnelMountain_Forest_02 TunnelMountain 1100.000–1700.000 Zone_013

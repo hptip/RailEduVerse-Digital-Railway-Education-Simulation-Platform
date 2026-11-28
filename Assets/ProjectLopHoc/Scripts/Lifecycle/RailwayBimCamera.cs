@@ -22,6 +22,35 @@ public sealed class RailwayBimCamera:MonoBehaviour
     readonly List<Vector3> bridgeCorners = new List<Vector3>();
     Vector3 bridgeProjectionOrigin, bridgeProjectionForward;
     float bridgeNearestDepth;
+    readonly List<Bounds> clippingContext = new();
+    readonly Plane[] clippingPlanes = new Plane[6];
+    Camera outputCamera;
+    float baseNear, baseFar;
+#if INFRA_PRODUCTION_AUDIT
+    internal bool DepthProbeControlsPose;
+#endif
+
+    internal void SetClippingContext(IEnumerable<Renderer> renderers)
+    {
+        clippingContext.Clear();
+        foreach (var renderer in renderers)
+            if (RailwayBimOutline.IsRenderable(renderer)) clippingContext.Add(renderer.bounds);
+    }
+
+    void OnEnable()
+    {
+        outputCamera = GetComponent<Camera>();
+        if (outputCamera == null) return;
+        baseNear = outputCamera.nearClipPlane;
+        baseFar = outputCamera.farClipPlane;
+    }
+
+    void OnDisable()
+    {
+        if (outputCamera == null) return;
+        outputCamera.nearClipPlane = baseNear;
+        outputCamera.farClipPlane = baseFar;
+    }
 
     public enum BridgeFrame { Zone, Structure, Group, Component }
 
@@ -82,7 +111,6 @@ public sealed class RailwayBimCamera:MonoBehaviour
         };
         bridgeFrame = true;
         FreeMode = false;
-        camera.nearClipPlane = .015f;
         // Land on the new target immediately; orbit, pan and zoom still interpolate.
         smoothCenter = current.center;
         smoothDistance = current.distance;
@@ -104,10 +132,17 @@ public sealed class RailwayBimCamera:MonoBehaviour
         mode=newMode;FocusBounds=bounds;current.bounds=bounds;current.center=bounds.center;FreeMode=false;
         if(!initialized){current.yaw=130;current.pitch=42;}
         current.min=newMode==0?.6f:newMode==1?.4f:detailMinimumDistance;current.max=newMode==0?1600:newMode==1?180:30;
-        var camera=GetComponent<Camera>();camera.nearClipPlane=.01f;
+        var camera=GetComponent<Camera>();
+        if (xrPresentation) camera.nearClipPlane = .01f;
         bool fullView = xrPresentation || UttWebPresentation.Active;
         current.distance=Mathf.Clamp(FitDistance(bounds,Quaternion.Euler(current.pitch,current.yaw,0),camera.fieldOfView,camera.aspect,fullView?1:.40f,fullView?1:.72f)*focusDistanceMultiplier,current.min,current.max);
-        if(!initialized){smoothCenter=current.center;smoothDistance=current.distance;initialized=true;}ViewRequested?.Invoke();
+        if (!initialized || Vector3.Distance(smoothCenter, bounds.center) > Mathf.Max(60, bounds.size.magnitude * 1.5f))
+        {
+            smoothCenter = current.center;
+            smoothDistance = current.distance;
+            initialized = true;
+        }
+        ViewRequested?.Invoke();
     }
     public void Restore(int toMode,Bounds fallback){FreeMode=false;bridgeFrame=false;mode=toMode;if(hasPrevious[toMode]){current=previous[toMode];FocusBounds=current.bounds;ViewRequested?.Invoke();}else Focus(fallback,toMode,false);}
     public void ResetView(){Focus(zoneBounds,0,false);}
@@ -192,10 +227,18 @@ public sealed class RailwayBimCamera:MonoBehaviour
     }
     void LateUpdate()
     {
+#if INFRA_PRODUCTION_AUDIT
+        if (DepthProbeControlsPose) return;
+#endif
         if(xrPresentation)return;float t=1-Mathf.Exp(-Time.unscaledDeltaTime*14);
         smoothCenter=FreeMode?current.center:Vector3.Lerp(smoothCenter,current.center,t);smoothDistance=FreeMode||zoomSmoothing<=0?current.distance:Mathf.Lerp(smoothDistance,current.distance,1-Mathf.Exp(-Time.unscaledDeltaTime*zoomSmoothing));
         if (!FreeMode) smoothDistance = Mathf.Max(smoothDistance, MinimumDistance(smoothCenter));
         var r=Quaternion.Euler(current.pitch,current.yaw,0);var desired=smoothCenter-r*Vector3.forward*smoothDistance;
         transform.SetPositionAndRotation(desired,r);
+        if (outputCamera == null || !initialized) return;
+        var clip = FreeMode ? new Vector2(RailwayAdaptiveClipping.MinimumNear, baseFar)
+            : RailwayAdaptiveClipping.ForBounds(outputCamera, current.bounds, clippingContext,
+                smoothDistance, baseFar, clippingPlanes);
+        RailwayAdaptiveClipping.Apply(outputCamera, clip, Time.unscaledDeltaTime);
     }
 }

@@ -1,0 +1,7 @@
+{
+  "approved": false,
+  "user_confirmation": "",
+  "candidate_fingerprint": "",
+  "scope": [],
+  "note": "Only set true after real user confirmation; fingerprint binds approved candidate and images."
+}

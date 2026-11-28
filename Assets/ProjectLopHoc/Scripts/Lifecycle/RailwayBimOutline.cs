@@ -8,6 +8,7 @@ public sealed class RailwayBimOutline : MonoBehaviour
 
     internal static readonly HashSet<RailwayBimOutline> Active = new();
     internal readonly List<Renderer> Sources = new();
+    readonly HashSet<Renderer> uniqueSources = new();
     Camera desktopCamera;
     RailwayBimVrPresentation vrPresentation;
 
@@ -37,10 +38,14 @@ public sealed class RailwayBimOutline : MonoBehaviour
         Clear();
         if (sources == null) return;
         foreach (var source in sources)
-            if (SubmeshCount(source) > 0 && !Sources.Contains(source)) Sources.Add(source);
+            if (SubmeshCount(source) > 0 && uniqueSources.Add(source)) Sources.Add(source);
     }
 
-    public void Clear() => Sources.Clear();
+    public void Clear()
+    {
+        Sources.Clear();
+        uniqueSources.Clear();
+    }
 
     internal static bool IsRenderable(Renderer source) =>
         source != null && source.enabled && source.gameObject.activeInHierarchy && !source.forceRenderingOff;

@@ -1,0 +1,82 @@
+{
+  "designVersion": "1.0",
+  "units": "metre",
+  "style": "Chinese_Modern_HighSpeedRailway",
+  "scope": {
+    "domains": [
+      "OCL",
+      "Tunnel",
+      "Subgrade",
+      "BIMViewer"
+    ],
+    "protectAcceptedSO201": true,
+    "activeRouteOnly": true,
+    "freeResourcesOnly": true
+  },
+  "overheadLine": {
+    "layout": "Mixed",
+    "mastType": "H_Section_Steel",
+    "detailLevel": "High",
+    "variants": [
+      "OpenTrack",
+      "Bridge",
+      "Tunnel",
+      "Station"
+    ],
+    "mastHeight_m": null,
+    "supportSpacing_m": null,
+    "contactWireHeight_m": null,
+    "messengerSag_m": null
+  },
+  "tunnel": {
+    "tracksPerBore": 2,
+    "portalStyle": "Inclined_Arch",
+    "lining": "Precast_Segments",
+    "interior": "Complete",
+    "landscapeVariants": [
+      "Forest",
+      "RockyMountain"
+    ],
+    "mountainCoverage": true,
+    "innerWidth_m": null,
+    "innerHeight_m": null,
+    "liningThickness_m": null,
+    "ringLength_m": null,
+    "segmentsPerRing": null
+  },
+  "subgrade": {
+    "layout": [
+      "Natural",
+      "Reinforced",
+      "RetainingWall"
+    ],
+    "slopePattern": "Diamond",
+    "independentLayers": true,
+    "ifcPolicy": "CompareOnceThenReuseOrGenerate",
+    "layerThicknesses_m": null,
+    "moduleLength_m": null
+  },
+  "bimViewer": {
+    "explodedView": true,
+    "sectionView": true,
+    "isolation": true,
+    "transparency": true,
+    "physicalModuleIDs": true
+  },
+  "measurements": {
+    "trackCenterSpacing_m": null,
+    "trainSweptEnvelope": null,
+    "railSupportElevation": null
+  },
+  "pilotFinalization": {
+    "subgradeBands": [
+      { "kind": "Natural", "from": 300, "to": 400 },
+      { "kind": "Reinforced", "from": 400, "to": 600 },
+      { "kind": "RetainingWall", "from": 600, "to": 700 },
+      { "kind": "Natural", "from": 700, "to": 800 }
+    ],
+    "portalApronMeters": 14,
+    "portalWingExtensionMeters": 3
+  },
+  "note": "Approved choices are recorded in the Design Baseline. Pilot Finalization parameters are simulation placements, not engineering specifications."
+}

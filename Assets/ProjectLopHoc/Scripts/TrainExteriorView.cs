@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 
 /// <summary>Local seated-only exterior viewpoint; reuses the tracked stereo camera.</summary>
@@ -25,6 +27,12 @@ public sealed class TrainExteriorView : MonoBehaviour
     private readonly RaycastHit[] obstructions = new RaycastHit[24];
     private float zoom = 1f, targetZoom = 1f;
     private int viewIndex = -1;
+    private float originalNear, originalFar, desktopOrbitDistance;
+    private bool desktopClipping, clippingContextDirty;
+    private readonly List<Bounds> clippingContext = new();
+    private readonly Plane[] clippingPlanes = new Plane[6];
+    private Vector3 clipPose, clipDirection;
+    private Vector2 plannedClipping;
     public int ViewIndex => viewIndex; // -1 cabin, 0 overhead, 1 right, 2 left, 3 structure (desktop)
     public bool IsExterior => active;
     public Transform ViewAnchor => anchor;
@@ -38,8 +46,23 @@ public sealed class TrainExteriorView : MonoBehaviour
         toggle.AddBinding("<Keyboard>/b");
         look = new InputAction("Train exterior look", InputActionType.Value, "<XRController>{RightHand}/primary2DAxis");
     }
-    private void OnEnable() { toggle?.Enable(); look?.Enable(); Application.onBeforeRender += UpdateMask; }
-    private void OnDisable() { SetExterior(false); toggle?.Disable(); look?.Disable(); Application.onBeforeRender -= UpdateMask; }
+    private void OnEnable()
+    {
+        toggle?.Enable(); look?.Enable();
+        Application.onBeforeRender += BeforeRender;
+        SceneManager.sceneLoaded += SceneLoaded;
+        SceneManager.sceneUnloaded += SceneUnloaded;
+    }
+    private void OnDisable()
+    {
+        SetExterior(false); toggle?.Disable(); look?.Disable();
+        Application.onBeforeRender -= BeforeRender;
+        SceneManager.sceneLoaded -= SceneLoaded;
+        SceneManager.sceneUnloaded -= SceneUnloaded;
+    }
+
+    void SceneLoaded(Scene scene, LoadSceneMode mode) => clippingContextDirty = true;
+    void SceneUnloaded(Scene scene) => clippingContextDirty = true;
     private bool LocalDriver => driver != null && driver.Object != null && driver.Object.IsValid && driver.HasStateAuthority && driver.IsDrivingTrain(train);
     private void Update()
     {
@@ -92,9 +115,26 @@ public sealed class TrainExteriorView : MonoBehaviour
             UpdateAnchor();
             if (!active) return;
             if (driver.UsesXrView) CreateMask();
+            else
+            {
+                originalNear = viewCamera.nearClipPlane;
+                originalFar = viewCamera.farClipPlane;
+                desktopClipping = true;
+                clippingContextDirty = true;
+                plannedClipping = new Vector2(originalNear, originalFar);
+            }
             driver.SetSeatedViewOverride(anchor);
         }
-        else if (driver != null) driver.SetSeatedViewOverride(null);
+        else
+        {
+            if (desktopClipping && viewCamera != null)
+            {
+                viewCamera.nearClipPlane = originalNear;
+                viewCamera.farClipPlane = originalFar;
+            }
+            desktopClipping = false;
+            if (driver != null) driver.SetSeatedViewOverride(null);
+        }
         if (mask != null) mask.SetActive(active && driver.UsesXrView);
     }
     private void ResetOrbit()
@@ -187,7 +227,43 @@ public sealed class TrainExteriorView : MonoBehaviour
             eye = pivot + frame * new Vector3(0f, span * .85f, span * .4f);
         else if (clearance < arm.magnitude)
             eye = pivot + arm.normalized * clearance;
+        desktopOrbitDistance = Vector3.Distance(eye, pivot);
         anchor.SetPositionAndRotation(eye, Quaternion.LookRotation(pivot - eye, Vector3.up));
+    }
+
+    private void BeforeRender()
+    {
+        UpdateMask();
+        if (!active || !desktopClipping || viewCamera == null) return;
+        bool replan = clippingContextDirty || (viewCamera.transform.position - clipPose).sqrMagnitude > 16f ||
+            Vector3.Dot(viewCamera.transform.forward, clipDirection) < .9986f;
+        if (clippingContextDirty)
+        {
+            clippingContextDirty = false;
+            clippingContext.Clear();
+            for (int i = 0; i < SceneManager.sceneCount; i++)
+            {
+                var scene = SceneManager.GetSceneAt(i);
+                if (!scene.isLoaded || !scene.name.StartsWith("Zone_", System.StringComparison.Ordinal)) continue;
+                foreach (var root in scene.GetRootGameObjects())
+                    foreach (var renderer in root.GetComponentsInChildren<MeshRenderer>(true))
+                        if (renderer.enabled) clippingContext.Add(renderer.bounds);
+            }
+        }
+        if (replan)
+        {
+            clipPose = viewCamera.transform.position;
+            clipDirection = viewCamera.transform.forward;
+            var focus = new Bounds(train.frontCar.position, Vector3.one * 8);
+            if (train.rearCar != null) focus.Encapsulate(new Bounds(train.rearCar.position, Vector3.one * 8));
+            plannedClipping = RailwayAdaptiveClipping.ForBounds(viewCamera, focus, clippingContext,
+                desktopOrbitDistance, originalFar, clippingPlanes);
+            // Keep incoming scenery and the forward rail pool within the far plane.
+            plannedClipping.y = Mathf.Min(originalFar, Mathf.Max(plannedClipping.y, (route != null ? route.loadAheadMeters : 650) + 280));
+        }
+        var clip = plannedClipping;
+        clip.x = Mathf.Max(originalNear, Mathf.Min(Mathf.Max(clip.x, desktopOrbitDistance * .005f), .40f));
+        RailwayAdaptiveClipping.Apply(viewCamera, clip, Time.unscaledDeltaTime);
     }
     private void UpdateMask()
     {

@@ -1,0 +1,334 @@
+{
+  "Tunnel": {
+    "schema": "IFC2X3",
+    "products": {
+      "IfcProxy": 30,
+      "IfcSite": 1
+    },
+    "parts": [
+      {
+        "id": "1Cu0Tf8C172vFQFLxeugMV",
+        "cls": "IfcProxy",
+        "name": "Ring",
+        "min": [
+          -0.18337,
+          -4.199864,
+          -4.2
+        ],
+        "max": [
+          1.8,
+          4.199864,
+          4.199558
+        ],
+        "triangles": 8464
+      },
+      {
+        "id": "2nAJy9NL1CjuIxF$tXj6aC",
+        "cls": "IfcProxy",
+        "name": "Ring",
+        "min": [
+          -1.9833699999999999,
+          -4.199864,
+          -4.199998
+        ],
+        "max": [
+          0.18337,
+          4.199864,
+          4.2
+        ],
+        "triangles": 8580
+      },
+      {
+        "id": "0e9UWnIhnCxP3wwCi43nXK",
+        "cls": "IfcProxy",
+        "name": "Ring",
+        "min": [
+          -3.78337,
+          -4.199864,
+          -4.2
+        ],
+        "max": [
+          -1.6166300000000002,
+          4.199864,
+          4.199998
+        ],
+        "triangles": 8580
+      },
+      {
+        "id": "2zkZKmuH5Cp9sOq$uLEtJX",
+        "cls": "IfcProxy",
+        "name": "Ring",
+        "min": [
+          -5.58337,
+          -4.199864,
+          -4.199998
+        ],
+        "max": [
+          -3.41663,
+          4.199864,
+          4.2
+        ],
+        "triangles": 8580
+      },
+      {
+        "id": "3CpnvlPiz5yuCqA2Ecqt2o",
+        "cls": "IfcProxy",
+        "name": "Ring",
+        "min": [
+          -7.38337,
+          -4.199864,
+          -4.2
+        ],
+        "max": [
+          -5.21663,
+          4.199864,
+          4.199998
+        ],
+        "triangles": 8580
+      },
+      {
+        "id": "2XnU7uw6XARvwVkoFjH$c8",
+        "cls": "IfcProxy",
+        "name": "Ring",
+        "min": [
+          -9.0,
+          -4.199864,
+          -4.2
+        ],
+        "max": [
+          -7.01663,
+          4.199864,
+          4.199558
+        ],
+        "triangles": 8464
+      },
+      {
+        "id": "0V4rC4xPTF6OrA7wtmP0$J",
+        "cls": "IfcProxy",
+        "name": "CableDuct",
+        "min": [
+          -9.0,
+          -2.564,
+          -2.67
+        ],
+        "max": [
+          1.8,
+          2.564,
+          -2.02
+        ],
+        "triangles": 12720
+      },
+      {
+        "id": "36WiYqNIHD_ReKS6wvnymI",
+        "cls": "IfcProxy",
+        "name": "CableDuctCover",
+        "min": [
+          -9.0,
+          -2.614,
+          -2.02
+        ],
+        "max": [
+          1.8,
+          2.614,
+          -1.92
+        ],
+        "triangles": 24
+      },
+      {
+        "id": "1w1rMaTFn4UBtr1ZkqYDHv",
+        "cls": "IfcProxy",
+        "name": "Drainage",
+        "min": [
+          -9.0,
+          -0.3616075,
+          -3.75
+        ],
+        "max": [
+          1.8,
+          0.3616075,
+          -3.376
+        ],
+        "triangles": 1828
+      },
+      {
+        "id": "2yA9F3DVPA$B9iLdLsUubD",
+        "cls": "IfcProxy",
+        "name": "FloorConcrete",
+        "min": [
+          -9.0,
+          -3.2211950000000003,
+          -3.732981
+        ],
+        "max": [
+          1.8,
+          3.2211950000000003,
+          -1.92
+        ],
+        "triangles": 1026
+      },
+      {
+        "id": "1N4GVWF01AdxE$0DQ9ZhtK",
+        "cls": "IfcProxy",
+        "name": "ElasticBedding",
+        "min": [
+          -9.0,
+          -1.45,
+          -3.0700000000000003
+        ],
+        "max": [
+          1.8,
+          1.45,
+          -2.52
+        ],
+        "triangles": 28
+      },
+      {
+        "id": "1BRBrL4zv9KfuYffrzF7lH",
+        "cls": "IfcProxy",
+        "name": "LowerRoadbed",
+        "min": [
+          -9.0,
+          -1.4000000000000001,
+          -3.02
+        ],
+        "max": [
+          1.8,
+          1.4000000000000001,
+          -2.65
+        ],
+        "triangles": 12
+      },
+      {
+        "id": "2W3vLBaQnA_fds8UHI00xy",
+        "cls": "IfcProxy",
+        "name": "Rail",
+        "min": [
+          -9.0,
+          -0.8167825000000001,
+          -2.470616
+        ],
+        "max": [
+          1.8,
+          -0.6915219,
+          -2.314636
+        ],
+        "triangles": 16660
+      },
+      {
+        "id": "0sRpHLSeDFGhmGEcEIJUlW",
+        "cls": "IfcProxy",
+        "name": "Rail",
+        "min": [
+          -9.0,
+          0.6925216000000001,
+          -2.4705920000000003
+        ],
+        "max": [
+          1.8,
+          0.8177822,
+          -2.3146109999999998
+        ],
+        "triangles": 16660
+      },
+      {
+        "id": "0hAmBzxFz8Ah$AX1n0OaSU",
+        "cls": "IfcProxy",
+        "name": "Tie",
+        "min": [
+          -8.9,
+          -1.11695,
+          -2.65
+        ],
+        "max": [
+          1.3900000000000001,
+          1.11695,
+          -2.4469000000000003
+        ],
+        "triangles": 14304
+      },
+      {
+        "id": "1IN2fc0C512Odicf96OBfz",
+        "cls": "IfcProxy",
+        "name": "UpperRoadbed",
+        "min": [
+          -9.0,
+          -1.4000000000000001,
+          -2.65
+        ],
+        "max": [
+          1.8,
+          1.4000000000000001,
+          -2.52
+        ],
+        "triangles": 12
+      },
+      {
+        "id": "0Eq9oO9ev57uOEFFdUy_q0",
+        "cls": "IfcProxy",
+        "name": "Handrail",
+        "min": [
+          -9.0,
+          -3.635395,
+          -1.92
+        ],
+        "max": [
+          1.8,
+          -2.943395,
+          -0.9
+        ],
+        "triangles": 12728
+      },
+      {
+        "id": "2xBR4nkFvA3BUNuUUiklKf",
+        "cls": "IfcProxy",
+        "name": "Lighting",
+        "min": [
+          -9.0,
+          -2.97675,
+          2.2698
+        ],
+        "max": [
+          1.8,
+          -2.7872890000000003,
+          2.487166
+        ],
+        "triangles": 4348
+      },
+      {
+        "id": "0LT613Hmn6kReuFCHYDuma",
+        "cls": "IfcProxy",
+        "name": "OverheadLine",
+        "min": [
+          -9.021579,
+          -0.367039,
+          2.316554
+        ],
+        "max": [
+          1.778734,
+          2.0097929999999997,
+          3.508796
+        ],
+        "triangles": 7684
+      },
+      {
+        "id": "0Smz$91SP2e9Ai9ZSKk95d",
+        "cls": "IfcProxy",
+        "name": "TrafficLight",
+        "min": [
+          -3.8000000000000003,
+          2.198209,
+          -1.5963450000000001
+        ],
+        "max": [
+          -3.2,
+          3.7016720000000003,
+          2.11
+        ],
+        "triangles": 3062
+      }
+    ]
+  },
+  "Subgrade": {
+    "error": "Unsupported schema: IFC4X3_RC3"
+  }
+}

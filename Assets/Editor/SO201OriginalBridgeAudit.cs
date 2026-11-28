@@ -55,6 +55,7 @@ static partial class SO201OriginalBridgeAudit
             if (action == "finalization-stage") FinalizeExtendedBridge(false);
             if (action == "finalization-install") FinalizeExtendedBridge(true);
             if (action == "finalization-web") Build(true, true);
+            if (action == "infrastructure-g1") GenerateInfraG1();
         }
         catch (Exception error)
         {

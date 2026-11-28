@@ -33,13 +33,28 @@ public sealed class RailwayBimDashboard:MonoBehaviour
     string listedContext;
     RailwayBimExplorer explorer;
     bool applyingTreeSelection;
+    List<RailwayBimWorkbook.Sheet> pendingInfrastructureImport;
+    string pendingInfrastructureId;
     public IReadOnlyDictionary<string,Button> NavigationButtons=>byID;
     void Start()
     {
         if (UttWebPresentation.Active) explorer = new RailwayBimExplorer(this, SelectInExplorer);
         controller.Changed+=Refresh;controller.Status+=SetStatus;
-        detailButton.onClick.AddListener(()=>Run(controller.EnterDetails));backButton.onClick.AddListener(()=>Run(controller.Back));resetButton.onClick.AddListener(()=>Run(ResetOverview));
-        hideButton.onClick.AddListener(()=>Run(controller.ToggleIsolation));
+        if (explorer == null)
+        {
+            detailButton.onClick.AddListener(()=>Run(EnterBimDetail));
+            backButton.onClick.AddListener(()=>Run(BackOrSection));
+            resetButton.onClick.AddListener(()=>Run(ResetOverview));
+            hideButton.onClick.AddListener(()=>Run(controller.ToggleIsolation));
+        }
+        else
+        {
+            BindMode(detailButton, RailwayBimViewMode.Exploded);
+            BindMode(backButton, RailwayBimViewMode.Section);
+            focusButton.onClick.AddListener(() => Run(controller.FocusSelected));
+            BindMode(hideButton, RailwayBimViewMode.Isolation);
+            BindMode(resetButton, RailwayBimViewMode.Xray);
+        }
         saveButton.onClick.AddListener(()=>Run(Save));addInspectionButton.onClick.AddListener(()=>Run(AddInspection));addMaintenanceButton.onClick.AddListener(()=>Run(AddMaintenance));
         exportButton.onClick.AddListener(()=>Run(()=>{if (UttWebPresentation.Active) { ExportSelectedForWeb(); return; } string path=FilePath(false);if(!string.IsNullOrEmpty(path))Export(path);}));importButton.onClick.AddListener(()=>Run(()=>{if (UttWebPresentation.Active) { UttBrowserWorkbook.Pick(this, path => Run(() => Preview(path)), SetStatus); return; } string path=FilePath(true);if(!string.IsNullOrEmpty(path))Preview(path);}));applyButton.onClick.AddListener(()=>Run(Apply));
         string[] names={"General","Technical","Lifecycle"};for(int i=0;i<Math.Min(tabs.Length,3);i++){string tab=names[i];tabs[i].onClick.AddListener(()=>ShowTab(tab));}
@@ -52,8 +67,40 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         Refresh();
     }
 
+    void BindMode(Button button, RailwayBimViewMode mode) =>
+        button.onClick.AddListener(() => Run(() => controller.ToggleBimMode(mode)));
+
+    void EnterBimDetail()
+    {
+        if(controller.ActiveInfrastructure is { } loader)
+        {
+            if (!controller.CanExplodeSelection) return;
+            loader.Explode(1f);
+            RailwayBimExplorer.Audit("InfraView,Exploded,"+controller.SelectedBridge?.assetId);
+        }
+        else controller.EnterDetails();
+    }
+
+    void BackOrSection()
+    {
+        if(controller.ActiveInfrastructure is { } loader)
+        {
+            if(!loader.ActiveAdapter.TryGetSelectedBounds(out var bounds))return;
+            loader.Section(new Plane(controller.cameraController.transform.forward,bounds.center));
+            RailwayBimExplorer.Audit("InfraView,Section,"+controller.SelectedBridge?.assetId);
+        }
+        else controller.Back();
+    }
+
     void ResetOverview()
     {
+        if(controller.ActiveInfrastructure is { } loader)
+        {
+            loader.ResetView();
+            RailwayBimExplorer.Audit("InfraView,Reset,"+controller.SelectedBridge?.assetId);
+            Refresh();
+            return;
+        }
         if (controller.ViewingDetailedZone)
         {
             controller.SetOverview();
@@ -113,15 +160,35 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         if(!controller.Ready){SetStatus(controller.LastStatus??"Đang chuẩn bị cơ sở dữ liệu…");return;}
         string currentId = controller.SelectedBridge?.assetId ?? controller.SelectedID;
         if(DisplayedID!=currentId)historyOffset=0;DisplayedID=currentId;breadcrumb.text="Khu vực 021"+(controller.SegmentID!=null?" > "+controller.SegmentID:"")+(controller.BlockID!=null?" > "+controller.BlockID:"")+(DisplayedID!=null?" > "+DisplayedID:"");
-        backButton.interactable=controller.Level>0;detailButton.interactable=controller.SelectedID!=null&&controller.Level<2;hideButton.interactable=controller.SelectedID!=null;saveButton.interactable=DisplayedID!=null;
-        hideButton.GetComponentInChildren<TMP_Text>().text=controller.IsIsolated?"Hiện lại tài sản khác":"Cô lập tài sản";
-        if (explorer == null) RefreshList();
+        bool infrastructure=controller.ActiveInfrastructure!=null&&controller.SelectedBridge!=null;
+        backButton.interactable=infrastructure||controller.Level>0;
+        detailButton.interactable=infrastructure ? controller.CanExplodeSelection : controller.SelectedID!=null&&controller.Level<2;
+        hideButton.interactable=infrastructure||controller.SelectedID!=null;
+        saveButton.interactable=DisplayedID!=null;
+        if (explorer == null)
+        {
+            detailButton.GetComponentInChildren<TMP_Text>().text=infrastructure?"Tách cấu kiện":"Chi tiết";
+            backButton.GetComponentInChildren<TMP_Text>().text=infrastructure?"Mặt cắt":"Quay lại";
+            resetButton.GetComponentInChildren<TMP_Text>().text=infrastructure?"Đặt lại BIM":"Toàn cảnh";
+            hideButton.GetComponentInChildren<TMP_Text>().text=controller.IsIsolated?"Hiện lại tài sản khác":infrastructure?"Cô lập":"Cô lập tài sản";
+            RefreshList();
+        }
         else
         {
-            focusButton.interactable = DisplayedID != null || controller.zoneViewer?.ActiveZone == RailwayBimZoneViewer.BridgeZone;
+            ShowMode(detailButton, RailwayBimViewMode.Exploded);
+            ShowMode(backButton, RailwayBimViewMode.Section);
+            focusButton.interactable = controller.HasViewSelection;
+            SetButtonColor(focusButton, false);
+            ShowMode(hideButton, RailwayBimViewMode.Isolation);
+            ShowMode(resetButton, RailwayBimViewMode.Xray);
             explorer.Refresh(SelectedElement);
         }
         RefreshInfo();
+    }
+    void ShowMode(Button button, RailwayBimViewMode mode)
+    {
+        button.interactable = mode == RailwayBimViewMode.Exploded ? controller.CanExplodeSelection : controller.HasViewSelection;
+        SetButtonColor(button, controller.ViewModes.IsActive(mode));
     }
     string SelectedElement => controller.SelectedBridge?.assetId ?? SelectedRailElement;
     string SelectedRailElement => controller.SelectedID != null && controller.Store.Assets[controller.SelectedID].AssetType == "Component"
@@ -226,6 +293,22 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         if (web) explorer.Show(ActiveTab, selectedId);
         BeginRows();bool selected=selectedId!=null,life=ActiveTab=="Lifecycle";
         if (web && ActiveTab == "General") return;
+        if (web && controller.GroupSelection is { } scope)
+        {
+            saveButton.gameObject.SetActive(false);
+            addInspectionButton.gameObject.SetActive(false);
+            addMaintenanceButton.gameObject.SetActive(false);
+            if (historyPreviousButton != null) historyPreviousButton.transform.parent.gameObject.SetActive(false);
+            if (lifecycleNavigation != null) lifecycleNavigation.gameObject.SetActive(false);
+            if (stageProfileButton != null) stageProfileButton.transform.parent.gameObject.SetActive(false);
+            title.text = scope.Label;
+            Field("Scope", "", displayLabel: "PHẠM VI LỰA CHỌN", section: true);
+            Field("Tổng cấu kiện", scope.AssetIds.Count.ToString("N0"));
+            Field("Có hồ sơ chuẩn hóa", scope.ProfileCount.ToString("N0"));
+            Field("Lý trình cấu kiện", FormattableString.Invariant($"{scope.Start:F3} – {scope.End:F3} m"));
+            Field("Zone có cấu kiện", string.Join(", ", scope.Zones));
+            return;
+        }
         saveButton.gameObject.SetActive(selected&&(!life||StageView=="Profile"));addInspectionButton.gameObject.SetActive(selected&&life&&ActiveStage=="Operation"&&StageView=="Records");addMaintenanceButton.gameObject.SetActive(selected&&life&&ActiveStage=="Maintenance"&&StageView=="Records");
         if(historyPreviousButton!=null){bool history=selected&&life&&StageView=="History";historyPreviousButton.transform.parent.gameObject.SetActive(history);historyPreviousButton.interactable=historyOffset>0;if(history)historyNextButton.interactable=bridgeEntry==null&&historyOffset+HistoryPageSize<controller.Store.StageHistoryCount(controller.SelectedID,ActiveStage);}
         if (lifecycleNavigation != null) lifecycleNavigation.gameObject.SetActive(life && (!web || selected));
@@ -279,7 +362,8 @@ public sealed class RailwayBimDashboard:MonoBehaviour
     void RenderBridge(BridgeBimEntry entry, bool lifecycle)
     {
         if (explorer == null) assetPanel.SetActive(true);
-        title.text = entry.Label + "\n<size=67%>" + entry.assetId + "</size>";
+        bool hasSample = RailwayBimSampleProfiles.TryGet(entry.assetId, out var sample);
+        title.text = (hasSample ? sample.Name : entry.Label) + "\n<size=67%>" + entry.assetId + "</size>";
         addInspectionButton.gameObject.SetActive(false);
         addMaintenanceButton.gameObject.SetActive(false);
         if (stageProfileButton != null) stageProfileButton.transform.parent.gameObject.SetActive(false);
@@ -289,9 +373,18 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         {
             var stage = RailwayBimStages.Get(ActiveStage);
             var saved = controller.BridgeStore.Stage(entry.globalId, ActiveStage);
-            Field("BridgeStage", "", displayLabel: stage.name + " · DỮ LIỆU NGƯỜI DÙNG", section: true);
             var fields = stage.fields.Where(f => !f.readOnly).ToDictionary(f => f, f => controller.BridgeStore.StageField(entry.globalId, ActiveStage, f.key));
-            if (saved.Status.Length == 0 && saved.Notes.Length == 0 && fields.Values.All(string.IsNullOrEmpty))
+            if (hasSample)
+            {
+                var template = RailwayBimSampleProfiles.Stage(sample.Type, ActiveStage);
+                Field("SampleStage", "", displayLabel: stage.name + " · HỒ SƠ MẪU", section: true);
+                Field("Nội dung kiểm tra", template.Action);
+                Field("Hồ sơ cần ghi", template.Record);
+                Field("Căn cứ vị trí", FormattableString.Invariant($"Lý trình trong mô hình {entry.modeledStation:F3} m"));
+            }
+            else if (explorer?.ProfileType(entry.assetId) is { } profileType)
+                RenderStandardStage(profileType, stage);
+            else if (saved.Status.Length == 0 && saved.Notes.Length == 0 && fields.Values.All(string.IsNullOrEmpty))
             {
                 if (entry.globalId.StartsWith("SO201-EXTENDED/", StringComparison.Ordinal) && !string.IsNullOrEmpty(entry.sourceGlobalId))
                 {
@@ -299,14 +392,48 @@ public sealed class RailwayBimDashboard:MonoBehaviour
                     Field("Phạm vi mô phỏng", FormattableString.Invariant($"{entry.Label} tại lý trình {entry.modeledStation:F3} m"));
                     Field("Nguồn tham chiếu", entry.sourceGlobalId);
                 }
+                else if(controller.ActiveInfrastructure!=null)
+                {
+                    Field("Hồ sơ mô phỏng",stage.name+" · UTTVR");
+                    string task=stage.key switch
+                    {
+                        "Planning"=>"Kiểm kê phạm vi và yêu cầu quản lý cấu kiện",
+                        "Design"=>"Đối chiếu danh mục, hình học và vị trí lắp đặt",
+                        "Construction"=>"Kiểm tra cấu kiện, mặt đỡ và liên kết tại vị trí lắp",
+                        "Operation"=>"Theo dõi tình trạng và các giao diện với công trình lân cận",
+                        "Maintenance"=>"Lập kế hoạch kiểm tra và ghi nhận khiếm khuyết",
+                        "Upgrade"=>"Đánh giá thay thế theo lịch sử tình trạng và yêu cầu khai thác",
+                        _=>"Quản lý hồ sơ cấu kiện"
+                    };
+                    Field("Công việc giả định",task);
+                    Field("Phạm vi",FormattableString.Invariant($"{entry.ifcClass} · {entry.modeledStation:F3} m"));
+                }
                 else Field("Hồ sơ", "Chưa có dữ liệu");
             }
+            Field("BridgeStage", "", displayLabel: "DỮ LIỆU NGƯỜI DÙNG", section: true);
             Field("BridgeStatus", saved.Status, true, displayLabel: "Trạng thái");
             Field("BridgeStageNotes", saved.Notes, true, displayLabel: "Ghi chú giai đoạn");
             foreach (var field in fields) Field("BridgeStage:" + field.Key.key, field.Value, true, field.Key.unit, field.Key.label);
             return;
         }
-        if (controller.bridge.catalog.schema == BridgeBimCatalog.SO201RouteSchema) RenderSO201Provenance(entry);
+        if (controller.ActiveInfrastructure != null)
+        {
+            Field("InfrastructureGeometry", "", displayLabel: "THÔNG SỐ MÔ HÌNH", section: true);
+            Field("AssetID", entry.assetId);
+            Field("Nguồn hình học", "Mô hình tham số UTTVR");
+            Field("Lý trình", FormattableString.Invariant($"{entry.modeledStation:F3} m"));
+            var size = entry.modeledBounds;
+            Field("Bao hình học X/Y/Z", FormattableString.Invariant($"{size.x:F3} × {size.y:F3} × {size.z:F3} m"));
+            var occurrence = controller.ActiveInfrastructure.occurrences.FirstOrDefault(item => item.assetId == entry.assetId);
+            if (occurrence != null)
+            {
+                Field("Zone bố trí", occurrence.zone);
+                Field("Cụm lắp ráp", occurrence.assembly);
+                if (occurrence.zone != occurrence.owner) Field("Zone quản lý", occurrence.owner);
+            }
+        }
+        else if (controller.bridge.catalog.schema == BridgeBimCatalog.SO201RouteSchema ||
+            entry.globalId.StartsWith("SO201-EXTENDED/", StringComparison.Ordinal)) RenderSO201Provenance(entry);
         else
         {
             RenderBridgeSource(entry);
@@ -321,6 +448,13 @@ public sealed class RailwayBimDashboard:MonoBehaviour
                 Field("Bao hình học ngang/cao/dọc", FormattableString.Invariant($"{size.x:F3} × {size.y:F3} × {size.z:F3} m"));
             }
         }
+        if (hasSample)
+        {
+            Field("SampleTechnical", "", displayLabel: "HỒ SƠ MẪU · MÔ TẢ CẤU KIỆN", section: true);
+            Field("Vai trò", RailwayBimSampleProfiles.Function(sample.Type));
+            Field("Tiếp giáp với", RailwayBimSampleProfiles.Interface(sample.Type));
+        }
+        if (explorer?.ProfileType(entry.assetId) is { } technicalType) RenderStandardTechnical(technicalType);
         Field("BridgeUser", "", displayLabel: "DỮ LIỆU NGƯỜI DÙNG", section: true);
         Field("BridgeTechnicalNote", controller.BridgeStore.TechnicalNote(entry.globalId), true, displayLabel: "Ghi chú kỹ thuật");
         foreach (var parameter in controller.BridgeStore.Parameters(entry.globalId))
@@ -348,7 +482,8 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             if (!string.IsNullOrEmpty(entry.description)) Field("Mô tả IFC", entry.description);
             if (!string.IsNullOrEmpty(entry.tag)) Field("Tag IFC", entry.tag);
             if (!string.IsNullOrEmpty(entry.predefinedType)) Field("PredefinedType", entry.predefinedType);
-            Field("Bộ thuộc tính IFC", "Chưa có dữ liệu");
+            if (entry.propertyLines.Length == 0) Field("Bộ thuộc tính IFC", "Chưa có dữ liệu");
+            else foreach (string property in entry.propertyLines) Field("Thuộc tính IFC", property);
         }
         Field("Modeled", "", displayLabel: "THÔNG SỐ MÔ HÌNH MÔ PHỎNG", section: true);
         Field("Lý trình", FormattableString.Invariant($"{entry.modeledStation:F3} m"));
@@ -407,6 +542,7 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             Field("Provenance", "", displayLabel: "NGUỒN DỮ LIỆU", section: true);
             foreach (var p in properties.Where(p => Provenance(p.Name))) TechnicalField(p);
         }
+        if (explorer.ProfileType(id) is { } profileType) RenderStandardTechnical(profileType);
     }
     static bool Provenance(string name) => name == "DataProvenance" || name == "ModelSource" || name == "VerificationParameter";
     void TechnicalField(BimProperty property) => Field("Property:" + property.Name, property.Value, true,
@@ -431,8 +567,37 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             {foreach(var record in controller.Store.Maintenance(id))Field(record.MaintenanceDate+" · "+record.MaintenanceType,record.Description+"\n"+record.Cost.ToString("N0")+" VND · "+record.Result);Field("MaintenanceDate",DateTime.Today.ToString("yyyy-MM-dd"),true);Field("MaintenanceType","",true);Field("Description","",true);Field("Cost","0",true);Field("Result","",true);}
             return;
         }
+        if (explorer?.ProfileType(id) is { } profileType) RenderStandardStage(profileType, stage);
         var state=controller.Store.Stage(id,ActiveStage);Field("Status",state.Status,true,displayLabel:"Trạng thái hồ sơ");var values=controller.Store.StageFields(id,ActiveStage);
         foreach(var field in stage.fields)Field(field.key,values[field.key],!field.readOnly,field.unit,field.label);
+    }
+
+    void RenderStandardTechnical(string type)
+    {
+        var profile = RailwayBimStandardProfiles.For(type);
+        Field("ProfileType", "", displayLabel: "PHÂN LOẠI VÀ ĐẶC TÍNH", section: true);
+        Field("Nhóm cấu kiện", type);
+        Field("Vật liệu dự kiến", profile.Material);
+        Field("Đặc tính cần quản lý", profile.Technical);
+        if (controller.TrySelectedQuantities(out var quantity))
+        {
+            Field("ProfileQuantities", "", displayLabel: "KHỐI LƯỢNG HÌNH HỌC", section: true);
+            Field("Diện tích bề mặt", FormattableString.Invariant($"{quantity.SurfaceArea:F3} m²"));
+            if (quantity.Closed) Field("Thể tích mesh kín", FormattableString.Invariant($"{quantity.Volume:F3} m³"));
+        }
+        Field("ProfileProvenance", "", displayLabel: "NGUỒN DỮ LIỆU", section: true);
+        Field("Hình học và vị trí", "Đọc từ mô hình, danh mục và liên kết hiện hành.");
+        Field("Mô tả, vật liệu và quy trình mẫu", "Template đồ án theo nhóm cấu kiện. Cần đối chiếu hồ sơ thật trước khi sử dụng ngoài mô hình.");
+        Field("Hồ sơ đã nhập", "Tên, thông số và nội dung đã lưu do người dùng quản lý.");
+    }
+
+    void RenderStandardStage(string type, RailwayBimStages.Stage stage)
+    {
+        var profile = RailwayBimStandardProfiles.For(type);
+        var record = RailwayBimStandardProfiles.Stage(profile, stage.key);
+        Field("ProfileStage", "", displayLabel: stage.name + " · HỒ SƠ MẪU", section: true);
+        Field("Công việc dự kiến", record.Work);
+        Field("Biểu mẫu cần lưu", record.Document);
     }
     public void Save()
     {
@@ -461,7 +626,9 @@ public sealed class RailwayBimDashboard:MonoBehaviour
             else return;
             RailwayBimExplorer.Audit($"BridgeSave,{bridge.assetId},{ActiveTab},{ActiveStage}");
             Refresh();
-            SetStatus("Đã lưu hồ sơ cầu " + bridge.assetId);
+            if (controller.ActiveInfrastructure != null)
+                FinishInfrastructureWrite("Đã lưu hồ sơ hạ tầng " + bridge.assetId);
+            else SetStatus("Đã lưu hồ sơ cầu " + bridge.assetId);
             return;
         }
         string id=controller.SelectedID;controller.Store.Require(id);
@@ -485,6 +652,13 @@ public sealed class RailwayBimDashboard:MonoBehaviour
     public void AddMaintenance(){controller.Store.AddMaintenance(new BimMaintenance{AssetID=controller.SelectedID,MaintenanceDate=Inputs["MaintenanceDate"].text,MaintenanceType=Inputs["MaintenanceType"].text,Description=Inputs["Description"].text,Cost=double.Parse(Inputs["Cost"].text,CultureInfo.InvariantCulture),Result=Inputs["Result"].text});Refresh();SetStatus("Đã lưu bảo trì cho đúng mã tài sản");}
     private void ExportSelectedForWeb()
     {
+        if(controller.ActiveInfrastructure!=null&&controller.SelectedBridge is { } element)
+        {
+            UttBrowserWorkbook.Download("TaiSanHaTang.xlsx",path=>RailwayBimWorkbook.Write(path,
+                RailwayInfrastructureWorkbook.Export(controller.BridgeStore,element)));
+            SetStatus("Đã xuất hồ sơ hạ tầng "+element.assetId);
+            return;
+        }
         if (controller.SelectedBridge != null) { SetStatus("Excel hiện dành cho hồ sơ đường ray."); return; }
         string id = controller.SelectedID;
         if (string.IsNullOrEmpty(id))
@@ -497,9 +671,69 @@ public sealed class RailwayBimDashboard:MonoBehaviour
         SetStatus("Đã xuất hồ sơ của " + id);
     }
 
-    public void Export(string path){RailwayBimWorkbook.Write(path,RailwayBimWorkbook.ExportData(controller.Store));SetStatus("Đã xuất bảng tính: "+path);}
-    public void Preview(string path){PendingImport=RailwayBimWorkbook.PreviewFile(controller.Store,path);applyButton.interactable=PendingImport.CanApply;SetStatus(PendingImport.CanApply?"Dữ liệu hợp lệ. Chọn Xác nhận nhập để lưu.":"Dữ liệu nhập có lỗi: "+string.Join("; ",PendingImport.errors.Take(3)));}
-    public void Apply(){if(PendingImport==null||!PendingImport.CanApply)throw new InvalidOperationException("Cần xem trước và kiểm tra dữ liệu hợp lệ");RailwayBimWorkbook.Apply(controller.Store,PendingImport);PendingImport=null;applyButton.interactable=false;explorer?.NamesChanged();Refresh();SetStatus("Đã nhập và lưu dữ liệu an toàn");}
+    public void Export(string path)
+    {
+        var sheets=controller.ActiveInfrastructure!=null&&controller.SelectedBridge!=null?
+            RailwayInfrastructureWorkbook.Export(controller.BridgeStore,controller.SelectedBridge):RailwayBimWorkbook.ExportData(controller.Store);
+        RailwayBimWorkbook.Write(path,sheets);
+        SetStatus("Đã xuất bảng tính: "+path);
+    }
+    public void Preview(string path)
+    {
+        PendingImport=null;pendingInfrastructureImport=null;pendingInfrastructureId=null;applyButton.interactable=false;
+        if(controller.ActiveInfrastructure!=null&&controller.SelectedBridge is { } element)
+        {
+            pendingInfrastructureImport=RailwayInfrastructureWorkbook.Read(path,element.assetId);
+            pendingInfrastructureId=element.assetId;
+            applyButton.interactable=true;
+            SetStatus($"Đã kiểm tra {pendingInfrastructureImport.Count} sheet của {element.assetId}. Chọn Xác nhận nhập để lưu.");
+            return;
+        }
+        PendingImport=RailwayBimWorkbook.PreviewFile(controller.Store,path);
+        applyButton.interactable=PendingImport.CanApply;
+        SetStatus(PendingImport.CanApply?"Dữ liệu hợp lệ. Chọn Xác nhận nhập để lưu.":"Dữ liệu nhập có lỗi: "+string.Join("; ",PendingImport.errors.Take(3)));
+    }
+    public void Apply()
+    {
+        bool infrastructureImport = pendingInfrastructureImport != null;
+        if(infrastructureImport)
+        {
+            if(controller.ActiveInfrastructure==null||controller.SelectedBridge?.assetId!=pendingInfrastructureId)
+                throw new InvalidOperationException("Hãy chọn lại đúng cấu kiện đã xem trước.");
+            controller.BridgeStore.ApplyInfrastructureWorkbook(pendingInfrastructureId,pendingInfrastructureImport);
+            pendingInfrastructureImport=null;pendingInfrastructureId=null;
+        }
+        else
+        {
+            if(PendingImport==null||!PendingImport.CanApply)throw new InvalidOperationException("Cần xem trước và kiểm tra dữ liệu hợp lệ");
+            RailwayBimWorkbook.Apply(controller.Store,PendingImport);
+            PendingImport=null;
+            explorer?.NamesChanged();
+        }
+        applyButton.interactable=false;
+        Refresh();
+        if (infrastructureImport) FinishInfrastructureWrite("Đã nhập và lưu dữ liệu an toàn");
+        else SetStatus("Đã nhập và lưu dữ liệu an toàn");
+    }
+
+    void FinishInfrastructureWrite(string message)
+    {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        SetStatus("Đang lưu hồ sơ trong trình duyệt…");
+        var path = System.IO.Path.Combine(Application.persistentDataPath, BridgeInfrastructureStore.ProductionDatabaseName);
+        UttPersistInfrastructure(path, gameObject.name, message);
+#else
+        SetStatus(message);
+#endif
+    }
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+    [System.Runtime.InteropServices.DllImport("__Internal")]
+    static extern void UttPersistInfrastructure(string path, string receiver, string message);
+
+    [UnityEngine.Scripting.Preserve]
+    public void ReceiveInfrastructurePersistence(string message) => SetStatus(message);
+#endif
     void OnDestroy(){explorer?.Dispose();if(controller!=null){controller.Changed-=Refresh;controller.Status-=SetStatus;}}
 }
 

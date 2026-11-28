@@ -1,0 +1,14 @@
+Car dau; active hierarchy animators 0
+  QuestCombinedVisual roof-local y=5.4384, local centre (0.000, 2.821, -1.953)
+  BotNamePlate roof-local y=2.7456, local centre (0.593, 2.382, 7.357)
+  Antena roof-local y=2.4577, local centre (0.592, 2.438, 7.353)
+  Antena2 roof-local y=2.4272, local centre (0.592, 2.383, 7.353)
+  Head roof-local y=2.3497, local centre (0.604, 2.133, 7.349)
+  Display roof-local y=2.2378, local centre (0.423, 2.125, 7.415)
+  RightEye roof-local y=2.1715, local centre (0.438, 2.138, 7.472)
+  LeftEye roof-local y=2.1715, local centre (0.397, 2.138, 7.360)
+Car than; active hierarchy animators 0
+  QuestCombinedVisual roof-local y=5.7370, local centre (0.000, 3.120, -1.931)
+Reference rail Y 9.8454; swept train upper envelope 15.4186; wire centre 15.9454.
+Zone_010 station 1 mesh filters, 1 readable; 0 sampled overhead hits, 0 below portal top; minimum sampled margin Infinity m. Sampling: 2 m longitudinal by 0.5 m lateral.
+Pantograph motion and a validated physical contact face remain unverified.

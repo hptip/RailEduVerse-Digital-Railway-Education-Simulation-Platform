@@ -1,0 +1,6 @@
+{
+  "units": "m",
+  "coordinate_frame": null,
+  "measurements": [],
+  "note": "Each measurement: name,value,unit,method,evidence,threshold,reason; no guessed dimensions."
+}

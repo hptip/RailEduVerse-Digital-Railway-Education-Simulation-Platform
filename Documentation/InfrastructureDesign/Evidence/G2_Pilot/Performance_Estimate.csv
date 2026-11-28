@@ -1,0 +1,4 @@
+domain,occurrences,visual_renderers,triangles,vertices,index_vertex_bytes_estimate,realtime_lights,mesh_colliders
+OCL,5336,234,504472,275724,14876832,0,0
+Subgrade,856,62,18820,14280,682800,0,0
+Tunnel,8472,190,456152,280200,14440224,0,0

@@ -1,0 +1,24 @@
+{
+  "storage": [
+    {
+      "count": 86413,
+      "files": [
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/0",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/1",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/2",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/3",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/4",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/5",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/6",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/7",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/8",
+        "/idbfs/4a618ad751111eb6c8c4d26527a276c4/RailwayInfrastructure_G2_Production.db/file_size"
+      ]
+    }
+  ],
+  "console": [],
+  "fixture": "TaiSanHaTang_Web_Check.xlsx",
+  "stage": "Operation",
+  "reopenFrame": true
+}

@@ -1,0 +1,4 @@
+"domain","occurrences_before","occurrences_after","renderers_before","renderers_after","triangles_before","triangles_after","vertices_before","vertices_after","buffer_estimated_bytes_before","buffer_estimated_bytes_after","web","vr"
+"OCL","5244","5336","229","234","497168","504472","271528","275724","14654912","14876832","NOT_TESTED","NOT_TESTED"
+"Subgrade","294","856","40","62","1344","18820","2016","14280","80640","682800","NOT_TESTED","NOT_TESTED"
+"Tunnel","8460","8472","190","190","445360","456152","274400","280200","14125120","14440224","NOT_TESTED","NOT_TESTED"

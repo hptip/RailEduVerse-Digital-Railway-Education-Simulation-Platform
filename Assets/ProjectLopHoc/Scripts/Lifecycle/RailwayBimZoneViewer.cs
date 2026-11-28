@@ -30,12 +30,92 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
     public RailwayBimZone[] zones;
     public RailwayBimFacility[] facilities;
     public BridgeBimCatalog modularBridgeCatalog;
+    public InfrastructureDetailedLoader productionLoader;
     string pendingBridgeAsset, pendingBridgeGroup, activeBridgeGroup;
+    InfrastructureDetailedLoader.Occurrence pendingInfrastructure;
+    bool focusInfrastructure;
+    string[] requestedScope;
+    bool requestedFocus;
+
+    internal IEnumerable<GameObject> VisibleZones => loaded.Values;
+
+    internal void PrepareGroupView()
+    {
+        if (productionLoader == null || productionLoader.LoadedCount == 0) return;
+        productionLoader.Unload();
+        releaseAssets = true;
+        controller.bridge = loaded.TryGetValue(BridgeZone, out var bridgeZone)
+            ? bridgeZone.GetComponentInChildren<BridgeBimAdapter>() : null;
+    }
+
+    internal void RefineGroupView(RailwayBimSelectionScope scope)
+    {
+        if (scope == null || productionLoader == null || scope.AssetIds.Count == 0 ||
+            scope.AssetIds.Count > 450 || !scope.AssetIds.All(id => id.StartsWith("G2-", StringComparison.Ordinal))) return;
+        var parts = productionLoader.occurrences.Where(part => scope.AssetIds.Contains(part.assetId)).ToArray();
+        if (parts.Length != scope.AssetIds.Count) return;
+        var chunks = parts.Select(part => (part.domain, part.chunk)).ToHashSet();
+        if (chunks.Count > 3 || parts.Any(part => !loaded.ContainsKey(part.zone)) ||
+            productionLoader.occurrences.Count(part => chunks.Contains((part.domain, part.chunk))) > 450) return;
+        if (productionLoader.LoadedCount == 0 || !productionLoader.HasChunks(chunks))
+            productionLoader.LoadChunks(chunks, loaded.Values.Select(zone => zone.transform.Find("Infrastructure_Production_v1")));
+        controller.bridge = productionLoader.ActiveAdapter;
+    }
+
+    internal void OpenScope(RailwayBimSelectionScope scope)
+    {
+        // The scope keeps all IDs. The route-level view reuses whichever zone is
+        // already visible rather than loading the entire 17-scene environment.
+        if (scope.WholeRoute || scope.Zones.Length == 0) return;
+        var desired = scope.Zones.Where(zone => zones.Any(z => z.id == zone)).ToArray();
+        if (desired.Length == 0) return;
+        string anchor = desired.Contains(ActiveZone) ? ActiveZone : desired[0];
+        OpenInternal(anchor, false, desired);
+    }
+
+    public bool OpenInfrastructureAsset(string assetId,bool focus)
+    {
+        if(productionLoader==null||string.IsNullOrEmpty(assetId)||!assetId.StartsWith("G2-",StringComparison.Ordinal))return false;
+        var part=productionLoader.occurrences.FirstOrDefault(item=>item.assetId==assetId);
+        if(part==null)return false;
+        if(ActiveZone==part.zone&&requested==part.zone)
+        {
+            BindInfrastructure(part,focus);
+            return true;
+        }
+        Open(part.zone,false);
+        pendingInfrastructure=part;
+        focusInfrastructure=focus;
+        return true;
+    }
+
+    void BindInfrastructure(InfrastructureDetailedLoader.Occurrence part,bool focus)
+    {
+        var current=productionLoader;
+        current.SetVisualPresentation(false);
+        if(current.LoadedCount==0||!current.HasChunks(new[] { (part.domain, part.chunk) }))
+        {
+            controller.ReleaseViewEffects();
+            current.Load(part.domain, part.chunk, loaded.Values.Select(zone =>
+                zone.transform.Find("Infrastructure_Production_v1")));
+            current.previewDomain=part.domain;
+            current.previewChunk=part.chunk;
+        }
+        controller.bridge=current.ActiveAdapter;
+        controller.SelectBridge(part.assetId,focus);
+    }
 
     public bool OpenBridgeAsset(string assetId)
     {
         if (modularBridgeCatalog == null || !modularBridgeCatalog.entries.Any(e => e.assetId == assetId)) return false;
         Open(BridgeZone, false);
+        if (ActiveZone == BridgeZone && loaded.TryGetValue(BridgeZone, out var zone))
+        {
+            controller.ReleaseViewEffects();
+            productionLoader?.Unload();
+            controller.bridge = zone.GetComponentInChildren<BridgeBimAdapter>();
+            return controller.SelectBridge(assetId, true);
+        }
         pendingBridgeAsset = assetId;
         return true;
     }
@@ -69,25 +149,21 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
     string requested = DetailedZone;
     Coroutine transition;
     bool releaseAssets;
-    float originalFar, originalFogStart, originalFogEnd;
+    float originalFogStart, originalFogEnd;
     bool savedViewSettings;
 
     void UseOverviewDistance(bool overview)
     {
-        var camera = controller.cameraController.GetComponent<Camera>();
         if (overview && !savedViewSettings)
         {
             savedViewSettings = true;
-            originalFar = camera.farClipPlane;
             originalFogStart = RenderSettings.fogStartDistance;
             originalFogEnd = RenderSettings.fogEndDistance;
-            camera.farClipPlane = Mathf.Max(originalFar, 3200);
             RenderSettings.fogStartDistance = Mathf.Max(originalFogStart, 2000);
             RenderSettings.fogEndDistance = Mathf.Max(originalFogEnd, 3200);
         }
         else if (!overview && savedViewSettings)
         {
-            camera.farClipPlane = originalFar;
             RenderSettings.fogStartDistance = originalFogStart;
             RenderSettings.fogEndDistance = originalFogEnd;
             savedViewSettings = false;
@@ -96,11 +172,19 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
 
     public void Open(string zoneId, bool focus = true)
     {
+        OpenInternal(zoneId, focus, null);
+    }
+
+    void OpenInternal(string zoneId, bool focus, string[] scope)
+    {
         if (!zones.Any(x => x.id == zoneId)) return;
         pendingBridgeAsset = null;
         pendingBridgeGroup = null;
         activeBridgeGroup = null;
+        pendingInfrastructure=null;
         requested = zoneId;
+        requestedFocus = focus;
+        requestedScope = scope;
         if (zoneId == DetailedZone)
         {
             Commit(zoneId, Array.Empty<string>(), focus);
@@ -108,7 +192,7 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
         }
 
         if (transition != null) return;
-        if (ActiveZone == zoneId)
+        if (ActiveZone == zoneId && !NeedsScopeLoad())
         {
             if (focus) FocusZone(zoneId);
             return;
@@ -116,14 +200,17 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
         transition = StartCoroutine(Load());
     }
 
+    bool NeedsScopeLoad() => requestedScope != null && requestedScope.Any(zone => !loaded.ContainsKey(zone));
+
     string[] Dependencies(string id) => facilities.Where(x => x.covered.Contains(id))
-        .SelectMany(x => x.covered).Append(id).Distinct().OrderBy(x => x, StringComparer.Ordinal).ToArray();
+        .SelectMany(x => x.covered).Concat(requestedScope ?? Array.Empty<string>())
+        .Append(id).Distinct().OrderBy(x => x, StringComparer.Ordinal).ToArray();
 
     IEnumerator Load()
     {
         // Always yield before any commit, so a synchronous completion cannot leave a stale Coroutine handle.
         yield return null;
-        while (requested != ActiveZone)
+        while (requested != ActiveZone || NeedsScopeLoad())
         {
             string target = requested;
             string[] wanted = Dependencies(target);
@@ -154,7 +241,7 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
             if (failed || requested != target)
             {
                 foreach (var instance in incoming.Values) Destroy(instance);
-                if (failed && requested == target) requested = ActiveZone;
+                if (failed && requested == target) { requested = ActiveZone; requestedScope = null; }
                 if (incoming.Count > 0) releaseAssets = true;
                 continue;
             }
@@ -165,7 +252,7 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
                 entry.Value.transform.SetParent(transform, false);
                 loaded.Add(entry.Key, entry.Value);
             }
-            Commit(target, wanted, true);
+            Commit(target, wanted, requestedFocus);
         }
         transition = null;
         if (releaseAssets)
@@ -180,10 +267,16 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
 
     void Commit(string id, IReadOnlyCollection<string> wanted, bool focus)
     {
-        if (ActiveZone == id)
+        if (ActiveZone == id && id == DetailedZone)
         {
             if (focus && id == DetailedZone) controller.FocusDetailedZone();
             return;
+        }
+        controller.ReleaseZoneEffects();
+        if(productionLoader!=null&&productionLoader.LoadedCount>0)
+        {
+            productionLoader.Unload();
+            releaseAssets=true;
         }
         foreach (string old in loaded.Keys.Where(key => !wanted.Contains(key)).ToArray())
         {
@@ -198,6 +291,13 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
             ? bridgeZone.GetComponentInChildren<BridgeBimAdapter>() : null;
         UseOverviewDistance(id != DetailedZone);
         controller.SetZonePresentation(id == DetailedZone);
+        bool focusedInfrastructure=pendingInfrastructure!=null&&pendingInfrastructure.zone==id;
+        if(focusedInfrastructure)
+        {
+            var part=pendingInfrastructure;
+            pendingInfrastructure=null;
+            BindInfrastructure(part,focusInfrastructure);
+        }
         if (id == DetailedZone)
         {
             if (focus) controller.FocusDetailedZone();
@@ -209,7 +309,7 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
         }
         else if (pendingBridgeGroup != null && id == BridgeZone)
             FocusBridgeGroup(pendingBridgeGroup);
-        else if (focus && pendingBridgeAsset == null) FocusZone(id);
+        else if (focus && pendingBridgeAsset == null && !focusedInfrastructure) FocusZone(id);
         int renders = loaded.Values.Sum(x => x.GetComponentsInChildren<Renderer>().Count(r => r.enabled));
         controller.ReportZone(id + " · " + (id == DetailedZone ? "hồ sơ ray hiện có" : "hình học tuyến"));
         RailwayBimExplorer.Audit($"ZoneReady,{id},{loaded.Count},{renders},{string.Join("|", wanted)}");
@@ -220,6 +320,8 @@ public sealed class RailwayBimZoneViewer : MonoBehaviour
             pendingBridgeAsset = null;
             controller.SelectBridge(asset, true);
         }
+        RefineGroupView(controller.GroupSelection);
+        controller.RefreshScopeView();
     }
 
     void FocusZone(string id)

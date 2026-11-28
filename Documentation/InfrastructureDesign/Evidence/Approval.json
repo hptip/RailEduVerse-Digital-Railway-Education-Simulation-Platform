@@ -1,0 +1,19 @@
+{
+  "approved": true,
+  "user_confirmation": "Người dùng duyệt hình thức G2 Finalization và cho phép tích hợp hình học tự sinh, OCL trực quan, các công trình độc lập đạt kiểm tra. Giữ OCL ga hiện hành.",
+  "candidate_fingerprint": "6ac52aa3900b7364eba7b6ce1d79cbc222edd7c3782aa65271205c6b872d093c",
+  "candidate_manifest": "Production_Candidate_Manifest.csv",
+  "scope": [
+    "OCL",
+    "Tunnel",
+    "Subgrade",
+    "BIMViewer"
+  ],
+  "excluded": [
+    "OCL-Station"
+  ],
+  "exceptions": [
+    "SRC-02: approved independent parametric assets only; research rights unverified",
+    "OCL-03: visual-only; pantograph physical contact NOT VERIFIED"
+  ]
+}

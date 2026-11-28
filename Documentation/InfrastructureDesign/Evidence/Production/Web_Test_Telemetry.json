@@ -1,0 +1,205 @@
+{
+  "drive": {
+    "loginAndMenuMs": 10113.0767,
+    "windows": [
+      "[InfraDrive] View,Subgrade,350.08,40.00,0,282,1334184,559620976\n",
+      "[InfraDrive] View,Forest_02,1140.19,155.61,-1,266,1477849,573536476\n",
+      "[InfraDrive] View,Tunnel_02_Interior,1480.35,187.71,-1,250,1462461,583265782\n",
+      "[InfraDrive] View,Forest_01,2230.35,200.00,-1,307,1627443,606447429\n",
+      "[InfraDrive] View,Tunnel_01_Interior,2650.17,200.00,-1,251,1452739,619586823\n",
+      "[InfraDrive] View,OCL_Open,3140.37,200.00,0,366,1488044,631637650\n",
+      "[InfraDrive] View,SO201,3920.31,200.00,3,217,591919,634920209\n",
+      "[InfraDrive] View,SO201_Exit,4255.48,200.00,-1,210,713052,643440054\n"
+    ],
+    "summary": "[InfraDrive] End,start=25.00,last=4900.27,speed=200.00,p95=9.00,p99=9.00,renderers=607,loaded=12,unloaded=9,missing=0,windows=8\n",
+    "transitions": [
+      "[InfraDrive] Load,Zone_010,355.09\n",
+      "[InfraDrive] Load,Zone_011,355.09\n",
+      "[InfraDrive] Load,Zone_012,355.09\n",
+      "[InfraDrive] Load,Zone_013,455.12\n",
+      "[InfraDrive] Unload,Zone_010,755.68\n",
+      "[InfraDrive] Load,Zone_014,1156.84\n",
+      "[InfraDrive] Unload,Zone_011,1257.56\n",
+      "[InfraDrive] Load,Zone_015,1558.63\n",
+      "[InfraDrive] Load,Zone_016,1558.63\n",
+      "[InfraDrive] Unload,Zone_012,2109.98\n",
+      "[InfraDrive] Unload,Zone_013,2261.34\n",
+      "[InfraDrive] Load,Zone_017,2614.51\n",
+      "[InfraDrive] Load,Zone_018,3018.11\n",
+      "[InfraDrive] Unload,Zone_014,3219.53\n",
+      "[InfraDrive] Unload,Zone_015,3269.96\n",
+      "[InfraDrive] Load,Zone_019,3622.69\n",
+      "[InfraDrive] Unload,Zone_016,3723.62\n",
+      "[InfraDrive] Load,Zone_020,4127.22\n",
+      "[InfraDrive] Load,Zone_021,4631.81\n",
+      "[InfraDrive] Unload,Zone_017,4631.81\n",
+      "[InfraDrive] Unload,Zone_018,4732.68\n"
+    ],
+    "errors": []
+  },
+  "bim": {
+    "assetAttempted": "G2-Subgrade-S0300-000-Layer00",
+    "logs": [
+      "[RailwayBim] Ready 0.36s after scene load\n",
+      "[BIMTree] Frame,8.000,19,0,0\n",
+      "[BIMTree] Frame,39468.000,19,112282844,275000\n",
+      "[BIMTree] Frame,8.000,19,0,0\n",
+      "[BIMTree] Frame,8.000,19,0,0\n",
+      "[BIMTree] Search,38.815,1,19\n",
+      "[BIMTree] Select,2.530,G2-Subgrade-S0300-000-Layer00\n",
+      "[BIMTree] ZoneReady,Zone_011,2,123,Zone_010|Zone_011\n",
+      "[BIMTree] Frame,8.000,19,0,0\n",
+      "[BIMTree] Frame,8.000,19,0,0\n",
+      "[BIMTree] Frame,345.000,19,0,0\n"
+    ]
+  },
+  "notes": [],
+  "browserMetrics": {
+    "metrics": [
+      {
+        "name": "Timestamp",
+        "value": 558272.057822
+      },
+      {
+        "name": "AudioHandlers",
+        "value": 1
+      },
+      {
+        "name": "AudioWorkletProcessors",
+        "value": 0
+      },
+      {
+        "name": "Documents",
+        "value": 1
+      },
+      {
+        "name": "Frames",
+        "value": 1
+      },
+      {
+        "name": "JSEventListeners",
+        "value": 55
+      },
+      {
+        "name": "LayoutObjects",
+        "value": 5
+      },
+      {
+        "name": "MediaKeySessions",
+        "value": 0
+      },
+      {
+        "name": "MediaKeys",
+        "value": 0
+      },
+      {
+        "name": "Nodes",
+        "value": 121
+      },
+      {
+        "name": "Resources",
+        "value": 17
+      },
+      {
+        "name": "ContextLifecycleStateObservers",
+        "value": 28
+      },
+      {
+        "name": "V8PerContextDatas",
+        "value": 1
+      },
+      {
+        "name": "WorkerGlobalScopes",
+        "value": 0
+      },
+      {
+        "name": "UACSSResources",
+        "value": 0
+      },
+      {
+        "name": "RTCPeerConnections",
+        "value": 0
+      },
+      {
+        "name": "ResourceFetchers",
+        "value": 1
+      },
+      {
+        "name": "AdSubframes",
+        "value": 0
+      },
+      {
+        "name": "DetachedScriptStates",
+        "value": 0
+      },
+      {
+        "name": "ArrayBufferContents",
+        "value": 86414
+      },
+      {
+        "name": "LayoutCount",
+        "value": 167
+      },
+      {
+        "name": "RecalcStyleCount",
+        "value": 490
+      },
+      {
+        "name": "LayoutDuration",
+        "value": 0.01132
+      },
+      {
+        "name": "RecalcStyleDuration",
+        "value": 0.027384
+      },
+      {
+        "name": "DevToolsCommandDuration",
+        "value": 0.002227
+      },
+      {
+        "name": "ScriptDuration",
+        "value": 46.393268
+      },
+      {
+        "name": "V8CompileDuration",
+        "value": 0.00036
+      },
+      {
+        "name": "TaskDuration",
+        "value": 49.860696
+      },
+      {
+        "name": "TaskOtherDuration",
+        "value": 3.426137
+      },
+      {
+        "name": "ThreadTime",
+        "value": 48.894797
+      },
+      {
+        "name": "ProcessTime",
+        "value": 98.874054
+      },
+      {
+        "name": "JSHeapUsedSize",
+        "value": 100625588
+      },
+      {
+        "name": "JSHeapTotalSize",
+        "value": 134119424
+      },
+      {
+        "name": "FirstMeaningfulPaint",
+        "value": 558212.705746
+      },
+      {
+        "name": "DomContentLoaded",
+        "value": 558212.691869
+      },
+      {
+        "name": "NavigationStart",
+        "value": 558212.673196
+      }
+    ]
+  }
+}

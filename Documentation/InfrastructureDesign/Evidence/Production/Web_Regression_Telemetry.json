@@ -1,0 +1,17 @@
+{
+  "Campus": {
+    "loginMenuMs": 10759.418,
+    "frameCaptured": true,
+    "exceptions": []
+  },
+  "Showroom": {
+    "loginMenuMs": 8719.3396,
+    "frameCaptured": true,
+    "exceptions": []
+  },
+  "Classroom": {
+    "loginMenuMs": 8465.784800000001,
+    "frameCaptured": true,
+    "exceptions": []
+  }
+}

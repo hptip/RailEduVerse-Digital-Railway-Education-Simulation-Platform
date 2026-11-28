@@ -1,0 +1,9 @@
+{
+  "markerPersisted": true,
+  "console": [],
+  "fixture": "TaiSanHaTang_Web_Check.xlsx",
+  "stage": "Operation",
+  "reopenFrame": true,
+  "manualSave": "[BIMTree] BridgeSave,G2-Subgrade-S0400-000-Layer00,Lifecycle,Operation\n",
+  "error": "Manual edit persisted in IndexedDB: [BIMTree] Frame,8.000,22,0,255000"
+}

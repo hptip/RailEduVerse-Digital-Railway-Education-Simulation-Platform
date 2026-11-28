@@ -357,7 +357,11 @@ static partial class SO201OriginalBridgeAudit
             }
         }
         if (vertices.Count == 0) return null;
-        var mesh = new Mesh { subMeshCount = source.subMeshCount };
+        var mesh = new Mesh
+        {
+            indexFormat = vertices.Count > ushort.MaxValue ? UnityEngine.Rendering.IndexFormat.UInt32 : UnityEngine.Rendering.IndexFormat.UInt16,
+            subMeshCount = source.subMeshCount
+        };
         mesh.SetVertices(vertices);
         mesh.SetNormals(outputNormals);
         mesh.SetUVs(0, outputUv);

@@ -79,12 +79,12 @@ sealed class RailwayBimExplorer
         list = Rect("Danh sách", panel);
         Fill(list, 10, 127, 10, 105);
         ui.search.transform.SetParent(list, false);
-        Top((RectTransform)ui.search.transform, 0, 42);
+        Top((RectTransform)ui.search.transform, 0, 42, 0, 128);
         ui.search.textComponent.fontSize = 17;
         if (ui.search.placeholder is TMP_Text placeholder)
         {
             placeholder.fontSize = 17;
-            placeholder.text = "Tìm theo tên, mã hoặc loại cấu kiện…";
+            placeholder.text = "Tìm theo tên, mã hoặc “hồ sơ mẫu”…";
         }
         count = Text("Tree count", list, ui.itemTemplate, 13);
         count.color = Muted;
@@ -93,6 +93,14 @@ sealed class RailwayBimExplorer
         treeScroll.transform.SetParent(list, false);
         Fill((RectTransform)treeScroll.transform, 0, 71);
         ConfigureTreeScroll(treeScroll);
+        var profileFilter = UnityEngine.Object.Instantiate(ui.itemTemplate, list);
+        profileFilter.name = "BIM Profile Filter";
+        profileFilter.gameObject.SetActive(true);
+        var filterRect = (RectTransform)profileFilter.transform;
+        filterRect.anchorMin = filterRect.anchorMax = Vector2.one;
+        filterRect.pivot = Vector2.one;
+        filterRect.anchoredPosition = Vector2.zero;
+        filterRect.sizeDelta = new Vector2(120, 42);
 
         details = Rect("Hồ sơ cấu kiện", panel);
         Fill(details, 10, 127, 10, 105);
@@ -153,10 +161,9 @@ sealed class RailwayBimExplorer
             ui.focusButton = UnityEngine.Object.Instantiate(ui.itemTemplate, tools);
             ui.focusButton.gameObject.name = "FocusSelection";
             ui.focusButton.gameObject.SetActive(true);
-            ui.focusButton.onClick.AddListener(ui.controller.FocusSelected);
         }
         ButtonRow(tools, new[] { ui.detailButton, ui.backButton, ui.focusButton, ui.hideButton, ui.resetButton },
-            new[] { "Chi tiết", "Quay lại", "Định vị", "Cô lập", "Toàn cảnh" });
+            new[] { "Tách", "Mặt cắt", "Định vị", "Cô lập", "X-ray" });
         ui.status.transform.SetParent(panel, false);
         Bottom(ui.status.rectTransform, 2, 43, 13, 130);
         ui.status.fontSize = 13;
@@ -209,6 +216,22 @@ sealed class RailwayBimExplorer
             fromTree = true;
             try { select(id, focus); }
             finally { fromTree = false; }
+        }, scope =>
+        {
+            fromTree = true;
+            try { ui.controller.SelectGroup(scope); }
+            finally { fromTree = false; }
+        });
+        Label(profileFilter, "Tất cả", 14);
+        ColorButton(profileFilter, false);
+        profileFilter.onClick.RemoveAllListeners();
+        profileFilter.onClick.AddListener(() =>
+        {
+            tree.CycleFilter();
+            var text = tree.FilterLabel;
+            Label(profileFilter, text, 14);
+            ColorButton(profileFilter, text != "Tất cả");
+            Audit("ProfileFilter," + text + "," + tree.VisibleCount);
         });
         tree.CloseSearch += () => ui.search.SetTextWithoutNotify("");
         ui.search.onValueChanged.AddListener(_ => searchAt = Time.unscaledTime + .16f);
@@ -263,6 +286,7 @@ sealed class RailwayBimExplorer
     public void Refresh(string id)
     {
         tree.Load(ui.controller.Store, ui.controller.zoneViewer);
+        id = ui.controller.GroupSelection?.Key ?? id;
         if (!fromTree && id != null && ui.search.text.Length > 0 && id != lastSelection)
         {
             ui.search.SetTextWithoutNotify("");
@@ -270,19 +294,22 @@ sealed class RailwayBimExplorer
         }
         tree.SetSelection(id);
         lastSelection = id;
-        selectedCaption.text = id == null ? "Chọn cấu kiện để xem hồ sơ" : tree.Label(id) + "   ·   " + id;
+        selectedCaption.text = ui.controller.GroupSelection is { } scope
+            ? scope.Label + " · " + scope.AssetIds.Count.ToString("N0") + " cấu kiện"
+            : id == null ? "Chọn một nhóm hoặc cấu kiện" : tree.Label(id) + "   ·   " + id;
         ui.breadcrumb.text = tree.Location(id);
         Show(ui.ActiveTab, id);
     }
 
     public void NamesChanged(string id = null) => tree.RefreshNames(ui.controller.Store, id);
     public string SelectionLabel(string id) => tree.Label(id);
+    public string ProfileType(string id) => tree.ProfileType(id);
 
     public void Show(string tab, string id)
     {
         bool listing = tab == "General";
-        bool selected = id != null;
-        bool life = tab == "Lifecycle" && selected;
+        bool selected = id != null || ui.controller.GroupSelection != null;
+        bool life = tab == "Lifecycle" && id != null && ui.controller.GroupSelection == null;
         list.gameObject.SetActive(listing);
         details.gameObject.SetActive(!listing);
         empty.gameObject.SetActive(!selected);

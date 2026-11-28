@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "path": "Assets/ExternalBIM/OverheadLine/Source/electric+pole.blend",
+      "bytes": 7638804,
+      "sha256": "0e67bd26ae921b3f62661e9b8bb6e74f7b5dca2b945082a08d692db32b5c61c7",
+      "license_status": "UNVERIFIED_FOR_RELEASE"
+    },
+    {
+      "path": "Assets/ExternalBIM/OverheadLine/Source/electric+pole.fbx",
+      "bytes": 1671580,
+      "sha256": "dbe14f97637cbb2da882a3ce4b87fe855d1124f86fe749ff8725896497934a2f",
+      "license_status": "UNVERIFIED_FOR_RELEASE"
+    },
+    {
+      "path": "Assets/ExternalBIM/Tunnel/Source/LoD5.ifc",
+      "bytes": 21929609,
+      "sha256": "bf0e3c6eab8c2702f2cd2d4838be03ad6a313c9391e9be811e1840cf121c95ce",
+      "license_status": "UNVERIFIED_FOR_RELEASE"
+    },
+    {
+      "path": "Assets/ExternalBIM/Subgrade/Source/UT-Earthworks-01.ifc",
+      "bytes": 1293140,
+      "sha256": "57ed29ea3a5e44da38af326c002dbf158bc7ad67a6a6e062626bf02c6fbff48c",
+      "license_status": "CC_BY_4_0_repository_reported_verify_attribution"
+    }
+  ],
+  "note": "Hashes from user-uploaded files; do not overwrite divergent files; investigate. Source assets not distributed in this kit."
+}

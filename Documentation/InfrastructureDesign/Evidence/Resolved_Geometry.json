@@ -1,0 +1,258 @@
+{
+    "units": "m",
+    "coordinate_frame": "Unity Y up; sample +Z forward, X lateral from midpoint of both tracks, Y = top of running rail",
+    "measurements": [
+        {
+            "name": "track_center_spacing",
+            "unit": "m",
+            "method": "World mesh vertices projected onto the spline normal at chainage 3175.001 m",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "±0.08 m vs serialized 6.400022 m",
+            "reason": "Centres of each same-length track mesh envelope",
+            "value": 6.399916648864746
+        },
+        {
+            "name": "top_of_rail_world",
+            "unit": "m",
+            "method": "Highest transformed rail vertex",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Actual sampled mesh",
+            "reason": "Vertical datum",
+            "value": 9.84536361694336
+        },
+        {
+            "name": "rail_support_world",
+            "unit": "m",
+            "method": "Lowest transformed rail module vertex",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Actual sampled mesh",
+            "reason": "Deck/subgrade interface",
+            "value": 8.930954933166504
+        },
+        {
+            "name": "train_swept_half_width",
+            "unit": "m",
+            "method": "SO201 TrainBounds plus worst lateral tangent swing at 5 m samples",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Conservative envelope",
+            "reason": "Includes both cars",
+            "value": 1.7651029825210572
+        },
+        {
+            "name": "train_height_over_rail",
+            "unit": "m",
+            "method": "SO201 TrainBounds and front-car Y offset above measured rail head",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Conservative rendered envelope",
+            "reason": "OCL and tunnel sizing",
+            "value": 5.573269367218018
+        },
+        {
+            "name": "contact_wire_height",
+            "unit": "m",
+            "method": "Rounded upward from the measured roof envelope + 0.48 m",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "≥ 0.42 m roof-to-wire-surface clearance",
+            "reason": "G1 simulation staging; pantograph contact remains unverified",
+            "value": 6.099999904632568
+        },
+        {
+            "name": "messenger_endpoint_height",
+            "unit": "m",
+            "method": "Contact height + 0.75 m assumed separation",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "> contact wire at all samples",
+            "reason": "Space for working droppers",
+            "value": 6.849999904632568
+        },
+        {
+            "name": "tunnel_inner_width",
+            "unit": "m",
+            "method": "Track/train envelope + inspection path and services",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Interior geometry outside swept train envelope",
+            "reason": "Single double-track bore",
+            "value": 13.5
+        },
+        {
+            "name": "tunnel_inner_height",
+            "unit": "m",
+            "method": "Measured train and OCL clearance, then arch rise",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "No intrusion",
+            "reason": "Bore from its floor to crown",
+            "value": 10.319408416748047
+        },
+        {
+            "name": "bridge_current_length",
+            "unit": "m",
+            "method": "Live fixed-infrastructure registry",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Recorded only",
+            "reason": "Freeze accepted SO201",
+            "value": 540.12060546875
+        },
+        {
+            "name": "bridge_world_bounds_Y",
+            "unit": "m",
+            "method": "Live renderer extents",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Recorded only",
+            "reason": "Avoid mutating accepted bridge",
+            "value": 66.62805938720703
+        },
+        {
+            "name": "active_streaming_zone_count",
+            "unit": "count",
+            "method": "Live registry",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Recorded only",
+            "reason": "Do not enable extra zones",
+            "value": 17.0
+        },
+        {
+            "name": "subgrade_existing_terrain_Y",
+            "unit": "m",
+            "method": "Current Zone_010 terrain, not IFC",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Recorded only",
+            "reason": "Comparison control",
+            "value": 22.000202178955079
+        },
+        {
+            "name": "station_sampled_overhead_hits",
+            "unit": "count",
+            "method": "Actual station triangles over the two-track OCL cross section",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Report sampled coverage; no operating clearance sign-off",
+            "reason": "G1 only",
+            "value": 0.0
+        },
+        {
+            "name": "ocl_outer_mount_axis",
+            "unit": "m",
+            "method": "Measured train swept section + 0.88 m setback",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Fits sampled SO201 deck pavement",
+            "reason": "One G1 bridge mounting position",
+            "value": 6.050000190734863
+        },
+        {
+            "name": "ocl_review_span",
+            "unit": "m",
+            "method": "Fit within measured rail preview segment",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "G1 sample only",
+            "reason": "Staging span, not permanent support spacing",
+            "value": 21.0
+        },
+        {
+            "name": "messenger_sag",
+            "unit": "m",
+            "method": "Parabolic demonstration cable from two measured anchor locations",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "< messenger separation",
+            "reason": "Leaves a positive dropper length",
+            "value": 0.2800000011920929
+        },
+        {
+            "name": "lining_thickness",
+            "unit": "m",
+            "method": "Parametric panel thickness for mock-up",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "> 0 with no bore intrusion",
+            "reason": "G1 visual sizing, not engineering",
+            "value": 0.4099999964237213
+        },
+        {
+            "name": "lining_panel_count",
+            "unit": "count",
+            "method": "Arch tessellation split by physical segment plus two sidewalls",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "11 independent meshes per ring",
+            "reason": "Explicit joints",
+            "value": 11.0
+        },
+        {
+            "name": "lining_ring_length",
+            "unit": "m",
+            "method": "Fifteen pitches of the existing precast ring",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Panel length < pitch with joint gap",
+            "reason": "G1 repeatable template",
+            "value": 2.4000000953674318
+        },
+        {
+            "name": "tunnel_refined_length",
+            "unit": "m",
+            "method": "15 serialized ring pitches",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "G1 sample only",
+            "reason": "Excludes projecting portals",
+            "value": 36.0
+        },
+        {
+            "name": "subgrade_module_length",
+            "unit": "m",
+            "method": "Fits the measured rail sample",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "One longitudinal module",
+            "reason": "G1 only",
+            "value": 24.0
+        },
+        {
+            "name": "subgrade_layer_0",
+            "unit": "m",
+            "method": "Explicit parametric mock-up layer thickness",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Positive and no interface gap",
+            "reason": "Appearance and BIM inspection",
+            "value": 0.25
+        },
+        {
+            "name": "subgrade_layer_1",
+            "unit": "m",
+            "method": "Explicit parametric mock-up layer thickness",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Positive and no interface gap",
+            "reason": "Appearance and BIM inspection",
+            "value": 0.3799999952316284
+        },
+        {
+            "name": "subgrade_layer_2",
+            "unit": "m",
+            "method": "Explicit parametric mock-up layer thickness",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Positive and no interface gap",
+            "reason": "Appearance and BIM inspection",
+            "value": 0.5099999904632568
+        },
+        {
+            "name": "subgrade_layer_3",
+            "unit": "m",
+            "method": "Explicit parametric mock-up layer thickness",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Positive and no interface gap",
+            "reason": "Appearance and BIM inspection",
+            "value": 1.0299999713897706
+        },
+        {
+            "name": "subgrade_layer_4",
+            "unit": "m",
+            "method": "Explicit parametric mock-up layer thickness",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Positive and no interface gap",
+            "reason": "Appearance and BIM inspection",
+            "value": 0.41999998688697817
+        },
+        {
+            "name": "subgrade_layer_5",
+            "unit": "m",
+            "method": "Explicit parametric mock-up layer thickness",
+            "evidence": "Unity_Geometry.csv",
+            "threshold": "Positive and no interface gap",
+            "reason": "Appearance and BIM inspection",
+            "value": 0.7200000286102295
+        }
+    ]
+}

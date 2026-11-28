@@ -10,12 +10,10 @@ namespace UttVr.BridgePilot
         public string GlobalId => globalId;
         public Renderer[] Renderers => renderers;
 
-#if UNITY_EDITOR
         public void Configure(string id, Renderer[] renderersForId)
         {
             globalId = id;
             renderers = renderersForId;
         }
-#endif
     }
 }
