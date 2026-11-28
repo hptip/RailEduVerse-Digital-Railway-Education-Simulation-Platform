@@ -196,21 +196,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
             return;
         }
 
-        Vector3 spawnPos = targetPoint.position;
-        Quaternion spawnRot = targetPoint.rotation;
-        if (UttWebPresentation.Active && gameObject.scene.name == "Showroom")
-        {
-            var exhibit = FindFirstObjectByType<UTT.SaBan.SaBanRoot>();
-            if (exhibit != null)
-            {
-                // Start on the viewing side of the exhibit, below the showroom roof.
-                var center = exhibit.transform.position;
-                spawnPos = new Vector3(center.x, targetPoint.position.y, center.z + 27f);
-                spawnRot = Quaternion.LookRotation(Vector3.back);
-            }
-        }
-
-        spawnPos = SnapToGround(spawnPos);
+        ComputeSpawnPose(targetPoint, out Vector3 spawnPos, out Quaternion spawnRot);
 
         try
         {
@@ -276,11 +262,14 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     /// thấp hơn collider thật (Floor ở Campus: collider cao hơn mặt Plane khoảng 0,26 m); nhân vật
     /// xuất hiện lún vào sàn sẽ bị đẩy ra và bật lên cao.
     /// </summary>
-    private static Vector3 SnapToGround(Vector3 position)
+    public static Vector3 SnapToGround(Vector3 position) => SnapToGround(position, out _);
+
+    /// <summary>Như trên, kèm cho biết có tìm thấy mặt sàn hay không.</summary>
+    public static Vector3 SnapToGround(Vector3 position, out bool found)
     {
         const float above = 1.5f, below = 4f;
         RaycastHit[] hits = Physics.RaycastAll(position + Vector3.up * above, Vector3.down, above + below, ~0, QueryTriggerInteraction.Ignore);
-        bool found = false;
+        found = false;
         float bestY = position.y, bestGap = float.MaxValue;
         foreach (RaycastHit hit in hits)
         {
@@ -291,6 +280,36 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
         return position;
     }
 
+    /// <summary>
+    /// Vị trí xuất hiện thật của người chơi trong scene hiện tại (dùng chung cho lúc vào scene và nút
+    /// "Về điểm xuất phát" trên bản đồ), đã đặt lên mặt sàn.
+    /// </summary>
+    public bool TryGetSpawnPose(bool isLecturer, out Vector3 position, out Quaternion rotation)
+    {
+        Transform point = ResolveSpawnPoint(isLecturer);
+        if (point == null) { position = Vector3.zero; rotation = Quaternion.identity; return false; }
+        ComputeSpawnPose(point, out position, out rotation);
+        return true;
+    }
+
+    private void ComputeSpawnPose(Transform targetPoint, out Vector3 spawnPos, out Quaternion spawnRot)
+    {
+        spawnPos = targetPoint.position;
+        spawnRot = targetPoint.rotation;
+        if (UttWebPresentation.Active && gameObject.scene.name == "Showroom")
+        {
+            var exhibit = FindFirstObjectByType<UTT.SaBan.SaBanRoot>();
+            if (exhibit != null)
+            {
+                // Start on the viewing side of the exhibit, below the showroom roof.
+                var center = exhibit.transform.position;
+                spawnPos = new Vector3(center.x, targetPoint.position.y, center.z + 27f);
+                spawnRot = Quaternion.LookRotation(Vector3.back);
+            }
+        }
+        spawnPos = SnapToGround(spawnPos);
+    }
+
     private Transform ResolveSpawnPoint(bool isLecturer)
     {
         Transform configuredPoint = isLecturer ? lecturerSpawnPoint : studentSpawnPoint;
@@ -299,9 +318,10 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         // YenTu's spawn markers are children of a train prefab. Resolve them by name
         // as a runtime fallback because prefab-child references can be null in APK builds.
-        GameObject train = GameObject.Find("Train_THSR_700T");
-        if (train == null)
+        Transform trainT = UttTrainSeats.FindRealTrain(); // bỏ qua tàu mô hình trong sa bàn
+        if (trainT == null)
             return null;
+        GameObject train = trainT.gameObject;
 
         string expectedName = isLecturer ? "Spawn_Lecturer" : "Spawn_Student";
         Transform[] descendants = train.GetComponentsInChildren<Transform>(true);

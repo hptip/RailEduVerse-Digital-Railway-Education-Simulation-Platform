@@ -249,10 +249,11 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
                 }
             }
 
-            GameObject trainObj = GameObject.Find("Train_THSR_700T");
+            // Chỉ tàu thật (bỏ qua tàu mô hình trong sa bàn ở Showroom)
+            Transform trainObj = UttTrainSeats.FindRealTrain();
             if (trainObj != null)
             {
-                _trainRoot = trainObj.transform;
+                _trainRoot = trainObj;
                 transform.SetParent(_trainRoot, true);
                 _horizontalRotation = transform.localEulerAngles.y;
             }
@@ -1355,8 +1356,7 @@ public class FirstPersonController : NetworkBehaviour, ITunnelingVignetteProvide
         {
             if (_remoteTrainRoot == null)
             {
-                GameObject train = GameObject.Find("Train_THSR_700T");
-                _remoteTrainRoot = train != null ? train.transform : null;
+                _remoteTrainRoot = UttTrainSeats.FindRealTrain();
                 if (_remoteTrainRoot == null) return;
             }
             if (transform.parent != _remoteTrainRoot)

@@ -140,7 +140,7 @@ public sealed class UttMinimap : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (mode == LoadSceneMode.Additive) return; // vùng đường ray nạp thêm ở Yên Tử
+        if (mode == LoadSceneMode.Additive) { _floorDirty = true; return; } // vùng đường ray nạp thêm ở Yên Tử
         _cfg = CfgFor(scene.name);
         _zoom = _cfg.zoom;
         _hasCapture = false;
@@ -149,6 +149,90 @@ public sealed class UttMinimap : MonoBehaviour
         _nextPlayerScan = 0f;
         if (WorldMapOpen) CloseWorldMap();
         DisableLegacyMinimaps();
+        _floorY = float.NaN; _floorDirty = true; _nextFloorScan = Time.unscaledTime + 2f; _fallRescues = 0; _ncc = null; _nccOwner = null;
+        _hasHome = false; _hasSafe = false; _groundedSince = -1f;
+    }
+
+    // =========================================================
+    // Điểm xuất phát thật: chỗ người chơi ĐÃ đứng vững sau khi vào scene (không tính toán từ điểm spawn trong scene,
+    // vì ở Showroom điểm spawn gốc không có sàn). Kèm "chỗ an toàn gần nhất" để cứu khi rơi.
+    bool _hasHome, _hasSafe;
+    NetworkCharacterController _ncc;
+    FirstPersonController _nccOwner;
+    Vector3 _homePos, _safePos;
+    Quaternion _homeRot;
+    float _groundedSince = -1f, _nextSafeSample;
+
+    void TrackSafeGround(FirstPersonController me)
+    {
+        if (me.isDriving) { _groundedSince = -1f; return; }
+        bool grounded;
+        if (_nccOwner != me) { _nccOwner = me; _ncc = me.GetComponent<NetworkCharacterController>(); }
+        var ncc = _ncc;
+        if (ncc != null) grounded = ncc.Grounded;
+        else { var cc = me.GetComponent<CharacterController>(); grounded = cc != null && cc.isGrounded; }
+        Vector3 p = me.transform.position;
+        if (!grounded || (!float.IsNaN(_floorY) && p.y < _floorY - 1f)) { _groundedSince = -1f; return; }
+        if (_groundedSince < 0f) _groundedSince = Time.unscaledTime;
+        if (Time.unscaledTime - _groundedSince < 1f) return; // đứng trên sàn liên tục 1 giây mới tính là chỗ an toàn
+
+        if (!_hasHome)
+        {
+            _hasHome = true;
+            _homePos = p;
+            Vector3 f = me.transform.forward; f.y = 0f;
+            _homeRot = f.sqrMagnitude > 0.01f ? Quaternion.LookRotation(f) : me.transform.rotation;
+            Debug.Log($"[UttMinimap] Ghi nhớ điểm xuất phát {_homePos} (scene {SceneManager.GetActiveScene().name})");
+        }
+        if (Time.unscaledTime >= _nextSafeSample)
+        {
+            _nextSafeSample = Time.unscaledTime + 0.5f;
+            _safePos = p; _hasSafe = true;
+        }
+    }
+
+    // =========================================================
+    // Lưới an toàn: rơi xuyên sàn / rơi khỏi map thì tự đưa về điểm xuất phát (mọi scene có minimap).
+    float _floorY = float.NaN, _nextFloorScan, _nextFallCheck;
+    bool _floorDirty = true;
+    int _fallRescues;
+
+    void GuardFall(FirstPersonController me)
+    {
+        if (Time.unscaledTime < _nextFallCheck) return;
+        _nextFallCheck = Time.unscaledTime + 0.25f;
+        if (me.isDriving || _cfg.teleport == false) return; // trên tàu (Yên Tử) vị trí do tàu quyết định
+
+        // Đáy của map = mặt dưới thấp nhất của các va chạm trong scene. Chỉ đo khi vào scene (sau 2 giây cho scene ổn định)
+        // và khi có vùng nạp thêm, không quét liên tục (Campus có rất nhiều collider).
+        if (_floorDirty && Time.unscaledTime >= _nextFloorScan)
+        {
+            _floorDirty = false;
+            _nextFloorScan = Time.unscaledTime + 5f;
+            float min = float.PositiveInfinity;
+            foreach (var c in FindObjectsByType<Collider>(FindObjectsSortMode.None))
+            {
+                if (c == null || !c.enabled || c.isTrigger || c is CharacterController) continue;
+                float y = c.bounds.min.y;
+                if (y < min && y > -10000f) min = y;
+            }
+            if (!float.IsInfinity(min)) _floorY = min;
+        }
+        if (float.IsNaN(_floorY)) return;
+        if (me.transform.position.y > _floorY - 15f) return;
+
+        if (_fallRescues >= 5) return; // tránh vòng lặp vô hạn nếu chính điểm xuất phát cũng hỏng
+        _fallRescues++;
+        Debug.LogWarning($"[UttMinimap] Người chơi rơi khỏi map tại {me.transform.position} (đáy map {_floorY:0.0}), đưa về điểm xuất phát.");
+        if (_hasSafe || _hasHome)
+        {
+            Vector3 back = _hasSafe ? _safePos : _homePos;
+            UttChat.Notice("Bạn bị rơi khỏi khu vực, đã đưa về chỗ đứng gần nhất.");
+            PlaceAt(me, back + Vector3.up * 0.05f);
+            return;
+        }
+        UttChat.Notice("Bạn bị rơi khỏi khu vực, đã đưa về điểm xuất phát.");
+        GoToSpawn(force: true);
     }
 
     /// <summary>Minimap cũ (MinimapTeleport + camera vẽ vào MinimapRT mỗi khung hình) chỉ dành cho bản VR.</summary>
@@ -190,6 +274,8 @@ public sealed class UttMinimap : MonoBehaviour
                 Capture(p);
 
             ScanPlayers();
+            TrackSafeGround(player);
+            GuardFall(player);
             HandleInput();
             UpdateMinimap(player);
             if (WorldMapOpen) UpdateWorldMap(player);
@@ -659,31 +745,93 @@ public sealed class UttMinimap : MonoBehaviour
         TeleportLocal(me, target);
     }
 
-    void GoToSpawn()
+    void GoToSpawn() => GoToSpawn(false);
+
+    void GoToSpawn(bool force)
     {
         var me = FindLocal();
         if (me == null || !_cfg.teleport || me.isDriving) return;
-        bool lec = UttSession.IsLecturer;
-        Transform point = null;
-        var spawner = FindFirstObjectByType<PlayerSpawner>();
-        if (spawner != null) point = lec ? spawner.lecturerSpawnPoint : spawner.studentSpawnPoint;
-        if (point == null)
+        if (!force) _fallRescues = 0;
+        if (_hasHome)
         {
-            var go = GameObject.Find(lec ? "Spawn_Lecturer" : "Spawn_Student");
-            if (go != null) point = go.transform;
+            Debug.Log($"[UttMinimap] Về điểm xuất phát đã ghi nhớ {_homePos}");
+            PlaceAt(me, _homePos + Vector3.up * 0.05f);
+            Vector3 f = _homeRot * Vector3.forward;
+            me.FaceTowards(_homePos + Vector3.up * 1.6f + f * 10f);
+            CloseWorldMap();
+            return;
         }
-        if (point == null) return;
-        TeleportLocal(me, point.position);
+        bool lec = UttSession.IsLecturer;
+        // Dùng đúng cách tính vị trí như lúc vào scene (PlayerSpawner), không lấy thẳng điểm spawn gốc:
+        // ở Showroom điểm gốc nằm ngoài/ trên mái, lúc vào scene game đã dời người chơi tới trước sa bàn.
+        var spawner = FindFirstObjectByType<PlayerSpawner>();
+        if (spawner != null && spawner.gameObject.scene == SceneManager.GetActiveScene() &&
+            spawner.TryGetSpawnPose(lec, out var pos, out var rot))
+        {
+            Debug.Log($"[UttMinimap] Về điểm xuất phát: từ {me.transform.position} tới {pos} (scene {SceneManager.GetActiveScene().name})");
+            TeleportLocal(me, pos, rot);
+            return;
+        }
+        var go = GameObject.Find(lec ? "Spawn_Lecturer" : "Spawn_Student");
+        Debug.LogWarning($"[UttMinimap] Không dùng được PlayerSpawner (có={spawner != null}), lấy thẳng điểm '{(go != null ? go.name : "không có")}'.");
+        if (go != null) TeleportLocal(me, go.transform.position, go.transform.rotation);
     }
 
-    void TeleportLocal(FirstPersonController me, Vector3 target)
+    void TeleportLocal(FirstPersonController me, Vector3 target, Quaternion? facing = null)
     {
-        if (Physics.Raycast(target + Vector3.up * 1.5f, Vector3.down, out var hit, 6f, ~0, QueryTriggerInteraction.Ignore))
-            target.y = hit.point.y + 0.05f;
-        var ncc = me.GetComponent<NetworkCharacterController>();
-        if (ncc != null) ncc.Teleport(target);
-        else me.transform.position = target;
+        // Mặt sàn gần nhất với điểm đích (giống lúc spawn), không lấy vật đầu tiên chạm phải từ trên xuống (mái, trần...)
+        target = PlayerSpawner.SnapToGround(target, out bool ground);
+        Debug.Log($"[UttMinimap] Dịch chuyển tới {target}, có sàn={ground}");
+        if (!ground)
+        {
+            UttChat.Notice("Khu vực này chưa tải xong, thử lại sau vài giây.");
+            return;
+        }
+        PlaceAt(me, target);
+        if (facing.HasValue)
+        {
+            Vector3 f = facing.Value * Vector3.forward; f.y = 0f;
+            if (f.sqrMagnitude > 0.01f) me.FaceTowards(target + Vector3.up * 1.6f + f.normalized * 10f);
+        }
         CloseWorldMap();
+        if (_landing != null) StopCoroutine(_landing);
+        _landing = StartCoroutine(SafeLanding(me, target));
+    }
+
+    static void PlaceAt(FirstPersonController me, Vector3 target)
+    {
+        var ncc = me.GetComponent<NetworkCharacterController>();
+        if (ncc != null)
+        {
+            // Teleport của Fusion giữ nguyên vận tốc: đang rơi nhanh mà không xoá vận tốc thì xuyên thủng sàn ngay khung sau.
+            ncc.Velocity = Vector3.zero;
+            ncc.Teleport(target);
+            ncc.Velocity = Vector3.zero;
+        }
+        else me.transform.position = target;
+    }
+
+    Coroutine _landing;
+
+    /// <summary>
+    /// Chống rơi khỏi map sau khi dịch chuyển: trong 4 giây, nếu nhân vật tụt xuống quá 3 m dưới điểm đích
+    /// (sàn chưa kịp có va chạm, bị đẩy ra khỏi tường...) thì đưa lại về điểm đích.
+    /// </summary>
+    System.Collections.IEnumerator SafeLanding(FirstPersonController me, Vector3 target)
+    {
+        float end = Time.unscaledTime + 4f;
+        int resets = 0;
+        while (Time.unscaledTime < end && me != null && resets < 3)
+        {
+            yield return new WaitForSecondsRealtime(0.2f);
+            if (me == null) break;
+            if (me.transform.position.y < target.y - 3f)
+            {
+                resets++;
+                PlaceAt(me, PlayerSpawner.SnapToGround(target));
+            }
+        }
+        _landing = null;
     }
 
     // =========================================================
